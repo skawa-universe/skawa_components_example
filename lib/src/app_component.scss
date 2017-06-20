@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.content-area {
+    flex-grow: 1;
+}
+
+main {
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+}
