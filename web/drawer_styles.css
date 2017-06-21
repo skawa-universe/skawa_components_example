@@ -1,0 +1,68 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+
+/* Color scheme for the application */
+:root {
+    --dark-primary-color: #0288D1;
+    --default-primary-color: #03A9F4;
+    --light-primary-color: #B3E5FC;
+    --text-primary-color: #FFFFFF;
+    --accent-color: #00BCD4;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --divider-color: #BDBDBD;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+skawa-appbar {
+    background: var(--default-primary-color);
+    color: var(--text-primary-color);
+}
+
+material-button.primary-color:not([raised]):not([disabled]):not([icon]):hover {
+    color: var(--text-primary-color);
+    background-color: var(--default-primary-color);
+}
+
+.group {
+    border-bottom: var(--divider-color);
+}
+
+.logo-area {
+    background: #fafafa url(logo.png) no-repeat 0 0;
+    background-size: auto 56px;
+    background-position: top center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.sub-options{
+    height: 21px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.router-link-active {
+    color: rgba(0, 0, 255, 0.5)!important;
+    background-color: rgba(0, 0, 255, 0.1)!important;
+}

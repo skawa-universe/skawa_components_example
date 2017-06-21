@@ -1,0 +1,119 @@
+import 'package:angular2/core.dart';
+import 'package:angular2/platform/browser.dart';
+import 'package:skawa_components/src/components/data_table/data_table.dart';
+import 'package:skawa_components/src/components/data_table/data_table_column.dart';
+import 'package:skawa_components/src/components/data_table/row_data.dart';
+
+// TODO: make note that all displayable rows need to implement `RowData`
+// TODO: explain the weird accessor method
+// TODO: create complex example
+// TODO: align-left use case
+@Component(
+  selector: 'skawa-data-table-demo',
+  templateUrl: 'data_table_demo.html',
+  directives: const [
+    SkawaDataTableComponent,
+    SkawaDataTableColComponent,
+  ],
+)
+class DataTableDemoApp {
+  List<RowData> rowData = <SampleRowData>[
+    new SampleRowData('Trabant', 'Definitely not!'),
+    new SampleRowData('Barkasz', 'Same as Trabant!'),
+    new SampleRowData('Lada', 'Let the Russians have it!'),
+    new SampleRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
+  ];
+
+  makeAccessor(SampleRowData row) => row.name;
+
+  opinionAccessor(SampleRowData row) => row.opinion;
+
+  List<RowData> selectableRowData = <SampleNumericData>[
+    new SampleNumericData('1. class', 15, 12, false),
+    new SampleNumericData('2. class', 11, 18, false),
+    new SampleNumericData('3. class', 13, 13, false),
+    new SampleNumericData('4. class', 20, 13, false),
+  ];
+
+  categoryAccessor(SampleNumericData row) => row.category;
+
+  maleAccessor(SampleNumericData row) => row.male.toString();
+
+  femaleAccessor(SampleNumericData row) => row.female.toString();
+
+  peopleAccessor(SampleNumericData row) => (row.female + row.male).toString();
+
+  aggregate(DataTableAccessor<RowData> accessor) {
+    Iterable mapped =
+        selectableRowData.where((row) => row.checked).map(accessor);
+    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
+  }
+
+  String _aggregateReducer(String a, String b) {
+    if (a == null || b == null) return a ?? b;
+    return (int.parse(a) + int.parse(b)).toString();
+  }
+
+  List<RowData> wrRowData = <WrRowData>[
+    new WrRowData('Calvin Johnson', 'DET', 122, 1964, 92, false),
+    new WrRowData('Brandon Marshall', 'CHI', 118, 1508, 75, false),
+    new WrRowData('Wes Welker', 'NE', 118, 1354, 72, false),
+    new WrRowData('Andre Johnson', 'HOU', 112, 1598, 79, false),
+    new WrRowData('Jason Witten', 'DAL', 110, 1039, 56, false),
+    new WrRowData('Reggie Wayne', 'IND', 106, 1355, 73, false),
+    new WrRowData('A.J. Green', 'CIN', 97, 1530, 61, false),
+    new WrRowData('Demaryius Thomas', 'DEN', 94, 1434, 60, false),
+    new WrRowData('Tony Gonzalez', 'ATL', 93, 930, 65, false),
+    new WrRowData('Dez Bryant', 'DAL', 92, 1382, 54, false),
+  ];
+
+  nameAccessor(WrRowData row) => row.name;
+
+  teamAccessor(WrRowData row) => row.team;
+
+  recAccessor(WrRowData row) => row.rec.toString();
+
+  yardsAccessor(WrRowData row) => row.yards;
+
+  avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
+
+  yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
+
+  firstDownAccessor(WrRowData row) => row.firstDowns;
+
+  firstDownPctAccessor(WrRowData row) =>
+      (row.firstDowns / row.rec * 100).toStringAsFixed(2);
+}
+
+class SampleRowData implements RowData {
+  /// Default to unchecked
+  @override
+  bool checked = false;
+
+  final String name;
+
+  final String opinion;
+
+  SampleRowData(this.name, this.opinion);
+}
+
+class SampleNumericData extends RowData {
+  final String category;
+  final int male;
+  final int female;
+
+  SampleNumericData(this.category, this.male, this.female, bool selected)
+      : super(selected);
+}
+
+class WrRowData extends RowData {
+  final String name;
+  final String team;
+  final int rec;
+  final int yards;
+  final int firstDowns;
+
+  WrRowData(
+      this.name, this.team, this.rec, this.yards, this.firstDowns, bool checked)
+      : super(checked);
+}
