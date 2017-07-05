@@ -1,0 +1,105 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/src/components/glyph/glyph.dart",
+        "5": false
+      },
+      {
+        "1": "../../util/attribute.dart",
+        "4": "attrib",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaSidebarItemComponent",
+        "7": [
+          {
+            "2": "GlyphComponent"
+          },
+          {
+            "2": "NgIf"
+          },
+          {
+            "2": "NgClass"
+          }
+        ]
+      }
+    ],
+    "6": "sidebar_item.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular_components/src/components/glyph/glyph.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../util/attribute.template.dart",
+        "4": "i2"
+      }
+    ]
+  },
+  "type": {
+    "SkawaSidebarItemComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-sidebar-item",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaSidebarItemComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/sidebar_item/sidebar_item.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "icon": "icon",
+        "textOnly": "textOnly"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "attr.textOnly": "textOnly"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<glyph [icon]=\"icon\" class=\"item-icon\" *ngIf=\"!isTextOnly && icon != null\"></glyph>\n<span class=\"item-text\" [ngClass]=\"{ 'text-only' : isTextOnly}\"><ng-content></ng-content></span>",
+        "templateUrl": "asset:skawa_components/lib/src/components/sidebar_item/sidebar_item.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/sidebar_item/sidebar_item.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "TextOnlyMixin": {
+      "class": "Identifier",
+      "name": "TextOnlyMixin",
+      "moduleUrl": "asset:skawa_components/lib/src/components/sidebar_item/sidebar_item.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

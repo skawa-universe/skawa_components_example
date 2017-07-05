@@ -1,0 +1,25 @@
+{
+  "ngDeps": {
+    "1": "skawa_components.all_components",
+    "4": [
+      {
+        "1": "src/components/card/card.dart"
+      },
+      {
+        "1": "src/components/data_table/data_table_column.dart"
+      },
+      {
+        "1": "src/components/data_table/data_table.dart"
+      },
+      {
+        "1": "src/components/data_table/row_data.dart"
+      },
+      {
+        "1": "src/components/infobar/infobar.dart"
+      }
+    ],
+    "6": "skawa_components.dart"
+  },
+  "type": {},
+  "alias": {}
+}

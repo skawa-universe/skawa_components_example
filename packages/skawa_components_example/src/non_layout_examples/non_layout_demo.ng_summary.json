@@ -1,0 +1,95 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/app_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/card_demo/card_demo.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/data_table_demo/data_table_demo.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/infobar_demo/infobar_demo.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "NonLayoutDemoComponent",
+        "7": [
+          {
+            "2": "CardDemoComponent"
+          },
+          {
+            "2": "InfobarDemoApp"
+          },
+          {
+            "2": "DataTableDemoApp"
+          },
+          {
+            "2": "ROUTER_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "non_layout_demo.dart"
+  },
+  "type": {
+    "NonLayoutDemoComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "non-layout-demo",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "NonLayoutDemoComponent",
+        "moduleUrl": "asset:skawa_components_example/lib/src/non_layout_examples/non_layout_demo.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div class=\"content-area\">\n    <main>\n        <h1>Skawa Components</h1>\n        <p>Useful links:</p>\n        <nav>\n            <ul>\n                <li><a href=\"https://github.com/dart-lang/angular_components\" target=\"_blank\">Angular Components</a></li>\n                <li><a href=\"https://github.com/dart-lang/angular_components_example/blob/master/lib/src/non_layout_examples/non_layout_examples.html\" target=\"_blank\">Template code</a></li>\n                <li><a href=\"https://material.io/guidelines/\" target=\"_blank\">Material design</a></li>\n                <li><a href=\"https://material.io/color/\" target=\"_blank\">Color palette tool</a></li>\n            </ul>\n        </nav>\n        <p>Layout Component Examples:</p>\n        <nav>\n            <ul>\n                <li *ngFor=\"let route of Routes\"><a [routerLink]=\"[route.name]\">{{route.name}}</a></li>\n            </ul>\n        </nav>\n        <p>Non Layout Component Examples:</p>\n        <nav>\n            <ul>\n                <li><a href=\"/non-app-shell/#CardDemo\">Card-Demo</a></li>\n                <li><a href=\"/non-app-shell/#InfobarDemo\">Infobar Demo</a></li>\n                <li><a href=\"/non-app-shell/#DataTalbeDemo\">Data Table Demo</a></li>\n            </ul>\n        </nav>\n        <hr>\n\n        <a name=\"/non-app-shell/#CardDemo\"></a>\n        <h2>Card Demo</h2>\n        <section class=\"source-links\">\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components/tree/master/lib/src/components/card\"\n               target=\"_blank\">\n                Component Source\n            </a>\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components_example/tree/master/lib/src/card_demo\"\n               target=\"_blank\">\n                Example Source\n            </a>\n        </section>\n        <card-demo></card-demo>\n        <hr>\n\n        <a name=\"/non-app-shell/InfoBarDemo\"></a>\n        <h2>Infobar Demo</h2>\n        <section class=\"source-links\">\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components/tree/master/lib/src/components/infobar\"\n               target=\"_blank\">\n                Component Source\n            </a>\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components_example/tree/master/lib/src/infobar_demo\"\n               target=\"_blank\">\n                Example Source\n            </a>\n        </section>\n        <infobar-demo></infobar-demo>\n        <hr>\n\n        <a name=\"/non-app-shell/DataTalbeDemo\"></a>\n        <h2>Data Table Demo</h2>\n        <section class=\"source-links\">\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components/tree/master/lib/src/components/data_table\"\n               target=\"_blank\">\n                Component Source\n            </a>\n            <a class=\"source-link\"\n               href=\"https://github.com/skawa-universe/skawa_components_example/tree/master/lib/src/data_table_demo\"\n               target=\"_blank\">\n                Example Source\n            </a>\n        </section>\n        <skawa-data-table-demo></skawa-data-table-demo>\n        <hr>\n\n    </main>\n</div>\n",
+        "templateUrl": "asset:skawa_components_example/lib/src/non_layout_examples/non_layout_demo.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components_example/lib/src/non_layout_examples/non_layout_demo.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

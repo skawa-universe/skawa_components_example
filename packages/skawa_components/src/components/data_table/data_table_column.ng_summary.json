@@ -1,0 +1,74 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "row_data.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaDataTableColComponent"
+      }
+    ],
+    "6": "data_table_column.dart"
+  },
+  "type": {
+    "DataTableAccessor": {
+      "class": "Identifier",
+      "name": "DataTableAccessor",
+      "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SkawaDataTableColComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-data-table-col",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaDataTableColComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "accessor": "accessor",
+        "header": "header",
+        "footer": "footer",
+        "skipFooter": "skipFooter",
+        "classString": "class"
+      },
+      "inputTypes": {
+        "classString": " String"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "",
+        "templateUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

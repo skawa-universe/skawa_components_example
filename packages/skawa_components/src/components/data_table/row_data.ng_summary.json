@@ -1,0 +1,13 @@
+{
+  "ngDeps": null,
+  "type": {
+    "RowData": {
+      "class": "Identifier",
+      "name": "RowData",
+      "moduleUrl": "asset:skawa_components/lib/src/components/data_table/row_data.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

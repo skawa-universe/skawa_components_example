@@ -1,0 +1,197 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/common/pipes/invalid_pipe_argument_exception.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/src/components/material_checkbox/material_checkbox.dart",
+        "5": false
+      },
+      {
+        "1": "data_table_column.dart",
+        "5": false
+      },
+      {
+        "1": "row_data.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaDataTableComponent",
+        "5": [
+          {
+            "1": "ChangeDetectorRef",
+            "4": "changeDetectorRef"
+          }
+        ],
+        "7": [
+          {
+            "2": "MaterialCheckboxComponent"
+          },
+          {
+            "2": "NgIf"
+          },
+          {
+            "2": "NgClass"
+          },
+          {
+            "2": "NgFor"
+          }
+        ],
+        "8": [
+          {
+            "2": "UnskippedInFooterPipe"
+          }
+        ]
+      },
+      {
+        "1": "UnskippedInFooterPipe",
+        "4": [
+          {
+            "1": "Pipe",
+            "2": [
+              "'unskippedInFooter'"
+            ],
+            "4": false
+          }
+        ],
+        "6": [
+          "PipeTransform"
+        ]
+      }
+    ],
+    "6": "data_table.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/src/common/pipes/invalid_pipe_argument_exception.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:angular_components/src/components/material_checkbox/material_checkbox.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "data_table_column.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "row_data.template.dart",
+        "4": "i4"
+      }
+    ]
+  },
+  "type": {
+    "SkawaDataTableComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-data-table",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaDataTableComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "selectable": "selectable",
+        "rows": "data"
+      },
+      "inputTypes": {
+        "rows": " Iterable"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<table [class.selectable]=\"selectable\" [class.non-selectable]=\"!selectable\">\n    <thead>\n        <tr>\n            <th *ngIf=\"selectable\">\n                <material-checkbox #markAllCheckbox\n                                   (click)=\"markAllRowsChecked(markAllCheckbox.checked); $event.stopPropagation();\"\n                                   [checked]=\"isEveryRowChecked\"></material-checkbox>\n            </th>\n            <th *ngFor=\"let c of columns; let i = index;\" [ngClass]=\"c.getClasses('--header')\">{{c.header}}</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let row of rows\" [class.selected]=\"row.checked \">\n            <td *ngIf=\"selectable\">\n                <material-checkbox (checkedChange)=\"row.checked = $event\" [checked]=\"row.checked\"></material-checkbox>\n            </td>\n            <td *ngFor=\"let c of columns; let i = index;\" [ngClass]=\"c.getClasses()\">{{c.accessor(row)}}</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td *ngFor=\"let c of columns | unskippedInFooter; let i = index;\" [attr.colspan]=\"getColspanFor(c, i)\"\n                [ngClass]=\"c.getClasses('--footer')\">\n                {{c.footer}}\n            </td>\n        </tr>\n    </tfoot>\n</table>",
+        "templateUrl": "asset:skawa_components/lib/src/components/data_table/data_table.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/data_table/data_table.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaDataTableColComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": false,
+          "propertyName": "columns",
+          "read": null
+        }
+      ],
+      "viewQueries": []
+    },
+    "UnskippedInFooterPipe": {
+      "class": "Pipe",
+      "type": {
+        "class": "Type",
+        "name": "UnskippedInFooterPipe",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "name": "unskippedInFooter",
+      "pure": true
+    }
+  },
+  "alias": {}
+}

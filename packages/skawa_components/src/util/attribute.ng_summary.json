@@ -1,0 +1,20 @@
+{
+  "ngDeps": null,
+  "type": {
+    "isPresent": {
+      "class": "Identifier",
+      "name": "isPresent",
+      "moduleUrl": "asset:skawa_components/lib/src/util/attribute.dart",
+      "prefix": null,
+      "value": null
+    },
+    "toggleAttribute": {
+      "class": "Identifier",
+      "name": "toggleAttribute",
+      "moduleUrl": "asset:skawa_components/lib/src/util/attribute.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

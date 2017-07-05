@@ -1,0 +1,68 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components/src/components/infobar/infobar.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "InfobarDemoApp",
+        "7": [
+          {
+            "2": "SkawaInfobarComponent"
+          }
+        ]
+      }
+    ],
+    "6": "infobar_demo.dart"
+  },
+  "type": {
+    "InfobarDemoApp": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "infobar-demo",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "InfobarDemoApp",
+        "moduleUrl": "asset:skawa_components_example/lib/src/infobar_demo/infobar_demo.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "      <h3>Simple inforbar without icon</h3>\n      <skawa-infobar>No icon, no url</skawa-infobar>\n      <h3>Inforbar with icon</h3>\n      <skawa-infobar icon=\"info\">Info icon, still no url</skawa-infobar>\n      <h3>Inforbar with url</h3>\n      <skawa-infobar icon=\"open_in_new\" url=\"https://github.com\">Clicking icon will redirect if URL is specified</skawa-infobar>\n      <h3>Infobar which alerting when the icon triggers</h3>\n      <skawa-infobar icon=\"lightbulb_outline\" (trigger)=\"alert()\">Can also subscribe to primary action with (trigger)</skawa-infobar>\n    ",
+        "templateUrl": "asset:skawa_components_example/lib/src/infobar_demo/infobar_demo.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

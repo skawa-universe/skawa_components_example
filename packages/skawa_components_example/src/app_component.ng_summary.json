@@ -1,0 +1,110 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/platform/common.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/router.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/appbar_demo/appbar_demo.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/drawer_demo/drawer_demo.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/non_layout_examples/non_layout_demo.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components_example/src/sidebar_demo/sidebar_demo.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "4": [
+          {
+            "1": "RouteConfig",
+            "2": [
+              "ROUTES"
+            ],
+            "4": false
+          }
+        ],
+        "7": [
+          {
+            "2": "ROUTER_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "app_component.dart"
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "app-cmp",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:skawa_components_example/lib/src/app_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<router-outlet></router-outlet>",
+        "templateUrl": "asset:skawa_components_example/lib/src/app_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components_example/lib/src/app_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "ROUTER_PROVIDERS",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ROUTES": {
+      "class": "Identifier",
+      "name": "ROUTES",
+      "moduleUrl": "asset:skawa_components_example/lib/src/app_component.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

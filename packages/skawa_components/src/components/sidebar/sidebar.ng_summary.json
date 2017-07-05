@@ -1,0 +1,69 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/src/model/ui/toggle.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaSidebarComponent"
+      }
+    ],
+    "6": "sidebar.dart"
+  },
+  "type": {
+    "SkawaSidebarComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-sidebar",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaSidebarComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/sidebar/sidebar.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "isOn": "isOn"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.opened": "isOn"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<aside class=\"sidebar\" [class.opened]=\"isOn\">\n    <ng-content select=\"[sidenavHeader]\"></ng-content>\n    <ng-content></ng-content>\n    <ng-content select=\"[sidenavFooter]\"></ng-content>\n</aside>",
+        "templateUrl": "asset:skawa_components/lib/src/components/sidebar/sidebar.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/sidebar/sidebar.css"
+        ],
+        "ngContentSelectors": [
+          "[sidenavHeader]",
+          "*",
+          "[sidenavFooter]"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

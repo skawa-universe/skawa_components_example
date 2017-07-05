@@ -1,0 +1,1042 @@
+{
+  "ngDeps": {
+    "1": "skawa_components.all_components",
+    "4": [
+      {
+        "1": "src/components/card/card.dart"
+      },
+      {
+        "1": "src/components/data_table/data_table_column.dart"
+      },
+      {
+        "1": "src/components/data_table/data_table.dart"
+      },
+      {
+        "1": "src/components/data_table/row_data.dart"
+      },
+      {
+        "1": "src/components/infobar/infobar.dart"
+      }
+    ],
+    "6": "skawa_components.dart",
+    "7": [
+      {
+        "1": "src/components/card/card.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "src/components/data_table/data_table_column.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "src/components/data_table/data_table.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "src/components/data_table/row_data.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "src/components/infobar/infobar.template.dart",
+        "4": "i4"
+      }
+    ]
+  },
+  "type": {
+    "DataTableAccessor": {
+      "class": "Identifier",
+      "name": "DataTableAccessor",
+      "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+      "prefix": null,
+      "value": null
+    },
+    "RowData": {
+      "class": "Identifier",
+      "name": "RowData",
+      "moduleUrl": "asset:skawa_components/lib/src/components/data_table/row_data.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SkawaCardActionsComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-card-actions",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardActionsComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card_actions.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "SkawaCardHeaderComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.in-header": "inHeader"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:skawa_components/lib/src/components/card/card_actions.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/card/card_actions.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaCardComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-card",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/card/card.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardHeaderComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "cardHeader",
+          "read": null
+        },
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardContentComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": [
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "SkawaCardComponent",
+                        "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": false,
+                    "isValue": false
+                  }
+                ]
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "cardContent",
+          "read": null
+        }
+      ],
+      "viewQueries": []
+    },
+    "SkawaCardContentComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-card-content",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardContentComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "SkawaCardComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "collapsed": "collapsed"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.with-header": "withHeader",
+        "class.skawa-collapsed": "isCollapsed"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/card/card_content.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaCardHeaderComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-card-header",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardHeaderComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "statusColor": "statusColor"
+      },
+      "inputTypes": {
+        "statusColor": " String"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.with-title-image": "withTitleImage",
+        "class.with-subhead": "withSubHead",
+        "class.with-actions": "hasActions",
+        "style.box-shadow": "statusStyle"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<ng-content></ng-content>",
+        "templateUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/card/card_header.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardHeaderTitleDirective",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "title",
+          "read": null
+        },
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardHeaderSubheadDirective",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "subhead",
+          "read": null
+        },
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardHeaderImageDirective",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "image",
+          "read": null
+        },
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaCardActionsComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/card/card_actions.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": [
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "SkawaCardHeaderComponent",
+                        "moduleUrl": null,
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": true,
+                    "isValue": false
+                  }
+                ]
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": true,
+          "propertyName": "headerActions",
+          "read": null
+        }
+      ],
+      "viewQueries": []
+    },
+    "SkawaCardHeaderImageDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "skawa-header-image",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardHeaderImageDirective",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaCardHeaderSubheadDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "skawa-header-subhead",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardHeaderSubheadDirective",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaCardHeaderTitleDirective": {
+      "class": "Directive",
+      "isComponent": false,
+      "selector": "skawa-header-title",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCardHeaderTitleDirective",
+        "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": null,
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaDataTableColComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-data-table-col",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaDataTableColComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "accessor": "accessor",
+        "header": "header",
+        "footer": "footer",
+        "skipFooter": "skipFooter",
+        "classString": "class"
+      },
+      "inputTypes": {
+        "classString": " String"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "",
+        "templateUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "SkawaDataTableComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-data-table",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaDataTableComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "selectable": "selectable",
+        "rows": "data"
+      },
+      "inputTypes": {
+        "rows": " Iterable"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<table [class.selectable]=\"selectable\" [class.non-selectable]=\"!selectable\">\n    <thead>\n        <tr>\n            <th *ngIf=\"selectable\">\n                <material-checkbox #markAllCheckbox\n                                   (click)=\"markAllRowsChecked(markAllCheckbox.checked); $event.stopPropagation();\"\n                                   [checked]=\"isEveryRowChecked\"></material-checkbox>\n            </th>\n            <th *ngFor=\"let c of columns; let i = index;\" [ngClass]=\"c.getClasses('--header')\">{{c.header}}</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr *ngFor=\"let row of rows\" [class.selected]=\"row.checked \">\n            <td *ngIf=\"selectable\">\n                <material-checkbox (checkedChange)=\"row.checked = $event\" [checked]=\"row.checked\"></material-checkbox>\n            </td>\n            <td *ngFor=\"let c of columns; let i = index;\" [ngClass]=\"c.getClasses()\">{{c.accessor(row)}}</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td *ngFor=\"let c of columns | unskippedInFooter; let i = index;\" [attr.colspan]=\"getColspanFor(c, i)\"\n                [ngClass]=\"c.getClasses('--footer')\">\n                {{c.footer}}\n            </td>\n        </tr>\n    </tfoot>\n</table>",
+        "templateUrl": "asset:skawa_components/lib/src/components/data_table/data_table.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/data_table/data_table.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "SkawaDataTableColComponent",
+                "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": []
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": false,
+          "propertyName": "columns",
+          "read": null
+        }
+      ],
+      "viewQueries": []
+    },
+    "SkawaInfobarComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-infobar",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaInfobarComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/infobar/infobar.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "icon": "icon",
+        "url": "url"
+      },
+      "inputTypes": {},
+      "outputs": {
+        "trigger": "trigger"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<material-button icon (trigger)=\"navigate()\" [attr.title]=\"url != null\" title=\"{{url}}\" #primaryAction>\n    <glyph icon=\"{{icon}}\" size=\"medium\"></glyph>\n</material-button>\n<div class=\"info-text\">\n    <span class=\"ws-truncate-fix\">\n        <ng-content></ng-content>\n    </span>\n</div>",
+        "templateUrl": "asset:skawa_components/lib/src/components/infobar/infobar.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/infobar/infobar.css"
+        ],
+        "ngContentSelectors": [
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "primaryAction",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "primaryActionButton",
+          "read": null
+        }
+      ]
+    },
+    "UnskippedInFooterPipe": {
+      "class": "Pipe",
+      "type": {
+        "class": "Type",
+        "name": "UnskippedInFooterPipe",
+        "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "name": "unskippedInFooter",
+      "pure": true
+    },
+    "skawaCardDirectives": {
+      "class": "Identifier",
+      "name": "skawaCardDirectives",
+      "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+      "prefix": null,
+      "value": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardHeaderComponent",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardHeaderComponent",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardHeaderSubheadDirective",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardHeaderSubheadDirective",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardHeaderTitleDirective",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardHeaderTitleDirective",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardHeaderImageDirective",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardHeaderImageDirective",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card_directives.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardContentComponent",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "SkawaCardComponent",
+                      "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardContentComponent",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "SkawaCardComponent",
+                    "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": false,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardActionsComponent",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card_actions.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "SkawaCardHeaderComponent",
+                      "moduleUrl": null,
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": true,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardActionsComponent",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card_actions.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": [
+              {
+                "token": {
+                  "value": null,
+                  "identifier": {
+                    "class": "Identifier",
+                    "name": "SkawaCardHeaderComponent",
+                    "moduleUrl": null,
+                    "prefix": null,
+                    "value": null
+                  },
+                  "identifierIsInstance": false
+                },
+                "value": null,
+                "isAttribute": false,
+                "isSelf": false,
+                "isHost": false,
+                "isSkipSelf": false,
+                "isOptional": true,
+                "isValue": false
+              }
+            ]
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        },
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "SkawaCardComponent",
+              "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "SkawaCardComponent",
+            "moduleUrl": "asset:skawa_components/lib/src/components/card/card.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ]
+    }
+  },
+  "alias": {
+    "skawaCardDirectives": [
+      "SkawaCardActionsComponent",
+      "SkawaCardComponent",
+      "SkawaCardContentComponent",
+      "SkawaCardHeaderComponent",
+      "SkawaCardHeaderImageDirective",
+      "SkawaCardHeaderSubheadDirective",
+      "SkawaCardHeaderTitleDirective"
+    ]
+  }
+}

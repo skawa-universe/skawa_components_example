@@ -1,0 +1,101 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "../../util/attribute.dart",
+        "4": "attr_util",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaMasterDetailComponent",
+        "5": [
+          {
+            "3": [
+              "const Optional()",
+              "const Attribute('expanded')"
+            ],
+            "4": "expanded"
+          }
+        ]
+      }
+    ],
+    "6": "master_detail.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../util/attribute.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "SkawaMasterDetailComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-master-detail",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaMasterDetailComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/master_detail/master_detail.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": "expanded",
+              "identifier": null,
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": true,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 4,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "attr.expanded": "expanded ? \"\" : null"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div class=\"master-detail--master\" #masterRef>\n    <ng-content select=\"[skawa-master]\"></ng-content>\n</div>\n<div class=\"master-detail--detail\" #detailRef>\n    <ng-content select=\"[skawa-detail]\"></ng-content>\n</div>\n",
+        "templateUrl": "asset:skawa_components/lib/src/components/master_detail/master_detail.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/master_detail/master_detail.css"
+        ],
+        "ngContentSelectors": [
+          "[skawa-master]",
+          "[skawa-detail]"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

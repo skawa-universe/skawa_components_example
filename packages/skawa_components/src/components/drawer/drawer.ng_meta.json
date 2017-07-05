@@ -1,0 +1,94 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/src/model/ui/toggle.dart",
+        "5": false
+      },
+      {
+        "1": "../sidebar/sidebar.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaDrawerComponent",
+        "7": [
+          {
+            "2": "SkawaSidebarComponent"
+          },
+          {
+            "2": "NgClass"
+          }
+        ]
+      }
+    ],
+    "6": "drawer.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular_components/src/model/ui/toggle.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../sidebar/sidebar.template.dart",
+        "4": "i2"
+      }
+    ]
+  },
+  "type": {
+    "SkawaDrawerComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-drawer",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaDrawerComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/drawer/drawer.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "isOn": "isOn"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.opened": "isOn"
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div class=\"fixed-sider\">\n    <div class=\"logo-area\">\n        <ng-content select=\"[.logo-area]\"></ng-content>\n    </div>\n    <skawa-sidebar [isOn]=\"isOn\" class=\"flex-grow\">\n        <ng-content></ng-content>\n    </skawa-sidebar>\n</div>",
+        "templateUrl": "asset:skawa_components/lib/src/components/drawer/drawer.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:skawa_components/lib/src/components/drawer/drawer.css"
+        ],
+        "ngContentSelectors": [
+          "[.logo-area]",
+          "*"
+        ]
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
