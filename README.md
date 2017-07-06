@@ -1,4 +1,4 @@
-This is a basic gallery of the various AngularDart Components. Remind, these components are based on Material Design
+This is a basic gallery of the various AngularDart Components. These components are based on Material Design
 and built on top of `package:angular_components`. The goal is to provide a couple of components that seems to be missing from angular_components.
 
 #### Links for the `package:skawa_components`:

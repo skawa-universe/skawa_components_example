@@ -17,7 +17,7 @@ import 'package:skawa_components_example/src/sidebar_demo/sidebar_demo.dart';
     ],
     providers: const [
       ROUTER_PROVIDERS,
-//      const Provider(LocationStrategy, useClass: HashLocationStrategy),
+      const Provider(LocationStrategy, useClass: HashLocationStrategy),
     ])
 @RouteConfig(ROUTES)
 class AppComponent {}
