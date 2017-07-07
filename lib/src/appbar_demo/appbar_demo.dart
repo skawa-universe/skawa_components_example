@@ -17,6 +17,7 @@ import 'package:skawa_components_example/src/app_component.dart';
     GlyphComponent,
     skawaCardDirectives,
     ROUTER_DIRECTIVES,
+    NgFor,
   ],
 )
 class AppbarDemoComponent {

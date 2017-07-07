@@ -22,7 +22,8 @@ import 'package:skawa_components_example/src/app_component.dart';
       skawaCardDirectives,
       MaterialButtonComponent,
       GlyphComponent,
-      ROUTER_DIRECTIVES
+      ROUTER_DIRECTIVES,
+      NgFor,
     ],
     styleUrls: const [
       'sidebar_demo.css'

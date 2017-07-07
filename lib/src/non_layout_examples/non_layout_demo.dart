@@ -14,7 +14,8 @@ import 'package:skawa_components_example/src/infobar_demo/infobar_demo.dart';
     CardDemoComponent,
     InfobarDemoApp,
     DataTableDemoApp,
-    ROUTER_DIRECTIVES
+    ROUTER_DIRECTIVES,
+    NgFor,
   ],
 )
 class NonLayoutDemoComponent {
