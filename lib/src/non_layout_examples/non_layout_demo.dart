@@ -19,7 +19,7 @@ import 'package:skawa_components_example/src/infobar_demo/infobar_demo.dart';
   ],
 )
 class NonLayoutDemoComponent {
-  navigate(String url) {
+  void navigate(String url) {
     window.open(url, '_blank');
   }
 

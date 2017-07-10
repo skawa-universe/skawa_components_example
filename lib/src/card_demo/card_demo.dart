@@ -23,7 +23,7 @@ class CardDemoComponent implements OnInit {
   CardDemoComponent(this.ref);
 
   @override
-  ngOnInit() {
+  void ngOnInit() {
     ref.detectChanges();
   }
 }

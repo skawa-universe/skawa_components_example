@@ -21,7 +21,7 @@ import 'package:skawa_components_example/src/app_component.dart';
   ],
 )
 class AppbarDemoComponent {
-  navigate(String url) {
+  void navigate(String url) {
     window.open(url, '_blank');
   }
 

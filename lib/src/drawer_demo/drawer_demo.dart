@@ -29,7 +29,7 @@ import 'package:skawa_components_example/src/app_component.dart';
       'drawer_demo.css'
     ])
 class DrawerDemoComponent {
-  navigate(String url) {
+  void navigate(String url) {
     window.open(url, '_blank');
   }
 

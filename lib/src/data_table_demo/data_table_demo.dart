@@ -1,5 +1,4 @@
 import 'package:angular2/core.dart';
-import 'package:angular2/platform/browser.dart';
 import 'package:skawa_components/src/components/data_table/data_table.dart';
 import 'package:skawa_components/src/components/data_table/data_table_column.dart';
 import 'package:skawa_components/src/components/data_table/row_data.dart';
@@ -24,9 +23,9 @@ class DataTableDemoApp {
     new SampleRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
-  makeAccessor(SampleRowData row) => row.name;
+  String makeAccessor(SampleRowData row) => row.name;
 
-  opinionAccessor(SampleRowData row) => row.opinion;
+  String opinionAccessor(SampleRowData row) => row.opinion;
 
   List<RowData> selectableRowData = <SampleNumericData>[
     new SampleNumericData('1. class', 15, 12, false),
@@ -35,15 +34,15 @@ class DataTableDemoApp {
     new SampleNumericData('4. class', 20, 13, false),
   ];
 
-  categoryAccessor(SampleNumericData row) => row.category;
+  String categoryAccessor(SampleNumericData row) => row.category;
 
-  maleAccessor(SampleNumericData row) => row.male.toString();
+  String maleAccessor(SampleNumericData row) => row.male.toString();
 
-  femaleAccessor(SampleNumericData row) => row.female.toString();
+  String femaleAccessor(SampleNumericData row) => row.female.toString();
 
-  peopleAccessor(SampleNumericData row) => (row.female + row.male).toString();
+  String peopleAccessor(SampleNumericData row) => (row.female + row.male).toString();
 
-  aggregate(DataTableAccessor<RowData> accessor) {
+  String aggregate(DataTableAccessor<RowData> accessor) {
     Iterable mapped =
         selectableRowData.where((row) => row.checked).map(accessor);
     return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
@@ -67,21 +66,21 @@ class DataTableDemoApp {
     new WrRowData('Dez Bryant', 'DAL', 92, 1382, 54, false),
   ];
 
-  nameAccessor(WrRowData row) => row.name;
+  String nameAccessor(WrRowData row) => row.name;
 
-  teamAccessor(WrRowData row) => row.team;
+  String teamAccessor(WrRowData row) => row.team;
 
-  recAccessor(WrRowData row) => row.rec.toString();
+  String recAccessor(WrRowData row) => row.rec.toString();
 
-  yardsAccessor(WrRowData row) => row.yards;
+  String yardsAccessor(WrRowData row) => row.yards.toString();
 
-  avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
+  String avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
 
-  yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
+  String yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
 
-  firstDownAccessor(WrRowData row) => row.firstDowns;
+  String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
 
-  firstDownPctAccessor(WrRowData row) =>
+  String firstDownPctAccessor(WrRowData row) =>
       (row.firstDowns / row.rec * 100).toStringAsFixed(2);
 }
 

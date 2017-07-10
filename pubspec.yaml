@@ -7,8 +7,10 @@ dependencies:
   skawa_components:
     git:
       url: https://github.com/skawa-universe/skawa_components.git
-      ref: 0.0.3
+      ref: 0.0.4
+  browser:
 dev_dependencies:
   sass_builder: ^0.1.0
 transformers:
-- angular2
+- angular2:
+    entry_points: web/main.dart

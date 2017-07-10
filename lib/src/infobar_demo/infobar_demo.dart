@@ -19,7 +19,7 @@ import 'package:skawa_components/src/components/infobar/infobar.dart';
   ],
 )
 class InfobarDemoApp {
-  alert() {
+  void alert() {
     window.alert('Triggered!');
   }
 }
