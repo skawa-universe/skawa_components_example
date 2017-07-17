@@ -53,6 +53,9 @@
           },
           {
             "2": "ROUTER_DIRECTIVES"
+          },
+          {
+            "2": "NgFor"
           }
         ]
       }

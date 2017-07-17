@@ -1,0 +1,317 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../../laminate/enums/alignment.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/select.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/selection_container.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/selection_model.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/ui/has_renderer.dart",
+        "5": false
+      },
+      {
+        "1": "../../../utils/browser/dom_service/dom_service.dart",
+        "5": false
+      },
+      {
+        "1": "../../content/deferred_content.dart",
+        "5": false
+      },
+      {
+        "1": "../../focus/keyboard_only_focus_indicator.dart",
+        "5": false
+      },
+      {
+        "1": "../../glyph/glyph.dart",
+        "5": false
+      },
+      {
+        "1": "../../material_popup/material_popup.dart",
+        "5": false
+      },
+      {
+        "1": "../../mixins/material_dropdown_base.dart",
+        "5": false
+      },
+      {
+        "1": "./material_tree_filter.dart",
+        "5": false
+      },
+      {
+        "1": "./material_tree_root.dart",
+        "5": false
+      },
+      {
+        "1": "material_tree_impl.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MaterialTreeDropdownComponent",
+        "5": [
+          {
+            "1": "DomService",
+            "4": "_domService"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "DeferredContentDirective"
+          },
+          {
+            "2": "GlyphComponent"
+          },
+          {
+            "2": "KeyboardOnlyFocusIndicatorDirective"
+          },
+          {
+            "2": "MaterialPopupComponent"
+          },
+          {
+            "2": "MaterialTreeComponent"
+          },
+          {
+            "2": "MaterialTreeFilterComponent"
+          },
+          {
+            "2": "NgIf"
+          },
+          {
+            "2": "PopupSourceDirective"
+          }
+        ]
+      }
+    ],
+    "6": "material_tree_dropdown.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "../../../laminate/enums/alignment.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "../../../model/selection/select.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "../../../model/selection/selection_container.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "../../../model/selection/selection_model.template.dart",
+        "4": "i4"
+      },
+      {
+        "1": "../../../model/ui/has_renderer.template.dart",
+        "4": "i5"
+      },
+      {
+        "1": "../../../utils/browser/dom_service/dom_service.template.dart",
+        "4": "i6"
+      },
+      {
+        "1": "../../content/deferred_content.template.dart",
+        "4": "i7"
+      },
+      {
+        "1": "../../focus/keyboard_only_focus_indicator.template.dart",
+        "4": "i8"
+      },
+      {
+        "1": "../../glyph/glyph.template.dart",
+        "4": "i9"
+      },
+      {
+        "1": "../../material_popup/material_popup.template.dart",
+        "4": "i10"
+      },
+      {
+        "1": "../../mixins/material_dropdown_base.template.dart",
+        "4": "i11"
+      },
+      {
+        "1": "./material_tree_filter.template.dart",
+        "4": "i12"
+      },
+      {
+        "1": "./material_tree_root.template.dart",
+        "4": "i13"
+      },
+      {
+        "1": "material_tree_impl.template.dart",
+        "4": "i14"
+      }
+    ]
+  },
+  "type": {
+    "MaterialTreeDropdownComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-tree-dropdown",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialTreeDropdownComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomService",
+                "moduleUrl": "asset:angular_components/lib/src/utils/browser/dom_service/dom_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "componentRenderer": "componentRenderer",
+        "itemRenderer": "itemRenderer",
+        "options": "options",
+        "selection": "selection",
+        "autoDismiss": "autoDismiss",
+        "expandAll": "expandAll",
+        "placeholder": "placeholder",
+        "visible": "visible"
+      },
+      "inputTypes": {
+        "expandAll": " bool",
+        "placeholder": " String",
+        "visible": " bool"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"button\"\n     [class.border]=\"!supportsFiltering\"\n     popupSource\n     #button=\"popupSource\"\n     (focus)=\"visible = true\"\n     (click)=\"visible = !visible\"\n     keyboardOnlyFocusIndicator>\n  <span\n    *ngIf=\"!supportsFiltering\"\n    class=\"button-text\">\n      {{placeholder}}\n  </span>\n  <glyph\n    *ngIf=\"!supportsFiltering\"\n    class=\"icon\"\n    icon=\"arrow_drop_down\">\n  </glyph>\n  <material-tree-filter\n    #materialTreeFilter\n    *ngIf=\"supportsFiltering\"\n    (filter)=\"visible = true\"\n    [filterable]=\"filterableOptions\"\n    [placeholder]=\"placeholder\">\n  </material-tree-filter>\n</div>\n<material-popup\n  enforceSpaceConstraints\n  trackLayoutChanges\n  [matchSourceWidth]=\"false\"\n  [preferredPositions]=\"popupPositions\"\n  [source]=\"button\"\n  [(visible)]=\"visible\">\n  <div header>\n    <ng-content select=\"[header]\"></ng-content>\n  </div>\n  <material-tree\n    *deferredContent\n    [componentRenderer]=\"componentRenderer\"\n    [expandAll]=\"expandAll\"\n    [itemRenderer]=\"itemRenderer\"\n    [options]=\"options\"\n    [selection]=\"selection\">\n  </material-tree>\n</material-popup>\n",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.scss.css"
+        ],
+        "ngContentSelectors": [
+          "[header]"
+        ],
+        "preserveWhitespace": false
+      },
+      "providers": [],
+      "viewProviders": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialTreeRoot",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "MaterialTreeDropdownComponent",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "DomService",
+                      "moduleUrl": "asset:angular_components/lib/src/utils/browser/dom_service/dom_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "materialTreeFilter",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "materialTreeFilterComponent",
+          "read": null
+        }
+      ]
+    }
+  },
+  "alias": {}
+}

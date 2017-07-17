@@ -15,10 +15,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "../content/deferred_content_aware.dart",
         "5": false
       }

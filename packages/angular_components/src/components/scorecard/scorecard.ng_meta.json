@@ -244,7 +244,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-ripple *ngIf=\"selectable\"></material-ripple>\n<h3>{{label}}<ng-content select=\"name\"></ng-content></h3>\n<h2>{{value}}<ng-content select=\"value\"></ng-content></h2>\n<span *ngIf=\"suggestionBefore != null\" class=\"suggestion before\">{{suggestionBefore}}</span>\n<span *ngIf=\"description != null\" class=\"description\">\n  <glyph *ngIf=\"changeGlyph && description != '' && !isChangeNeutral\"\n         class=\"change-glyph\"\n         [icon]=\"changeGlyphIcon\"\n         size=\"small\">\n  </glyph>\n  {{description}}</span>\n<span *ngIf=\"suggestionAfter != null\" class=\"suggestion after\">{{suggestionAfter}}</span>\n<ng-content></ng-content>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-ripple *ngIf=\"selectable\"></material-ripple>\n<h3>{{label}}<ng-content select=\"name\"></ng-content></h3>\n<h2>{{value}}<ng-content select=\"value\"></ng-content></h2>\n<span *ngIf=\"suggestionBefore != null\" class=\"suggestion before\">{{suggestionBefore}}</span>\n<span *ngIf=\"description != null\" class=\"description\">\n  <glyph *ngIf=\"changeGlyph && description != '' && !isChangeNeutral\"\n         class=\"change-glyph\"\n         [icon]=\"changeGlyphIcon\"\n         size=\"small\">\n  </glyph>\n  {{description}}<ng-content select=\"description\"></ng-content></span>\n<span *ngIf=\"suggestionAfter != null\" class=\"suggestion after\">{{suggestionAfter}}</span>\n<ng-content></ng-content>\n",
         "templateUrl": "asset:angular_components/lib/src/components/scorecard/scorecard.html",
         "styles": [],
         "styleUrls": [
@@ -253,6 +253,7 @@
         "ngContentSelectors": [
           "name",
           "value",
+          "description",
           "*"
         ]
       },

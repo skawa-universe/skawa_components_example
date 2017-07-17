@@ -173,7 +173,8 @@
       "inputs": {
         "error": "error",
         "hideHeader": "hideHeader",
-        "hideFooter": "hideFooter"
+        "hideFooter": "hideFooter",
+        "shouldShowScrollStrokes": "shouldShowScrollStrokes"
       },
       "inputTypes": {
         "error": " String"

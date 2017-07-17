@@ -822,6 +822,13 @@
       "prefix": null,
       "value": null
     },
+    "AsyncUpdateScheduler": {
+      "class": "Identifier",
+      "name": "AsyncUpdateScheduler",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_update_scheduler.dart",
+      "prefix": null,
+      "value": null
+    },
     "Attribute": {
       "class": "Identifier",
       "name": "Attribute",
@@ -3953,6 +3960,13 @@
       "prefix": null,
       "value": null
     },
+    "CountGetter": {
+      "class": "Identifier",
+      "name": "CountGetter",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/select.dart",
+      "prefix": null,
+      "value": null
+    },
     "CurrencyPipe": {
       "class": "Pipe",
       "type": {
@@ -4444,6 +4458,13 @@
       "queries": [],
       "viewQueries": []
     },
+    "DisposableFuture": {
+      "class": "Identifier",
+      "name": "DisposableFuture",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/disposable_future.dart",
+      "prefix": null,
+      "value": null
+    },
     "DoCheck": {
       "class": "Identifier",
       "name": "DoCheck",
@@ -4787,6 +4808,13 @@
       "class": "Identifier",
       "name": "EmbeddedViewRef",
       "moduleUrl": "asset:angular2/lib/src/core/linker/view_ref.dart",
+      "prefix": null,
+      "value": null
+    },
+    "EmptySimpleStream": {
+      "class": "Identifier",
+      "name": "EmptySimpleStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
       "prefix": null,
       "value": null
     },
@@ -6050,6 +6078,13 @@
         }
       ]
     },
+    "Filterable": {
+      "class": "Identifier",
+      "name": "Filterable",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/select.dart",
+      "prefix": null,
+      "value": null
+    },
     "FixedMaterialTabStripComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -7217,6 +7252,34 @@
       "prefix": null,
       "value": null
     },
+    "LastStateStream": {
+      "class": "Identifier",
+      "name": "LastStateStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
+      "prefix": null,
+      "value": null
+    },
+    "LazyEventEmitter": {
+      "class": "Identifier",
+      "name": "LazyEventEmitter",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_event_emitter.dart",
+      "prefix": null,
+      "value": null
+    },
+    "LazyEventEmitterStreamControllerFactory": {
+      "class": "Identifier",
+      "name": "LazyEventEmitterStreamControllerFactory",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_event_emitter.dart",
+      "prefix": null,
+      "value": null
+    },
+    "LazyStreamController": {
+      "class": "Identifier",
+      "name": "LazyStreamController",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_stream_controller.dart",
+      "prefix": null,
+      "value": null
+    },
     "LifecycleHooks": {
       "class": "Identifier",
       "name": "LifecycleHooks",
@@ -8126,7 +8189,8 @@
       "inputs": {
         "error": "error",
         "hideHeader": "hideHeader",
-        "hideFooter": "hideFooter"
+        "hideFooter": "hideFooter",
+        "shouldShowScrollStrokes": "shouldShowScrollStrokes"
       },
       "inputTypes": {
         "error": " String"
@@ -12767,10 +12831,10 @@
         "shadowCssClass": " String"
       },
       "outputs": {
-        "onAnimationComplete": "animationComplete",
         "onOpen": "open",
-        "onOpened": "opened",
         "onClose": "close",
+        "onAnimationComplete": "animationComplete",
+        "onOpened": "opened",
         "visibleChange": "visibleChange"
       },
       "hostListeners": {},
@@ -16070,6 +16134,504 @@
       "queries": [],
       "viewQueries": []
     },
+    "MaterialTreeComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-tree",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialTreeComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_impl.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "MaterialTreeRoot",
+                "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": true,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "componentRenderer": "componentRenderer",
+        "itemRenderer": "itemRenderer",
+        "options": "options",
+        "selection": "selection",
+        "expandAll": "expandAll"
+      },
+      "inputTypes": {
+        "expandAll": " bool"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "attr.role": "role",
+        "attr.aria-readonly": "showFlatList ? \"true\" : \"false\"",
+        "attr.aria-multiselectable": "showFlatCheck ? \"true\" : \"false\""
+      },
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<template [ngIf]=\"supportsHierarchy\">\n  <material-tree-group\n    *ngFor=\"let group of options.optionGroups\"\n    [expandAll]=\"expandAll\"\n    [group]=\"group\">\n  </material-tree-group>\n</template>\n<template [ngIf]=\"!supportsHierarchy\">\n  <!-- No hierarchy, no selection -->\n  <template [ngIf]=\"showFlatList\">\n    <material-tree-group-flat-list\n      *ngFor=\"let group of options.optionGroups\"\n      [group]=\"group\">\n    </material-tree-group-flat-list>\n  </template>\n\n  <!-- No hierarchy, single selection -->\n  <template [ngIf]=\"showFlatRadio\">\n    <material-tree-group-flat-radio\n      *ngFor=\"let group of options.optionGroups\"\n      [group]=\"group\">\n    </material-tree-group-flat-radio>\n  </template>\n\n  <!-- No hierarchy, multi selection -->\n  <template [ngIf]=\"showFlatCheck\">\n    <material-tree-group-flat-check\n      *ngFor=\"let group of options.optionGroups\"\n      [group]=\"group\">\n    </material-tree-group-flat-check>\n  </template>\n</template>\n",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_impl.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": [],
+        "preserveWhitespace": false
+      },
+      "providers": [],
+      "viewProviders": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialTreeRoot",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "MaterialTreeComponent",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_impl.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "MaterialTreeRoot",
+                      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": true,
+                  "isOptional": true,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": null,
+              "identifier": {
+                "class": "Type",
+                "name": "MaterialTreeGroupComponent",
+                "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.dart",
+                "prefix": null,
+                "isHost": false,
+                "value": null,
+                "diDeps": [
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "MaterialTreeRoot",
+                        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": false,
+                    "isValue": false
+                  },
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "ChangeDetectorRef",
+                        "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": false,
+                    "isValue": false
+                  },
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "DropdownHandle",
+                        "moduleUrl": "asset:angular_components/lib/src/components/mixins/material_dropdown_base.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": true,
+                    "isValue": false
+                  },
+                  {
+                    "token": {
+                      "value": null,
+                      "identifier": {
+                        "class": "Identifier",
+                        "name": "materialTreeLeftPaddingToken",
+                        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.dart",
+                        "prefix": null,
+                        "value": null
+                      },
+                      "identifierIsInstance": false
+                    },
+                    "value": null,
+                    "isAttribute": false,
+                    "isSelf": false,
+                    "isHost": false,
+                    "isSkipSelf": false,
+                    "isOptional": true,
+                    "isValue": false
+                  }
+                ]
+              },
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": false,
+          "first": false,
+          "propertyName": "treeGroupNodes",
+          "read": null
+        }
+      ]
+    },
+    "MaterialTreeDropdownComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-tree-dropdown",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialTreeDropdownComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DomService",
+                "moduleUrl": "asset:angular_components/lib/src/utils/browser/dom_service/dom_service.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "componentRenderer": "componentRenderer",
+        "itemRenderer": "itemRenderer",
+        "options": "options",
+        "selection": "selection",
+        "autoDismiss": "autoDismiss",
+        "expandAll": "expandAll",
+        "placeholder": "placeholder",
+        "visible": "visible"
+      },
+      "inputTypes": {
+        "expandAll": " bool",
+        "placeholder": " String",
+        "visible": " bool"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<div class=\"button\"\n     [class.border]=\"!supportsFiltering\"\n     popupSource\n     #button=\"popupSource\"\n     (focus)=\"visible = true\"\n     (click)=\"visible = !visible\"\n     keyboardOnlyFocusIndicator>\n  <span\n    *ngIf=\"!supportsFiltering\"\n    class=\"button-text\">\n      {{placeholder}}\n  </span>\n  <glyph\n    *ngIf=\"!supportsFiltering\"\n    class=\"icon\"\n    icon=\"arrow_drop_down\">\n  </glyph>\n  <material-tree-filter\n    #materialTreeFilter\n    *ngIf=\"supportsFiltering\"\n    (filter)=\"visible = true\"\n    [filterable]=\"filterableOptions\"\n    [placeholder]=\"placeholder\">\n  </material-tree-filter>\n</div>\n<material-popup\n  enforceSpaceConstraints\n  trackLayoutChanges\n  [matchSourceWidth]=\"false\"\n  [preferredPositions]=\"popupPositions\"\n  [source]=\"button\"\n  [(visible)]=\"visible\">\n  <div header>\n    <ng-content select=\"[header]\"></ng-content>\n  </div>\n  <material-tree\n    *deferredContent\n    [componentRenderer]=\"componentRenderer\"\n    [expandAll]=\"expandAll\"\n    [itemRenderer]=\"itemRenderer\"\n    [options]=\"options\"\n    [selection]=\"selection\">\n  </material-tree>\n</material-popup>\n",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.scss.css"
+        ],
+        "ngContentSelectors": [
+          "[header]"
+        ],
+        "preserveWhitespace": false
+      },
+      "providers": [],
+      "viewProviders": [
+        {
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Identifier",
+              "name": "MaterialTreeRoot",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+              "prefix": null,
+              "value": null
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": null,
+          "useExisting": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "MaterialTreeDropdownComponent",
+              "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_dropdown.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": [
+                {
+                  "token": {
+                    "value": null,
+                    "identifier": {
+                      "class": "Identifier",
+                      "name": "DomService",
+                      "moduleUrl": "asset:angular_components/lib/src/utils/browser/dom_service/dom_service.dart",
+                      "prefix": null,
+                      "value": null
+                    },
+                    "identifierIsInstance": false
+                  },
+                  "value": null,
+                  "isAttribute": false,
+                  "isSelf": false,
+                  "isHost": false,
+                  "isSkipSelf": false,
+                  "isOptional": false,
+                  "isValue": false
+                }
+              ]
+            },
+            "identifierIsInstance": false
+          },
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
+        }
+      ],
+      "queries": [],
+      "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "materialTreeFilter",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "materialTreeFilterComponent",
+          "read": null
+        }
+      ]
+    },
+    "MaterialTreeGroupComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "material-tree-group",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MaterialTreeGroupComponent",
+        "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "MaterialTreeRoot",
+                "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_root.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "DropdownHandle",
+                "moduleUrl": "asset:angular_components/lib/src/components/mixins/material_dropdown_base.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          },
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "materialTreeLeftPaddingToken",
+                "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": true,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "expandAll": "expandAll",
+        "group": "group",
+        "level": "level",
+        "parentSelectionDisplayed": "parentSelectionDisplayed"
+      },
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {
+        "class.material-tree-group": "isMaterialTreeGroup"
+      },
+      "hostAttributes": {
+        "role": "group"
+      },
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<ul>\n  <li *ngFor=\"let option of group\"\n      buttonDecorator\n      keyboardOnlyFocusIndicator\n      (trigger)=\"handleSelectionOrExpansion($event, option)\"\n      [class.selected]=\"isSelected(option)\"\n      [class.selectable]=\"isSelectable(option)\"\n      class=\"material-tree-option\">\n    <div class=\"material-tree-item\"\n         role=\"treeitem\"\n         attr.aria-selected=\"{{isSelected(option)}}\"\n         [style.padding-left]=\"getPadding(option)\">\n      <div\n        *ngIf=\"showCheckbox(option)\"\n        class=\"tree-selection-state\">\n        <material-checkbox\n          *ngIf=\"isMultiSelect\"\n          class=\"tree-selection-state\"\n          [checked]=\"isSelected(option)\"\n          [disabled]=\"isReadOnly\">\n        </material-checkbox>\n        <glyph\n            *ngIf=\"!isMultiSelect && isSelected(option)\"\n            class=\"tree-selection-state\"\n            icon=\"check\">\n        </glyph>\n      </div>\n      <!-- /SELECTION STATE -->\n      <!-- LABEL OR COMPONENT -->\n      <dynamic-component\n        *ngIf=\"useComponentRenderer\"\n        class=\"item component\"\n        [componentType]=\"getComponentType(option)\"\n        [value]=\"option\">\n      </dynamic-component>\n      <span\n        *ngIf=\"!useComponentRenderer\"\n        class=\"item text\">\n        {{getOptionAsText(option)}}\n      </span>\n      <!-- /LABEL OR COMPONENT -->\n      <!-- EXPANSION STATE -->\n      <glyph\n        *ngIf=\"hasChildren(option)\"\n        buttonDecorator\n        class=\"tree-expansion-state\"\n        [class.expanded]=\"isExpanded(option)\"\n        [icon]=\"isExpanded(option) ? 'expand_less' : 'expand_more'\"\n        (trigger)=\"handleExpansion($event, option)\">\n      </glyph>\n    </div>\n    <!-- /EXPANSION STATE -->\n    <!-- SUB ITEMS -->\n    <material-tree-group\n            *ngFor=\"let subGroup of getChildGroups(option)\"\n            class=\"child-tree\"\n            [expandAll]=\"expandAll\"\n            [group]=\"subGroup\"\n            [level]=\"level + 1\"\n            [parentHasCheckbox]=\"showCheckbox(option)\">\n    </material-tree-group>\n    <!-- /SUB ITEMS -->\n  </li>\n</ul>\n\n",
+        "templateUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.scss.css"
+        ],
+        "ngContentSelectors": [],
+        "preserveWhitespace": false
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
     "MaterialYesNoButtonsComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -18146,6 +18708,13 @@
       "prefix": null,
       "value": null
     },
+    "OnUpdateCallback": {
+      "class": "Identifier",
+      "name": "OnUpdateCallback",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_update_scheduler.dart",
+      "prefix": null,
+      "value": null
+    },
     "OpaqueToken": {
       "class": "Identifier",
       "name": "OpaqueToken",
@@ -18563,6 +19132,13 @@
       "class": "Identifier",
       "name": "PLATFORM_PIPES",
       "moduleUrl": "asset:angular2/lib/src/core/platform_directives_and_pipes.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Parent": {
+      "class": "Identifier",
+      "name": "Parent",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/select.dart",
       "prefix": null,
       "value": null
     },
@@ -19263,6 +19839,20 @@
       "queries": [],
       "viewQueries": []
     },
+    "Predicate": {
+      "class": "Identifier",
+      "name": "Predicate",
+      "moduleUrl": "asset:angular_components/lib/src/model/selection/select.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PriorityStreamIterator": {
+      "class": "Identifier",
+      "name": "PriorityStreamIterator",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
+      "prefix": null,
+      "value": null
+    },
     "ProjectedFocus": {
       "class": "Identifier",
       "name": "ProjectedFocus",
@@ -19950,6 +20540,13 @@
       "prefix": null,
       "value": null
     },
+    "RunInZoneFn": {
+      "class": "Identifier",
+      "name": "RunInZoneFn",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/zoned_async.dart",
+      "prefix": null,
+      "value": null
+    },
     "SELECT_VALUE_ACCESSOR": {
       "class": "Identifier",
       "name": "SELECT_VALUE_ACCESSOR",
@@ -20391,7 +20988,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-ripple *ngIf=\"selectable\"></material-ripple>\n<h3>{{label}}<ng-content select=\"name\"></ng-content></h3>\n<h2>{{value}}<ng-content select=\"value\"></ng-content></h2>\n<span *ngIf=\"suggestionBefore != null\" class=\"suggestion before\">{{suggestionBefore}}</span>\n<span *ngIf=\"description != null\" class=\"description\">\n  <glyph *ngIf=\"changeGlyph && description != '' && !isChangeNeutral\"\n         class=\"change-glyph\"\n         [icon]=\"changeGlyphIcon\"\n         size=\"small\">\n  </glyph>\n  {{description}}</span>\n<span *ngIf=\"suggestionAfter != null\" class=\"suggestion after\">{{suggestionAfter}}</span>\n<ng-content></ng-content>\n",
+        "template": "<!--\n Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file\n for details. All rights reserved. Use of this source code is governed by a\n BSD-style license that can be found in the LICENSE file.\n-->\n<material-ripple *ngIf=\"selectable\"></material-ripple>\n<h3>{{label}}<ng-content select=\"name\"></ng-content></h3>\n<h2>{{value}}<ng-content select=\"value\"></ng-content></h2>\n<span *ngIf=\"suggestionBefore != null\" class=\"suggestion before\">{{suggestionBefore}}</span>\n<span *ngIf=\"description != null\" class=\"description\">\n  <glyph *ngIf=\"changeGlyph && description != '' && !isChangeNeutral\"\n         class=\"change-glyph\"\n         [icon]=\"changeGlyphIcon\"\n         size=\"small\">\n  </glyph>\n  {{description}}<ng-content select=\"description\"></ng-content></span>\n<span *ngIf=\"suggestionAfter != null\" class=\"suggestion after\">{{suggestionAfter}}</span>\n<ng-content></ng-content>\n",
         "templateUrl": "asset:angular_components/lib/src/components/scorecard/scorecard.html",
         "styles": [],
         "styleUrls": [
@@ -20400,6 +20997,7 @@
         "ngContentSelectors": [
           "name",
           "value",
+          "description",
           "*"
         ]
       },
@@ -20610,6 +21208,20 @@
       "prefix": null,
       "value": null
     },
+    "SimpleStream": {
+      "class": "Identifier",
+      "name": "SimpleStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SimpleStreamSubscription": {
+      "class": "Identifier",
+      "name": "SimpleStreamSubscription",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
+      "prefix": null,
+      "value": null
+    },
     "SkipAngularInitCheck": {
       "class": "Identifier",
       "name": "SkipAngularInitCheck",
@@ -20638,6 +21250,27 @@
       "name": "slice",
       "pure": false
     },
+    "StreamCallContextFunc": {
+      "class": "Identifier",
+      "name": "StreamCallContextFunc",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
+      "prefix": null,
+      "value": null
+    },
+    "StreamCallbackFunc": {
+      "class": "Identifier",
+      "name": "StreamCallbackFunc",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
+      "prefix": null,
+      "value": null
+    },
+    "StreamControllerFactory": {
+      "class": "Identifier",
+      "name": "StreamControllerFactory",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/lazy_stream_controller.dart",
+      "prefix": null,
+      "value": null
+    },
     "StringSelectionOptions": {
       "class": "Identifier",
       "name": "StringSelectionOptions",
@@ -20649,6 +21282,13 @@
       "class": "Identifier",
       "name": "StringSuggestionFilter",
       "moduleUrl": "asset:angular_components/lib/src/model/selection/string_selection_options.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SubscriptionChangeListener": {
+      "class": "Identifier",
+      "name": "SubscriptionChangeListener",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/simple_stream.dart",
       "prefix": null,
       "value": null
     },
@@ -21157,6 +21797,20 @@
       "prefix": null,
       "value": null
     },
+    "ZonedFuture": {
+      "class": "Identifier",
+      "name": "ZonedFuture",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/zoned_async.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ZonedStream": {
+      "class": "Identifier",
+      "name": "ZonedStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/zoned_async.dart",
+      "prefix": null,
+      "value": null
+    },
     "_ASSET_SCHEME": {
       "class": "Identifier",
       "name": "_ASSET_SCHEME",
@@ -21304,6 +21958,13 @@
       "prefix": null,
       "value": null
     },
+    "_OrderedComparator": {
+      "class": "Identifier",
+      "name": "_OrderedComparator",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
+      "prefix": null,
+      "value": null
+    },
     "_PercentSizeDefinition": {
       "class": "Identifier",
       "name": "_PercentSizeDefinition",
@@ -21374,6 +22035,13 @@
       "prefix": null,
       "value": null
     },
+    "_StablePriorityQueue": {
+      "class": "Identifier",
+      "name": "_StablePriorityQueue",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
+      "prefix": null,
+      "value": null
+    },
     "_StreamSelectionOptions": {
       "class": "Identifier",
       "name": "_StreamSelectionOptions",
@@ -21392,6 +22060,13 @@
       "class": "Identifier",
       "name": "_WHEN_DEFAULT",
       "moduleUrl": "asset:angular2/lib/src/common/directives/ng_switch.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_ZoneRunner": {
+      "class": "Identifier",
+      "name": "_ZoneRunner",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/zoned_async.dart",
       "prefix": null,
       "value": null
     },
@@ -21427,6 +22102,13 @@
       "class": "Identifier",
       "name": "_createRipple",
       "moduleUrl": "asset:angular_components/lib/src/components/material_ripple/material_ripple.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_defaultComparator": {
+      "class": "Identifier",
+      "name": "_defaultComparator",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/priority_stream_iterator.dart",
       "prefix": null,
       "value": null
     },
@@ -21675,6 +22357,27 @@
       "prefix": null,
       "value": null
     },
+    "asyncFirst": {
+      "class": "Identifier",
+      "name": "asyncFirst",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_where.dart",
+      "prefix": null,
+      "value": null
+    },
+    "asyncSingle": {
+      "class": "Identifier",
+      "name": "asyncSingle",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_where.dart",
+      "prefix": null,
+      "value": null
+    },
+    "asyncWhere": {
+      "class": "Identifier",
+      "name": "asyncWhere",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/async_where.dart",
+      "prefix": null,
+      "value": null
+    },
     "checkIntegerErrorKey": {
       "class": "Identifier",
       "name": "checkIntegerErrorKey",
@@ -21902,6 +22605,13 @@
       "class": "Identifier",
       "name": "darkThemeToken",
       "moduleUrl": "asset:angular_components/lib/src/components/theme/module.dart",
+      "prefix": null,
+      "value": null
+    },
+    "debounceStream": {
+      "class": "Identifier",
+      "name": "debounceStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/debounce_stream.dart",
       "prefix": null,
       "value": null
     },
@@ -31761,6 +32471,13 @@
         }
       ]
     },
+    "materialTreeLeftPaddingToken": {
+      "class": "Identifier",
+      "name": "materialTreeLeftPaddingToken",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/group/material_tree_group.dart",
+      "prefix": null,
+      "value": null
+    },
     "mergeResolvedReflectiveProviders": {
       "class": "Identifier",
       "name": "mergeResolvedReflectiveProviders",
@@ -37942,6 +38659,13 @@
       "class": "Identifier",
       "name": "setUpControlGroup",
       "moduleUrl": "asset:angular2/lib/src/common/forms/directives/shared.dart",
+      "prefix": null,
+      "value": null
+    },
+    "throttleStream": {
+      "class": "Identifier",
+      "name": "throttleStream",
+      "moduleUrl": "asset:angular_components/lib/src/utils/async/src/throttle_stream.dart",
       "prefix": null,
       "value": null
     },

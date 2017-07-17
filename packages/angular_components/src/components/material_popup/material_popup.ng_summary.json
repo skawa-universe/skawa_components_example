@@ -7,6 +7,10 @@
         "5": false
       },
       {
+        "1": "dart:html",
+        "5": false
+      },
+      {
         "1": "dart:math",
         "5": false
       },
@@ -38,10 +42,6 @@
       },
       {
         "1": "../../utils/angular/properties/properties.dart",
-        "5": false
-      },
-      {
-        "1": "../../utils/async/async.dart",
         "5": false
       },
       {
@@ -355,10 +355,10 @@
         "shadowCssClass": " String"
       },
       "outputs": {
-        "onAnimationComplete": "animationComplete",
         "onOpen": "open",
-        "onOpened": "opened",
         "onClose": "close",
+        "onAnimationComplete": "animationComplete",
+        "onOpened": "opened",
         "visibleChange": "visibleChange"
       },
       "hostListeners": {},

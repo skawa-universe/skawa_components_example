@@ -7,6 +7,10 @@
         "5": false
       },
       {
+        "1": "dart:html",
+        "5": false
+      },
+      {
         "1": "dart:math",
         "5": false
       },
@@ -38,10 +42,6 @@
       },
       {
         "1": "../../utils/angular/properties/properties.dart",
-        "5": false
-      },
-      {
-        "1": "../../utils/async/async.dart",
         "5": false
       },
       {
@@ -158,20 +158,16 @@
         "4": "i5"
       },
       {
-        "1": "../../utils/async/async.template.dart",
+        "1": "../../utils/browser/dom_service/dom_service.template.dart",
         "4": "i6"
       },
       {
-        "1": "../../utils/browser/dom_service/dom_service.template.dart",
+        "1": "../content/deferred_content_aware.template.dart",
         "4": "i7"
       },
       {
-        "1": "../content/deferred_content_aware.template.dart",
-        "4": "i8"
-      },
-      {
         "1": "../mixins/material_dropdown_base.template.dart",
-        "4": "i9"
+        "4": "i8"
       }
     ]
   },
@@ -482,10 +478,10 @@
         "shadowCssClass": " String"
       },
       "outputs": {
-        "onAnimationComplete": "animationComplete",
         "onOpen": "open",
-        "onOpened": "opened",
         "onClose": "close",
+        "onAnimationComplete": "animationComplete",
+        "onOpened": "opened",
         "visibleChange": "visibleChange"
       },
       "hostListeners": {},

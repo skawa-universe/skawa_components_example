@@ -16,6 +16,9 @@
       },
       {
         "1": "src/components/infobar/infobar.dart"
+      },
+      {
+        "1": "src/components/ckeditor/ckeditor.dart"
       }
     ],
     "6": "skawa_components.dart",
@@ -39,6 +42,10 @@
       {
         "1": "src/components/infobar/infobar.template.dart",
         "4": "i4"
+      },
+      {
+        "1": "src/components/ckeditor/ckeditor.template.dart",
+        "4": "i5"
       }
     ]
   },
@@ -47,6 +54,13 @@
       "class": "Identifier",
       "name": "DataTableAccessor",
       "moduleUrl": "asset:skawa_components/lib/src/components/data_table/data_table_column.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ExtraPlugin": {
+      "class": "Identifier",
+      "name": "ExtraPlugin",
+      "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
       "prefix": null,
       "value": null
     },
@@ -525,6 +539,56 @@
       "queries": [],
       "viewQueries": []
     },
+    "SkawaCkeditorComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-ckeditor",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCkeditorComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "editorName": "editorName",
+        "extraPlugins": "extraPlugins",
+        "content": "content",
+        "configUrl": "configUrl"
+      },
+      "inputTypes": {
+        "editorName": " String",
+        "extraPlugins": " List",
+        "content": " String",
+        "configUrl": " String"
+      },
+      "outputs": {
+        "onChange": "change"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6,
+        1
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<textarea name=\"{{editorName}}\" id=\"{{editorName}}\" value=\"{{content}}\">\n</textarea>\n",
+        "templateUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
     "SkawaDataTableColComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -724,6 +788,13 @@
       },
       "name": "unskippedInFooter",
       "pure": true
+    },
+    "_CKEditor": {
+      "class": "Identifier",
+      "name": "_CKEditor",
+      "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
+      "prefix": null,
+      "value": null
     },
     "skawaCardDirectives": {
       "class": "Identifier",

@@ -1,0 +1,111 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "dart:js_util",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "ckeditor_interop.dart",
+        "4": "js_ck",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "SkawaCkeditorComponent",
+        "6": [
+          "AfterViewInit",
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "ckeditor.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "ckeditor_interop.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "ExtraPlugin": {
+      "class": "Identifier",
+      "name": "ExtraPlugin",
+      "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SkawaCkeditorComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "skawa-ckeditor",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "SkawaCkeditorComponent",
+        "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 4,
+      "inputs": {
+        "editorName": "editorName",
+        "extraPlugins": "extraPlugins",
+        "content": "content",
+        "configUrl": "configUrl"
+      },
+      "inputTypes": {
+        "editorName": " String",
+        "extraPlugins": " List",
+        "content": " String",
+        "configUrl": " String"
+      },
+      "outputs": {
+        "onChange": "change"
+      },
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        6,
+        1
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<textarea name=\"{{editorName}}\" id=\"{{editorName}}\" value=\"{{content}}\">\n</textarea>\n",
+        "templateUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "_CKEditor": {
+      "class": "Identifier",
+      "name": "_CKEditor",
+      "moduleUrl": "asset:skawa_components/lib/src/components/ckeditor/ckeditor.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

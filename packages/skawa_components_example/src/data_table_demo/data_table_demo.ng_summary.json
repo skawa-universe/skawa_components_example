@@ -7,10 +7,6 @@
         "5": false
       },
       {
-        "1": "package:angular2/platform/browser_static.dart",
-        "5": false
-      },
-      {
         "1": "package:skawa_components/src/components/data_table/data_table.dart",
         "5": false
       },

@@ -7,10 +7,6 @@
         "5": false
       },
       {
-        "1": "package:angular2/platform/browser_static.dart",
-        "5": false
-      },
-      {
         "1": "package:skawa_components/src/components/data_table/data_table.dart",
         "5": false
       },
@@ -43,20 +39,16 @@
         "4": "i0"
       },
       {
-        "1": "package:angular2/platform/browser_static.template.dart",
+        "1": "package:skawa_components/src/components/data_table/data_table.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:skawa_components/src/components/data_table/data_table.template.dart",
+        "1": "package:skawa_components/src/components/data_table/data_table_column.template.dart",
         "4": "i2"
       },
       {
-        "1": "package:skawa_components/src/components/data_table/data_table_column.template.dart",
-        "4": "i3"
-      },
-      {
         "1": "package:skawa_components/src/components/data_table/row_data.template.dart",
-        "4": "i4"
+        "4": "i3"
       }
     ]
   },

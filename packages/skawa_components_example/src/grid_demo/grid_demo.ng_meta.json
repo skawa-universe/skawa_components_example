@@ -1,0 +1,145 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/src/common/directives/ng_if.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components/src/components/card/card.dart",
+        "5": false
+      },
+      {
+        "1": "package:skawa_components/src/components/grid/grid_component.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/angular_components.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "GridDemoComponent",
+        "5": [
+          {
+            "1": "ChangeDetectorRef",
+            "4": "ref"
+          }
+        ],
+        "6": [
+          "OnInit"
+        ],
+        "7": [
+          {
+            "2": "GridComponent"
+          },
+          {
+            "2": "GridTileDirective"
+          },
+          {
+            "2": "skawaCardDirectives"
+          },
+          {
+            "2": "MaterialButtonComponent"
+          },
+          {
+            "2": "GlyphComponent"
+          },
+          {
+            "2": "NgIf"
+          }
+        ]
+      }
+    ],
+    "6": "grid_demo.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:angular2/src/common/directives/ng_if.template.dart",
+        "4": "i1"
+      },
+      {
+        "1": "package:skawa_components/src/components/card/card.template.dart",
+        "4": "i2"
+      },
+      {
+        "1": "package:skawa_components/src/components/grid/grid_component.template.dart",
+        "4": "i3"
+      },
+      {
+        "1": "package:angular_components/angular_components.template.dart",
+        "4": "i4"
+      }
+    ]
+  },
+  "type": {
+    "GridDemoComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "grid-demo",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "GridDemoComponent",
+        "moduleUrl": "asset:skawa_components_example/lib/src/grid_demo/grid_demo.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ChangeDetectorRef",
+                "moduleUrl": "asset:angular2/lib/src/core/change_detection/change_detector_ref.dart",
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        0
+      ],
+      "template": {
+        "encapsulation": 2,
+        "template": "<h3>Grid with basic GridTile</h3>\n\n<skawa-grid>\n    <div gridTile>Cat</div>\n    <div gridTile>Dog</div>\n    <div gridTile>Wolf</div>\n    <div gridTile>Lion</div>\n    <div gridTile>Tiger</div>\n</skawa-grid>\n\n<h3>Grid with card as GridTile</h3>\n\n<skawa-grid>\n    <skawa-card gridTile>\n        <skawa-card-header>\n            <skawa-header-image>\n                <i class=\"material-icons\" style=\"font-size: 40px;\">account_circle</i>\n            </skawa-header-image>\n            <skawa-header-title>Weee</skawa-header-title>\n        </skawa-card-header>\n    </skawa-card>\n\n    <skawa-card gridTile>\n        <skawa-card-header>\n            <skawa-header-image>\n                <i class=\"material-icons\" style=\"font-size: 40px;\">account_circle</i>\n            </skawa-header-image>\n            <skawa-header-title>Weee</skawa-header-title>\n            <skawa-header-subhead>Subhead</skawa-header-subhead>\n        </skawa-card-header>\n    </skawa-card>\n\n    <skawa-card gridTile>\n        <skawa-card-content>\n            In this demo, there is only content and actions below it.\n        </skawa-card-content>\n        <skawa-card-actions>\n            <material-button class=\"color--primary-action\">\n                Primary action\n            </material-button>\n        </skawa-card-actions>\n    </skawa-card>\n\n    <skawa-card gridTile>\n        <skawa-card-header statusColor=\"rgb(0,127,0)\">\n            <skawa-header-title>Some </skawa-header-title>\n            <skawa-header-subhead>subhead</skawa-header-subhead>\n        </skawa-card-header>\n        <skawa-card-content>\n            <p>\n                Card components use `transclusion` a lot. Expect to see &lt;ng-content>&lt;/ng-content> pieces\n                a lot.\n            </p>\n            <p>\n                There a million different ways a card can look like. Expect to customize it somewhat.\n            </p>\n        </skawa-card-content>\n    </skawa-card>\n\n    <skawa-card gridTile>\n        <skawa-card-header statusColor=\"rgb(127,127,127)\">\n            <skawa-header-title>This could be fun!</skawa-header-title>\n            <skawa-card-actions>\n                <material-button icon align-right>\n                    <glyph icon=\"more_vert\"></glyph>\n                </material-button>\n            </skawa-card-actions>\n        </skawa-card-header>\n        <skawa-card-actions>\n            <material-button class=\"color--primary-action\">\n                Primary action\n            </material-button>\n            <span class=\"spacer\"></span>\n            <material-button icon (trigger)=\"secondaryContent.toggle()\">\n                <glyph icon=\"expand_more\" *ngIf=\"secondaryContent.isCollapsed\"></glyph>\n                <glyph icon=\"expand_less\" *ngIf=\"!secondaryContent.isCollapsed\"></glyph>\n            </material-button>\n        </skawa-card-actions>\n        <skawa-card-content #secondaryContent collapsed>\n            Secondary content\n        </skawa-card-content>\n    </skawa-card>\n\n</skawa-grid>\n",
+        "templateUrl": "asset:skawa_components_example/lib/src/grid_demo/grid_demo.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

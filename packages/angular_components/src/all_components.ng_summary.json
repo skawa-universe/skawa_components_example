@@ -189,6 +189,9 @@
         "1": "components/material_tooltip/module.dart"
       },
       {
+        "1": "components/material_tree/material_tree.dart"
+      },
+      {
         "1": "components/material_yes_no_buttons/material_yes_no_buttons.dart"
       },
       {
@@ -240,6 +243,9 @@
         "1": "laminate/popup/popup.dart"
       },
       {
+        "1": "model/selection/select.dart"
+      },
+      {
         "1": "model/selection/selection_model.dart"
       },
       {
@@ -256,6 +262,9 @@
       },
       {
         "1": "model/ui/has_renderer.dart"
+      },
+      {
+        "1": "utils/async/async.dart"
       }
     ],
     "6": "all_components.dart"

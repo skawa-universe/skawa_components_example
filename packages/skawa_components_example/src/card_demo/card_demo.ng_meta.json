@@ -7,6 +7,10 @@
         "5": false
       },
       {
+        "1": "package:angular2/src/common/directives/ng_if.dart",
+        "5": false
+      },
+      {
         "1": "package:skawa_components/src/components/card/card.dart",
         "5": false
       },
@@ -36,6 +40,9 @@
           },
           {
             "2": "GlyphComponent"
+          },
+          {
+            "2": "NgIf"
           }
         ]
       }
@@ -47,12 +54,16 @@
         "4": "i0"
       },
       {
-        "1": "package:skawa_components/src/components/card/card.template.dart",
+        "1": "package:angular2/src/common/directives/ng_if.template.dart",
         "4": "i1"
       },
       {
-        "1": "package:angular_components/angular_components.template.dart",
+        "1": "package:skawa_components/src/components/card/card.template.dart",
         "4": "i2"
+      },
+      {
+        "1": "package:angular_components/angular_components.template.dart",
+        "4": "i3"
       }
     ]
   },

@@ -15,10 +15,6 @@
         "5": false
       },
       {
-        "1": "../../utils/async/async.dart",
-        "5": false
-      },
-      {
         "1": "../content/deferred_content_aware.dart",
         "5": false
       }
@@ -34,12 +30,8 @@
         "4": "i1"
       },
       {
-        "1": "../../utils/async/async.template.dart",
-        "4": "i2"
-      },
-      {
         "1": "../content/deferred_content_aware.template.dart",
-        "4": "i3"
+        "4": "i2"
       }
     ]
   },

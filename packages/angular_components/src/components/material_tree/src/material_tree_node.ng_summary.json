@@ -1,0 +1,75 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "dart:collection",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/select.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/selection_model.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/selection/selection_options.dart",
+        "5": false
+      },
+      {
+        "1": "../../../model/ui/has_renderer.dart",
+        "5": false
+      },
+      {
+        "1": "../../../utils/async/async.dart",
+        "5": false
+      },
+      {
+        "1": "./material_tree_root.dart",
+        "5": false
+      }
+    ],
+    "6": "material_tree_node.dart"
+  },
+  "type": {
+    "IsExpandable": {
+      "class": "Identifier",
+      "name": "IsExpandable",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_node.dart",
+      "prefix": null,
+      "value": null
+    },
+    "MaterialTreeNode": {
+      "class": "Identifier",
+      "name": "MaterialTreeNode",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_node.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_AlwaysSelectable": {
+      "class": "Identifier",
+      "name": "_AlwaysSelectable",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_node.dart",
+      "prefix": null,
+      "value": null
+    },
+    "_NotAParent": {
+      "class": "Identifier",
+      "name": "_NotAParent",
+      "moduleUrl": "asset:angular_components/lib/src/components/material_tree/src/material_tree_node.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
