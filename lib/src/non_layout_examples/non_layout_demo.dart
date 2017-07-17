@@ -4,6 +4,7 @@ import 'package:angular2/router.dart';
 import 'package:skawa_components_example/src/app_component.dart';
 import 'package:skawa_components_example/src/card_demo/card_demo.dart';
 import 'package:skawa_components_example/src/data_table_demo/data_table_demo.dart';
+import 'package:skawa_components_example/src/grid_demo/grid_demo.dart';
 import 'package:skawa_components_example/src/infobar_demo/infobar_demo.dart';
 
 @Component(
@@ -14,6 +15,7 @@ import 'package:skawa_components_example/src/infobar_demo/infobar_demo.dart';
     CardDemoComponent,
     InfobarDemoApp,
     DataTableDemoApp,
+    GridDemoComponent,
     ROUTER_DIRECTIVES,
     NgFor,
   ],
