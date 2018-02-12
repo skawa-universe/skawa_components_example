@@ -10,10 +10,7 @@ import 'package:skawa_components/src/components/data_table/row_data.dart';
 @Component(
   selector: 'skawa-data-table-demo',
   templateUrl: 'data_table_demo.html',
-  directives: const [
-    SkawaDataTableComponent,
-    SkawaDataTableColComponent,
-  ],
+  directives: const [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
 )
 class DataTableDemoApp {
   List<RowData> rowData = <SampleRowData>[
@@ -28,9 +25,9 @@ class DataTableDemoApp {
   String opinionAccessor(SampleRowData row) => row.opinion;
 
   List<RowData> selectableRowData = <SampleNumericData>[
-    new SampleNumericData('1. class', 15, 12, false),
     new SampleNumericData('2. class', 11, 18, false),
     new SampleNumericData('3. class', 13, 13, false),
+    new SampleNumericData('1. class', 15, 12, false),
     new SampleNumericData('4. class', 20, 13, false),
   ];
 
@@ -43,14 +40,35 @@ class DataTableDemoApp {
   String peopleAccessor(SampleNumericData row) => (row.female + row.male).toString();
 
   String aggregate(DataTableAccessor<RowData> accessor) {
-    Iterable mapped =
-        selectableRowData.where((row) => row.checked).map(accessor);
+    Iterable mapped = selectableRowData.where((row) => row.checked).map(accessor);
     return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
   }
 
   String _aggregateReducer(String a, String b) {
     if (a == null || b == null) return a ?? b;
     return (int.parse(a) + int.parse(b)).toString();
+  }
+
+  void sort(SkawaDataTableColComponent column) {
+    if (!column.sortModel.isSorted) {
+      // Apply default sorting when no sort is specified
+      selectableRowData.sort((a, b) => (a as SampleNumericData).category.compareTo((b as SampleNumericData).category));
+    } else {
+      selectableRowData.sort((a, b) {
+        if (column.header == 'Male') {
+          return column.sortModel.isAscending
+              ? (a as SampleNumericData).male - (b as SampleNumericData).male
+              : (b as SampleNumericData).male - (a as SampleNumericData).male;
+        } else if (column.header == 'Female') {
+          return column.sortModel.isAscending
+              ? (a as SampleNumericData).female - (b as SampleNumericData).female
+              : (b as SampleNumericData).female - (a as SampleNumericData).female;
+        } else if (column.header == 'All') {
+          return ((b as SampleNumericData).male + (b as SampleNumericData).female) -
+              ((a as SampleNumericData).male + (a as SampleNumericData).female);
+        }
+      });
+    }
   }
 
   List<RowData> wrRowData = <WrRowData>[
@@ -80,8 +98,7 @@ class DataTableDemoApp {
 
   String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
 
-  String firstDownPctAccessor(WrRowData row) =>
-      (row.firstDowns / row.rec * 100).toStringAsFixed(2);
+  String firstDownPctAccessor(WrRowData row) => (row.firstDowns / row.rec * 100).toStringAsFixed(2);
 }
 
 class SampleRowData implements RowData {
@@ -101,8 +118,7 @@ class SampleNumericData extends RowData {
   final int male;
   final int female;
 
-  SampleNumericData(this.category, this.male, this.female, bool selected)
-      : super(selected);
+  SampleNumericData(this.category, this.male, this.female, bool selected) : super(selected);
 }
 
 class WrRowData extends RowData {
@@ -112,7 +128,5 @@ class WrRowData extends RowData {
   final int yards;
   final int firstDowns;
 
-  WrRowData(
-      this.name, this.team, this.rec, this.yards, this.firstDowns, bool checked)
-      : super(checked);
+  WrRowData(this.name, this.team, this.rec, this.yards, this.firstDowns, bool checked) : super(checked);
 }
