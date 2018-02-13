@@ -7,7 +7,7 @@ dependencies:
   skawa_components:
     git:
       url: https://github.com/skawa-universe/skawa_components.git
-      ref: 0.0.5
+      ref: "fa4a69b"
   browser:
 dev_dependencies:
   sass_builder: ^0.1.0

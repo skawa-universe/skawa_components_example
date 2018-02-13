@@ -5,16 +5,18 @@
     <skawa-data-table-col [accessor]="opinionAccessor" header="My strong opinion"></skawa-data-table-col>
 </skawa-data-table>
 
-<h3>Selectable datatable</h3>
+<h3>Selectable and sortable datatable</h3>
 
-<skawa-data-table [data]="selectableRowData" [selectable]="true">
+<p class="sub-options">Sort can be attached to desired columns and can be configured for allowed sort directions.</p>
+
+<skawa-data-table [data]="selectableRowData" [selectable]="true" (sort)="sort($event)">
     <skawa-data-table-col [accessor]="categoryAccessor" header="Class" footer="Total:" class="text-column"
                           [skipFooter]="false"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="maleAccessor" header="Male" [footer]="aggregate(maleAccessor)"
+    <skawa-data-table-col [accessor]="maleAccessor" sortable initialSort="asc" header="Male" [footer]="aggregate(maleAccessor)"
                           [skipFooter]="false"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="femaleAccessor" header="Female" [footer]="aggregate(femaleAccessor)"
+    <skawa-data-table-col [accessor]="femaleAccessor" sortable="desc, asc" header="Female" [footer]="aggregate(femaleAccessor)"
                           [skipFooter]="false"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="peopleAccessor" header="All" [footer]="aggregate(peopleAccessor)"
+    <skawa-data-table-col [accessor]="peopleAccessor" sortable="desc" header="All" [footer]="aggregate(peopleAccessor)"
                           [skipFooter]="false"></skawa-data-table-col>
 </skawa-data-table>
 
