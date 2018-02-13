@@ -11,23 +11,19 @@ import 'package:skawa_components/src/components/card/card.dart';
 import 'package:angular_components/src/components/material_button/material_button.dart';
 import 'package:skawa_components_example/src/app_component.dart';
 
-@Component(
-    selector: 'sidebar-demo',
-    templateUrl: 'sidebar_demo.html',
-    directives: const [
-      SkawaSidebarComponent,
-      SkawaSidebarItemComponent,
-      SkawaNavItemComponent,
-      SkawaAppbarComponent,
-      skawaCardDirectives,
-      MaterialButtonComponent,
-      GlyphComponent,
-      ROUTER_DIRECTIVES,
-      NgFor,
-    ],
-    styleUrls: const [
-      'sidebar_demo.css'
-    ])
+@Component(selector: 'sidebar-demo', templateUrl: 'sidebar_demo.html', directives: const [
+  SkawaSidebarComponent,
+  SkawaSidebarItemComponent,
+  SkawaNavItemComponent,
+  SkawaAppbarComponent,
+  skawaCardDirectives,
+  MaterialButtonComponent,
+  GlyphComponent,
+  ROUTER_DIRECTIVES,
+  NgFor,
+], styleUrls: const [
+  'sidebar_demo.css'
+])
 class SidebarDemoComponent {
   void navigate(String url) {
     window.open(url, '_blank');
