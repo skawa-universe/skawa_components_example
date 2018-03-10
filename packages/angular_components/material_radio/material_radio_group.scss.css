@@ -1,8 +1,0 @@
-:host {
-  outline: none;
-  align-items: flex-start;
-}
-
-:host(.no-left-margin) ::ng-deep material-radio {
-  margin-left: -2px;
-}

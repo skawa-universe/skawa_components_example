@@ -1,9 +1,0 @@
-:host {
-  display: block;
-}
-
-[focusContentWrapper] {
-  height: inherit;
-  max-height: inherit;
-  min-height: inherit;
-}
