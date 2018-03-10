@@ -1,0 +1,17 @@
+// Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+/// Changes the size of an icon.
+///
+/// Only use this mixin if your UI calls for an icon size which is not one of
+/// the presets: 12px, 13px, 16px, 18px, 20px, or 24px.
+///
+/// The font-icon CSS has a default font size of 24px, therefore, one must be
+/// more specific to override the default.
+/// Note: The should be scoped to a shimmed selector outside.
+@mixin material-icon-size($size) {
+  ::ng-deep .material-icon-i {
+    font-size: $size;
+  }
+}

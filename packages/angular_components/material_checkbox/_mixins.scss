@@ -1,0 +1,31 @@
+// Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+/// Changes the `$primary-color` of <material-checkbox>s under the $selector
+/// element.
+///
+/// Example use: @include material-checkbox-theme(
+///     $primary-color: $mat-teal-500,
+///     $selector: '.custom-area');
+@mixin material-checkbox-theme($primary-color, $selector: '') {
+  // Use component's selector with the themeable class to increase theme
+  // selector's priority.
+  ::ng-deep #{$selector} material-checkbox.themeable .icon-container .icon.filled {
+    color: $primary-color;
+  }
+
+  ::ng-deep #{$selector} material-checkbox .icon-container .ripple.filled {
+    color: $primary-color;
+  }
+}
+
+
+/// Removes left margin of <material-checkbox>s
+///
+/// Example use: @include checkbox-no-left-margin
+@mixin checkbox-no-left-margin {
+  ::ng-deep {
+    margin-left: -3px;
+  }
+}

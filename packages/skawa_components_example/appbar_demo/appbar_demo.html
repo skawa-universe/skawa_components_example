@@ -1,0 +1,61 @@
+<div class="content-area">
+    <skawa-appbar>
+        <!--additional things can come here, eg. buttons-->
+        <span>Appbar Demo page</span>
+        <span class="appbar-spacer"></span>
+        <material-button icon>
+            <material-icon icon="info_outline"></material-icon>
+        </material-button>
+        <material-button icon>
+            <material-icon icon="account_circle"></material-icon>
+        </material-button>
+    </skawa-appbar>
+    <main>
+        <skawa-card>
+            <skawa-card-header>
+                <skawa-header-image>
+                    <i class="material-icons" style="font-size: 40px;">info_outline</i>
+                </skawa-header-image>
+                <skawa-header-title>Appbar example</skawa-header-title>
+                <skawa-header-subhead>A simple appbar</skawa-header-subhead>
+            </skawa-card-header>
+            <skawa-card-content>
+                This appbar was designed to work well with `package:angular_components`. Uses the same ripple
+                animations,
+                extends certain base classes and is fairly easy to use.
+            </skawa-card-content>
+            <skawa-card-actions>
+                <span class="spacer"></span>
+                <material-button class="primary-color"
+                                 (trigger)="navigate('https://material.io/guidelines/layout/structure.html#structure-app-bar')">
+                    See more information
+                </material-button>
+            </skawa-card-actions>
+        </skawa-card>
+        <skawa-card>
+            <skawa-card-header>
+                <skawa-header-image>
+                    <i class="material-icons" style="font-size: 40px;">code</i>
+                </skawa-header-image>
+                <skawa-header-title>
+                    <a href="https://github.com/skawa-universe/skawa_components/tree/master/lib/src/components/appbar" target="_blank">Component Source</a></skawa-header-title>
+            </skawa-card-header>
+        </skawa-card>
+        <skawa-card>
+            <skawa-card-header>
+                <skawa-header-image>
+                    <i class="material-icons" style="font-size: 40px;">code</i>
+                </skawa-header-image>
+                <skawa-header-title>
+                    <a href="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/src/appbar_demo" target="_blank">Example Source</a></skawa-header-title>
+            </skawa-card-header>
+        </skawa-card>
+        <skawa-card *ngFor="let route of Routes">
+            <skawa-card-header>
+                <skawa-card-actions>
+                    <span class="spacer"><nav><a [routerLink]="[route.name]">{{route.name}}</a></nav></span>
+                </skawa-card-actions>
+            </skawa-card-header>
+        </skawa-card>
+    </main>
+</div>

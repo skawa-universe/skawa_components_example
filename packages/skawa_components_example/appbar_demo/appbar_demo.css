@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.content-area {
+  flex-grow: 1;
+}
+
+main {
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 600px;
+}
+main h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+main ul li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+main a {
+  color: var(--default-primary-color);
+  text-decoration: none;
+  cursor: auto;
+}
+main section a {
+  display: block;
+  padding-bottom: 10px;
+}

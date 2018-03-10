@@ -1,0 +1,26 @@
+// Copyright (c) 2016, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+/// Changes the `$off-btn-color` and `$primary-color` of <material-toggle>s.
+///
+/// Optionally specify a `$selector`. Example use:
+///     @include material-toggle-theme(
+///         $primary-color: $mat-teal-500,
+///         $off-btn-color: $mat-teal-500,
+///         $selector: '.custom-area');
+@mixin material-toggle-theme($primary-color, $off-btn-color: null, $selector: '') {
+  @if $off-btn-color != null {
+    ::ng-deep #{$selector} material-toggle.themeable .material-toggle .tgl-btn {
+      background-color: $off-btn-color;
+    }
+  }
+
+  ::ng-deep #{$selector} material-toggle.themeable .material-toggle.checked .tgl-bar {
+    background-color: $primary-color;
+  }
+
+  ::ng-deep #{$selector} material-toggle.themeable .material-toggle.checked .tgl-btn {
+    background-color: $primary-color;
+  }
+}
