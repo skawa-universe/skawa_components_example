@@ -62,7 +62,7 @@
             <skawa-header-title>This could be fun!</skawa-header-title>
             <skawa-card-actions>
                 <material-button icon align-right>
-                    <glyph icon="more_vert"></glyph>
+                    <material-icon icon="more_vert"></material-icon>
                 </material-button>
             </skawa-card-actions>
         </skawa-card-header>
@@ -72,8 +72,8 @@
             </material-button>
             <span class="spacer"></span>
             <material-button icon (trigger)="secondaryContent.toggle()">
-                <glyph icon="expand_more" *ngIf="secondaryContent.isCollapsed"></glyph>
-                <glyph icon="expand_less" *ngIf="!secondaryContent.isCollapsed"></glyph>
+                <material-icon icon="expand_more" *ngIf="secondaryContent.isCollapsed"></material-icon>
+                <material-icon icon="expand_less" *ngIf="!secondaryContent.isCollapsed"></material-icon>
             </material-button>
         </skawa-card-actions>
         <skawa-card-content #secondaryContent collapsed>

@@ -1,10 +1,7 @@
 language: dart
 sudo: required
 
-dist: trusty
-
 dart:
- - dev
  - stable
 
 
