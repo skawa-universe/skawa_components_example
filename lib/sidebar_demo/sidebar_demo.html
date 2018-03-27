@@ -1,4 +1,4 @@
-<skawa-sidebar #f [isOn]="true">
+<skawa-sidebar #sidebar="sidebar" [isOn]="true">
     <skawa-sidebar-item textOnly class="group">Component Demos</skawa-sidebar-item>
     <skawa-nav-item icon="view_compact" *ngFor="let route of Routes" [routerLink]="[route.name]">{{route.name}}
     </skawa-nav-item>
@@ -22,15 +22,15 @@
 </skawa-sidebar>
 
 <div class="content-area">
-    <skawa-appbar (navToggle)="f.toggle()">
+    <skawa-appbar (navToggle)="sidebar.toggle()">
         <!--additional things can come here, eg. buttons-->
         <span>Sidebar Demo page</span>
         <span class="appbar-spacer"></span>
         <material-button icon>
-            <glyph icon="info_outline"></glyph>
+            <material-icon icon="info_outline"></material-icon>
         </material-button>
         <material-button icon>
-            <glyph icon="account_circle"></glyph>
+            <material-icon icon="account_circle"></material-icon>
         </material-button>
     </skawa-appbar>
     <main>

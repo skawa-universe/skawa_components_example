@@ -1,5 +1,5 @@
-import 'package:angular2/core.dart';
-import 'package:skawa_components/src/components/ckeditor/ckeditor.dart';
+import 'package:angular/core.dart';
+import 'package:skawa_components/ckeditor/ckeditor.dart';
 
 @Component(selector: 'ckeditor-demo', templateUrl: 'ckeditor_demo.html', directives: const [SkawaCkeditorComponent])
 class CkeditorDemoComponent {
