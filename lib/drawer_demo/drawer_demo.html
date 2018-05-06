@@ -3,11 +3,11 @@
     <skawa-nav-item icon="view_compact" *ngFor="let route of Routes" [routerLink]="[route.name]">{{route.name}}
     </skawa-nav-item>
     <skawa-nav-item icon="code"
-                    (trigger)="navigate('https://github.com/skawa-universe/skawa_components/tree/master/lib/src/components/drawer')"
+                    (trigger)="navigate('https://github.com/skawa-universe/skawa_components/tree/master/lib/drawer')"
     >Component Source
     </skawa-nav-item>
     <skawa-nav-item icon="code"
-                    (trigger)="navigate('https://github.com/skawa-universe/skawa_components_example/tree/master/lib/src/drawer_demo')"
+                    (trigger)="navigate('https://github.com/skawa-universe/skawa_components_example/tree/master/lib/drawer_demo')"
     >Example Source
     </skawa-nav-item>
     <skawa-sidebar-item textOnly class="group">Other Resources</skawa-sidebar-item>
@@ -45,6 +45,10 @@
                 This drawer was designed to work well with `package:angular_components`. Uses the same ripple
                 animations,
                 extends certain base classes and is fairly easy to use.
+                <div style="display: flex; align-items: center; font-size: 16px; font-weight: bold">
+                    <i class="material-icons" style="font-size: 40px; color: red;">warning</i>
+                    This component is deprecated and planing to remove on next major version!
+                </div>
             </skawa-card-content>
             <skawa-card-actions>
                 <span class="spacer"></span>

@@ -8,9 +8,12 @@ dependencies:
   browser: ^0.10.0
   dart_to_js_script_rewriter: ^1.0.1
   skawa_components:
-    git:
-      url: https://github.com/skawa-universe/skawa_components.git
-      ref: 1.0.0-alpha+1
+    path: ../../skawa_components/skawa_components
+  skawa_materialish_components:
+    path: ../../skawa_components/skawa_materialish_components
+#    git:
+#      url: https://github.com/skawa-universe/skawa_components.git
+#      ref: 1.0.0-alpha+1
 dev_dependencies:
   angular_utility:
     git:

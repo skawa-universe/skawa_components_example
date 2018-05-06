@@ -38,7 +38,6 @@ main ul li {
 main a {
   color: var(--default-primary-color);
   text-decoration: none;
-  cursor: auto;
 }
 main section a {
   display: block;

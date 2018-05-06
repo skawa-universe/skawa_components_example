@@ -1,7 +1,7 @@
 import 'package:angular/core.dart';
-import 'package:skawa_components/data_table/data_table.dart';
-import 'package:skawa_components/data_table/data_table_column.dart';
-import 'package:skawa_components/data_table/row_data.dart';
+import 'package:skawa_materialish_components/data_table/data_table.dart';
+import 'package:skawa_materialish_components/data_table/data_table_column.dart';
+import 'package:skawa_materialish_components/data_table/row_data.dart';
 
 // TODO: make note that all displayable rows need to implement `RowData`
 // TODO: explain the weird accessor method
