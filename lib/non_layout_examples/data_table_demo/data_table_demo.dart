@@ -1,7 +1,7 @@
 import 'package:angular/core.dart';
-import 'package:skawa_materialish_components/data_table/data_table.dart';
-import 'package:skawa_materialish_components/data_table/data_table_column.dart';
-import 'package:skawa_materialish_components/data_table/row_data.dart';
+import 'package:skawa_material_components/data_table/data_table.dart';
+import 'package:skawa_material_components/data_table/data_table_column.dart';
+import 'package:skawa_material_components/data_table/row_data.dart';
 
 // TODO: make note that all displayable rows need to implement `RowData`
 // TODO: explain the weird accessor method
@@ -20,9 +20,9 @@ class DataTableDemoApp {
     new SampleRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
-  String makeAccessor(SampleRowData row) => row.name;
+  String makeAccessor(RowData row) => (row as SampleRowData).name;
 
-  String opinionAccessor(SampleRowData row) => row.opinion;
+  String opinionAccessor(RowData row) => (row as SampleRowData).opinion;
 
   List<RowData> selectableRowData = <SampleNumericData>[
     new SampleNumericData('2. class', 11, 18, false),
@@ -31,16 +31,17 @@ class DataTableDemoApp {
     new SampleNumericData('4. class', 20, 13, false),
   ];
 
-  String categoryAccessor(SampleNumericData row) => row.category;
+  String categoryAccessor(RowData row) => (row as SampleNumericData).category;
 
-  String maleAccessor(SampleNumericData row) => row.male.toString();
+  String maleAccessor(RowData row) => (row as SampleNumericData).male.toString();
 
-  String femaleAccessor(SampleNumericData row) => row.female.toString();
+  String femaleAccessor(RowData row) => (row as SampleNumericData).female.toString();
 
-  String peopleAccessor(SampleNumericData row) => (row.female + row.male).toString();
+  String peopleAccessor(RowData row) =>
+      ((row as SampleNumericData).female + (row as SampleNumericData).male).toString();
 
   String aggregate(DataTableAccessor<RowData> accessor) {
-    Iterable mapped = selectableRowData.where((row) => row.checked).map(accessor);
+    Iterable<String> mapped = selectableRowData.where((row) => row.checked).map(accessor);
     return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
   }
 
@@ -84,21 +85,22 @@ class DataTableDemoApp {
     new WrRowData('Dez Bryant', 'DAL', 92, 1382, 54, false),
   ];
 
-  String nameAccessor(WrRowData row) => row.name;
+  String nameAccessor(RowData row) => (row as WrRowData).name;
 
-  String teamAccessor(WrRowData row) => row.team;
+  String teamAccessor(RowData row) => (row as WrRowData).team;
 
-  String recAccessor(WrRowData row) => row.rec.toString();
+  String recAccessor(RowData row) => (row as WrRowData).rec.toString();
 
-  String yardsAccessor(WrRowData row) => row.yards.toString();
+  String yardsAccessor(RowData row) => (row as WrRowData).yards.toString();
 
-  String avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
+  String avgAccessor(RowData row) => ((row as WrRowData).yards / (row as WrRowData).rec).toStringAsFixed(2);
 
-  String yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
+  String yardPerGameAccessor(RowData row) => ((row as WrRowData).yards / 16).toStringAsFixed(2);
 
-  String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
+  String firstDownAccessor(RowData row) => (row as WrRowData).firstDowns.toString();
 
-  String firstDownPctAccessor(WrRowData row) => (row.firstDowns / row.rec * 100).toStringAsFixed(2);
+  String firstDownPctAccessor(RowData row) =>
+      ((row as WrRowData).firstDowns / (row as WrRowData).rec * 100).toStringAsFixed(2);
 }
 
 class SampleRowData implements RowData {

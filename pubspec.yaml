@@ -1,35 +1,21 @@
 name: skawa_components_example
-version: 1.0.0-alpha
+version: 1.0.0-beta
+
+environment:
+  sdk: '>=2.0.0-dev.51.0 <2.0.0'
 
 dependencies:
-  angular: ^4.0.0
-  angular_components: ^0.8.0
-  angular_router: ^1.0.0
-  browser: ^0.10.0
-  dart_to_js_script_rewriter: ^1.0.1
+  angular: ^5.0.0-alpha
+  angular_components: 0.9.0-alpha+11
+  angular_router: 2.0.0-alpha+11
   skawa_components:
     path: ../../skawa_components/skawa_components
-  skawa_materialish_components:
-    path: ../../skawa_components/skawa_materialish_components
+  skawa_material_components:
+    path: ../../skawa_components/skawa_material_components
 #    git:
 #      url: https://github.com/skawa-universe/skawa_components.git
 #      ref: 1.0.0-alpha+1
 dev_dependencies:
-  angular_utility:
-    git:
-     url: https://github.com/skawa-universe/angular_utility.git
-     ref: 0.1.0-alpha+2
-  grinder: ^0.8.1
-transformers:
-- angular:
-    entry_points: web/main.dart
-
-
-- $dart2js:
-    minify: false
-    checked: true
-    sourceMaps: true
-    suppressHints: false
-    suppressWarnings: false
-    commandLineOptions: ['--trust-type-annotations', '--trust-primitives', '--show-package-warnings']
-- dart_to_js_script_rewriter
+  build_runner: ^0.8.8
+  build_test: ^0.10.0
+  build_web_compilers: ^0.4.0

@@ -1,7 +1,7 @@
 import 'package:angular/core.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
-import 'package:skawa_materialish_components/card/card.dart';
-import 'package:skawa_materialish_components/grid/grid_component.dart';
+import 'package:skawa_material_components/card/card.dart';
+import 'package:skawa_material_components/grid/grid_component.dart';
 
 import 'package:angular_components/angular_components.dart';
 

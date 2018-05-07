@@ -1,6 +1,4 @@
 import 'package:angular/angular.dart';
-import 'package:angular_router/angular_router.dart';
-import '../app_component.dart';
 import 'card_demo/card_demo.dart';
 import 'ckeditor_demo/ckeditor_demo.dart';
 import 'data_table_demo/data_table_demo.dart';
@@ -17,10 +15,7 @@ import 'infobar_demo/infobar_demo.dart';
       DataTableDemoApp,
       CkeditorDemoComponent,
       GridDemoComponent,
-      ROUTER_DIRECTIVES,
       NgFor
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
-class NonLayoutDemoComponent {
-  List<Route> get Routes => ROUTES;
-}
+class NonLayoutDemoComponent {}
