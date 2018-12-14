@@ -104,12 +104,11 @@ class DataTableDemoApp {
 }
 
 class SampleRowData extends RowData {
-
   final String name;
 
   final String opinion;
 
-  SampleRowData(this.name, this.opinion): super(false);
+  SampleRowData(this.name, this.opinion) : super(false);
 }
 
 class SampleNumericData extends RowData {
