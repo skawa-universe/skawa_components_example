@@ -103,16 +103,13 @@ class DataTableDemoApp {
       ((row as WrRowData).firstDowns / (row as WrRowData).rec * 100).toStringAsFixed(2);
 }
 
-class SampleRowData implements RowData {
-  /// Default to unchecked
-  @override
-  bool checked = false;
+class SampleRowData extends RowData {
 
   final String name;
 
   final String opinion;
 
-  SampleRowData(this.name, this.opinion);
+  SampleRowData(this.name, this.opinion): super(false);
 }
 
 class SampleNumericData extends RowData {
