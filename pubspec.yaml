@@ -1,12 +1,12 @@
 name: skawa_components_example
-version: 1.0.0-beta
+version: 1.0.0
 
 environment:
   sdk: '>=2.1.0'
 
 dependencies:
   angular: ^5.2.0
-  angular_components: ^0.10.1
+  angular_components: ^0.11.0
   skawa_components: ^1.0.0
   skawa_material_components: ^1.0.0
 dev_dependencies:
