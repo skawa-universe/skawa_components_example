@@ -1,0 +1,10 @@
+<skawa-data-table [data]="wrRowData" [selectable]="false">
+    <skawa-data-table-col [accessor]="nameAccessor" header="Player" class="text-column"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="teamAccessor" header="Team" class="text-column"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="recAccessor" header="Rec"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="yardsAccessor" header="Yards"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="avgAccessor" header="Avg"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="yardPerGameAccessor" header="Yds/G"></skawa-data-table-col>
+    <skawa-data-table-col [accessor]="firstDownAccessor" header="1st"></skawa-data-table-col>
+    <skawa-data-table-col [colRenderer]="firstDownPercentRenderer" header="1st%"></skawa-data-table-col>
+</skawa-data-table>

@@ -1,0 +1,6 @@
+<demo-header title="Hex Colorize Pipe Demo"
+             sourceHref="https://github.com/skawa-universe/skawa_components/tree/master/skawa_components/lib/pipes/hex_colorize_pipe"
+             exampleHref="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/hex_colorize_pipe_demo">
+</demo-header>
+
+<div *ngFor="let part of parts" [style.background]="part | hedColorize">{{part}}</div>

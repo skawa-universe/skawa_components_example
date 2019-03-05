@@ -1,18 +1,61 @@
 :host {
-    display: flex;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    flex-wrap: nowrap;
-}
+  box-sizing: border-box;
 
-.content-area {
-    flex-grow: 1;
-}
-
-main {
+  main {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
     padding: 24px;
-    box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 800px;
+
+    .demo {
+      display: block;
+      border-bottom: 1px solid lightgrey;
+      padding-bottom: 2em;
+      margin-bottom: 2em;
+    }
+
+  }
+
+  material-content {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    .material-header {
+      position: fixed;
+      right: 0;
+      width: calc(100% - 256px);
+      left: 256px;
+      transition-duration: 150ms;
+      transition-property: left, width;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &.no-drawer {
+        left: 0;
+        width: 100%;
+      }
+
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
+a {
+  color: var(--default-primary-color);
+  text-decoration: none;
+}
+
+skawa-sidebar-item {
+  flex-basis: auto;
+  flex-grow: initial;
+}
+
+skawa-nav-item{
+  flex-basis: auto;
 }
