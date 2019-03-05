@@ -1,0 +1,23 @@
+targets:
+
+  $default:
+    builders:
+      build_web_compilers|entrypoint:
+        # These are globs for the entrypoints you want to compile.
+        generate_for:
+          - web/**.dart
+        options:
+          compiler: dartdevc
+          # List any dart2js specific args here, or omit it.
+        release_options:
+          compiler: dart2js
+          dart2js_args:
+            - --verbose
+            - --terse
+            - --enable-diagnostic-colors
+            - --show-package-warnings
+
+
+
+
+

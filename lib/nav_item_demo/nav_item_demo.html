@@ -1,0 +1,12 @@
+<demo-header title="Nav Item Demo"
+             sourceHref="https://github.com/skawa-universe/skawa_components/tree/master/skawa_components/lib/nav_item"
+             exampleHref="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/nav_item_demo">
+</demo-header>
+
+<material-button (trigger)="drawer.visible=true">Open</material-button>
+
+<material-drawer temporary #drawer="drawer" style="position: fixed">
+    <skawa-nav-item icon="close" (click)="drawer.visible=false">Close</skawa-nav-item>
+    <skawa-nav-item icon="rowing">Rowing</skawa-nav-item>
+    <skawa-nav-item>Without icon</skawa-nav-item>
+</material-drawer>

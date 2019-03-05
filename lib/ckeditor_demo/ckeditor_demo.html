@@ -1,0 +1,18 @@
+<demo-header title="Ckeditor Demo"
+             sourceHref="https://github.com/skawa-universe/skawa_components/tree/master/skawa_components/lib/ckeditor"
+             exampleHref="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/card_demo">
+</demo-header>
+
+<h3>Basic Ckeditor</h3>
+
+<skawa-ckeditor editorName="basic_editor"
+                configUrl="/ckeditor/basic_config.js">
+</skawa-ckeditor>
+
+<h3>Ckeditor with external plugins</h3>
+
+<skawa-ckeditor editorName="editor"
+                [extraPlugins]="plugins"
+                content="Cat Dog"
+                configUrl="/ckeditor/config.js">
+</skawa-ckeditor>

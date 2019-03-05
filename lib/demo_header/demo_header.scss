@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  h2 {
+    height: 32px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+  }
+
+  a {
+    color: var(--default-primary-color);
+    text-decoration: none;
+  }
+}

@@ -1,1 +1,57 @@
-<router-outlet></router-outlet>
+<material-drawer persistent #drawer="drawer">
+    <skawa-sidebar-item textOnly>Useful links</skawa-sidebar-item>
+    <skawa-sidebar-item textOnly>
+        <a href="https://github.com/dart-lang/angular_components" target="_blank">Angular Components</a>
+    </skawa-sidebar-item>
+    <skawa-sidebar-item textOnly>
+        <a href="https://github.com/skawa-universe/skawa_components_example/blob/master/lib/non_layout_examples/non_layout_demo.html"
+           target="_blank">
+            Template code
+        </a>
+    </skawa-sidebar-item>
+    <skawa-sidebar-item textOnly>
+        <a href="https://material.io/guidelines/" target="_blank">Material design</a>
+    </skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="https://material.io/color/" target="_blank">Color palette tool</a>
+    </skawa-sidebar-item>
+    <skawa-sidebar-item textOnly>Component Examples</skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#card-demo">Card Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#ckeditor-demo">Ckeditor Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#data-table-demo">Data Table Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#grid-demo">Grid Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#hex-colorize-demo">Hex Colorize Pipe Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#infobar-demo">Infobar Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#markdown-demo">Markdown Renderer Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#nav-item-demo">Nav Item Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#sidebar-item-demo">Sidebar Item Demo</a></skawa-sidebar-item>
+    <skawa-sidebar-item textOnly><a href="#snackbar-demo">Snackbar Demo</a></skawa-sidebar-item>
+</material-drawer>
+<material-content>
+    <div class="container">
+        <header class="material-header shadow" [class.no-drawer]="!(drawer?.visible ?? false)">
+            <div class="material-header-row">
+                <material-button icon
+                                 class="material-drawer-button"
+                                 (trigger)="drawer.toggle()">
+                    <material-icon icon="menu"></material-icon>
+                </material-button>
+                <span class="material-header-title">Skawa Component Examples</span>
+            </div>
+        </header>
+        <div>
+            <div style="position: sticky; top: 0; height: 64px;"></div>
+            <main>
+                <card-demo class="demo" id="card-demo"></card-demo>
+                <ckeditor-demo class="demo" id="ckeditor-demo"></ckeditor-demo>
+                <data-table-demo class="demo" id="data-table-demo"></data-table-demo>
+                <grid-demo class="demo" id="grid-demo"></grid-demo>
+                <hex-colorize-pipe-demo class="demo" id="hex-colorize-demo"></hex-colorize-pipe-demo>
+                <infobar-demo class="demo" id="infobar-demo"></infobar-demo>
+                <markdown-demo class="demo" id="markdown-demo"></markdown-demo>
+                <nav-item-demo class="demo" id="nav-item-demo"></nav-item-demo>
+                <sidebar-item-demo class="demo" id="sidebar-item-demo" (open)="drawer.toggle()"></sidebar-item-demo>
+                <snackbar-demo class="demo" id="snackbar-demo"></snackbar-demo>
+            </main>
+        </div>
+    </div>
+</material-content>

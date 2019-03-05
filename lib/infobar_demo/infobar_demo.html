@@ -1,0 +1,18 @@
+<demo-header title="Infobar Demo"
+             sourceHref="https://github.com/skawa-universe/skawa_components/tree/master/skawa_components/lib/infobar"
+             exampleHref="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/infobar_demo">
+</demo-header>
+
+
+<h3>Simple inforbar without icon</h3>
+<skawa-infobar>No icon, no url</skawa-infobar>
+<h3>Inforbar with icon</h3>
+<skawa-infobar icon="info">Info icon, still no url</skawa-infobar>
+<h3>Inforbar with url</h3>
+<skawa-infobar icon="open_in_new" url="https://github.com">
+    Clicking icon will redirect if URL is specified
+</skawa-infobar>
+<h3>Infobar which alerting when the icon triggers</h3>
+<skawa-infobar icon="lightbulb_outline" (trigger)="alert()">
+    Can also subscribe to primary action with (trigger)
+</skawa-infobar>
