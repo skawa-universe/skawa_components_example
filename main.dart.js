@@ -4558,7 +4558,7 @@
       }
     },
     initHooks_closure1: {
-      "^": "Closure:68;prototypeForTag",
+      "^": "Closure:69;prototypeForTag",
       call$1: function(tag) {
         return this.prototypeForTag(H.stringTypeCheck(tag));
       }
@@ -11928,7 +11928,7 @@
       $isNodeTreeSanitizer: 1
     },
     _ValidatingTreeSanitizer_sanitizeTree_walk: {
-      "^": "Closure:69;$this",
+      "^": "Closure:70;$this",
       call$2: function(node, $parent) {
         var child, nextChild, t1, exception, t2, t3;
         t1 = this.$this;
@@ -12322,7 +12322,7 @@
       }
     },
     _AcceptStructuredClone_walk_closure: {
-      "^": "Closure:72;_box_0,$this",
+      "^": "Closure:73;_box_0,$this",
       call$2: function(key, value) {
         var t1, t2;
         t1 = this._box_0.copy;
@@ -12450,7 +12450,7 @@
       }
     },
     CssClassSetImpl_add_closure: {
-      "^": "Closure:75;value",
+      "^": "Closure:76;value",
       call$1: function(s) {
         return H.assertSubtype(s, "$isSet", [P.String], "$asSet").add$1(0, this.value);
       }
@@ -16451,12 +16451,9 @@
   }], ["", "package:angular_components/button_decorator/button_decorator.dart",, T, {
     "^": "",
     ButtonDirective: {
-      "^": "_ButtonDirective_RootFocusable_HasTabIndex;disabled>",
+      "^": "_ButtonDirective_RootFocusable_HasTabIndex;role>,disabled>",
       get$ariaRole: function() {
-        return this._ariaRole;
-      },
-      ngOnInit$0: function() {
-        this._ariaRole = "button";
+        return this.role;
       },
       get$disabledStr: function() {
         return "false";
@@ -16593,7 +16590,7 @@
   }], ["", "package:angular_components/material_button/material_button.dart",, B, {
     "^": "",
     MaterialButtonComponent: {
-      "^": "MaterialButtonBase;_material_button$_changeDetector,0ariaLabel,_focused,_clickFocused,_isMouseDown,raised,_trigger,0_hostTabIndex,_role,0_ariaRole,disabled,tabbable,HasTabIndex__tabIndex,_focus$_root",
+      "^": "MaterialButtonBase;_material_button$_changeDetector,0ariaLabel,_focused,_clickFocused,_isMouseDown,raised,_trigger,0_hostTabIndex,role,disabled,tabbable,HasTabIndex__tabIndex,_focus$_root",
       focusedStateChanged$0: function() {
         this._material_button$_changeDetector.appView.markPathToRootAsCheckOnce$0();
       },
@@ -16613,7 +16610,7 @@
         MaterialButtonComponent$: function(element, darktheme, _changeDetector, role) {
           if (darktheme.isDarkTheme)
             element.classList.add("acx-theme-dark");
-          return new B.MaterialButtonComponent(_changeDetector, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, [W.UIEvent]), role, false, true, null, element);
+          return new B.MaterialButtonComponent(_changeDetector, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, [W.UIEvent]), "button", false, true, null, element);
         }
       }
     }
@@ -16672,7 +16669,7 @@
         }
         currVal_1 = this.ctx.get$ariaRole();
         t1 = this._material_button_template$_expr_1;
-        if (t1 != currVal_1) {
+        if (t1 !== currVal_1) {
           this.setAttr$3(this.rootEl, "role", currVal_1);
           this._material_button_template$_expr_1 = currVal_1;
         }
@@ -17072,7 +17069,7 @@
   }], ["", "package:angular_components/material_icon/material_icon.dart",, Y, {
     "^": "",
     MaterialIconComponent: {
-      "^": "Object;0ariaLabel,0_material_icon$_icon,_material_icon$_element",
+      "^": "Object;0_material_icon$_icon,_material_icon$_element",
       set$icon: function(_, value) {
         this._material_icon$_icon = value;
         if (C.JSArray_methods.contains$1(C.List_CX7, this.get$iconName()))
@@ -17086,33 +17083,31 @@
   }], ["asset_angular_components_lib_material_icon_material_icon.scss.css.shim.dart", "package:angular_components/material_icon/material_icon.scss.css.shim.dart",, X, {}], ["", "package:angular_components/material_icon/material_icon.template.dart",, M, {
     "^": "",
     ViewMaterialIconComponent0: {
-      "^": "AppView;0_material_icon_template$_expr_0,0_material_icon_template$_expr_1,0_material_icon_template$_el_1,0_text_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_material_icon_template$_expr_0,0_text_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
-        var parentRenderNode, t1, t2;
+        var parentRenderNode, t1, _el_1, t2;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
         t1 = document;
         J.append$1$x(parentRenderNode, t1.createTextNode("\n"));
-        t2 = S.createAndAppend(t1, "i", parentRenderNode);
-        this._material_icon_template$_el_1 = t2;
-        J.setAttribute$2$x(t2, "aria-hidden", "true");
-        t2 = this._material_icon_template$_el_1;
-        t2.className = "material-icon-i material-icons";
-        this.addShimE$1(t2);
+        _el_1 = S.createAndAppend(t1, "i", parentRenderNode);
+        t2 = J.getInterceptor$x(_el_1);
+        t2.setAttribute$2(_el_1, "aria-hidden", "true");
+        _el_1.className = "material-icon-i material-icons";
+        this.addShimE$1(_el_1);
         t1 = t1.createTextNode("");
         this._text_2 = t1;
-        J.append$1$x(this._material_icon_template$_el_1, t1);
+        t2.append$1(_el_1, t1);
         this.init$2(C.List_empty, null);
       },
       detectChangesInternal$0: function() {
-        var _ctx, currVal_1, t1;
-        _ctx = this.ctx;
-        currVal_1 = _ctx.get$iconName();
-        if (currVal_1 == null)
-          currVal_1 = "";
-        t1 = this._material_icon_template$_expr_1;
-        if (t1 !== currVal_1) {
-          this._text_2.textContent = currVal_1;
-          this._material_icon_template$_expr_1 = currVal_1;
+        var currVal_0, t1;
+        currVal_0 = this.ctx.get$iconName();
+        if (currVal_0 == null)
+          currVal_0 = "";
+        t1 = this._material_icon_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._text_2.textContent = currVal_0;
+          this._material_icon_template$_expr_0 = currVal_0;
         }
       },
       $asAppView: function() {
@@ -17346,6 +17341,8 @@
         t2 = J.getInterceptor$x(t1);
         t2.removeEventListener$2(t1, "mousedown", this._onMouseDown);
         t2.removeEventListener$2(t1, "keydown", this._onKeyDown);
+        t1 = $._ripplePool;
+        (t1 && C.JSArray_methods).forEach$1(t1, new B.MaterialRippleComponent_ngOnDestroy_closure(this));
       },
       static: {
         MaterialRippleComponent$: function(_element) {
@@ -17373,6 +17370,17 @@
           return;
         B._createRipple(0, 0, this.$this._element, true);
       }, null, null, 4, 0, null, 5, "call"]
+    },
+    MaterialRippleComponent_ngOnDestroy_closure: {
+      "^": "Closure:68;$this",
+      call$1: function(ripple) {
+        var t1, t2;
+        H.interceptedTypeCheck(ripple, "$isDivElement");
+        t1 = ripple == null ? null : ripple.parentElement;
+        t2 = this.$this._element;
+        if (t1 == null ? t2 == null : t1 === t2)
+          (ripple && C.DivElement_methods).remove$0(ripple);
+      }
     }
   }], ["asset_angular_components_lib_material_ripple_material_ripple.scss.css.dart", "package:angular_components/material_ripple/material_ripple.scss.css.dart",, O, {}], ["", "package:angular_components/material_ripple/material_ripple.template.dart",, L, {
     "^": "",
@@ -18222,7 +18230,7 @@
           t2 = false;
         if (t2)
           C.JSArray_methods.removeAt$1(t1, 0);
-      }, "call$1", "get$removeLeadingEmptyLine", 4, 0, 70],
+      }, "call$1", "get$removeLeadingEmptyLine", 4, 0, 71],
       removeTrailingEmptyLines$1: function(items) {
         var anyEmpty, i, t1, t2;
         H.assertSubtype(items, "$isList", [K.ListItem], "$asList");
@@ -18271,7 +18279,7 @@
       }
     },
     ListSyntax_parse_tryMatch: {
-      "^": "Closure:71;_box_0,parser",
+      "^": "Closure:72;_box_0,parser",
       call$1: function(pattern) {
         var t1, t2, match;
         t1 = this.parser;
@@ -18426,7 +18434,7 @@
       }
     },
     ParagraphSyntax__parseReflinkDefinition_closure: {
-      "^": "Closure:73;_box_0,destination",
+      "^": "Closure:74;_box_0,destination",
       call$0: function() {
         var t1 = this._box_0;
         return new S.LinkReference(t1.label, this.destination, t1.title);
@@ -18526,7 +18534,7 @@
       $isNodeVisitor: 1
     },
     HtmlRenderer_visitElementBefore_closure: {
-      "^": "Closure:74;",
+      "^": "Closure:75;",
       call$2: function(a, b) {
         return J.compareTo$1$ns(H.stringTypeCheck(a), H.stringTypeCheck(b));
       }
@@ -18601,7 +18609,7 @@
       }
     },
     InlineParser_parse_closure: {
-      "^": "Closure:76;$this",
+      "^": "Closure:77;$this",
       call$1: function(state) {
         H.interceptedTypeCheck(state, "$isTagState");
         return state.syntax != null && state.tryMatch$1(this.$this);
@@ -19105,7 +19113,7 @@
       }
     },
     LinkSyntax_closure: {
-      "^": "Closure:77;",
+      "^": "Closure:78;",
       call$2: [function(_, __) {
         H.stringTypeCheck(_);
         H.stringTypeCheck(__);
@@ -19359,7 +19367,8 @@
       },
       ngAfterViewInit$0: function() {
         var t1, t2, t3, t4;
-        if (this._ckeditor == null) {
+        t1 = this._ckeditor;
+        if (t1 == null) {
           t1 = this.editorName;
           t2 = this.extraPlugins;
           t3 = this.configUrl;
@@ -19370,7 +19379,9 @@
           t2 = P._convertDataTree(t2);
           t4._jsEditorInstance = H.interceptedTypeCheck(self.CKEDITOR.replace(t1, t2), "$isCKEditorInstance");
           this._ckeditor = t4;
+          t1 = t4;
         }
+        return t1;
       }
     },
     ExtraPlugin: {
@@ -19572,14 +19583,12 @@
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var _ctx, firstCheck, currVal_3, t1, changed, currVal_0, currVal_1, currVal_2, currVal_4;
+        var _ctx, t1, currVal_3, t2, changed, currVal_0, currVal_1, currVal_2, currVal_4;
         _ctx = this.ctx;
-        firstCheck = this.viewData._cdState === 0;
-        if (firstCheck)
-          this._infobar_template$_MaterialButtonComponent_0_6.ngOnInit$0();
+        t1 = this.viewData._cdState;
         currVal_3 = _ctx.get$icon(_ctx);
-        t1 = this._infobar_template$_expr_3;
-        if (t1 != currVal_3) {
+        t2 = this._infobar_template$_expr_3;
+        if (t2 != currVal_3) {
           this._MaterialIconComponent_1_5.set$icon(0, currVal_3);
           this._infobar_template$_expr_3 = currVal_3;
           changed = true;
@@ -19588,24 +19597,24 @@
         if (changed)
           this._infobar_template$_compView_1.viewData.set$cdMode(1);
         currVal_0 = _ctx.url;
-        t1 = this._infobar_template$_expr_0;
-        if (t1 != currVal_0) {
+        t2 = this._infobar_template$_expr_0;
+        if (t2 != currVal_0) {
           this._infobar_template$_el_0.title = currVal_0;
           this._infobar_template$_expr_0 = currVal_0;
         }
         currVal_1 = _ctx.get$icon(_ctx) == null;
-        t1 = this._infobar_template$_expr_1;
-        if (t1 !== currVal_1) {
+        t2 = this._infobar_template$_expr_1;
+        if (t2 !== currVal_1) {
           this.updateElemClass$3(this._infobar_template$_el_0, "hide-without-icon", currVal_1);
           this._infobar_template$_expr_1 = currVal_1;
         }
         currVal_2 = _ctx.url == null;
-        t1 = this._expr_2;
-        if (t1 !== currVal_2) {
+        t2 = this._expr_2;
+        if (t2 !== currVal_2) {
           this.updateElemClass$3(this._infobar_template$_el_0, "without-url", currVal_2);
           this._expr_2 = currVal_2;
         }
-        this._infobar_template$_compView_0.detectHostChanges$1(firstCheck);
+        this._infobar_template$_compView_0.detectHostChanges$1(t1 === 0);
         currVal_4 = _ctx.get$icon(_ctx) == null;
         t1 = this._infobar_template$_expr_4;
         if (t1 !== currVal_4) {
@@ -19677,7 +19686,7 @@
       }
     },
     EditorRenderTarget__updateElementChildren_closure: {
-      "^": "Closure:78;$this,classes",
+      "^": "Closure:79;$this,classes",
       call$1: function(child) {
         var t1;
         H.interceptedTypeCheck(child, "$isElement");
@@ -19807,15 +19816,18 @@
   }], ["asset_skawa_components_lib_nav_item_nav_item.css.shim.dart", "package:skawa_components/nav_item/nav_item.css.shim.dart",, F, {}], ["", "package:skawa_components/nav_item/nav_item.dart",, Z, {
     "^": "",
     SkawaNavItemComponent: {
-      "^": "_SkawaNavItemComponent_MaterialButtonBase_TextOnlyMixin;0link,0icon,hovering,0fullWidth<,_changeDetector,TextOnlyMixin_textOnly,_focused,_clickFocused,_isMouseDown,raised,_trigger,0_hostTabIndex,_role,0_ariaRole,disabled,tabbable,HasTabIndex__tabIndex,_focus$_root",
+      "^": "_SkawaNavItemComponent_MaterialButtonBase_TextOnlyMixin;_changeDetector,hovering,0icon,0fullWidth<,TextOnlyMixin_textOnly,_focused,_clickFocused,_isMouseDown,raised,_trigger,0_hostTabIndex,role,disabled,tabbable,HasTabIndex__tabIndex,_focus$_root",
       focusedStateChanged$0: function() {
         this._changeDetector.appView.markPathToRootAsCheckOnce$0();
+        return;
       },
       onMouseEnter$0: [function(_) {
         this.hovering = true;
+        return true;
       }, "call$0", "get$onMouseEnter", 1, 0, 0],
       onMouseOut$0: [function(_) {
         this.hovering = false;
+        return false;
       }, "call$0", "get$onMouseOut", 1, 0, 0]
     },
     _SkawaNavItemComponent_MaterialButtonBase_TextOnlyMixin: {
@@ -19927,7 +19939,7 @@
         }
         currVal_5 = this.ctx.get$ariaRole();
         t1 = this._expr_5;
-        if (t1 != currVal_5) {
+        if (t1 !== currVal_5) {
           this.setAttr$3(this.rootEl, "role", currVal_5);
           this._expr_5 = currVal_5;
         }
@@ -19973,7 +19985,7 @@
       }
     },
     ViewSkawaNavItemComponent0_build_closure: {
-      "^": "Closure:79;",
+      "^": "Closure:120;",
       call$2: function(p0, p1) {
         return P.LinkedHashMap_LinkedHashMap$_literal(["hovering", p0, "icon-padding", p1], P.String, null);
       }
@@ -19999,7 +20011,7 @@
         for (; !C.JSArray_methods.contains$1(C.List_3_4_6_8, hash.length);)
           hash = C.JSString_methods.substring$1(hash, 1);
         return "#" + hash;
-      }, "call$1", "get$transform", 5, 0, 120]
+      }, "call$1", "get$transform", 5, 0, 81]
     }
   }], ["asset_skawa_components_lib_sidebar_item_sidebar_item.css.shim.dart", "package:skawa_components/sidebar_item/sidebar_item.css.shim.dart",, E, {}], ["", "package:skawa_components/sidebar_item/sidebar_item.dart",, E, {
     "^": "",
@@ -20021,12 +20033,9 @@
       return t1;
     }, "call$2", "sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure", 8, 0, 114],
     ViewSkawaSidebarItemComponent0: {
-      "^": "AppView;0_sidebar_item_template$_appEl_0,0_NgIf_0_9,0_NgClass_1_5,0_sidebar_item_template$_map_0,0_sidebar_item_template$_expr_2,0_sidebar_item_template$_expr_3,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
-      set$_sidebar_item_template$_map_0: function(_map_0) {
-        this._sidebar_item_template$_map_0 = H.functionTypeCheck(_map_0, {func: 1, ret: [P.Map, P.String,,], args: [,]});
-      },
+      "^": "AppView;0_sidebar_item_template$_appEl_0,0_NgIf_0_9,0_sidebar_item_template$_expr_1,0_sidebar_item_template$_expr_2,0_sidebar_item_template$_el_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
-        var parentRenderNode, t1, _anchor_0, _el_1;
+        var parentRenderNode, t1, _anchor_0;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
         t1 = $.$get$_viewContainerAnchor();
         _anchor_0 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
@@ -20034,45 +20043,36 @@
         t1 = new V.ViewContainer(0, null, this, _anchor_0);
         this._sidebar_item_template$_appEl_0 = t1;
         this._NgIf_0_9 = new K.NgIf(new D.TemplateRef(t1, K.sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure()), t1, false);
-        _el_1 = S.createSpanAndAppend(document, parentRenderNode);
-        _el_1.className = "item-text";
-        this.addShimE$1(_el_1);
-        this._NgClass_1_5 = new Y.NgClass(_el_1, H.setRuntimeTypeInfo([], [P.String]));
-        this.project$2(_el_1, 0);
-        this.set$_sidebar_item_template$_map_0(Q.pureProxy1(new K.ViewSkawaSidebarItemComponent0_build_closure(), [P.Map, P.String,,], null));
+        t1 = S.createSpanAndAppend(document, parentRenderNode);
+        this._sidebar_item_template$_el_1 = t1;
+        t1.className = "item-text";
+        this.addShimE$1(t1);
+        this.project$2(this._sidebar_item_template$_el_1, 0);
         this.init$2(C.List_empty, null);
       },
       detectChangesInternal$0: function() {
-        var _ctx, t1, t2, currVal_2;
+        var _ctx, t1, currVal_1;
         _ctx = this.ctx;
-        t1 = this.viewData._cdState;
-        t2 = this._NgIf_0_9;
-        t2.set$ngIf(_ctx.TextOnlyMixin_textOnly == null && _ctx.icon != null);
-        if (t1 === 0)
-          this._NgClass_1_5.set$initialClasses("item-text");
-        t1 = _ctx.TextOnlyMixin_textOnly;
-        currVal_2 = this._sidebar_item_template$_map_0.call$1(t1 != null);
-        t1 = this._sidebar_item_template$_expr_2;
-        if (t1 == null ? currVal_2 != null : t1 !== currVal_2) {
-          this._NgClass_1_5.set$rawClass(currVal_2);
-          this._sidebar_item_template$_expr_2 = currVal_2;
-        }
-        this._NgClass_1_5.ngDoCheck$0();
+        t1 = this._NgIf_0_9;
+        t1.set$ngIf(_ctx.TextOnlyMixin_textOnly == null && _ctx.icon != null);
         this._sidebar_item_template$_appEl_0.detectChangesInNestedViews$0();
+        currVal_1 = _ctx.TextOnlyMixin_textOnly != null;
+        t1 = this._sidebar_item_template$_expr_1;
+        if (t1 !== currVal_1) {
+          this.updateClass$3(this._sidebar_item_template$_el_1, "text-only", currVal_1);
+          this._sidebar_item_template$_expr_1 = currVal_1;
+        }
       },
       destroyInternal$0: function() {
         this._sidebar_item_template$_appEl_0.destroyNestedViews$0();
-        var t1 = this._NgClass_1_5;
-        t1._applyClasses$2(t1._rawClass, true);
-        t1._applyInitialClasses$1(false);
       },
       detectHostChanges$1: function(firstCheck) {
-        var currVal_3, t1;
-        currVal_3 = this.ctx.get$textOnly();
-        t1 = this._sidebar_item_template$_expr_3;
-        if (t1 != currVal_3) {
-          this.setAttr$3(this.rootEl, "textOnly", currVal_3);
-          this._sidebar_item_template$_expr_3 = currVal_3;
+        var currVal_2, t1;
+        currVal_2 = this.ctx.get$textOnly();
+        t1 = this._sidebar_item_template$_expr_2;
+        if (t1 != currVal_2) {
+          this.setAttr$3(this.rootEl, "textOnly", currVal_2);
+          this._sidebar_item_template$_expr_2 = currVal_2;
         }
       },
       $asAppView: function() {
@@ -20094,12 +20094,6 @@
           t1.setupComponentType$1(t2);
           return t1;
         }
-      }
-    },
-    ViewSkawaSidebarItemComponent0_build_closure: {
-      "^": "Closure:81;",
-      call$1: function(p0) {
-        return P.LinkedHashMap_LinkedHashMap$_literal(["text-only", p0], P.String, null);
       }
     },
     _ViewSkawaSidebarItemComponent1: {
@@ -20150,9 +20144,9 @@
       return t1;
     }, "call$2", "app_component_template__viewFactory_AppComponentHost0$closure", 8, 0, 115],
     ViewAppComponent0: {
-      "^": "AppView;0_MaterialPersistentDrawerDirective_0_5,0_compView_1,0_SkawaSidebarItemComponent_1_5,0_compView_3,0_SkawaSidebarItemComponent_3_5,0_compView_6,0_SkawaSidebarItemComponent_6_5,0_compView_9,0_SkawaSidebarItemComponent_9_5,0_compView_12,0_SkawaSidebarItemComponent_12_5,0_compView_15,0_SkawaSidebarItemComponent_15_5,0_compView_17,0_SkawaSidebarItemComponent_17_5,0_compView_20,0_SkawaSidebarItemComponent_20_5,0_compView_23,0_SkawaSidebarItemComponent_23_5,0_compView_26,0_SkawaSidebarItemComponent_26_5,0_compView_29,0_SkawaSidebarItemComponent_29_5,0_compView_32,0_SkawaSidebarItemComponent_32_5,0_compView_35,0_SkawaSidebarItemComponent_35_5,0_compView_38,0_SkawaSidebarItemComponent_38_5,0_compView_41,0_SkawaSidebarItemComponent_41_5,0_compView_44,0_SkawaSidebarItemComponent_44_5,0_compView_51,0_AcxDarkTheme_51_5,0_MaterialButtonComponent_51_6,0_compView_52,0_MaterialIconComponent_52_5,0_compView_58,0_CardDemoComponent_58_5,0_compView_59,0_CkeditorDemoComponent_59_5,0_compView_60,0_DataTableDemoComponent_60_5,0_compView_61,0_GridDemoComponent_61_5,0_compView_62,0_HexColorizePipeDemoComponent_62_5,0_compView_63,0_InfobarDemoComponent_63_5,0_compView_64,0_MarkdownDemoComponent_64_5,0__EditorRenderer_64_6,0_compView_65,0_NavItemDemoComponent_65_5,0_compView_66,0_SidebarItemDemoComponent_66_5,0_compView_67,0_SnackbarService_67_5,0_SnackbarDemoComponent_67_6,0_expr_16,0_el_0,0_el_49,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_MaterialPersistentDrawerDirective_0_5,0_compView_1,0_SkawaSidebarItemComponent_1_5,0_compView_3,0_SkawaSidebarItemComponent_3_5,0_compView_6,0_SkawaSidebarItemComponent_6_5,0_compView_9,0_SkawaSidebarItemComponent_9_5,0_compView_12,0_SkawaSidebarItemComponent_12_5,0_compView_15,0_SkawaSidebarItemComponent_15_5,0_compView_17,0_SkawaSidebarItemComponent_17_5,0_compView_20,0_SkawaSidebarItemComponent_20_5,0_compView_23,0_SkawaSidebarItemComponent_23_5,0_compView_26,0_SkawaSidebarItemComponent_26_5,0_compView_29,0_SkawaSidebarItemComponent_29_5,0_compView_32,0_SkawaSidebarItemComponent_32_5,0_compView_35,0_SkawaSidebarItemComponent_35_5,0_compView_38,0_SkawaSidebarItemComponent_38_5,0_compView_41,0_SkawaSidebarItemComponent_41_5,0_compView_44,0_SkawaSidebarItemComponent_44_5,0_compView_47,0_SkawaSidebarItemComponent_47_5,0_compView_54,0_AcxDarkTheme_54_5,0_MaterialButtonComponent_54_6,0_compView_55,0_MaterialIconComponent_55_5,0_compView_61,0_CardDemoComponent_61_5,0_compView_62,0_CkeditorDemoComponent_62_5,0_compView_63,0_DataTableDemoComponent_63_5,0_compView_64,0_GridDemoComponent_64_5,0_compView_65,0_HexColorizePipeDemoComponent_65_5,0_compView_66,0_InfobarDemoComponent_66_5,0_compView_67,0_MarkdownDemoComponent_67_5,0__EditorRenderer_67_6,0_compView_68,0_NavItemDemoComponent_68_5,0_compView_69,0_SidebarItemDemoComponent_69_5,0_compView_70,0_SnackbarService_70_5,0_SnackbarDemoComponent_70_6,0_compView_71,0_ExtendedMaterialIconDemoComponent_71_5,0_expr_17,0_el_0,0_el_52,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
-        var parentRenderNode, doc, t1, _el_1, _text_2, t2, _el_3, _el_4, t3, _el_6, _el_7, _el_9, _el_10, _el_12, _el_13, _el_15, _text_16, _el_17, _el_18, _el_20, _el_21, _el_23, _el_24, _el_26, _el_27, _el_29, _el_30, _el_32, _el_33, _el_35, _el_36, _el_38, _el_39, _el_41, _el_42, _el_44, _el_45, _el_47, _el_48, _el_50, _el_51, _el_52, _el_53, _el_55, _el_56, _el_57, _el_58, t4, _el_59, _el_60, _el_61, _el_62, _el_63, _el_64, _el_65, _el_66, _el_67, subscription_0;
+        var parentRenderNode, doc, t1, _el_1, _text_2, t2, _el_3, _el_4, t3, _el_6, _el_7, _el_9, _el_10, _el_12, _el_13, _el_15, _text_16, _el_17, _el_18, _el_20, _el_21, _el_23, _el_24, _el_26, _el_27, _el_29, _el_30, _el_32, _el_33, _el_35, _el_36, _el_38, _el_39, _el_41, _el_42, _el_44, _el_45, _el_47, _el_48, _el_50, _el_51, _el_53, _el_54, _el_55, _el_56, _el_58, _el_59, _el_60, _el_61, t4, _el_62, _el_63, _el_64, _el_65, _el_66, _el_67, _el_68, _el_69, t5, _el_70, _el_71, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
         doc = document;
         t1 = S.createAndAppend(doc, "material-drawer", parentRenderNode);
@@ -20382,51 +20376,65 @@
         this.addShimC$1(_el_45);
         t2.append$1(_el_45, doc.createTextNode("Snackbar Demo"));
         this._compView_44.create$2(0, this._SkawaSidebarItemComponent_44_5, [H.setRuntimeTypeInfo([_el_45], t1)]);
-        _el_47 = S.createAndAppend(doc, "material-content", parentRenderNode);
-        this.addShimE$1(_el_47);
-        _el_48 = S.createDivAndAppend(doc, _el_47);
-        _el_48.className = "container";
+        t2 = K.ViewSkawaSidebarItemComponent0$(this, 47);
+        this._compView_47 = t2;
+        _el_47 = t2.rootEl;
+        J.append$1$x(this._el_0, _el_47);
+        J.setAttribute$2$x(_el_47, "textOnly", "");
+        this.addShimC$1(_el_47);
+        this._SkawaSidebarItemComponent_47_5 = new E.SkawaSidebarItemComponent(null);
+        _el_48 = doc.createElement("a");
+        t2 = J.getInterceptor$x(_el_48);
+        t2.setAttribute$2(_el_48, "href", "#extended-material-icon-demo");
+        H.interceptedTypeCheck(_el_48, "$isHtmlElement");
         this.addShimC$1(_el_48);
-        t1 = S.createAndAppend(doc, "header", _el_48);
-        this._el_49 = t1;
+        t2.append$1(_el_48, doc.createTextNode("Extended Material Icon Demo"));
+        this._compView_47.create$2(0, this._SkawaSidebarItemComponent_47_5, [H.setRuntimeTypeInfo([_el_48], t1)]);
+        _el_50 = S.createAndAppend(doc, "material-content", parentRenderNode);
+        this.addShimE$1(_el_50);
+        _el_51 = S.createDivAndAppend(doc, _el_50);
+        _el_51.className = "container";
+        this.addShimC$1(_el_51);
+        t1 = S.createAndAppend(doc, "header", _el_51);
+        this._el_52 = t1;
         t1.className = "material-header shadow";
         this.addShimE$1(t1);
-        _el_50 = S.createDivAndAppend(doc, this._el_49);
-        _el_50.className = "material-header-row";
-        this.addShimC$1(_el_50);
-        t1 = U.ViewMaterialButtonComponent0$(this, 51);
-        this._compView_51 = t1;
-        _el_51 = t1.rootEl;
-        (_el_50 && C.DivElement_methods).append$1(_el_50, _el_51);
-        _el_51.className = "material-drawer-button";
-        J.setAttribute$2$x(_el_51, "icon", "");
-        this.addShimC$1(_el_51);
+        _el_53 = S.createDivAndAppend(doc, this._el_52);
+        _el_53.className = "material-header-row";
+        this.addShimC$1(_el_53);
+        t1 = U.ViewMaterialButtonComponent0$(this, 54);
+        this._compView_54 = t1;
+        _el_54 = t1.rootEl;
+        (_el_53 && C.DivElement_methods).append$1(_el_53, _el_54);
+        _el_54.className = "material-drawer-button";
+        J.setAttribute$2$x(_el_54, "icon", "");
+        this.addShimC$1(_el_54);
         t1 = F.AcxDarkTheme$(H.boolTypeCheck(this.parentView.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
-        this._AcxDarkTheme_51_5 = t1;
-        this._MaterialButtonComponent_51_6 = B.MaterialButtonComponent$(_el_51, t1, this._compView_51.viewData.ref, null);
-        t1 = M.ViewMaterialIconComponent0$(this, 52);
-        this._compView_52 = t1;
-        _el_52 = t1.rootEl;
-        J.setAttribute$2$x(_el_52, "icon", "menu");
-        this.addShimC$1(_el_52);
-        t1 = new Y.MaterialIconComponent(_el_52);
-        this._MaterialIconComponent_52_5 = t1;
-        this._compView_52.create$2(0, t1, []);
-        this._compView_51.create$2(0, this._MaterialButtonComponent_51_6, [H.setRuntimeTypeInfo([_el_52], [W.HtmlElement])]);
-        _el_53 = S.createSpanAndAppend(doc, _el_50);
-        _el_53.className = "material-header-title";
-        this.addShimE$1(_el_53);
-        (_el_53 && C.SpanElement_methods).append$1(_el_53, doc.createTextNode("Skawa Component Examples"));
-        _el_55 = S.createDivAndAppend(doc, _el_48);
+        this._AcxDarkTheme_54_5 = t1;
+        this._MaterialButtonComponent_54_6 = B.MaterialButtonComponent$(_el_54, t1, this._compView_54.viewData.ref, null);
+        t1 = M.ViewMaterialIconComponent0$(this, 55);
+        this._compView_55 = t1;
+        _el_55 = t1.rootEl;
+        J.setAttribute$2$x(_el_55, "icon", "menu");
         this.addShimC$1(_el_55);
-        _el_56 = S.createDivAndAppend(doc, _el_55);
-        (_el_56 && C.DivElement_methods).setAttribute$2(_el_56, "style", "position: sticky; top: 0; height: 64px;");
-        this.addShimC$1(_el_56);
-        _el_57 = S.createAndAppend(doc, "main", _el_55);
-        this.addShimE$1(_el_57);
+        t1 = new Y.MaterialIconComponent(_el_55);
+        this._MaterialIconComponent_55_5 = t1;
+        this._compView_55.create$2(0, t1, []);
+        this._compView_54.create$2(0, this._MaterialButtonComponent_54_6, [H.setRuntimeTypeInfo([_el_55], [W.HtmlElement])]);
+        _el_56 = S.createSpanAndAppend(doc, _el_53);
+        _el_56.className = "material-header-title";
+        this.addShimE$1(_el_56);
+        (_el_56 && C.SpanElement_methods).append$1(_el_56, doc.createTextNode("Skawa Component Examples"));
+        _el_58 = S.createDivAndAppend(doc, _el_51);
+        this.addShimC$1(_el_58);
+        _el_59 = S.createDivAndAppend(doc, _el_58);
+        (_el_59 && C.DivElement_methods).setAttribute$2(_el_59, "style", "position: sticky; top: 0; height: 64px;");
+        this.addShimC$1(_el_59);
+        _el_60 = S.createAndAppend(doc, "main", _el_58);
+        this.addShimE$1(_el_60);
         t1 = P.String;
         t2 = new L.ViewCardDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 58, N.CardDemoComponent));
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 61, N.CardDemoComponent));
         t3 = doc.createElement("card-demo");
         t2.rootEl = H.interceptedTypeCheck(t3, "$isHtmlElement");
         t3 = $.ViewCardDemoComponent0__renderType;
@@ -20436,18 +20444,18 @@
           $.ViewCardDemoComponent0__renderType = t3;
         }
         t2.setupComponentType$1(t3);
-        this._compView_58 = t2;
-        _el_58 = t2.rootEl;
-        t2 = J.getInterceptor$x(_el_57);
-        t2.append$1(_el_57, _el_58);
-        _el_58.className = "demo";
-        J.setAttribute$2$x(_el_58, "id", "card-demo");
-        this.addShimC$1(_el_58);
+        this._compView_61 = t2;
+        _el_61 = t2.rootEl;
+        t2 = J.getInterceptor$x(_el_60);
+        t2.append$1(_el_60, _el_61);
+        _el_61.className = "demo";
+        J.setAttribute$2$x(_el_61, "id", "card-demo");
+        this.addShimC$1(_el_61);
         t3 = new N.CardDemoComponent();
-        this._CardDemoComponent_58_5 = t3;
-        this._compView_58.create$2(0, t3, []);
+        this._CardDemoComponent_61_5 = t3;
+        this._compView_61.create$2(0, t3, []);
         t3 = new M.ViewCkeditorDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 59, K.CkeditorDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 62, K.CkeditorDemoComponent));
         t4 = doc.createElement("ckeditor-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewCkeditorDemoComponent0__renderType;
@@ -20457,17 +20465,17 @@
           $.ViewCkeditorDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_59 = t3;
-        _el_59 = t3.rootEl;
-        t2.append$1(_el_57, _el_59);
-        _el_59.className = "demo";
-        J.setAttribute$2$x(_el_59, "id", "ckeditor-demo");
-        this.addShimC$1(_el_59);
+        this._compView_62 = t3;
+        _el_62 = t3.rootEl;
+        t2.append$1(_el_60, _el_62);
+        _el_62.className = "demo";
+        J.setAttribute$2$x(_el_62, "id", "ckeditor-demo");
+        this.addShimC$1(_el_62);
         t3 = new K.CkeditorDemoComponent(H.setRuntimeTypeInfo([new V.ExtraPlugin("dartlogo", "/ckeditor/dartlogo/plugin.js", "")], [V.ExtraPlugin]));
-        this._CkeditorDemoComponent_59_5 = t3;
-        this._compView_59.create$2(0, t3, []);
+        this._CkeditorDemoComponent_62_5 = t3;
+        this._compView_62.create$2(0, t3, []);
         t3 = new E.ViewDataTableDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 60, T.DataTableDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 63, T.DataTableDemoComponent));
         t4 = doc.createElement("data-table-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewDataTableDemoComponent0__renderType;
@@ -20477,17 +20485,17 @@
           $.ViewDataTableDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_60 = t3;
-        _el_60 = t3.rootEl;
-        t2.append$1(_el_57, _el_60);
-        _el_60.className = "demo";
-        J.setAttribute$2$x(_el_60, "id", "data-table-demo");
-        this.addShimC$1(_el_60);
+        this._compView_63 = t3;
+        _el_63 = t3.rootEl;
+        t2.append$1(_el_60, _el_63);
+        _el_63.className = "demo";
+        J.setAttribute$2$x(_el_63, "id", "data-table-demo");
+        this.addShimC$1(_el_63);
         t3 = new T.DataTableDemoComponent();
-        this._DataTableDemoComponent_60_5 = t3;
-        this._compView_60.create$2(0, t3, []);
+        this._DataTableDemoComponent_63_5 = t3;
+        this._compView_63.create$2(0, t3, []);
         t3 = new S.ViewGridDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 61, Q.GridDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 64, Q.GridDemoComponent));
         t4 = doc.createElement("grid-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewGridDemoComponent0__renderType;
@@ -20497,17 +20505,17 @@
           $.ViewGridDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_61 = t3;
-        _el_61 = t3.rootEl;
-        t2.append$1(_el_57, _el_61);
-        _el_61.className = "demo";
-        J.setAttribute$2$x(_el_61, "id", "grid-demo");
-        this.addShimC$1(_el_61);
+        this._compView_64 = t3;
+        _el_64 = t3.rootEl;
+        t2.append$1(_el_60, _el_64);
+        _el_64.className = "demo";
+        J.setAttribute$2$x(_el_64, "id", "grid-demo");
+        this.addShimC$1(_el_64);
         t3 = new Q.GridDemoComponent();
-        this._GridDemoComponent_61_5 = t3;
-        this._compView_61.create$2(0, t3, []);
+        this._GridDemoComponent_64_5 = t3;
+        this._compView_64.create$2(0, t3, []);
         t3 = new V.ViewHexColorizePipeDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 62, A.HexColorizePipeDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 65, A.HexColorizePipeDemoComponent));
         t4 = doc.createElement("hex-colorize-pipe-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewHexColorizePipeDemoComponent0__renderType;
@@ -20517,17 +20525,17 @@
           $.ViewHexColorizePipeDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_62 = t3;
-        _el_62 = t3.rootEl;
-        t2.append$1(_el_57, _el_62);
-        _el_62.className = "demo";
-        J.setAttribute$2$x(_el_62, "id", "hex-colorize-demo");
-        this.addShimC$1(_el_62);
+        this._compView_65 = t3;
+        _el_65 = t3.rootEl;
+        t2.append$1(_el_60, _el_65);
+        _el_65.className = "demo";
+        J.setAttribute$2$x(_el_65, "id", "hex-colorize-demo");
+        this.addShimC$1(_el_65);
         t3 = new A.HexColorizePipeDemoComponent(H.setRuntimeTypeInfo("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".split(" "), [t1]));
-        this._HexColorizePipeDemoComponent_62_5 = t3;
-        this._compView_62.create$2(0, t3, []);
+        this._HexColorizePipeDemoComponent_65_5 = t3;
+        this._compView_65.create$2(0, t3, []);
         t3 = new O.ViewInfobarDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 63, Q.InfobarDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 66, Q.InfobarDemoComponent));
         t4 = doc.createElement("infobar-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewInfobarDemoComponent0__renderType;
@@ -20537,17 +20545,17 @@
           $.ViewInfobarDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_63 = t3;
-        _el_63 = t3.rootEl;
-        t2.append$1(_el_57, _el_63);
-        _el_63.className = "demo";
-        J.setAttribute$2$x(_el_63, "id", "infobar-demo");
-        this.addShimC$1(_el_63);
+        this._compView_66 = t3;
+        _el_66 = t3.rootEl;
+        t2.append$1(_el_60, _el_66);
+        _el_66.className = "demo";
+        J.setAttribute$2$x(_el_66, "id", "infobar-demo");
+        this.addShimC$1(_el_66);
         t3 = new Q.InfobarDemoComponent();
-        this._InfobarDemoComponent_63_5 = t3;
-        this._compView_63.create$2(0, t3, []);
+        this._InfobarDemoComponent_66_5 = t3;
+        this._compView_66.create$2(0, t3, []);
         t3 = new Z.ViewMarkdownDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 64, Q.MarkdownDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 67, Q.MarkdownDemoComponent));
         t4 = doc.createElement("markdown-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewMarkdownDemoComponent0__renderType;
@@ -20557,17 +20565,17 @@
           $.ViewMarkdownDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_64 = t3;
-        _el_64 = t3.rootEl;
-        t2.append$1(_el_57, _el_64);
-        _el_64.className = "demo";
-        J.setAttribute$2$x(_el_64, "id", "markdown-demo");
-        this.addShimC$1(_el_64);
+        this._compView_67 = t3;
+        _el_67 = t3.rootEl;
+        t2.append$1(_el_60, _el_67);
+        _el_67.className = "demo";
+        J.setAttribute$2$x(_el_67, "id", "markdown-demo");
+        this.addShimC$1(_el_67);
         t3 = new Q.MarkdownDemoComponent("  ## Fuissem ibat manus et negata\n\n  Arduus suus frustra, alite et sociamque spes quique turba faciem. Nos huius\n  populos nostra iamdudum tibi, sic positos numquam parvos umidus *acutis* suae\n  quo maturus frequentant equidem. Ostentare opem arva: Assyrii intellegit dei\n  quies pariter de utinam recognoscit, et sanguine fratres adsimulavit virgo?\n  Pretium Turnus instigant, verba nam actaque virent **altum**, induitur.\n\n  > Segnibus o templis collo. Est tum, et quaeris pulsat mollitaque, puta est\n  > ingens. Puellam luctisono orbem.\n");
-        this._MarkdownDemoComponent_64_5 = t3;
-        this._compView_64.create$2(0, t3, []);
+        this._MarkdownDemoComponent_67_5 = t3;
+        this._compView_67.create$2(0, t3, []);
         t3 = new Z.ViewNavItemDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 65, L.NavItemDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 68, L.NavItemDemoComponent));
         t4 = doc.createElement("nav-item-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewNavItemDemoComponent0__renderType;
@@ -20577,17 +20585,17 @@
           $.ViewNavItemDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_65 = t3;
-        _el_65 = t3.rootEl;
-        t2.append$1(_el_57, _el_65);
-        _el_65.className = "demo";
-        J.setAttribute$2$x(_el_65, "id", "nav-item-demo");
-        this.addShimC$1(_el_65);
+        this._compView_68 = t3;
+        _el_68 = t3.rootEl;
+        t2.append$1(_el_60, _el_68);
+        _el_68.className = "demo";
+        J.setAttribute$2$x(_el_68, "id", "nav-item-demo");
+        this.addShimC$1(_el_68);
         t3 = new L.NavItemDemoComponent();
-        this._NavItemDemoComponent_65_5 = t3;
-        this._compView_65.create$2(0, t3, []);
+        this._NavItemDemoComponent_68_5 = t3;
+        this._compView_68.create$2(0, t3, []);
         t3 = new Y.ViewSidebarItemDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 66, Q.SidebarItemDemoComponent));
+        t3.set$viewData(S.AppViewData_AppViewData(t3, 1, C.ViewType_1, 69, Q.SidebarItemDemoComponent));
         t4 = doc.createElement("sidebar-item-demo");
         t3.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
         t4 = $.ViewSidebarItemDemoComponent0__renderType;
@@ -20597,70 +20605,90 @@
           $.ViewSidebarItemDemoComponent0__renderType = t4;
         }
         t3.setupComponentType$1(t4);
-        this._compView_66 = t3;
-        _el_66 = t3.rootEl;
-        t2.append$1(_el_57, _el_66);
-        _el_66.className = "demo";
-        J.setAttribute$2$x(_el_66, "id", "sidebar-item-demo");
-        this.addShimC$1(_el_66);
+        this._compView_69 = t3;
+        _el_69 = t3.rootEl;
+        t2.append$1(_el_60, _el_69);
+        _el_69.className = "demo";
+        J.setAttribute$2$x(_el_69, "id", "sidebar-item-demo");
+        this.addShimC$1(_el_69);
         t3 = P.Null;
         t4 = new Q.SidebarItemDemoComponent(P.StreamController_StreamController(null, null, null, null, false, t3));
-        this._SidebarItemDemoComponent_66_5 = t4;
-        this._compView_66.create$2(0, t4, []);
-        t1 = new D.ViewSnackbarDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
-        t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, 67, T.SnackbarDemoComponent));
-        t4 = doc.createElement("snackbar-demo");
+        this._SidebarItemDemoComponent_69_5 = t4;
+        this._compView_69.create$2(0, t4, []);
+        t4 = new D.ViewSnackbarDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
+        t4.set$viewData(S.AppViewData_AppViewData(t4, 1, C.ViewType_1, 70, T.SnackbarDemoComponent));
+        t5 = doc.createElement("snackbar-demo");
+        t4.rootEl = H.interceptedTypeCheck(t5, "$isHtmlElement");
+        t5 = $.ViewSnackbarDemoComponent0__renderType;
+        if (t5 == null) {
+          t5 = $.appViewUtils;
+          t5 = t5.createRenderType$3(null, C.ViewEncapsulation_1, C.List_empty);
+          $.ViewSnackbarDemoComponent0__renderType = t5;
+        }
+        t4.setupComponentType$1(t5);
+        this._compView_70 = t4;
+        _el_70 = t4.rootEl;
+        t2.append$1(_el_60, _el_70);
+        _el_70.className = "demo";
+        J.setAttribute$2$x(_el_70, "id", "snackbar-demo");
+        this.addShimC$1(_el_70);
+        t4 = new T.SnackbarService(P.StreamController_StreamController(null, null, null, null, false, T.SnackMessage));
+        this._SnackbarService_70_5 = t4;
+        t4 = new T.SnackbarDemoComponent(t4);
+        this._SnackbarDemoComponent_70_6 = t4;
+        this._compView_70.create$2(0, t4, []);
+        t1 = new X.ViewExtendedMaterialIconDemoComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
+        t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, 71, V.ExtendedMaterialIconDemoComponent));
+        t4 = doc.createElement("extended-material-icon-demo");
         t1.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
-        t4 = $.ViewSnackbarDemoComponent0__renderType;
+        t4 = $.ViewExtendedMaterialIconDemoComponent0__renderType;
         if (t4 == null) {
           t4 = $.appViewUtils;
-          t4 = t4.createRenderType$3(null, C.ViewEncapsulation_1, C.List_empty);
-          $.ViewSnackbarDemoComponent0__renderType = t4;
+          t4 = t4.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$ExtendedMaterialIconDemoComponent());
+          $.ViewExtendedMaterialIconDemoComponent0__renderType = t4;
         }
         t1.setupComponentType$1(t4);
-        this._compView_67 = t1;
-        _el_67 = t1.rootEl;
-        t2.append$1(_el_57, _el_67);
-        _el_67.className = "demo";
-        J.setAttribute$2$x(_el_67, "id", "snackbar-demo");
-        this.addShimC$1(_el_67);
-        t2 = new T.SnackbarService(P.StreamController_StreamController(null, null, null, null, false, T.SnackMessage));
-        this._SnackbarService_67_5 = t2;
-        t2 = new T.SnackbarDemoComponent(t2);
-        this._SnackbarDemoComponent_67_6 = t2;
-        this._compView_67.create$2(0, t2, []);
-        t2 = this._MaterialButtonComponent_51_6._trigger;
+        this._compView_71 = t1;
+        _el_71 = t1.rootEl;
+        t2.append$1(_el_60, _el_71);
+        _el_71.className = "demo";
+        J.setAttribute$2$x(_el_71, "id", "extended-material-icon-demo");
+        this.addShimC$1(_el_71);
+        t2 = new V.ExtendedMaterialIconDemoComponent();
+        this._ExtendedMaterialIconDemoComponent_71_5 = t2;
+        this._compView_71.create$2(0, t2, []);
+        t2 = this._MaterialButtonComponent_54_6._trigger;
         t1 = W.UIEvent;
-        subscription_0 = new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(this.eventHandler1$2$1(this.get$_handle_trigger_51_0(), t1, t1));
-        t1 = this._SidebarItemDemoComponent_66_5._openController;
-        this.init$2(C.List_empty, [subscription_0, new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(this.eventHandler1$2$1(this.get$_handle_open_66_0(), t3, t3))]);
+        subscription_0 = new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(this.eventHandler1$2$1(this.get$_handle_trigger_54_0(), t1, t1));
+        t1 = this._SidebarItemDemoComponent_69_5._openController;
+        this.init$2(C.List_empty, [subscription_0, new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(this.eventHandler1$2$1(this.get$_handle_open_69_0(), t3, t3))]);
       },
       injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
         var t1;
         if (token === C.Type_gkc || token === C.Type_DeferredContentAware_BCk)
-          t1 = nodeIndex <= 46;
+          t1 = nodeIndex <= 49;
         else
           t1 = false;
         if (t1)
           return this._MaterialPersistentDrawerDirective_0_5.instance;
-        if (token === C.Type_AcxDarkTheme_Tng && 51 <= nodeIndex && nodeIndex <= 52)
-          return this._AcxDarkTheme_51_5;
-        if ((token === C.Type_MaterialButtonComponent_xw8 || token === C.Type_ButtonDirective_hH0 || token === C.Type_HasDisabled_qzc) && 51 <= nodeIndex && nodeIndex <= 52)
-          return this._MaterialButtonComponent_51_6;
-        if (token === C.Type_EditorRenderer_wbs && 64 === nodeIndex) {
-          t1 = this.__EditorRenderer_64_6;
+        if (token === C.Type_AcxDarkTheme_Tng && 54 <= nodeIndex && nodeIndex <= 55)
+          return this._AcxDarkTheme_54_5;
+        if ((token === C.Type_MaterialButtonComponent_xw8 || token === C.Type_ButtonDirective_hH0 || token === C.Type_HasDisabled_qzc) && 54 <= nodeIndex && nodeIndex <= 55)
+          return this._MaterialButtonComponent_54_6;
+        if (token === C.Type_EditorRenderer_wbs && 67 === nodeIndex) {
+          t1 = this.__EditorRenderer_67_6;
           if (t1 == null) {
             t1 = new Q.MarkdownRenderer();
-            this.__EditorRenderer_64_6 = t1;
+            this.__EditorRenderer_67_6 = t1;
           }
           return t1;
         }
-        if (token === C.Type_SnackbarService_v1z && 67 === nodeIndex)
-          return this._SnackbarService_67_5;
+        if (token === C.Type_SnackbarService_v1z && 70 === nodeIndex)
+          return this._SnackbarService_70_5;
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var firstCheck, local_drawer, changed, t1, t2, t3, currVal_0, t4, currVal_1, currVal_16;
+        var firstCheck, local_drawer, changed, t1, t2, t3, currVal_0, t4, currVal_1, currVal_17;
         firstCheck = this.viewData._cdState === 0;
         local_drawer = this._MaterialPersistentDrawerDirective_0_5.instance;
         if (firstCheck)
@@ -20777,15 +20805,20 @@
           changed = false;
         if (changed)
           this._compView_44.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_51_6.ngOnInit$0();
         if (firstCheck) {
-          this._MaterialIconComponent_52_5.set$icon(0, "menu");
+          this._SkawaSidebarItemComponent_47_5.TextOnlyMixin_textOnly = "";
           changed = true;
         } else
           changed = false;
         if (changed)
-          this._compView_52.viewData.set$cdMode(1);
+          this._compView_47.viewData.set$cdMode(1);
+        if (firstCheck) {
+          this._MaterialIconComponent_55_5.set$icon(0, "menu");
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_55.viewData.set$cdMode(1);
         t1 = this._MaterialPersistentDrawerDirective_0_5;
         t2 = this._el_0;
         t3 = t1.instance;
@@ -20817,14 +20850,15 @@
         this._compView_38.detectHostChanges$1(firstCheck);
         this._compView_41.detectHostChanges$1(firstCheck);
         this._compView_44.detectHostChanges$1(firstCheck);
+        this._compView_47.detectHostChanges$1(firstCheck);
         t1 = local_drawer._visible;
-        currVal_16 = !t1;
-        t1 = this._expr_16;
-        if (t1 !== currVal_16) {
-          this.updateClass$3(H.interceptedTypeCheck(this._el_49, "$isHtmlElement"), "no-drawer", currVal_16);
-          this._expr_16 = currVal_16;
+        currVal_17 = !t1;
+        t1 = this._expr_17;
+        if (t1 !== currVal_17) {
+          this.updateClass$3(H.interceptedTypeCheck(this._el_52, "$isHtmlElement"), "no-drawer", currVal_17);
+          this._expr_17 = currVal_17;
         }
-        this._compView_51.detectHostChanges$1(firstCheck);
+        this._compView_54.detectHostChanges$1(firstCheck);
         this._compView_1.detectChanges$0();
         this._compView_3.detectChanges$0();
         this._compView_6.detectChanges$0();
@@ -20841,11 +20875,9 @@
         this._compView_38.detectChanges$0();
         this._compView_41.detectChanges$0();
         this._compView_44.detectChanges$0();
-        this._compView_51.detectChanges$0();
-        this._compView_52.detectChanges$0();
-        this._compView_58.detectChanges$0();
-        this._compView_59.detectChanges$0();
-        this._compView_60.detectChanges$0();
+        this._compView_47.detectChanges$0();
+        this._compView_54.detectChanges$0();
+        this._compView_55.detectChanges$0();
         this._compView_61.detectChanges$0();
         this._compView_62.detectChanges$0();
         this._compView_63.detectChanges$0();
@@ -20853,6 +20885,10 @@
         this._compView_65.detectChanges$0();
         this._compView_66.detectChanges$0();
         this._compView_67.detectChanges$0();
+        this._compView_68.detectChanges$0();
+        this._compView_69.detectChanges$0();
+        this._compView_70.detectChanges$0();
+        this._compView_71.detectChanges$0();
       },
       destroyInternal$0: function() {
         this._compView_1.destroy$0();
@@ -20871,11 +20907,9 @@
         this._compView_38.destroy$0();
         this._compView_41.destroy$0();
         this._compView_44.destroy$0();
-        this._compView_51.destroy$0();
-        this._compView_52.destroy$0();
-        this._compView_58.destroy$0();
-        this._compView_59.destroy$0();
-        this._compView_60.destroy$0();
+        this._compView_47.destroy$0();
+        this._compView_54.destroy$0();
+        this._compView_55.destroy$0();
         this._compView_61.destroy$0();
         this._compView_62.destroy$0();
         this._compView_63.destroy$0();
@@ -20883,16 +20917,20 @@
         this._compView_65.destroy$0();
         this._compView_66.destroy$0();
         this._compView_67.destroy$0();
-        this._SidebarItemDemoComponent_66_5._openController.close$0(0);
+        this._compView_68.destroy$0();
+        this._compView_69.destroy$0();
+        this._compView_70.destroy$0();
+        this._compView_71.destroy$0();
+        this._SidebarItemDemoComponent_69_5._openController.close$0(0);
       },
-      _handle_trigger_51_0$1: [function($$event) {
+      _handle_trigger_54_0$1: [function($$event) {
         var local_drawer = this._MaterialPersistentDrawerDirective_0_5.instance;
         local_drawer.set$visible(0, !local_drawer._visible);
-      }, "call$1", "get$_handle_trigger_51_0", 4, 0, 2],
-      _handle_open_66_0$1: [function($$event) {
+      }, "call$1", "get$_handle_trigger_54_0", 4, 0, 2],
+      _handle_open_69_0$1: [function($$event) {
         var local_drawer = this._MaterialPersistentDrawerDirective_0_5.instance;
         local_drawer.set$visible(0, !local_drawer._visible);
-      }, "call$1", "get$_handle_open_66_0", 4, 0, 2],
+      }, "call$1", "get$_handle_open_69_0", 4, 0, 2],
       $asAppView: function() {
         return [Q.AppComponent];
       }
@@ -20951,7 +20989,7 @@
       return t1;
     }, "call$2", "card_demo_template__viewFactory_CardDemoComponent2$closure", 8, 0, 28],
     ViewCardDemoComponent0: {
-      "^": "AppView;0_card_demo_template$_compView_0,0_card_demo_template$_DemoHeaderComponent_0_5,0_card_demo_template$_compView_5,0_SkawaCardComponent_5_5,0_card_demo_template$_compView_6,0_SkawaCardHeaderComponent_6_5,0_SkawaCardHeaderImageDirective_7_5,0_SkawaCardHeaderTitleDirective_10_5,0_compView_14,0_SkawaCardComponent_14_5,0_card_demo_template$_compView_15,0_SkawaCardHeaderComponent_15_5,0_SkawaCardHeaderImageDirective_16_5,0_SkawaCardHeaderTitleDirective_19_5,0_SkawaCardHeaderSubheadDirective_21_5,0_card_demo_template$_compView_25,0_SkawaCardComponent_25_5,0_card_demo_template$_compView_26,0_SkawaCardContentComponent_26_5,0_compView_28,0_SkawaCardActionsComponent_28_5,0_card_demo_template$_compView_29,0_AcxDarkTheme_29_5,0_MaterialButtonComponent_29_6,0_card_demo_template$_compView_35,0_SkawaCardComponent_35_5,0_card_demo_template$_compView_36,0_SkawaCardHeaderComponent_36_5,0_SkawaCardHeaderTitleDirective_37_5,0_SkawaCardHeaderSubheadDirective_39_5,0_card_demo_template$_compView_41,0_SkawaCardContentComponent_41_5,0_compView_48,0_SkawaCardComponent_48_5,0_compView_49,0_SkawaCardHeaderComponent_49_5,0_SkawaCardHeaderTitleDirective_50_5,0_card_demo_template$_compView_52,0_SkawaCardActionsComponent_52_5,0_compView_53,0_AcxDarkTheme_53_5,0_MaterialButtonComponent_53_6,0_card_demo_template$_compView_54,0_MaterialIconComponent_54_5,0_card_demo_template$_compView_55,0_SkawaCardActionsComponent_55_5,0_card_demo_template$_compView_56,0_AcxDarkTheme_56_5,0_MaterialButtonComponent_56_6,0_card_demo_template$_compView_59,0_AcxDarkTheme_59_5,0_MaterialButtonComponent_59_6,0_appEl_60,0_NgIf_60_9,0_appEl_61,0_NgIf_61_9,0_card_demo_template$_compView_62,0_SkawaCardContentComponent_62_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_card_demo_template$_compView_0,0_card_demo_template$_DemoHeaderComponent_0_5,0_card_demo_template$_compView_5,0_SkawaCardComponent_5_5,0_card_demo_template$_compView_6,0_SkawaCardHeaderComponent_6_5,0_SkawaCardHeaderImageDirective_7_5,0_SkawaCardHeaderTitleDirective_10_5,0_card_demo_template$_compView_14,0_SkawaCardComponent_14_5,0_card_demo_template$_compView_15,0_SkawaCardHeaderComponent_15_5,0_SkawaCardHeaderImageDirective_16_5,0_SkawaCardHeaderTitleDirective_19_5,0_SkawaCardHeaderSubheadDirective_21_5,0_card_demo_template$_compView_25,0_SkawaCardComponent_25_5,0_card_demo_template$_compView_26,0_SkawaCardContentComponent_26_5,0_compView_28,0_SkawaCardActionsComponent_28_5,0_card_demo_template$_compView_29,0_AcxDarkTheme_29_5,0_MaterialButtonComponent_29_6,0_card_demo_template$_compView_35,0_SkawaCardComponent_35_5,0_card_demo_template$_compView_36,0_SkawaCardHeaderComponent_36_5,0_SkawaCardHeaderTitleDirective_37_5,0_SkawaCardHeaderSubheadDirective_39_5,0_card_demo_template$_compView_41,0_SkawaCardContentComponent_41_5,0_compView_48,0_SkawaCardComponent_48_5,0_compView_49,0_SkawaCardHeaderComponent_49_5,0_SkawaCardHeaderTitleDirective_50_5,0_compView_52,0_SkawaCardActionsComponent_52_5,0_compView_53,0_AcxDarkTheme_53_5,0_MaterialButtonComponent_53_6,0_card_demo_template$_compView_54,0_MaterialIconComponent_54_5,0_card_demo_template$_compView_55,0_SkawaCardActionsComponent_55_5,0_card_demo_template$_compView_56,0_AcxDarkTheme_56_5,0_MaterialButtonComponent_56_6,0_compView_59,0_AcxDarkTheme_59_5,0_MaterialButtonComponent_59_6,0_appEl_60,0_NgIf_60_9,0_appEl_61,0_NgIf_61_9,0_card_demo_template$_compView_62,0_SkawaCardContentComponent_62_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_0, t2, doc, _el_1, _el_3, _el_5, _el_6, _el_7, _el_8, _el_10, t3, t4, _el_12, _el_14, _el_15, _el_16, _el_17, _el_19, _el_21, _el_23, _el_25, _el_26, _text_27, t5, _el_28, t6, _el_29, _text_30, _el_31, _el_33, _el_35, _el_36, _el_37, _el_39, _el_41, _el_42, _el_44, _el_46, _el_48, _el_49, _el_50, _el_52, _el_53, _el_54, _el_55, _el_56, _text_57, _el_58, _el_59, _el_62, _text_63;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -21014,7 +21052,7 @@
         this.addShimE$1(_el_12);
         J.append$1$x(_el_12, doc.createTextNode("Simple card with image, title and subtitle"));
         t2 = E.ViewSkawaCardComponent0$(this, 14);
-        this._compView_14 = t2;
+        this._card_demo_template$_compView_14 = t2;
         _el_14 = t2.rootEl;
         t1.append$1(parentRenderNode, _el_14);
         this.addShimC$1(_el_14);
@@ -21048,7 +21086,7 @@
         this._card_demo_template$_compView_15.create$2(0, t2, [H.setRuntimeTypeInfo([_el_16, _el_19, _el_21], t3)]);
         t2 = this._SkawaCardComponent_14_5;
         t2.cardHeader = this._SkawaCardHeaderComponent_15_5;
-        this._compView_14.create$2(0, t2, [H.setRuntimeTypeInfo([_el_15], t4)]);
+        this._card_demo_template$_compView_14.create$2(0, t2, [H.setRuntimeTypeInfo([_el_15], t4)]);
         _el_23 = S.createAndAppend(doc, "p", parentRenderNode);
         _el_23.className = "sub-options";
         this.addShimE$1(_el_23);
@@ -21158,7 +21196,7 @@
         this._SkawaCardHeaderTitleDirective_50_5 = new F.SkawaCardHeaderTitleDirective();
         J.append$1$x(_el_50, doc.createTextNode("This could be fun!"));
         t1 = X.ViewSkawaCardActionsComponent0$(this, 52);
-        this._card_demo_template$_compView_52 = t1;
+        this._compView_52 = t1;
         _el_52 = t1.rootEl;
         this.addShimC$1(_el_52);
         this._SkawaCardActionsComponent_52_5 = new X.SkawaCardActionsComponent(this._SkawaCardHeaderComponent_49_5);
@@ -21181,7 +21219,7 @@
         this._MaterialIconComponent_54_5 = t1;
         this._card_demo_template$_compView_54.create$2(0, t1, []);
         this._compView_53.create$2(0, this._MaterialButtonComponent_53_6, [H.setRuntimeTypeInfo([_el_54], t4)]);
-        this._card_demo_template$_compView_52.create$2(0, this._SkawaCardActionsComponent_52_5, [H.setRuntimeTypeInfo([_el_53], t4)]);
+        this._compView_52.create$2(0, this._SkawaCardActionsComponent_52_5, [H.setRuntimeTypeInfo([_el_53], t4)]);
         t1 = this._SkawaCardHeaderComponent_49_5;
         t1.title = this._SkawaCardHeaderTitleDirective_50_5;
         t1.headerActions = this._SkawaCardActionsComponent_52_5;
@@ -21207,13 +21245,13 @@
         _el_58.className = "spacer";
         this.addShimE$1(_el_58);
         t1 = U.ViewMaterialButtonComponent0$(this, 59);
-        this._card_demo_template$_compView_59 = t1;
+        this._compView_59 = t1;
         _el_59 = t1.rootEl;
         J.setAttribute$2$x(_el_59, "icon", "");
         this.addShimC$1(_el_59);
         t1 = F.AcxDarkTheme$(H.boolTypeCheck(t2.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
         this._AcxDarkTheme_59_5 = t1;
-        this._MaterialButtonComponent_59_6 = B.MaterialButtonComponent$(_el_59, t1, this._card_demo_template$_compView_59.viewData.ref, null);
+        this._MaterialButtonComponent_59_6 = B.MaterialButtonComponent$(_el_59, t1, this._compView_59.viewData.ref, null);
         t1 = $.$get$_viewContainerAnchor();
         t2 = new V.ViewContainer(60, 59, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
         this._appEl_60 = t2;
@@ -21221,7 +21259,7 @@
         t1 = new V.ViewContainer(61, 59, this, H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment"));
         this._appEl_61 = t1;
         this._NgIf_61_9 = new K.NgIf(new D.TemplateRef(t1, L.card_demo_template__viewFactory_CardDemoComponent2$closure()), t1, false);
-        this._card_demo_template$_compView_59.create$2(0, this._MaterialButtonComponent_59_6, [H.setRuntimeTypeInfo([this._appEl_60, t1], [V.ViewContainer])]);
+        this._compView_59.create$2(0, this._MaterialButtonComponent_59_6, [H.setRuntimeTypeInfo([this._appEl_60, t1], [V.ViewContainer])]);
         this._card_demo_template$_compView_55.create$2(0, this._SkawaCardActionsComponent_55_5, [H.setRuntimeTypeInfo([_el_56, _el_58, _el_59], t3)]);
         t3 = E.ViewSkawaCardContentComponent0$(this, 62);
         this._card_demo_template$_compView_62 = t3;
@@ -21287,8 +21325,6 @@
           changed = false;
         if (changed)
           this._card_demo_template$_compView_0.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_29_6.ngOnInit$0();
         if (firstCheck) {
           this._SkawaCardHeaderComponent_36_5.statusColor = "rgb(0,127,0)";
           changed = true;
@@ -21303,8 +21339,6 @@
           changed = false;
         if (changed)
           this._compView_49.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_53_6.ngOnInit$0();
         if (firstCheck) {
           this._MaterialIconComponent_54_5.set$icon(0, "more_vert");
           changed = true;
@@ -21312,10 +21346,6 @@
           changed = false;
         if (changed)
           this._card_demo_template$_compView_54.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_56_6.ngOnInit$0();
-        if (firstCheck)
-          this._MaterialButtonComponent_59_6.ngOnInit$0();
         this._NgIf_60_9.set$ngIf(local_secondaryContent.collapsed != null);
         this._NgIf_61_9.set$ngIf(local_secondaryContent.collapsed == null);
         if (firstCheck) {
@@ -21335,16 +21365,16 @@
         this._card_demo_template$_compView_36.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_41.detectHostChanges$1(firstCheck);
         this._compView_49.detectHostChanges$1(firstCheck);
-        this._card_demo_template$_compView_52.detectHostChanges$1(firstCheck);
+        this._compView_52.detectHostChanges$1(firstCheck);
         this._compView_53.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_55.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_56.detectHostChanges$1(firstCheck);
-        this._card_demo_template$_compView_59.detectHostChanges$1(firstCheck);
+        this._compView_59.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_62.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_0.detectChanges$0();
         this._card_demo_template$_compView_5.detectChanges$0();
         this._card_demo_template$_compView_6.detectChanges$0();
-        this._compView_14.detectChanges$0();
+        this._card_demo_template$_compView_14.detectChanges$0();
         this._card_demo_template$_compView_15.detectChanges$0();
         this._card_demo_template$_compView_25.detectChanges$0();
         this._card_demo_template$_compView_26.detectChanges$0();
@@ -21355,12 +21385,12 @@
         this._card_demo_template$_compView_41.detectChanges$0();
         this._compView_48.detectChanges$0();
         this._compView_49.detectChanges$0();
-        this._card_demo_template$_compView_52.detectChanges$0();
+        this._compView_52.detectChanges$0();
         this._compView_53.detectChanges$0();
         this._card_demo_template$_compView_54.detectChanges$0();
         this._card_demo_template$_compView_55.detectChanges$0();
         this._card_demo_template$_compView_56.detectChanges$0();
-        this._card_demo_template$_compView_59.detectChanges$0();
+        this._compView_59.detectChanges$0();
         this._card_demo_template$_compView_62.detectChanges$0();
       },
       destroyInternal$0: function() {
@@ -21369,7 +21399,7 @@
         this._card_demo_template$_compView_0.destroy$0();
         this._card_demo_template$_compView_5.destroy$0();
         this._card_demo_template$_compView_6.destroy$0();
-        this._compView_14.destroy$0();
+        this._card_demo_template$_compView_14.destroy$0();
         this._card_demo_template$_compView_15.destroy$0();
         this._card_demo_template$_compView_25.destroy$0();
         this._card_demo_template$_compView_26.destroy$0();
@@ -21380,12 +21410,12 @@
         this._card_demo_template$_compView_41.destroy$0();
         this._compView_48.destroy$0();
         this._compView_49.destroy$0();
-        this._card_demo_template$_compView_52.destroy$0();
+        this._compView_52.destroy$0();
         this._compView_53.destroy$0();
         this._card_demo_template$_compView_54.destroy$0();
         this._card_demo_template$_compView_55.destroy$0();
         this._card_demo_template$_compView_56.destroy$0();
-        this._card_demo_template$_compView_59.destroy$0();
+        this._compView_59.destroy$0();
         this._card_demo_template$_compView_62.destroy$0();
       },
       _handle_trigger_59_0$1: [function($$event) {
@@ -22509,7 +22539,7 @@
   }], ["", "package:skawa_components_example/demo_header/demo_header.template.dart",, S, {
     "^": "",
     ViewDemoHeaderComponent0: {
-      "^": "AppView;0_demo_header_template$_compView_3,0_AcxDarkTheme_3_5,0_MaterialButtonComponent_3_6,0_demo_header_template$_compView_4,0_MaterialIconComponent_4_5,0_compView_7,0_AcxDarkTheme_7_5,0_MaterialButtonComponent_7_6,0_compView_8,0_MaterialIconComponent_8_5,0_demo_header_template$_expr_0,0_expr_1,0_expr_3,0_demo_header_template$_text_1,0_el_2,0_el_6,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_demo_header_template$_compView_3,0_AcxDarkTheme_3_5,0_MaterialButtonComponent_3_6,0_demo_header_template$_compView_4,0_MaterialIconComponent_4_5,0_compView_7,0_AcxDarkTheme_7_5,0_MaterialButtonComponent_7_6,0_demo_header_template$_compView_8,0_MaterialIconComponent_8_5,0_demo_header_template$_expr_0,0_demo_header_template$_expr_1,0_expr_3,0_text_1,0_el_2,0_el_6,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, doc, _el_0, t1, _el_3, t2, _el_4, t3, _el_7, _el_8;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -22517,7 +22547,7 @@
         _el_0 = S.createAndAppend(doc, "h2", parentRenderNode);
         this.addShimE$1(_el_0);
         t1 = doc.createTextNode("");
-        this._demo_header_template$_text_1 = t1;
+        this._text_1 = t1;
         J.append$1$x(_el_0, t1);
         t1 = H.interceptedTypeCheck(S.createAndAppend(doc, "a", parentRenderNode), "$isAnchorElement");
         this._el_2 = t1;
@@ -22566,13 +22596,13 @@
         this._AcxDarkTheme_7_5 = t1;
         this._MaterialButtonComponent_7_6 = B.MaterialButtonComponent$(_el_7, t1, this._compView_7.viewData.ref, null);
         t1 = M.ViewMaterialIconComponent0$(this, 8);
-        this._compView_8 = t1;
+        this._demo_header_template$_compView_8 = t1;
         _el_8 = t1.rootEl;
         J.setAttribute$2$x(_el_8, "icon", "wb_incandescent");
         this.addShimC$1(_el_8);
         t1 = new Y.MaterialIconComponent(_el_8);
         this._MaterialIconComponent_8_5 = t1;
-        this._compView_8.create$2(0, t1, []);
+        this._demo_header_template$_compView_8.create$2(0, t1, []);
         this._compView_7.create$2(0, this._MaterialButtonComponent_7_6, [H.setRuntimeTypeInfo([_el_8], t2)]);
         this.init$2(C.List_empty, null);
       },
@@ -22594,8 +22624,6 @@
         var _ctx, firstCheck, changed, currVal_0, t1, currVal_1, currVal_3;
         _ctx = this.ctx;
         firstCheck = this.viewData._cdState === 0;
-        if (firstCheck)
-          this._MaterialButtonComponent_3_6.ngOnInit$0();
         if (firstCheck) {
           this._MaterialIconComponent_4_5.set$icon(0, "code");
           changed = true;
@@ -22603,30 +22631,28 @@
           changed = false;
         if (changed)
           this._demo_header_template$_compView_4.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_7_6.ngOnInit$0();
         if (firstCheck) {
           this._MaterialIconComponent_8_5.set$icon(0, "wb_incandescent");
           changed = true;
         } else
           changed = false;
         if (changed)
-          this._compView_8.viewData.set$cdMode(1);
+          this._demo_header_template$_compView_8.viewData.set$cdMode(1);
         currVal_0 = _ctx.title;
         if (currVal_0 == null)
           currVal_0 = "";
         t1 = this._demo_header_template$_expr_0;
         if (t1 !== currVal_0) {
-          this._demo_header_template$_text_1.textContent = currVal_0;
+          this._text_1.textContent = currVal_0;
           this._demo_header_template$_expr_0 = currVal_0;
         }
         currVal_1 = _ctx.sourceHref;
         if (currVal_1 == null)
           currVal_1 = "";
-        t1 = this._expr_1;
+        t1 = this._demo_header_template$_expr_1;
         if (t1 !== currVal_1) {
           this._el_2.href = $.appViewUtils.sanitizer.sanitizeUrl$1(currVal_1);
-          this._expr_1 = currVal_1;
+          this._demo_header_template$_expr_1 = currVal_1;
         }
         this._demo_header_template$_compView_3.detectHostChanges$1(firstCheck);
         currVal_3 = _ctx.exampleHref;
@@ -22641,13 +22667,13 @@
         this._demo_header_template$_compView_3.detectChanges$0();
         this._demo_header_template$_compView_4.detectChanges$0();
         this._compView_7.detectChanges$0();
-        this._compView_8.detectChanges$0();
+        this._demo_header_template$_compView_8.detectChanges$0();
       },
       destroyInternal$0: function() {
         this._demo_header_template$_compView_3.destroy$0();
         this._demo_header_template$_compView_4.destroy$0();
         this._compView_7.destroy$0();
-        this._compView_8.destroy$0();
+        this._demo_header_template$_compView_8.destroy$0();
       },
       $asAppView: function() {
         return [D.DemoHeaderComponent];
@@ -22670,6 +22696,199 @@
         }
       }
     }
+  }], ["asset_skawa_components_example_lib_extended_material_icon_demo_extended_material_icon_demo.css.shim.dart", "package:skawa_components_example/extended_material_icon_demo/extended_material_icon_demo.css.shim.dart",, M, {}], ["", "package:skawa_components_example/extended_material_icon_demo/extended_material_icon_demo.dart",, V, {
+    "^": "",
+    ExtendedMaterialIconDemoComponent: {
+      "^": "Object;"
+    }
+  }], ["", "package:skawa_components_example/extended_material_icon_demo/extended_material_icon_demo.template.dart",, X, {
+    "^": "",
+    ViewExtendedMaterialIconDemoComponent0: {
+      "^": "AppView;0_extended_material_icon_demo_template$_compView_0,0_DemoHeaderComponent_0_5,0_compView_2,0_ExtendedMaterialIconComponent_2_5,0_compView_4,0_ExtendedMaterialIconComponent_4_5,0_extended_material_icon_demo_template$_compView_6,0_ExtendedMaterialIconComponent_6_5,0_compView_8,0_ExtendedMaterialIconComponent_8_5,0_compView_10,0_ExtendedMaterialIconComponent_10_5,0_extended_material_icon_demo_template$_compView_12,0_ExtendedMaterialIconComponent_12_5,0_compView_14,0_ExtendedMaterialIconComponent_14_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var parentRenderNode, t1, _el_0, doc, _el_1, _el_2, _el_4, _el_5, _el_6, _el_8, _el_9, _el_10, _el_12, _el_14;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        t1 = S.ViewDemoHeaderComponent0$(this, 0);
+        this._extended_material_icon_demo_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        J.append$1$x(parentRenderNode, _el_0);
+        t1 = J.getInterceptor$x(_el_0);
+        t1.setAttribute$2(_el_0, "exampleHref", "https://github.com/skawa-universe/skawa_components_example/tree/master/lib/extended_material_icon_demo");
+        t1.setAttribute$2(_el_0, "sourceHref", "https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/extended_material_icon");
+        t1.setAttribute$2(_el_0, "title", "Hex Colorize Pipe Demo");
+        this.addShimC$1(_el_0);
+        t1 = new D.DemoHeaderComponent();
+        this._DemoHeaderComponent_0_5 = t1;
+        this._extended_material_icon_demo_template$_compView_0.create$2(0, t1, []);
+        doc = document;
+        _el_1 = S.createDivAndAppend(doc, parentRenderNode);
+        this.addShimC$1(_el_1);
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 2);
+        this._compView_2 = t1;
+        _el_2 = t1.rootEl;
+        (_el_1 && C.DivElement_methods).append$1(_el_1, _el_2);
+        J.setAttribute$2$x(_el_2, "icon", "hubspot");
+        this.addShimC$1(_el_2);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_2_5 = t1;
+        this._compView_2.create$2(0, t1, []);
+        C.DivElement_methods.append$1(_el_1, doc.createTextNode("Flipped horizontally"));
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 4);
+        this._compView_4 = t1;
+        _el_4 = t1.rootEl;
+        C.DivElement_methods.append$1(_el_1, _el_4);
+        J.setAttribute$2$x(_el_4, "icon", "hubspot");
+        this.addShimC$1(_el_4);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_4_5 = t1;
+        this._compView_4.create$2(0, t1, []);
+        _el_5 = S.createDivAndAppend(doc, parentRenderNode);
+        this.addShimC$1(_el_5);
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 6);
+        this._extended_material_icon_demo_template$_compView_6 = t1;
+        _el_6 = t1.rootEl;
+        (_el_5 && C.DivElement_methods).append$1(_el_5, _el_6);
+        J.setAttribute$2$x(_el_6, "icon", "star");
+        this.addShimC$1(_el_6);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_6_5 = t1;
+        this._extended_material_icon_demo_template$_compView_6.create$2(0, t1, []);
+        C.DivElement_methods.append$1(_el_5, doc.createTextNode("Flipped vertically"));
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 8);
+        this._compView_8 = t1;
+        _el_8 = t1.rootEl;
+        C.DivElement_methods.append$1(_el_5, _el_8);
+        J.setAttribute$2$x(_el_8, "icon", "star");
+        this.addShimC$1(_el_8);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_8_5 = t1;
+        this._compView_8.create$2(0, t1, []);
+        _el_9 = S.createDivAndAppend(doc, parentRenderNode);
+        this.addShimC$1(_el_9);
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 10);
+        this._compView_10 = t1;
+        _el_10 = t1.rootEl;
+        (_el_9 && C.DivElement_methods).append$1(_el_9, _el_10);
+        J.setAttribute$2$x(_el_10, "icon", "chart-line-stacked");
+        this.addShimC$1(_el_10);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_10_5 = t1;
+        this._compView_10.create$2(0, t1, []);
+        C.DivElement_methods.append$1(_el_9, doc.createTextNode("Rotated by 45 deg"));
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 12);
+        this._extended_material_icon_demo_template$_compView_12 = t1;
+        _el_12 = t1.rootEl;
+        C.DivElement_methods.append$1(_el_9, _el_12);
+        J.setAttribute$2$x(_el_12, "icon", "chart-line-stacked");
+        this.addShimC$1(_el_12);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_12_5 = t1;
+        this._extended_material_icon_demo_template$_compView_12.create$2(0, t1, []);
+        C.DivElement_methods.append$1(_el_9, doc.createTextNode("Spinning icon"));
+        t1 = Q.ViewExtendedMaterialIconComponent0$(this, 14);
+        this._compView_14 = t1;
+        _el_14 = t1.rootEl;
+        C.DivElement_methods.append$1(_el_9, _el_14);
+        J.setAttribute$2$x(_el_14, "icon", "chart-line-stacked");
+        this.addShimC$1(_el_14);
+        t1 = new R.ExtendedMaterialIconComponent(false, false, false);
+        this._ExtendedMaterialIconComponent_14_5 = t1;
+        this._compView_14.create$2(0, t1, []);
+        this.init$2(C.List_empty, null);
+      },
+      detectChangesInternal$0: function() {
+        var firstCheck, t1, changed;
+        firstCheck = this.viewData._cdState === 0;
+        if (firstCheck) {
+          t1 = this._DemoHeaderComponent_0_5;
+          t1.title = "Hex Colorize Pipe Demo";
+          t1.sourceHref = "https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/extended_material_icon";
+          t1.exampleHref = "https://github.com/skawa-universe/skawa_components_example/tree/master/lib/extended_material_icon_demo";
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._extended_material_icon_demo_template$_compView_0.viewData.set$cdMode(1);
+        if (firstCheck) {
+          this._ExtendedMaterialIconComponent_2_5.icon = "hubspot";
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_2.viewData.set$cdMode(1);
+        if (firstCheck) {
+          t1 = this._ExtendedMaterialIconComponent_4_5;
+          t1.icon = "hubspot";
+          t1.flipHorizontal = true;
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_4.viewData.set$cdMode(1);
+        if (firstCheck) {
+          this._ExtendedMaterialIconComponent_6_5.icon = "star";
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._extended_material_icon_demo_template$_compView_6.viewData.set$cdMode(1);
+        if (firstCheck) {
+          t1 = this._ExtendedMaterialIconComponent_8_5;
+          t1.icon = "star";
+          t1.flipVertical = true;
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_8.viewData.set$cdMode(1);
+        if (firstCheck) {
+          this._ExtendedMaterialIconComponent_10_5.icon = "chart-line-stacked";
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_10.viewData.set$cdMode(1);
+        if (firstCheck) {
+          t1 = this._ExtendedMaterialIconComponent_12_5;
+          t1.icon = "chart-line-stacked";
+          t1.rotate = 45;
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._extended_material_icon_demo_template$_compView_12.viewData.set$cdMode(1);
+        if (firstCheck) {
+          t1 = this._ExtendedMaterialIconComponent_14_5;
+          t1.icon = "chart-line-stacked";
+          t1.spin = true;
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._compView_14.viewData.set$cdMode(1);
+        this._extended_material_icon_demo_template$_compView_0.detectChanges$0();
+        this._compView_2.detectChanges$0();
+        this._compView_4.detectChanges$0();
+        this._extended_material_icon_demo_template$_compView_6.detectChanges$0();
+        this._compView_8.detectChanges$0();
+        this._compView_10.detectChanges$0();
+        this._extended_material_icon_demo_template$_compView_12.detectChanges$0();
+        this._compView_14.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._extended_material_icon_demo_template$_compView_0.destroy$0();
+        this._compView_2.destroy$0();
+        this._compView_4.destroy$0();
+        this._extended_material_icon_demo_template$_compView_6.destroy$0();
+        this._compView_8.destroy$0();
+        this._compView_10.destroy$0();
+        this._extended_material_icon_demo_template$_compView_12.destroy$0();
+        this._compView_14.destroy$0();
+      },
+      $asAppView: function() {
+        return [V.ExtendedMaterialIconDemoComponent];
+      }
+    }
   }], ["", "package:skawa_components_example/grid_demo/grid_demo.dart",, Q, {
     "^": "",
     GridDemoComponent: {
@@ -22690,7 +22909,7 @@
       return t1;
     }, "call$2", "grid_demo_template__viewFactory_GridDemoComponent2$closure", 8, 0, 19],
     ViewGridDemoComponent0: {
-      "^": "AppView;0_grid_demo_template$_compView_0,0_grid_demo_template$_DemoHeaderComponent_0_5,0_grid_demo_template$_compView_3,0_GridComponent_3_5,0_GridTileDirective_4_5,0_GridTileDirective_6_5,0_GridTileDirective_8_5,0_GridTileDirective_10_5,0_GridTileDirective_12_5,0_compView_16,0_GridComponent_16_5,0_grid_demo_template$_compView_17,0_GridTileDirective_17_5,0_SkawaCardComponent_17_6,0_compView_18,0_SkawaCardHeaderComponent_18_5,0_SkawaCardHeaderImageDirective_19_5,0_SkawaCardHeaderTitleDirective_22_5,0_compView_24,0_GridTileDirective_24_5,0_SkawaCardComponent_24_6,0_compView_25,0_SkawaCardHeaderComponent_25_5,0_SkawaCardHeaderImageDirective_26_5,0_SkawaCardHeaderTitleDirective_29_5,0_SkawaCardHeaderSubheadDirective_31_5,0_compView_33,0_GridTileDirective_33_5,0_SkawaCardComponent_33_6,0_compView_34,0_SkawaCardContentComponent_34_5,0_compView_36,0_SkawaCardActionsComponent_36_5,0_compView_37,0_AcxDarkTheme_37_5,0_MaterialButtonComponent_37_6,0_compView_39,0_GridTileDirective_39_5,0_SkawaCardComponent_39_6,0_compView_40,0_SkawaCardHeaderComponent_40_5,0_SkawaCardHeaderTitleDirective_41_5,0_SkawaCardHeaderSubheadDirective_43_5,0_compView_45,0_SkawaCardContentComponent_45_5,0_compView_50,0_GridTileDirective_50_5,0_SkawaCardComponent_50_6,0_grid_demo_template$_compView_51,0_SkawaCardHeaderComponent_51_5,0_SkawaCardHeaderTitleDirective_52_5,0_compView_54,0_SkawaCardActionsComponent_54_5,0_compView_55,0_AcxDarkTheme_55_5,0_MaterialButtonComponent_55_6,0_compView_56,0_MaterialIconComponent_56_5,0_compView_57,0_SkawaCardActionsComponent_57_5,0_grid_demo_template$_compView_58,0_AcxDarkTheme_58_5,0_MaterialButtonComponent_58_6,0_grid_demo_template$_compView_61,0_AcxDarkTheme_61_5,0_MaterialButtonComponent_61_6,0_appEl_62,0_NgIf_62_9,0_appEl_63,0_NgIf_63_9,0_grid_demo_template$_compView_64,0_SkawaCardContentComponent_64_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_grid_demo_template$_compView_0,0_grid_demo_template$_DemoHeaderComponent_0_5,0_grid_demo_template$_compView_3,0_GridComponent_3_5,0_GridTileDirective_4_5,0_GridTileDirective_6_5,0_GridTileDirective_8_5,0_GridTileDirective_10_5,0_GridTileDirective_12_5,0_compView_16,0_GridComponent_16_5,0_grid_demo_template$_compView_17,0_GridTileDirective_17_5,0_SkawaCardComponent_17_6,0_compView_18,0_SkawaCardHeaderComponent_18_5,0_SkawaCardHeaderImageDirective_19_5,0_SkawaCardHeaderTitleDirective_22_5,0_compView_24,0_GridTileDirective_24_5,0_SkawaCardComponent_24_6,0_compView_25,0_SkawaCardHeaderComponent_25_5,0_SkawaCardHeaderImageDirective_26_5,0_SkawaCardHeaderTitleDirective_29_5,0_SkawaCardHeaderSubheadDirective_31_5,0_compView_33,0_GridTileDirective_33_5,0_SkawaCardComponent_33_6,0_compView_34,0_SkawaCardContentComponent_34_5,0_compView_36,0_SkawaCardActionsComponent_36_5,0_compView_37,0_AcxDarkTheme_37_5,0_MaterialButtonComponent_37_6,0_compView_39,0_GridTileDirective_39_5,0_SkawaCardComponent_39_6,0_compView_40,0_SkawaCardHeaderComponent_40_5,0_SkawaCardHeaderTitleDirective_41_5,0_SkawaCardHeaderSubheadDirective_43_5,0_compView_45,0_SkawaCardContentComponent_45_5,0_compView_50,0_GridTileDirective_50_5,0_SkawaCardComponent_50_6,0_compView_51,0_SkawaCardHeaderComponent_51_5,0_SkawaCardHeaderTitleDirective_52_5,0_grid_demo_template$_compView_54,0_SkawaCardActionsComponent_54_5,0_grid_demo_template$_compView_55,0_AcxDarkTheme_55_5,0_MaterialButtonComponent_55_6,0_compView_56,0_MaterialIconComponent_56_5,0_compView_57,0_SkawaCardActionsComponent_57_5,0_compView_58,0_AcxDarkTheme_58_5,0_MaterialButtonComponent_58_6,0_grid_demo_template$_compView_61,0_AcxDarkTheme_61_5,0_MaterialButtonComponent_61_6,0_appEl_62,0_NgIf_62_9,0_appEl_63,0_NgIf_63_9,0_grid_demo_template$_compView_64,0_SkawaCardContentComponent_64_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_0, t2, doc, _el_4, _el_6, _el_8, _el_10, _el_12, t3, t4, _el_17, _el_18, _el_19, _el_20, _el_22, _el_24, _el_25, _el_26, _el_27, _el_29, _el_31, _el_33, _el_34, t5, t6, _el_36, _el_37, _text_38, _el_39, _el_40, _el_41, _el_43, _el_45, _el_46, _el_48, _el_50, _el_51, _el_52, _el_54, _el_55, _el_56, _el_57, _el_58, _text_59, _el_60, _el_61, _el_64, _text_65;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -22888,7 +23107,7 @@
         this._GridTileDirective_50_5 = new T.GridTileDirective(_el_50);
         this._SkawaCardComponent_50_6 = new V.SkawaCardComponent();
         t5 = E.ViewSkawaCardHeaderComponent0$(this, 51);
-        this._grid_demo_template$_compView_51 = t5;
+        this._compView_51 = t5;
         _el_51 = t5.rootEl;
         J.setAttribute$2$x(_el_51, "statusColor", "rgb(127,127,127)");
         this._SkawaCardHeaderComponent_51_5 = new V.SkawaCardHeaderComponent("transparent");
@@ -22896,18 +23115,18 @@
         this._SkawaCardHeaderTitleDirective_52_5 = new F.SkawaCardHeaderTitleDirective();
         J.append$1$x(_el_52, doc.createTextNode("This could be fun!"));
         t5 = X.ViewSkawaCardActionsComponent0$(this, 54);
-        this._compView_54 = t5;
+        this._grid_demo_template$_compView_54 = t5;
         _el_54 = t5.rootEl;
         this._SkawaCardActionsComponent_54_5 = new X.SkawaCardActionsComponent(this._SkawaCardHeaderComponent_51_5);
         t5 = U.ViewMaterialButtonComponent0$(this, 55);
-        this._compView_55 = t5;
+        this._grid_demo_template$_compView_55 = t5;
         _el_55 = t5.rootEl;
         t5 = J.getInterceptor$x(_el_55);
         t5.setAttribute$2(_el_55, "align-right", "");
         t5.setAttribute$2(_el_55, "icon", "");
         t5 = F.AcxDarkTheme$(H.boolTypeCheck(t1.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
         this._AcxDarkTheme_55_5 = t5;
-        this._MaterialButtonComponent_55_6 = B.MaterialButtonComponent$(_el_55, t5, this._compView_55.viewData.ref, null);
+        this._MaterialButtonComponent_55_6 = B.MaterialButtonComponent$(_el_55, t5, this._grid_demo_template$_compView_55.viewData.ref, null);
         t5 = M.ViewMaterialIconComponent0$(this, 56);
         this._compView_56 = t5;
         _el_56 = t5.rootEl;
@@ -22915,27 +23134,27 @@
         t5 = new Y.MaterialIconComponent(_el_56);
         this._MaterialIconComponent_56_5 = t5;
         this._compView_56.create$2(0, t5, []);
-        this._compView_55.create$2(0, this._MaterialButtonComponent_55_6, [H.setRuntimeTypeInfo([_el_56], t4)]);
-        this._compView_54.create$2(0, this._SkawaCardActionsComponent_54_5, [H.setRuntimeTypeInfo([_el_55], t4)]);
+        this._grid_demo_template$_compView_55.create$2(0, this._MaterialButtonComponent_55_6, [H.setRuntimeTypeInfo([_el_56], t4)]);
+        this._grid_demo_template$_compView_54.create$2(0, this._SkawaCardActionsComponent_54_5, [H.setRuntimeTypeInfo([_el_55], t4)]);
         t5 = this._SkawaCardHeaderComponent_51_5;
         t5.title = this._SkawaCardHeaderTitleDirective_52_5;
         t5.headerActions = this._SkawaCardActionsComponent_54_5;
-        this._grid_demo_template$_compView_51.create$2(0, t5, [H.setRuntimeTypeInfo([_el_52, _el_54], t2)]);
+        this._compView_51.create$2(0, t5, [H.setRuntimeTypeInfo([_el_52, _el_54], t2)]);
         t5 = X.ViewSkawaCardActionsComponent0$(this, 57);
         this._compView_57 = t5;
         _el_57 = t5.rootEl;
         t5 = H.interceptedTypeCheck(t1.injectorGet$3(C.Type_SkawaCardHeaderComponent_2jN, this.viewData.parentIndex, null), "$isSkawaCardHeaderComponent");
         this._SkawaCardActionsComponent_57_5 = new X.SkawaCardActionsComponent(t5);
         t5 = U.ViewMaterialButtonComponent0$(this, 58);
-        this._grid_demo_template$_compView_58 = t5;
+        this._compView_58 = t5;
         _el_58 = t5.rootEl;
         _el_58.className = "color--primary-action";
         t5 = F.AcxDarkTheme$(H.boolTypeCheck(t1.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
         this._AcxDarkTheme_58_5 = t5;
-        t5 = B.MaterialButtonComponent$(_el_58, t5, this._grid_demo_template$_compView_58.viewData.ref, null);
+        t5 = B.MaterialButtonComponent$(_el_58, t5, this._compView_58.viewData.ref, null);
         this._MaterialButtonComponent_58_6 = t5;
         _text_59 = doc.createTextNode("Primary action");
-        this._grid_demo_template$_compView_58.create$2(0, t5, [H.setRuntimeTypeInfo([_text_59], t6)]);
+        this._compView_58.create$2(0, t5, [H.setRuntimeTypeInfo([_text_59], t6)]);
         _el_60 = doc.createElement("span");
         _el_60.className = "spacer";
         t5 = U.ViewMaterialButtonComponent0$(this, 61);
@@ -23027,8 +23246,6 @@
           this._GridComponent_3_5.ngOnInit$0();
         if (firstCheck)
           this._GridComponent_16_5.ngOnInit$0();
-        if (firstCheck)
-          this._MaterialButtonComponent_37_6.ngOnInit$0();
         if (firstCheck) {
           this._SkawaCardHeaderComponent_40_5.statusColor = "rgb(0,127,0)";
           changed = true;
@@ -23042,9 +23259,7 @@
         } else
           changed = false;
         if (changed)
-          this._grid_demo_template$_compView_51.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_55_6.ngOnInit$0();
+          this._compView_51.viewData.set$cdMode(1);
         if (firstCheck) {
           this._MaterialIconComponent_56_5.set$icon(0, "more_vert");
           changed = true;
@@ -23052,10 +23267,6 @@
           changed = false;
         if (changed)
           this._compView_56.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_58_6.ngOnInit$0();
-        if (firstCheck)
-          this._MaterialButtonComponent_61_6.ngOnInit$0();
         this._NgIf_62_9.set$ngIf(local_secondaryContent.collapsed != null);
         this._NgIf_63_9.set$ngIf(local_secondaryContent.collapsed == null);
         if (firstCheck) {
@@ -23076,11 +23287,11 @@
         this._compView_37.detectHostChanges$1(firstCheck);
         this._compView_40.detectHostChanges$1(firstCheck);
         this._compView_45.detectHostChanges$1(firstCheck);
-        this._grid_demo_template$_compView_51.detectHostChanges$1(firstCheck);
-        this._compView_54.detectHostChanges$1(firstCheck);
-        this._compView_55.detectHostChanges$1(firstCheck);
+        this._compView_51.detectHostChanges$1(firstCheck);
+        this._grid_demo_template$_compView_54.detectHostChanges$1(firstCheck);
+        this._grid_demo_template$_compView_55.detectHostChanges$1(firstCheck);
         this._compView_57.detectHostChanges$1(firstCheck);
-        this._grid_demo_template$_compView_58.detectHostChanges$1(firstCheck);
+        this._compView_58.detectHostChanges$1(firstCheck);
         this._grid_demo_template$_compView_61.detectHostChanges$1(firstCheck);
         this._grid_demo_template$_compView_64.detectHostChanges$1(firstCheck);
         this._grid_demo_template$_compView_0.detectChanges$0();
@@ -23098,12 +23309,12 @@
         this._compView_40.detectChanges$0();
         this._compView_45.detectChanges$0();
         this._compView_50.detectChanges$0();
-        this._grid_demo_template$_compView_51.detectChanges$0();
-        this._compView_54.detectChanges$0();
-        this._compView_55.detectChanges$0();
+        this._compView_51.detectChanges$0();
+        this._grid_demo_template$_compView_54.detectChanges$0();
+        this._grid_demo_template$_compView_55.detectChanges$0();
         this._compView_56.detectChanges$0();
         this._compView_57.detectChanges$0();
-        this._grid_demo_template$_compView_58.detectChanges$0();
+        this._compView_58.detectChanges$0();
         this._grid_demo_template$_compView_61.detectChanges$0();
         this._grid_demo_template$_compView_64.detectChanges$0();
         if (firstCheck) {
@@ -23129,12 +23340,12 @@
         this._compView_40.destroy$0();
         this._compView_45.destroy$0();
         this._compView_50.destroy$0();
-        this._grid_demo_template$_compView_51.destroy$0();
-        this._compView_54.destroy$0();
-        this._compView_55.destroy$0();
+        this._compView_51.destroy$0();
+        this._grid_demo_template$_compView_54.destroy$0();
+        this._grid_demo_template$_compView_55.destroy$0();
         this._compView_56.destroy$0();
         this._compView_57.destroy$0();
-        this._grid_demo_template$_compView_58.destroy$0();
+        this._compView_58.destroy$0();
         this._grid_demo_template$_compView_61.destroy$0();
         this._grid_demo_template$_compView_64.destroy$0();
       },
@@ -23628,7 +23839,7 @@
         t5 = t2.viewData.ref;
         t6 = W.UIEvent;
         t7 = [t6];
-        t5 = new Z.SkawaNavItemComponent(false, t5, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), null, false, true, null, _el_4);
+        t5 = new Z.SkawaNavItemComponent(t5, false, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), "button", false, true, null, _el_4);
         this._SkawaNavItemComponent_4_5 = t5;
         t2.create$2(0, t5, [H.setRuntimeTypeInfo([t3.createTextNode("Close")], t4)]);
         t5 = Y.ViewSkawaNavItemComponent0$(this, 6);
@@ -23638,7 +23849,7 @@
         this.addShimC$1(_el_6);
         t5 = this._nav_item_demo_template$_compView_6;
         t2 = t5.viewData.ref;
-        t2 = new Z.SkawaNavItemComponent(false, t2, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), null, false, true, null, _el_6);
+        t2 = new Z.SkawaNavItemComponent(t2, false, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), "button", false, true, null, _el_6);
         this._SkawaNavItemComponent_6_5 = t2;
         t5.create$2(0, t2, [H.setRuntimeTypeInfo([t3.createTextNode("Rowing")], t4)]);
         t2 = Y.ViewSkawaNavItemComponent0$(this, 8);
@@ -23647,7 +23858,7 @@
         this.addShimC$1(_el_8);
         t2 = this._nav_item_demo_template$_compView_8;
         t5 = t2.viewData.ref;
-        t5 = new Z.SkawaNavItemComponent(false, t5, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), null, false, true, null, _el_8);
+        t5 = new Z.SkawaNavItemComponent(t5, false, null, false, false, false, false, new P._SyncBroadcastStreamController(null, null, 0, t7), "button", false, true, null, _el_8);
         this._SkawaNavItemComponent_8_5 = t5;
         t2.create$2(0, t5, [H.setRuntimeTypeInfo([t3.createTextNode("Without icon")], t4)]);
         this._nav_item_demo_template$_compView_3.create$2(0, this._MaterialTemporaryDrawerComponent_3_5, [H.setRuntimeTypeInfo([_el_4, _el_6, _el_8], [W.HtmlElement])]);
@@ -23687,8 +23898,6 @@
           changed = false;
         if (changed)
           this._nav_item_demo_template$_compView_0.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._nav_item_demo_template$_MaterialButtonComponent_1_6.ngOnInit$0();
         if (firstCheck) {
           t1 = this._MaterialTemporaryDrawerComponent_3_5;
           t1._visibleChange.add$1(0, t1._visible);
@@ -23700,8 +23909,6 @@
           changed = false;
         if (changed)
           this._nav_item_demo_template$_compView_4.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._SkawaNavItemComponent_4_5.ngOnInit$0();
         if (firstCheck) {
           this._SkawaNavItemComponent_6_5.icon = "rowing";
           changed = true;
@@ -23709,10 +23916,6 @@
           changed = false;
         if (changed)
           this._nav_item_demo_template$_compView_6.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._SkawaNavItemComponent_6_5.ngOnInit$0();
-        if (firstCheck)
-          this._SkawaNavItemComponent_8_5.ngOnInit$0();
         this._nav_item_demo_template$_compView_1.detectHostChanges$1(firstCheck);
         t1 = this._nav_item_demo_template$_compView_3;
         currVal_0 = t1.ctx.get$hostMatDrawerCollapsed();
@@ -23815,8 +24018,6 @@
           changed = false;
         if (changed)
           this._sidebar_item_demo_template$_compView_0.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_1_6.ngOnInit$0();
         this._sidebar_item_demo_template$_compView_1.detectHostChanges$1(firstCheck);
         this._sidebar_item_demo_template$_compView_0.detectChanges$0();
         this._sidebar_item_demo_template$_compView_1.detectChanges$0();
@@ -23852,7 +24053,7 @@
   }], ["", "package:skawa_components_example/snackbar_demo/snackbar_demo.template.dart",, D, {
     "^": "",
     ViewSnackbarDemoComponent0: {
-      "^": "AppView;0_snackbar_demo_template$_compView_0,0_DemoHeaderComponent_0_5,0_snackbar_demo_template$_compView_1,0_SkawaSnackbarComponent_1_5,0_compView_2,0_AcxDarkTheme_2_5,0_MaterialButtonComponent_2_6,0_compView_4,0_AcxDarkTheme_4_5,0_MaterialButtonComponent_4_6,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_snackbar_demo_template$_compView_0,0_snackbar_demo_template$_DemoHeaderComponent_0_5,0_snackbar_demo_template$_compView_1,0_SkawaSnackbarComponent_1_5,0_snackbar_demo_template$_compView_2,0_AcxDarkTheme_2_5,0_MaterialButtonComponent_2_6,0_snackbar_demo_template$_compView_4,0_AcxDarkTheme_4_5,0_MaterialButtonComponent_4_6,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_0, t2, t3, t4, _el_2, _text_3, t5, _el_4, _text_5, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -23866,7 +24067,7 @@
         t2.setAttribute$2(_el_0, "sourceHref", "https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/snackbar");
         t2.setAttribute$2(_el_0, "title", "Snackbar Demo");
         t2 = new D.DemoHeaderComponent();
-        this._DemoHeaderComponent_0_5 = t2;
+        this._snackbar_demo_template$_DemoHeaderComponent_0_5 = t2;
         this._snackbar_demo_template$_compView_0.create$2(0, t2, []);
         t2 = new S.ViewSkawaSnackbarComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), this);
         t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 1, T.SkawaSnackbarComponent));
@@ -23887,7 +24088,7 @@
         this._SkawaSnackbarComponent_1_5 = t4;
         this._snackbar_demo_template$_compView_1.create$2(0, t4, []);
         t4 = U.ViewMaterialButtonComponent0$(this, 2);
-        this._compView_2 = t4;
+        this._snackbar_demo_template$_compView_2 = t4;
         _el_2 = t4.rootEl;
         t1.append$1(parentRenderNode, _el_2);
         t4 = J.getInterceptor$x(_el_2);
@@ -23895,13 +24096,13 @@
         t4.setAttribute$2(_el_2, "raised", "");
         t4 = F.AcxDarkTheme$(H.boolTypeCheck(t2.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
         this._AcxDarkTheme_2_5 = t4;
-        t4 = B.MaterialButtonComponent$(_el_2, t4, this._compView_2.viewData.ref, null);
+        t4 = B.MaterialButtonComponent$(_el_2, t4, this._snackbar_demo_template$_compView_2.viewData.ref, null);
         this._MaterialButtonComponent_2_6 = t4;
         _text_3 = t3.createTextNode("Simple snackbar");
         t5 = [W.Text];
-        this._compView_2.create$2(0, t4, [H.setRuntimeTypeInfo([_text_3], t5)]);
+        this._snackbar_demo_template$_compView_2.create$2(0, t4, [H.setRuntimeTypeInfo([_text_3], t5)]);
         t4 = U.ViewMaterialButtonComponent0$(this, 4);
-        this._compView_4 = t4;
+        this._snackbar_demo_template$_compView_4 = t4;
         _el_4 = t4.rootEl;
         t1.append$1(parentRenderNode, _el_4);
         t1 = J.getInterceptor$x(_el_4);
@@ -23909,10 +24110,10 @@
         t1.setAttribute$2(_el_4, "raised", "");
         t1 = F.AcxDarkTheme$(H.boolTypeCheck(t2.injectorGet$3(C.OpaqueToken_acxDarkTheme, this.viewData.parentIndex, null)));
         this._AcxDarkTheme_4_5 = t1;
-        t1 = B.MaterialButtonComponent$(_el_4, t1, this._compView_4.viewData.ref, null);
+        t1 = B.MaterialButtonComponent$(_el_4, t1, this._snackbar_demo_template$_compView_4.viewData.ref, null);
         this._MaterialButtonComponent_4_6 = t1;
         _text_5 = t3.createTextNode("Snackbar with callback");
-        this._compView_4.create$2(0, t1, [H.setRuntimeTypeInfo([_text_5], t5)]);
+        this._snackbar_demo_template$_compView_4.create$2(0, t1, [H.setRuntimeTypeInfo([_text_5], t5)]);
         t5 = this._MaterialButtonComponent_2_6._trigger;
         t1 = W.UIEvent;
         subscription_0 = new P._BroadcastStream(t5, [H.getTypeArgumentByIndex(t5, 0)]).listen$1(this.eventHandler0$1$1(this.ctx.get$showMessage(), t1));
@@ -23937,7 +24138,7 @@
         var firstCheck, t1, changed;
         firstCheck = this.viewData._cdState === 0;
         if (firstCheck) {
-          t1 = this._DemoHeaderComponent_0_5;
+          t1 = this._snackbar_demo_template$_DemoHeaderComponent_0_5;
           t1.title = "Snackbar Demo";
           t1.sourceHref = "https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/snackbar";
           t1.exampleHref = "https://github.com/skawa-universe/skawa_components_example/tree/master/lib/snackbar_example";
@@ -23954,30 +24155,26 @@
         } else
           changed = false;
         if (changed)
-          this._compView_2.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_2_6.ngOnInit$0();
+          this._snackbar_demo_template$_compView_2.viewData.set$cdMode(1);
         if (firstCheck) {
           this._MaterialButtonComponent_4_6.raised = true;
           changed = true;
         } else
           changed = false;
         if (changed)
-          this._compView_4.viewData.set$cdMode(1);
-        if (firstCheck)
-          this._MaterialButtonComponent_4_6.ngOnInit$0();
-        this._compView_2.detectHostChanges$1(firstCheck);
-        this._compView_4.detectHostChanges$1(firstCheck);
+          this._snackbar_demo_template$_compView_4.viewData.set$cdMode(1);
+        this._snackbar_demo_template$_compView_2.detectHostChanges$1(firstCheck);
+        this._snackbar_demo_template$_compView_4.detectHostChanges$1(firstCheck);
         this._snackbar_demo_template$_compView_0.detectChanges$0();
         this._snackbar_demo_template$_compView_1.detectChanges$0();
-        this._compView_2.detectChanges$0();
-        this._compView_4.detectChanges$0();
+        this._snackbar_demo_template$_compView_2.detectChanges$0();
+        this._snackbar_demo_template$_compView_4.detectChanges$0();
       },
       destroyInternal$0: function() {
         this._snackbar_demo_template$_compView_0.destroy$0();
         this._snackbar_demo_template$_compView_1.destroy$0();
-        this._compView_2.destroy$0();
-        this._compView_4.destroy$0();
+        this._snackbar_demo_template$_compView_2.destroy$0();
+        this._snackbar_demo_template$_compView_4.destroy$0();
         this._SkawaSnackbarComponent_1_5._tearDownDisposer.dispose$0();
       },
       $asAppView: function() {
@@ -24343,10 +24540,10 @@
         var t1;
         H.assertSubtypeOfRuntimeType(row, H.getTypeArgumentByIndex(this, 0));
         if (this._canHighlight$1(ev)) {
-          this.set$highlightedRow(row);
+          this.set$highlightedRow(!J.$eq$(row, this.highlightedRow) ? row : null);
           t1 = this._highlightController;
           if ((t1._state & 4) === 0)
-            t1.add$1(0, row);
+            t1.add$1(0, this.highlightedRow);
         }
       },
       _canHighlight$1: function(ev) {
@@ -24798,14 +24995,14 @@
       }
     },
     _ViewSkawaDataTableComponent3: {
-      "^": "AppView;0_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_appEl_3,0_NgIf_3_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_appEl_3,0_NgIf_3_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var doc, t1, _anchor_1, t2, _text_2, _anchor_3;
         doc = document;
         t1 = doc.createElement("th");
         this._data_table_template$_el_0 = t1;
         this.addShimE$1(t1);
-        this._NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
+        this._data_table_template$_NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
         t1 = $.$get$_viewContainerAnchor();
         _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
         J.append$1$x(this._data_table_template$_el_0, _anchor_1);
@@ -24827,10 +25024,10 @@
         currVal_3 = local_c.getClasses$1("--header");
         t1 = this._data_table_template$_expr_3;
         if (t1 == null ? currVal_3 != null : t1 !== currVal_3) {
-          this._NgClass_0_5.set$rawClass(currVal_3);
+          this._data_table_template$_NgClass_0_5.set$rawClass(currVal_3);
           this._data_table_template$_expr_3 = currVal_3;
         }
-        this._NgClass_0_5.ngDoCheck$0();
+        this._data_table_template$_NgClass_0_5.ngDoCheck$0();
         this._data_table_template$_NgIf_1_9.set$ngIf(local_c.sortModel == null);
         this._NgIf_3_9.set$ngIf(local_c.sortModel != null);
         this._data_table_template$_appEl_1.detectChangesInNestedViews$0();
@@ -24864,7 +25061,7 @@
       destroyInternal$0: function() {
         this._data_table_template$_appEl_1.destroyNestedViews$0();
         this._appEl_3.destroyNestedViews$0();
-        var t1 = this._NgClass_0_5;
+        var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
       },
@@ -24954,13 +25151,13 @@
       }
     },
     _ViewSkawaDataTableComponent6: {
-      "^": "AppView;0_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_NgFor_2_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_data_table_template$_expr_6,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_NgFor_2_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_data_table_template$_expr_6,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var t1, _anchor_1, t2, _anchor_2;
         t1 = document.createElement("tr");
         this._data_table_template$_el_0 = t1;
         this.addShimE$1(t1);
-        this._NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
+        this._data_table_template$_NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
         t1 = $.$get$_viewContainerAnchor();
         _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
         J.append$1$x(this._data_table_template$_el_0, _anchor_1);
@@ -24986,10 +25183,10 @@
         currVal_4 = t1.get$classes(local_row);
         t2 = this._data_table_template$_expr_4;
         if (t2 == null ? currVal_4 != null : t2 !== currVal_4) {
-          this._NgClass_0_5.set$rawClass(currVal_4);
+          this._data_table_template$_NgClass_0_5.set$rawClass(currVal_4);
           this._data_table_template$_expr_4 = currVal_4;
         }
-        this._NgClass_0_5.ngDoCheck$0();
+        this._data_table_template$_NgClass_0_5.ngDoCheck$0();
         this._data_table_template$_NgIf_1_9.set$ngIf(_ctx.selectable);
         currVal_6 = _ctx.columns;
         t2 = this._data_table_template$_expr_6;
@@ -25027,7 +25224,7 @@
       destroyInternal$0: function() {
         this._data_table_template$_appEl_1.destroyNestedViews$0();
         this._data_table_template$_appEl_2.destroyNestedViews$0();
-        var t1 = this._NgClass_0_5;
+        var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
       },
@@ -25123,13 +25320,13 @@
       }
     },
     _ViewSkawaDataTableComponent8: {
-      "^": "AppView;0_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_data_table_template$_NgIf_2_9,0_appEl_4,0_NgIf_4_9,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_data_table_template$_NgIf_2_9,0_appEl_4,0_NgIf_4_9,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var doc, _el_0, t1, _anchor_1, t2, t3, _anchor_2, _anchor_4;
         doc = document;
         _el_0 = doc.createElement("td");
         this.addShimE$1(_el_0);
-        this._NgClass_0_5 = new Y.NgClass(_el_0, H.setRuntimeTypeInfo([], [P.String]));
+        this._data_table_template$_NgClass_0_5 = new Y.NgClass(_el_0, H.setRuntimeTypeInfo([], [P.String]));
         t1 = $.$get$_viewContainerAnchor();
         _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
         t2 = J.getInterceptor$x(_el_0);
@@ -25156,10 +25353,10 @@
         currVal_0 = local_c.getClasses$0();
         t1 = this._data_table_template$_expr_0;
         if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
-          this._NgClass_0_5.set$rawClass(currVal_0);
+          this._data_table_template$_NgClass_0_5.set$rawClass(currVal_0);
           this._data_table_template$_expr_0 = currVal_0;
         }
-        this._NgClass_0_5.ngDoCheck$0();
+        this._data_table_template$_NgClass_0_5.ngDoCheck$0();
         t1 = this._data_table_template$_NgIf_1_9;
         t2 = local_c.columnRenderer == null;
         t1.set$ngIf(!t2);
@@ -25175,7 +25372,7 @@
         this._data_table_template$_appEl_1.destroyNestedViews$0();
         this._data_table_template$_appEl_2.destroyNestedViews$0();
         this._appEl_4.destroyNestedViews$0();
-        var t1 = this._NgClass_0_5;
+        var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
       },
@@ -25437,14 +25634,14 @@
       }
     },
     _ViewSkawaDataTableComponent13: {
-      "^": "AppView;0_NgClass_0_5,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_el_0,0_data_table_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_el_0,0_data_table_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var doc, t1;
         doc = document;
         t1 = doc.createElement("td");
         this._data_table_template$_el_0 = t1;
         this.addShimE$1(t1);
-        this._NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
+        this._data_table_template$_NgClass_0_5 = new Y.NgClass(this._data_table_template$_el_0, H.setRuntimeTypeInfo([], [P.String]));
         t1 = doc.createTextNode("");
         this._data_table_template$_text_1 = t1;
         J.append$1$x(this._data_table_template$_el_0, t1);
@@ -25459,10 +25656,10 @@
         currVal_1 = local_c.getClasses$1("--footer");
         t1 = this._data_table_template$_expr_1;
         if (t1 == null ? currVal_1 != null : t1 !== currVal_1) {
-          this._NgClass_0_5.set$rawClass(currVal_1);
+          this._data_table_template$_NgClass_0_5.set$rawClass(currVal_1);
           this._data_table_template$_expr_1 = currVal_1;
         }
-        this._NgClass_0_5.ngDoCheck$0();
+        this._data_table_template$_NgClass_0_5.ngDoCheck$0();
         H.assertSubtype(local_c, "$isSkawaDataTableColComponent", this.$ti, "$asSkawaDataTableColComponent");
         currVal_0 = _ctx.getColspanFor$2(local_c, local_i);
         t1 = this._data_table_template$_expr_0;
@@ -25480,7 +25677,7 @@
         }
       },
       destroyInternal$0: function() {
-        var t1 = this._NgClass_0_5;
+        var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
       },
@@ -25621,6 +25818,80 @@
       call$1: [function(s) {
         return C.Map_oWtLB.$index(0, H.stringTypeCheck(s));
       }, null, null, 4, 0, null, 14, "call"]
+    }
+  }], ["asset_skawa_material_components_lib_extended_material_icon_extended_material_icon.css.shim.dart", "package:skawa_material_components/extended_material_icon/extended_material_icon.css.shim.dart",, R, {}], ["", "package:skawa_material_components/extended_material_icon/extended_material_icon.dart",, R, {
+    "^": "",
+    ExtendedMaterialIconComponent: {
+      "^": "Object;0icon,flipVertical,flipHorizontal,spin,0rotate"
+    }
+  }], ["", "package:skawa_material_components/extended_material_icon/extended_material_icon.template.dart",, Q, {
+    "^": "",
+    ViewExtendedMaterialIconComponent0: {
+      "^": "AppView;0_NgClass_0_5,0_expr_0,0_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var parentRenderNode, _el_0;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        _el_0 = S.createSpanAndAppend(document, parentRenderNode);
+        this.addShimE$1(_el_0);
+        this._NgClass_0_5 = new Y.NgClass(_el_0, H.setRuntimeTypeInfo([], [P.String]));
+        this.init$2(C.List_empty, null);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, currVal_0, t2, t3, t4, t5, currVal_1;
+        _ctx = this.ctx;
+        t1 = _ctx.icon;
+        currVal_0 = "mdi mdi-" + (t1 == null ? "" : t1);
+        t1 = this._expr_0;
+        if (t1 !== currVal_0) {
+          this._NgClass_0_5.set$initialClasses(currVal_0);
+          this._expr_0 = currVal_0;
+        }
+        t1 = _ctx.flipHorizontal;
+        t2 = _ctx.flipVertical;
+        t3 = _ctx.spin;
+        t4 = _ctx.rotate;
+        t4 = "mdi-rotate-" + C.JSInt_methods.$mod(t4 == null ? 0 : t4, 360);
+        if (!_ctx.flipHorizontal)
+          if (!_ctx.flipVertical) {
+            t5 = _ctx.rotate;
+            t5 = t5 != null && C.JSInt_methods.$mod(t5, 45) === 0;
+          } else
+            t5 = false;
+        else
+          t5 = false;
+        currVal_1 = P.LinkedHashMap_LinkedHashMap$_literal(["mdi-flip-h", t1, "mdi-flip-v", t2, "mdi-spin", t3, t4, t5], P.String, P.bool);
+        t1 = this._expr_1;
+        if (t1 !== currVal_1) {
+          this._NgClass_0_5.set$rawClass(currVal_1);
+          this._expr_1 = currVal_1;
+        }
+        this._NgClass_0_5.ngDoCheck$0();
+      },
+      destroyInternal$0: function() {
+        var t1 = this._NgClass_0_5;
+        t1._applyClasses$2(t1._rawClass, true);
+        t1._applyInitialClasses$1(false);
+      },
+      $asAppView: function() {
+        return [R.ExtendedMaterialIconComponent];
+      },
+      static: {
+        ViewExtendedMaterialIconComponent0$: function(parentView, parentIndex) {
+          var t1, t2;
+          t1 = new Q.ViewExtendedMaterialIconComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+          t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, parentIndex, R.ExtendedMaterialIconComponent));
+          t2 = document.createElement("extended-material-icon");
+          t1.rootEl = H.interceptedTypeCheck(t2, "$isHtmlElement");
+          t2 = $.ViewExtendedMaterialIconComponent0__renderType;
+          if (t2 == null) {
+            t2 = $.appViewUtils;
+            t2 = t2.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$ExtendedMaterialIconComponent());
+            $.ViewExtendedMaterialIconComponent0__renderType = t2;
+          }
+          t1.setupComponentType$1(t2);
+          return t1;
+        }
+      }
     }
   }], ["asset_skawa_material_components_lib_grid_grid_component.css.shim.dart", "package:skawa_material_components/grid/grid_component.css.shim.dart",, F, {}], ["", "package:skawa_material_components/grid/grid_component.dart",, T, {
     "^": "",
@@ -25847,7 +26118,7 @@
       return t1;
     }, "call$2", "snackbar_template__viewFactory_SkawaSnackbarComponent2$closure", 8, 0, 33],
     ViewSkawaSnackbarComponent0: {
-      "^": "AppView;0_appEl_1,0_NgIf_1_9,0_expr_0,0_snackbar_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_appEl_1,0_NgIf_1_9,0_snackbar_template$_expr_0,0_snackbar_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _anchor_1, t2;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -25873,10 +26144,10 @@
         this._NgIf_1_9.set$ngIf(_ctx.message != null);
         this._appEl_1.detectChangesInNestedViews$0();
         currVal_0 = _ctx.show;
-        t1 = this._expr_0;
+        t1 = this._snackbar_template$_expr_0;
         if (t1 != currVal_0) {
           this.updateClass$3(this._snackbar_template$_el_0, "show", currVal_0);
-          this._expr_0 = currVal_0;
+          this._snackbar_template$_expr_0 = currVal_0;
         }
       },
       destroyInternal$0: function() {
@@ -25887,7 +26158,7 @@
       }
     },
     _ViewSkawaSnackbarComponent1: {
-      "^": "AppView;0_appEl_2,0_NgIf_2_9,0_expr_0,0_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_appEl_2,0_NgIf_2_9,0_snackbar_template$_expr_0,0_snackbar_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var doc, _el_0, t1;
         doc = document;
@@ -25895,7 +26166,7 @@
         _el_0.className = "message";
         this.addShimE$1(_el_0);
         t1 = doc.createTextNode("");
-        this._text_1 = t1;
+        this._snackbar_template$_text_1 = t1;
         J.append$1$x(_el_0, t1);
         t1 = $.$get$_viewContainerAnchor();
         t1 = new V.ViewContainer(2, null, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
@@ -25909,10 +26180,10 @@
         this._NgIf_2_9.set$ngIf(_ctx.message.action != null);
         this._appEl_2.detectChangesInNestedViews$0();
         currVal_0 = Q.interpolate0(_ctx.message.text);
-        t1 = this._expr_0;
+        t1 = this._snackbar_template$_expr_0;
         if (t1 !== currVal_0) {
-          this._text_1.textContent = currVal_0;
-          this._expr_0 = currVal_0;
+          this._snackbar_template$_text_1.textContent = currVal_0;
+          this._snackbar_template$_expr_0 = currVal_0;
         }
       },
       destroyInternal$0: function() {
@@ -25923,7 +26194,7 @@
       }
     },
     _ViewSkawaSnackbarComponent2: {
-      "^": "AppView;0_snackbar_template$_compView_0,0_AcxDarkTheme_0_5,0_MaterialButtonComponent_0_6,0_expr_0,0_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_snackbar_template$_compView_0,0_AcxDarkTheme_0_5,0_MaterialButtonComponent_0_6,0_snackbar_template$_expr_0,0_snackbar_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var t1, _el_0, t2;
         t1 = U.ViewMaterialButtonComponent0$(this, 0);
@@ -25936,7 +26207,7 @@
         t1 = B.MaterialButtonComponent$(_el_0, t1, this._snackbar_template$_compView_0.viewData.ref, null);
         this._MaterialButtonComponent_0_6 = t1;
         t2 = document.createTextNode("");
-        this._text_1 = t2;
+        this._snackbar_template$_text_1 = t2;
         this._snackbar_template$_compView_0.create$2(0, t1, [H.setRuntimeTypeInfo([t2], [W.Text])]);
         t2 = this._MaterialButtonComponent_0_6._trigger;
         t1 = W.UIEvent;
@@ -25959,17 +26230,15 @@
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var _ctx, firstCheck, currVal_0, t1;
+        var _ctx, t1, currVal_0;
         _ctx = this.ctx;
-        firstCheck = this.viewData._cdState === 0;
-        if (firstCheck)
-          this._MaterialButtonComponent_0_6.ngOnInit$0();
-        this._snackbar_template$_compView_0.detectHostChanges$1(firstCheck);
+        t1 = this.viewData._cdState;
+        this._snackbar_template$_compView_0.detectHostChanges$1(t1 === 0);
         currVal_0 = Q.interpolate0(_ctx.message.action.label);
-        t1 = this._expr_0;
+        t1 = this._snackbar_template$_expr_0;
         if (t1 !== currVal_0) {
-          this._text_1.textContent = currVal_0;
-          this._expr_0 = currVal_0;
+          this._snackbar_template$_text_1.textContent = currVal_0;
+          this._snackbar_template$_expr_0 = currVal_0;
         }
         this._snackbar_template$_compView_0.detectChanges$0();
       },
@@ -26633,6 +26902,7 @@
   $.ViewFirstDownPercentComponent0__renderType = null;
   $.ViewWrTableComponent0__renderType = null;
   $.ViewDemoHeaderComponent0__renderType = null;
+  $.ViewExtendedMaterialIconDemoComponent0__renderType = null;
   $.ViewGridDemoComponent0__renderType = null;
   $.ViewHexColorizePipeDemoComponent0__renderType = null;
   $.ViewInfobarDemoComponent0__renderType = null;
@@ -26646,6 +26916,7 @@
   $.ViewSkawaCardActionsComponent0__renderType = null;
   $.ViewSkawaDataTableComponent0__renderType = null;
   $.ViewSkawaDataTableColComponent0__renderType = null;
+  $.ViewExtendedMaterialIconComponent0__renderType = null;
   $.ViewGridComponent0__renderType = null;
   $.ViewSkawaSnackbarComponent0__renderType = null;
   $ = null;
@@ -26774,32 +27045,32 @@
     return P.RegExp_RegExp("^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))", false, false);
   }, "_safeUrlPattern", "_dataUrlPattern", "$get$_dataUrlPattern", function() {
     return P.RegExp_RegExp("^data:(?:image/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video/(?:mpeg|mp4|ogg|webm));base64,[a-z0-9+/]+=*$", false, false);
-  }, "_dataUrlPattern", "styles16", "$get$styles16", function() {
+  }, "_dataUrlPattern", "styles18", "$get$styles18", function() {
     return ["material-drawer._ngcontent-%ID% material-list._ngcontent-%ID%{padding:0}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%{display:block;font-family:inherit;font-size:15px;line-height:32px;padding:0 24px;position:relative;white-space:nowrap;align-items:center;color:rgba(0,0,0,0.54);display:flex}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%{pointer-events:none}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .material-list-item-primary{color:rgba(0,0,0,0.54);width:40px}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%  .material-list-item-primary{color:rgba(0,0,0,0.38)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .material-list-item-secondary{color:rgba(0,0,0,0.54);margin-left:auto}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%  .material-list-item-secondary{color:rgba(0,0,0,0.38)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .submenu-icon{transform:rotate(-90deg)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% material-list-item._ngcontent-%ID%,material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%{font-weight:500;height:48px;padding:0 16px}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% material-list-item._ngcontent-%ID% material-icon._ngcontent-%ID%,material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID% material-icon._ngcontent-%ID%{color:rgba(0,0,0,0.54);margin-right:32px}material-drawer[persistent]._ngcontent-%ID%,material-drawer[permanent]._ngcontent-%ID%{width:256px}material-drawer[persistent]:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent]:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%,material-drawer[permanent]:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[permanent]:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-left:256px}material-drawer[persistent][end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent][end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-right:256px}material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID%{transform:translateX(-100%)}material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-left:0}material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID%{transform:translateX(100%)}material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-right:0}material-drawer[persistent]._ngcontent-%ID%,material-drawer[permanent]._ngcontent-%ID%{background-color:#fff;bottom:0;box-sizing:border-box;display:flex;flex-direction:column;flex-wrap:nowrap;overflow:hidden;position:absolute;top:0;border-right:1px solid rgba(0,0,0,0.12);left:0}material-drawer[persistent][end]._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID%{border-left:1px solid rgba(0,0,0,0.12);border-right:initial;left:initial;right:0}material-drawer[persistent]._ngcontent-%ID%{transition-duration:150ms;transition-property:transform,width;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}material-drawer[persistent]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{transition-duration:150ms;transition-property:margin-left,margin-right;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}material-content._ngcontent-%ID%,.material-content._ngcontent-%ID%{display:block;min-height:100%;position:relative;z-index:0}.material-header._ngcontent-%ID%{background-color:#3f51b5;border:0;box-sizing:border-box;color:#fff;display:flex;flex-direction:column;flex-shrink:0;flex-wrap:nowrap;height:64px;justify-content:flex-start;overflow:hidden;padding:0;position:relative;width:100%;z-index:1}.material-header.shadow._ngcontent-%ID%{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}.material-header._ngcontent-%ID% ~ material-drawer[permanent]._ngcontent-%ID%,.material-header._ngcontent-%ID% ~ material-drawer[persistent]._ngcontent-%ID%{top:64px}.material-header._ngcontent-%ID% ~ material-content._ngcontent-%ID%,.material-header._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{min-height:calc(100% - 64px)}.material-header.dense-header._ngcontent-%ID%{height:48px}.material-header.dense-header._ngcontent-%ID% .material-header-row._ngcontent-%ID%{height:48px}.material-header.dense-header._ngcontent-%ID% ~ material-drawer[permanent]._ngcontent-%ID%,.material-header.dense-header._ngcontent-%ID% ~ material-drawer[persistent]._ngcontent-%ID%{top:48px}.material-header.dense-header._ngcontent-%ID% ~ material-content._ngcontent-%ID%,.material-header.dense-header._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{min-height:calc(100% - 48px)}.material-header-row._ngcontent-%ID%{align-items:center;align-self:stretch;box-sizing:border-box;display:flex;flex-direction:row;flex-shrink:0;flex-wrap:nowrap;height:64px;margin:0 12px;position:relative}@media (max-width:599px){.material-header-row._ngcontent-%ID%{margin:0 8px}}.material-header-row._ngcontent-%ID% > .material-drawer-button._ngcontent-%ID%{cursor:pointer}.material-header-row._ngcontent-%ID% .material-header-title._ngcontent-%ID%{bottom:0;box-sizing:border-box;display:block;height:20px;left:80px;line-height:1;margin-bottom:auto;margin-top:auto;position:absolute;top:0;font-size:20px;font-weight:500}.material-header-row._ngcontent-%ID% .material-spacer._ngcontent-%ID%{flex-grow:1}.material-header-row._ngcontent-%ID% material-button._ngcontent-%ID%{margin:0 4px}@media (max-width:599px){.material-header-row._ngcontent-%ID% material-button._ngcontent-%ID%{margin:0 0px}}.material-header-row._ngcontent-%ID% .material-navigation._ngcontent-%ID%{margin:0 12px}@media (max-width:599px){.material-header-row._ngcontent-%ID% .material-navigation._ngcontent-%ID%{margin:0 8px}}.material-header-row._ngcontent-%ID% > *._ngcontent-%ID%{flex-shrink:0}.mat-drawer-spacer._ngcontent-%ID%{height:56px}"];
-  }, "styles16", "styles3", "$get$styles3", function() {
+  }, "styles18", "styles4", "$get$styles4", function() {
     return ["._nghost-%ID%{bottom:0;left:0;position:absolute;right:0;top:0;background-color:transparent;overflow:hidden;pointer-events:none;z-index:1}._nghost-%ID%.mat-drawer-expanded{pointer-events:auto}._nghost-%ID%[overlay].mat-drawer-expanded{background-color:rgba(0,0,0,0.38);transition-duration:225ms}._nghost-%ID%[overlay]{background-color:transparent;transition:background-color 195ms cubic-bezier(0.4,0,0.2,1)}._nghost-%ID% > .drawer-content._ngcontent-%ID%{background-color:#fff;bottom:0;box-sizing:border-box;display:flex;flex-direction:column;flex-wrap:nowrap;overflow:hidden;position:absolute;top:0;box-shadow:none;transform:translateX(0);pointer-events:auto;transition-property:box-shadow,left,right,transform,width;transition-duration:195ms;transition-timing-function:cubic-bezier(0.4,0,0.6,1)}._nghost-%ID%.mat-drawer-expanded > .drawer-content._ngcontent-%ID%{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);transition-duration:225ms;transition-timing-function:cubic-bezier(0,0,0.2,1)}._nghost-%ID%  > .drawer-content{left:-256px;width:256px}._nghost-%ID%.mat-drawer-expanded  > .drawer-content{transform:translateX(100%)}._nghost-%ID%[end]  > .drawer-content{left:initial;right:-256px}._nghost-%ID%[end].mat-drawer-expanded  > .drawer-content{transform:translateX(-100%)}"];
-  }, "styles3", "styles$MaterialTemporaryDrawerComponent", "$get$styles$MaterialTemporaryDrawerComponent", function() {
-    return [$.$get$styles3()];
-  }, "styles$MaterialTemporaryDrawerComponent", "styles20", "$get$styles20", function() {
+  }, "styles4", "styles$MaterialTemporaryDrawerComponent", "$get$styles$MaterialTemporaryDrawerComponent", function() {
+    return [$.$get$styles4()];
+  }, "styles$MaterialTemporaryDrawerComponent", "styles22", "$get$styles22", function() {
     return ['._nghost-%ID%{font-size:14px;font-weight:500;text-transform:uppercase;user-select:none;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;display:inline-block;letter-spacing:0.01em;line-height:normal;outline:none;position:relative;text-align:center}._nghost-%ID%.acx-theme-dark{color:#fff}._nghost-%ID%:not([icon]){margin:0 0.29em}._nghost-%ID%[dense]:not([icon]){height:32px;font-size:13px}._nghost-%ID%[compact]:not([icon]){padding:0 8px}._nghost-%ID%[disabled]{color:rgba(0,0,0,0.26);cursor:not-allowed}._nghost-%ID%[disabled].acx-theme-dark{color:rgba(255,255,255,0.3)}._nghost-%ID%[disabled] > *._ngcontent-%ID%{pointer-events:none}._nghost-%ID%:not([disabled]):not([icon]):hover::after,._nghost-%ID%.is-focused::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background-color:currentColor;opacity:0.12;border-radius:inherit;pointer-events:none}._nghost-%ID%[raised][animated]{transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)}._nghost-%ID%[raised][elevation="1"]{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="2"]{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="3"]{box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="4"]{box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="5"]{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="6"]{box-shadow:0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2)}._nghost-%ID%[raised].acx-theme-dark{background-color:#4285f4}._nghost-%ID%[raised][disabled]{background:rgba(0,0,0,0.12);box-shadow:none}._nghost-%ID%[raised][disabled].acx-theme-dark{background:rgba(255,255,255,0.12)}._nghost-%ID%[raised].highlighted:not([disabled]){background-color:#4285f4;color:#fff}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%[clear-size]{margin:0}._nghost-%ID% .content._ngcontent-%ID%{display:inline-flex;align-items:center}._nghost-%ID%:not([icon]){border-radius:2px;min-width:64px}._nghost-%ID%:not([icon]) .content._ngcontent-%ID%{padding:0.7em 0.57em}._nghost-%ID%[icon]{border-radius:50%}._nghost-%ID%[icon] .content._ngcontent-%ID%{padding:8px}._nghost-%ID%[clear-size]{min-width:0}'];
-  }, "styles20", "styles$MaterialButtonComponent", "$get$styles$MaterialButtonComponent", function() {
-    return [$.$get$styles20()];
-  }, "styles$MaterialButtonComponent", "styles13", "$get$styles13", function() {
+  }, "styles22", "styles$MaterialButtonComponent", "$get$styles$MaterialButtonComponent", function() {
+    return [$.$get$styles22()];
+  }, "styles$MaterialButtonComponent", "styles14", "$get$styles14", function() {
     return ['._nghost-%ID%{align-items:center;cursor:pointer;display:inline-flex;margin:8px}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%:focus{outline:none}._nghost-%ID%.disabled{cursor:not-allowed}._nghost-%ID%.disabled > .content._ngcontent-%ID%{color:rgba(0,0,0,0.54)}._nghost-%ID%.disabled > .icon-container._ngcontent-%ID% > .icon._ngcontent-%ID%{color:rgba(0,0,0,0.26)}.icon-container._ngcontent-%ID%{display:flex;position:relative}.icon-container.focus._ngcontent-%ID%::after,.icon-container._ngcontent-%ID% .ripple._ngcontent-%ID%{color:#9e9e9e;border-radius:20px;height:40px;left:-8px;position:absolute;top:-8px;width:40px}.icon-container.focus._ngcontent-%ID%::after{content:"";display:block;background-color:currentColor;opacity:0.12}.icon._ngcontent-%ID%{opacity:0.54}.icon.filled._ngcontent-%ID%{color:#4285f4;opacity:0.87}.content._ngcontent-%ID%{align-items:center;flex-grow:1;flex-shrink:1;flex-basis:auto;margin-left:8px;overflow-x:hidden;padding:1px 0;text-overflow:ellipsis}'];
-  }, "styles13", "styles$MaterialCheckboxComponent", "$get$styles$MaterialCheckboxComponent", function() {
-    return [$.$get$styles13()];
-  }, "styles$MaterialCheckboxComponent", "styles19", "$get$styles19", function() {
+  }, "styles14", "styles$MaterialCheckboxComponent", "$get$styles$MaterialCheckboxComponent", function() {
+    return [$.$get$styles14()];
+  }, "styles$MaterialCheckboxComponent", "styles21", "$get$styles21", function() {
     return ['._nghost-%ID%{display:inline-flex}._nghost-%ID%.flip  .material-icon-i{transform:scaleX(-1)}._nghost-%ID%[light]{opacity:0.54}._nghost-%ID% .material-icon-i._ngcontent-%ID%{font-size:24px}._nghost-%ID%[size=x-small] .material-icon-i._ngcontent-%ID%{font-size:12px}._nghost-%ID%[size=small] .material-icon-i._ngcontent-%ID%{font-size:13px}._nghost-%ID%[size=medium] .material-icon-i._ngcontent-%ID%{font-size:16px}._nghost-%ID%[size=large] .material-icon-i._ngcontent-%ID%{font-size:18px}._nghost-%ID%[size=x-large] .material-icon-i._ngcontent-%ID%{font-size:20px}.material-icon-i._ngcontent-%ID%{height:1em;line-height:1;width:1em}._nghost-%ID%[flip][dir=rtl] .material-icon-i._ngcontent-%ID%,[dir=rtl] [flip]._nghost-%ID% .material-icon-i._ngcontent-%ID%{transform:scaleX(-1)}._nghost-%ID%[baseline]{align-items:center}._nghost-%ID%[baseline]::before{content:"-";display:inline-block;width:0;visibility:hidden}._nghost-%ID%[baseline] .material-icon-i._ngcontent-%ID%{margin-bottom:0.1em}'];
-  }, "styles19", "styles$MaterialIconComponent", "$get$styles$MaterialIconComponent", function() {
-    return [$.$get$styles19()];
-  }, "styles$MaterialIconComponent", "styles11", "$get$styles11", function() {
+  }, "styles21", "styles$MaterialIconComponent", "$get$styles$MaterialIconComponent", function() {
+    return [$.$get$styles21()];
+  }, "styles$MaterialIconComponent", "styles12", "$get$styles12", function() {
     return ["._nghost-%ID%{display:inline-block;width:100%;height:4px}.progress-container._ngcontent-%ID%{position:relative;height:100%;background-color:#e0e0e0;overflow:hidden}._nghost-%ID%[dir=rtl] .progress-container._ngcontent-%ID%,[dir=rtl] ._nghost-%ID% .progress-container._ngcontent-%ID%{transform:scaleX(-1)}.progress-container.indeterminate._ngcontent-%ID%{background-color:#c6dafc}.progress-container.indeterminate._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{background-color:#4285f4}.active-progress._ngcontent-%ID%,.secondary-progress._ngcontent-%ID%{transform-origin:left center;transform:scaleX(0);position:absolute;top:0;transition:transform 218ms cubic-bezier(0.4,0,0.2,1);right:0;bottom:0;left:0;will-change:transform}.active-progress._ngcontent-%ID%{background-color:#4285f4}.secondary-progress._ngcontent-%ID%{background-color:#a1c2fa}.progress-container.indeterminate.fallback._ngcontent-%ID% > .active-progress._ngcontent-%ID%{animation-name:indeterminate-active-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}.progress-container.indeterminate.fallback._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{animation-name:indeterminate-secondary-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes indeterminate-active-progress{0%{transform:translate(0%) scaleX(0)}25%{transform:translate(0%) scaleX(0.5)}50%{transform:translate(25%) scaleX(0.75)}75%{transform:translate(100%) scaleX(0)}100%{transform:translate(100%) scaleX(0)}}@keyframes indeterminate-secondary-progress{0%{transform:translate(0%) scaleX(0)}60%{transform:translate(0%) scaleX(0)}80%{transform:translate(0%) scaleX(0.6)}100%{transform:translate(100%) scaleX(0.1)}}"];
-  }, "styles11", "styles$MaterialProgressComponent", "$get$styles$MaterialProgressComponent", function() {
-    return [$.$get$styles11()];
-  }, "styles$MaterialProgressComponent", "styles1", "$get$styles1", function() {
+  }, "styles12", "styles$MaterialProgressComponent", "$get$styles$MaterialProgressComponent", function() {
+    return [$.$get$styles12()];
+  }, "styles$MaterialProgressComponent", "styles2", "$get$styles2", function() {
     return ["material-ripple {\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: hidden;\n  border-radius: inherit;\n  contain: strict;\n  transform: translateX(0);\n}\n\n.__acx-ripple {\n  position: absolute;\n  width: 256px;\n  height: 256px;\n  background-color: currentColor;\n  border-radius: 50%;\n  pointer-events: none;\n  will-change: opacity, transform;\n  opacity: 0;\n}\n.__acx-ripple.fallback {\n  animation: __acx-ripple 300ms linear;\n  transform: translateZ(0);\n}\n\n@keyframes __acx-ripple {\n  from {\n    opacity: 0;\n    transform: translateZ(0) scale(0.125);\n  }\n  25%, 50% {\n    opacity: 0.16;\n  }\n  to {\n    opacity: 0;\n    transform: translateZ(0) scale(4);\n  }\n}\n"];
-  }, "styles1", "styles$MaterialRippleComponent", "$get$styles$MaterialRippleComponent", function() {
-    return [$.$get$styles1()];
+  }, "styles2", "styles$MaterialRippleComponent", "$get$styles$MaterialRippleComponent", function() {
+    return [$.$get$styles2()];
   }, "styles$MaterialRippleComponent", "supportsAnimationApi", "$get$supportsAnimationApi", function() {
     if (P.hasProperty(W.DivElement_DivElement(), "animate")) {
       var t1 = $.$get$context();
@@ -26847,87 +27118,95 @@
     return P.List_List$unmodifiable(H.setRuntimeTypeInfo([R.TextSyntax$("&[#a-zA-Z0-9]*;", null), R.TextSyntax$("&", "&amp;"), R.TextSyntax$("<", "&lt;")], [t1]), t1);
   }, "InlineParser__htmlSyntaxes", "LinkSyntax__entirelyWhitespacePattern", "$get$LinkSyntax__entirelyWhitespacePattern", function() {
     return P.RegExp_RegExp("^\\s*$", true, false);
-  }, "LinkSyntax__entirelyWhitespacePattern", "styles5", "$get$styles5", function() {
-    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,0.35);background-color:rgba(0,0,0,0.2)}._nghost-%ID%{font-size:12px;font-weight:400;line-height:1;letter-spacing:0;color:rgba(0,0,0,0.87);display:flex;align-items:center;height:40px;box-shadow:-4px 0 0 0 lightgray,0 1px 3px rgba(0,0,0,0.12);border-radius:2px;border:1px solid #e7e7e7;border-left:0;margin-bottom:16px;background-color:white}._nghost-%ID% .hide-without-icon._ngcontent-%ID%{display:none}._nghost-%ID% .without-url._ngcontent-%ID%{cursor:default}._nghost-%ID% .info-text._ngcontent-%ID%{display:inline-flex}._nghost-%ID% .info-text.without-icon._ngcontent-%ID%{padding-left:16px}._nghost-%ID% .info-text._ngcontent-%ID% .ws-truncate-fix._ngcontent-%ID%{display:inline-block}._nghost-%ID%  material-button{display:inline-flex}"];
-  }, "styles5", "styles$SkawaInfobarComponent", "$get$styles$SkawaInfobarComponent", function() {
+  }, "LinkSyntax__entirelyWhitespacePattern", "styles6", "$get$styles6", function() {
+    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{font-size:12px;font-weight:400;line-height:1;letter-spacing:0;color:rgba(0,0,0,.87);display:flex;align-items:center;height:40px;box-shadow:-4px 0 0 0 lightgray,0 1px 3px rgba(0,0,0,.12);border-radius:2px;border:1px solid #e7e7e7;border-left:0;margin-bottom:16px;background-color:#fff}._nghost-%ID% .hide-without-icon._ngcontent-%ID%{display:none}._nghost-%ID% .without-url._ngcontent-%ID%{cursor:default}._nghost-%ID% .info-text._ngcontent-%ID%{display:inline-flex}._nghost-%ID% .info-text.without-icon._ngcontent-%ID%{padding-left:16px}._nghost-%ID% .info-text._ngcontent-%ID% .ws-truncate-fix._ngcontent-%ID%{display:inline-block}._nghost-%ID%  material-button{display:inline-flex}"];
+  }, "styles6", "styles$SkawaInfobarComponent", "$get$styles$SkawaInfobarComponent", function() {
+    return [$.$get$styles6()];
+  }, "styles$SkawaInfobarComponent", "styles5", "$get$styles5", function() {
+    return ['._nghost-%ID%{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.5;color:#333;font-size:16px;word-wrap:break-word}._nghost-%ID% a._ngcontent-%ID%{background-color:transparent;-webkit-text-decoration-skip:objects}._nghost-%ID% a:active._ngcontent-%ID%,._nghost-%ID% a:hover._ngcontent-%ID%{outline-width:0}._nghost-%ID% strong._ngcontent-%ID%{font-weight:inherit}._nghost-%ID% strong._ngcontent-%ID%{font-weight:bolder}._nghost-%ID% em._ngcontent-%ID%{font-style:italic}._nghost-%ID% h1._ngcontent-%ID%{font-size:2em;margin:.67em 0}._nghost-%ID% img._ngcontent-%ID%{border-style:none}._nghost-%ID% svg:not(:root)._ngcontent-%ID%{overflow:hidden}._nghost-%ID% code._ngcontent-%ID%,._nghost-%ID% kbd._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{font-family:monospace,monospace;font-size:1em}._nghost-%ID% hr._ngcontent-%ID%{box-sizing:content-box;height:0;overflow:visible}._nghost-%ID% input._ngcontent-%ID%{font:inherit;margin:0}._nghost-%ID% input._ngcontent-%ID%{overflow:visible}._nghost-%ID% [type=checkbox]._ngcontent-%ID%{box-sizing:border-box;padding:0}._nghost-%ID% *._ngcontent-%ID%{box-sizing:border-box}._nghost-%ID% input._ngcontent-%ID%{font-family:inherit;font-size:inherit;line-height:inherit}._nghost-%ID% a._ngcontent-%ID%{color:#4078c0;text-decoration:none}._nghost-%ID% a:hover._ngcontent-%ID%,._nghost-%ID% a:active._ngcontent-%ID%{text-decoration:underline}._nghost-%ID% strong._ngcontent-%ID%{font-weight:600}._nghost-%ID% hr._ngcontent-%ID%{height:0;margin:15px 0;overflow:hidden;background:transparent;border:0;border-bottom:1px solid #ddd}._nghost-%ID% hr._ngcontent-%ID%::before{display:table;content:""}._nghost-%ID% hr._ngcontent-%ID%::after{display:table;clear:both;content:""}._nghost-%ID% table._ngcontent-%ID%{border-spacing:0;border-collapse:collapse}._nghost-%ID% td._ngcontent-%ID%,._nghost-%ID% th._ngcontent-%ID%{padding:0}._nghost-%ID% h1._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID%{margin-top:0;margin-bottom:0}._nghost-%ID% h1._ngcontent-%ID%{font-size:32px;font-weight:600}._nghost-%ID% h2._ngcontent-%ID%{font-size:24px;font-weight:600}._nghost-%ID% h3._ngcontent-%ID%{font-size:20px;font-weight:600}._nghost-%ID% h4._ngcontent-%ID%{font-size:16px;font-weight:600}._nghost-%ID% h5._ngcontent-%ID%{font-size:14px;font-weight:600}._nghost-%ID% h6._ngcontent-%ID%{font-size:12px;font-weight:600}._nghost-%ID% p._ngcontent-%ID%{margin-top:0;margin-bottom:10px}._nghost-%ID% blockquote._ngcontent-%ID%{margin:0}._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%{padding-left:0;margin-top:0;margin-bottom:0;list-style-type:disc}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%{list-style-type:circle}._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%{list-style-type:lower-roman}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%{list-style-type:lower-alpha}._nghost-%ID% dd._ngcontent-%ID%{margin-left:0}._nghost-%ID% code._ngcontent-%ID%{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:12px}._nghost-%ID% pre._ngcontent-%ID%{margin-top:0;margin-bottom:0;font:12px Consolas,"Liberation Mono",Menlo,Courier,monospace}._nghost-%ID% .octicon._ngcontent-%ID%{vertical-align:text-bottom}._nghost-%ID% input._ngcontent-%ID%{-webkit-font-feature-settings:"liga" 0;font-feature-settings:"liga" 0}._nghost-%ID% .markdown-body._ngcontent-%ID%::before{display:table;content:""}._nghost-%ID% .markdown-body._ngcontent-%ID%::after{display:table;clear:both;content:""}._nghost-%ID% > *:first-child._ngcontent-%ID%{margin-top:0!important}._nghost-%ID% > *:last-child._ngcontent-%ID%{margin-bottom:0!important}._nghost-%ID% a:not([href])._ngcontent-%ID%{color:inherit;text-decoration:none}._nghost-%ID% .anchor._ngcontent-%ID%{float:left;padding-right:4px;margin-left:-20px;line-height:1}._nghost-%ID% .anchor:focus._ngcontent-%ID%{outline:none}._nghost-%ID% p._ngcontent-%ID%,._nghost-%ID% blockquote._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%,._nghost-%ID% dl._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{margin-top:0;margin-bottom:16px}._nghost-%ID% hr._ngcontent-%ID%{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}._nghost-%ID% blockquote._ngcontent-%ID%{padding:0 1em;color:#777;border-left:.25em solid #ddd}._nghost-%ID% blockquote._ngcontent-%ID% > :first-child._ngcontent-%ID%{margin-top:0}._nghost-%ID% blockquote._ngcontent-%ID% > :last-child._ngcontent-%ID%{margin-bottom:0}._nghost-%ID% kbd._ngcontent-%ID%{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:solid 1px #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}._nghost-%ID% h1._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID%{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}._nghost-%ID% h1._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID% .octicon-link._ngcontent-%ID%{color:black;vertical-align:middle;visibility:hidden}._nghost-%ID% h1:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h2:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h3:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h4:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h5:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h6:hover._ngcontent-%ID% .anchor._ngcontent-%ID%{text-decoration:none}._nghost-%ID% h1:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h2:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h3:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h4:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h5:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h6:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%{visibility:visible}._nghost-%ID% h1._ngcontent-%ID%{padding-bottom:.3em;font-size:2em;border-bottom:1px solid #eee}._nghost-%ID% h2._ngcontent-%ID%{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eee}._nghost-%ID% h3._ngcontent-%ID%{font-size:1.25em}._nghost-%ID% h4._ngcontent-%ID%{font-size:1em}._nghost-%ID% h5._ngcontent-%ID%{font-size:.875em}._nghost-%ID% h6._ngcontent-%ID%{font-size:.85em;color:#777}._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%{padding-left:2em}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ul._ngcontent-%ID%{margin-top:0;margin-bottom:0}._nghost-%ID% li._ngcontent-%ID% > p._ngcontent-%ID%{margin-top:16px}._nghost-%ID% li._ngcontent-%ID% + li._ngcontent-%ID%{margin-top:.25em}._nghost-%ID% dl._ngcontent-%ID%{padding:0}._nghost-%ID% dl._ngcontent-%ID% dt._ngcontent-%ID%{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}._nghost-%ID% dl._ngcontent-%ID% dd._ngcontent-%ID%{padding:0 16px;margin-bottom:16px}._nghost-%ID% table._ngcontent-%ID%{display:block;width:100%;overflow:auto}._nghost-%ID% table._ngcontent-%ID% th._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% th._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% td._ngcontent-%ID%{padding:6px 13px;border:1px solid #ddd}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{background-color:#fff;border-top:1px solid #ccc}._nghost-%ID% table._ngcontent-%ID% tr:nth-child(2n)._ngcontent-%ID%{background-color:#f8f8f8}._nghost-%ID% img._ngcontent-%ID%{max-width:100%;box-sizing:content-box;background-color:#fff}._nghost-%ID% code._ngcontent-%ID%{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}._nghost-%ID% code._ngcontent-%ID%::before,._nghost-%ID% code._ngcontent-%ID%::after{letter-spacing:-0.2em;content:"\xa0"}._nghost-%ID% pre._ngcontent-%ID%{word-wrap:normal}._nghost-%ID% pre._ngcontent-%ID% > code._ngcontent-%ID%{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}._nghost-%ID% .highlight._ngcontent-%ID%{margin-bottom:16px}._nghost-%ID% .highlight._ngcontent-%ID% pre._ngcontent-%ID%{margin-bottom:0;word-break:normal}._nghost-%ID% .highlight._ngcontent-%ID% pre._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%{display:inline;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%::before,._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%::after{content:normal}._nghost-%ID% .pl-0._ngcontent-%ID%{padding-left:0!important}._nghost-%ID% .pl-1._ngcontent-%ID%{padding-left:3px!important}._nghost-%ID% .pl-2._ngcontent-%ID%{padding-left:6px!important}._nghost-%ID% .pl-3._ngcontent-%ID%{padding-left:12px!important}._nghost-%ID% .pl-4._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% .pl-5._ngcontent-%ID%{padding-left:36px!important}._nghost-%ID% .pl-6._ngcontent-%ID%{padding-left:48px!important}._nghost-%ID% .full-commit._ngcontent-%ID% .btn-outline:not(:disabled):hover._ngcontent-%ID%{color:#4078c0;border:1px solid #4078c0}._nghost-%ID% kbd._ngcontent-%ID%{display:inline-block;padding:3px 5px;font:11px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:solid 1px #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}._nghost-%ID% :checked._ngcontent-%ID% + .radio-label._ngcontent-%ID%{position:relative;z-index:1;border-color:#4078c0}._nghost-%ID% .task-list-item._ngcontent-%ID%{list-style-type:none}._nghost-%ID% .task-list-item._ngcontent-%ID% + .task-list-item._ngcontent-%ID%{margin-top:3px}._nghost-%ID% .task-list-item._ngcontent-%ID% input._ngcontent-%ID%{margin:0 .2em .25em -1.6em;vertical-align:middle}._nghost-%ID% hr._ngcontent-%ID%{border-bottom-color:#eee}'];
+  }, "styles5", "styles$SkawaMarkdownRendererComponent", "$get$styles$SkawaMarkdownRendererComponent", function() {
     return [$.$get$styles5()];
-  }, "styles$SkawaInfobarComponent", "styles4", "$get$styles4", function() {
-    return ['@charset "UTF-8";._nghost-%ID%{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.5;color:#333;font-size:16px;word-wrap:break-word}._nghost-%ID% a._ngcontent-%ID%{background-color:transparent;-webkit-text-decoration-skip:objects}._nghost-%ID% a:active._ngcontent-%ID%,._nghost-%ID% a:hover._ngcontent-%ID%{outline-width:0}._nghost-%ID% strong._ngcontent-%ID%{font-weight:inherit}._nghost-%ID% strong._ngcontent-%ID%{font-weight:bolder}._nghost-%ID% em._ngcontent-%ID%{font-style:italic}._nghost-%ID% h1._ngcontent-%ID%{font-size:2em;margin:0.67em 0}._nghost-%ID% img._ngcontent-%ID%{border-style:none}._nghost-%ID% svg:not(:root)._ngcontent-%ID%{overflow:hidden}._nghost-%ID% code._ngcontent-%ID%,._nghost-%ID% kbd._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{font-family:monospace,monospace;font-size:1em}._nghost-%ID% hr._ngcontent-%ID%{box-sizing:content-box;height:0;overflow:visible}._nghost-%ID% input._ngcontent-%ID%{font:inherit;margin:0}._nghost-%ID% input._ngcontent-%ID%{overflow:visible}._nghost-%ID% [type=checkbox]._ngcontent-%ID%{box-sizing:border-box;padding:0}._nghost-%ID% *._ngcontent-%ID%{box-sizing:border-box}._nghost-%ID% input._ngcontent-%ID%{font-family:inherit;font-size:inherit;line-height:inherit}._nghost-%ID% a._ngcontent-%ID%{color:#4078c0;text-decoration:none}._nghost-%ID% a:hover._ngcontent-%ID%,._nghost-%ID% a:active._ngcontent-%ID%{text-decoration:underline}._nghost-%ID% strong._ngcontent-%ID%{font-weight:600}._nghost-%ID% hr._ngcontent-%ID%{height:0;margin:15px 0;overflow:hidden;background:transparent;border:0;border-bottom:1px solid #ddd}._nghost-%ID% hr._ngcontent-%ID%::before{display:table;content:""}._nghost-%ID% hr._ngcontent-%ID%::after{display:table;clear:both;content:""}._nghost-%ID% table._ngcontent-%ID%{border-spacing:0;border-collapse:collapse}._nghost-%ID% td._ngcontent-%ID%,._nghost-%ID% th._ngcontent-%ID%{padding:0}._nghost-%ID% h1._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID%{margin-top:0;margin-bottom:0}._nghost-%ID% h1._ngcontent-%ID%{font-size:32px;font-weight:600}._nghost-%ID% h2._ngcontent-%ID%{font-size:24px;font-weight:600}._nghost-%ID% h3._ngcontent-%ID%{font-size:20px;font-weight:600}._nghost-%ID% h4._ngcontent-%ID%{font-size:16px;font-weight:600}._nghost-%ID% h5._ngcontent-%ID%{font-size:14px;font-weight:600}._nghost-%ID% h6._ngcontent-%ID%{font-size:12px;font-weight:600}._nghost-%ID% p._ngcontent-%ID%{margin-top:0;margin-bottom:10px}._nghost-%ID% blockquote._ngcontent-%ID%{margin:0}._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%{padding-left:0;margin-top:0;margin-bottom:0;list-style-type:disc}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%{list-style-type:circle}._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%{list-style-type:lower-roman}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%{list-style-type:lower-alpha}._nghost-%ID% dd._ngcontent-%ID%{margin-left:0}._nghost-%ID% code._ngcontent-%ID%{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:12px}._nghost-%ID% pre._ngcontent-%ID%{margin-top:0;margin-bottom:0;font:12px Consolas,"Liberation Mono",Menlo,Courier,monospace}._nghost-%ID% .octicon._ngcontent-%ID%{vertical-align:text-bottom}._nghost-%ID% input._ngcontent-%ID%{-webkit-font-feature-settings:"liga" 0;font-feature-settings:"liga" 0}._nghost-%ID% .markdown-body._ngcontent-%ID%::before{display:table;content:""}._nghost-%ID% .markdown-body._ngcontent-%ID%::after{display:table;clear:both;content:""}._nghost-%ID% > *:first-child._ngcontent-%ID%{margin-top:0!important}._nghost-%ID% > *:last-child._ngcontent-%ID%{margin-bottom:0!important}._nghost-%ID% a:not([href])._ngcontent-%ID%{color:inherit;text-decoration:none}._nghost-%ID% .anchor._ngcontent-%ID%{float:left;padding-right:4px;margin-left:-20px;line-height:1}._nghost-%ID% .anchor:focus._ngcontent-%ID%{outline:none}._nghost-%ID% p._ngcontent-%ID%,._nghost-%ID% blockquote._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%,._nghost-%ID% dl._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{margin-top:0;margin-bottom:16px}._nghost-%ID% hr._ngcontent-%ID%{height:0.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}._nghost-%ID% blockquote._ngcontent-%ID%{padding:0 1em;color:#777;border-left:0.25em solid #ddd}._nghost-%ID% blockquote._ngcontent-%ID% > :first-child._ngcontent-%ID%{margin-top:0}._nghost-%ID% blockquote._ngcontent-%ID% > :last-child._ngcontent-%ID%{margin-bottom:0}._nghost-%ID% kbd._ngcontent-%ID%{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:solid 1px #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}._nghost-%ID% h1._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID%{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}._nghost-%ID% h1._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h2._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h3._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h4._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h5._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h6._ngcontent-%ID% .octicon-link._ngcontent-%ID%{color:black;vertical-align:middle;visibility:hidden}._nghost-%ID% h1:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h2:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h3:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h4:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h5:hover._ngcontent-%ID% .anchor._ngcontent-%ID%,._nghost-%ID% h6:hover._ngcontent-%ID% .anchor._ngcontent-%ID%{text-decoration:none}._nghost-%ID% h1:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h2:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h3:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h4:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h5:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%,._nghost-%ID% h6:hover._ngcontent-%ID% .anchor._ngcontent-%ID% .octicon-link._ngcontent-%ID%{visibility:visible}._nghost-%ID% h1._ngcontent-%ID%{padding-bottom:0.3em;font-size:2em;border-bottom:1px solid #eee}._nghost-%ID% h2._ngcontent-%ID%{padding-bottom:0.3em;font-size:1.5em;border-bottom:1px solid #eee}._nghost-%ID% h3._ngcontent-%ID%{font-size:1.25em}._nghost-%ID% h4._ngcontent-%ID%{font-size:1em}._nghost-%ID% h5._ngcontent-%ID%{font-size:0.875em}._nghost-%ID% h6._ngcontent-%ID%{font-size:0.85em;color:#777}._nghost-%ID% ul._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID%{padding-left:2em}._nghost-%ID% ul._ngcontent-%ID% ul._ngcontent-%ID%,._nghost-%ID% ul._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ol._ngcontent-%ID%,._nghost-%ID% ol._ngcontent-%ID% ul._ngcontent-%ID%{margin-top:0;margin-bottom:0}._nghost-%ID% li._ngcontent-%ID% > p._ngcontent-%ID%{margin-top:16px}._nghost-%ID% li._ngcontent-%ID% + li._ngcontent-%ID%{margin-top:0.25em}._nghost-%ID% dl._ngcontent-%ID%{padding:0}._nghost-%ID% dl._ngcontent-%ID% dt._ngcontent-%ID%{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}._nghost-%ID% dl._ngcontent-%ID% dd._ngcontent-%ID%{padding:0 16px;margin-bottom:16px}._nghost-%ID% table._ngcontent-%ID%{display:block;width:100%;overflow:auto}._nghost-%ID% table._ngcontent-%ID% th._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% th._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% td._ngcontent-%ID%{padding:6px 13px;border:1px solid #ddd}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{background-color:#fff;border-top:1px solid #ccc}._nghost-%ID% table._ngcontent-%ID% tr:nth-child(2n)._ngcontent-%ID%{background-color:#f8f8f8}._nghost-%ID% img._ngcontent-%ID%{max-width:100%;box-sizing:content-box;background-color:#fff}._nghost-%ID% code._ngcontent-%ID%{padding:0.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,0.04);border-radius:3px}._nghost-%ID% code._ngcontent-%ID%::before,._nghost-%ID% code._ngcontent-%ID%::after{letter-spacing:-0.2em;content:"\xa0"}._nghost-%ID% pre._ngcontent-%ID%{word-wrap:normal}._nghost-%ID% pre._ngcontent-%ID% > code._ngcontent-%ID%{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}._nghost-%ID% .highlight._ngcontent-%ID%{margin-bottom:16px}._nghost-%ID% .highlight._ngcontent-%ID% pre._ngcontent-%ID%{margin-bottom:0;word-break:normal}._nghost-%ID% .highlight._ngcontent-%ID% pre._ngcontent-%ID%,._nghost-%ID% pre._ngcontent-%ID%{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%{display:inline;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%::before,._nghost-%ID% pre._ngcontent-%ID% code._ngcontent-%ID%::after{content:normal}._nghost-%ID% .pl-0._ngcontent-%ID%{padding-left:0!important}._nghost-%ID% .pl-1._ngcontent-%ID%{padding-left:3px!important}._nghost-%ID% .pl-2._ngcontent-%ID%{padding-left:6px!important}._nghost-%ID% .pl-3._ngcontent-%ID%{padding-left:12px!important}._nghost-%ID% .pl-4._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% .pl-5._ngcontent-%ID%{padding-left:36px!important}._nghost-%ID% .pl-6._ngcontent-%ID%{padding-left:48px!important}._nghost-%ID% .full-commit._ngcontent-%ID% .btn-outline:not(:disabled):hover._ngcontent-%ID%{color:#4078c0;border:1px solid #4078c0}._nghost-%ID% kbd._ngcontent-%ID%{display:inline-block;padding:3px 5px;font:11px Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:solid 1px #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}._nghost-%ID% :checked._ngcontent-%ID% + .radio-label._ngcontent-%ID%{position:relative;z-index:1;border-color:#4078c0}._nghost-%ID% .task-list-item._ngcontent-%ID%{list-style-type:none}._nghost-%ID% .task-list-item._ngcontent-%ID% + .task-list-item._ngcontent-%ID%{margin-top:3px}._nghost-%ID% .task-list-item._ngcontent-%ID% input._ngcontent-%ID%{margin:0 0.2em 0.25em -1.6em;vertical-align:middle}._nghost-%ID% hr._ngcontent-%ID%{border-bottom-color:#eee}'];
-  }, "styles4", "styles$SkawaMarkdownRendererComponent", "$get$styles$SkawaMarkdownRendererComponent", function() {
-    return [$.$get$styles4()];
   }, "styles$SkawaMarkdownRendererComponent", "styles$SkawaRawMarkdownRendererComponent", "$get$styles$SkawaRawMarkdownRendererComponent", function() {
     return ["._nghost-%ID%{display:block}"];
-  }, "styles$SkawaRawMarkdownRendererComponent", "styles2", "$get$styles2", function() {
-    return ["._nghost-%ID%{display:flex;font-size:15px;font-weight:normal;position:relative;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;letter-spacing:0.01em;line-height:normal;outline:none;text-align:center;z-index:0;transition:color 0.4s linear,background-color 0.4s linear;flex-basis:100%}._nghost-%ID%:hover{color:rgba(0,0,0,0.987);background-color:rgba(0,0,0,0.05)}"];
-  }, "styles2", "styles$SkawaNavItemComponent", "$get$styles$SkawaNavItemComponent", function() {
-    return [$.$get$styles2()];
-  }, "styles$SkawaNavItemComponent", "styles21", "$get$styles21", function() {
-    return ["._nghost-%ID%{padding:6px 0;box-sizing:border-box;display:flex;align-items:center;height:44px;color:rgba(0,0,0,0.654);flex-grow:1;transition:color 0.4s linear;flex-basis:100%}._nghost-%ID% .item-icon._ngcontent-%ID%{width:64px;justify-content:center}._nghost-%ID% .item-text._ngcontent-%ID%{flex-grow:1;line-height:24px;text-align:left}._nghost-%ID% .item-text.text-only._ngcontent-%ID%{text-transform:uppercase;font-size:12px}._nghost-%ID%:hover,._nghost-%ID%.hovering{color:rgba(0,0,0,0.998)}._nghost-%ID%[textOnly]{padding-left:20px}._nghost-%ID%.icon-padding{padding-left:64px}"];
-  }, "styles21", "styles$SkawaSidebarItemComponent", "$get$styles$SkawaSidebarItemComponent", function() {
-    return [$.$get$styles21()];
-  }, "styles$SkawaSidebarItemComponent", "styles22", "$get$styles22", function() {
+  }, "styles$SkawaRawMarkdownRendererComponent", "styles3", "$get$styles3", function() {
+    return ["._nghost-%ID%{display:flex;font-size:15px;font-weight:normal;position:relative;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;letter-spacing:.01em;line-height:normal;outline:none;text-align:center;z-index:0;transition:color .4s linear,background-color .4s linear}._nghost-%ID%:hover{color:rgba(0,0,0,.987);background-color:rgba(0,0,0,.05)}"];
+  }, "styles3", "styles$SkawaNavItemComponent", "$get$styles$SkawaNavItemComponent", function() {
+    return [$.$get$styles3()];
+  }, "styles$SkawaNavItemComponent", "styles23", "$get$styles23", function() {
+    return ["._nghost-%ID%{padding:6px 0;box-sizing:border-box;display:flex;align-items:center;height:44px;color:rgba(0,0,0,.654);flex-grow:1;transition:color .4s linear;flex-basis:100%}._nghost-%ID% .item-icon._ngcontent-%ID%{width:64px;justify-content:center}._nghost-%ID% .item-text._ngcontent-%ID%{flex-grow:1;line-height:24px;text-align:left}._nghost-%ID% .item-text.text-only._ngcontent-%ID%{text-transform:uppercase;font-size:12px}._nghost-%ID%:hover,._nghost-%ID%.hovering{color:rgba(0,0,0,.998)}._nghost-%ID%[textOnly]{padding-left:20px}._nghost-%ID%.icon-padding{padding-left:64px}"];
+  }, "styles23", "styles$SkawaSidebarItemComponent", "$get$styles$SkawaSidebarItemComponent", function() {
+    return [$.$get$styles23()];
+  }, "styles$SkawaSidebarItemComponent", "styles24", "$get$styles24", function() {
     return ["._nghost-%ID%{box-sizing:border-box}._nghost-%ID% main._ngcontent-%ID%{border-right:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1);background-color:#fff;padding:24px;margin:0 auto;max-width:800px}._nghost-%ID% main._ngcontent-%ID% .demo._ngcontent-%ID%{display:block;border-bottom:1px solid lightgray;padding-bottom:2em;margin-bottom:2em}._nghost-%ID% material-content._ngcontent-%ID%{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0}._nghost-%ID% material-content._ngcontent-%ID% .material-header._ngcontent-%ID%{position:fixed;right:0;width:calc(100% - 256px);left:256px;transition-duration:150ms;transition-property:left,width;transition-timing-function:cubic-bezier(0.4,0,0.2,1);top:0;z-index:1}._nghost-%ID% material-content._ngcontent-%ID% .material-header.no-drawer._ngcontent-%ID%{left:0;width:100%}a._ngcontent-%ID%{color:var(--default-primary-color);text-decoration:none}skawa-sidebar-item._ngcontent-%ID%{flex-basis:auto;flex-grow:initial}skawa-nav-item._ngcontent-%ID%{flex-basis:auto}"];
-  }, "styles22", "styles$AppComponent", "$get$styles$AppComponent", function() {
-    return [$.$get$styles22(), $.$get$styles16()];
-  }, "styles$AppComponent", "styles18", "$get$styles18", function() {
+  }, "styles24", "styles$AppComponent", "$get$styles$AppComponent", function() {
+    return [$.$get$styles24(), $.$get$styles18()];
+  }, "styles$AppComponent", "styles20", "$get$styles20", function() {
     return ["._nghost-%ID% .color--primary-action._ngcontent-%ID%{color:#2196f3;font-weight:700}._nghost-%ID% skawa-card._ngcontent-%ID%{margin-bottom:16px}"];
-  }, "styles18", "styles$CardDemoComponent", "$get$styles$CardDemoComponent", function() {
-    return [$.$get$styles18()];
-  }, "styles$CardDemoComponent", "styles12", "$get$styles12", function() {
-    return ["._nghost-%ID%{display:flex;align-items:center;width:100%;justify-content:space-between}._nghost-%ID% material-icon._ngcontent-%ID%{color:red}._nghost-%ID% .done._ngcontent-%ID%{color:#00c752}"];
-  }, "styles12", "styles$FirstDownPercentComponent", "$get$styles$FirstDownPercentComponent", function() {
-    return [$.$get$styles12()];
+  }, "styles20", "styles$CardDemoComponent", "$get$styles$CardDemoComponent", function() {
+    return [$.$get$styles20()];
+  }, "styles$CardDemoComponent", "styles13", "$get$styles13", function() {
+    return ["._nghost-%ID%{display:flex;align-items:center;width:100%;justify-content:space-between}"];
+  }, "styles13", "styles$FirstDownPercentComponent", "$get$styles$FirstDownPercentComponent", function() {
+    return [$.$get$styles13()];
   }, "styles$FirstDownPercentComponent", "styles0", "$get$styles0", function() {
     return ["._nghost-%ID%{display:flex;flex-grow:1;align-items:center}._nghost-%ID% h2._ngcontent-%ID%{height:32px;display:flex;flex-grow:1;align-items:center;font-size:1.5em;font-weight:bold;-webkit-margin-before:.83em;-webkit-margin-after:.83em;-webkit-margin-start:0;-webkit-margin-end:0}._nghost-%ID% a._ngcontent-%ID%{color:var(--default-primary-color);text-decoration:none}"];
   }, "styles0", "styles$DemoHeaderComponent", "$get$styles$DemoHeaderComponent", function() {
     return [$.$get$styles0()];
-  }, "styles$DemoHeaderComponent", "styles17", "$get$styles17", function() {
+  }, "styles$DemoHeaderComponent", "styles16", "$get$styles16", function() {
+    return ["._nghost-%ID% extended-material-icon:not(:first-child)._ngcontent-%ID%{margin-left:8px}._nghost-%ID% extended-material-icon:not(:last-child)._ngcontent-%ID%{margin-right:8px}"];
+  }, "styles16", "styles$ExtendedMaterialIconDemoComponent", "$get$styles$ExtendedMaterialIconDemoComponent", function() {
+    return [$.$get$styles16()];
+  }, "styles$ExtendedMaterialIconDemoComponent", "styles19", "$get$styles19", function() {
     return ["._nghost-%ID% div._ngcontent-%ID%{display:flex;align-items:center;justify-content:center;height:32px;width:100px}"];
-  }, "styles17", "styles$HexColorizePipeDemoComponent", "$get$styles$HexColorizePipeDemoComponent", function() {
-    return [$.$get$styles17()];
-  }, "styles$HexColorizePipeDemoComponent", "styles15", "$get$styles15", function() {
+  }, "styles19", "styles$HexColorizePipeDemoComponent", "$get$styles$HexColorizePipeDemoComponent", function() {
+    return [$.$get$styles19()];
+  }, "styles$HexColorizePipeDemoComponent", "styles17", "$get$styles17", function() {
     return ["._nghost-%ID% skawa-nav-item._ngcontent-%ID%{flex-basis:auto}"];
-  }, "styles15", "styles$NavItemDemoComponent", "$get$styles$NavItemDemoComponent", function() {
-    return [$.$get$styles15(), $.$get$styles16()];
-  }, "styles$NavItemDemoComponent", "styles9", "$get$styles9", function() {
-    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,0.35);background-color:rgba(0,0,0,0.2)}._nghost-%ID%{display:block;border-radius:2px;box-sizing:border-box;background-color:white;box-shadow:0 2px 2px 0 rgba(0,0,0,0.2),0 3px 1px -2px rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12)}._nghost-%ID%[no-shadow]{box-shadow:none}._nghost-%ID%.with-actions{display:flex}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}"];
-  }, "styles9", "SkawaCardHeaderComponent__rgbaRegexp", "$get$SkawaCardHeaderComponent__rgbaRegexp", function() {
+  }, "styles17", "styles$NavItemDemoComponent", "$get$styles$NavItemDemoComponent", function() {
+    return [$.$get$styles17(), $.$get$styles18()];
+  }, "styles$NavItemDemoComponent", "styles10", "$get$styles10", function() {
+    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{display:block;border-radius:2px;box-sizing:border-box;background-color:#fff;box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 3px 1px -2px rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}._nghost-%ID%[no-shadow]{box-shadow:none}._nghost-%ID%.with-actions{display:flex}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}"];
+  }, "styles10", "SkawaCardHeaderComponent__rgbaRegexp", "$get$SkawaCardHeaderComponent__rgbaRegexp", function() {
     return P.RegExp_RegExp("rgba?\\s*\\((?:\\d+(?:\\.[\\d]+)?,?\\s*){3,4}\\)", true, false);
   }, "SkawaCardHeaderComponent__rgbaRegexp", "styles$SkawaCardComponent", "$get$styles$SkawaCardComponent", function() {
-    return [$.$get$styles9()];
-  }, "styles$SkawaCardComponent", "styles$SkawaCardContentComponent", "$get$styles$SkawaCardContentComponent", function() {
-    return [$.$get$styles7()];
-  }, "styles$SkawaCardContentComponent", "styles$SkawaCardHeaderComponent", "$get$styles$SkawaCardHeaderComponent", function() {
-    return [$.$get$styles8()];
-  }, "styles$SkawaCardHeaderComponent", "styles6", "$get$styles6", function() {
-    return ["._nghost-%ID%{display:flex;padding:8px}._nghost-%ID%[align-right]{justify-content:flex-end}._nghost-%ID%[align-left]{justify-content:flex-start}._nghost-%ID%  [spacer],._nghost-%ID%  .spacer{display:block;flex-grow:1}._nghost-%ID%.with-actions,.with-actions ._nghost-%ID%{padding:0}._nghost-%ID%.with-actions  material-button[icon],.with-actions ._nghost-%ID%  material-button[icon]{color:#5c6bc0;margin-left:8px}"];
-  }, "styles6", "styles$SkawaCardActionsComponent", "$get$styles$SkawaCardActionsComponent", function() {
-    return [$.$get$styles6()];
-  }, "styles$SkawaCardActionsComponent", "styles7", "$get$styles7", function() {
-    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,0.35);background-color:rgba(0,0,0,0.2)}._nghost-%ID%{font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,0.87);display:block;padding:16px}._nghost-%ID%.with-header{padding-top:0}._nghost-%ID%[fullWidth],._nghost-%ID%.skawa-full-width{padding:0}._nghost-%ID%.skawa-collapsed{display:none;color:green}"];
-  }, "styles7", "styles8", "$get$styles8", function() {
-    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,0.35);background-color:rgba(0,0,0,0.2)}._nghost-%ID%{padding:16px;display:flex;align-items:center}._nghost-%ID%::after{content:"";display:block;clear:both}._nghost-%ID%  skawa-header-title,._nghost-%ID%  skawa-header-subhead{display:block}._nghost-%ID%  skawa-header-image{display:inline-block;float:left;box-sizing:border-box;width:40px;height:40px;margin-right:8px}._nghost-%ID%  skawa-header-title{font-size:24px;font-weight:400;line-height:32px;-moz-osx-font-smoothing:grayscale;color:rgba(0,0,0,0.87)}._nghost-%ID%  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,0.54)}._nghost-%ID%.with-title-image  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,0.54)}._nghost-%ID%.with-title-image.with-subhead{display:block}._nghost-%ID%.with-title-image.with-subhead  skawa-header-title{font-size:20px;font-weight:500;font-family:"Roboto","Helvetica","Arial",sans-serif;line-height:1;letter-spacing:0.02em;color:rgba(0,0,0,0.87);font-size:15px;line-height:20px;padding-top:0;font-weight:700}._nghost-%ID%.with-actions{display:flex;padding-right:8px}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}._nghost-%ID%.with-subhead{flex-direction:column;align-items:flex-start}._nghost-%ID%.with-data-table,.with-data-table ._nghost-%ID%{padding:12px 6px 12px 16px}'];
-  }, "styles8", "styles14", "$get$styles14", function() {
-    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,0.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,0.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,0.35);background-color:rgba(0,0,0,0.2)}._nghost-%ID%{display:block;background-color:white}._nghost-%ID% table._ngcontent-%ID%{width:100%;box-sizing:border-box}._nghost-%ID% table.selectable._ngcontent-%ID% th:nth-child(2)._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:nth-child(2)._ngcontent-%ID%{padding-left:0}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:center;color:black;width:72px}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%{margin:0;width:24px;height:24px;vertical-align:middle}._nghost-%ID% table.selectable._ngcontent-%ID% tfoot._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:right;padding-left:72px!important}._nghost-%ID% table.non-selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.non-selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr._ngcontent-%ID%{transition-duration:0.28s;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-property:background-color}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr:hover._ngcontent-%ID%{background-color:#EEE!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.selected._ngcontent-%ID%{background-color:#e0e0e0}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.highlighted._ngcontent-%ID%{background-color:#EEE}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{border-bottom:1px solid #d0d0d0}._nghost-%ID% table._ngcontent-%ID% tr:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr:last-of-type._ngcontent-%ID%{height:56px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{padding-left:56px;text-align:right;vertical-align:middle;font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,0.87);height:48px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:first-of-type._ngcontent-%ID%{padding-left:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:last-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:last-of-type._ngcontent-%ID%{padding-right:24px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%{font-size:13px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{font-size:12px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_downwards";opacity:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%:before{opacity:0.38}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_upwards";opacity:0.87}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort.desc._ngcontent-%ID% a._ngcontent-%ID%:before{content:"arrow_downwards"}._nghost-%ID% .text-column._ngcontent-%ID%,._nghost-%ID% .text-column--header._ngcontent-%ID%,._nghost-%ID% .text-column--footer._ngcontent-%ID%{text-align:left!important}._nghost-%ID% .numeric-column._ngcontent-%ID%,._nghost-%ID% .numeric-column--header._ngcontent-%ID%,._nghost-%ID% .numeric-column--footer._ngcontent-%ID%{text-align:right}'];
-  }, "styles14", "styles$SkawaDataTableComponent", "$get$styles$SkawaDataTableComponent", function() {
-    return [$.$get$styles14()];
-  }, "styles$SkawaDataTableComponent", "styles10", "$get$styles10", function() {
-    return ["._nghost-%ID%{display:block}._nghost-%ID% .grid-container._ngcontent-%ID%{position:relative}._nghost-%ID% .grid-container._ngcontent-%ID%  [gridTile]{position:absolute;width:280px;margin:16px;transition:transform 0.3s ease-out}"];
-  }, "styles10", "styles$GridComponent", "$get$styles$GridComponent", function() {
     return [$.$get$styles10()];
-  }, "styles$GridComponent", "styles", "$get$styles", function() {
-    return [".snackbar-container._ngcontent-%ID%{box-shadow:0 2px 2px 0 rgba(0,0,0,0.2),0 3px 1px -2px rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12);position:fixed;left:50%;bottom:0px;transform:translate(-50%,100%);font-size:14px;z-index:10000;height:48px;color:white;background-color:#323232;display:flex;padding:0 24px;box-sizing:border-box;border-radius:2px;transition:transform 0.5s ease}.snackbar-container._ngcontent-%ID% material-button._ngcontent-%ID%{align-self:center}.snackbar-container.show._ngcontent-%ID%{transform:translate(-50%,0)}.snackbar-container._ngcontent-%ID% .message._ngcontent-%ID%,.snackbar-container._ngcontent-%ID% .action._ngcontent-%ID%{align-self:center}._nghost-%ID%.touch-enabled .snackbar-container._ngcontent-%ID%,.touch-enabled ._nghost-%ID% .snackbar-container._ngcontent-%ID%{height:96px}"];
-  }, "styles", "SnackbarService__defaultDuration", "$get$SnackbarService__defaultDuration", function() {
+  }, "styles$SkawaCardComponent", "styles$SkawaCardContentComponent", "$get$styles$SkawaCardContentComponent", function() {
+    return [$.$get$styles8()];
+  }, "styles$SkawaCardContentComponent", "styles$SkawaCardHeaderComponent", "$get$styles$SkawaCardHeaderComponent", function() {
+    return [$.$get$styles9()];
+  }, "styles$SkawaCardHeaderComponent", "styles7", "$get$styles7", function() {
+    return ["._nghost-%ID%{display:flex;padding:8px}._nghost-%ID%[align-right]{justify-content:flex-end}._nghost-%ID%[align-left]{justify-content:flex-start}._nghost-%ID%  [spacer],._nghost-%ID%  .spacer{display:block;flex-grow:1}._nghost-%ID%.with-actions,.with-actions ._nghost-%ID%{padding:0}._nghost-%ID%.with-actions  material-button[icon],.with-actions ._nghost-%ID%  material-button[icon]{color:#5c6bc0;margin-left:8px}"];
+  }, "styles7", "styles$SkawaCardActionsComponent", "$get$styles$SkawaCardActionsComponent", function() {
+    return [$.$get$styles7()];
+  }, "styles$SkawaCardActionsComponent", "styles8", "$get$styles8", function() {
+    return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,.87);display:block;padding:16px}._nghost-%ID%.with-header{padding-top:0}._nghost-%ID%[fullWidth],._nghost-%ID%.skawa-full-width{padding:0}._nghost-%ID%.skawa-collapsed{display:none;color:green}"];
+  }, "styles8", "styles9", "$get$styles9", function() {
+    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{padding:16px;display:flex;align-items:center}._nghost-%ID%::after{content:"";display:block;clear:both}._nghost-%ID%  skawa-header-title,._nghost-%ID%  skawa-header-subhead{display:block}._nghost-%ID%  skawa-header-image{display:inline-block;float:left;box-sizing:border-box;width:40px;height:40px;margin-right:8px}._nghost-%ID%  skawa-header-title{font-size:24px;font-weight:400;line-height:32px;-moz-osx-font-smoothing:grayscale;color:rgba(0,0,0,.87)}._nghost-%ID%  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,.54)}._nghost-%ID%.with-title-image  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,.54)}._nghost-%ID%.with-title-image.with-subhead{display:block}._nghost-%ID%.with-title-image.with-subhead  skawa-header-title{font-size:20px;font-weight:500;font-family:"Roboto","Helvetica","Arial",sans-serif;line-height:1;letter-spacing:.02em;color:rgba(0,0,0,.87);font-size:15px;line-height:20px;padding-top:0;font-weight:700}._nghost-%ID%.with-actions{display:flex;padding-right:8px}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}._nghost-%ID%.with-subhead{flex-direction:column;align-items:flex-start}._nghost-%ID%.with-data-table,.with-data-table ._nghost-%ID%{padding:12px 6px 12px 16px}'];
+  }, "styles9", "styles15", "$get$styles15", function() {
+    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{display:block;background-color:#fff}._nghost-%ID% table._ngcontent-%ID%{width:100%;box-sizing:border-box}._nghost-%ID% table.selectable._ngcontent-%ID% th:nth-child(2)._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:nth-child(2)._ngcontent-%ID%{padding-left:0}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:center;color:black;width:72px}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%{margin:0;width:24px;height:24px;vertical-align:middle}._nghost-%ID% table.selectable._ngcontent-%ID% tfoot._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:right;padding-left:72px!important}._nghost-%ID% table.non-selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.non-selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr._ngcontent-%ID%{transition-duration:.28s;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-property:background-color}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr:hover._ngcontent-%ID%{background-color:#eee!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.selected._ngcontent-%ID%{background-color:#e0e0e0}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.highlighted._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.odd-row._ngcontent-%ID%{background-color:#eee}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{border-bottom:1px solid #d0d0d0}._nghost-%ID% table._ngcontent-%ID% tr:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr:last-of-type._ngcontent-%ID%{height:56px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{padding-left:56px;text-align:right;vertical-align:middle;font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,.87);height:48px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:first-of-type._ngcontent-%ID%{padding-left:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:last-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:last-of-type._ngcontent-%ID%{padding-right:24px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%{font-size:13px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{font-size:12px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_downwards";opacity:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%:before{opacity:.38}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_upwards";opacity:.87}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort.desc._ngcontent-%ID% a._ngcontent-%ID%:before{content:"arrow_downwards"}._nghost-%ID% .text-column._ngcontent-%ID%,._nghost-%ID% .text-column--header._ngcontent-%ID%,._nghost-%ID% .text-column--footer._ngcontent-%ID%{text-align:left!important}._nghost-%ID% .numeric-column._ngcontent-%ID%,._nghost-%ID% .numeric-column--header._ngcontent-%ID%,._nghost-%ID% .numeric-column--footer._ngcontent-%ID%{text-align:right}'];
+  }, "styles15", "styles$SkawaDataTableComponent", "$get$styles$SkawaDataTableComponent", function() {
+    return [$.$get$styles15()];
+  }, "styles$SkawaDataTableComponent", "styles", "$get$styles", function() {
+    return ["._nghost-%ID%{display:inline-flex}._nghost-%ID% .mdi._ngcontent-%ID%{font-size:24px}._nghost-%ID%[size=x-small] .mdi._ngcontent-%ID%{font-size:12px}._nghost-%ID%[size=small] .mdi._ngcontent-%ID%{font-size:13px}._nghost-%ID%[size=medium] .mdi._ngcontent-%ID%{font-size:16px}._nghost-%ID%[size=large] .mdi._ngcontent-%ID%{font-size:18px}._nghost-%ID%[size=x-large] .mdi._ngcontent-%ID%{font-size:20px}"];
+  }, "styles", "styles$ExtendedMaterialIconComponent", "$get$styles$ExtendedMaterialIconComponent", function() {
+    return [$.$get$styles()];
+  }, "styles$ExtendedMaterialIconComponent", "styles11", "$get$styles11", function() {
+    return ["._nghost-%ID%{display:block}._nghost-%ID% .grid-container._ngcontent-%ID%{position:relative}._nghost-%ID% .grid-container._ngcontent-%ID%  [gridTile]{position:absolute;width:280px;margin:16px;transition:transform .3s ease-out}"];
+  }, "styles11", "styles$GridComponent", "$get$styles$GridComponent", function() {
+    return [$.$get$styles11()];
+  }, "styles$GridComponent", "styles1", "$get$styles1", function() {
+    return [".snackbar-container._ngcontent-%ID%{box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 3px 1px -2px rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);position:fixed;left:50%;bottom:0px;transform:translate(-50%,100%);font-size:14px;z-index:10000;height:48px;color:#fff;background-color:#323232;display:flex;padding:0 24px;box-sizing:border-box;border-radius:2px;transition:transform .5s ease}.snackbar-container._ngcontent-%ID% material-button._ngcontent-%ID%{align-self:center}.snackbar-container.show._ngcontent-%ID%{transform:translate(-50%,0)}.snackbar-container._ngcontent-%ID% .message._ngcontent-%ID%,.snackbar-container._ngcontent-%ID% .action._ngcontent-%ID%{align-self:center}._nghost-%ID%.touch-enabled .snackbar-container._ngcontent-%ID%,.touch-enabled ._nghost-%ID% .snackbar-container._ngcontent-%ID%{height:96px}"];
+  }, "styles1", "SnackbarService__defaultDuration", "$get$SnackbarService__defaultDuration", function() {
     return P.Duration$(0, 0, 0, 0, 0, 3);
   }, "SnackbarService__defaultDuration", "SkawaSnackbarComponent__minimumSlideInDelay", "$get$SkawaSnackbarComponent__minimumSlideInDelay", function() {
     return P.Duration$(0, 0, 0, 100, 0, 0);
   }, "SkawaSnackbarComponent__minimumSlideInDelay", "styles$SkawaSnackbarComponent", "$get$styles$SkawaSnackbarComponent", function() {
-    return [$.$get$styles()];
+    return [$.$get$styles1()];
   }, "styles$SkawaSnackbarComponent"]);
   Isolate = Isolate.$finishIsolateConstructor(Isolate);
   $ = new Isolate();
   init.metadata = ["row", null, "_", "error", "self", "e", "stackTrace", "parent", "zone", "arg", "value", "callback", "arg1", "arg2", "s", "f", "o", "invocation", "result", "element", "child", "p0", "event", "index", "arguments", "attributeName", "context", "message", "url", "options", "promiseError", "promiseValue", "attr", "dict", "postCreate", "data", "n", "newMessage", "captureThis", "zoneValues", "specification", "item", "each", "arg4", "arg3", "p1", true, "elem", "findInAncestors", "didWork_", "t", "numberOfArguments", "__", "closure", "className", "action", "duration", "name"];
-  init.types = [{func: 1, ret: -1}, {func: 1, ret: P.Null}, {func: 1, ret: -1, args: [,]}, {func: 1, ret: P.Null, args: [,,]}, {func: 1, ret: P.String, args: [N.WrRowData]}, {func: 1, args: [,]}, {func: 1, ret: P.String, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, ret: -1, args: [P.String,,]}, {func: 1, ret: P.bool, args: [P.String]}, {func: 1, ret: P.Null, args: [W.Event]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, ret: P.Null, args: [-1]}, {func: 1, ret: -1, args: [P.Object], opt: [P.StackTrace]}, {func: 1, ret: P.Null, args: [N.KeyValueChangeRecord]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord]}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [W.KeyboardEvent]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, Q.GridDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Y.NgZone}, {func: 1, ret: P.bool, args: [W.NodeValidator]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: -1}]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, bounds: [P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}, 1]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}, 1, 2]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, N.CardDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: M.Injector, opt: [M.Injector]}, {func: 1, ret: P.bool, args: [K.BlockSyntax]}, {func: 1, ret: P.bool, args: [P.int]}, {func: 1, ret: P.bool, args: [R.InlineSyntax]}, {func: 1, ret: [S.AppView, T.SkawaSnackbarComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.String, args: [K.CarRowData]}, {func: 1, ret: -1, args: [W.UIEvent]}, {func: 1, ret: P.int, args: [G.SchoolRowData, G.SchoolRowData]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Element, W.Element]}]}, {func: 1, ret: P.int, args: [,,]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, ret: P.String, args: [U.Node0]}, {func: 1, bounds: [P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, ret: Y.ApplicationRef}, {func: 1, ret: D.Testability}, {func: 1, ret: M.Injector}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [,]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord, P.int, P.int]}, {func: 1, ret: P.Null, args: [Y.NgZoneError]}, {func: 1, ret: P.bool, args: [[P.Map, P.String,,]]}, {func: 1, ret: P.bool}, {func: 1, ret: -1, args: [P.Function]}, {func: 1, ret: P.Null, args: [W.DomException]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Node, W.Node]}]}, {func: 1, ret: -1, args: [P.String, P.String]}, {func: 1, ret: W.WindowBase, args: [P.String, P.String], opt: [P.String]}, {func: 1, ret: -1, opt: [P.String]}, {func: 1, args: [W.Element], opt: [P.bool]}, {func: 1, ret: [P.List,,]}, {func: 1, ret: P.Null, args: [P.bool]}, {func: 1, ret: U.JsTestability, args: [W.Element]}, {func: 1, ret: [P.List, U.JsTestability]}, {func: 1, ret: U.JsTestability, args: [D.Testability]}, {func: 1, args: [W.Event]}, {func: 1, ret: -1, args: [P.Object]}, {func: 1, ret: -1, args: [, P.StackTrace]}, {func: 1, ret: -1, args: [W.Event]}, {func: 1, args: [P.String]}, {func: 1, ret: -1, args: [W.Node, W.Node]}, {func: 1, ret: -1, args: [K.ListItem]}, {func: 1, ret: P.bool, args: [P.RegExp]}, {func: 1, args: [,,]}, {func: 1, ret: S.LinkReference}, {func: 1, ret: P.int, args: [P.String, P.String]}, {func: 1, ret: P.bool, args: [[P.Set, P.String]]}, {func: 1, ret: P.bool, args: [R.TagState]}, {func: 1, ret: P.Null, args: [P.String], opt: [P.String]}, {func: 1, ret: P.Null, args: [W.Element]}, {func: 1, ret: [P.Map, P.String,,], args: [,,]}, {func: 1, ret: -1, args: [[P.Set, P.String]]}, {func: 1, ret: [P.Map, P.String,,], args: [,]}, {func: 1, ret: P.bool, args: [W.Node]}, {func: 1, ret: W.Element, args: [W.Node]}, {func: 1, ret: P.String, args: [P.String, P.String]}, {func: 1, ret: -1, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: P.bool, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [P.Symbol0,,]}, {func: 1, ret: P.JsFunction, args: [,]}, {func: 1, ret: [D.ComponentFactory, L.FirstDownPercentComponent], args: [U.RowData]}, {func: 1, ret: P.int, args: [P.int]}, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, U.RowData]], args: [[P.List, [G.SkawaDataTableColComponent, U.RowData]]]}, {func: 1, ret: P.bool, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: S.SortDirection, args: [P.String]}, {func: 1, ret: -1, args: [P.String], named: {action: T.SnackAction, duration: P.Duration}}, {func: 1, ret: P.Null, args: [T.SnackMessage]}, {func: 1, ret: [P.JsArray,,], args: [,]}, {func: 1, ret: P.JsObject, args: [,]}, {func: 1, bounds: [P.Object], ret: {func: 1, ret: 0}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, bounds: [P.Object, P.Object], ret: {func: 1, ret: 0, args: [1]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: {func: 1, ret: 0, args: [1, 2]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1, args: [P.Timer]}]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: -1, args: [P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, [P.Map,,,]]}, {func: 1, ret: P.String}, {func: 1, args: [[P.Map,,,]], opt: [{func: 1, ret: -1, args: [P.Object]}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, bounds: [P.num], ret: 0, args: [0, 0]}, {func: 1, ret: P.Null, args: [P.String,,]}, {func: 1, ret: P.Object, args: [P.int,,]}, {func: 1, ret: [S.AppView, Z.DynamicComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, B.MaterialCheckboxComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, E.SkawaSidebarItemComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, Q.AppComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Q.AppViewUtils}, {func: 1, ret: [S.AppView, L.FirstDownPercentComponent], args: [[S.AppView,,], P.int]}, {func: 1, args: [, P.String]}, {func: 1, ret: [S.AppView, A.HexColorizePipeDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.String, args: [,]}];
+  init.types = [{func: 1, ret: -1}, {func: 1, ret: P.Null}, {func: 1, ret: -1, args: [,]}, {func: 1, ret: P.Null, args: [,,]}, {func: 1, ret: P.String, args: [N.WrRowData]}, {func: 1, args: [,]}, {func: 1, ret: P.String, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, ret: -1, args: [P.String,,]}, {func: 1, ret: P.bool, args: [P.String]}, {func: 1, ret: P.Null, args: [W.Event]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, ret: P.Null, args: [-1]}, {func: 1, ret: -1, args: [P.Object], opt: [P.StackTrace]}, {func: 1, ret: P.Null, args: [N.KeyValueChangeRecord]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord]}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [W.KeyboardEvent]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, Q.GridDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Y.NgZone}, {func: 1, ret: P.bool, args: [W.NodeValidator]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: -1}]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, bounds: [P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}, 1]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}, 1, 2]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, N.CardDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: M.Injector, opt: [M.Injector]}, {func: 1, ret: P.bool, args: [K.BlockSyntax]}, {func: 1, ret: P.bool, args: [P.int]}, {func: 1, ret: P.bool, args: [R.InlineSyntax]}, {func: 1, ret: [S.AppView, T.SkawaSnackbarComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.String, args: [K.CarRowData]}, {func: 1, ret: -1, args: [W.UIEvent]}, {func: 1, ret: P.int, args: [G.SchoolRowData, G.SchoolRowData]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Element, W.Element]}]}, {func: 1, ret: P.int, args: [,,]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, ret: P.String, args: [U.Node0]}, {func: 1, bounds: [P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, ret: Y.ApplicationRef}, {func: 1, ret: D.Testability}, {func: 1, ret: M.Injector}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [,]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord, P.int, P.int]}, {func: 1, ret: P.Null, args: [Y.NgZoneError]}, {func: 1, ret: P.bool, args: [[P.Map, P.String,,]]}, {func: 1, ret: P.bool}, {func: 1, ret: -1, args: [P.Function]}, {func: 1, ret: P.Null, args: [W.DomException]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Node, W.Node]}]}, {func: 1, ret: -1, args: [P.String, P.String]}, {func: 1, ret: W.WindowBase, args: [P.String, P.String], opt: [P.String]}, {func: 1, ret: -1, opt: [P.String]}, {func: 1, args: [W.Element], opt: [P.bool]}, {func: 1, ret: [P.List,,]}, {func: 1, ret: P.Null, args: [P.bool]}, {func: 1, ret: U.JsTestability, args: [W.Element]}, {func: 1, ret: [P.List, U.JsTestability]}, {func: 1, ret: U.JsTestability, args: [D.Testability]}, {func: 1, args: [W.Event]}, {func: 1, ret: -1, args: [P.Object]}, {func: 1, ret: -1, args: [, P.StackTrace]}, {func: 1, ret: -1, args: [W.Event]}, {func: 1, ret: P.Null, args: [W.DivElement]}, {func: 1, args: [P.String]}, {func: 1, ret: -1, args: [W.Node, W.Node]}, {func: 1, ret: -1, args: [K.ListItem]}, {func: 1, ret: P.bool, args: [P.RegExp]}, {func: 1, args: [,,]}, {func: 1, ret: S.LinkReference}, {func: 1, ret: P.int, args: [P.String, P.String]}, {func: 1, ret: P.bool, args: [[P.Set, P.String]]}, {func: 1, ret: P.bool, args: [R.TagState]}, {func: 1, ret: P.Null, args: [P.String], opt: [P.String]}, {func: 1, ret: P.Null, args: [W.Element]}, {func: 1, ret: -1, args: [[P.Set, P.String]]}, {func: 1, ret: P.String, args: [,]}, {func: 1, ret: P.bool, args: [W.Node]}, {func: 1, ret: W.Element, args: [W.Node]}, {func: 1, ret: P.String, args: [P.String, P.String]}, {func: 1, ret: -1, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: P.bool, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [P.Symbol0,,]}, {func: 1, ret: P.JsFunction, args: [,]}, {func: 1, ret: [D.ComponentFactory, L.FirstDownPercentComponent], args: [U.RowData]}, {func: 1, ret: P.int, args: [P.int]}, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, U.RowData]], args: [[P.List, [G.SkawaDataTableColComponent, U.RowData]]]}, {func: 1, ret: P.bool, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: S.SortDirection, args: [P.String]}, {func: 1, ret: -1, args: [P.String], named: {action: T.SnackAction, duration: P.Duration}}, {func: 1, ret: P.Null, args: [T.SnackMessage]}, {func: 1, ret: [P.JsArray,,], args: [,]}, {func: 1, ret: P.JsObject, args: [,]}, {func: 1, bounds: [P.Object], ret: {func: 1, ret: 0}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, bounds: [P.Object, P.Object], ret: {func: 1, ret: 0, args: [1]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: {func: 1, ret: 0, args: [1, 2]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1, args: [P.Timer]}]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: -1, args: [P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, [P.Map,,,]]}, {func: 1, ret: P.String}, {func: 1, args: [[P.Map,,,]], opt: [{func: 1, ret: -1, args: [P.Object]}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, bounds: [P.num], ret: 0, args: [0, 0]}, {func: 1, ret: P.Null, args: [P.String,,]}, {func: 1, ret: P.Object, args: [P.int,,]}, {func: 1, ret: [S.AppView, Z.DynamicComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, B.MaterialCheckboxComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, E.SkawaSidebarItemComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, Q.AppComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Q.AppViewUtils}, {func: 1, ret: [S.AppView, L.FirstDownPercentComponent], args: [[S.AppView,,], P.int]}, {func: 1, args: [, P.String]}, {func: 1, ret: [S.AppView, A.HexColorizePipeDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [P.Map, P.String,,], args: [,,]}];
   function convertToFastObject(properties) {
     function MyClass() {
     }
