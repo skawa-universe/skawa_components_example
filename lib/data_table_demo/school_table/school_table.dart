@@ -14,10 +14,10 @@ import 'package:skawa_material_components/data_table/row_data.dart';
     changeDetection: ChangeDetectionStrategy.OnPush)
 class SchoolTableComponent {
   List<SchoolRowData> selectableRowData = <SchoolRowData>[
-    new SchoolRowData('2. class', 11, 18, false),
-    new SchoolRowData('3. class', 13, 13, false),
-    new SchoolRowData('1. class', 15, 12, false),
-    new SchoolRowData('4. class', 20, 13, false),
+    SchoolRowData('2. class', 11, 18, false),
+    SchoolRowData('3. class', 13, 13, false),
+    SchoolRowData('1. class', 15, 12, false),
+    SchoolRowData('4. class', 20, 13, false),
   ];
 
   String categoryAccessor(SchoolRowData row) => row.category;

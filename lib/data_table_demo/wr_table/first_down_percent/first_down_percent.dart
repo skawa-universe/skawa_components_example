@@ -6,8 +6,8 @@ import 'package:skawa_components_example/data_table_demo/wr_table/wr_table.dart'
 @Component(
     selector: 'first-down-percent',
     templateUrl: 'first_down_percent.html',
-    styleUrls: const ['first_down_percent.css'],
-    directives: const [MaterialProgressComponent],
+    styleUrls: ['first_down_percent.css'],
+    directives: [MaterialProgressComponent],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class FirstDownPercentComponent extends RendersValue<WrRowData> {
   @override

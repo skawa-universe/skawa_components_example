@@ -8,5 +8,5 @@ import 'package:skawa_components_example/demo_header/demo_header.dart';
     directives: [SkawaCkeditorComponent, DemoHeaderComponent],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class CkeditorDemoComponent {
-  List<ExtraPlugin> plugins = [new ExtraPlugin('dartlogo', '/ckeditor/dartlogo/plugin.js', '')];
+  List<ExtraPlugin> plugins = [ExtraPlugin('dartlogo', '/ckeditor/dartlogo/plugin.js', '')];
 }

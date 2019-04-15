@@ -11,10 +11,10 @@ import 'package:skawa_material_components/data_table/row_data.dart';
     changeDetection: ChangeDetectionStrategy.OnPush)
 class CarTableComponent {
   List<CarRowData> rowData = <CarRowData>[
-    new CarRowData('Trabant', 'Eastern delight', classes: ['trabant']),
-    new CarRowData('Jaguar', 'Hrrrrr'),
-    new CarRowData('Ford', 'Something for everybody'),
-    new CarRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
+    CarRowData('Trabant', 'Eastern delight', classes: ['trabant']),
+    CarRowData('Jaguar', 'Hrrrrr'),
+    CarRowData('Ford', 'Something for everybody'),
+    CarRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
   String makeAccessor(CarRowData row) => row.name;

@@ -1,0 +1,13 @@
+:host {
+  extended-material-icon {
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+
+  extended-material-icon {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

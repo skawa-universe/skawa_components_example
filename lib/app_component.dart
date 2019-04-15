@@ -6,6 +6,7 @@ import 'package:skawa_components/sidebar_item/sidebar_item.dart';
 import 'card_demo/card_demo.dart';
 import 'ckeditor_demo/ckeditor_demo.dart';
 import 'data_table_demo/data_table_demo.dart';
+import 'extended_material_icon_demo/extended_material_icon_demo.dart';
 import 'grid_demo/grid_demo.dart';
 import 'hex_colorize_pipe_demo/hex_colorize_pipe_demo.dart';
 import 'infobar_demo/infobar_demo.dart';
@@ -32,6 +33,7 @@ import 'snackbar_demo/snackbar_demo.dart';
       MaterialIconComponent,
       MaterialButtonComponent,
       SkawaSidebarItemComponent,
+      ExtendedMaterialIconDemoComponent,
       MaterialPersistentDrawerDirective
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
