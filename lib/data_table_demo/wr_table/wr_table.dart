@@ -1,5 +1,11 @@
-import 'package:angular/core.dart';
+import 'package:angular/angular.dart';
+import 'package:angular_components/material_button/material_button.dart';
+import 'package:angular_components/material_icon/material_icon.dart';
+import 'package:angular_components/material_select/material_dropdown_select.dart';
+import 'package:angular_components/model/selection/selection_model.dart';
+import 'package:angular_components/model/selection/selection_options.dart';
 import 'package:angular_components/model/ui/has_factory.dart';
+import 'package:angular_components/model/ui/icon.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
 import 'package:skawa_material_components/data_table/row_data.dart';
@@ -9,18 +15,30 @@ import 'first_down_percent/first_down_percent.template.dart' as fpc;
 @Component(
     selector: 'wr-table',
     templateUrl: 'wr_table.html',
-    directives: [skawaDataTableDirectives],
+    styleUrls: ['wr_table.css'],
+    directives: [
+      skawaDataTableDirectives,
+      MaterialDropdownSelectComponent,
+      MaterialButtonComponent,
+      MaterialIconComponent,
+      NgFor,
+      NgIf
+    ],
     directiveTypes: [
       Typed<SkawaDataTableComponent<WrRowData>>(),
       Typed<SkawaDataTableColComponent<WrRowData>>(),
-      Typed<SkawaDataColRendererDirective<WrRowData>>()
+      Typed<SkawaDataColRendererDirective<WrRowData>>(),
+      Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<WrRowData>>>(),
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
-class WrTableComponent {
-  final FactoryRenderer<FirstDownPercentComponent, WrRowData> firstDownPercentRenderer =
+class WrTableComponent implements OnInit {
+  static final FactoryRenderer<FirstDownPercentComponent, WrRowData> firstDownPercentRenderer =
       (RowData row) => fpc.FirstDownPercentComponentNgFactory;
-
-  List<WrRowData> wrRowData = <WrRowData>[
+  final SelectionModel<SkawaDataTableColComponent<WrRowData>> columnModel =
+      SelectionModel<SkawaDataTableColComponent<WrRowData>>.multi(selectedValues: _columns);
+  final SelectionOptions<SkawaDataTableColComponent<WrRowData>> columnOptions =
+      SelectionOptions<SkawaDataTableColComponent<WrRowData>>.fromList(_columns);
+  final List<WrRowData> wrRowData = <WrRowData>[
     WrRowData('Calvin Johnson', 'DET', 122, 1964, 92),
     WrRowData('Brandon Marshall', 'CHI', 118, 1508, 75),
     WrRowData('Wes Welker', 'NE', 118, 1354, 72),
@@ -33,19 +51,63 @@ class WrTableComponent {
     WrRowData('Dez Bryant', 'DAL', 92, 1382, 54),
   ];
 
-  String nameAccessor(WrRowData row) => row.name;
+  List<SkawaDataTableColComponent<WrRowData>> columns = _columns;
 
-  String teamAccessor(WrRowData row) => row.team;
+  Icon icon = Icon('more_vert');
 
-  String recAccessor(WrRowData row) => row.rec.toString();
+  static final List<SkawaDataTableColComponent<WrRowData>> _columns = [
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Player'
+      ..accessor = nameAccessor
+      ..classString = 'text-column',
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Team'
+      ..accessor = teamAccessor
+      ..classString = 'text-column',
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Rec'
+      ..accessor = recAccessor,
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Yards'
+      ..accessor = yardsAccessor,
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Avg'
+      ..accessor = avgAccessor,
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = 'Yds/G'
+      ..accessor = yardPerGameAccessor,
+    SkawaDataTableColComponent<WrRowData>(null)
+      ..header = '1st'
+      ..accessor = firstDownAccessor,
+    SkawaDataTableColComponent<WrRowData>(
+        SkawaDataColRendererDirective<WrRowData>()..factoryRenderer = firstDownPercentRenderer)
+      ..header = '1st%'
+  ];
 
-  String yardsAccessor(WrRowData row) => row.yards.toString();
+  String itemRenderer(SkawaDataTableColComponent<WrRowData> row) => row.header;
 
-  String avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
+  static String nameAccessor(WrRowData row) => row.name;
 
-  String yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
+  static String teamAccessor(WrRowData row) => row.team;
 
-  String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
+  static String recAccessor(WrRowData row) => row.rec.toString();
+
+  static String yardsAccessor(WrRowData row) => row.yards.toString();
+
+  static String avgAccessor(WrRowData row) => (row.yards / row.rec).toStringAsFixed(2);
+
+  static String yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
+
+  static String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
+
+  @ViewChild(SkawaDataTableComponent)
+  SkawaDataTableComponent dataTableComponent;
+
+  @override
+  void ngOnInit() => columnModel.selectionChanges.listen((_) {
+        columns = _columns.where((row) => columnModel.selectedValues.contains(row)).toList();
+        dataTableComponent.changeDetectorRef.markForCheck();
+      });
 }
 
 class WrRowData extends RowData {

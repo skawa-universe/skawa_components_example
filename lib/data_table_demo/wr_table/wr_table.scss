@@ -1,0 +1,14 @@
+:host {
+  h3 {
+    display: flex;
+
+    span {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    material-dropdown-select {
+      color: var(--default-primary-color);
+    }
+  }
+}

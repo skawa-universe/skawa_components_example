@@ -54,8 +54,12 @@ a {
 skawa-sidebar-item {
   flex-basis: auto;
   flex-grow: initial;
+
+  &:hover {
+    background-color: rgba(158, 158, 158, 0.2) !important;
+  }
 }
 
-skawa-nav-item{
+skawa-nav-item {
   flex-basis: auto;
 }

@@ -1,10 +1,19 @@
-<skawa-data-table [data]="wrRowData" [selectable]="false">
-    <skawa-data-table-col [accessor]="nameAccessor" header="Player" class="text-column"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="teamAccessor" header="Team" class="text-column"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="recAccessor" header="Rec"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="yardsAccessor" header="Yards"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="avgAccessor" header="Avg"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="yardPerGameAccessor" header="Yds/G"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="firstDownAccessor" header="1st"></skawa-data-table-col>
-    <skawa-data-table-col [colRenderer]="firstDownPercentRenderer" header="1st%"></skawa-data-table-col>
+<h3>
+    <span>Datatable with colRenderer</span>
+    <material-dropdown-select [selection]="columnModel"
+                              [options]="columnOptions"
+                              [showButtonBorder]="false"
+                              [icon]="icon "
+                              [itemRenderer]="itemRenderer">
+    </material-dropdown-select>
+</h3>
+
+
+<skawa-data-table [data]="wrRowData" [selectable]="false" *ngIf="columnModel.selectedValues.isNotEmpty">
+    <skawa-data-table-col *ngFor="let column of columns"
+                          [accessor]="column.accessor"
+                          [colRenderer]="column.columnRenderer?.factoryRenderer"
+                          [class]="column.classString"
+                          [header]="column.header">
+    </skawa-data-table-col>
 </skawa-data-table>
