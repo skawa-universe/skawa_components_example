@@ -519,20 +519,8 @@
     Function.prototype.call$4 = function(a, b, c, d) {
       return this(a, b, c, d);
     };
-    Function.prototype.call$2$1 = function(a) {
-      return this(a);
-    };
-    Function.prototype.call$3$1 = function(a) {
-      return this(a);
-    };
     Function.prototype.call$1$2 = function(a, b) {
       return this(a, b);
-    };
-    Function.prototype.call$3$4 = function(a, b, c, d) {
-      return this(a, b, c, d);
-    };
-    Function.prototype.call$2$4 = function(a, b, c, d) {
-      return this(a, b, c, d);
     };
     Function.prototype.call$1$4 = function(a, b, c, d) {
       return this(a, b, c, d);
@@ -545,6 +533,18 @@
     };
     Function.prototype.call$5 = function(a, b, c, d, e) {
       return this(a, b, c, d, e);
+    };
+    Function.prototype.call$2$4 = function(a, b, c, d) {
+      return this(a, b, c, d);
+    };
+    Function.prototype.call$2$1 = function(a) {
+      return this(a);
+    };
+    Function.prototype.call$3$1 = function(a) {
+      return this(a);
+    };
+    Function.prototype.call$3$4 = function(a, b, c, d) {
+      return this(a, b, c, d);
     };
     Function.prototype.call$2$3 = function(a, b, c) {
       return this(a, b, c);
@@ -665,13 +665,16 @@
       noSuchMethod$1: ["super$Interceptor$noSuchMethod", function(receiver, invocation) {
         H.interceptedTypeCheck(invocation, "$isInvocation");
         throw H.wrapException(P.NoSuchMethodError$(receiver, invocation.get$memberName(), invocation.get$positionalArguments(), invocation.get$namedArguments(), null));
-      }, null, "get$noSuchMethod", 5, 0, null, 17],
-      "%": "ANGLEInstancedArrays|ANGLE_instanced_arrays|AnimationEffectReadOnly|AnimationEffectTiming|AnimationEffectTimingReadOnly|AnimationTimeline|AnimationWorkletGlobalScope|AudioListener|AudioParam|AudioTrack|AudioWorkletGlobalScope|AudioWorkletProcessor|AuthenticatorAssertionResponse|AuthenticatorAttestationResponse|AuthenticatorResponse|BackgroundFetchFetch|BackgroundFetchManager|BackgroundFetchSettledFetch|BarProp|BarcodeDetector|Bluetooth|BluetoothCharacteristicProperties|BluetoothRemoteGATTDescriptor|BluetoothRemoteGATTServer|BluetoothRemoteGATTService|BluetoothUUID|Body|BudgetService|BudgetState|CSS|CSSVariableReferenceValue|Cache|CacheStorage|CanvasGradient|CanvasPattern|CanvasRenderingContext2D|Client|Clients|CookieStore|Coordinates|CredentialsContainer|Crypto|CryptoKey|CustomElementRegistry|DOMFileSystemSync|DOMMatrix|DOMMatrixReadOnly|DOMParser|DOMQuad|DOMStringMap|DataTransfer|DataTransferItem|Database|DeprecatedStorageInfo|DeprecatedStorageQuota|DeprecationReport|DetectedBarcode|DetectedFace|DetectedText|DeviceRotationRate|DirectoryEntrySync|DirectoryReader|DirectoryReaderSync|DocumentOrShadowRoot|DocumentTimeline|EXTBlendMinMax|EXTColorBufferFloat|EXTColorBufferHalfFloat|EXTDisjointTimerQuery|EXTDisjointTimerQueryWebGL2|EXTFragDepth|EXTShaderTextureLOD|EXTTextureFilterAnisotropic|EXT_blend_minmax|EXT_frag_depth|EXT_sRGB|EXT_shader_texture_lod|EXT_texture_filter_anisotropic|EXTsRGB|EntrySync|External|FaceDetector|FileEntrySync|FileReaderSync|FileWriterSync|FontFaceSource|FormData|GamepadButton|GamepadPose|Geolocation|HTMLAllCollection|HTMLHyperlinkElementUtils|Headers|IDBCursor|IDBCursorWithValue|IDBFactory|IDBObservation|IDBObserver|IDBObserverChanges|IdleDeadline|ImageBitmapRenderingContext|ImageCapture|InputDeviceCapabilities|IntersectionObserver|IntersectionObserverEntry|InterventionReport|Iterator|KeyframeEffect|KeyframeEffectReadOnly|MediaCapabilities|MediaCapabilitiesInfo|MediaDeviceInfo|MediaError|MediaKeyStatusMap|MediaKeySystemAccess|MediaKeys|MediaKeysPolicy|MediaMetadata|MediaSession|MediaSettingsRange|MemoryInfo|MessageChannel|Metadata|Mojo|MojoHandle|MojoWatcher|MutationObserver|MutationRecord|NFC|NavigationPreloadManager|Navigator|NavigatorAutomationInformation|NavigatorConcurrentHardware|NavigatorCookies|NodeFilter|NodeIterator|NonDocumentTypeChildNode|NonElementParentNode|NoncedElement|OESElementIndexUint|OESStandardDerivatives|OESTextureFloat|OESTextureFloatLinear|OESTextureHalfFloat|OESTextureHalfFloatLinear|OESVertexArrayObject|OES_element_index_uint|OES_standard_derivatives|OES_texture_float|OES_texture_float_linear|OES_texture_half_float|OES_texture_half_float_linear|OES_vertex_array_object|OffscreenCanvasRenderingContext2D|PagePopupController|PaintRenderingContext2D|PaintWorkletGlobalScope|Path2D|PaymentAddress|PaymentInstruments|PaymentManager|PaymentResponse|PerformanceNavigation|PerformanceObserver|PerformanceObserverEntryList|PerformanceTiming|PeriodicWave|Permissions|PhotoCapabilities|Position|PositionError|Presentation|PresentationReceiver|PushManager|PushMessageData|PushSubscription|PushSubscriptionOptions|RTCCertificate|RTCIceCandidate|RTCLegacyStatsReport|RTCRtpContributingSource|RTCRtpReceiver|RTCRtpSender|RTCSessionDescription|RTCStatsResponse|RelatedApplication|Report|ReportBody|ReportingObserver|Request|ResizeObserver|ResizeObserverEntry|Response|SQLError|SQLResultSet|SQLTransaction|SVGAngle|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGMatrix|SVGPreserveAspectRatio|SVGUnitTypes|ScrollState|ScrollTimeline|Selection|SharedArrayBuffer|SpeechRecognitionAlternative|StaticRange|StorageManager|StyleMedia|StylePropertyMap|StylePropertyMapReadonly|SubtleCrypto|SyncManager|TextDetector|TrackDefault|TreeWalker|TrustedHTML|TrustedScriptURL|TrustedURL|URLSearchParams|USBAlternateInterface|USBConfiguration|USBDevice|USBEndpoint|USBInTransferResult|USBInterface|USBIsochronousInTransferPacket|USBIsochronousInTransferResult|USBIsochronousOutTransferPacket|USBIsochronousOutTransferResult|USBOutTransferResult|UnderlyingSourceBase|VRCoordinateSystem|VRDisplayCapabilities|VREyeParameters|VRFrameData|VRFrameOfReference|VRPose|VRStageBounds|VRStageParameters|ValidityState|VideoPlaybackQuality|VideoTrack|WEBGL_compressed_texture_atc|WEBGL_compressed_texture_etc1|WEBGL_compressed_texture_pvrtc|WEBGL_compressed_texture_s3tc|WEBGL_debug_renderer_info|WEBGL_debug_shaders|WEBGL_depth_texture|WEBGL_draw_buffers|WEBGL_lose_context|WebGL|WebGL2RenderingContext|WebGL2RenderingContextBase|WebGLBuffer|WebGLCanvas|WebGLColorBufferFloat|WebGLCompressedTextureASTC|WebGLCompressedTextureATC|WebGLCompressedTextureETC|WebGLCompressedTextureETC1|WebGLCompressedTexturePVRTC|WebGLCompressedTextureS3TC|WebGLCompressedTextureS3TCsRGB|WebGLDebugRendererInfo|WebGLDebugShaders|WebGLDepthTexture|WebGLDrawBuffers|WebGLExtensionLoseContext|WebGLFramebuffer|WebGLGetBufferSubDataAsync|WebGLLoseContext|WebGLProgram|WebGLQuery|WebGLRenderbuffer|WebGLRenderingContext|WebGLSampler|WebGLShader|WebGLShaderPrecisionFormat|WebGLSync|WebGLTexture|WebGLTimerQueryEXT|WebGLTransformFeedback|WebGLUniformLocation|WebGLVertexArrayObject|WebGLVertexArrayObjectOES|WebKitMutationObserver|WindowClient|WorkerLocation|WorkerNavigator|Worklet|WorkletAnimation|WorkletGlobalScope|XMLSerializer|XPathEvaluator|XPathExpression|XPathNSResolver|XPathResult|XSLTProcessor|mozRTCIceCandidate|mozRTCSessionDescription"
+      }, null, "get$noSuchMethod", 5, 0, null, 21],
+      "%": "ANGLEInstancedArrays|ANGLE_instanced_arrays|AnimationEffectReadOnly|AnimationEffectTiming|AnimationEffectTimingReadOnly|AnimationTimeline|AnimationWorkletGlobalScope|AudioListener|AudioParam|AudioTrack|AudioWorkletGlobalScope|AudioWorkletProcessor|AuthenticatorAssertionResponse|AuthenticatorAttestationResponse|AuthenticatorResponse|BackgroundFetchFetch|BackgroundFetchManager|BackgroundFetchSettledFetch|BarProp|BarcodeDetector|Bluetooth|BluetoothCharacteristicProperties|BluetoothRemoteGATTDescriptor|BluetoothRemoteGATTServer|BluetoothRemoteGATTService|BluetoothUUID|Body|BudgetService|BudgetState|CSS|CSSVariableReferenceValue|Cache|CacheStorage|CanvasGradient|CanvasPattern|CanvasRenderingContext2D|Client|Clients|CookieStore|Coordinates|CredentialsContainer|Crypto|CryptoKey|CustomElementRegistry|DOMFileSystemSync|DOMMatrix|DOMMatrixReadOnly|DOMParser|DOMQuad|DOMStringMap|DataTransfer|DataTransferItem|Database|DeprecatedStorageInfo|DeprecatedStorageQuota|DeprecationReport|DetectedBarcode|DetectedFace|DetectedText|DeviceRotationRate|DirectoryEntrySync|DirectoryReader|DirectoryReaderSync|DocumentOrShadowRoot|DocumentTimeline|EXTBlendMinMax|EXTColorBufferFloat|EXTColorBufferHalfFloat|EXTDisjointTimerQuery|EXTDisjointTimerQueryWebGL2|EXTFragDepth|EXTShaderTextureLOD|EXTTextureFilterAnisotropic|EXT_blend_minmax|EXT_frag_depth|EXT_sRGB|EXT_shader_texture_lod|EXT_texture_filter_anisotropic|EXTsRGB|EntrySync|External|FaceDetector|FileEntrySync|FileReaderSync|FileWriterSync|FontFaceSource|FormData|GamepadButton|GamepadPose|Geolocation|HTMLAllCollection|HTMLHyperlinkElementUtils|Headers|IDBFactory|IDBObserver|IDBObserverChanges|IdleDeadline|ImageBitmapRenderingContext|ImageCapture|InputDeviceCapabilities|IntersectionObserver|IntersectionObserverEntry|InterventionReport|Iterator|KeyframeEffect|KeyframeEffectReadOnly|MediaCapabilities|MediaCapabilitiesInfo|MediaDeviceInfo|MediaError|MediaKeyStatusMap|MediaKeySystemAccess|MediaKeys|MediaKeysPolicy|MediaMetadata|MediaSession|MediaSettingsRange|MemoryInfo|MessageChannel|Metadata|Mojo|MojoHandle|MojoWatcher|MutationObserver|MutationRecord|NFC|NavigationPreloadManager|Navigator|NavigatorAutomationInformation|NavigatorConcurrentHardware|NavigatorCookies|NodeFilter|NodeIterator|NonDocumentTypeChildNode|NonElementParentNode|NoncedElement|OESElementIndexUint|OESStandardDerivatives|OESTextureFloat|OESTextureFloatLinear|OESTextureHalfFloat|OESTextureHalfFloatLinear|OESVertexArrayObject|OES_element_index_uint|OES_standard_derivatives|OES_texture_float|OES_texture_float_linear|OES_texture_half_float|OES_texture_half_float_linear|OES_vertex_array_object|OffscreenCanvasRenderingContext2D|PagePopupController|PaintRenderingContext2D|PaintWorkletGlobalScope|Path2D|PaymentAddress|PaymentInstruments|PaymentManager|PaymentResponse|PerformanceNavigation|PerformanceObserver|PerformanceObserverEntryList|PerformanceTiming|PeriodicWave|Permissions|PhotoCapabilities|Position|PositionError|Presentation|PresentationReceiver|PushManager|PushMessageData|PushSubscription|PushSubscriptionOptions|RTCCertificate|RTCIceCandidate|RTCLegacyStatsReport|RTCRtpContributingSource|RTCRtpReceiver|RTCRtpSender|RTCSessionDescription|RTCStatsResponse|RelatedApplication|Report|ReportBody|ReportingObserver|Request|ResizeObserver|ResizeObserverEntry|Response|SQLError|SQLResultSet|SQLTransaction|SVGAngle|SVGAnimatedAngle|SVGAnimatedBoolean|SVGAnimatedEnumeration|SVGAnimatedInteger|SVGAnimatedNumberList|SVGAnimatedPreserveAspectRatio|SVGAnimatedRect|SVGAnimatedString|SVGAnimatedTransformList|SVGMatrix|SVGPreserveAspectRatio|SVGUnitTypes|ScrollState|ScrollTimeline|Selection|SharedArrayBuffer|SpeechRecognitionAlternative|StaticRange|StorageManager|StyleMedia|StylePropertyMap|StylePropertyMapReadonly|SubtleCrypto|SyncManager|TextDetector|TrackDefault|TreeWalker|TrustedHTML|TrustedScriptURL|TrustedURL|URLSearchParams|USBAlternateInterface|USBConfiguration|USBDevice|USBEndpoint|USBInTransferResult|USBInterface|USBIsochronousInTransferPacket|USBIsochronousInTransferResult|USBIsochronousOutTransferPacket|USBIsochronousOutTransferResult|USBOutTransferResult|UnderlyingSourceBase|VRCoordinateSystem|VRDisplayCapabilities|VREyeParameters|VRFrameData|VRFrameOfReference|VRPose|VRStageBounds|VRStageParameters|ValidityState|VideoPlaybackQuality|VideoTrack|WEBGL_compressed_texture_atc|WEBGL_compressed_texture_etc1|WEBGL_compressed_texture_pvrtc|WEBGL_compressed_texture_s3tc|WEBGL_debug_renderer_info|WEBGL_debug_shaders|WEBGL_depth_texture|WEBGL_draw_buffers|WEBGL_lose_context|WebGL|WebGL2RenderingContext|WebGL2RenderingContextBase|WebGLBuffer|WebGLCanvas|WebGLColorBufferFloat|WebGLCompressedTextureASTC|WebGLCompressedTextureATC|WebGLCompressedTextureETC|WebGLCompressedTextureETC1|WebGLCompressedTexturePVRTC|WebGLCompressedTextureS3TC|WebGLCompressedTextureS3TCsRGB|WebGLDebugRendererInfo|WebGLDebugShaders|WebGLDepthTexture|WebGLDrawBuffers|WebGLExtensionLoseContext|WebGLFramebuffer|WebGLGetBufferSubDataAsync|WebGLLoseContext|WebGLProgram|WebGLQuery|WebGLRenderbuffer|WebGLRenderingContext|WebGLSampler|WebGLShader|WebGLShaderPrecisionFormat|WebGLSync|WebGLTexture|WebGLTimerQueryEXT|WebGLTransformFeedback|WebGLUniformLocation|WebGLVertexArrayObject|WebGLVertexArrayObjectOES|WebKitMutationObserver|WindowClient|WorkerLocation|WorkerNavigator|Worklet|WorkletAnimation|WorkletGlobalScope|XMLSerializer|XPathEvaluator|XPathExpression|XPathNSResolver|XPathResult|XSLTProcessor|mozRTCIceCandidate|mozRTCSessionDescription"
     },
     JSBool: {
       "^": "Interceptor;",
       toString$0: function(receiver) {
         return String(receiver);
+      },
+      $and: function(receiver, other) {
+        return H.checkBool(H.boolTypeCheck(other)) && receiver;
       },
       get$hashCode: function(receiver) {
         return receiver ? 519018 : 218159;
@@ -691,7 +694,7 @@
       },
       noSuchMethod$1: [function(receiver, invocation) {
         return this.super$Interceptor$noSuchMethod(receiver, H.interceptedTypeCheck(invocation, "$isInvocation"));
-      }, null, "get$noSuchMethod", 5, 0, null, 17],
+      }, null, "get$noSuchMethod", 5, 0, null, 21],
       $isNull: 1
     },
     JavaScriptObject: {
@@ -818,7 +821,7 @@
         return list.join(separator);
       },
       skip$1: function(receiver, n) {
-        return H.SubListIterable$(receiver, n, null, H.getTypeArgumentByIndex(receiver, 0));
+        return H.SubListIterable$(receiver, H.intTypeCheck(n), null, H.getTypeArgumentByIndex(receiver, 0));
       },
       reduce$1: function(receiver, combine) {
         var t1, $length, value, i;
@@ -833,6 +836,18 @@
         for (i = 1; i < $length; ++i) {
           value = combine.call$2(value, receiver[i]);
           if ($length !== receiver.length)
+            throw H.wrapException(P.ConcurrentModificationError$(receiver));
+        }
+        return value;
+      },
+      fold$1$2: function(receiver, initialValue, combine, $T) {
+        var $length, value, i;
+        H.assertSubtypeOfRuntimeType(initialValue, $T);
+        H.functionTypeCheck(combine, {func: 1, ret: $T, args: [$T, H.getTypeArgumentByIndex(receiver, 0)]});
+        $length = receiver.length;
+        for (value = initialValue, i = 0; i < $length; ++i) {
+          value = combine.call$2(value, receiver[i]);
+          if (receiver.length !== $length)
             throw H.wrapException(P.ConcurrentModificationError$(receiver));
         }
         return value;
@@ -884,6 +899,23 @@
         if (t1 > 0)
           return receiver[t1 - 1];
         throw H.wrapException(H.IterableElementError_noElement());
+      },
+      get$single: function(receiver) {
+        var t1 = receiver.length;
+        if (t1 === 1) {
+          if (0 >= t1)
+            return H.ioore(receiver, 0);
+          return receiver[0];
+        }
+        if (t1 === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        throw H.wrapException(H.IterableElementError_tooMany());
+      },
+      removeRange$2: function(receiver, start, end) {
+        if (!!receiver.fixed$length)
+          H.throwExpression(P.UnsupportedError$("removeRange"));
+        P.RangeError_checkValidRange(start, end, receiver.length, null, null, null);
+        receiver.splice(start, end - start);
       },
       setRange$4: function(receiver, start, end, iterable, skipCount) {
         var t1, $length, t2, otherStart, otherList, i;
@@ -1028,10 +1060,14 @@
         receiver[index] = value;
       },
       $add: function(receiver, other) {
-        var t1, totalLength;
+        var t1, t2, t3, totalLength;
         t1 = [H.getTypeArgumentByIndex(receiver, 0)];
         H.assertSubtype(other, "$isList", t1, "$asList");
-        totalLength = C.JSInt_methods.$add(receiver.length, C.JSNull_methods.get$length(other));
+        t2 = receiver.length;
+        t3 = J.get$length$asx(other);
+        if (typeof t3 !== "number")
+          return H.iae(t3);
+        totalLength = t2 + t3;
         t1 = H.setRuntimeTypeInfo([], t1);
         this.set$length(t1, totalLength);
         this.setRange$3(t1, 0, receiver.length, receiver);
@@ -1064,14 +1100,14 @@
         },
         JSArray__compareAny: [function(a, b) {
           return J.compareTo$1$ns(H.numberOrStringSuperNativeTypeCheck(a, "$isComparable"), H.numberOrStringSuperNativeTypeCheck(b, "$isComparable"));
-        }, "call$2", "_interceptors_JSArray__compareAny$closure", 8, 0, 38]
+        }, "call$2", "_interceptors_JSArray__compareAny$closure", 8, 0, 54]
       }
     },
     JSUnmodifiableArray: {
       "^": "JSArray;$ti"
     },
     ArrayIterator: {
-      "^": "Object;__interceptors$_iterable,__interceptors$_length,__interceptors$_index,0__interceptors$_current,$ti",
+      "^": "Object;_iterable,_length,__interceptors$_index,0__interceptors$_current,$ti",
       set$__interceptors$_current: function(_current) {
         this.__interceptors$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
       },
@@ -1080,9 +1116,9 @@
       },
       moveNext$0: function() {
         var t1, $length, t2;
-        t1 = this.__interceptors$_iterable;
+        t1 = this._iterable;
         $length = t1.length;
-        if (this.__interceptors$_length !== $length)
+        if (this._length !== $length)
           throw H.wrapException(H.throwConcurrentModificationError(t1));
         t2 = this.__interceptors$_index;
         if (t2 >= $length) {
@@ -1136,6 +1172,14 @@
         }
         throw H.wrapException(P.UnsupportedError$("" + receiver + ".toInt()"));
       },
+      round$0: function(receiver) {
+        if (receiver > 0) {
+          if (receiver !== 1 / 0)
+            return Math.round(receiver);
+        } else if (receiver > -1 / 0)
+          return 0 - Math.round(0 - receiver);
+        throw H.wrapException(P.UnsupportedError$("" + receiver + ".round()"));
+      },
       clamp$2: function(receiver, lowerLimit, upperLimit) {
         if (C.JSInt_methods.compareTo$1(lowerLimit, upperLimit) > 0)
           throw H.wrapException(H.argumentErrorValue(lowerLimit));
@@ -1188,6 +1232,7 @@
         return receiver & 0x1FFFFFFF;
       },
       $add: function(receiver, other) {
+        H.numTypeCheck(other);
         if (typeof other !== "number")
           throw H.wrapException(H.argumentErrorValue(other));
         return receiver + other;
@@ -1240,6 +1285,17 @@
       },
       _shrBothPositive$1: function(receiver, other) {
         return other > 31 ? 0 : receiver >>> other;
+      },
+      $and: function(receiver, other) {
+        if (typeof other !== "number")
+          throw H.wrapException(H.argumentErrorValue(other));
+        return (receiver & other) >>> 0;
+      },
+      $or: function(receiver, other) {
+        H.numTypeCheck(other);
+        if (typeof other !== "number")
+          throw H.wrapException(H.argumentErrorValue(other));
+        return (receiver | other) >>> 0;
       },
       $lt: function(receiver, other) {
         if (typeof other !== "number")
@@ -1426,6 +1482,12 @@
         }
         return result;
       },
+      padLeft$2: function(receiver, width, padding) {
+        var delta = width - receiver.length;
+        if (delta <= 0)
+          return receiver;
+        return this.$mul(padding, delta) + receiver;
+      },
       contains$2: function(receiver, other, startIndex) {
         if (other == null)
           H.throwExpression(H.argumentErrorValue(other));
@@ -1541,6 +1603,9 @@
     },
     IterableElementError_noElement: function() {
       return new P.StateError("No element");
+    },
+    IterableElementError_tooMany: function() {
+      return new P.StateError("Too many elements");
     },
     IterableElementError_tooFew: function() {
       return new P.StateError("Too few elements");
@@ -1839,6 +1904,20 @@
       get$isEmpty: function(_) {
         return this.get$length(this) === 0;
       },
+      contains$1: function(_, element) {
+        var $length, i;
+        $length = this.get$length(this);
+        if (typeof $length !== "number")
+          return H.iae($length);
+        i = 0;
+        for (; i < $length; ++i) {
+          if (J.$eq$(this.elementAt$1(0, i), element))
+            return true;
+          if ($length !== this.get$length(this))
+            throw H.wrapException(P.ConcurrentModificationError$(this));
+        }
+        return false;
+      },
       any$1: function(_, test) {
         var $length, i;
         H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [H.getRuntimeTypeArgument(this, "ListIterable", 0)]});
@@ -1886,6 +1965,9 @@
           return t1.charCodeAt(0) == 0 ? t1 : t1;
         }
       },
+      join$0: function($receiver) {
+        return this.join$1($receiver, "");
+      },
       where$1: function(_, test) {
         return this.super$Iterable$where(0, H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [H.getRuntimeTypeArgument(this, "ListIterable", 0)]}));
       },
@@ -1924,10 +2006,10 @@
       }
     },
     SubListIterable: {
-      "^": "ListIterable;_iterable,__internal$_start,_endOrLength,$ti",
+      "^": "ListIterable;__internal$_iterable,__internal$_start,_endOrLength,$ti",
       get$_endIndex: function() {
         var $length, t1, t2;
-        $length = J.get$length$asx(this._iterable);
+        $length = J.get$length$asx(this.__internal$_iterable);
         t1 = this._endOrLength;
         if (t1 != null) {
           if (typeof $length !== "number")
@@ -1941,7 +2023,7 @@
       },
       get$_startIndex: function() {
         var $length, t1;
-        $length = J.get$length$asx(this._iterable);
+        $length = J.get$length$asx(this.__internal$_iterable);
         t1 = this.__internal$_start;
         if (typeof $length !== "number")
           return H.iae($length);
@@ -1951,7 +2033,7 @@
       },
       get$length: function(_) {
         var $length, t1, t2;
-        $length = J.get$length$asx(this._iterable);
+        $length = J.get$length$asx(this.__internal$_iterable);
         t1 = this.__internal$_start;
         if (typeof $length !== "number")
           return H.iae($length);
@@ -1981,12 +2063,25 @@
           t1 = true;
         if (t1)
           throw H.wrapException(P.IndexError$(index, this, "index", null, null));
-        return J.elementAt$1$ax(this._iterable, realIndex);
+        return J.elementAt$1$ax(this.__internal$_iterable, realIndex);
+      },
+      take$1: function(_, count) {
+        var t1, t2, newEnd;
+        t1 = this._endOrLength;
+        t2 = this.__internal$_start;
+        newEnd = t2 + count;
+        if (t1 == null)
+          return H.SubListIterable$(this.__internal$_iterable, t2, newEnd, H.getTypeArgumentByIndex(this, 0));
+        else {
+          if (t1 < newEnd)
+            return this;
+          return H.SubListIterable$(this.__internal$_iterable, t2, newEnd, H.getTypeArgumentByIndex(this, 0));
+        }
       },
       toList$1$growable: function(_, growable) {
         var start, t1, t2, end, end0, t3, $length, result, i;
         start = this.__internal$_start;
-        t1 = this._iterable;
+        t1 = this.__internal$_iterable;
         t2 = J.getInterceptor$asx(t1);
         end = t2.get$length(t1);
         end0 = this._endOrLength;
@@ -2031,46 +2126,46 @@
       }
     },
     ListIterator: {
-      "^": "Object;_iterable,_length,_index,0_current,$ti",
-      set$_current: function(_current) {
-        this._current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
+      "^": "Object;__internal$_iterable,__internal$_length,__internal$_index,0__internal$_current,$ti",
+      set$__internal$_current: function(_current) {
+        this.__internal$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
       },
       get$current: function(_) {
-        return this._current;
+        return this.__internal$_current;
       },
       moveNext$0: function() {
         var t1, t2, $length, t3;
-        t1 = this._iterable;
+        t1 = this.__internal$_iterable;
         t2 = J.getInterceptor$asx(t1);
         $length = t2.get$length(t1);
-        if (this._length != $length)
+        if (this.__internal$_length != $length)
           throw H.wrapException(P.ConcurrentModificationError$(t1));
-        t3 = this._index;
+        t3 = this.__internal$_index;
         if (typeof $length !== "number")
           return H.iae($length);
         if (t3 >= $length) {
-          this.set$_current(null);
+          this.set$__internal$_current(null);
           return false;
         }
-        this.set$_current(t2.elementAt$1(t1, t3));
-        ++this._index;
+        this.set$__internal$_current(t2.elementAt$1(t1, t3));
+        ++this.__internal$_index;
         return true;
       },
       $isIterator: 1
     },
     MappedIterable: {
-      "^": "Iterable;_iterable,_f,$ti",
+      "^": "Iterable;__internal$_iterable,_f,$ti",
       get$iterator: function(_) {
-        return new H.MappedIterator(J.get$iterator$ax(this._iterable), this._f, this.$ti);
+        return new H.MappedIterator(J.get$iterator$ax(this.__internal$_iterable), this._f, this.$ti);
       },
       get$length: function(_) {
-        return J.get$length$asx(this._iterable);
+        return J.get$length$asx(this.__internal$_iterable);
       },
       get$isEmpty: function(_) {
-        return J.get$isEmpty$asx(this._iterable);
+        return J.get$isEmpty$asx(this.__internal$_iterable);
       },
       elementAt$1: function(_, index) {
-        return this._f.call$1(J.elementAt$1$ax(this._iterable, index));
+        return this._f.call$1(J.elementAt$1$ax(this.__internal$_iterable, index));
       },
       $asIterable: function($S, $T) {
         return [$T];
@@ -2086,28 +2181,28 @@
       }
     },
     EfficientLengthMappedIterable: {
-      "^": "MappedIterable;_iterable,_f,$ti",
+      "^": "MappedIterable;__internal$_iterable,_f,$ti",
       $isEfficientLengthIterable: 1,
       $asEfficientLengthIterable: function($S, $T) {
         return [$T];
       }
     },
     MappedIterator: {
-      "^": "Iterator;0_current,_iterator,_f,$ti",
-      set$_current: function(_current) {
-        this._current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 1));
+      "^": "Iterator;0__internal$_current,_iterator,_f,$ti",
+      set$__internal$_current: function(_current) {
+        this.__internal$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 1));
       },
       moveNext$0: function() {
         var t1 = this._iterator;
         if (t1.moveNext$0()) {
-          this.set$_current(this._f.call$1(t1.get$current(t1)));
+          this.set$__internal$_current(this._f.call$1(t1.get$current(t1)));
           return true;
         }
-        this.set$_current(null);
+        this.set$__internal$_current(null);
         return false;
       },
       get$current: function(_) {
-        return this._current;
+        return this.__internal$_current;
       },
       $asIterator: function($S, $T) {
         return [$T];
@@ -2132,9 +2227,9 @@
       }
     },
     WhereIterable: {
-      "^": "Iterable;_iterable,_f,$ti",
+      "^": "Iterable;__internal$_iterable,_f,$ti",
       get$iterator: function(_) {
-        return new H.WhereIterator(J.get$iterator$ax(this._iterable), this._f, this.$ti);
+        return new H.WhereIterator(J.get$iterator$ax(this.__internal$_iterable), this._f, this.$ti);
       },
       map$1$1: function(_, f, $T) {
         var t1 = H.getTypeArgumentByIndex(this, 0);
@@ -2155,10 +2250,51 @@
         return t1.get$current(t1);
       }
     },
-    TakeIterable: {
-      "^": "Iterable;_iterable,_takeCount,$ti",
+    ExpandIterable: {
+      "^": "Iterable;__internal$_iterable,_f,$ti",
       get$iterator: function(_) {
-        return new H.TakeIterator(J.get$iterator$ax(this._iterable), this._takeCount, this.$ti);
+        return new H.ExpandIterator(J.get$iterator$ax(this.__internal$_iterable), this._f, C.C_EmptyIterator, this.$ti);
+      },
+      $asIterable: function($S, $T) {
+        return [$T];
+      }
+    },
+    ExpandIterator: {
+      "^": "Object;_iterator,_f,_currentExpansion,0__internal$_current,$ti",
+      set$_currentExpansion: function(_currentExpansion) {
+        this._currentExpansion = H.assertSubtype(_currentExpansion, "$isIterator", [H.getTypeArgumentByIndex(this, 1)], "$asIterator");
+      },
+      set$__internal$_current: function(_current) {
+        this.__internal$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 1));
+      },
+      get$current: function(_) {
+        return this.__internal$_current;
+      },
+      moveNext$0: function() {
+        var t1, t2;
+        if (this._currentExpansion == null)
+          return false;
+        for (t1 = this._iterator, t2 = this._f; !this._currentExpansion.moveNext$0();) {
+          this.set$__internal$_current(null);
+          if (t1.moveNext$0()) {
+            this.set$_currentExpansion(null);
+            this.set$_currentExpansion(J.get$iterator$ax(t2.call$1(t1.get$current(t1))));
+          } else
+            return false;
+        }
+        t1 = this._currentExpansion;
+        this.set$__internal$_current(t1.get$current(t1));
+        return true;
+      },
+      $isIterator: 1,
+      $asIterator: function($S, $T) {
+        return [$T];
+      }
+    },
+    TakeIterable: {
+      "^": "Iterable;__internal$_iterable,_takeCount,$ti",
+      get$iterator: function(_) {
+        return new H.TakeIterator(J.get$iterator$ax(this.__internal$_iterable), this._takeCount, this.$ti);
       },
       static: {
         TakeIterable_TakeIterable: function(iterable, takeCount, $E) {
@@ -2172,10 +2308,10 @@
       }
     },
     EfficientLengthTakeIterable: {
-      "^": "TakeIterable;_iterable,_takeCount,$ti",
+      "^": "TakeIterable;__internal$_iterable,_takeCount,$ti",
       get$length: function(_) {
         var iterableLength, t1;
-        iterableLength = J.get$length$asx(this._iterable);
+        iterableLength = J.get$length$asx(this.__internal$_iterable);
         t1 = this._takeCount;
         if (typeof iterableLength !== "number")
           return iterableLength.$gt();
@@ -2202,9 +2338,9 @@
       }
     },
     SkipIterable: {
-      "^": "Iterable;_iterable,_skipCount,$ti",
+      "^": "Iterable;__internal$_iterable,_skipCount,$ti",
       get$iterator: function(_) {
-        return new H.SkipIterator(J.get$iterator$ax(this._iterable), this._skipCount, this.$ti);
+        return new H.SkipIterator(J.get$iterator$ax(this.__internal$_iterable), this._skipCount, this.$ti);
       },
       static: {
         SkipIterable_SkipIterable: function(iterable, count, $E) {
@@ -2216,10 +2352,10 @@
       }
     },
     EfficientLengthSkipIterable: {
-      "^": "SkipIterable;_iterable,_skipCount,$ti",
+      "^": "SkipIterable;__internal$_iterable,_skipCount,$ti",
       get$length: function(_) {
         var t1, $length;
-        t1 = J.get$length$asx(this._iterable);
+        t1 = J.get$length$asx(this.__internal$_iterable);
         if (typeof t1 !== "number")
           return t1.$sub();
         $length = t1 - this._skipCount;
@@ -2242,6 +2378,16 @@
         var t1 = this._iterator;
         return t1.get$current(t1);
       }
+    },
+    EmptyIterator: {
+      "^": "Object;$ti",
+      moveNext$0: function() {
+        return false;
+      },
+      get$current: function(_) {
+        return;
+      },
+      $isIterator: 1
     },
     FixedLengthListMixin: {
       "^": "Object;$ti",
@@ -2434,6 +2580,8 @@
     },
     Primitives_stringFromCharCode: function(charCode) {
       var bits;
+      if (typeof charCode !== "number")
+        return H.iae(charCode);
       if (0 <= charCode) {
         if (charCode <= 65535)
           return String.fromCharCode(charCode);
@@ -2469,6 +2617,16 @@
     },
     Primitives_getMilliseconds: function(receiver) {
       return receiver.isUtc ? H.Primitives_lazyAsJsDate(receiver).getUTCMilliseconds() + 0 : H.Primitives_lazyAsJsDate(receiver).getMilliseconds() + 0;
+    },
+    Primitives_getProperty: function(object, key) {
+      if (object == null || typeof object === "boolean" || typeof object === "number" || typeof object === "string")
+        throw H.wrapException(H.argumentErrorValue(object));
+      return object[key];
+    },
+    Primitives_setProperty: function(object, key, value) {
+      if (object == null || typeof object === "boolean" || typeof object === "number" || typeof object === "string")
+        throw H.wrapException(H.argumentErrorValue(object));
+      object[key] = value;
     },
     Primitives_functionNoSuchMethod: function($function, positionalArguments, namedArguments) {
       var t1, $arguments, namedArgumentList, t2;
@@ -2574,6 +2732,9 @@
         throw H.wrapException(H.argumentErrorValue(value));
       return value;
     },
+    checkBool: function(value) {
+      return value;
+    },
     wrapException: function(ex) {
       var wrapper;
       if (ex == null)
@@ -2601,6 +2762,8 @@
       t1 = new H.unwrapException_saveStackTrace(ex);
       if (ex == null)
         return;
+      if (ex instanceof H.ExceptionAndStackTrace)
+        return t1.call$1(ex.dartException);
       if (typeof ex !== "object")
         return ex;
       if ("dartException" in ex)
@@ -2695,6 +2858,8 @@
     },
     getTraceFromException: function(exception) {
       var trace;
+      if (exception instanceof H.ExceptionAndStackTrace)
+        return exception.stackTrace;
       if (exception == null)
         return new H._StackTrace(exception);
       trace = exception.$cachedTrace;
@@ -2733,7 +2898,7 @@
           return closure.call$4(arg1, arg2, arg3, arg4);
       }
       throw H.wrapException(P.Exception_Exception("Unsupported number of arguments for wrapped closure"));
-    }, null, null, 24, 0, null, 53, 51, 12, 13, 44, 43],
+    }, null, null, 24, 0, null, 47, 36, 19, 22, 41, 43],
     convertDartClosureToJS: function(closure, arity) {
       var $function;
       H.intTypeCheck(arity);
@@ -3306,6 +3471,30 @@
       }
       return "<" + buffer.toString$0(0) + ">";
     },
+    getRti: function(o) {
+      var t1, functionRti, type, rti;
+      t1 = J.getInterceptor$(o);
+      if (!!t1.$isClosure) {
+        functionRti = H.extractFunctionTypeObjectFromInternal(t1);
+        if (functionRti != null)
+          return functionRti;
+      }
+      type = t1.constructor;
+      if (o == null)
+        return type;
+      if (typeof o != "object")
+        return type;
+      rti = H.getRuntimeTypeInfo(o);
+      if (rti != null) {
+        rti = rti.slice();
+        rti.splice(0, 0, type);
+        type = rti;
+      }
+      return type;
+    },
+    getRuntimeType: function(object) {
+      return new H.TypeImpl(H.getRti(object));
+    },
     substitute: function(substitution, $arguments) {
       if (substitution == null)
         return $arguments;
@@ -3420,6 +3609,11 @@
         type = rti;
       }
       return H._isSubtype(type, null, t, null);
+    },
+    subtypeOfRuntimeTypeCast: function(object, type) {
+      if (object != null && !H.checkSubtypeOfRuntimeType(object, type))
+        throw H.wrapException(H.CastErrorImplementation$(object, H.runtimeTypeToString(type)));
+      return object;
     },
     assertSubtypeOfRuntimeType: function(object, type) {
       if (object != null && !H.checkSubtypeOfRuntimeType(object, type))
@@ -3935,7 +4129,7 @@
       }
     },
     Primitives_functionNoSuchMethod_closure: {
-      "^": "Closure:110;_box_0,namedArgumentList,$arguments",
+      "^": "Closure:34;_box_0,namedArgumentList,$arguments",
       call$2: function($name, argument) {
         var t1;
         H.stringTypeCheck($name);
@@ -4048,8 +4242,11 @@
         return t1.length === 0 ? "Error" : "Error: " + t1;
       }
     },
+    ExceptionAndStackTrace: {
+      "^": "Object;dartException,stackTrace"
+    },
     unwrapException_saveStackTrace: {
-      "^": "Closure:5;ex",
+      "^": "Closure:7;ex",
       call$1: function(error) {
         if (!!J.getInterceptor$(error).$isError)
           if (error.$thrownJsError == null)
@@ -4155,6 +4352,9 @@
     },
     Instantiation1: {
       "^": "Instantiation;_genericClosure,$ti",
+      call$1: function(a0) {
+        return this._genericClosure.call$1$1(a0, this.$ti[0]);
+      },
       call$2: function(a0, a1) {
         return this._genericClosure.call$1$2(a0, a1, this.$ti[0]);
       },
@@ -4224,7 +4424,12 @@
           return false;
         return other instanceof H.TypeImpl && this.get$_typeName() === other.get$_typeName();
       },
-      $isType: 1
+      $isType: 1,
+      static: {
+        TypeImpl$: function(_rti) {
+          return new H.TypeImpl(_rti);
+        }
+      }
     },
     JsLinkedHashMap: {
       "^": "MapBase;__js_helper$_length,0_strings,0_nums,0_rest,0_first,0_last,_modifications,$ti",
@@ -4292,7 +4497,7 @@
         return bucket[index].hashMapCellValue;
       },
       $indexSet: function(_, key, value) {
-        var strings, nums, rest, hash, bucket, index;
+        var strings, nums;
         H.assertSubtypeOfRuntimeType(key, H.getTypeArgumentByIndex(this, 0));
         H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 1));
         if (typeof key === "string") {
@@ -4309,23 +4514,28 @@
             this._nums = nums;
           }
           this._addHashTableEntry$3(nums, key, value);
-        } else {
-          rest = this._rest;
-          if (rest == null) {
-            rest = this._newHashTable$0();
-            this._rest = rest;
-          }
-          hash = this.internalComputeHashCode$1(key);
-          bucket = this._getTableBucket$2(rest, hash);
-          if (bucket == null)
-            this._setTableEntry$3(rest, hash, [this._newLinkedCell$2(key, value)]);
-          else {
-            index = this.internalFindBucketIndex$2(bucket, key);
-            if (index >= 0)
-              bucket[index].hashMapCellValue = value;
-            else
-              bucket.push(this._newLinkedCell$2(key, value));
-          }
+        } else
+          this.internalSet$2(key, value);
+      },
+      internalSet$2: function(key, value) {
+        var rest, hash, bucket, index;
+        H.assertSubtypeOfRuntimeType(key, H.getTypeArgumentByIndex(this, 0));
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 1));
+        rest = this._rest;
+        if (rest == null) {
+          rest = this._newHashTable$0();
+          this._rest = rest;
+        }
+        hash = this.internalComputeHashCode$1(key);
+        bucket = this._getTableBucket$2(rest, hash);
+        if (bucket == null)
+          this._setTableEntry$3(rest, hash, [this._newLinkedCell$2(key, value)]);
+        else {
+          index = this.internalFindBucketIndex$2(bucket, key);
+          if (index >= 0)
+            bucket[index].hashMapCellValue = value;
+          else
+            bucket.push(this._newLinkedCell$2(key, value));
         }
       },
       putIfAbsent$2: function(_, key, ifAbsent) {
@@ -4481,7 +4691,7 @@
       call$1: [function(each) {
         var t1 = this.$this;
         return t1.$index(0, H.assertSubtypeOfRuntimeType(each, H.getTypeArgumentByIndex(t1, 0)));
-      }, null, null, 4, 0, null, 42, "call"],
+      }, null, null, 4, 0, null, 46, "call"],
       $signature: function() {
         var t1 = this.$this;
         return {func: 1, ret: H.getTypeArgumentByIndex(t1, 1), args: [H.getTypeArgumentByIndex(t1, 0)]};
@@ -4505,6 +4715,9 @@
         t2._cell = t1._first;
         return t2;
       },
+      contains$1: function(_, element) {
+        return this._map.containsKey$1(0, element);
+      },
       forEach$1: function(_, f) {
         var t1, cell, modifications;
         H.functionTypeCheck(f, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]});
@@ -4520,12 +4733,12 @@
       }
     },
     LinkedHashMapKeyIterator: {
-      "^": "Object;_map,_modifications,0_cell,0__js_helper$_current,$ti",
-      set$__js_helper$_current: function(_current) {
-        this.__js_helper$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
+      "^": "Object;_map,_modifications,0_cell,0_current,$ti",
+      set$_current: function(_current) {
+        this._current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
       },
       get$current: function(_) {
-        return this.__js_helper$_current;
+        return this._current;
       },
       moveNext$0: function() {
         var t1 = this._map;
@@ -4534,10 +4747,10 @@
         else {
           t1 = this._cell;
           if (t1 == null) {
-            this.set$__js_helper$_current(null);
+            this.set$_current(null);
             return false;
           } else {
-            this.set$__js_helper$_current(t1.hashMapCellKey);
+            this.set$_current(t1.hashMapCellKey);
             this._cell = this._cell._next;
             return true;
           }
@@ -4546,19 +4759,19 @@
       $isIterator: 1
     },
     initHooks_closure: {
-      "^": "Closure:5;getTag",
+      "^": "Closure:7;getTag",
       call$1: function(o) {
         return this.getTag(o);
       }
     },
     initHooks_closure0: {
-      "^": "Closure:118;getUnknownTag",
+      "^": "Closure:64;getUnknownTag",
       call$2: function(o, tag) {
         return this.getUnknownTag(o, tag);
       }
     },
     initHooks_closure1: {
-      "^": "Closure:69;prototypeForTag",
+      "^": "Closure:172;prototypeForTag",
       call$1: function(tag) {
         return this.prototypeForTag(H.stringTypeCheck(tag));
       }
@@ -4674,9 +4887,9 @@
       }
     },
     _AllMatchesIterator: {
-      "^": "Object;_regExp,_string,_nextIndex,0__js_helper$_current",
+      "^": "Object;_regExp,_string,_nextIndex,0_current",
       get$current: function(_) {
-        return this.__js_helper$_current;
+        return this._current;
       },
       moveNext$0: function() {
         var t1, t2, match, nextIndex;
@@ -4687,13 +4900,13 @@
         if (t2 <= t1.length) {
           match = this._regExp._execGlobal$2(t1, t2);
           if (match != null) {
-            this.__js_helper$_current = match;
+            this._current = match;
             nextIndex = match.get$end(match);
             this._nextIndex = match._match.index === nextIndex ? nextIndex + 1 : nextIndex;
             return true;
           }
         }
-        this.__js_helper$_current = null;
+        this._current = null;
         this._string = null;
         return false;
       },
@@ -4713,40 +4926,40 @@
       $isMatch: 1
     },
     _StringAllMatchesIterable: {
-      "^": "Iterable;_input,_pattern,__js_helper$_index",
+      "^": "Iterable;_input,_pattern,_index",
       get$iterator: function(_) {
-        return new H._StringAllMatchesIterator(this._input, this._pattern, this.__js_helper$_index);
+        return new H._StringAllMatchesIterator(this._input, this._pattern, this._index);
       },
       $asIterable: function() {
         return [P.Match];
       }
     },
     _StringAllMatchesIterator: {
-      "^": "Object;_input,_pattern,__js_helper$_index,0__js_helper$_current",
+      "^": "Object;_input,_pattern,_index,0_current",
       moveNext$0: function() {
         var t1, t2, t3, t4, t5, index, end;
-        t1 = this.__js_helper$_index;
+        t1 = this._index;
         t2 = this._pattern;
         t3 = t2.length;
         t4 = this._input;
         t5 = t4.length;
         if (t1 + t3 > t5) {
-          this.__js_helper$_current = null;
+          this._current = null;
           return false;
         }
         index = t4.indexOf(t2, t1);
         if (index < 0) {
-          this.__js_helper$_index = t5 + 1;
-          this.__js_helper$_current = null;
+          this._index = t5 + 1;
+          this._current = null;
           return false;
         }
         end = index + t3;
-        this.__js_helper$_current = new H.StringMatch(index, t4, t2);
-        this.__js_helper$_index = end === this.__js_helper$_index ? end + 1 : end;
+        this._current = new H.StringMatch(index, t4, t2);
+        this._index = end === this._index ? end + 1 : end;
         return true;
       },
       get$current: function(_) {
-        return this.__js_helper$_current;
+        return this._current;
       },
       $isIterator: 1,
       $asIterator: function() {
@@ -4931,6 +5144,9 @@
         H._checkValidIndex(index, receiver, receiver.length);
         return receiver[index];
       },
+      sublist$2: function(receiver, start, end) {
+        return new Uint8Array(receiver.subarray(start, H._checkValidRange(start, end, receiver.length)));
+      },
       "%": ";Uint8Array"
     },
     _NativeTypedArrayOfDouble_NativeTypedArray_ListMixin: {
@@ -4964,18 +5180,134 @@
     },
     _AsyncRun__scheduleImmediateJsOverride: [function(callback) {
       self.scheduleImmediate(H.convertDartClosureToJS(new P._AsyncRun__scheduleImmediateJsOverride_internalCallback(H.functionTypeCheck(callback, {func: 1, ret: -1})), 0));
-    }, "call$1", "async__AsyncRun__scheduleImmediateJsOverride$closure", 4, 0, 18],
+    }, "call$1", "async__AsyncRun__scheduleImmediateJsOverride$closure", 4, 0, 29],
     _AsyncRun__scheduleImmediateWithSetImmediate: [function(callback) {
       self.setImmediate(H.convertDartClosureToJS(new P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback(H.functionTypeCheck(callback, {func: 1, ret: -1})), 0));
-    }, "call$1", "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", 4, 0, 18],
+    }, "call$1", "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", 4, 0, 29],
     _AsyncRun__scheduleImmediateWithTimer: [function(callback) {
       P.Timer__createTimer(C.Duration_0, H.functionTypeCheck(callback, {func: 1, ret: -1}));
-    }, "call$1", "async__AsyncRun__scheduleImmediateWithTimer$closure", 4, 0, 18],
+    }, "call$1", "async__AsyncRun__scheduleImmediateWithTimer$closure", 4, 0, 29],
     Timer__createTimer: function(duration, callback) {
       var milliseconds;
       H.functionTypeCheck(callback, {func: 1, ret: -1});
       milliseconds = C.JSInt_methods._tdivFast$1(duration._duration, 1000);
       return P._TimerImpl$(milliseconds < 0 ? 0 : milliseconds, callback);
+    },
+    _makeAsyncAwaitCompleter: function($T) {
+      return new P._AsyncAwaitCompleter(new P._SyncCompleter(new P._Future(0, $.Zone__current, [$T]), [$T]), false, [$T]);
+    },
+    _asyncStartSync: function(bodyFunction, completer) {
+      H.functionTypeCheck(bodyFunction, {func: 1, ret: -1, args: [P.int,,]});
+      H.interceptedTypeCheck(completer, "$is_AsyncAwaitCompleter");
+      bodyFunction.call$2(0, null);
+      completer.isSync = true;
+      return completer._completer.future;
+    },
+    _asyncAwait: function(object, bodyFunction) {
+      P._awaitOnObject(object, H.functionTypeCheck(bodyFunction, {func: 1, ret: -1, args: [P.int,,]}));
+    },
+    _asyncReturn: function(object, completer) {
+      H.interceptedTypeCheck(completer, "$isCompleter").complete$1(0, object);
+    },
+    _asyncRethrow: function(object, completer) {
+      H.interceptedTypeCheck(completer, "$isCompleter").completeError$2(H.unwrapException(object), H.getTraceFromException(object));
+    },
+    _awaitOnObject: function(object, bodyFunction) {
+      var thenCallback, errorCallback, t1, t2, future;
+      H.functionTypeCheck(bodyFunction, {func: 1, ret: -1, args: [P.int,,]});
+      thenCallback = new P._awaitOnObject_closure(bodyFunction);
+      errorCallback = new P._awaitOnObject_closure0(bodyFunction);
+      t1 = J.getInterceptor$(object);
+      if (!!t1.$is_Future)
+        object._thenNoZoneRegistration$1$2(H.functionTypeCheck(thenCallback, {func: 1, ret: {futureOr: 1}, args: [,]}), errorCallback, null);
+      else {
+        t2 = {func: 1, ret: {futureOr: 1}, args: [,]};
+        if (!!t1.$isFuture)
+          object.then$1$2$onError(H.functionTypeCheck(thenCallback, t2), errorCallback, null);
+        else {
+          future = new P._Future(0, $.Zone__current, [null]);
+          H.assertSubtypeOfRuntimeType(object, null);
+          future._state = 4;
+          future._resultOrListeners = object;
+          future._thenNoZoneRegistration$1$2(H.functionTypeCheck(thenCallback, t2), null, null);
+        }
+      }
+    },
+    _wrapJsFunctionForAsync: function($function) {
+      var $protected = function(fn, ERROR) {
+        return function(errorCode, result) {
+          while (true)
+            try {
+              fn(errorCode, result);
+              break;
+            } catch (error) {
+              result = error;
+              errorCode = ERROR;
+            }
+        };
+      }($function, 1);
+      return $.Zone__current.registerBinaryCallback$3$1(new P._wrapJsFunctionForAsync_closure($protected), P.Null, P.int, null);
+    },
+    _asyncStarHelper: function(object, bodyFunctionOrErrorCode, controller) {
+      var t1, t2, stream;
+      H.interceptedTypeCheck(controller, "$is_AsyncStarStreamController");
+      if (bodyFunctionOrErrorCode === 0) {
+        t1 = controller.cancelationCompleter;
+        if (t1 != null)
+          t1.complete$0(0);
+        else
+          controller.controller.close$0(0);
+        return;
+      } else if (bodyFunctionOrErrorCode === 1) {
+        t1 = controller.cancelationCompleter;
+        if (t1 != null)
+          t1.completeError$2(H.unwrapException(object), H.getTraceFromException(object));
+        else {
+          t1 = H.unwrapException(object);
+          t2 = H.getTraceFromException(object);
+          controller.controller.addError$2(t1, t2);
+          controller.controller.close$0(0);
+        }
+        return;
+      }
+      if (object instanceof P._IterationMarker) {
+        if (controller.cancelationCompleter != null) {
+          bodyFunctionOrErrorCode.call$2(2, null);
+          return;
+        }
+        t1 = object.state;
+        if (t1 === 0) {
+          t1 = object.value;
+          controller.controller.add$1(0, H.assertSubtypeOfRuntimeType(t1, H.getTypeArgumentByIndex(controller, 0)));
+          P.scheduleMicrotask(new P._asyncStarHelper_closure(controller, bodyFunctionOrErrorCode));
+          return;
+        } else if (t1 === 1) {
+          stream = H.interceptedTypeCheck(object.value, "$isStream");
+          controller.toString;
+          H.assertSubtype(stream, "$isStream", [H.getTypeArgumentByIndex(controller, 0)], "$asStream");
+          controller.controller.addStream$2$cancelOnError(0, stream, false).then$1(new P._asyncStarHelper_closure0(controller, bodyFunctionOrErrorCode));
+          return;
+        }
+      }
+      P._awaitOnObject(object, H.functionTypeCheck(bodyFunctionOrErrorCode, {func: 1, ret: -1, args: [P.int,,]}));
+    },
+    _streamOfController: function(controller) {
+      var t1 = H.interceptedTypeCheck(controller, "$is_AsyncStarStreamController").controller;
+      t1.toString;
+      return new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+    },
+    _makeAsyncStarStreamController: function(body, $T) {
+      return P._AsyncStarStreamController$(H.functionTypeCheck(body, {func: 1, ret: -1, args: [P.int,,]}), $T);
+    },
+    _makeSyncStarIterable: function(body, $T) {
+      return new P._SyncStarIterable(body, [$T]);
+    },
+    Future_Future: function(computation, $T) {
+      var result;
+      H.functionTypeCheck(computation, {func: 1, ret: {futureOr: 1, type: $T}});
+      result = new P._Future(0, $.Zone__current, [$T]);
+      P.Timer_Timer(C.Duration_0, new P.Future_Future_closure(result, computation));
+      return result;
     },
     _registerErrorHandler: function(errorHandler, zone) {
       if (H.functionTypeTest(errorHandler, {func: 1, args: [P.Object, P.StackTrace]}))
@@ -5005,7 +5337,7 @@
         if ($._nextCallback != null)
           $.$get$_AsyncRun__scheduleImmediateClosure().call$1(P.async___startMicrotaskLoop$closure());
       }
-    }, "call$0", "async___startMicrotaskLoop$closure", 0, 0, 0],
+    }, "call$0", "async___startMicrotaskLoop$closure", 0, 0, 1],
     _scheduleAsyncCallback: function(callback) {
       var newEntry = new P._AsyncCallbackEntry(H.functionTypeCheck(callback, {func: 1, ret: -1}));
       if ($._nextCallback == null) {
@@ -5060,20 +5392,49 @@
       t1 = $.Zone__current;
       t1.scheduleMicrotask$1(t1.bindCallbackGuarded$1(callback));
     },
+    Stream_Stream$fromFuture: function(future, $T) {
+      var controller;
+      H.assertSubtype(future, "$isFuture", [$T], "$asFuture");
+      controller = H.assertSubtype(P.StreamController_StreamController(null, null, null, null, true, $T), "$is_StreamController", [$T], "$as_StreamController");
+      future.then$1$2$onError(new P.Stream_Stream$fromFuture_closure(controller, $T), new P.Stream_Stream$fromFuture_closure0(controller), null);
+      return new P._ControllerStream(controller, [H.getTypeArgumentByIndex(controller, 0)]);
+    },
+    Stream_Stream$fromIterable: function(elements, $T) {
+      return new P._GeneratedStreamImpl(new P.Stream_Stream$fromIterable_closure(H.assertSubtype(elements, "$isIterable", [$T], "$asIterable"), $T), false, [$T]);
+    },
+    StreamIterator_StreamIterator: function(stream, $T) {
+      return new P._StreamIterator(H.assertSubtype(stream, "$isStream", [$T], "$asStream"), false, [$T]);
+    },
     StreamController_StreamController: function(onCancel, onListen, onPause, onResume, sync, $T) {
-      return new P._AsyncStreamController(0, onListen, onPause, onResume, onCancel, [$T]);
+      var t1 = {func: 1, ret: -1};
+      H.functionTypeCheck(onListen, t1);
+      H.functionTypeCheck(onResume, t1);
+      H.functionTypeCheck(onCancel, {func: 1});
+      return sync ? new P._SyncStreamController(0, onListen, onPause, onResume, onCancel, [$T]) : new P._AsyncStreamController(0, onListen, onPause, onResume, onCancel, [$T]);
     },
     _runGuarded: function(notificationHandler) {
-      return;
+      var e, s, exception;
+      H.functionTypeCheck(notificationHandler, {func: 1});
+      if (notificationHandler == null)
+        return;
+      try {
+        notificationHandler.call$0();
+      } catch (exception) {
+        e = H.unwrapException(exception);
+        s = H.getTraceFromException(exception);
+        $.Zone__current.handleUncaughtError$2(e, s);
+      }
     },
+    _nullDataHandler: [function(value) {
+    }, "call$1", "async___nullDataHandler$closure", 4, 0, 8, 1],
     _nullErrorHandler: [function(error, stackTrace) {
       H.interceptedTypeCheck(stackTrace, "$isStackTrace");
       $.Zone__current.handleUncaughtError$2(error, stackTrace);
     }, function(error) {
       return P._nullErrorHandler(error, null);
-    }, "call$2", "call$1", "async___nullErrorHandler$closure", 4, 2, 13, 1, 3, 6],
+    }, "call$2", "call$1", "async___nullErrorHandler$closure", 4, 2, 15, 3, 4, 5],
     _nullDoneHandler: [function() {
-    }, "call$0", "async___nullDoneHandler$closure", 0, 0, 0],
+    }, "call$0", "async___nullDoneHandler$closure", 0, 0, 1],
     Timer_Timer: function(duration, callback) {
       var t1;
       H.functionTypeCheck(callback, {func: 1, ret: -1});
@@ -5091,7 +5452,7 @@
       var t1 = {};
       t1.error = error;
       P._schedulePriorityAsyncCallback(new P._rootHandleUncaughtError_closure(t1, H.interceptedTypeCheck(stackTrace, "$isStackTrace")));
-    }, "call$5", "async___rootHandleUncaughtError$closure", 20, 0, 26],
+    }, "call$5", "async___rootHandleUncaughtError$closure", 20, 0, 61],
     _rootRun: [1, function($self, $parent, zone, f, $R) {
       var old, t1;
       H.interceptedTypeCheck($self, "$isZone");
@@ -5111,7 +5472,7 @@
       }
     }, function($self, $parent, zone, f) {
       return P._rootRun($self, $parent, zone, f, null);
-    }, "call$1$4", "call$4", "async___rootRun$closure", 16, 0, 41, 4, 7, 8, 15],
+    }, "call$1$4", "call$4", "async___rootRun$closure", 16, 0, 43, 11, 14, 16, 20],
     _rootRunUnary: [1, function($self, $parent, zone, f, arg, $R, $T) {
       var old, t1;
       H.interceptedTypeCheck($self, "$isZone");
@@ -5132,7 +5493,7 @@
       }
     }, function($self, $parent, zone, f, arg) {
       return P._rootRunUnary($self, $parent, zone, f, arg, null, null);
-    }, "call$2$5", "call$5", "async___rootRunUnary$closure", 20, 0, 24, 4, 7, 8, 15, 9],
+    }, "call$2$5", "call$5", "async___rootRunUnary$closure", 20, 0, 50, 11, 14, 16, 20, 18],
     _rootRunBinary: [1, function($self, $parent, zone, f, arg1, arg2, $R, T1, T2) {
       var old, t1;
       H.interceptedTypeCheck($self, "$isZone");
@@ -5154,26 +5515,26 @@
       }
     }, function($self, $parent, zone, f, arg1, arg2) {
       return P._rootRunBinary($self, $parent, zone, f, arg1, arg2, null, null, null);
-    }, "call$3$6", "call$6", "async___rootRunBinary$closure", 24, 0, 25, 4, 7, 8, 15, 12, 13],
+    }, "call$3$6", "call$6", "async___rootRunBinary$closure", 24, 0, 55, 11, 14, 16, 20, 19, 22],
     _rootRegisterCallback: [function($self, $parent, zone, f, $R) {
       return H.functionTypeCheck(f, {func: 1, ret: $R});
     }, function($self, $parent, zone, f) {
       return P._rootRegisterCallback($self, $parent, zone, f, null);
-    }, "call$1$4", "call$4", "async___rootRegisterCallback$closure", 16, 0, 98],
+    }, "call$1$4", "call$4", "async___rootRegisterCallback$closure", 16, 0, 142],
     _rootRegisterUnaryCallback: [function($self, $parent, zone, f, $R, $T) {
       return H.functionTypeCheck(f, {func: 1, ret: $R, args: [$T]});
     }, function($self, $parent, zone, f) {
       return P._rootRegisterUnaryCallback($self, $parent, zone, f, null, null);
-    }, "call$2$4", "call$4", "async___rootRegisterUnaryCallback$closure", 16, 0, 99],
+    }, "call$2$4", "call$4", "async___rootRegisterUnaryCallback$closure", 16, 0, 143],
     _rootRegisterBinaryCallback: [function($self, $parent, zone, f, $R, T1, T2) {
       return H.functionTypeCheck(f, {func: 1, ret: $R, args: [T1, T2]});
     }, function($self, $parent, zone, f) {
       return P._rootRegisterBinaryCallback($self, $parent, zone, f, null, null, null);
-    }, "call$3$4", "call$4", "async___rootRegisterBinaryCallback$closure", 16, 0, 100],
+    }, "call$3$4", "call$4", "async___rootRegisterBinaryCallback$closure", 16, 0, 144],
     _rootErrorCallback: [function($self, $parent, zone, error, stackTrace) {
       H.interceptedTypeCheck(stackTrace, "$isStackTrace");
       return;
-    }, "call$5", "async___rootErrorCallback$closure", 20, 0, 101],
+    }, "call$5", "async___rootErrorCallback$closure", 20, 0, 145],
     _rootScheduleMicrotask: [function($self, $parent, zone, f) {
       var t1;
       H.functionTypeCheck(f, {func: 1, ret: -1});
@@ -5181,25 +5542,25 @@
       if (t1)
         f = !(!t1 || C.C__RootZone.get$errorZone() === zone.get$errorZone()) ? zone.bindCallbackGuarded$1(f) : zone.bindCallback$1$1(f, -1);
       P._scheduleAsyncCallback(f);
-    }, "call$4", "async___rootScheduleMicrotask$closure", 16, 0, 22],
+    }, "call$4", "async___rootScheduleMicrotask$closure", 16, 0, 36],
     _rootCreateTimer: [function($self, $parent, zone, duration, callback) {
       H.interceptedTypeCheck(duration, "$isDuration");
       callback = zone.bindCallback$1$1(H.functionTypeCheck(callback, {func: 1, ret: -1}), -1);
       return P.Timer__createTimer(duration, callback);
-    }, "call$5", "async___rootCreateTimer$closure", 20, 0, 27],
+    }, "call$5", "async___rootCreateTimer$closure", 20, 0, 31],
     _rootCreatePeriodicTimer: [function($self, $parent, zone, duration, callback) {
       var milliseconds;
       H.interceptedTypeCheck(duration, "$isDuration");
       callback = zone.bindUnaryCallback$2$1(H.functionTypeCheck(callback, {func: 1, ret: -1, args: [P.Timer]}), null, P.Timer);
       milliseconds = C.JSInt_methods._tdivFast$1(duration._duration, 1000);
       return P._TimerImpl$periodic(milliseconds < 0 ? 0 : milliseconds, callback);
-    }, "call$5", "async___rootCreatePeriodicTimer$closure", 20, 0, 102],
+    }, "call$5", "async___rootCreatePeriodicTimer$closure", 20, 0, 146],
     _rootPrint: [function($self, $parent, zone, line) {
       H.printString(H.S(H.stringTypeCheck(line)));
-    }, "call$4", "async___rootPrint$closure", 16, 0, 103],
+    }, "call$4", "async___rootPrint$closure", 16, 0, 147],
     _printToZone: [function(line) {
       $.Zone__current.print$1(0, line);
-    }, "call$1", "async___printToZone$closure", 4, 0, 104],
+    }, "call$1", "async___printToZone$closure", 4, 0, 148],
     _rootFork: [function($self, $parent, zone, specification, zoneValues) {
       var valueMap, t1, t2;
       H.interceptedTypeCheck($self, "$isZone");
@@ -5242,19 +5603,19 @@
       t2 = specification.handleUncaughtError;
       t1.set$_handleUncaughtError(t2 != null ? new P._ZoneFunction(t1, t2, [{func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}]) : zone.get$_handleUncaughtError());
       return t1;
-    }, "call$5", "async___rootFork$closure", 20, 0, 105, 4, 7, 8, 40, 39],
+    }, "call$5", "async___rootFork$closure", 20, 0, 149, 11, 14, 16, 44, 45],
     _AsyncRun__initializeScheduleImmediate_internalCallback: {
-      "^": "Closure:7;_box_0",
+      "^": "Closure:3;_box_0",
       call$1: [function(_) {
         var t1, f;
         t1 = this._box_0;
         f = t1.storedCallback;
         t1.storedCallback = null;
         f.call$0();
-      }, null, null, 4, 0, null, 2, "call"]
+      }, null, null, 4, 0, null, 0, "call"]
     },
     _AsyncRun__initializeScheduleImmediate_closure: {
-      "^": "Closure:45;_box_0,div,span",
+      "^": "Closure:66;_box_0,div,span",
       call$1: function(callback) {
         var t1, t2;
         this._box_0.storedCallback = H.functionTypeCheck(callback, {func: 1, ret: -1});
@@ -5264,13 +5625,13 @@
       }
     },
     _AsyncRun__scheduleImmediateJsOverride_internalCallback: {
-      "^": "Closure:1;callback",
+      "^": "Closure:0;callback",
       call$0: [function() {
         this.callback.call$0();
       }, null, null, 0, 0, null, "call"]
     },
     _AsyncRun__scheduleImmediateWithSetImmediate_internalCallback: {
-      "^": "Closure:1;callback",
+      "^": "Closure:0;callback",
       call$0: [function() {
         this.callback.call$0();
       }, null, null, 0, 0, null, "call"]
@@ -5318,7 +5679,7 @@
       }
     },
     _TimerImpl_internalCallback: {
-      "^": "Closure:0;$this,callback",
+      "^": "Closure:1;$this,callback",
       call$0: [function() {
         var t1 = this.$this;
         t1._handle = null;
@@ -5327,7 +5688,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     _TimerImpl$periodic_closure: {
-      "^": "Closure:1;$this,milliseconds,start,callback",
+      "^": "Closure:0;$this,milliseconds,start,callback",
       call$0: [function() {
         var t1, tick, t2, duration;
         t1 = this.$this;
@@ -5342,6 +5703,244 @@
         this.callback.call$1(t1);
       }, null, null, 0, 0, null, "call"]
     },
+    _AsyncAwaitCompleter: {
+      "^": "Object;_completer,isSync,$ti",
+      complete$1: function(_, value) {
+        var t1;
+        H.futureOrCheck(value, {futureOr: 1, type: H.getTypeArgumentByIndex(this, 0)});
+        if (this.isSync)
+          this._completer.complete$1(0, value);
+        else if (H.checkSubtype(value, "$isFuture", this.$ti, "$asFuture")) {
+          t1 = this._completer;
+          value.then$1$2$onError(t1.get$complete(t1), t1.get$completeError(), -1);
+        } else
+          P.scheduleMicrotask(new P._AsyncAwaitCompleter_complete_closure(this, value));
+      },
+      completeError$2: function(e, st) {
+        if (this.isSync)
+          this._completer.completeError$2(e, st);
+        else
+          P.scheduleMicrotask(new P._AsyncAwaitCompleter_completeError_closure(this, e, st));
+      },
+      $isCompleter: 1
+    },
+    _AsyncAwaitCompleter_complete_closure: {
+      "^": "Closure:0;$this,value",
+      call$0: [function() {
+        this.$this._completer.complete$1(0, this.value);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _AsyncAwaitCompleter_completeError_closure: {
+      "^": "Closure:0;$this,e,st",
+      call$0: [function() {
+        this.$this._completer.completeError$2(this.e, this.st);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _awaitOnObject_closure: {
+      "^": "Closure:2;bodyFunction",
+      call$1: [function(result) {
+        return this.bodyFunction.call$2(0, result);
+      }, null, null, 4, 0, null, 8, "call"]
+    },
+    _awaitOnObject_closure0: {
+      "^": "Closure:106;bodyFunction",
+      call$2: [function(error, stackTrace) {
+        this.bodyFunction.call$2(1, new H.ExceptionAndStackTrace(error, H.interceptedTypeCheck(stackTrace, "$isStackTrace")));
+      }, null, null, 8, 0, null, 4, 5, "call"]
+    },
+    _wrapJsFunctionForAsync_closure: {
+      "^": "Closure:170;$protected",
+      call$2: [function(errorCode, result) {
+        this.$protected(H.intTypeCheck(errorCode), result);
+      }, null, null, 8, 0, null, 48, 8, "call"]
+    },
+    _asyncStarHelper_closure: {
+      "^": "Closure:0;controller,bodyFunctionOrErrorCode",
+      call$0: [function() {
+        var t1, t2;
+        t1 = this.controller;
+        t2 = t1.controller;
+        if ((t2.get$_state() & 1) !== 0 ? (t2.get$_subscription()._state & 4) !== 0 : (t2.get$_state() & 2) === 0) {
+          t1.isSuspended = true;
+          return;
+        }
+        this.bodyFunctionOrErrorCode.call$2(null, 0);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _asyncStarHelper_closure0: {
+      "^": "Closure:3;controller,bodyFunctionOrErrorCode",
+      call$1: [function(_) {
+        var errorCode = this.controller.cancelationCompleter != null ? 2 : 0;
+        this.bodyFunctionOrErrorCode.call$2(errorCode, null);
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    _AsyncStarStreamController: {
+      "^": "Object;0controller,isSuspended,0cancelationCompleter,$ti",
+      set$controller: function(_, controller) {
+        this.controller = H.assertSubtype(controller, "$isStreamController", this.$ti, "$asStreamController");
+      },
+      add$1: function(_, $event) {
+        return this.controller.add$1(0, H.assertSubtypeOfRuntimeType($event, H.getTypeArgumentByIndex(this, 0)));
+      },
+      _AsyncStarStreamController$1: function(body, $T) {
+        var t1 = new P._AsyncStarStreamController__resumeBody(body);
+        this.set$controller(0, P.StreamController_StreamController(new P._AsyncStarStreamController_closure(this, body), new P._AsyncStarStreamController_closure0(t1), null, new P._AsyncStarStreamController_closure1(this, t1), false, $T));
+      },
+      static: {
+        _AsyncStarStreamController$: function(body, $T) {
+          var t1 = new P._AsyncStarStreamController(false, [$T]);
+          t1._AsyncStarStreamController$1(body, $T);
+          return t1;
+        }
+      }
+    },
+    _AsyncStarStreamController__resumeBody: {
+      "^": "Closure:0;body",
+      call$0: function() {
+        P.scheduleMicrotask(new P._AsyncStarStreamController__resumeBody_closure(this.body));
+      }
+    },
+    _AsyncStarStreamController__resumeBody_closure: {
+      "^": "Closure:0;body",
+      call$0: [function() {
+        this.body.call$2(0, null);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _AsyncStarStreamController_closure0: {
+      "^": "Closure:0;_resumeBody",
+      call$0: function() {
+        this._resumeBody.call$0();
+      }
+    },
+    _AsyncStarStreamController_closure1: {
+      "^": "Closure:0;$this,_resumeBody",
+      call$0: function() {
+        var t1 = this.$this;
+        if (t1.isSuspended) {
+          t1.isSuspended = false;
+          this._resumeBody.call$0();
+        }
+      }
+    },
+    _AsyncStarStreamController_closure: {
+      "^": "Closure:14;$this,body",
+      call$0: [function() {
+        var t1 = this.$this;
+        if ((t1.controller.get$_state() & 4) === 0) {
+          t1.cancelationCompleter = new P._AsyncCompleter(new P._Future(0, $.Zone__current, [null]), [null]);
+          if (t1.isSuspended) {
+            t1.isSuspended = false;
+            P.scheduleMicrotask(new P._AsyncStarStreamController__closure(this.body));
+          }
+          return t1.cancelationCompleter.future;
+        }
+      }, null, null, 0, 0, null, "call"]
+    },
+    _AsyncStarStreamController__closure: {
+      "^": "Closure:0;body",
+      call$0: [function() {
+        this.body.call$2(2, null);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _IterationMarker: {
+      "^": "Object;value,state",
+      toString$0: function(_) {
+        return "IterationMarker(" + this.state + ", " + H.S(this.value) + ")";
+      },
+      static: {
+        _IterationMarker_yieldStar: function(values) {
+          return new P._IterationMarker(values, 1);
+        },
+        _IterationMarker_endOfIteration: function() {
+          return C._IterationMarker_null_2;
+        },
+        _IterationMarker_yieldSingle: function(value) {
+          return new P._IterationMarker(value, 0);
+        },
+        _IterationMarker_uncaughtError: function(error) {
+          return new P._IterationMarker(error, 3);
+        }
+      }
+    },
+    _SyncStarIterator: {
+      "^": "Object;_body,0_async$_current,0_nestedIterator,0_suspendedBodies,$ti",
+      set$_async$_current: function(_current) {
+        this._async$_current = H.assertSubtypeOfRuntimeType(_current, H.getTypeArgumentByIndex(this, 0));
+      },
+      get$current: function(_) {
+        var t1 = this._nestedIterator;
+        if (t1 == null)
+          return this._async$_current;
+        return H.assertSubtypeOfRuntimeType(t1.get$current(t1), H.getTypeArgumentByIndex(this, 0));
+      },
+      moveNext$0: function() {
+        var t1, value, state, inner;
+        for (; true;) {
+          t1 = this._nestedIterator;
+          if (t1 != null)
+            if (t1.moveNext$0())
+              return true;
+            else
+              this._nestedIterator = null;
+          value = function(body, SUCCESS, ERROR) {
+            var errorValue,
+              errorCode = SUCCESS;
+            while (true)
+              try {
+                return body(errorCode, errorValue);
+              } catch (error) {
+                errorValue = error;
+                errorCode = ERROR;
+              }
+          }(this._body, 0, 1);
+          if (value instanceof P._IterationMarker) {
+            state = value.state;
+            if (state === 2) {
+              t1 = this._suspendedBodies;
+              if (t1 == null || t1.length === 0) {
+                this.set$_async$_current(null);
+                return false;
+              }
+              if (0 >= t1.length)
+                return H.ioore(t1, -1);
+              this._body = t1.pop();
+              continue;
+            } else {
+              t1 = value.value;
+              if (state === 3)
+                throw t1;
+              else {
+                inner = J.get$iterator$ax(t1);
+                if (!!inner.$is_SyncStarIterator) {
+                  t1 = this._suspendedBodies;
+                  if (t1 == null) {
+                    t1 = [];
+                    this._suspendedBodies = t1;
+                  }
+                  C.JSArray_methods.add$1(t1, this._body);
+                  this._body = inner._body;
+                  continue;
+                } else {
+                  this._nestedIterator = inner;
+                  continue;
+                }
+              }
+            }
+          } else {
+            this.set$_async$_current(value);
+            return true;
+          }
+        }
+        return false;
+      },
+      $isIterator: 1
+    },
+    _SyncStarIterable: {
+      "^": "IterableBase;_outerHelper,$ti",
+      get$iterator: function(_) {
+        return new P._SyncStarIterator(this._outerHelper(), this.$ti);
+      }
+    },
     _BroadcastStream: {
       "^": "_ControllerStream;_controller,$ti"
     },
@@ -5354,9 +5953,9 @@
         this._async$_previous = H.assertSubtype(_previous, "$is_BroadcastSubscription", this.$ti, "$as_BroadcastSubscription");
       },
       _onPause$0: [function() {
-      }, "call$0", "get$_onPause", 0, 0, 0],
+      }, "call$0", "get$_onPause", 0, 0, 1],
       _onResume$0: [function() {
-      }, "call$0", "get$_onResume", 0, 0, 0]
+      }, "call$0", "get$_onResume", 0, 0, 1]
     },
     _BroadcastStreamController: {
       "^": "Object;_state<,0_firstSubscription,0_lastSubscription,$ti",
@@ -5454,13 +6053,28 @@
           return new P.StateError("Cannot add new events after calling close");
         return new P.StateError("Cannot add new events while doing an addStream");
       }],
-      add$1: function(_, data) {
+      add$1: ["super$_BroadcastStreamController$add", function(_, data) {
         H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0));
         if (!this.get$_mayAddEvent())
           throw H.wrapException(this._addEventError$0());
         this._sendData$1(data);
+      }, null, "get$add", 5, 0, null, 9],
+      addError$2: function(error, stackTrace) {
+        var replacement;
+        if (error == null)
+          error = new P.NullThrownError();
+        if (!this.get$_mayAddEvent())
+          throw H.wrapException(this._addEventError$0());
+        replacement = $.Zone__current.errorCallback$2(error, stackTrace);
+        if (replacement != null) {
+          error = replacement.error;
+          if (error == null)
+            error = new P.NullThrownError();
+          stackTrace = replacement.stackTrace;
+        }
+        this._sendError$2(error, stackTrace);
       },
-      close$0: function(_) {
+      close$0: ["super$_BroadcastStreamController$close", function(_) {
         var doneFuture;
         if ((this._state & 4) !== 0)
           return this._doneFuture;
@@ -5470,13 +6084,16 @@
         doneFuture = this._ensureDoneFuture$0();
         this._sendDone$0();
         return doneFuture;
+      }],
+      get$done: function() {
+        return this._ensureDoneFuture$0();
       },
-      _add$1: function(_, data) {
+      _add$1: [function(_, data) {
         this._sendData$1(H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0)));
-      },
-      _addError$2: function(error, stackTrace) {
-        this._sendError$2(error, stackTrace);
-      },
+      }, null, "get$_add", 5, 0, null, 9],
+      _addError$2: [function(error, stackTrace) {
+        this._sendError$2(error, H.interceptedTypeCheck(stackTrace, "$isStackTrace"));
+      }, null, "get$_addError", 8, 0, null, 4, 5],
       _forEachListener$1: function(action) {
         var t1, subscription, id, next;
         H.functionTypeCheck(action, {func: 1, ret: -1, args: [[P._BufferingStreamSubscription, H.getTypeArgumentByIndex(this, 0)]]});
@@ -5506,11 +6123,11 @@
         if (this._firstSubscription == null)
           this._callOnCancel$0();
       },
-      _callOnCancel$0: function() {
+      _callOnCancel$0: ["super$_BroadcastStreamController$_callOnCancel", function() {
         if ((this._state & 4) !== 0 && this._doneFuture._state === 0)
           this._doneFuture._asyncComplete$1(null);
         P._runGuarded(this.onCancel);
-      },
+      }],
       $isEventSink: 1,
       $isStreamController: 1,
       $is_StreamControllerLifecycle: 1,
@@ -5576,7 +6193,7 @@
     _SyncBroadcastStreamController__sendDone_closure: {
       "^": "Closure;$this",
       call$1: function(subscription) {
-        H.assertSubtype(subscription, "$is_BufferingStreamSubscription", [H.getTypeArgumentByIndex(this.$this, 0)], "$as_BufferingStreamSubscription")._close$0();
+        H.assertSubtype(subscription, "$is_BufferingStreamSubscription", [H.getTypeArgumentByIndex(this.$this, 0)], "$as_BufferingStreamSubscription")._async$_close$0();
       },
       $signature: function() {
         return {func: 1, ret: P.Null, args: [[P._BufferingStreamSubscription, H.getTypeArgumentByIndex(this.$this, 0)]]};
@@ -5604,13 +6221,122 @@
           this._doneFuture._asyncComplete$1(null);
       }
     },
+    _AsBroadcastStreamController: {
+      "^": "_SyncBroadcastStreamController;0_pending,onListen,onCancel,_state,0_firstSubscription,0_lastSubscription,0_addStreamState,0_doneFuture,$ti",
+      set$_pending: function(_pending) {
+        this._pending = H.assertSubtype(_pending, "$is_StreamImplEvents", this.$ti, "$as_StreamImplEvents");
+      },
+      get$_hasPending: function() {
+        var t1 = this._pending;
+        return t1 != null && t1.lastPendingEvent != null;
+      },
+      _addPendingEvent$1: function($event) {
+        if (this._pending == null)
+          this.set$_pending(new P._StreamImplEvents(0, this.$ti));
+        this._pending.add$1(0, $event);
+      },
+      add$1: [function(_, data) {
+        var t1, $event, t2;
+        H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0));
+        t1 = this._state;
+        if ((t1 & 4) === 0 && (t1 & 2) !== 0) {
+          this._addPendingEvent$1(new P._DelayedData(data, this.$ti));
+          return;
+        }
+        this.super$_BroadcastStreamController$add(0, data);
+        while (true) {
+          t1 = this._pending;
+          if (!(t1 != null && t1.lastPendingEvent != null))
+            break;
+          t1.toString;
+          H.assertSubtype(this, "$is_EventDispatch", [H.getTypeArgumentByIndex(t1, 0)], "$as_EventDispatch");
+          $event = t1.firstPendingEvent;
+          t2 = $event.get$next($event);
+          t1.firstPendingEvent = t2;
+          if (t2 == null)
+            t1.lastPendingEvent = null;
+          $event.perform$1(this);
+        }
+      }, "call$1", "get$add", 5, 0, 8, 9],
+      addError$2: [function(error, stackTrace) {
+        var t1, $event, t2;
+        H.interceptedTypeCheck(stackTrace, "$isStackTrace");
+        t1 = this._state;
+        if ((t1 & 4) === 0 && (t1 & 2) !== 0) {
+          this._addPendingEvent$1(new P._DelayedError(error, stackTrace));
+          return;
+        }
+        if (!(P._BroadcastStreamController.prototype.get$_mayAddEvent.call(this) && (this._state & 2) === 0))
+          throw H.wrapException(this._addEventError$0());
+        this._sendError$2(error, stackTrace);
+        while (true) {
+          t1 = this._pending;
+          if (!(t1 != null && t1.lastPendingEvent != null))
+            break;
+          t1.toString;
+          H.assertSubtype(this, "$is_EventDispatch", [H.getTypeArgumentByIndex(t1, 0)], "$as_EventDispatch");
+          $event = t1.firstPendingEvent;
+          t2 = $event.get$next($event);
+          t1.firstPendingEvent = t2;
+          if (t2 == null)
+            t1.lastPendingEvent = null;
+          $event.perform$1(this);
+        }
+      }, function(error) {
+        return this.addError$2(error, null);
+      }, "addError$1", "call$2", "call$1", "get$addError", 4, 2, 15, 3, 4, 5],
+      close$0: [function(_) {
+        var t1 = this._state;
+        if ((t1 & 4) === 0 && (t1 & 2) !== 0) {
+          this._addPendingEvent$1(C.C__DelayedDone);
+          this._state |= 4;
+          return P._BroadcastStreamController.prototype.get$done.call(this);
+        }
+        return this.super$_BroadcastStreamController$close(0);
+      }, "call$0", "get$close", 1, 0, 14],
+      _callOnCancel$0: function() {
+        if (this.get$_hasPending()) {
+          var t1 = this._pending;
+          if (t1._state === 1)
+            t1._state = 3;
+          t1.lastPendingEvent = null;
+          t1.firstPendingEvent = null;
+          this.set$_pending(null);
+        }
+        this.super$_BroadcastStreamController$_callOnCancel();
+      }
+    },
     Future: {
       "^": "Object;$ti"
+    },
+    Future_Future_closure: {
+      "^": "Closure:0;result,computation",
+      call$0: [function() {
+        var e, s, exception, error, t1, stackTrace, replacement;
+        try {
+          this.result._complete$1(this.computation.call$0());
+        } catch (exception) {
+          e = H.unwrapException(exception);
+          s = H.getTraceFromException(exception);
+          error = e;
+          t1 = $.Zone__current;
+          stackTrace = H.interceptedTypeCheck(s, "$isStackTrace");
+          replacement = t1.errorCallback$2(error, stackTrace);
+          if (replacement != null) {
+            error = replacement.error;
+            if (error == null)
+              error = new P.NullThrownError();
+            stackTrace = replacement.stackTrace;
+          }
+          this.result._completeError$2(error, stackTrace);
+        }
+      }, null, null, 0, 0, null, "call"]
     },
     _Completer: {
       "^": "Object;$ti",
       completeError$2: [function(error, stackTrace) {
         var replacement;
+        H.interceptedTypeCheck(stackTrace, "$isStackTrace");
         if (error == null)
           error = new P.NullThrownError();
         if (this.future._state !== 0)
@@ -5625,7 +6351,8 @@
         this._completeError$2(error, stackTrace);
       }, function(error) {
         return this.completeError$2(error, null);
-      }, "completeError$1", "call$2", "call$1", "get$completeError", 4, 2, 13]
+      }, "completeError$1", "call$2", "call$1", "get$completeError", 4, 2, 15, 3, 4, 5],
+      $isCompleter: 1
     },
     _AsyncCompleter: {
       "^": "_Completer;future,$ti",
@@ -5646,6 +6373,16 @@
     },
     _SyncCompleter: {
       "^": "_Completer;future,$ti",
+      complete$1: [function(_, value) {
+        var t1;
+        H.futureOrCheck(value, {futureOr: 1, type: H.getTypeArgumentByIndex(this, 0)});
+        t1 = this.future;
+        if (t1._state !== 0)
+          throw H.wrapException(P.StateError$("Future already completed"));
+        t1._complete$1(value);
+      }, function($receiver) {
+        return this.complete$1($receiver, null);
+      }, "complete$0", "call$1", "call$0", "get$complete", 1, 2, 82, 3, 1],
       _completeError$2: function(error, stackTrace) {
         this.future._completeError$2(error, stackTrace);
       }
@@ -5672,7 +6409,7 @@
     _Future: {
       "^": "Object;_state<,_zone,0_resultOrListeners<,$ti",
       then$1$2$onError: function(f, onError, $R) {
-        var t1, currentZone, result, t2;
+        var t1, currentZone;
         t1 = H.getTypeArgumentByIndex(this, 0);
         H.functionTypeCheck(f, {func: 1, ret: {futureOr: 1, type: $R}, args: [t1]});
         currentZone = $.Zone__current;
@@ -5681,14 +6418,22 @@
           if (onError != null)
             onError = P._registerErrorHandler(onError, currentZone);
         }
-        H.functionTypeCheck(f, {func: 1, ret: {futureOr: 1, type: $R}, args: [t1]});
-        result = new P._Future(0, $.Zone__current, [$R]);
-        t2 = onError == null ? 1 : 3;
-        this._addListener$1(new P._FutureListener(result, t2, f, onError, [t1, $R]));
-        return result;
+        return this._thenNoZoneRegistration$1$2(f, onError, $R);
       },
       then$1$1: function(f, $R) {
         return this.then$1$2$onError(f, null, $R);
+      },
+      then$1: function(f) {
+        return this.then$1$2$onError(f, null, null);
+      },
+      _thenNoZoneRegistration$1$2: function(f, onError, $E) {
+        var t1, result, t2;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(f, {func: 1, ret: {futureOr: 1, type: $E}, args: [t1]});
+        result = new P._Future(0, $.Zone__current, [$E]);
+        t2 = onError == null ? 1 : 3;
+        this._addListener$1(new P._FutureListener(result, t2, f, onError, [t1, $E]));
+        return result;
       },
       whenComplete$1: function(action) {
         var t1, result;
@@ -5701,10 +6446,8 @@
         this._addListener$1(new P._FutureListener(result, 8, action, null, [t1, t1]));
         return result;
       },
-      _setValue$1: function(value) {
-        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
-        this._state = 4;
-        this._resultOrListeners = value;
+      asStream$0: function() {
+        return P.Stream_Stream$fromFuture(this, H.getTypeArgumentByIndex(this, 0));
       },
       _addListener$1: function(listener) {
         var t1, source;
@@ -5796,7 +6539,7 @@
         P._Future__propagateToListeners(this, listeners);
       }, function(error) {
         return this._completeError$2(error, null);
-      }, "_completeError$1", "call$2", "call$1", "get$_completeError", 4, 2, 13, 1, 3, 6],
+      }, "_completeError$1", "call$2", "call$1", "get$_completeError", 4, 2, 15, 3, 4, 5],
       _asyncComplete$1: function(value) {
         H.futureOrCheck(value, {futureOr: 1, type: H.getTypeArgumentByIndex(this, 0)});
         if (H.checkSubtype(value, "$isFuture", this.$ti, "$asFuture")) {
@@ -5810,7 +6553,7 @@
         var t1 = this.$ti;
         H.assertSubtype(value, "$isFuture", t1, "$asFuture");
         if (H.checkSubtype(value, "$is_Future", t1, null)) {
-          if (value._state === 8) {
+          if (value.get$_state() === 8) {
             this._state = 1;
             this._zone.scheduleMicrotask$1(new P._Future__chainFuture_closure(this, value));
           } else
@@ -5826,6 +6569,13 @@
       },
       $isFuture: 1,
       static: {
+        _Future$zoneValue: function(value, _zone, $T) {
+          var t1 = new P._Future(0, _zone, [$T]);
+          H.assertSubtypeOfRuntimeType(value, $T);
+          t1._state = 4;
+          t1._resultOrListeners = value;
+          return t1;
+        },
         _Future__chainForeignFuture: function(source, target) {
           var e, s, exception;
           target._state = 1;
@@ -5913,16 +6663,19 @@
                 $.Zone__current = oldZone;
               t1 = _box_0.listenerValueOrError;
               if (!!J.getInterceptor$(t1).$isFuture) {
-                if (t1._state >= 4) {
-                  current = H.interceptedTypeCheck(t3._resultOrListeners, "$is_FutureListener");
-                  t3._resultOrListeners = null;
-                  listeners = t3._reverseListeners$1(current);
-                  t3._state = t1._state;
-                  t3._resultOrListeners = t1._resultOrListeners;
-                  _box_1.source = t1;
-                  continue;
-                } else
-                  P._Future__chainCoreFuture(t1, t3);
+                if (!!t1.$is_Future)
+                  if (t1._state >= 4) {
+                    current = H.interceptedTypeCheck(t3._resultOrListeners, "$is_FutureListener");
+                    t3._resultOrListeners = null;
+                    listeners = t3._reverseListeners$1(current);
+                    t3._state = t1._state;
+                    t3._resultOrListeners = t1._resultOrListeners;
+                    _box_1.source = t1;
+                    continue;
+                  } else
+                    P._Future__chainCoreFuture(t1, t3);
+                else
+                  P._Future__chainForeignFuture(t1, t3);
                 return;
               }
             }
@@ -5948,41 +6701,41 @@
       }
     },
     _Future__addListener_closure: {
-      "^": "Closure:1;$this,listener",
+      "^": "Closure:0;$this,listener",
       call$0: [function() {
         P._Future__propagateToListeners(this.$this, this.listener);
       }, null, null, 0, 0, null, "call"]
     },
     _Future__prependListeners_closure: {
-      "^": "Closure:1;_box_0,$this",
+      "^": "Closure:0;_box_0,$this",
       call$0: [function() {
         P._Future__propagateToListeners(this.$this, this._box_0.listeners);
       }, null, null, 0, 0, null, "call"]
     },
     _Future__chainForeignFuture_closure: {
-      "^": "Closure:7;target",
+      "^": "Closure:3;target",
       call$1: [function(value) {
         var t1 = this.target;
         t1._state = 0;
         t1._complete$1(value);
-      }, null, null, 4, 0, null, 10, "call"]
+      }, null, null, 4, 0, null, 1, "call"]
     },
     _Future__chainForeignFuture_closure0: {
-      "^": "Closure:46;target",
+      "^": "Closure:89;target",
       call$2: [function(error, stackTrace) {
         this.target._completeError$2(error, H.interceptedTypeCheck(stackTrace, "$isStackTrace"));
       }, function(error) {
         return this.call$2(error, null);
-      }, "call$1", null, null, null, 4, 2, null, 1, 3, 6, "call"]
+      }, "call$1", null, null, null, 4, 2, null, 3, 4, 5, "call"]
     },
     _Future__chainForeignFuture_closure1: {
-      "^": "Closure:1;target,e,s",
+      "^": "Closure:0;target,e,s",
       call$0: [function() {
         this.target._completeError$2(this.e, this.s);
       }, null, null, 0, 0, null, "call"]
     },
     _Future__asyncComplete_closure: {
-      "^": "Closure:1;$this,value",
+      "^": "Closure:0;$this,value",
       call$0: [function() {
         var t1, t2, listeners;
         t1 = this.$this;
@@ -5994,19 +6747,19 @@
       }, null, null, 0, 0, null, "call"]
     },
     _Future__chainFuture_closure: {
-      "^": "Closure:1;$this,value",
+      "^": "Closure:0;$this,value",
       call$0: [function() {
         P._Future__chainCoreFuture(this.value, this.$this);
       }, null, null, 0, 0, null, "call"]
     },
     _Future__asyncCompleteError_closure: {
-      "^": "Closure:1;$this,error,stackTrace",
+      "^": "Closure:0;$this,error,stackTrace",
       call$0: [function() {
         this.$this._completeError$2(this.error, this.stackTrace);
       }, null, null, 0, 0, null, "call"]
     },
     _Future__propagateToListeners_handleWhenCompleteCallback: {
-      "^": "Closure:0;_box_1,_box_0,listener,hasError",
+      "^": "Closure:1;_box_1,_box_0,listener,hasError",
       call$0: function() {
         var completeResult, e, s, t1, exception, t2, originalSource;
         completeResult = null;
@@ -6048,13 +6801,13 @@
       }
     },
     _Future__propagateToListeners_handleWhenCompleteCallback_closure: {
-      "^": "Closure:53;originalSource",
+      "^": "Closure:90;originalSource",
       call$1: [function(_) {
         return this.originalSource;
-      }, null, null, 4, 0, null, 2, "call"]
+      }, null, null, 4, 0, null, 0, "call"]
     },
     _Future__propagateToListeners_handleValueCallback: {
-      "^": "Closure:0;_box_0,listener,sourceResult",
+      "^": "Closure:1;_box_0,listener,sourceResult",
       call$0: function() {
         var e, s, t1, t2, t3, t4, exception;
         try {
@@ -6074,7 +6827,7 @@
       }
     },
     _Future__propagateToListeners_handleError: {
-      "^": "Closure:0;_box_1,_box_0,listener",
+      "^": "Closure:1;_box_1,_box_0,listener",
       call$0: function() {
         var asyncError, e, s, t1, t2, exception, t3, t4;
         try {
@@ -6112,20 +6865,53 @@
         t1.count = 0;
         this.listen$4$cancelOnError$onDone$onError(new P.Stream_length_closure(t1, this), true, new P.Stream_length_closure0(t1, future), future.get$_completeError());
         return future;
+      },
+      distinct$1: function(equals) {
+        var t1 = H.getRuntimeTypeArgument(this, "Stream", 0);
+        return new P._DistinctStream(H.functionTypeCheck(equals, {func: 1, ret: P.bool, args: [t1, t1]}), this, [t1]);
+      }
+    },
+    Stream_Stream$fromFuture_closure: {
+      "^": "Closure;controller,T",
+      call$1: [function(value) {
+        var t1 = this.controller;
+        t1._add$1(0, H.assertSubtypeOfRuntimeType(value, this.T));
+        t1._closeUnchecked$0();
+      }, null, null, 4, 0, null, 1, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [this.T]};
+      }
+    },
+    Stream_Stream$fromFuture_closure0: {
+      "^": "Closure:4;controller",
+      call$2: [function(error, stackTrace) {
+        var t1 = this.controller;
+        t1._addError$2(error, H.interceptedTypeCheck(stackTrace, "$isStackTrace"));
+        t1._closeUnchecked$0();
+      }, null, null, 8, 0, null, 4, 5, "call"]
+    },
+    Stream_Stream$fromIterable_closure: {
+      "^": "Closure;elements,T",
+      call$0: function() {
+        var t1 = this.elements;
+        return new P._IterablePendingEvents(new J.ArrayIterator(t1, 1, 0, [H.getTypeArgumentByIndex(t1, 0)]), 0, [this.T]);
+      },
+      $signature: function() {
+        return {func: 1, ret: [P._IterablePendingEvents, this.T]};
       }
     },
     Stream_length_closure: {
       "^": "Closure;_box_0,$this",
       call$1: [function(_) {
-        H.assertSubtypeOfRuntimeType(_, H.getTypeArgumentByIndex(this.$this, 0));
+        H.assertSubtypeOfRuntimeType(_, H.getRuntimeTypeArgument(this.$this, "Stream", 0));
         ++this._box_0.count;
-      }, null, null, 4, 0, null, 2, "call"],
+      }, null, null, 4, 0, null, 0, "call"],
       $signature: function() {
-        return {func: 1, ret: P.Null, args: [H.getTypeArgumentByIndex(this.$this, 0)]};
+        return {func: 1, ret: P.Null, args: [H.getRuntimeTypeArgument(this.$this, "Stream", 0)]};
       }
     },
     Stream_length_closure0: {
-      "^": "Closure:1;_box_0,future",
+      "^": "Closure:0;_box_0,future",
       call$0: [function() {
         this.future._complete$1(this._box_0.count);
       }, null, null, 0, 0, null, "call"]
@@ -6137,7 +6923,8 @@
       "^": "Object;$ti"
     },
     StreamTransformerBase: {
-      "^": "Object;"
+      "^": "Object;",
+      $isStreamTransformer: 1
     },
     _StreamController: {
       "^": "Object;_state<,$ti",
@@ -6145,10 +6932,10 @@
         if ((this._state & 8) === 0)
           return H.assertSubtype(this._varData, "$is_PendingEvents", this.$ti, "$as_PendingEvents");
         var t1 = this.$ti;
-        return H.assertSubtype(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").get$varData(), "$is_PendingEvents", t1, "$as_PendingEvents");
+        return H.assertSubtype(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").varData, "$is_PendingEvents", t1, "$as_PendingEvents");
       },
       _ensurePendingEvents$0: function() {
-        var t1, state;
+        var t1, state, t2;
         if ((this._state & 8) === 0) {
           t1 = this._varData;
           if (t1 == null) {
@@ -6159,13 +6946,17 @@
         }
         t1 = this.$ti;
         state = H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState");
-        state.get$varData();
-        return H.assertSubtype(state.get$varData(), "$is_StreamImplEvents", t1, "$as_StreamImplEvents");
+        t2 = state.varData;
+        if (t2 == null) {
+          t2 = new P._StreamImplEvents(0, t1);
+          state.varData = t2;
+        }
+        return H.assertSubtype(t2, "$is_StreamImplEvents", t1, "$as_StreamImplEvents");
       },
       get$_subscription: function() {
         if ((this._state & 8) !== 0) {
           var t1 = this.$ti;
-          return H.assertSubtype(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").get$varData(), "$is_ControllerSubscription", t1, "$as_ControllerSubscription");
+          return H.assertSubtype(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").varData, "$is_ControllerSubscription", t1, "$as_ControllerSubscription");
         }
         return H.assertSubtype(this._varData, "$is_ControllerSubscription", this.$ti, "$as_ControllerSubscription");
       },
@@ -6173,6 +6964,29 @@
         if ((this._state & 4) !== 0)
           return new P.StateError("Cannot add event after closing");
         return new P.StateError("Cannot add event while adding a stream");
+      },
+      addStream$2$cancelOnError: function(_, source, cancelOnError) {
+        var t1, t2, t3, t4, t5;
+        t1 = this.$ti;
+        H.assertSubtype(source, "$isStream", t1, "$asStream");
+        t2 = this._state;
+        if (t2 >= 4)
+          throw H.wrapException(this._badEventState$0());
+        if ((t2 & 2) !== 0) {
+          t1 = new P._Future(0, $.Zone__current, [null]);
+          t1._asyncComplete$1(null);
+          return t1;
+        }
+        t2 = this._varData;
+        H.assertSubtype(source, "$isStream", t1, "$asStream");
+        t3 = new P._Future(0, $.Zone__current, [null]);
+        t4 = source.listen$4$cancelOnError$onDone$onError(this.get$_add(this), false, this.get$_async$_close(), this.get$_addError());
+        t5 = this._state;
+        if ((t5 & 1) !== 0 ? (this.get$_subscription()._state & 4) !== 0 : (t5 & 2) === 0)
+          t4.pause$0(0);
+        this._varData = new P._StreamControllerAddStreamState(t2, t3, t4, t1);
+        this._state |= 8;
+        return t3;
       },
       _ensureDoneFuture$0: function() {
         var t1 = this._doneFuture;
@@ -6182,16 +6996,26 @@
         }
         return t1;
       },
-      add$1: function(_, value) {
-        var t1;
+      add$1: [function(_, value) {
         H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
-        t1 = this._state;
-        if (t1 >= 4)
+        if (this._state >= 4)
           throw H.wrapException(this._badEventState$0());
-        if ((t1 & 1) !== 0)
-          this._sendData$1(value);
-        else if ((t1 & 3) === 0)
-          this._ensurePendingEvents$0().add$1(0, new P._DelayedData(value, this.$ti));
+        this._add$1(0, value);
+      }, "call$1", "get$add", 5, 0, 8, 1],
+      addError$2: function(error, stackTrace) {
+        var replacement;
+        if (this._state >= 4)
+          throw H.wrapException(this._badEventState$0());
+        if (error == null)
+          error = new P.NullThrownError();
+        replacement = $.Zone__current.errorCallback$2(error, stackTrace);
+        if (replacement != null) {
+          error = replacement.error;
+          if (error == null)
+            error = new P.NullThrownError();
+          stackTrace = replacement.stackTrace;
+        }
+        this._addError$2(error, stackTrace);
       },
       close$0: function(_) {
         var t1 = this._state;
@@ -6199,15 +7023,17 @@
           return this._ensureDoneFuture$0();
         if (t1 >= 4)
           throw H.wrapException(this._badEventState$0());
-        t1 |= 4;
-        this._state = t1;
+        this._closeUnchecked$0();
+        return this._ensureDoneFuture$0();
+      },
+      _closeUnchecked$0: function() {
+        var t1 = this._state |= 4;
         if ((t1 & 1) !== 0)
           this._sendDone$0();
         else if ((t1 & 3) === 0)
           this._ensurePendingEvents$0().add$1(0, C.C__DelayedDone);
-        return this._ensureDoneFuture$0();
       },
-      _add$1: function(_, value) {
+      _add$1: [function(_, value) {
         var t1;
         H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
         t1 = this._state;
@@ -6215,14 +7041,22 @@
           this._sendData$1(value);
         else if ((t1 & 3) === 0)
           this._ensurePendingEvents$0().add$1(0, new P._DelayedData(value, this.$ti));
-      },
-      _addError$2: function(error, stackTrace) {
-        var t1 = this._state;
+      }, "call$1", "get$_add", 5, 0, 8, 1],
+      _addError$2: [function(error, stackTrace) {
+        var t1;
+        H.interceptedTypeCheck(stackTrace, "$isStackTrace");
+        t1 = this._state;
         if ((t1 & 1) !== 0)
           this._sendError$2(error, stackTrace);
         else if ((t1 & 3) === 0)
           this._ensurePendingEvents$0().add$1(0, new P._DelayedError(error, stackTrace));
-      },
+      }, "call$2", "get$_addError", 8, 0, 108, 4, 5],
+      _async$_close$0: [function() {
+        var addState = H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", this.$ti, "$as_StreamControllerAddStreamState");
+        this._varData = addState.varData;
+        this._state &= 4294967287;
+        addState.addStreamFuture._asyncComplete$1(null);
+      }, "call$0", "get$_async$_close", 0, 0, 1],
       _subscribe$4: function(onData, onError, onDone, cancelOnError) {
         var t1, t2, t3, t4, subscription, pendingEvents, addState;
         t1 = H.getTypeArgumentByIndex(this, 0);
@@ -6239,8 +7073,8 @@
         t1 = this._state |= 1;
         if ((t1 & 8) !== 0) {
           addState = H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t4, "$as_StreamControllerAddStreamState");
-          addState.set$varData(subscription);
-          C.JSNull_methods.resume$0(addState);
+          addState.varData = subscription;
+          addState.addSubscription.resume$0(0);
         } else
           this._varData = subscription;
         subscription._setPendingEvents$1(pendingEvents);
@@ -6248,14 +7082,28 @@
         return subscription;
       },
       _recordCancel$1: function(subscription) {
-        var result, t1;
+        var result, e, s, t1, exception, result0;
         t1 = this.$ti;
         H.assertSubtype(subscription, "$isStreamSubscription", t1, "$asStreamSubscription");
         result = null;
         if ((this._state & 8) !== 0)
-          result = C.JSNull_methods.cancel$0(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState"));
+          result = H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").cancel$0(0);
         this._varData = null;
         this._state = this._state & 4294967286 | 2;
+        t1 = this.onCancel;
+        if (t1 != null)
+          if (result == null)
+            try {
+              result = H.interceptedTypeCheck(this.onCancel.call$0(), "$isFuture");
+            } catch (exception) {
+              e = H.unwrapException(exception);
+              s = H.getTraceFromException(exception);
+              result0 = new P._Future(0, $.Zone__current, [null]);
+              result0._asyncCompleteError$2(e, s);
+              result = result0;
+            }
+          else
+            result = result.whenComplete$1(t1);
         t1 = new P._StreamController__recordCancel_complete(this);
         if (result != null)
           result = result.whenComplete$1(t1);
@@ -6267,14 +7115,14 @@
         var t1 = this.$ti;
         H.assertSubtype(subscription, "$isStreamSubscription", t1, "$asStreamSubscription");
         if ((this._state & 8) !== 0)
-          C.JSNull_methods.pause$0(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState"));
+          H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").addSubscription.pause$0(0);
         P._runGuarded(this.onPause);
       },
       _recordResume$1: function(subscription) {
         var t1 = this.$ti;
         H.assertSubtype(subscription, "$isStreamSubscription", t1, "$asStreamSubscription");
         if ((this._state & 8) !== 0)
-          C.JSNull_methods.resume$0(H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState"));
+          H.assertSubtype(this._varData, "$is_StreamControllerAddStreamState", t1, "$as_StreamControllerAddStreamState").addSubscription.resume$0(0);
         P._runGuarded(this.onResume);
       },
       $isEventSink: 1,
@@ -6284,18 +7132,31 @@
       $is_EventDispatch: 1
     },
     _StreamController__subscribe_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: function() {
         P._runGuarded(this.$this.onListen);
       }
     },
     _StreamController__recordCancel_complete: {
-      "^": "Closure:0;$this",
+      "^": "Closure:1;$this",
       call$0: [function() {
         var t1 = this.$this._doneFuture;
         if (t1 != null && t1._state === 0)
           t1._asyncComplete$1(null);
       }, null, null, 0, 0, null, "call"]
+    },
+    _SyncStreamControllerDispatch: {
+      "^": "Object;$ti",
+      _sendData$1: function(data) {
+        H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0));
+        this.get$_subscription()._add$1(0, data);
+      },
+      _sendError$2: function(error, stackTrace) {
+        this.get$_subscription()._addError$2(error, stackTrace);
+      },
+      _sendDone$0: function() {
+        this.get$_subscription()._async$_close$0();
+      }
     },
     _AsyncStreamControllerDispatch: {
       "^": "Object;$ti",
@@ -6314,8 +7175,14 @@
     _AsyncStreamController: {
       "^": "_StreamController+_AsyncStreamControllerDispatch;0_varData,_state,0_doneFuture,onListen,onPause,onResume,onCancel,$ti"
     },
+    _SyncStreamController: {
+      "^": "_StreamController+_SyncStreamControllerDispatch;0_varData,_state,0_doneFuture,onListen,onPause,onResume,onCancel,$ti"
+    },
     _ControllerStream: {
       "^": "_StreamImpl;_controller,$ti",
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        return this._controller._subscribe$4(H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), cancelOnError);
+      },
       get$hashCode: function(_) {
         return (H.Primitives_objectHashCode(this._controller) ^ 892482866) >>> 0;
       },
@@ -6336,13 +7203,33 @@
       },
       _onPause$0: [function() {
         this._controller._recordPause$1(this);
-      }, "call$0", "get$_onPause", 0, 0, 0],
+      }, "call$0", "get$_onPause", 0, 0, 1],
       _onResume$0: [function() {
         this._controller._recordResume$1(this);
-      }, "call$0", "get$_onResume", 0, 0, 0]
+      }, "call$0", "get$_onResume", 0, 0, 1]
+    },
+    _AddStreamState: {
+      "^": "Object;$ti",
+      cancel$0: function(_) {
+        var cancel = this.addSubscription.cancel$0(0);
+        if (cancel == null) {
+          this.addStreamFuture._asyncComplete$1(null);
+          return;
+        }
+        return cancel.whenComplete$1(new P._AddStreamState_cancel_closure(this));
+      }
+    },
+    _AddStreamState_cancel_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        this.$this.addStreamFuture._asyncComplete$1(null);
+      }, null, null, 0, 0, null, "call"]
+    },
+    _StreamControllerAddStreamState: {
+      "^": "_AddStreamState;varData,addStreamFuture,addSubscription,$ti"
     },
     _BufferingStreamSubscription: {
-      "^": "Object;0_onData,0_onDone,_state<,0_pending,$ti",
+      "^": "Object;0_onData,0_async$_onError,0_onDone,_zone,_state<,0_cancelFuture,0_pending,$ti",
       set$_onData: function(_onData) {
         this._onData = H.functionTypeCheck(_onData, {func: 1, ret: -1, args: [H.getRuntimeTypeArgument(this, "_BufferingStreamSubscription", 0)]});
       },
@@ -6353,11 +7240,12 @@
         this._pending = H.assertSubtype(_pending, "$is_PendingEvents", [H.getRuntimeTypeArgument(this, "_BufferingStreamSubscription", 0)], "$as_PendingEvents");
       },
       _BufferingStreamSubscription$4: function(onData, onError, onDone, cancelOnError, $T) {
-        var t1, t2, handleError, handleDone;
+        var t1, handleData, t2, handleError, handleDone;
         t1 = H.getRuntimeTypeArgument(this, "_BufferingStreamSubscription", 0);
         H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
+        handleData = onData == null ? P.async___nullDataHandler$closure() : onData;
         t2 = this._zone;
-        this.set$_onData(t2.registerUnaryCallback$2$1(onData, null, t1));
+        this.set$_onData(t2.registerUnaryCallback$2$1(handleData, null, t1));
         handleError = onError == null ? P.async___nullErrorHandler$closure() : onError;
         if (H.functionTypeTest(handleError, {func: 1, ret: -1, args: [P.Object, P.StackTrace]}))
           this._async$_onError = t2.registerBinaryCallback$3$1(handleError, null, P.Object, P.StackTrace);
@@ -6374,7 +7262,7 @@
         if (pendingEvents == null)
           return;
         this.set$_pending(pendingEvents);
-        if (pendingEvents.lastPendingEvent != null) {
+        if (!pendingEvents.get$isEmpty(pendingEvents)) {
           this._state = (this._state | 64) >>> 0;
           this._pending.schedule$1(this);
         }
@@ -6404,15 +7292,21 @@
         if (t1 >= 128) {
           t1 -= 128;
           this._state = t1;
-          if (t1 < 128)
-            if ((t1 & 64) !== 0 && this._pending.lastPendingEvent != null)
+          if (t1 < 128) {
+            if ((t1 & 64) !== 0) {
+              t1 = this._pending;
+              t1 = !t1.get$isEmpty(t1);
+            } else
+              t1 = false;
+            if (t1)
               this._pending.schedule$1(this);
             else {
-              t1 = (t1 & 4294967291) >>> 0;
+              t1 = (this._state & 4294967291) >>> 0;
               this._state = t1;
               if ((t1 & 32) === 0)
                 this._guardCallback$1(this.get$_onResume());
             }
+          }
         }
       },
       cancel$0: function(_) {
@@ -6457,7 +7351,7 @@
         else
           this._addPending$1(new P._DelayedError(error, stackTrace));
       }],
-      _close$0: function() {
+      _async$_close$0: ["super$_BufferingStreamSubscription$_close", function() {
         var t1 = this._state;
         if ((t1 & 8) !== 0)
           return;
@@ -6467,11 +7361,11 @@
           this._sendDone$0();
         else
           this._addPending$1(C.C__DelayedDone);
-      },
+      }],
       _onPause$0: [function() {
-      }, "call$0", "get$_onPause", 0, 0, 0],
+      }, "call$0", "get$_onPause", 0, 0, 1],
       _onResume$0: [function() {
-      }, "call$0", "get$_onResume", 0, 0, 0],
+      }, "call$0", "get$_onResume", 0, 0, 1],
       _async$_onCancel$0: function() {
         return;
       },
@@ -6504,6 +7398,7 @@
       },
       _sendError$2: function(error, stackTrace) {
         var t1, t2;
+        H.interceptedTypeCheck(stackTrace, "$isStackTrace");
         t1 = this._state;
         t2 = new P._BufferingStreamSubscription__sendError_sendError(this, error, stackTrace);
         if ((t1 & 1) !== 0) {
@@ -6540,25 +7435,28 @@
         this._checkState$1((t1 & 4) !== 0);
       },
       _checkState$1: function(wasInputPaused) {
-        var t1, t2, isInputPaused;
-        t1 = this._state;
-        if ((t1 & 64) !== 0 && this._pending.lastPendingEvent == null) {
-          t1 = (t1 & 4294967231) >>> 0;
+        var t1, isInputPaused;
+        if ((this._state & 64) !== 0) {
+          t1 = this._pending;
+          t1 = t1.get$isEmpty(t1);
+        } else
+          t1 = false;
+        if (t1) {
+          t1 = (this._state & 4294967231) >>> 0;
           this._state = t1;
           if ((t1 & 4) !== 0)
             if (t1 < 128) {
-              t2 = this._pending;
-              t2 = t2 == null || t2.lastPendingEvent == null;
+              t1 = this._pending;
+              t1 = t1 == null || t1.get$isEmpty(t1);
             } else
-              t2 = false;
+              t1 = false;
           else
-            t2 = false;
-          if (t2) {
-            t1 = (t1 & 4294967291) >>> 0;
-            this._state = t1;
-          }
+            t1 = false;
+          if (t1)
+            this._state = (this._state & 4294967291) >>> 0;
         }
         for (; true; wasInputPaused = isInputPaused) {
+          t1 = this._state;
           if ((t1 & 8) !== 0) {
             this.set$_pending(null);
             return;
@@ -6571,18 +7469,28 @@
             this._onPause$0();
           else
             this._onResume$0();
-          t1 = (this._state & 4294967263) >>> 0;
-          this._state = t1;
+          this._state = (this._state & 4294967263) >>> 0;
         }
+        t1 = this._state;
         if ((t1 & 64) !== 0 && t1 < 128)
           this._pending.schedule$1(this);
       },
       $isStreamSubscription: 1,
       $is_EventSink: 1,
-      $is_EventDispatch: 1
+      $is_EventDispatch: 1,
+      static: {
+        _BufferingStreamSubscription$: function(onData, onError, onDone, cancelOnError, $T) {
+          var t1, t2;
+          t1 = $.Zone__current;
+          t2 = cancelOnError ? 1 : 0;
+          t2 = new P._BufferingStreamSubscription(t1, t2, [$T]);
+          t2._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, $T);
+          return t2;
+        }
+      }
     },
     _BufferingStreamSubscription__sendError_sendError: {
-      "^": "Closure:0;$this,error,stackTrace",
+      "^": "Closure:1;$this,error,stackTrace",
       call$0: [function() {
         var t1, t2, onError, t3, t4;
         t1 = this.$this;
@@ -6602,7 +7510,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     _BufferingStreamSubscription__sendDone_sendDone: {
-      "^": "Closure:0;$this",
+      "^": "Closure:1;$this",
       call$0: [function() {
         var t1, t2;
         t1 = this.$this;
@@ -6617,15 +7525,66 @@
     _StreamImpl: {
       "^": "Stream;$ti",
       listen$4$cancelOnError$onDone$onError: function(onData, cancelOnError, onDone, onError) {
-        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]});
-        H.functionTypeCheck(onDone, {func: 1, ret: -1});
-        return this._controller._subscribe$4(H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]}), onError, onDone, true === cancelOnError);
+        return this._createSubscription$4(H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), true === cancelOnError);
       },
       listen$1: function(onData) {
         return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
       },
       listen$3$onDone$onError: function(onData, onDone, onError) {
         return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
+      },
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        var t1 = H.getTypeArgumentByIndex(this, 0);
+        return P._BufferingStreamSubscription$(H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), cancelOnError, t1);
+      }
+    },
+    _GeneratedStreamImpl: {
+      "^": "_StreamImpl;_pending,_isUsed,$ti",
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        var t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
+        H.functionTypeCheck(onDone, {func: 1, ret: -1});
+        if (this._isUsed)
+          throw H.wrapException(P.StateError$("Stream has already been listened to."));
+        this._isUsed = true;
+        t1 = P._BufferingStreamSubscription$(onData, onError, onDone, cancelOnError, t1);
+        t1._setPendingEvents$1(this._pending.call$0());
+        return t1;
+      }
+    },
+    _IterablePendingEvents: {
+      "^": "_PendingEvents;_async$_iterator,_state,$ti",
+      set$_async$_iterator: function(_iterator) {
+        this._async$_iterator = H.assertSubtype(_iterator, "$isIterator", this.$ti, "$asIterator");
+      },
+      get$isEmpty: function(_) {
+        return this._async$_iterator == null;
+      },
+      handleNext$1: function(dispatch) {
+        var hasMore, e, s, t1, exception;
+        H.assertSubtype(dispatch, "$is_EventDispatch", this.$ti, "$as_EventDispatch");
+        t1 = this._async$_iterator;
+        if (t1 == null)
+          throw H.wrapException(P.StateError$("No events pending."));
+        hasMore = null;
+        try {
+          hasMore = t1.moveNext$0();
+          if (hasMore) {
+            t1 = this._async$_iterator;
+            dispatch._sendData$1(t1.get$current(t1));
+          } else {
+            this.set$_async$_iterator(null);
+            dispatch._sendDone$0();
+          }
+        } catch (exception) {
+          e = H.unwrapException(exception);
+          s = H.getTraceFromException(exception);
+          if (hasMore == null) {
+            this.set$_async$_iterator(C.C_EmptyIterator);
+            dispatch._sendError$2(e, s);
+          } else
+            dispatch._sendError$2(e, s);
+        }
       }
     },
     _DelayedEvent: {
@@ -6678,25 +7637,22 @@
       }
     },
     _PendingEvents_schedule_closure: {
-      "^": "Closure:1;$this,dispatch",
+      "^": "Closure:0;$this,dispatch",
       call$0: [function() {
-        var t1, oldState, t2, $event, t3;
+        var t1, oldState;
         t1 = this.$this;
         oldState = t1._state;
         t1._state = 0;
         if (oldState === 3)
           return;
-        t2 = H.assertSubtype(this.dispatch, "$is_EventDispatch", [H.getTypeArgumentByIndex(t1, 0)], "$as_EventDispatch");
-        $event = t1.firstPendingEvent;
-        t3 = $event.get$next($event);
-        t1.firstPendingEvent = t3;
-        if (t3 == null)
-          t1.lastPendingEvent = null;
-        $event.perform$1(t2);
+        t1.handleNext$1(this.dispatch);
       }, null, null, 0, 0, null, "call"]
     },
     _StreamImplEvents: {
       "^": "_PendingEvents;0firstPendingEvent,0lastPendingEvent,_state,$ti",
+      get$isEmpty: function(_) {
+        return this.lastPendingEvent == null;
+      },
       add$1: function(_, $event) {
         var t1;
         H.interceptedTypeCheck($event, "$is_DelayedEvent");
@@ -6708,6 +7664,16 @@
           t1.set$next(0, $event);
           this.lastPendingEvent = $event;
         }
+      },
+      handleNext$1: function(dispatch) {
+        var $event, t1;
+        H.assertSubtype(dispatch, "$is_EventDispatch", this.$ti, "$as_EventDispatch");
+        $event = this.firstPendingEvent;
+        t1 = $event.get$next($event);
+        this.firstPendingEvent = t1;
+        if (t1 == null)
+          this.lastPendingEvent = null;
+        $event.perform$1(dispatch);
       }
     },
     _DoneStreamSubscription: {
@@ -6742,36 +7708,131 @@
         if (t1 >= 4)
           return;
         this._state = (t1 | 1) >>> 0;
-        this._zone.runGuarded$1(this._onDone);
-      }, "call$0", "get$_sendDone", 0, 0, 0],
+        t1 = this._onDone;
+        if (t1 != null)
+          this._zone.runGuarded$1(t1);
+      }, "call$0", "get$_sendDone", 0, 0, 1],
       $isStreamSubscription: 1
+    },
+    _AsBroadcastStream: {
+      "^": "Stream;_async$_source,_onListenHandler,_onCancelHandler,_zone,0_controller,0_subscription,$ti",
+      set$_controller: function(_controller) {
+        this._controller = H.assertSubtype(_controller, "$is_AsBroadcastStreamController", this.$ti, "$as_AsBroadcastStreamController");
+      },
+      set$_subscription: function(_subscription) {
+        this._subscription = H.assertSubtype(_subscription, "$isStreamSubscription", this.$ti, "$asStreamSubscription");
+      },
+      listen$4$cancelOnError$onDone$onError: function(onData, cancelOnError, onDone, onError) {
+        var t1, t2, t3;
+        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]});
+        H.functionTypeCheck(onDone, {func: 1, ret: -1});
+        t1 = this._controller;
+        if (t1 == null || (t1._state & 4) !== 0) {
+          t1 = new P._DoneStreamSubscription($.Zone__current, 0, onDone, this.$ti);
+          t1._schedule$0();
+          return t1;
+        }
+        if (this._subscription == null) {
+          t2 = t1.get$add(t1);
+          t3 = t1.get$addError();
+          this.set$_subscription(this._async$_source.listen$3$onDone$onError(t2, t1.get$close(t1), t3));
+        }
+        return this._controller._subscribe$4(onData, onError, onDone, true === cancelOnError);
+      },
+      listen$1: function(onData) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
+      },
+      listen$3$onDone$onError: function(onData, onDone, onError) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
+      },
+      _async$_onCancel$0: [function() {
+        var t1, shutdown;
+        t1 = this._controller;
+        shutdown = t1 == null || (t1._state & 4) !== 0;
+        t1 = this._onCancelHandler;
+        if (t1 != null)
+          this._zone.runUnary$2$2(t1, new P._BroadcastSubscriptionWrapper(this, this.$ti), -1, [P._BroadcastSubscriptionWrapper, H.getTypeArgumentByIndex(this, 0)]);
+        if (shutdown) {
+          t1 = this._subscription;
+          if (t1 != null) {
+            t1.cancel$0(0);
+            this.set$_subscription(null);
+          }
+        }
+      }, "call$0", "get$_async$_onCancel", 0, 0, 1],
+      _onListen$0: [function() {
+        var t1 = this._onListenHandler;
+        if (t1 != null)
+          this._zone.runUnary$2$2(t1, new P._BroadcastSubscriptionWrapper(this, this.$ti), -1, [P._BroadcastSubscriptionWrapper, H.getTypeArgumentByIndex(this, 0)]);
+      }, "call$0", "get$_onListen", 0, 0, 1],
+      _cancelSubscription$0: function() {
+        var t1 = this._subscription;
+        if (t1 == null)
+          return;
+        this.set$_subscription(null);
+        this.set$_controller(null);
+        t1.cancel$0(0);
+      },
+      _pauseSubscription$1: function(resumeSignal) {
+        var t1 = this._subscription;
+        if (t1 == null)
+          return;
+        t1.pause$1(0, resumeSignal);
+      },
+      _resumeSubscription$0: function() {
+        var t1 = this._subscription;
+        if (t1 == null)
+          return;
+        t1.resume$0(0);
+      }
+    },
+    _BroadcastSubscriptionWrapper: {
+      "^": "Object;_stream,$ti",
+      pause$1: function(_, resumeSignal) {
+        this._stream._pauseSubscription$1(resumeSignal);
+      },
+      pause$0: function($receiver) {
+        return this.pause$1($receiver, null);
+      },
+      resume$0: function(_) {
+        this._stream._resumeSubscription$0();
+      },
+      cancel$0: function(_) {
+        this._stream._cancelSubscription$0();
+        return $.$get$Future__nullFuture();
+      },
+      $isStreamSubscription: 1
+    },
+    _StreamIterator: {
+      "^": "Object;0_subscription,_stateData,_isPaused,$ti"
     },
     _ForwardingStream: {
       "^": "Stream;$ti",
       listen$4$cancelOnError$onDone$onError: function(onData, cancelOnError, onDone, onError) {
-        var t1, t2, t3, t4;
-        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getRuntimeTypeArgument(this, "_ForwardingStream", 1)]});
-        H.functionTypeCheck(onDone, {func: 1, ret: -1});
-        cancelOnError = true === cancelOnError;
-        t1 = H.getTypeArgumentByIndex(this, 0);
-        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
-        t2 = $.$get$_DistinctStream__SENTINEL();
-        t3 = $.Zone__current;
-        t4 = cancelOnError ? 1 : 0;
-        t4 = new P._StateStreamSubscription(t2, this, t3, t4, [t1]);
-        t4._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, t1);
-        t4._ForwardingStreamSubscription$5(this, onData, onError, onDone, cancelOnError, t1, t1);
-        return t4;
+        return this._createSubscription$4(H.functionTypeCheck(onData, {func: 1, ret: -1, args: [H.getRuntimeTypeArgument(this, "_ForwardingStream", 1)]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), true === cancelOnError);
+      },
+      listen$1: function(onData) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
       },
       listen$3$onDone$onError: function(onData, onDone, onError) {
         return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
+      },
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        var t1 = H.getRuntimeTypeArgument(this, "_ForwardingStream", 1);
+        return P._ForwardingStreamSubscription$(this, H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), cancelOnError, H.getRuntimeTypeArgument(this, "_ForwardingStream", 0), t1);
+      },
+      _handleData$2: function(data, sink) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(data, H.getRuntimeTypeArgument(this, "_ForwardingStream", 0));
+        t1 = H.getRuntimeTypeArgument(this, "_ForwardingStream", 1);
+        H.assertSubtype(sink, "$is_EventSink", [t1], "$as_EventSink")._add$1(0, H.assertSubtypeOfRuntimeType(data, t1));
       },
       $asStream: function($S, $T) {
         return [$T];
       }
     },
     _ForwardingStreamSubscription: {
-      "^": "_BufferingStreamSubscription;0_subscription,$ti",
+      "^": "_BufferingStreamSubscription;_stream,0_subscription,0_onData,0_async$_onError,0_onDone,_zone,_state,0_cancelFuture,0_pending,$ti",
       set$_subscription: function(_subscription) {
         this._subscription = H.assertSubtype(_subscription, "$isStreamSubscription", [H.getRuntimeTypeArgument(this, "_ForwardingStreamSubscription", 0)], "$asStreamSubscription");
       },
@@ -6794,13 +7855,13 @@
         if (t1 == null)
           return;
         t1.pause$0(0);
-      }, "call$0", "get$_onPause", 0, 0, 0],
+      }, "call$0", "get$_onPause", 0, 0, 1],
       _onResume$0: [function() {
         var t1 = this._subscription;
         if (t1 == null)
           return;
         t1.resume$0(0);
-      }, "call$0", "get$_onResume", 0, 0, 0],
+      }, "call$0", "get$_onResume", 0, 0, 1],
       _async$_onCancel$0: function() {
         var t1 = this._subscription;
         if (t1 != null) {
@@ -6811,14 +7872,14 @@
       },
       _handleData$1: [function(data) {
         this._stream._handleData$2(H.assertSubtypeOfRuntimeType(data, H.getRuntimeTypeArgument(this, "_ForwardingStreamSubscription", 0)), this);
-      }, "call$1", "get$_handleData", 4, 0, 65, 35],
+      }, "call$1", "get$_handleData", 4, 0, 8, 9],
       _handleError$2: [function(error, stackTrace) {
         H.interceptedTypeCheck(stackTrace, "$isStackTrace");
         H.assertSubtype(this, "$is_EventSink", [H.getRuntimeTypeArgument(this._stream, "_ForwardingStream", 1)], "$as_EventSink")._addError$2(error, stackTrace);
-      }, "call$2", "get$_handleError", 8, 0, 66, 3, 6],
+      }, "call$2", "get$_handleError", 8, 0, 110, 4, 5],
       _handleDone$0: [function() {
-        H.assertSubtype(this, "$is_EventSink", [H.getRuntimeTypeArgument(this._stream, "_ForwardingStream", 1)], "$as_EventSink")._close$0();
-      }, "call$0", "get$_handleDone", 0, 0, 0],
+        H.assertSubtype(this, "$is_EventSink", [H.getRuntimeTypeArgument(this._stream, "_ForwardingStream", 1)], "$as_EventSink")._async$_close$0();
+      }, "call$0", "get$_handleDone", 0, 0, 1],
       $asStreamSubscription: function($S, $T) {
         return [$T];
       },
@@ -6830,6 +7891,59 @@
       },
       $as_BufferingStreamSubscription: function($S, $T) {
         return [$T];
+      },
+      static: {
+        _ForwardingStreamSubscription$: function(_stream, onData, onError, onDone, cancelOnError, $S, $T) {
+          var t1, t2;
+          t1 = $.Zone__current;
+          t2 = cancelOnError ? 1 : 0;
+          t2 = new P._ForwardingStreamSubscription(_stream, t1, t2, [$S, $T]);
+          t2._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, $T);
+          t2._ForwardingStreamSubscription$5(_stream, onData, onError, onDone, cancelOnError, $S, $T);
+          return t2;
+        }
+      }
+    },
+    _TakeStream: {
+      "^": "_ForwardingStream;_count,_async$_source,$ti",
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        var t1, t2, t3, t4;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
+        H.functionTypeCheck(onDone, {func: 1, ret: -1});
+        t2 = this._count;
+        if (t2 === 0) {
+          this._async$_source.listen$1(null).cancel$0(0);
+          t1 = new P._DoneStreamSubscription($.Zone__current, 0, onDone, this.$ti);
+          t1._schedule$0();
+          return t1;
+        }
+        t3 = $.Zone__current;
+        t4 = cancelOnError ? 1 : 0;
+        t4 = new P._StateStreamSubscription(t2, this, t3, t4, this.$ti);
+        t4._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, t1);
+        t4._ForwardingStreamSubscription$5(this, onData, onError, onDone, cancelOnError, t1, t1);
+        return t4;
+      },
+      _handleData$2: function(inputEvent, sink) {
+        var t1, count;
+        H.assertSubtypeOfRuntimeType(inputEvent, H.getTypeArgumentByIndex(this, 0));
+        t1 = this.$ti;
+        sink = H.assertSubtype(H.assertSubtype(sink, "$is_EventSink", t1, "$as_EventSink"), "$is_StateStreamSubscription", t1, "$as_StateStreamSubscription");
+        count = H.intTypeCheck(sink._sharedState);
+        if (typeof count !== "number")
+          return count.$gt();
+        if (count > 0) {
+          sink._add$1(0, inputEvent);
+          --count;
+          sink._sharedState = count;
+          if (count === 0)
+            sink._async$_close$0();
+        }
+      },
+      $asStream: null,
+      $as_ForwardingStream: function($T) {
+        return [$T, $T];
       }
     },
     _StateStreamSubscription: {
@@ -6844,8 +7958,21 @@
     },
     _DistinctStream: {
       "^": "_ForwardingStream;_equals,_async$_source,$ti",
+      _createSubscription$4: function(onData, onError, onDone, cancelOnError) {
+        var t1, t2, t3, t4;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
+        H.functionTypeCheck(onDone, {func: 1, ret: -1});
+        t2 = $.$get$_DistinctStream__SENTINEL();
+        t3 = $.Zone__current;
+        t4 = cancelOnError ? 1 : 0;
+        t4 = new P._StateStreamSubscription(t2, this, t3, t4, this.$ti);
+        t4._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, t1);
+        t4._ForwardingStreamSubscription$5(this, onData, onError, onDone, cancelOnError, t1, t1);
+        return t4;
+      },
       _handleData$2: function(inputEvent, sink) {
-        var previousEvent, isEqual, e, s, t1, t2, subscription, previous, isEqual0, exception, error, stackTrace, replacement;
+        var previousEvent, isEqual, e, s, t1, t2, subscription, previous, exception, error, stackTrace, replacement;
         t1 = H.getTypeArgumentByIndex(this, 0);
         H.assertSubtypeOfRuntimeType(inputEvent, t1);
         t2 = this.$ti;
@@ -6860,8 +7987,11 @@
           previousEvent = H.assertSubtypeOfRuntimeType(previous, t1);
           isEqual = null;
           try {
-            isEqual0 = this._equals.call$2(previousEvent, inputEvent);
-            isEqual = isEqual0;
+            t1 = this._equals;
+            if (t1 == null)
+              isEqual = J.$eq$(previousEvent, inputEvent);
+            else
+              isEqual = t1.call$2(previousEvent, inputEvent);
           } catch (exception) {
             e = H.unwrapException(exception);
             s = H.getTraceFromException(exception);
@@ -6887,6 +8017,157 @@
       $asStream: null,
       $as_ForwardingStream: function($T) {
         return [$T, $T];
+      }
+    },
+    _EventSinkWrapper: {
+      "^": "Object;_sink,$ti",
+      add$1: [function(_, data) {
+        var t1 = this._sink;
+        data = H.assertSubtypeOfRuntimeType(H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0)), H.getTypeArgumentByIndex(t1, 1));
+        if ((t1._state & 2) !== 0)
+          H.throwExpression(P.StateError$("Stream is already closed"));
+        t1.super$_BufferingStreamSubscription$_add(0, data);
+      }, "call$1", "get$add", 5, 0, 8, 9],
+      addError$2: function(error, stackTrace) {
+        var t1 = this._sink;
+        if ((t1._state & 2) !== 0)
+          H.throwExpression(P.StateError$("Stream is already closed"));
+        t1.super$_BufferingStreamSubscription$_addError(error, stackTrace);
+      },
+      close$0: function(_) {
+        var t1 = this._sink;
+        if ((t1._state & 2) !== 0)
+          H.throwExpression(P.StateError$("Stream is already closed"));
+        t1.super$_BufferingStreamSubscription$_close();
+      },
+      $isEventSink: 1
+    },
+    _SinkTransformerStreamSubscription: {
+      "^": "_BufferingStreamSubscription;0_transformerSink,0_subscription,0_onData,0_async$_onError,0_onDone,_zone,_state,0_cancelFuture,0_pending,$ti",
+      set$_transformerSink: function(_transformerSink) {
+        this._transformerSink = H.assertSubtype(_transformerSink, "$isEventSink", [H.getTypeArgumentByIndex(this, 0)], "$asEventSink");
+      },
+      set$_subscription: function(_subscription) {
+        this._subscription = H.assertSubtype(_subscription, "$isStreamSubscription", [H.getTypeArgumentByIndex(this, 0)], "$asStreamSubscription");
+      },
+      _add$1: function(_, data) {
+        H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 1));
+        if ((this._state & 2) !== 0)
+          throw H.wrapException(P.StateError$("Stream is already closed"));
+        this.super$_BufferingStreamSubscription$_add(0, data);
+      },
+      _addError$2: function(error, stackTrace) {
+        H.interceptedTypeCheck(stackTrace, "$isStackTrace");
+        if ((this._state & 2) !== 0)
+          throw H.wrapException(P.StateError$("Stream is already closed"));
+        this.super$_BufferingStreamSubscription$_addError(error, stackTrace);
+      },
+      _onPause$0: [function() {
+        var t1 = this._subscription;
+        if (t1 != null)
+          t1.pause$0(0);
+      }, "call$0", "get$_onPause", 0, 0, 1],
+      _onResume$0: [function() {
+        var t1 = this._subscription;
+        if (t1 != null)
+          t1.resume$0(0);
+      }, "call$0", "get$_onResume", 0, 0, 1],
+      _async$_onCancel$0: function() {
+        var t1 = this._subscription;
+        if (t1 != null) {
+          this.set$_subscription(null);
+          return t1.cancel$0(0);
+        }
+        return;
+      },
+      _handleData$1: [function(data) {
+        var e, s, exception, t1;
+        H.assertSubtypeOfRuntimeType(data, H.getTypeArgumentByIndex(this, 0));
+        try {
+          this._transformerSink.add$1(0, data);
+        } catch (exception) {
+          e = H.unwrapException(exception);
+          s = H.getTraceFromException(exception);
+          t1 = H.interceptedTypeCheck(s, "$isStackTrace");
+          if ((this._state & 2) !== 0)
+            H.throwExpression(P.StateError$("Stream is already closed"));
+          this.super$_BufferingStreamSubscription$_addError(e, t1);
+        }
+      }, "call$1", "get$_handleData", 4, 0, 8, 9],
+      _handleError$2: [function(error, stackTrace) {
+        var e, s, exception, t1;
+        try {
+          this._transformerSink.addError$2(error, H.interceptedTypeCheck(stackTrace, "$isStackTrace"));
+        } catch (exception) {
+          e = H.unwrapException(exception);
+          s = H.getTraceFromException(exception);
+          t1 = e;
+          if (t1 == null ? error == null : t1 === error) {
+            H.interceptedTypeCheck(stackTrace, "$isStackTrace");
+            if ((this._state & 2) !== 0)
+              H.throwExpression(P.StateError$("Stream is already closed"));
+            this.super$_BufferingStreamSubscription$_addError(error, stackTrace);
+          } else {
+            t1 = H.interceptedTypeCheck(s, "$isStackTrace");
+            if ((this._state & 2) !== 0)
+              H.throwExpression(P.StateError$("Stream is already closed"));
+            this.super$_BufferingStreamSubscription$_addError(e, t1);
+          }
+        }
+      }, function(error) {
+        return this._handleError$2(error, null);
+      }, "_handleError$1", "call$2", "call$1", "get$_handleError", 4, 2, 128, 3, 4, 5],
+      _handleDone$0: [function() {
+        var e, s, exception, t1;
+        try {
+          this.set$_subscription(null);
+          this._transformerSink.close$0(0);
+        } catch (exception) {
+          e = H.unwrapException(exception);
+          s = H.getTraceFromException(exception);
+          t1 = H.interceptedTypeCheck(s, "$isStackTrace");
+          if ((this._state & 2) !== 0)
+            H.throwExpression(P.StateError$("Stream is already closed"));
+          this.super$_BufferingStreamSubscription$_addError(e, t1);
+        }
+      }, "call$0", "get$_handleDone", 0, 0, 1],
+      $asStreamSubscription: function($S, $T) {
+        return [$T];
+      },
+      $as_EventSink: function($S, $T) {
+        return [$T];
+      },
+      $as_EventDispatch: function($S, $T) {
+        return [$T];
+      },
+      $as_BufferingStreamSubscription: function($S, $T) {
+        return [$T];
+      }
+    },
+    _BoundSinkStream: {
+      "^": "Stream;_sinkMapper,_stream,$ti",
+      listen$4$cancelOnError$onDone$onError: function(onData, cancelOnError, onDone, onError) {
+        var t1, t2, t3, subscription;
+        t1 = H.getTypeArgumentByIndex(this, 1);
+        H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
+        H.functionTypeCheck(onDone, {func: 1, ret: -1});
+        cancelOnError = true === cancelOnError;
+        t2 = $.Zone__current;
+        t3 = cancelOnError ? 1 : 0;
+        subscription = new P._SinkTransformerStreamSubscription(t2, t3, this.$ti);
+        subscription._BufferingStreamSubscription$4(onData, onError, onDone, cancelOnError, t1);
+        subscription.set$_transformerSink(this._sinkMapper.call$1(new P._EventSinkWrapper(subscription, [t1])));
+        subscription.set$_subscription(this._stream.listen$3$onDone$onError(subscription.get$_handleData(), subscription.get$_handleDone(), subscription.get$_handleError()));
+        return subscription;
+      },
+      listen$1: function(onData) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
+      },
+      listen$3$onDone$onError: function(onData, onDone, onError) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
+      },
+      $asStream: function($S, $T) {
+        return [$T];
       }
     },
     Timer: {
@@ -7144,9 +8425,9 @@
     },
     _CustomZone_bindCallback_closure: {
       "^": "Closure;$this,registered,R",
-      call$0: function() {
+      call$0: [function() {
         return this.$this.run$1$1(this.registered, this.R);
-      },
+      }, null, null, 0, 0, null, "call"],
       $signature: function() {
         return {func: 1, ret: this.R};
       }
@@ -7162,7 +8443,7 @@
       }
     },
     _CustomZone_bindCallbackGuarded_closure: {
-      "^": "Closure:0;$this,registered",
+      "^": "Closure:1;$this,registered",
       call$0: [function() {
         return this.$this.runGuarded$1(this.registered);
       }, null, null, 0, 0, null, "call"]
@@ -7172,13 +8453,13 @@
       call$1: [function(arg) {
         var t1 = this.T;
         return this.$this.runUnaryGuarded$1$2(this.registered, H.assertSubtypeOfRuntimeType(arg, t1), t1);
-      }, null, null, 4, 0, null, 9, "call"],
+      }, null, null, 4, 0, null, 18, "call"],
       $signature: function() {
         return {func: 1, ret: -1, args: [this.T]};
       }
     },
     _rootHandleUncaughtError_closure: {
-      "^": "Closure:1;_box_0,stackTrace",
+      "^": "Closure:0;_box_0,stackTrace",
       call$0: function() {
         var t1, t2, error;
         t1 = this._box_0;
@@ -7366,15 +8647,15 @@
     },
     _RootZone_bindCallback_closure: {
       "^": "Closure;$this,f,R",
-      call$0: function() {
+      call$0: [function() {
         return this.$this.run$1$1(this.f, this.R);
-      },
+      }, null, null, 0, 0, null, "call"],
       $signature: function() {
         return {func: 1, ret: this.R};
       }
     },
     _RootZone_bindCallbackGuarded_closure: {
-      "^": "Closure:0;$this,f",
+      "^": "Closure:1;$this,f",
       call$0: [function() {
         return this.$this.runGuarded$1(this.f);
       }, null, null, 0, 0, null, "call"]
@@ -7384,7 +8665,7 @@
       call$1: [function(arg) {
         var t1 = this.T;
         return this.$this.runUnaryGuarded$1$2(this.f, H.assertSubtypeOfRuntimeType(arg, t1), t1);
-      }, null, null, 4, 0, null, 9, "call"],
+      }, null, null, 4, 0, null, 18, "call"],
       $signature: function() {
         return {func: 1, ret: -1, args: [this.T]};
       }
@@ -7393,6 +8674,9 @@
     "^": "",
     HashMap_HashMap: function(equals, hashCode, isValidKey, $K, $V) {
       return new P._HashMap(0, [$K, $V]);
+    },
+    LinkedHashMap_LinkedHashMap: function(equals, hashCode, isValidKey, $K, $V) {
+      return new H.JsLinkedHashMap(0, 0, [$K, $V]);
     },
     LinkedHashMap_LinkedHashMap$_literal: function(keyValuePairs, $K, $V) {
       H.listTypeCheck(keyValuePairs);
@@ -7408,8 +8692,26 @@
       return H.fillLiteralMap(keyValuePairs, new H.JsLinkedHashMap(0, 0, [null, null]));
     },
     LinkedHashSet_LinkedHashSet: function(equals, hashCode, isValidKey, $E) {
-      return new P._LinkedHashSet(0, 0, [$E]);
+      H.functionTypeCheck(equals, {func: 1, ret: P.bool, args: [$E, $E]});
+      H.functionTypeCheck(hashCode, {func: 1, ret: P.int, args: [$E]});
+      if (hashCode == null) {
+        if (equals == null)
+          return new P._LinkedHashSet(0, 0, [$E]);
+        hashCode = P.collection___defaultHashCode$closure();
+      } else {
+        if (P.core__identityHashCode$closure() === hashCode && P.core__identical$closure() === equals)
+          return new P._LinkedIdentityHashSet(0, 0, [$E]);
+        if (equals == null)
+          equals = P.collection___defaultEquals$closure();
+      }
+      return P._LinkedCustomHashSet$(equals, hashCode, isValidKey, $E);
     },
+    _defaultEquals: [function(a, b) {
+      return J.$eq$(a, b);
+    }, "call$2", "collection___defaultEquals$closure", 8, 0, 150],
+    _defaultHashCode: [function(a) {
+      return J.get$hashCode$(a);
+    }, "call$1", "collection___defaultHashCode$closure", 4, 0, 151, 13],
     HashMap_HashMap$from: function(other, $K, $V) {
       var result = P.HashMap_HashMap(null, null, null, $K, $V);
       J.forEach$1$ax(other, new P.HashMap_HashMap$from_closure(result, $K, $V));
@@ -7553,7 +8855,7 @@
     },
     ListMixin__compareAny: [function(a, b) {
       return J.compareTo$1$ns(H.numberOrStringSuperNativeTypeCheck(a, "$isComparable"), H.numberOrStringSuperNativeTypeCheck(b, "$isComparable"));
-    }, "call$2", "collection_ListMixin__compareAny$closure", 8, 0, 38],
+    }, "call$2", "collection_ListMixin__compareAny$closure", 8, 0, 54],
     MapBase_mapToString: function(m) {
       var t1, result, t2;
       t1 = {};
@@ -7669,6 +8971,15 @@
             ++this._collection$_length;
             this._keys = null;
           }
+        }
+      },
+      clear$0: function(_) {
+        if (this._collection$_length > 0) {
+          this._keys = null;
+          this._collection$_rest = null;
+          this._collection$_nums = null;
+          this._collection$_strings = null;
+          this._collection$_length = 0;
         }
       },
       forEach$1: function(_, action) {
@@ -7800,6 +9111,9 @@
         var t1 = this._collection$_map;
         return new P._HashMapKeyIterator(t1, t1._computeKeys$0(), 0, this.$ti);
       },
+      contains$1: function(_, element) {
+        return this._collection$_map.containsKey$1(0, element);
+      },
       forEach$1: function(_, f) {
         var t1, keys, $length, i;
         H.functionTypeCheck(f, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]});
@@ -7875,23 +9189,26 @@
         return this._collection$_length === 0;
       },
       contains$1: function(_, object) {
-        var strings, t1;
+        var strings, nums;
         if (typeof object === "string" && object !== "__proto__") {
           strings = this._collection$_strings;
           if (strings == null)
             return false;
           return H.interceptedTypeCheck(strings[object], "$is_LinkedHashSetCell") != null;
-        } else {
-          t1 = this._contains$1(object);
-          return t1;
-        }
+        } else if (typeof object === "number" && (object & 0x3ffffff) === object) {
+          nums = this._collection$_nums;
+          if (nums == null)
+            return false;
+          return H.interceptedTypeCheck(nums[object], "$is_LinkedHashSetCell") != null;
+        } else
+          return this._contains$1(object);
       },
-      _contains$1: function(object) {
+      _contains$1: ["super$_LinkedHashSet$_contains", function(object) {
         var rest = this._collection$_rest;
         if (rest == null)
           return false;
         return this._findBucketIndex$2(this._getBucket$2(rest, object), object) >= 0;
-      },
+      }],
       forEach$1: function(_, action) {
         var t1, cell, modifications;
         t1 = H.getTypeArgumentByIndex(this, 0);
@@ -7904,6 +9221,12 @@
             throw H.wrapException(P.ConcurrentModificationError$(this));
           cell = cell._collection$_next;
         }
+      },
+      get$first: function(_) {
+        var t1 = this._collection$_first;
+        if (t1 == null)
+          throw H.wrapException(P.StateError$("No elements"));
+        return H.assertSubtypeOfRuntimeType(t1._collection$_element, H.getTypeArgumentByIndex(this, 0));
       },
       add$1: function(_, element) {
         var strings, nums;
@@ -7925,7 +9248,7 @@
         } else
           return this._collection$_add$1(0, element);
       },
-      _collection$_add$1: function(_, element) {
+      _collection$_add$1: ["super$_LinkedHashSet$_add", function(_, element) {
         var rest, hash, bucket;
         H.assertSubtypeOfRuntimeType(element, H.getTypeArgumentByIndex(this, 0));
         rest = this._collection$_rest;
@@ -7943,17 +9266,16 @@
           bucket.push(this._collection$_newLinkedCell$1(element));
         }
         return true;
-      },
+      }],
       remove$1: function(_, object) {
-        var t1;
-        if (object !== "__proto__")
+        if (typeof object === "string" && object !== "__proto__")
           return this._removeHashTableEntry$2(this._collection$_strings, object);
-        else {
-          t1 = this._remove$1(0, object);
-          return t1;
-        }
+        else if (typeof object === "number" && (object & 0x3ffffff) === object)
+          return this._removeHashTableEntry$2(this._collection$_nums, object);
+        else
+          return this._remove$1(0, object);
       },
-      _remove$1: function(_, object) {
+      _remove$1: ["super$_LinkedHashSet$_remove", function(_, object) {
         var rest, bucket, index;
         rest = this._collection$_rest;
         if (rest == null)
@@ -7964,7 +9286,7 @@
           return false;
         this._unlinkCell$1(bucket.splice(index, 1)[0]);
         return true;
-      },
+      }],
       _collection$_addHashTableEntry$2: function(table, element) {
         H.assertSubtypeOfRuntimeType(element, H.getTypeArgumentByIndex(this, 0));
         if (H.interceptedTypeCheck(table[element], "$is_LinkedHashSetCell") != null)
@@ -8033,6 +9355,7 @@
             return i;
         return -1;
       },
+      $isLinkedHashSet: 1,
       static: {
         _LinkedHashSet__newHashTable: function() {
           var table = Object.create(null);
@@ -8058,6 +9381,58 @@
             return i;
         }
         return -1;
+      }
+    },
+    _LinkedCustomHashSet: {
+      "^": "_LinkedHashSet;_equality,_hasher,_validKey,_collection$_length,0_collection$_strings,0_collection$_nums,0_collection$_rest,0_collection$_first,0_collection$_last,_collection$_modifications,$ti",
+      _findBucketIndex$2: function(bucket, element) {
+        var $length, t1, i, t2;
+        if (bucket == null)
+          return -1;
+        $length = bucket.length;
+        for (t1 = H.getTypeArgumentByIndex(this, 0), i = 0; i < $length; ++i) {
+          t2 = H.assertSubtypeOfRuntimeType(bucket[i]._collection$_element, t1);
+          H.assertSubtypeOfRuntimeType(element, t1);
+          if (this._equality.call$2(t2, element))
+            return i;
+        }
+        return -1;
+      },
+      _computeHashCode$1: function(element) {
+        H.assertSubtypeOfRuntimeType(element, H.getTypeArgumentByIndex(this, 0));
+        return this._hasher.call$1(element) & 0x3ffffff;
+      },
+      add$1: function(_, element) {
+        return this.super$_LinkedHashSet$_add(0, H.assertSubtypeOfRuntimeType(element, H.getTypeArgumentByIndex(this, 0)));
+      },
+      contains$1: function(_, object) {
+        if (!this._validKey.call$1(object))
+          return false;
+        return this.super$_LinkedHashSet$_contains(object);
+      },
+      remove$1: function(_, object) {
+        if (!this._validKey.call$1(object))
+          return false;
+        return this.super$_LinkedHashSet$_remove(0, object);
+      },
+      removeAll$1: function(elements) {
+        var t1, element;
+        for (t1 = J.get$iterator$ax(H.assertSubtype(elements, "$isIterable", [P.Object], "$asIterable")); t1.moveNext$0();) {
+          element = t1.get$current(t1);
+          if (this._validKey.call$1(element))
+            this.super$_LinkedHashSet$_remove(0, element);
+        }
+      },
+      static: {
+        _LinkedCustomHashSet$: function(_equality, _hasher, validKey, $E) {
+          return new P._LinkedCustomHashSet(_equality, _hasher, new P._LinkedCustomHashSet_closure($E), 0, 0, [$E]);
+        }
+      }
+    },
+    _LinkedCustomHashSet_closure: {
+      "^": "Closure:154;E",
+      call$1: function(x) {
+        return H.checkSubtypeOfRuntimeType(x, this.E);
       }
     },
     _LinkedHashSetCell: {
@@ -8096,8 +9471,18 @@
         }
       }
     },
+    UnmodifiableListView: {
+      "^": "UnmodifiableListBase;_collection$_source,$ti",
+      get$length: function(_) {
+        return this._collection$_source.length;
+      },
+      $index: function(_, index) {
+        var t1 = this._collection$_source;
+        return (t1 && C.JSArray_methods).$index(t1, index);
+      }
+    },
     HashMap_HashMap$from_closure: {
-      "^": "Closure:3;result,K,V",
+      "^": "Closure:4;result,K,V",
       call$2: function(k, v) {
         this.result.$indexSet(0, H.assertSubtypeOfRuntimeType(k, this.K), H.assertSubtypeOfRuntimeType(v, this.V));
       }
@@ -8140,6 +9525,49 @@
       },
       get$isNotEmpty: function(receiver) {
         return !this.get$isEmpty(receiver);
+      },
+      get$first: function(receiver) {
+        if (this.get$length(receiver) === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        return this.$index(receiver, 0);
+      },
+      get$last: function(receiver) {
+        var t1;
+        if (this.get$length(receiver) === 0)
+          throw H.wrapException(H.IterableElementError_noElement());
+        t1 = this.get$length(receiver);
+        if (typeof t1 !== "number")
+          return t1.$sub();
+        return this.$index(receiver, t1 - 1);
+      },
+      contains$1: function(receiver, element) {
+        var $length, i;
+        $length = this.get$length(receiver);
+        if (typeof $length !== "number")
+          return H.iae($length);
+        i = 0;
+        for (; i < $length; ++i) {
+          if (J.$eq$(this.$index(receiver, i), element))
+            return true;
+          if ($length !== this.get$length(receiver))
+            throw H.wrapException(P.ConcurrentModificationError$(receiver));
+        }
+        return false;
+      },
+      every$1: function(receiver, test) {
+        var $length, i;
+        H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [H.getRuntimeTypeArgumentIntercepted(this, receiver, "ListMixin", 0)]});
+        $length = this.get$length(receiver);
+        if (typeof $length !== "number")
+          return H.iae($length);
+        i = 0;
+        for (; i < $length; ++i) {
+          if (!test.call$1(this.$index(receiver, i)))
+            return false;
+          if ($length !== this.get$length(receiver))
+            throw H.wrapException(P.ConcurrentModificationError$(receiver));
+        }
+        return true;
       },
       join$1: function(receiver, separator) {
         var t1;
@@ -8204,10 +9632,12 @@
         H.assertSubtype(other, "$isList", t1, "$asList");
         result = H.setRuntimeTypeInfo([], t1);
         t1 = this.get$length(receiver);
-        t2 = C.JSNull_methods.get$length(other);
+        t2 = J.get$length$asx(other);
         if (typeof t1 !== "number")
           return t1.$add();
-        C.JSArray_methods.set$length(result, C.JSInt_methods.$add(t1, t2));
+        if (typeof t2 !== "number")
+          return H.iae(t2);
+        C.JSArray_methods.set$length(result, t1 + t2);
         C.JSArray_methods.setRange$3(result, 0, this.get$length(receiver), receiver);
         C.JSArray_methods.setRange$3(result, this.get$length(receiver), result.length, other);
         return result;
@@ -8236,7 +9666,7 @@
       "^": "MapMixin;"
     },
     MapBase_mapToString_closure: {
-      "^": "Closure:3;_box_0,result",
+      "^": "Closure:4;_box_0,result",
       call$2: function(k, v) {
         var t1, t2;
         t1 = this._box_0;
@@ -8275,6 +9705,9 @@
       $index: function(_, key) {
         return this._collection$_map.$index(0, key);
       },
+      containsKey$1: function(_, key) {
+        return this._collection$_map.containsKey$1(0, key);
+      },
       forEach$1: function(_, action) {
         this._collection$_map.forEach$1(0, H.functionTypeCheck(action, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0), H.getTypeArgumentByIndex(this, 1)]}));
       },
@@ -8304,9 +9737,23 @@
         for (t1 = J.get$iterator$ax(H.assertSubtype(elements, "$isIterable", [H.getRuntimeTypeArgument(this, "SetMixin", 0)], "$asIterable")); t1.moveNext$0();)
           this.add$1(0, t1.get$current(t1));
       },
+      removeAll$1: function(elements) {
+        var t1;
+        for (t1 = J.get$iterator$ax(H.assertSubtype(elements, "$isIterable", [P.Object], "$asIterable")); t1.moveNext$0();)
+          this.remove$1(0, t1.get$current(t1));
+      },
       map$1$1: function(_, f, $T) {
         var t1 = H.getRuntimeTypeArgument(this, "SetMixin", 0);
         return new H.EfficientLengthMappedIterable(this, H.functionTypeCheck(f, {func: 1, ret: $T, args: [t1]}), [t1, $T]);
+      },
+      get$single: function(_) {
+        var it;
+        if (this.get$length(this) > 1)
+          throw H.wrapException(H.IterableElementError_tooMany());
+        it = this.get$iterator(this);
+        if (!it.moveNext$0())
+          throw H.wrapException(H.IterableElementError_noElement());
+        return it._collection$_current;
       },
       toString$0: function(_) {
         return P.IterableBase_iterableToFullString(this, "{", "}");
@@ -8440,6 +9887,9 @@
         t1 = result._contents;
         return t1.charCodeAt(0) == 0 ? t1 : t1;
       },
+      $asStreamTransformer: function() {
+        return [P.String, P.String];
+      },
       $asConverter: function() {
         return [P.String, P.String];
       }
@@ -8467,10 +9917,13 @@
         encoder = new P._Utf8Encoder(0, 0, t1);
         if (encoder._fillBuffer$3(string, start, stringLength) !== stringLength)
           encoder._writeSurrogate$2(J.codeUnitAt$1$s(string, stringLength - 1), 0);
-        return new Uint8Array(t1.subarray(0, H._checkValidRange(0, encoder._bufferIndex, t1.length)));
+        return C.NativeUint8List_methods.sublist$2(t1, 0, encoder._bufferIndex);
       },
       convert$1: function(string) {
         return this.convert$3(string, 0, null);
+      },
+      $asStreamTransformer: function() {
+        return [P.String, [P.List, P.int]];
       },
       $asConverter: function() {
         return [P.String, [P.List, P.int]];
@@ -8576,6 +10029,9 @@
     }
   }], ["dart.core", "dart:core",, P, {
     "^": "",
+    identityHashCode: [function(object) {
+      return H.objectHashCode(object);
+    }, "call$1", "core__identityHashCode$closure", 4, 0, 152, 34],
     Function_apply: function($function, positionalArguments, namedArguments) {
       var t1 = H.Primitives_applyFunctionWithPositionalArguments($function, positionalArguments);
       return t1;
@@ -8622,6 +10078,9 @@
     RegExp_RegExp: function(source, caseSensitive, multiLine) {
       return new H.JSSyntaxRegExp(source, H.JSSyntaxRegExp_makeNative(source, multiLine, caseSensitive, false));
     },
+    identical: [function(a, b) {
+      return a == null ? b == null : a === b;
+    }, "call$2", "core__identical$closure", 8, 0, 153, 13, 15],
     _Uri__uriEncode: function(canonicalTable, text, encoding, spaceToPlus) {
       var t1, bytes, i, t2, byte, t3;
       H.assertSubtype(canonicalTable, "$isList", [P.int], "$asList");
@@ -8678,7 +10137,7 @@
       return result;
     },
     NoSuchMethodError_toString_closure: {
-      "^": "Closure:87;_box_0,sb",
+      "^": "Closure:158;_box_0,sb",
       call$2: function(key, value) {
         var t1, t2, t3;
         H.interceptedTypeCheck(key, "$isSymbol0");
@@ -8781,7 +10240,7 @@
     Duration: {
       "^": "Object;_duration",
       $add: function(_, other) {
-        return new P.Duration(C.JSInt_methods.$add(this._duration, H.interceptedTypeCheck(other, "$isDuration")._duration));
+        return new P.Duration(this._duration + H.interceptedTypeCheck(other, "$isDuration")._duration);
       },
       $lt: function(_, other) {
         return C.JSInt_methods.$lt(this._duration, H.interceptedTypeCheck(other, "$isDuration")._duration);
@@ -8824,7 +10283,7 @@
       }
     },
     Duration_toString_sixDigits: {
-      "^": "Closure:23;",
+      "^": "Closure:20;",
       call$1: function(n) {
         if (n >= 100000)
           return "" + n;
@@ -8840,7 +10299,7 @@
       }
     },
     Duration_toString_twoDigits: {
-      "^": "Closure:23;",
+      "^": "Closure:20;",
       call$1: function(n) {
         if (n >= 10)
           return "" + n;
@@ -9155,6 +10614,56 @@
         }
       }
     },
+    Expando: {
+      "^": "Object;_jsWeakMapOrKey,name>,$ti",
+      $index: function(_, object) {
+        var t1, t2, values;
+        t1 = this._jsWeakMapOrKey;
+        if (typeof t1 !== "string") {
+          if (object != null)
+            t2 = typeof object === "number" || false;
+          else
+            t2 = true;
+          if (t2)
+            H.throwExpression(P.ArgumentError$value(object, "Expandos are not allowed on strings, numbers, booleans or null", null));
+          return t1.get(object);
+        }
+        values = H.Primitives_getProperty(object, "expando$values");
+        t1 = values == null ? null : H.Primitives_getProperty(values, t1);
+        return H.assertSubtypeOfRuntimeType(t1, H.getTypeArgumentByIndex(this, 0));
+      },
+      $indexSet: function(_, object, value) {
+        var t1, values;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        t1 = this._jsWeakMapOrKey;
+        if (typeof t1 !== "string")
+          t1.set(object, value);
+        else {
+          values = H.Primitives_getProperty(object, "expando$values");
+          if (values == null) {
+            values = new P.Object();
+            H.Primitives_setProperty(object, "expando$values", values);
+          }
+          H.Primitives_setProperty(values, t1, value);
+        }
+      },
+      toString$0: function(_) {
+        return "Expando:" + H.S(this.name);
+      },
+      static: {
+        Expando$: function($name, $T) {
+          var t1;
+          if (typeof WeakMap == "function")
+            t1 = new WeakMap();
+          else {
+            t1 = $.Expando__keyCount;
+            $.Expando__keyCount = t1 + 1;
+            t1 = "expando$key$" + t1;
+          }
+          return new P.Expando(t1, $name, [$T]);
+        }
+      }
+    },
     Function: {
       "^": "Object;"
     },
@@ -9172,6 +10681,13 @@
         var t1 = H.getRuntimeTypeArgument(this, "Iterable", 0);
         return new H.WhereIterable(this, H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [t1]}), [t1]);
       }],
+      contains$1: function(_, element) {
+        var t1;
+        for (t1 = this.get$iterator(this); t1.moveNext$0();)
+          if (J.$eq$(t1.get$current(t1), element))
+            return true;
+        return false;
+      },
       forEach$1: function(_, f) {
         var t1;
         H.functionTypeCheck(f, {func: 1, ret: -1, args: [H.getRuntimeTypeArgument(this, "Iterable", 0)]});
@@ -9216,6 +10732,12 @@
       },
       get$isEmpty: function(_) {
         return !this.get$iterator(this).moveNext$0();
+      },
+      get$first: function(_) {
+        var it = this.get$iterator(this);
+        if (!it.moveNext$0())
+          throw H.wrapException(H.IterableElementError_noElement());
+        return it.get$current(it);
       },
       elementAt$1: function(_, index) {
         var t1, elementIndex, element;
@@ -9279,7 +10801,7 @@
       noSuchMethod$1: [function(_, invocation) {
         H.interceptedTypeCheck(invocation, "$isInvocation");
         throw H.wrapException(P.NoSuchMethodError$(this, invocation.get$memberName(), invocation.get$positionalArguments(), invocation.get$namedArguments(), null));
-      }, null, "get$noSuchMethod", 5, 0, null, 17],
+      }, null, "get$noSuchMethod", 5, 0, null, 21],
       toString: function() {
         return this.toString$0(this);
       }
@@ -9345,6 +10867,9 @@
     },
     Symbol0: {
       "^": "Object;"
+    },
+    Type: {
+      "^": "Object;"
     }
   }], ["dart.dom.html", "dart:html",, W, {
     "^": "",
@@ -9361,6 +10886,14 @@
     DivElement_DivElement: function() {
       return document.createElement("div");
     },
+    Element__determineTransitionEventType: [function(e) {
+      H.interceptedTypeCheck(e, "$isEventTarget");
+      if (P.Device_isWebKit())
+        return "webkitTransitionEnd";
+      else if (P.Device_isOpera())
+        return "oTransitionEnd";
+      return "transitionend";
+    }, null, null, 4, 0, null, 6],
     Element__safeTagName: function(element) {
       var result, t1, t2, exception;
       result = "element tag unavailable";
@@ -9386,6 +10919,11 @@
       hash ^= hash >>> 11;
       return 536870911 & hash + ((16383 & hash) << 15);
     },
+    _convertNativeToDart_Window: function(win) {
+      if (win == null)
+        return;
+      return W._DOMWindowCrossFrame__createSafe(win);
+    },
     _convertNativeToDart_EventTarget: function(e) {
       var $window;
       if (e == null)
@@ -9410,13 +10948,13 @@
       "^": "Closure:2;completer,T",
       call$1: [function(promiseValue) {
         return this.completer.complete$1(0, H.futureOrCheck(promiseValue, {futureOr: 1, type: this.T}));
-      }, null, null, 4, 0, null, 31, "call"]
+      }, null, null, 4, 0, null, 55, "call"]
     },
     promiseToFuture_closure0: {
       "^": "Closure:2;completer",
       call$1: [function(promiseError) {
         return this.completer.completeError$1(promiseError);
-      }, null, null, 4, 0, null, 30, "call"]
+      }, null, null, 4, 0, null, 67, "call"]
     },
     HtmlElement: {
       "^": "Element;",
@@ -9450,6 +10988,11 @@
       "^": "EventTarget;",
       $isAnimation: 1,
       "%": "Animation"
+    },
+    AnimationEvent: {
+      "^": "Event;",
+      $isAnimationEvent: 1,
+      "%": "AnimationEvent"
     },
     AreaElement: {
       "^": "HtmlElement;",
@@ -9557,7 +11100,7 @@
           return letter.toUpperCase();
         }) in receiver)
           return propertyName;
-        prefixed = P.Device_cssPrefix() + propertyName;
+        prefixed = P.Device_cssPrefix() + H.S(propertyName);
         if (prefixed in receiver)
           return prefixed;
         return propertyName;
@@ -9572,8 +11115,20 @@
       _getPropertyValue$1: function(receiver, property) {
         return receiver.getPropertyValue(property);
       },
+      get$bottom: function(receiver) {
+        return receiver.bottom;
+      },
       get$height: function(receiver) {
         return receiver.height;
+      },
+      get$left: function(receiver) {
+        return receiver.left;
+      },
+      get$right: function(receiver) {
+        return receiver.right;
+      },
+      get$top: function(receiver) {
+        return receiver.top;
       },
       get$width: function(receiver) {
         return receiver.width;
@@ -9582,8 +11137,20 @@
     },
     CssStyleDeclarationBase: {
       "^": "Object;",
+      get$bottom: function(receiver) {
+        return this.getPropertyValue$1(receiver, "bottom");
+      },
       get$height: function(receiver) {
         return this.getPropertyValue$1(receiver, "height");
+      },
+      get$left: function(receiver) {
+        return this.getPropertyValue$1(receiver, "left");
+      },
+      get$right: function(receiver) {
+        return this.getPropertyValue$1(receiver, "right");
+      },
+      get$top: function(receiver) {
+        return this.getPropertyValue$1(receiver, "top");
       },
       get$width: function(receiver) {
         return this.getPropertyValue$1(receiver, "width");
@@ -9628,15 +11195,30 @@
       $isDivElement: 1,
       "%": "HTMLDivElement"
     },
-    Document0: {
+    Document: {
       "^": "Node;",
       adoptNode$1: function(receiver, node) {
         return receiver.adoptNode(node);
       },
+      _createEvent$1: function(receiver, eventType) {
+        return receiver.createEvent(eventType);
+      },
       querySelector$1: function(receiver, selectors) {
         return receiver.querySelector(selectors);
       },
-      $isDocument0: 1,
+      _querySelectorAll$1: function(receiver, selectors) {
+        return receiver.querySelectorAll(selectors);
+      },
+      get$onKeyUp: function(receiver) {
+        return new W._EventStream(receiver, "keyup", false, [W.KeyboardEvent]);
+      },
+      get$onMouseDown: function(receiver) {
+        return new W._EventStream(receiver, "mousedown", false, [W.MouseEvent]);
+      },
+      get$onMouseUp: function(receiver) {
+        return new W._EventStream(receiver, "mouseup", false, [W.MouseEvent]);
+      },
+      $isDocument: 1,
       "%": "XMLDocument;Document"
     },
     DomError: {
@@ -9704,6 +11286,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -9742,21 +11330,29 @@
           return false;
         if (!H.checkSubtype(other, "$isRectangle", [P.num], "$asRectangle"))
           return false;
-        if (receiver.left === other.left)
-          if (receiver.top === other.top) {
-            t1 = J.getInterceptor$x(other);
-            t1 = this.get$width(receiver) === t1.get$width(other) && this.get$height(receiver) === t1.get$height(other);
-          } else
-            t1 = false;
-        else
-          t1 = false;
-        return t1;
+        t1 = J.getInterceptor$x(other);
+        return receiver.left === t1.get$left(other) && receiver.top === t1.get$top(other) && this.get$width(receiver) === t1.get$width(other) && this.get$height(receiver) === t1.get$height(other);
       },
       get$hashCode: function(receiver) {
         return W._JenkinsSmiHash_hash4(receiver.left & 0x1FFFFFFF, receiver.top & 0x1FFFFFFF, this.get$width(receiver) & 0x1FFFFFFF, this.get$height(receiver) & 0x1FFFFFFF);
       },
+      get$topLeft: function(receiver) {
+        return new P.Point(receiver.left, receiver.top, [P.num]);
+      },
+      get$bottom: function(receiver) {
+        return receiver.bottom;
+      },
       get$height: function(receiver) {
         return receiver.height;
+      },
+      get$left: function(receiver) {
+        return receiver.left;
+      },
+      get$right: function(receiver) {
+        return receiver.right;
+      },
+      get$top: function(receiver) {
+        return receiver.top;
       },
       get$width: function(receiver) {
         return receiver.width;
@@ -9790,6 +11386,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -9827,6 +11429,9 @@
     },
     _ChildrenElementList: {
       "^": "ListBase;_html$_element<,_childElements",
+      contains$1: function(_, element) {
+        return J.contains$1$asx(this._childElements, element);
+      },
       get$isEmpty: function(_) {
         return this._html$_element.firstElementChild == null;
       },
@@ -9857,10 +11462,16 @@
         throw H.wrapException(P.UnsupportedError$("Cannot sort element lists"));
       }, function($receiver) {
         return this.sort$1($receiver, null);
-      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 37],
+      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 32],
       removeAt$1: function(_, index) {
         var result = H.interceptedTypeCheck(J.$index$asx(this._childElements, index), "$isElement");
         J._removeChild$1$x(this._html$_element, result);
+        return result;
+      },
+      get$last: function(_) {
+        var result = this._html$_element.lastElementChild;
+        if (result == null)
+          throw H.wrapException(P.StateError$("No elements"));
         return result;
       },
       $asEfficientLengthIterable: function() {
@@ -9876,8 +11487,42 @@
         return [W.Element];
       }
     },
+    _FrozenElementList: {
+      "^": "ListBase;_nodeList,$ti",
+      get$length: function(_) {
+        return this._nodeList.length;
+      },
+      $index: function(_, index) {
+        return H.assertSubtypeOfRuntimeType(C.NodeList_methods.$index(this._nodeList, index), H.getTypeArgumentByIndex(this, 0));
+      },
+      $indexSet: function(_, index, value) {
+        H.intTypeCheck(index);
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        throw H.wrapException(P.UnsupportedError$("Cannot modify list"));
+      },
+      set$length: function(_, newLength) {
+        throw H.wrapException(P.UnsupportedError$("Cannot modify list"));
+      },
+      sort$1: [function(_, compare) {
+        var t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(compare, {func: 1, ret: P.int, args: [t1, t1]});
+        throw H.wrapException(P.UnsupportedError$("Cannot sort list"));
+      }, function($receiver) {
+        return this.sort$1($receiver, null);
+      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, function() {
+        return H.computeSignature(function(E) {
+          return {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [E, E]}]};
+        }, this.$receiver, "_FrozenElementList");
+      }],
+      get$last: function(_) {
+        return H.assertSubtypeOfRuntimeType(C.NodeList_methods.get$last(this._nodeList), H.getTypeArgumentByIndex(this, 0));
+      },
+      get$classes: function(_) {
+        return W._MultiElementCssClassSet__MultiElementCssClassSet(this);
+      }
+    },
     Element: {
-      "^": "Node;0tagName=",
+      "^": "Node;0tabIndex=,0className=,0id=,0tagName=",
       get$attributes: function(receiver) {
         return new W._ElementAttributeMap(receiver);
       },
@@ -9982,17 +11627,23 @@
       getAttribute$1: function(receiver, $name) {
         return receiver.getAttribute($name);
       },
+      _hasAttribute$1: function(receiver, $name) {
+        return receiver.hasAttribute($name);
+      },
       _removeAttribute$1: function(receiver, $name) {
         return receiver.removeAttribute($name);
       },
       setAttribute$2: function(receiver, $name, value) {
         return receiver.setAttribute($name, value);
       },
+      querySelector$1: function(receiver, selectors) {
+        return receiver.querySelector(selectors);
+      },
       $isElement: 1,
       "%": ";Element"
     },
     Element_animate_closure: {
-      "^": "Closure:49;",
+      "^": "Closure:173;",
       call$1: function(x) {
         return !!J.getInterceptor$(H.assertSubtype(x, "$isMap", [P.String, null], "$asMap")).$isMap;
       }
@@ -10018,21 +11669,24 @@
       "%": "DirectoryEntry|Entry|FileEntry"
     },
     Entry_remove_closure: {
-      "^": "Closure:1;completer",
+      "^": "Closure:0;completer",
       call$0: [function() {
         this.completer.complete$0(0);
       }, null, null, 0, 0, null, "call"]
     },
     Entry_remove_closure0: {
-      "^": "Closure:52;completer",
+      "^": "Closure:63;completer",
       call$1: [function(error) {
         this.completer.completeError$1(H.interceptedTypeCheck(error, "$isDomException"));
-      }, null, null, 4, 0, null, 3, "call"]
+      }, null, null, 4, 0, null, 4, "call"]
     },
     Event: {
       "^": "Interceptor;",
       get$target: function(receiver) {
         return W._convertNativeToDart_EventTarget(receiver.target);
+      },
+      _initEvent$3: function(receiver, type, bubbles, cancelable) {
+        return receiver.initEvent(type, true, true);
       },
       preventDefault$0: function(receiver) {
         return receiver.preventDefault();
@@ -10041,7 +11695,7 @@
         return receiver.stopPropagation();
       },
       $isEvent: 1,
-      "%": "AbortPaymentEvent|AnimationEvent|AnimationPlaybackEvent|ApplicationCacheErrorEvent|AudioProcessingEvent|BackgroundFetchClickEvent|BackgroundFetchEvent|BackgroundFetchFailEvent|BackgroundFetchedEvent|BeforeInstallPromptEvent|BeforeUnloadEvent|BlobEvent|CanMakePaymentEvent|ClipboardEvent|CloseEvent|CustomEvent|DeviceMotionEvent|DeviceOrientationEvent|ErrorEvent|ExtendableEvent|ExtendableMessageEvent|FetchEvent|FontFaceSetLoadEvent|ForeignFetchEvent|GamepadEvent|HashChangeEvent|InstallEvent|MIDIConnectionEvent|MIDIMessageEvent|MediaEncryptedEvent|MediaKeyMessageEvent|MediaQueryListEvent|MediaStreamEvent|MediaStreamTrackEvent|MessageEvent|MojoInterfaceRequestEvent|MutationEvent|NotificationEvent|OfflineAudioCompletionEvent|PageTransitionEvent|PaymentRequestEvent|PaymentRequestUpdateEvent|PopStateEvent|PresentationConnectionAvailableEvent|PresentationConnectionCloseEvent|ProgressEvent|PromiseRejectionEvent|PushEvent|RTCDTMFToneChangeEvent|RTCDataChannelEvent|RTCPeerConnectionIceEvent|RTCTrackEvent|ResourceProgressEvent|SecurityPolicyViolationEvent|SensorErrorEvent|SpeechRecognitionError|SpeechRecognitionEvent|StorageEvent|SyncEvent|TrackEvent|TransitionEvent|USBConnectionEvent|VRDeviceEvent|VRDisplayEvent|VRSessionEvent|WebGLContextEvent|WebKitTransitionEvent;Event|InputEvent"
+      "%": "AbortPaymentEvent|AnimationPlaybackEvent|ApplicationCacheErrorEvent|AudioProcessingEvent|BackgroundFetchClickEvent|BackgroundFetchEvent|BackgroundFetchFailEvent|BackgroundFetchedEvent|BeforeInstallPromptEvent|BeforeUnloadEvent|BlobEvent|CanMakePaymentEvent|ClipboardEvent|CloseEvent|CustomEvent|DeviceMotionEvent|DeviceOrientationEvent|ErrorEvent|ExtendableEvent|ExtendableMessageEvent|FetchEvent|FontFaceSetLoadEvent|ForeignFetchEvent|GamepadEvent|HashChangeEvent|InstallEvent|MIDIConnectionEvent|MIDIMessageEvent|MediaEncryptedEvent|MediaKeyMessageEvent|MediaQueryListEvent|MediaStreamEvent|MediaStreamTrackEvent|MessageEvent|MojoInterfaceRequestEvent|MutationEvent|NotificationEvent|OfflineAudioCompletionEvent|PageTransitionEvent|PaymentRequestEvent|PaymentRequestUpdateEvent|PopStateEvent|PresentationConnectionAvailableEvent|PresentationConnectionCloseEvent|ProgressEvent|PromiseRejectionEvent|PushEvent|RTCDTMFToneChangeEvent|RTCDataChannelEvent|RTCPeerConnectionIceEvent|RTCTrackEvent|ResourceProgressEvent|SecurityPolicyViolationEvent|SensorErrorEvent|SpeechRecognitionError|SpeechRecognitionEvent|SyncEvent|TrackEvent|USBConnectionEvent|VRDeviceEvent|VRDisplayEvent|VRSessionEvent|WebGLContextEvent;Event|InputEvent"
     },
     EventTarget: {
       "^": "Interceptor;",
@@ -10063,6 +11717,9 @@
       },
       _addEventListener$3: function(receiver, type, listener, options) {
         return receiver.addEventListener(type, H.convertDartClosureToJS(H.functionTypeCheck(listener, {func: 1, args: [W.Event]}), 1), options);
+      },
+      dispatchEvent$1: function(receiver, $event) {
+        return receiver.dispatchEvent($event);
       },
       _removeEventListener$3: function(receiver, type, listener, options) {
         return receiver.removeEventListener(type, H.convertDartClosureToJS(H.functionTypeCheck(listener, {func: 1, args: [W.Event]}), 1), options);
@@ -10101,6 +11758,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -10136,6 +11799,11 @@
     FileWriter: {
       "^": "EventTarget;0length=",
       "%": "FileWriter"
+    },
+    FocusEvent: {
+      "^": "UIEvent;",
+      $isFocusEvent: 1,
+      "%": "FocusEvent"
     },
     FontFace: {
       "^": "Interceptor;",
@@ -10189,6 +11857,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -10218,7 +11892,8 @@
       "%": "HTMLCollection|HTMLFormControlsCollection|HTMLOptionsCollection"
     },
     HtmlDocument: {
-      "^": "Document0;",
+      "^": "Document;",
+      $isHtmlDocument: 1,
       "%": "HTMLDocument"
     },
     IFrameElement: {
@@ -10246,7 +11921,7 @@
       "%": "HTMLInputElement"
     },
     KeyboardEvent: {
-      "^": "UIEvent;",
+      "^": "UIEvent;0key=",
       $isKeyboardEvent: 1,
       "%": "KeyboardEvent"
     },
@@ -10319,7 +11994,7 @@
       "%": "MIDIInputMap"
     },
     MidiInputMap_keys_closure: {
-      "^": "Closure:8;keys",
+      "^": "Closure:16;keys",
       call$2: function(k, v) {
         return C.JSArray_methods.add$1(this.keys, k);
       }
@@ -10358,7 +12033,7 @@
       "%": "MIDIOutputMap"
     },
     MidiOutputMap_keys_closure: {
-      "^": "Closure:8;keys",
+      "^": "Closure:16;keys",
       call$2: function(k, v) {
         return C.JSArray_methods.add$1(this.keys, k);
       }
@@ -10389,6 +12064,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -10428,6 +12109,12 @@
     },
     _ChildNodeListLazy: {
       "^": "ListBase;_this",
+      get$last: function(_) {
+        var result = this._this.lastChild;
+        if (result == null)
+          throw H.wrapException(P.StateError$("No elements"));
+        return result;
+      },
       add$1: function(_, value) {
         J.append$1$x(this._this, H.interceptedTypeCheck(value, "$isNode"));
       },
@@ -10446,7 +12133,7 @@
         throw H.wrapException(P.UnsupportedError$("Cannot sort Node list"));
       }, function($receiver) {
         return this.sort$1($receiver, null);
-      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 54],
+      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 65],
       get$length: function(_) {
         return this._this.childNodes.length;
       },
@@ -10509,6 +12196,9 @@
       clone$1: function(receiver, deep) {
         return receiver.cloneNode(false);
       },
+      contains$1: function(receiver, other) {
+        return receiver.contains(H.interceptedTypeCheck(other, "$isNode"));
+      },
       insertBefore$2: function(receiver, node, child) {
         return receiver.insertBefore(H.interceptedTypeCheck(node, "$isNode"), child);
       },
@@ -10538,6 +12228,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -10625,6 +12321,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -10700,7 +12402,7 @@
       "%": "RTCStatsReport"
     },
     RtcStatsReport_keys_closure: {
-      "^": "Closure:8;keys",
+      "^": "Closure:16;keys",
       call$2: function(k, v) {
         return C.JSArray_methods.add$1(this.keys, k);
       }
@@ -10747,6 +12449,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -10802,6 +12510,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -10882,10 +12596,14 @@
       "%": "Storage"
     },
     Storage_keys_closure: {
-      "^": "Closure:55;keys",
+      "^": "Closure:88;keys",
       call$2: function(k, v) {
         return C.JSArray_methods.add$1(this.keys, k);
       }
+    },
+    StorageEvent: {
+      "^": "Event;0key=",
+      "%": "StorageEvent"
     },
     StyleSheet: {
       "^": "Interceptor;",
@@ -10944,6 +12662,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -10988,6 +12712,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -11043,6 +12773,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -11074,10 +12810,15 @@
       "^": "Interceptor;0length=",
       "%": "TrackDefaultList"
     },
+    TransitionEvent: {
+      "^": "Event;",
+      $isTransitionEvent: 1,
+      "%": "TransitionEvent|WebKitTransitionEvent"
+    },
     UIEvent: {
       "^": "Event;",
       $isUIEvent: 1,
-      "%": "CompositionEvent|FocusEvent|TextEvent|TouchEvent;UIEvent"
+      "%": "CompositionEvent|TextEvent|TouchEvent;UIEvent"
     },
     Url: {
       "^": "Interceptor;",
@@ -11118,12 +12859,47 @@
           return W._DOMWindowCrossFrame__createSafe(receiver.open(url, $name, options));
       }, function($receiver, url, $name) {
         return this.open$3($receiver, url, $name, null);
-      }, "open$2", "call$3", "call$2", "get$open", 9, 2, 56, 1, 28, 57, 29],
+      }, "open$2", "call$3", "call$2", "get$open", 9, 2, 67, 3, 68, 70, 35],
+      requestAnimationFrame$1: function(receiver, callback) {
+        H.functionTypeCheck(callback, {func: 1, ret: -1, args: [P.num]});
+        this._ensureRequestAnimationFrame$0(receiver);
+        return this._requestAnimationFrame$1(receiver, W._wrapZone(callback, P.num));
+      },
+      _requestAnimationFrame$1: function(receiver, callback) {
+        return receiver.requestAnimationFrame(H.convertDartClosureToJS(H.functionTypeCheck(callback, {func: 1, ret: -1, args: [P.num]}), 1));
+      },
+      _cancelAnimationFrame$1: function(receiver, id) {
+        return receiver.cancelAnimationFrame(id);
+      },
+      _ensureRequestAnimationFrame$0: function(receiver) {
+        if (!!(receiver.requestAnimationFrame && receiver.cancelAnimationFrame))
+          return;
+        (function($this) {
+          var vendors = ['ms', 'moz', 'webkit', 'o'];
+          for (var i = 0; i < vendors.length && !$this.requestAnimationFrame; ++i) {
+            $this.requestAnimationFrame = $this[vendors[i] + 'RequestAnimationFrame'];
+            $this.cancelAnimationFrame = $this[vendors[i] + 'CancelAnimationFrame'] || $this[vendors[i] + 'CancelRequestAnimationFrame'];
+          }
+          if ($this.requestAnimationFrame && $this.cancelAnimationFrame)
+            return;
+          $this.requestAnimationFrame = function(callback) {
+            return window.setTimeout(function() {
+              callback(Date.now());
+            }, 16);
+          };
+          $this.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+          };
+        })(receiver);
+      },
+      get$top: function(receiver) {
+        return W._convertNativeToDart_Window(receiver.top);
+      },
       alert$1: [function(receiver, message) {
         return receiver.alert(H.stringTypeCheck(message));
       }, function($receiver) {
         return $receiver.alert();
-      }, "alert$0", "call$1", "call$0", "get$alert", 1, 2, 57, 1, 27],
+      }, "alert$0", "call$1", "call$0", "get$alert", 1, 2, 68, 3, 33],
       $isWindow: 1,
       $isWindowBase: 1,
       "%": "DOMWindow|Window"
@@ -11155,6 +12931,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -11194,18 +12976,14 @@
           return false;
         if (!H.checkSubtype(other, "$isRectangle", [P.num], "$asRectangle"))
           return false;
-        if (receiver.left === other.left)
-          if (receiver.top === other.top) {
-            t1 = J.getInterceptor$x(other);
-            t1 = receiver.width === t1.get$width(other) && receiver.height === t1.get$height(other);
-          } else
-            t1 = false;
-        else
-          t1 = false;
-        return t1;
+        t1 = J.getInterceptor$x(other);
+        return receiver.left === t1.get$left(other) && receiver.top === t1.get$top(other) && receiver.width === t1.get$width(other) && receiver.height === t1.get$height(other);
       },
       get$hashCode: function(receiver) {
         return W._JenkinsSmiHash_hash4(receiver.left & 0x1FFFFFFF, receiver.top & 0x1FFFFFFF, receiver.width & 0x1FFFFFFF, receiver.height & 0x1FFFFFFF);
+      },
+      get$topLeft: function(receiver) {
+        return new P.Point(receiver.left, receiver.top, [P.num]);
       },
       get$height: function(receiver) {
         return receiver.height;
@@ -11238,6 +13016,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -11284,6 +13068,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -11329,6 +13119,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -11373,6 +13169,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -11453,6 +13255,74 @@
       "^": "Object;",
       $isEventTarget: 1
     },
+    CssClassSet: {
+      "^": "Object;",
+      $isEfficientLengthIterable: 1,
+      $asEfficientLengthIterable: function() {
+        return [P.String];
+      },
+      $isIterable: 1,
+      $asIterable: function() {
+        return [P.String];
+      },
+      $isSet: 1,
+      $asSet: function() {
+        return [P.String];
+      }
+    },
+    _MultiElementCssClassSet: {
+      "^": "CssClassSetImpl;_elementIterable,_sets",
+      readClasses$0: function() {
+        var s = P.LinkedHashSet_LinkedHashSet(null, null, null, P.String);
+        C.JSArray_methods.forEach$1(this._sets, new W._MultiElementCssClassSet_readClasses_closure(s));
+        return s;
+      },
+      writeClasses$1: function(s) {
+        var classes, t1;
+        classes = H.assertSubtype(s, "$isSet", [P.String], "$asSet").join$1(0, " ");
+        for (t1 = this._elementIterable, t1 = new H.ListIterator(t1, t1.get$length(t1), 0, [H.getTypeArgumentByIndex(t1, 0)]); t1.moveNext$0();)
+          t1.__internal$_current.className = classes;
+      },
+      modify$1: function(_, f) {
+        C.JSArray_methods.forEach$1(this._sets, new W._MultiElementCssClassSet_modify_closure(H.functionTypeCheck(f, {func: 1, args: [[P.Set, P.String]]})));
+      },
+      remove$1: function(_, value) {
+        return C.JSArray_methods.fold$1$2(this._sets, false, new W._MultiElementCssClassSet_remove_closure(value), P.bool);
+      },
+      static: {
+        _MultiElementCssClassSet__MultiElementCssClassSet: function(elements) {
+          var t1;
+          H.assertSubtype(elements, "$isIterable", [W.Element], "$asIterable");
+          t1 = H.getTypeArgumentByIndex(elements, 0);
+          return new W._MultiElementCssClassSet(elements, P.List_List$from(new H.MappedListIterable(elements, H.functionTypeCheck(new W._MultiElementCssClassSet__MultiElementCssClassSet_closure(), {func: 1, ret: null, args: [t1]}), [t1, null]), true, P.CssClassSetImpl));
+        }
+      }
+    },
+    _MultiElementCssClassSet__MultiElementCssClassSet_closure: {
+      "^": "Closure:72;",
+      call$1: [function(e) {
+        return J.get$classes$x(H.interceptedTypeCheck(e, "$isElement"));
+      }, null, null, 4, 0, null, 6, "call"]
+    },
+    _MultiElementCssClassSet_readClasses_closure: {
+      "^": "Closure:76;s",
+      call$1: function(e) {
+        return this.s.addAll$1(0, H.interceptedTypeCheck(e, "$isCssClassSetImpl").readClasses$0());
+      }
+    },
+    _MultiElementCssClassSet_modify_closure: {
+      "^": "Closure:77;f",
+      call$1: function(e) {
+        return H.interceptedTypeCheck(e, "$isCssClassSetImpl").modify$1(0, this.f);
+      }
+    },
+    _MultiElementCssClassSet_remove_closure: {
+      "^": "Closure:79;value",
+      call$2: function(changed, e) {
+        H.boolTypeCheck(changed);
+        return H.interceptedTypeCheck(e, "$isCssClassSetImpl").remove$1(0, this.value) || changed;
+      }
+    },
     _ElementCssClassSet: {
       "^": "CssClassSetImpl;_html$_element<",
       readClasses$0: function() {
@@ -11475,8 +13345,7 @@
         return this._html$_element.classList.length === 0;
       },
       contains$1: function(_, value) {
-        var t1 = this._html$_element.classList.contains(value);
-        return t1;
+        return typeof value === "string" && this._html$_element.classList.contains(value);
       },
       add$1: function(_, value) {
         var list, t1;
@@ -11500,6 +13369,9 @@
       addAll$1: function(_, iterable) {
         W._ElementCssClassSet__addAll(this._html$_element, H.assertSubtype(iterable, "$isIterable", [P.String], "$asIterable"));
       },
+      removeAll$1: function(iterable) {
+        W._ElementCssClassSet__removeAll(this._html$_element, H.assertSubtype(H.assertSubtype(iterable, "$isIterable", [P.Object], "$asIterable"), "$isIterable", [P.String], "$asIterable"));
+      },
       static: {
         _ElementCssClassSet__addAll: function(_element, iterable) {
           var list, t1;
@@ -11507,6 +13379,13 @@
           list = _element.classList;
           for (t1 = J.get$iterator$ax(iterable); t1.moveNext$0();)
             list.add(t1.get$current(t1));
+        },
+        _ElementCssClassSet__removeAll: function(_element, iterable) {
+          var list, t1;
+          H.assertSubtype(iterable, "$isIterable", [P.String], "$asIterable");
+          list = _element.classList;
+          for (t1 = J.get$iterator$ax(iterable); t1.moveNext$0();)
+            list.remove(t1.get$current(t1));
         }
       }
     },
@@ -11517,6 +13396,9 @@
         H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]});
         H.functionTypeCheck(onDone, {func: 1, ret: -1});
         return W._EventStreamSubscription$(this._html$_target, this._eventType, onData, false, t1);
+      },
+      listen$1: function(onData) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
       },
       listen$3$onDone$onError: function(onData, onDone, onError) {
         return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
@@ -11562,7 +13444,7 @@
       },
       static: {
         _EventStreamSubscription$: function(_target, _eventType, onData, _useCapture, $T) {
-          var t1 = W._wrapZone(new W._EventStreamSubscription_closure(onData), W.Event);
+          var t1 = onData == null ? null : W._wrapZone(new W._EventStreamSubscription_closure(onData), W.Event);
           t1 = new W._EventStreamSubscription(0, _target, _eventType, t1, false, [$T]);
           t1._tryResume$0();
           return t1;
@@ -11570,10 +13452,10 @@
       }
     },
     _EventStreamSubscription_closure: {
-      "^": "Closure:64;onData",
+      "^": "Closure:80;onData",
       call$1: [function(e) {
         return this.onData.call$1(H.interceptedTypeCheck(e, "$isEvent"));
-      }, null, null, 4, 0, null, 5, "call"]
+      }, null, null, 4, 0, null, 6, "call"]
     },
     _Html5NodeValidator: {
       "^": "Object;uriPolicy",
@@ -11617,7 +13499,7 @@
           H.stringTypeCheck(value);
           H.interceptedTypeCheck(context, "$is_Html5NodeValidator");
           return true;
-        }, "call$4", "html__Html5NodeValidator__standardAttributeValidator$closure", 16, 0, 39, 19, 25, 10, 26],
+        }, "call$4", "html__Html5NodeValidator__standardAttributeValidator$closure", 16, 0, 56, 17, 28, 1, 26],
         _Html5NodeValidator__uriAttributeValidator: [function(element, attributeName, value, context) {
           var t1, t2, t3;
           H.interceptedTypeCheck(element, "$isElement");
@@ -11640,7 +13522,7 @@
           else
             t1 = true;
           return t1;
-        }, "call$4", "html__Html5NodeValidator__uriAttributeValidator$closure", 16, 0, 39, 19, 25, 10, 26]
+        }, "call$4", "html__Html5NodeValidator__uriAttributeValidator$closure", 16, 0, 56, 17, 28, 1, 26]
       }
     },
     ImmutableListMixin: {
@@ -11678,13 +13560,13 @@
       $isNodeValidator: 1
     },
     NodeValidatorBuilder_allowsElement_closure: {
-      "^": "Closure:21;element",
+      "^": "Closure:52;element",
       call$1: function(v) {
         return H.interceptedTypeCheck(v, "$isNodeValidator").allowsElement$1(this.element);
       }
     },
     NodeValidatorBuilder_allowsAttribute_closure: {
-      "^": "Closure:21;element,attributeName,value",
+      "^": "Closure:52;element,attributeName,value",
       call$1: function(v) {
         return H.interceptedTypeCheck(v, "$isNodeValidator").allowsAttribute$3(this.element, this.attributeName, this.value);
       }
@@ -11728,13 +13610,13 @@
       $isNodeValidator: 1
     },
     _SimpleNodeValidator_closure: {
-      "^": "Closure:9;",
+      "^": "Closure:10;",
       call$1: function(x) {
         return !C.JSArray_methods.contains$1(C.List_yrN, H.stringTypeCheck(x));
       }
     },
     _SimpleNodeValidator_closure0: {
-      "^": "Closure:9;",
+      "^": "Closure:10;",
       call$1: function(x) {
         return C.JSArray_methods.contains$1(C.List_yrN, H.stringTypeCheck(x));
       }
@@ -11765,10 +13647,10 @@
       }
     },
     _TemplatingNodeValidator_closure: {
-      "^": "Closure:11;",
+      "^": "Closure:13;",
       call$1: [function(attr) {
         return "TEMPLATE::" + H.S(H.stringTypeCheck(attr));
-      }, null, null, 4, 0, null, 32, "call"]
+      }, null, null, 4, 0, null, 37, "call"]
     },
     FixedSizeListIterator: {
       "^": "Object;_array,_html$_length,_position,0_html$_current,$ti",
@@ -11795,6 +13677,9 @@
     },
     _DOMWindowCrossFrame: {
       "^": "Object;_window",
+      get$top: function(_) {
+        return W._DOMWindowCrossFrame__createSafe(this._window.top);
+      },
       $isEventTarget: 1,
       $isWindowBase: 1,
       static: {
@@ -11928,7 +13813,7 @@
       $isNodeTreeSanitizer: 1
     },
     _ValidatingTreeSanitizer_sanitizeTree_walk: {
-      "^": "Closure:70;$this",
+      "^": "Closure:92;$this",
       call$2: function(node, $parent) {
         var child, nextChild, t1, exception, t2, t3;
         t1 = this.$this;
@@ -12111,7 +13996,7 @@
       return object;
     }, function(dict) {
       return P.convertDartToNative_Dictionary(dict, null);
-    }, "call$2", "call$1", "html_common__convertDartToNative_Dictionary$closure", 4, 2, 107, 1, 33, 34],
+    }, "call$2", "call$1", "html_common__convertDartToNative_Dictionary$closure", 4, 2, 155, 3, 38, 39],
     convertNativePromiseToDartFuture: function(promise) {
       var t1, completer;
       t1 = new P._Future(0, $.Zone__current, [null]);
@@ -12242,7 +14127,7 @@
       }
     },
     _StructuredClone_walk_closure: {
-      "^": "Closure:3;_box_0,$this",
+      "^": "Closure:4;_box_0,$this",
       call$2: function(key, value) {
         this._box_0.copy[key] = this.$this.walk$1(value);
       }
@@ -12322,7 +14207,7 @@
       }
     },
     _AcceptStructuredClone_walk_closure: {
-      "^": "Closure:73;_box_0,$this",
+      "^": "Closure:97;_box_0,$this",
       call$2: function(key, value) {
         var t1, t2;
         t1 = this._box_0.copy;
@@ -12332,7 +14217,7 @@
       }
     },
     convertDartToNative_Dictionary_closure: {
-      "^": "Closure:3;object",
+      "^": "Closure:4;object",
       call$2: function(key, value) {
         this.object[key] = value;
       }
@@ -12355,13 +14240,13 @@
       "^": "Closure:2;completer",
       call$1: [function(result) {
         return this.completer.complete$1(0, result);
-      }, null, null, 4, 0, null, 18, "call"]
+      }, null, null, 4, 0, null, 8, "call"]
     },
     convertNativePromiseToDartFuture_closure0: {
       "^": "Closure:2;completer",
       call$1: [function(result) {
         return this.completer.completeError$1(result);
-      }, null, null, 4, 0, null, 18, "call"]
+      }, null, null, 4, 0, null, 8, "call"]
     },
     CssClassSetImpl: {
       "^": "SetBase;",
@@ -12374,7 +14259,7 @@
         if (t1.test(value))
           return value;
         throw H.wrapException(P.ArgumentError$value(value, "value", "Not a valid class token"));
-      }, "call$1", "get$_validateToken", 4, 0, 11, 10],
+      }, "call$1", "get$_validateToken", 4, 0, 13, 1],
       toString$0: function(_) {
         return this.readClasses$0().join$1(0, " ");
       },
@@ -12403,6 +14288,8 @@
         return this.readClasses$0()._collection$_length;
       },
       contains$1: function(_, value) {
+        if (typeof value !== "string")
+          return false;
         this._validateToken$1(value);
         return this.readClasses$0().contains$1(0, value);
       },
@@ -12424,6 +14311,9 @@
       },
       addAll$1: function(_, iterable) {
         this.modify$1(0, new P.CssClassSetImpl_addAll_closure(this, H.assertSubtype(iterable, "$isIterable", [P.String], "$asIterable")));
+      },
+      removeAll$1: function(iterable) {
+        this.modify$1(0, new P.CssClassSetImpl_removeAll_closure(H.assertSubtype(iterable, "$isIterable", [P.Object], "$asIterable")));
       },
       elementAt$1: function(_, index) {
         return this.readClasses$0().elementAt$1(0, index);
@@ -12447,19 +14337,26 @@
       },
       $asSet: function() {
         return [P.String];
-      }
+      },
+      $isCssClassSet: 1
     },
     CssClassSetImpl_add_closure: {
-      "^": "Closure:76;value",
+      "^": "Closure:101;value",
       call$1: function(s) {
         return H.assertSubtype(s, "$isSet", [P.String], "$asSet").add$1(0, this.value);
       }
     },
     CssClassSetImpl_addAll_closure: {
-      "^": "Closure:80;$this,iterable",
+      "^": "Closure:30;$this,iterable",
       call$1: function(s) {
         var t1 = P.String;
         return H.assertSubtype(s, "$isSet", [t1], "$asSet").addAll$1(0, J.map$1$1$ax(this.iterable, this.$this.get$_validateToken(), t1));
+      }
+    },
+    CssClassSetImpl_removeAll_closure: {
+      "^": "Closure:30;iterable",
+      call$1: function(s) {
+        return H.assertSubtype(s, "$isSet", [P.String], "$asSet").removeAll$1(this.iterable);
       }
     },
     FilteredElementList: {
@@ -12480,10 +14377,10 @@
         H.intTypeCheck(index);
         H.interceptedTypeCheck(value, "$isElement");
         t1 = this.get$_html_common$_iterable();
-        J.replaceWith$1$x(t1._f.call$1(J.elementAt$1$ax(t1._iterable, index)), value);
+        J.replaceWith$1$x(t1._f.call$1(J.elementAt$1$ax(t1.__internal$_iterable, index)), value);
       },
       set$length: function(_, newLength) {
-        var len = J.get$length$asx(this.get$_html_common$_iterable()._iterable);
+        var len = J.get$length$asx(this.get$_html_common$_iterable().__internal$_iterable);
         if (typeof len !== "number")
           return H.iae(len);
         if (newLength >= len)
@@ -12495,12 +14392,15 @@
       add$1: function(_, value) {
         J.append$1$x(this._childNodes._this, H.interceptedTypeCheck(value, "$isElement"));
       },
+      contains$1: function(_, needle) {
+        return false;
+      },
       sort$1: [function(_, compare) {
         H.functionTypeCheck(compare, {func: 1, ret: P.int, args: [W.Element, W.Element]});
         throw H.wrapException(P.UnsupportedError$("Cannot sort filtered list"));
       }, function($receiver) {
         return this.sort$1($receiver, null);
-      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 37],
+      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, 32],
       removeRange$2: function(_, start, end) {
         var t1 = this.get$_html_common$_iterable();
         t1 = H.SkipIterable_SkipIterable(t1, start, H.getRuntimeTypeArgument(t1, "Iterable", 0));
@@ -12511,23 +14411,23 @@
       insertAll$2: function(_, index, iterable) {
         var t1, element;
         H.assertSubtype(iterable, "$isIterable", [W.Element], "$asIterable");
-        J.get$length$asx(this.get$_html_common$_iterable()._iterable);
+        J.get$length$asx(this.get$_html_common$_iterable().__internal$_iterable);
         t1 = this.get$_html_common$_iterable();
-        element = t1._f.call$1(J.elementAt$1$ax(t1._iterable, index));
+        element = t1._f.call$1(J.elementAt$1$ax(t1.__internal$_iterable, index));
         J.insertAllBefore$2$x(element.parentNode, iterable, element);
       },
       removeAt$1: function(_, index) {
         var t1 = this.get$_html_common$_iterable();
-        t1 = t1._f.call$1(J.elementAt$1$ax(t1._iterable, index));
+        t1 = t1._f.call$1(J.elementAt$1$ax(t1.__internal$_iterable, index));
         J.remove$0$ax(t1);
         return t1;
       },
       get$length: function(_) {
-        return J.get$length$asx(this.get$_html_common$_iterable()._iterable);
+        return J.get$length$asx(this.get$_html_common$_iterable().__internal$_iterable);
       },
       $index: function(_, index) {
         var t1 = this.get$_html_common$_iterable();
-        return t1._f.call$1(J.elementAt$1$ax(t1._iterable, index));
+        return t1._f.call$1(J.elementAt$1$ax(t1.__internal$_iterable, index));
       },
       get$iterator: function(_) {
         var t1 = P.List_List$from(this.get$_html_common$_iterable(), false, W.Element);
@@ -12547,19 +14447,19 @@
       }
     },
     FilteredElementList__iterable_closure: {
-      "^": "Closure:82;",
+      "^": "Closure:37;",
       call$1: function(n) {
         return !!J.getInterceptor$(H.interceptedTypeCheck(n, "$isNode")).$isElement;
       }
     },
     FilteredElementList__iterable_closure0: {
-      "^": "Closure:83;",
+      "^": "Closure:109;",
       call$1: [function(n) {
         return H.interceptedTypeCast(H.interceptedTypeCheck(n, "$isNode"), "$isElement");
-      }, null, null, 4, 0, null, 36, "call"]
+      }, null, null, 4, 0, null, 40, "call"]
     },
     FilteredElementList_removeRange_closure: {
-      "^": "Closure:5;",
+      "^": "Closure:7;",
       call$1: function(el) {
         return J.remove$0$ax(el);
       }
@@ -12576,20 +14476,18 @@
       W._EventStreamSubscription$(request, "error", H.functionTypeCheck(completer.get$completeError(), t3), false, t2);
       return t1;
     },
+    Cursor: {
+      "^": "Interceptor;0key=",
+      "%": "IDBCursor|IDBCursorWithValue"
+    },
     Database: {
       "^": "EventTarget;0name=",
       "%": "IDBDatabase"
     },
     _completeRequest_closure: {
-      "^": "Closure:10;request,completer,T",
+      "^": "Closure:11;request,completer,T",
       call$1: function(e) {
-        var t1, copy;
-        t1 = this.completer;
-        copy = H.futureOrCheck(H.assertSubtypeOfRuntimeType(new P._AcceptStructuredCloneDart2Js([], [], false).walk$1(this.request.result), this.T), {futureOr: 1, type: H.getTypeArgumentByIndex(t1, 0)});
-        t1 = t1.future;
-        if (t1._state !== 0)
-          H.throwExpression(P.StateError$("Future already completed"));
-        t1._complete$1(copy);
+        this.completer.complete$1(0, H.assertSubtypeOfRuntimeType(new P._AcceptStructuredCloneDart2Js([], [], false).walk$1(this.request.result), this.T));
       }
     },
     Index: {
@@ -12646,6 +14544,10 @@
       },
       "%": "IDBObjectStore"
     },
+    Observation: {
+      "^": "Interceptor;0key=",
+      "%": "IDBObservation"
+    },
     OpenDBRequest: {
       "^": "Request;",
       $isOpenDBRequest: 1,
@@ -12673,7 +14575,7 @@
       }
       dartArgs = P.List_List$from(J.map$1$1$ax($arguments, P.js___convertToDart$closure(), null), true, null);
       return P._convertToJS(P.Function_apply(H.interceptedTypeCheck(callback, "$isFunction"), dartArgs, null));
-    }, null, null, 16, 0, null, 11, 38, 4, 24],
+    }, null, null, 16, 0, null, 10, 42, 11, 25],
     _defineProperty: function(o, $name, value) {
       var exception;
       try {
@@ -12707,7 +14609,7 @@
       if (!!t1.$isFunction)
         return P._getJsProxy(o, "$dart_jsFunction", new P._convertToJS_closure());
       return P._getJsProxy(o, "_$dart_jsObject", new P._convertToJS_closure0($.$get$_dartProxyCtor()));
-    }, "call$1", "js___convertToJS$closure", 4, 0, 5, 16],
+    }, "call$1", "js___convertToJS$closure", 4, 0, 7, 12],
     _getJsProxy: function(o, propertyName, createProxy) {
       var jsProxy;
       H.functionTypeCheck(createProxy, {func: 1, args: [,]});
@@ -12735,7 +14637,7 @@
         return o.o;
       else
         return P._wrapToDart(o);
-    }, "call$1", "js___convertToDart$closure", 4, 0, 108, 16],
+    }, "call$1", "js___convertToDart$closure", 4, 0, 156, 12],
     _wrapToDart: function(o) {
       if (typeof o == "function")
         return P._getDartProxy(o, $.$get$DART_CLOSURE_PROPERTY_NAME(), new P._wrapToDart_closure());
@@ -12770,7 +14672,7 @@
     _callDartFunctionFast: [function(callback, $arguments) {
       H.listTypeCheck($arguments);
       return P.Function_apply(H.interceptedTypeCheck(callback, "$isFunction"), $arguments, null);
-    }, null, null, 8, 0, null, 11, 24],
+    }, null, null, 8, 0, null, 10, 25],
     allowInterop: function(f, $F) {
       H.assertIsSubtype($F, P.Function, "The type argument '", "' is not a subtype of the type variable bound '", "' of type variable 'F' in 'allowInterop'.");
       H.assertSubtypeOfRuntimeType(f, $F);
@@ -12871,7 +14773,7 @@
       $isList: 1
     },
     _convertToJS_closure: {
-      "^": "Closure:5;",
+      "^": "Closure:7;",
       call$1: function(o) {
         var jsFunction;
         H.interceptedTypeCheck(o, "$isFunction");
@@ -12885,25 +14787,25 @@
       }
     },
     _convertToJS_closure0: {
-      "^": "Closure:5;ctor",
+      "^": "Closure:7;ctor",
       call$1: function(o) {
         return new this.ctor(o);
       }
     },
     _wrapToDart_closure: {
-      "^": "Closure:88;",
+      "^": "Closure:113;",
       call$1: function(o) {
         return new P.JsFunction(o);
       }
     },
     _wrapToDart_closure0: {
-      "^": "Closure:96;",
+      "^": "Closure:116;",
       call$1: function(o) {
         return new P.JsArray(o, [null]);
       }
     },
     _wrapToDart_closure1: {
-      "^": "Closure:97;",
+      "^": "Closure:117;",
       call$1: function(o) {
         return new P.JsObject(o);
       }
@@ -12920,7 +14822,7 @@
       return $name in o;
     },
     _convertDataTree__convert: {
-      "^": "Closure:5;_convertedObjects",
+      "^": "Closure:7;_convertedObjects",
       call$1: [function(o) {
         var t1, t2, convertedMap, key, convertedList;
         t1 = this._convertedObjects;
@@ -12942,22 +14844,30 @@
           return convertedList;
         } else
           return o;
-      }, null, null, 4, 0, null, 16, "call"]
+      }, null, null, 4, 0, null, 12, "call"]
     }
   }], ["dart.math", "dart:math",, P, {
     "^": "",
-    max: [function(a, b, $T) {
+    max: [1, function(a, b, $T) {
       H.assertIsSubtype($T, P.num, "The type argument '", "' is not a subtype of the type variable bound '", "' of type variable 'T' in 'max'.");
       H.assertSubtypeOfRuntimeType(a, $T);
       H.assertSubtypeOfRuntimeType(b, $T);
       return Math.max(H.checkNum(a), H.checkNum(b));
     }, function(a, b) {
       return P.max(a, b, P.num);
-    }, "call$1$2", "call$2", "math__max$closure", 8, 0, 109],
+    }, "call$1$2", "call$2", "math__max$closure", 8, 0, 157, 13, 15],
+    Random_Random: function(seed) {
+      return C.C__JSRandom;
+    },
     _JenkinsSmiHash_combine0: function(hash, value) {
       hash = 536870911 & hash + value;
       hash = 536870911 & hash + ((524287 & hash) << 10);
       return hash ^ hash >>> 6;
+    },
+    _JenkinsSmiHash_finish: function(hash) {
+      hash = 536870911 & hash + ((67108863 & hash) << 3);
+      hash ^= hash >>> 11;
+      return 536870911 & hash + ((16383 & hash) << 15);
     },
     _JSRandom: {
       "^": "Object;",
@@ -12988,13 +14898,10 @@
         return t1;
       },
       get$hashCode: function(_) {
-        var t1, t2, hash;
+        var t1, t2;
         t1 = J.get$hashCode$(this.x);
         t2 = J.get$hashCode$(this.y);
-        t2 = P._JenkinsSmiHash_combine0(P._JenkinsSmiHash_combine0(0, t1), t2);
-        hash = 536870911 & t2 + ((67108863 & t2) << 3);
-        hash ^= hash >>> 11;
-        return 536870911 & hash + ((16383 & hash) << 15);
+        return P._JenkinsSmiHash_finish(P._JenkinsSmiHash_combine0(P._JenkinsSmiHash_combine0(0, t1), t2));
       },
       $add: function(_, other) {
         var t1, t2, t3, t4, t5;
@@ -13006,14 +14913,154 @@
         t5 = other.y;
         if (typeof t4 !== "number")
           return t4.$add();
-        return new P.Point(t3, H.assertSubtypeOfRuntimeType(C.JSNumber_methods.$add(t4, t5), t2), t1);
+        if (typeof t5 !== "number")
+          return H.iae(t5);
+        return new P.Point(t3, H.assertSubtypeOfRuntimeType(t4 + t5, t2), t1);
       }
     },
     _RectangleBase: {
-      "^": "Object;"
+      "^": "Object;$ti",
+      get$right: function(_) {
+        var t1, t2;
+        t1 = this.get$left(this);
+        t2 = J.get$width$x(this);
+        if (typeof t2 !== "number")
+          return H.iae(t2);
+        return H.assertSubtypeOfRuntimeType(t1 + t2, H.getTypeArgumentByIndex(this, 0));
+      },
+      get$bottom: function(_) {
+        var t1, t2;
+        t1 = this.get$top(this);
+        t2 = J.get$height$x(this);
+        if (typeof t2 !== "number")
+          return H.iae(t2);
+        return H.assertSubtypeOfRuntimeType(t1 + t2, H.getTypeArgumentByIndex(this, 0));
+      },
+      toString$0: function(_) {
+        var t1 = J.getInterceptor$x(this);
+        return "Rectangle (" + H.S(this.get$left(this)) + ", " + H.S(t1.get$top(this)) + ") " + H.S(t1.get$width(this)) + " x " + H.S(t1.get$height(this));
+      },
+      $eq: function(_, other) {
+        var t1, t2, t3, t4, t5;
+        if (other == null)
+          return false;
+        if (!H.checkSubtype(other, "$isRectangle", [P.num], "$asRectangle"))
+          return false;
+        t1 = J.getInterceptor$x(this);
+        t2 = J.getInterceptor$x(other);
+        if (this.get$left(this) === t2.get$left(other))
+          if (t1.get$top(this) === t2.get$top(other)) {
+            t3 = t1.get$left(this);
+            t4 = t1.get$width(this);
+            if (typeof t4 !== "number")
+              return H.iae(t4);
+            t5 = H.getTypeArgumentByIndex(this, 0);
+            if (H.assertSubtypeOfRuntimeType(t3 + t4, t5) === t2.get$right(other)) {
+              t3 = t1.get$top(this);
+              t1 = t1.get$height(this);
+              if (typeof t1 !== "number")
+                return H.iae(t1);
+              t2 = H.assertSubtypeOfRuntimeType(t3 + t1, t5) === t2.get$bottom(other);
+              t1 = t2;
+            } else
+              t1 = false;
+          } else
+            t1 = false;
+        else
+          t1 = false;
+        return t1;
+      },
+      get$hashCode: function(_) {
+        var t1, t2, t3, t4, t5, t6;
+        t1 = J.getInterceptor$x(this);
+        t2 = this.get$left(this);
+        t3 = t1.get$top(this);
+        t4 = t1.get$left(this);
+        t5 = t1.get$width(this);
+        if (typeof t5 !== "number")
+          return H.iae(t5);
+        t6 = H.getTypeArgumentByIndex(this, 0);
+        t5 = H.assertSubtypeOfRuntimeType(t4 + t5, t6);
+        t4 = t1.get$top(this);
+        t1 = t1.get$height(this);
+        if (typeof t1 !== "number")
+          return H.iae(t1);
+        t6 = H.assertSubtypeOfRuntimeType(t4 + t1, t6);
+        return P._JenkinsSmiHash_finish(P._JenkinsSmiHash_combine0(P._JenkinsSmiHash_combine0(P._JenkinsSmiHash_combine0(P._JenkinsSmiHash_combine0(0, t2 & 0x1FFFFFFF), t3 & 0x1FFFFFFF), t5 & 0x1FFFFFFF), t6 & 0x1FFFFFFF));
+      },
+      intersection$1: function(_, other) {
+        var t1, t2, x0, t3, t4, t5, x1, y0, y1;
+        H.assertSubtype(other, "$isRectangle", this.$ti, "$asRectangle");
+        t1 = J.getInterceptor$x(this);
+        t2 = other.left;
+        x0 = Math.max(this.get$left(this), t2);
+        t3 = t1.get$left(this);
+        t4 = t1.get$width(this);
+        if (typeof t4 !== "number")
+          return H.iae(t4);
+        t5 = other.width;
+        if (typeof t5 !== "number")
+          return H.iae(t5);
+        x1 = Math.min(t3 + t4, t2 + t5);
+        if (x0 <= x1) {
+          t2 = other.top;
+          y0 = Math.max(t1.get$top(this), t2);
+          t3 = t1.get$top(this);
+          t1 = t1.get$height(this);
+          if (typeof t1 !== "number")
+            return H.iae(t1);
+          t4 = other.height;
+          if (typeof t4 !== "number")
+            return H.iae(t4);
+          y1 = Math.min(t3 + t1, t2 + t4);
+          if (y0 <= y1) {
+            t1 = H.getTypeArgumentByIndex(this, 0);
+            return P.Rectangle$(x0, y0, H.assertSubtypeOfRuntimeType(x1 - x0, t1), H.assertSubtypeOfRuntimeType(y1 - y0, t1), t1);
+          }
+        }
+        return;
+      },
+      get$topLeft: function(_) {
+        return new P.Point(this.get$left(this), J.get$top$x(this), this.$ti);
+      }
     },
     Rectangle: {
-      "^": "_RectangleBase;$ti"
+      "^": "_RectangleBase;left>,top>,width>,height>,$ti",
+      static: {
+        Rectangle$: function(left, $top, width, height, $T) {
+          var t1, t2;
+          if (typeof width !== "number")
+            return width.$lt();
+          if (width < 0)
+            t1 = -width * 0;
+          else
+            t1 = width;
+          H.assertSubtypeOfRuntimeType(t1, $T);
+          if (typeof height !== "number")
+            return height.$lt();
+          if (height < 0)
+            t2 = -height * 0;
+          else
+            t2 = height;
+          return new P.Rectangle(left, $top, t1, H.assertSubtypeOfRuntimeType(t2, $T), [$T]);
+        }
+      }
+    },
+    MutableRectangle: {
+      "^": "_RectangleBase;left>,top>,_math$_width,_height,$ti",
+      set$_math$_width: function(_, _width) {
+        this._math$_width = H.assertSubtypeOfRuntimeType(_width, H.getTypeArgumentByIndex(this, 0));
+      },
+      set$_height: function(_, _height) {
+        this._height = H.assertSubtypeOfRuntimeType(_height, H.getTypeArgumentByIndex(this, 0));
+      },
+      get$width: function(_) {
+        return this._math$_width;
+      },
+      get$height: function(_) {
+        return this._height;
+      },
+      $isRectangle: 1
     }
   }], ["dart.dom.svg", "dart:svg",, P, {
     "^": "",
@@ -13147,6 +15194,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -13199,6 +15252,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -13263,6 +15322,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -13353,6 +15418,12 @@
       },
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
+      },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
       },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
@@ -13448,7 +15519,7 @@
       "%": "AudioParamMap"
     },
     AudioParamMap_keys_closure: {
-      "^": "Closure:8;keys",
+      "^": "Closure:16;keys",
       call$2: function(k, v) {
         return C.JSArray_methods.add$1(this.keys, k);
       }
@@ -13494,6 +15565,12 @@
       set$length: function(receiver, value) {
         throw H.wrapException(P.UnsupportedError$("Cannot resize immutable List."));
       },
+      get$last: function(receiver) {
+        var len = receiver.length;
+        if (len > 0)
+          return receiver[len - 1];
+        throw H.wrapException(P.StateError$("No elements"));
+      },
       elementAt$1: function(receiver, index) {
         return this.$index(receiver, index);
       },
@@ -13530,17 +15607,23 @@
     "^": "",
     createNgZone: [function() {
       return Y.NgZone$(false);
-    }, "call$0", "modules__createNgZone$closure", 0, 0, 20],
+    }, "call$0", "modules__createNgZone$closure", 0, 0, 58],
     createRandomAppId: function() {
       var t1 = new G.createRandomAppId_char(C.C__JSRandom);
       return H.S(t1.call$0()) + H.S(t1.call$0()) + H.S(t1.call$0());
     },
     ThrowingSlowComponentLoader: {
       "^": "Object;",
+      loadNextToLocation$1$3: function(_, __, ___) {
+        throw H.wrapException(P.UnsupportedError$("You are using runApp or runAppAsync, which does not support loading a component with SlowComponentLoader. Please migrate this code to use ComponentLoader instead."));
+      },
+      loadNextToLocation$1$2: function(_, __, $T) {
+        return this.loadNextToLocation$1$3(_, __, null, $T);
+      },
       $isSlowComponentLoader: 1
     },
     createRandomAppId_char: {
-      "^": "Closure:106;random",
+      "^": "Closure:122;random",
       call$0: function() {
         return H.Primitives_stringFromCharCode(97 + this.random.nextInt$1(26));
       }
@@ -13551,7 +15634,7 @@
       return new Y._Injector$minimalApp($parent == null ? C.EmptyInjector_null : $parent);
     }, function() {
       return Y.minimalApp$Injector(null);
-    }, "call$1", "call$0", "modules_template__minimalApp$Injector$closure", 0, 2, 29],
+    }, "call$1", "call$0", "modules_template__minimalApp$Injector$closure", 0, 2, 57],
     _Injector$minimalApp: {
       "^": "HierarchicalInjector;0_field0,0_field1,0_field2,0_field3,0_field5,parent",
       injectFromSelfOptional$2: function(token, orElse) {
@@ -13637,27 +15720,27 @@
       return $parent;
     }, function() {
       return G._identityInjector(null);
-    }, "call$1", "call$0", "run___identityInjector$closure", 0, 2, 29],
+    }, "call$1", "call$0", "run___identityInjector$closure", 0, 2, 57],
     appInjector_closure: {
-      "^": "Closure:42;_box_0",
+      "^": "Closure:123;_box_0",
       call$0: function() {
         return this._box_0.applicationRef;
       }
     },
     appInjector_closure0: {
-      "^": "Closure:116;",
+      "^": "Closure:124;",
       call$0: function() {
         return $.appViewUtils;
       }
     },
     appInjector_closure1: {
-      "^": "Closure:20;ngZone",
+      "^": "Closure:58;ngZone",
       call$0: function() {
         return this.ngZone;
       }
     },
     appInjector_closure2: {
-      "^": "Closure:43;ngZone",
+      "^": "Closure:140;ngZone",
       call$0: function() {
         var t1 = new D.Testability(this.ngZone, 0, true, false, H.setRuntimeTypeInfo([], [P.Function]));
         t1._watchAngularEvents$0();
@@ -13665,7 +15748,7 @@
       }
     },
     appInjector_closure3: {
-      "^": "Closure:44;_box_0,ngZone,userInjector",
+      "^": "Closure:141;_box_0,ngZone,userInjector",
       call$0: [function() {
         var t1, t2, t3, t4;
         t1 = this.ngZone;
@@ -13746,16 +15829,18 @@
           this._toggleClass$2(t1[_i], t3);
       },
       _applyClasses$2: function(rawClassVal, isCleanup) {
-        var t1, len, i, t2;
+        var t1, len, t2, i;
         if (rawClassVal != null) {
           t1 = J.getInterceptor$(rawClassVal);
-          if (!!t1.$isList)
-            for (len = rawClassVal.length, t1 = !isCleanup, i = 0; i < len; ++i) {
-              if (i >= rawClassVal.length)
-                return H.ioore(rawClassVal, i);
-              this._toggleClass$2(H.stringTypeCheck(rawClassVal[i]), t1);
-            }
-          else if (!!t1.$isIterable)
+          if (!!t1.$isList) {
+            len = t1.get$length(rawClassVal);
+            if (typeof len !== "number")
+              return H.iae(len);
+            t2 = !isCleanup;
+            i = 0;
+            for (; i < len; ++i)
+              this._toggleClass$2(H.stringTypeCheck(t1.$index(rawClassVal, i)), t2);
+          } else if (!!t1.$isIterable)
             for (t1 = t1.get$iterator(rawClassVal), t2 = !isCleanup; t1.moveNext$0();)
               this._toggleClass$2(H.stringTypeCheck(t1.get$current(t1)), t2);
           else
@@ -13796,38 +15881,38 @@
       }
     },
     NgClass__applyKeyValueChanges_closure: {
-      "^": "Closure:14;$this",
+      "^": "Closure:25;$this",
       call$1: function(record) {
         this.$this._toggleClass$2(H.stringTypeCheck(record.key), H.boolTypeCheck(record.currentValue));
       }
     },
     NgClass__applyKeyValueChanges_closure0: {
-      "^": "Closure:14;$this",
+      "^": "Closure:25;$this",
       call$1: function(record) {
         this.$this._toggleClass$2(H.stringTypeCheck(record.key), H.boolTypeCheck(record.currentValue));
       }
     },
     NgClass__applyKeyValueChanges_closure1: {
-      "^": "Closure:14;$this",
+      "^": "Closure:25;$this",
       call$1: function(record) {
         if (record.previousValue != null)
           this.$this._toggleClass$2(H.stringTypeCheck(record.key), false);
       }
     },
     NgClass__applyIterableChanges_closure: {
-      "^": "Closure:15;$this",
+      "^": "Closure:22;$this",
       call$1: function(record) {
         this.$this._toggleClass$2(H.stringTypeCheck(record.item), true);
       }
     },
     NgClass__applyIterableChanges_closure0: {
-      "^": "Closure:15;$this",
+      "^": "Closure:22;$this",
       call$1: function(record) {
         this.$this._toggleClass$2(H.stringTypeCheck(record.item), false);
       }
     },
     NgClass__applyClasses_closure: {
-      "^": "Closure:3;$this,isCleanup",
+      "^": "Closure:4;$this,isCleanup",
       call$2: function(className, expVal) {
         if (expVal != null)
           this.$this._toggleClass$2(H.stringTypeCheck(className), !this.isCleanup);
@@ -13837,6 +15922,9 @@
     "^": "",
     NgFor: {
       "^": "Object;_ng_for$_viewContainer,0_differ,0_ngForOf,0_ngForTrackBy,_ng_for$_templateRef",
+      set$_ngForTrackBy: function(_ngForTrackBy) {
+        this._ngForTrackBy = H.functionTypeCheck(_ngForTrackBy, {func: 1, ret: P.Object, args: [P.int,,]});
+      },
       set$ngForOf: function(value) {
         this._ngForOf = value;
         if (this._differ == null && value != null)
@@ -13848,10 +15936,10 @@
         if (t1 != null) {
           changes = t1.diff$1(this._ngForOf);
           if (changes != null)
-            this._applyChanges$1(changes);
+            this._ng_for$_applyChanges$1(changes);
         }
       },
-      _applyChanges$1: function(changes) {
+      _ng_for$_applyChanges$1: function(changes) {
         var insertTuples, i, t1, t2, t3, len;
         insertTuples = H.setRuntimeTypeInfo([], [R._RecordViewTuple]);
         changes.forEachOperation$1(new R.NgFor__applyChanges_closure(this, insertTuples));
@@ -13885,7 +15973,7 @@
       }
     },
     NgFor__applyChanges_closure: {
-      "^": "Closure:47;$this,insertTuples",
+      "^": "Closure:163;$this,insertTuples",
       call$3: function(item, adjustedPreviousIndex, currentIndex) {
         var t1, t2, viewRef, view;
         H.interceptedTypeCheck(item, "$isCollectionChangeRecord");
@@ -13910,7 +15998,7 @@
       }
     },
     NgFor__applyChanges_closure0: {
-      "^": "Closure:15;$this",
+      "^": "Closure:22;$this",
       call$1: function(record) {
         var t1, t2;
         t1 = record.currentIndex;
@@ -13932,10 +16020,9 @@
         if (t1 === newCondition)
           return;
         t1 = this._viewContainer;
-        if (newCondition) {
-          t1.toString;
-          t1.attachView$2(this._templateRef.createEmbeddedView$0().appView, t1.get$length(t1));
-        } else
+        if (newCondition)
+          t1.createEmbeddedView$1(this._templateRef);
+        else
           t1.clear$0(0);
         this._prevCondition = newCondition;
       }
@@ -13953,7 +16040,7 @@
   }], ["", "package:angular/src/core/application_ref.dart",, Y, {
     "^": "",
     ApplicationRef: {
-      "^": "ChangeDetectionHost;_disposeListeners,_rootComponents,_exceptionHandler,_injector,_ngZone,0_onErrorSub,0_onMicroSub,0_lastGuardedView,0_lastCaughtException,0_lastCaughtTrace,_runningTick,_changeDetectors,_scheduledCallbacks,_scheduledViews,_scheduledElements",
+      "^": "ChangeDetectionHost;_disposeListeners,_rootComponents,_exceptionHandler,_injector,_application_ref$_ngZone,0_onErrorSub,0_onMicroSub,0_lastGuardedView,0_lastCaughtException,0_lastCaughtTrace,_runningTick,_changeDetectors,_scheduledCallbacks,_scheduledViews,_scheduledElements",
       set$_onErrorSub: function(_onErrorSub) {
         this._onErrorSub = H.assertSubtype(_onErrorSub, "$isStreamSubscription", [-1], "$asStreamSubscription");
       },
@@ -13962,7 +16049,7 @@
       },
       ApplicationRef$_$3: function(_ngZone, _exceptionHandler, _injector) {
         var t1, t2;
-        t1 = this._ngZone;
+        t1 = this._application_ref$_ngZone;
         t2 = t1._onError;
         this.set$_onErrorSub(new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(new Y.ApplicationRef$__closure(this)));
         t1 = t1._onMicrotaskEmpty;
@@ -14003,22 +16090,22 @@
       }
     },
     ApplicationRef$__closure: {
-      "^": "Closure:48;$this",
+      "^": "Closure:62;$this",
       call$1: [function(e) {
         H.interceptedTypeCheck(e, "$isNgZoneError");
         this.$this._exceptionHandler.call$3(e.error, new P._StringStackTrace(C.JSArray_methods.join$1(e.stackTrace, "\n")), null);
-      }, null, null, 4, 0, null, 5, "call"]
+      }, null, null, 4, 0, null, 6, "call"]
     },
     ApplicationRef$__closure0: {
       "^": "Closure:12;$this",
       call$1: [function(_) {
         var t1, t2;
         t1 = this.$this;
-        t2 = t1._ngZone;
+        t2 = t1._application_ref$_ngZone;
         t2.toString;
         t1 = H.functionTypeCheck(t1.get$tick(), {func: 1, ret: -1});
         t2._innerZone.runGuarded$1(t1);
-      }, null, null, 4, 0, null, 2, "call"]
+      }, null, null, 4, 0, null, 0, "call"]
     },
     ApplicationRef_bootstrap_closure: {
       "^": "Closure;$this,componentFactory,T",
@@ -14058,13 +16145,18 @@
       }
     },
     ApplicationRef__loadedRootComponent_closure: {
-      "^": "Closure:1;$this,component,node",
+      "^": "Closure:0;$this,component,node",
       call$0: function() {
         this.$this._destroyedRootComponent$1(this.component);
         var t1 = this.node;
         if (!(t1 == null))
           J.remove$0$ax(t1);
       }
+    }
+  }], ["", "package:angular/src/core/change_detection/change_detection_util.dart",, A, {
+    "^": "",
+    SimpleChange: {
+      "^": "Object;previousValue,currentValue"
     }
   }], ["", "package:angular/src/core/change_detection/change_detector_ref.dart",, S, {
     "^": "",
@@ -14076,7 +16168,7 @@
     _trackByIdentity: [function(index, item) {
       H.intTypeCheck(index);
       return item;
-    }, "call$2", "default_iterable_differ___trackByIdentity$closure", 8, 0, 111, 23, 41],
+    }, "call$2", "default_iterable_differ___trackByIdentity$closure", 8, 0, 159, 23, 27],
     _getPreviousIndex: function(item, addRemoveOffset, moveOffsets) {
       var previousIndex, moveOffset;
       H.interceptedTypeCheck(item, "$isCollectionChangeRecord");
@@ -14492,12 +16584,12 @@
       },
       static: {
         DefaultIterableDiffer$: function(trackByFn) {
-          return new R.DefaultIterableDiffer(R.default_iterable_differ___trackByIdentity$closure());
+          return new R.DefaultIterableDiffer(trackByFn == null ? R.default_iterable_differ___trackByIdentity$closure() : trackByFn);
         }
       }
     },
     DefaultIterableDiffer_check_closure: {
-      "^": "Closure:7;_box_0,$this",
+      "^": "Closure:3;_box_0,$this",
       call$1: function(item) {
         var t1, t2, itemTrackBy, t3, t4, record;
         t1 = this.$this;
@@ -14796,7 +16888,7 @@
       }
     },
     DefaultKeyValueDiffer_check_closure: {
-      "^": "Closure:3;$this",
+      "^": "Closure:4;$this",
       call$2: function(key, value) {
         var record, t1, t2;
         record = new N.KeyValueChangeRecord(key);
@@ -14815,7 +16907,7 @@
       }
     },
     DefaultKeyValueDiffer_check_closure0: {
-      "^": "Closure:3;_box_0,$this",
+      "^": "Closure:4;_box_0,$this",
       call$2: function(key, value) {
         var t1, t2, t3, record;
         t1 = this._box_0;
@@ -14833,7 +16925,7 @@
       }
     },
     KeyValueChangeRecord: {
-      "^": "Object;key,0previousValue,0currentValue,0_nextPrevious,0_default_keyvalue_differ$_next,0_prev,0_nextAdded,0_nextChanged",
+      "^": "Object;key>,0previousValue,0currentValue,0_nextPrevious,0_default_keyvalue_differ$_next,0_prev,0_nextAdded,0_nextChanged",
       toString$0: function(_) {
         var t1, t2, t3;
         t1 = this.previousValue;
@@ -14852,6 +16944,14 @@
           t1.get$classes(element).add$1(0, className);
         else
           t1.get$classes(element).remove$1(0, className);
+      },
+      setAttr$3: function(renderElement, attributeName, attributeValue) {
+        if (attributeValue != null)
+          (renderElement && C.DivElement_methods).setAttribute$2(renderElement, attributeName, attributeValue);
+        else {
+          renderElement.toString;
+          new W._ElementAttributeMap(renderElement).remove$1(0, attributeName);
+        }
       }
     }
   }], ["", "package:angular/src/core/change_detection/host.dart",, M, {
@@ -14878,7 +16978,7 @@
           this._runningTick = false;
           this._resetViewErrors$0();
         }
-      }, "call$0", "get$tick", 0, 0, 0],
+      }, "call$0", "get$tick", 0, 0, 1],
       _runTick$0: function() {
         var detectors, $length, i;
         detectors = this._changeDetectors;
@@ -14928,7 +17028,7 @@
         t1.result = null;
         t3 = P.Null;
         t4 = H.functionTypeCheck(new M.ChangeDetectionHost_run_closure(t1, this, callback, new P._AsyncCompleter(t2, [$R]), $R), {func: 1, ret: t3});
-        t5 = this._ngZone;
+        t5 = this._application_ref$_ngZone;
         t5.toString;
         H.functionTypeCheck(t4, {func: 1, ret: t3});
         t5._innerZone.run$1$1(t4, t3);
@@ -14937,7 +17037,7 @@
       }
     },
     ChangeDetectionHost_run_closure: {
-      "^": "Closure:1;_box_0,$this,callback,completer,R",
+      "^": "Closure:0;_box_0,$this,callback,completer,R",
       call$0: [function() {
         var resultCast, e, s, result, t1, t2, exception;
         try {
@@ -14962,18 +17062,18 @@
       call$1: [function(result) {
         H.assertSubtypeOfRuntimeType(result, this.R);
         this.completer.complete$1(0, result);
-      }, null, null, 4, 0, null, 18, "call"],
+      }, null, null, 4, 0, null, 8, "call"],
       $signature: function() {
         return {func: 1, ret: P.Null, args: [this.R]};
       }
     },
     ChangeDetectionHost_run__closure0: {
-      "^": "Closure:3;$this,completer",
+      "^": "Closure:4;$this,completer",
       call$2: [function(e, s) {
         var sCasted = H.interceptedTypeCheck(s, "$isStackTrace");
         this.completer.completeError$2(e, sCasted);
         this.$this._exceptionHandler.call$3(e, H.interceptedTypeCheck(sCasted, "$isStackTrace"), null);
-      }, null, null, 8, 0, null, 5, 14, "call"]
+      }, null, null, 8, 0, null, 6, 24, "call"]
     }
   }], ["", "package:angular/src/core/di/opaque_token.dart",, S, {
     "^": "",
@@ -15183,6 +17283,19 @@
         t1.rootNodesOrViewContainers = rootNodesOrViewContainers;
         t1.subscriptions = subscriptions;
       },
+      removeInlinedNodes$2: function(inlinedNodes, isRoot) {
+        var nodeList, i, node;
+        H.assertSubtype(inlinedNodes, "$isList", [W.Node], "$asList");
+        S._detachAll(inlinedNodes);
+        nodeList = this.viewData.rootNodesOrViewContainers;
+        for (i = nodeList.length - 1; i >= 0; --i) {
+          if (i >= nodeList.length)
+            return H.ioore(nodeList, i);
+          node = nodeList[i];
+          if (C.JSArray_methods.contains$1(inlinedNodes, node))
+            C.JSArray_methods.remove$1(nodeList, node);
+        }
+      },
       injectorGet$3: function(token, nodeIndex, notFoundValue) {
         var result, view, injector;
         A.debugInjectorEnter(token);
@@ -15213,12 +17326,15 @@
         t1.destroyed = true;
         t1.destroy$0();
         this.destroyInternal$0();
+        this.dirtyParentQueriesInternal$0();
       },
       destroyInternal$0: function() {
       },
       get$lastRootNode: function() {
         var t1 = this.viewData.rootNodesOrViewContainers;
         return S._findLastRenderNode(t1.length !== 0 ? (t1 && C.JSArray_methods).get$last(t1) : null);
+      },
+      dirtyParentQueriesInternal$0: function() {
       },
       detectChanges$0: function() {
         if (this.viewData._skipChangeDetection)
@@ -15309,7 +17425,7 @@
           J.get$classes$x(element).add$1(0, contentClass);
       },
       project$2: function(parentElement, index) {
-        var projectableNodes, projectables, projectableCount, t1, i, projectable;
+        var projectableNodes, projectables, projectableCount, t1, i, projectable, t2, len, n, node;
         if (parentElement == null)
           return;
         projectableNodes = this.viewData.projectableNodes;
@@ -15323,12 +17439,28 @@
           if (i >= projectables.length)
             return H.ioore(projectables, i);
           projectable = projectables[i];
-          if (projectable instanceof V.ViewContainer)
+          t2 = J.getInterceptor$(projectable);
+          if (!!t2.$isViewContainer)
             if (projectable.nestedViews == null)
               t1.append$1(parentElement, projectable.nativeElement);
             else
               S._appendNestedViewRenderNodes(parentElement, projectable);
-          else
+          else if (!!t2.$isList) {
+            len = t2.get$length(projectable);
+            if (typeof len !== "number")
+              return H.iae(len);
+            n = 0;
+            for (; n < len; ++n) {
+              node = t2.$index(projectable, n);
+              if (node instanceof V.ViewContainer)
+                if (node.nestedViews == null)
+                  t1.append$1(parentElement, node.nativeElement);
+                else
+                  S._appendNestedViewRenderNodes(parentElement, node);
+              else
+                t1.append$1(parentElement, H.interceptedTypeCheck(node, "$isNode"));
+            }
+          } else
             t1.append$1(parentElement, H.interceptedTypeCheck(projectable, "$isNode"));
         }
         $.domRootRendererIsDirty = true;
@@ -15351,7 +17483,7 @@
         t1.toString;
         t2 = H.functionTypeCheck(this.handler, {func: 1, ret: -1});
         t1._innerZone.runGuarded$1(t2);
-      }, null, null, 4, 0, null, 22, "call"],
+      }, null, null, 4, 0, null, 7, "call"],
       $signature: function() {
         return {func: 1, ret: P.Null, args: [this.E]};
       }
@@ -15366,13 +17498,13 @@
         t1.toString;
         t2 = H.functionTypeCheck(new S.AppView_eventHandler1__closure(this.handler, $event, this.F), {func: 1, ret: -1});
         t1._innerZone.runGuarded$1(t2);
-      }, null, null, 4, 0, null, 22, "call"],
+      }, null, null, 4, 0, null, 7, "call"],
       $signature: function() {
         return {func: 1, ret: P.Null, args: [this.E]};
       }
     },
     AppView_eventHandler1__closure: {
-      "^": "Closure:0;handler,event,F",
+      "^": "Closure:1;handler,event,F",
       call$0: [function() {
         return this.handler.call$1(H.assertSubtypeOfRuntimeType(this.event, this.F));
       }, null, null, 0, 0, null, "call"]
@@ -15428,7 +17560,7 @@
           t1.result = this.fn.call$1(p0);
         }
         return t1.result;
-      }, null, null, 4, 0, null, 21, "call"],
+      }, null, null, 4, 0, null, 30, "call"],
       $signature: function() {
         return {func: 1, ret: this.T, args: [this.S0]};
       }
@@ -15456,7 +17588,7 @@
           t1.result = this.fn.call$2(p0, p1);
         }
         return t1.result;
-      }, null, null, 8, 0, null, 21, 45, "call"],
+      }, null, null, 8, 0, null, 30, 74, "call"],
       $signature: function() {
         return {func: 1, ret: this.T, args: [this.S0, this.S1]};
       }
@@ -15489,6 +17621,11 @@
     "^": "",
     SlowComponentLoader: {
       "^": "Object;"
+    }
+  }], ["", "package:angular/src/core/linker/element_ref.dart",, Z, {
+    "^": "",
+    ElementRef: {
+      "^": "Object;nativeElement"
     }
   }], ["", "package:angular/src/core/linker/template_ref.dart",, D, {
     "^": "",
@@ -15540,6 +17677,11 @@
           _nestedViews[i].destroy$0();
         }
       },
+      createEmbeddedView$1: function(templateRef) {
+        var viewRef = templateRef.createEmbeddedView$0();
+        this.attachView$2(viewRef.appView, this.get$length(this));
+        return viewRef;
+      },
       insert$2: function(_, viewRef, index) {
         if (index === -1)
           index = this.get$length(this);
@@ -15567,6 +17709,7 @@
           S._moveNodesAfterSibling(refRenderNode, H.assertSubtype(S._flattenNestedViewRenderNodes(t1.viewData.rootNodesOrViewContainers, H.setRuntimeTypeInfo([], t2)), "$isList", t2, "$asList"));
           $.domRootRendererIsDirty = true;
         }
+        t1.dirtyParentQueriesInternal$0();
         return viewRef;
       },
       remove$1: function(_, index) {
@@ -15585,6 +17728,21 @@
             index = i;
           this.detachView$1(index).destroy$0();
         }
+      },
+      mapNestedViews$2$1: function(callback, $T, $U) {
+        var nestedViews, result, l, i;
+        H.assertIsSubtype($U, [S.AppView,,], "The type argument '", "' is not a subtype of the type variable bound '", "' of type variable 'U' in 'mapNestedViews'.");
+        H.functionTypeCheck(callback, {func: 1, ret: [P.List, $T], args: [$U]});
+        nestedViews = this.nestedViews;
+        if (nestedViews == null || nestedViews.length === 0)
+          return C.List_empty1;
+        result = H.setRuntimeTypeInfo([], [$T]);
+        for (l = nestedViews.length, i = 0; i < l; ++i) {
+          if (i >= nestedViews.length)
+            return H.ioore(nestedViews, i);
+          C.JSArray_methods.addAll$1(result, callback.call$1(H.assertSubtypeOfRuntimeType(nestedViews[i], $U)));
+        }
+        return result;
       },
       attachView$2: function(view, viewIndex) {
         var _nestedViews, t1, refRenderNode;
@@ -15609,16 +17767,20 @@
           $.domRootRendererIsDirty = true;
         }
         view.viewData._viewContainerElement = this;
+        view.dirtyParentQueriesInternal$0();
       },
       detachView$1: function(viewIndex) {
-        var t1, view;
+        var t1, view, t2;
         t1 = this.nestedViews;
         view = (t1 && C.JSArray_methods).removeAt$1(t1, viewIndex);
         V._assertCanMove(view);
         t1 = [W.Node];
         S._detachAll(H.assertSubtype(S._flattenNestedViewRenderNodes(view.viewData.rootNodesOrViewContainers, H.setRuntimeTypeInfo([], t1)), "$isList", t1, "$asList"));
-        t1 = view.viewData;
-        t1._viewContainerElement = null;
+        t2 = view.viewData.inlinedNodes;
+        if (t2 != null)
+          S._detachAll(H.assertSubtype(t2, "$isList", t1, "$asList"));
+        view.dirtyParentQueriesInternal$0();
+        view.viewData._viewContainerElement = null;
         return view;
       },
       $isViewContainerRef: 1
@@ -15650,7 +17812,7 @@
   }], ["", "package:angular/src/core/render/api.dart",, A, {
     "^": "",
     RenderComponentType: {
-      "^": "Object;id,templateUrl,encapsulation,templateStyles,0_viewAttr,0_hostAttr,stylesShimmed",
+      "^": "Object;id>,templateUrl,encapsulation,templateStyles,0_viewAttr,0_hostAttr,stylesShimmed",
       _flattenStyles$3: function(compId, styles, target) {
         var t1, styleCount, i, style, t2;
         H.assertSubtype(target, "$isList", [P.String], "$asList");
@@ -15681,7 +17843,7 @@
   }], ["", "package:angular/src/core/testability/testability.dart",, D, {
     "^": "",
     Testability: {
-      "^": "Object;_testability$_ngZone,_pendingCount,_isZoneStable,_didWork,_callbacks",
+      "^": "Object;_testability$_ngZone,_pendingCount,_isZoneStable,_didWork,_testability$_callbacks",
       _watchAngularEvents$0: function() {
         var t1, t2, t3;
         t1 = this._testability$_ngZone;
@@ -15694,7 +17856,7 @@
       },
       isStable$0: [function(_) {
         return this._isZoneStable && this._pendingCount === 0 && !this._testability$_ngZone._hasPendingMacrotasks;
-      }, "call$0", "get$isStable", 1, 0, 50],
+      }, "call$0", "get$isStable", 1, 0, 23],
       _runCallbacksIfReady$0: function() {
         if (this.isStable$0(0))
           P.scheduleMicrotask(new D.Testability__runCallbacksIfReady_closure(this));
@@ -15702,9 +17864,9 @@
           this._didWork = true;
       },
       whenStable$1: [function(_, callback) {
-        C.JSArray_methods.add$1(this._callbacks, H.interceptedTypeCheck(callback, "$isFunction"));
+        C.JSArray_methods.add$1(this._testability$_callbacks, H.interceptedTypeCheck(callback, "$isFunction"));
         this._runCallbacksIfReady$0();
-      }, "call$1", "get$whenStable", 5, 0, 51, 11]
+      }, "call$1", "get$whenStable", 5, 0, 174, 10]
     },
     Testability__watchAngularEvents_closure: {
       "^": "Closure:12;$this",
@@ -15712,10 +17874,10 @@
         var t1 = this.$this;
         t1._didWork = true;
         t1._isZoneStable = false;
-      }, null, null, 4, 0, null, 2, "call"]
+      }, null, null, 4, 0, null, 0, "call"]
     },
     Testability__watchAngularEvents_closure0: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1, t2;
         t1 = this.$this;
@@ -15729,10 +17891,10 @@
         if ($.Zone__current.$index(0, $.$get$NgZone__anyZoneKey()) === true)
           H.throwExpression(P.Exception_Exception("Expected to not be in Angular Zone, but it is!"));
         P.scheduleMicrotask(new D.Testability__watchAngularEvents___closure(this.$this));
-      }, null, null, 4, 0, null, 2, "call"]
+      }, null, null, 4, 0, null, 0, "call"]
     },
     Testability__watchAngularEvents___closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1 = this.$this;
         t1._isZoneStable = true;
@@ -15740,10 +17902,10 @@
       }, null, null, 0, 0, null, "call"]
     },
     Testability__runCallbacksIfReady_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1, t2, t3;
-        for (t1 = this.$this, t2 = t1._callbacks; t3 = t2.length, t3 !== 0;) {
+        for (t1 = this.$this, t2 = t1._testability$_callbacks; t3 = t2.length, t3 !== 0;) {
           if (0 >= t3)
             return H.ioore(t2, -1);
           t2.pop().call$1(t1._didWork);
@@ -15786,7 +17948,7 @@
         implementation = $parent._delegationTarget.get$_scheduleMicrotask();
         implZone = implementation.zone;
         implementation.$function.call$4(implZone, P._parentDelegate(implZone), zone, safeMicrotask);
-      }, "call$4", "get$_ng_zone$_scheduleMicrotask", 16, 0, 22],
+      }, "call$4", "get$_ng_zone$_scheduleMicrotask", 16, 0, 36],
       _run$1$4: [function($self, $parent, zone, fn, $R) {
         var t1, implementation, implZone;
         H.functionTypeCheck(fn, {func: 1, ret: $R});
@@ -15797,7 +17959,7 @@
         return H.functionTypeCheck(implementation.$function, {func: 1, bounds: [P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}).call$1$4(implZone, P._parentDelegate(implZone), zone, t1, $R);
       }, function($self, $parent, zone, fn) {
         return this._run$1$4($self, $parent, zone, fn, null);
-      }, "_run$4", "call$1$4", "call$4", "get$_run", 16, 0, 41],
+      }, "_run$4", "call$1$4", "call$4", "get$_run", 16, 0, 43],
       _runUnary$2$5: [function($self, $parent, zone, fn, arg, $R, $T) {
         var t1, implementation, implZone;
         H.functionTypeCheck(fn, {func: 1, ret: $R, args: [$T]});
@@ -15810,7 +17972,7 @@
         return H.functionTypeCheck(implementation.$function, {func: 1, bounds: [P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}, 1]}).call$2$5(implZone, P._parentDelegate(implZone), zone, t1, arg, $R, $T);
       }, function($self, $parent, zone, fn, arg) {
         return this._runUnary$2$5($self, $parent, zone, fn, arg, null, null);
-      }, "_runUnary$5", "call$2$5", "call$5", "get$_runUnary", 20, 0, 24],
+      }, "_runUnary$5", "call$2$5", "call$5", "get$_runUnary", 20, 0, 50],
       _runBinary$3$6: [function($self, $parent, zone, fn, arg1, arg2, $R, T1, T2) {
         var t1, implementation, implZone;
         H.functionTypeCheck(fn, {func: 1, ret: $R, args: [T1, T2]});
@@ -15823,7 +17985,7 @@
         implementation = $parent._delegationTarget.get$_async$_runBinary();
         implZone = implementation.zone;
         return H.functionTypeCheck(implementation.$function, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}, 1, 2]}).call$3$6(implZone, P._parentDelegate(implZone), zone, t1, arg1, arg2, $R, T1, T2);
-      }, "call$3$6", "get$_runBinary", 24, 0, 25],
+      }, "call$3$6", "get$_runBinary", 24, 0, 55],
       _onEnter$0: function() {
         ++this._nesting;
         if (this._isStable) {
@@ -15838,7 +18000,7 @@
       },
       _onErrorWithoutLongStackTrace$5: [function($self, $parent, zone, error, trace) {
         this._onError.add$1(0, new Y.NgZoneError(error, [J.toString$0$(H.interceptedTypeCheck(trace, "$isStackTrace"))]));
-      }, "call$5", "get$_onErrorWithoutLongStackTrace", 20, 0, 26],
+      }, "call$5", "get$_onErrorWithoutLongStackTrace", 20, 0, 61],
       _createTimer$5: [function($self, $parent, zone, duration, fn) {
         var t1, t2, onDone, callback, implementation, implZone, wrappedTimer;
         t1 = {};
@@ -15856,7 +18018,7 @@
         C.JSArray_methods.add$1(this._pendingTimers, wrappedTimer);
         this._hasPendingMacrotasks = true;
         return t1.wrappedTimer;
-      }, "call$5", "get$_createTimer", 20, 0, 27],
+      }, "call$5", "get$_createTimer", 20, 0, 31],
       _checkStable$0: function() {
         var t1, t2;
         t1 = this._nesting;
@@ -15878,6 +18040,12 @@
                 }
             }
       },
+      runOutsideAngular$1$1: [1, function(callback, $R) {
+        H.functionTypeCheck(callback, {func: 1, ret: $R});
+        return this._outerZone.run$1$1(callback, $R);
+      }, function(callback) {
+        return this.runOutsideAngular$1$1(callback, null);
+      }, "runOutsideAngular$1", "call$1$1", "call$1", "get$runOutsideAngular", 4, 0, 69, 10],
       static: {
         NgZone$: function(enableLongStackTrace) {
           var t1 = [-1];
@@ -15888,7 +18056,7 @@
       }
     },
     NgZone__scheduleMicrotask_closure: {
-      "^": "Closure:1;$this,fn",
+      "^": "Closure:0;$this,fn",
       call$0: [function() {
         try {
           this.fn.call$0();
@@ -15928,7 +18096,7 @@
         } finally {
           this.$this._onLeave$0();
         }
-      }, null, null, 4, 0, null, 9, "call"],
+      }, null, null, 4, 0, null, 18, "call"],
       $signature: function() {
         return {func: 1, ret: this.R, args: [this.T]};
       }
@@ -15946,13 +18114,13 @@
         } finally {
           this.$this._onLeave$0();
         }
-      }, null, null, 8, 0, null, 12, 13, "call"],
+      }, null, null, 8, 0, null, 19, 22, "call"],
       $signature: function() {
         return {func: 1, ret: this.R, args: [this.T1, this.T2]};
       }
     },
     NgZone__createTimer_closure: {
-      "^": "Closure:1;_box_0,$this",
+      "^": "Closure:0;_box_0,$this",
       call$0: function() {
         var t1, t2;
         t1 = this.$this;
@@ -15962,7 +18130,7 @@
       }
     },
     NgZone__createTimer_closure0: {
-      "^": "Closure:1;fn,onDone",
+      "^": "Closure:0;fn,onDone",
       call$0: [function() {
         try {
           this.fn.call$0();
@@ -15972,7 +18140,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     NgZone__checkStable_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         this.$this._onTurnDone.add$1(0, null);
       }, null, null, 0, 0, null, "call"]
@@ -16160,7 +18328,7 @@
       $isGetTestability: 1
     },
     BrowserGetTestability_addToWindow_closure: {
-      "^": "Closure:58;",
+      "^": "Closure:70;",
       call$2: [function(elem, findInAncestors) {
         var registry, t1, i, t2, result;
         H.interceptedTypeCheck(elem, "$isElement");
@@ -16183,10 +18351,10 @@
         throw H.wrapException(P.StateError$("Could not find testability for element."));
       }, function(elem) {
         return this.call$2(elem, true);
-      }, "call$1", null, null, null, 4, 2, null, 46, 47, 48, "call"]
+      }, "call$1", null, null, null, 4, 2, null, 50, 51, 52, "call"]
     },
     BrowserGetTestability_addToWindow_closure0: {
-      "^": "Closure:59;",
+      "^": "Closure:71;",
       call$0: [function() {
         var registry, result, t1, i, t2, testabilities, testabilityCount, j;
         registry = H.listTypeCheck(self.self.ngTestabilityRegistries);
@@ -16213,7 +18381,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     BrowserGetTestability_addToWindow_closure1: {
-      "^": "Closure:7;getAllAngularTestabilities",
+      "^": "Closure:3;getAllAngularTestabilities",
       call$1: [function(callback) {
         var _box_0, testabilities, t1, decrement, t2, testability;
         _box_0 = {};
@@ -16226,10 +18394,10 @@
           testability = t1.get$current(t1);
           testability.whenStable.apply(testability, [P.allowInterop(decrement, t2)]);
         }
-      }, null, null, 4, 0, null, 11, "call"]
+      }, null, null, 4, 0, null, 10, "call"]
     },
     BrowserGetTestability_addToWindow__closure: {
-      "^": "Closure:60;_box_0,callback",
+      "^": "Closure:24;_box_0,callback",
       call$1: [function(didWork_) {
         var t1, didWork, t2, count;
         H.boolTypeCheck(didWork_);
@@ -16243,20 +18411,20 @@
         t1.count = count;
         if (count === 0)
           this.callback.call$1(didWork);
-      }, null, null, 4, 0, null, 49, "call"]
+      }, null, null, 4, 0, null, 53, "call"]
     },
     BrowserGetTestability__createRegistry_closure: {
-      "^": "Closure:61;registry",
+      "^": "Closure:73;registry",
       call$1: [function(element) {
         var t1, testability;
         H.interceptedTypeCheck(element, "$isElement");
         t1 = this.registry;
         testability = t1._testabilityGetter.findTestabilityInTree$2(t1, element);
         return testability == null ? null : {isStable: P.allowInterop(testability.get$isStable(testability), {func: 1, ret: P.bool}), whenStable: P.allowInterop(testability.get$whenStable(testability), {func: 1, ret: -1, args: [{func: 1, ret: -1, args: [P.bool]}]})};
-      }, null, null, 4, 0, null, 19, "call"]
+      }, null, null, 4, 0, null, 17, "call"]
     },
     BrowserGetTestability__createRegistry_closure0: {
-      "^": "Closure:62;registry",
+      "^": "Closure:74;registry",
       call$0: [function() {
         var t1, t2, t3;
         t1 = this.registry._applications;
@@ -16268,11 +18436,11 @@
       }, null, null, 0, 0, null, "call"]
     },
     BrowserGetTestability__createRegistry__closure: {
-      "^": "Closure:63;",
+      "^": "Closure:75;",
       call$1: [function(t) {
         H.interceptedTypeCheck(t, "$isTestability");
         return {isStable: P.allowInterop(t.get$isStable(t), {func: 1, ret: P.bool}), whenStable: P.allowInterop(t.get$whenStable(t), {func: 1, ret: -1, args: [{func: 1, ret: -1, args: [P.bool]}]})};
-      }, null, null, 4, 0, null, 50, "call"]
+      }, null, null, 4, 0, null, 54, "call"]
     }
   }], ["", "package:angular/src/platform/dom/events/dom_events.dart",, L, {
     "^": "",
@@ -16386,7 +18554,7 @@
       }]
     },
     MaterialDrawerBase_visible_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1 = this.$this;
         if (!t1._visible)
@@ -16421,7 +18589,7 @@
       },
       toggle$0: [function(_) {
         return this.super$MaterialDrawerBase$toggle(0);
-      }, "call$0", "get$toggle", 1, 0, 0]
+      }, "call$0", "get$toggle", 1, 0, 1]
     }
   }], ["asset_angular_components_lib_app_layout_material_temporary_drawer.scss.css.shim.dart", "package:angular_components/app_layout/material_temporary_drawer.scss.css.shim.dart",, K, {}], ["", "package:angular_components/app_layout/material_temporary_drawer.template.dart",, V, {
     "^": "",
@@ -16451,27 +18619,110 @@
   }], ["", "package:angular_components/button_decorator/button_decorator.dart",, T, {
     "^": "",
     ButtonDirective: {
-      "^": "_ButtonDirective_RootFocusable_HasTabIndex;role>,disabled>",
+      "^": "_ButtonDirective_RootFocusable_HasTabIndex;_trigger,0_hostTabIndex,role>,disabled>,tabbable,HasTabIndex__tabIndex,_focus$_root",
       get$ariaRole: function() {
         return this.role;
       },
       get$disabledStr: function() {
-        return "false";
+        return "" + this.get$disabled(this);
       },
       handleClick$1: [function(mouseEvent) {
         H.interceptedTypeCheck(mouseEvent, "$isMouseEvent");
+        if (this.get$disabled(this))
+          return;
         this._trigger.add$1(0, mouseEvent);
-      }, "call$1", "get$handleClick", 4, 0, 16],
+      }, "call$1", "get$handleClick", 4, 0, 17],
       handleKeyPress$1: [function(keyboardEvent) {
         H.interceptedTypeCheck(keyboardEvent, "$isKeyboardEvent");
+        if (this.get$disabled(this))
+          return;
         if (keyboardEvent.keyCode === 13 || Z.isSpaceKey(keyboardEvent)) {
           this._trigger.add$1(0, keyboardEvent);
           keyboardEvent.preventDefault();
         }
-      }, "call$1", "get$handleKeyPress", 4, 0, 17]
+      }, "call$1", "get$handleKeyPress", 4, 0, 5],
+      static: {
+        ButtonDirective$: function(element, role) {
+          var t1 = role == null ? "button" : role;
+          return new T.ButtonDirective(new P._SyncBroadcastStreamController(null, null, 0, [W.UIEvent]), t1, false, true, null, element);
+        }
+      }
     },
     _ButtonDirective_RootFocusable_HasTabIndex: {
       "^": "RootFocusable+HasTabIndex;"
+    }
+  }], ["asset_angular_components_lib_button_decorator_button_decorator.scss.css.shim.dart", "package:angular_components/button_decorator/button_decorator.scss.css.shim.dart",, T, {}], ["", "package:angular_components/button_decorator/button_decorator.template.dart",, R, {
+    "^": "",
+    ButtonDirectiveNgCd: {
+      "^": "DirectiveChangeDetector;instance,0_button_decorator_template$_expr_0,0_button_decorator_template$_expr_1,0_button_decorator_template$_expr_2,0_button_decorator_template$_expr_3,0directive,0view,0el,_hasHostChanges"
+    }
+  }], ["", "package:angular_components/content/deferred_content.dart",, K, {
+    "^": "",
+    DeferredContentDirective: {
+      "^": "Object;_deferred_content$_disposer,_placeholder,_deferred_content$_viewContainer,0_viewRef,_template,preserveDimensions,_shown,_deferred_content$_visible,_forceContent",
+      _setVisible$0: function() {
+        var value, t1, rootNodes, $content, dimensions, t2, container;
+        value = this._deferred_content$_visible || false;
+        if (value === this._shown)
+          return;
+        if (value) {
+          if (this.preserveDimensions)
+            C.DivElement_methods.remove$0(this._placeholder);
+          this._viewRef = this._deferred_content$_viewContainer.createEmbeddedView$1(this._template);
+        } else {
+          if (this.preserveDimensions) {
+            t1 = this._viewRef;
+            rootNodes = t1 == null ? null : S._flattenNestedViewRenderNodes(t1.appView.viewData.rootNodesOrViewContainers, H.setRuntimeTypeInfo([], [W.Node]));
+            if (rootNodes == null)
+              rootNodes = H.setRuntimeTypeInfo([], [W.Node]);
+            $content = rootNodes.length !== 0 ? C.JSArray_methods.get$first(rootNodes) : null;
+            if (!!J.getInterceptor$($content).$isHtmlElement) {
+              dimensions = $content.getBoundingClientRect();
+              t1 = this._placeholder.style;
+              t2 = H.S(dimensions.width) + "px";
+              t1.width = t2;
+              t2 = H.S(dimensions.height) + "px";
+              t1.height = t2;
+            }
+          }
+          this._deferred_content$_viewContainer.clear$0(0);
+          if (this.preserveDimensions) {
+            t1 = this._deferred_content$_viewContainer;
+            t2 = t1._elementRef;
+            if (t2 == null) {
+              t2 = new Z.ElementRef(t1.nativeElement);
+              t1._elementRef = t2;
+              t1 = t2;
+            } else
+              t1 = t2;
+            container = t1.nativeElement;
+            if ((container == null ? null : container.parentNode) != null)
+              J.insertBefore$2$x(container.parentNode, this._placeholder, container);
+          }
+        }
+        this._shown = value;
+      },
+      DeferredContentDirective$3: function(_viewContainer, _template, $parent) {
+        var t1, t2;
+        t1 = $parent._onContentVisible;
+        t2 = H.getTypeArgumentByIndex(t1, 0);
+        this._deferred_content$_disposer.addStreamSubscription$1$1(new P._DistinctStream(null, new P._BroadcastStream(t1, [t2]), [t2]).listen$1(new K.DeferredContentDirective_closure(this)), P.bool);
+      },
+      static: {
+        DeferredContentDirective$: function(_viewContainer, _template, $parent) {
+          var t1 = new K.DeferredContentDirective(new R.Disposer(true, false), document.createElement("div"), _viewContainer, _template, false, false, false, false);
+          t1.DeferredContentDirective$3(_viewContainer, _template, $parent);
+          return t1;
+        }
+      }
+    },
+    DeferredContentDirective_closure: {
+      "^": "Closure:24;$this",
+      call$1: [function(value) {
+        var t1 = this.$this;
+        t1._deferred_content$_visible = H.boolTypeCheck(value);
+        t1._setVisible$0();
+      }, null, null, 4, 0, null, 1, "call"]
     }
   }], ["", "package:angular_components/content/deferred_content_aware.dart",, E, {
     "^": "",
@@ -16503,6 +18754,25 @@
         }
         this._childComponent = null;
       },
+      set$componentFactory: function(component) {
+        var t1 = this._componentFactory;
+        if (t1 == null ? component != null : t1 !== component)
+          this._factoryChanged = true;
+        this._componentFactory = component;
+      },
+      ngAfterChanges$0: function() {
+        if (this._factoryChanged || this._typeChanged) {
+          this._disposeChildComponent$0();
+          if (this._viewContainerRef != null)
+            this._initialize$0();
+          else
+            this._loadDeferred = true;
+        } else if (this._valueChanged)
+          this._updateChildComponent$0();
+        this._typeChanged = false;
+        this._factoryChanged = false;
+        this._valueChanged = false;
+      },
       _initialize$0: function() {
         var t1, t2, t3, t4, t5, t6, contextInjector, componentRef;
         t1 = this._componentFactory;
@@ -16523,6 +18793,10 @@
           this._childComponent = componentRef;
           this._onLoadController.add$1(0, componentRef);
           this._updateChildComponent$0();
+        } else {
+          t1 = this._componentType;
+          if (t1 != null)
+            this._slowComponentLoader.loadNextToLocation$1$2(t1, this._viewContainerRef, null).then$1$1(new Z.DynamicComponent__initialize_closure(this, t1), null);
         }
       },
       _updateChildComponent$0: function() {
@@ -16534,6 +18808,21 @@
             t1.value = H.interceptedTypeCheck(this._dynamic_component$_value, "$isWrRowData");
         }
       }
+    },
+    DynamicComponent__initialize_closure: {
+      "^": "Closure:78;$this,loadType",
+      call$1: function(componentRef) {
+        var t1 = this.$this;
+        if (!J.$eq$(this.loadType, t1._componentType)) {
+          componentRef.destroy$0();
+          return;
+        }
+        if (t1._childComponent != null)
+          throw H.wrapException("Attempting to overwrite a dynamic component");
+        t1._childComponent = componentRef;
+        t1._onLoadController.add$1(0, componentRef);
+        t1._updateChildComponent$0();
+      }
     }
   }], ["", "package:angular_components/dynamic_component/dynamic_component.template.dart",, Q, {
     "^": "",
@@ -16542,7 +18831,7 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Z.DynamicComponent));
       t1.componentType = $.ViewDynamicComponent0__renderType;
       return t1;
-    }, "call$2", "dynamic_component_template__viewFactory_DynamicComponent1$closure", 8, 0, 112],
+    }, "call$2", "dynamic_component_template__viewFactory_DynamicComponent1$closure", 8, 0, 160],
     ViewDynamicComponent0: {
       "^": "AppView;0_dynamic_component_template$_appEl_0,0_TemplateRef_0_8,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -16565,6 +18854,23 @@
       },
       $asAppView: function() {
         return [Z.DynamicComponent];
+      },
+      static: {
+        ViewDynamicComponent0$: function(parentView, parentIndex) {
+          var t1, t2;
+          t1 = new Q.ViewDynamicComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+          t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_1, parentIndex, Z.DynamicComponent));
+          t2 = document.createElement("dynamic-component");
+          t1.rootEl = H.interceptedTypeCheck(t2, "$isHtmlElement");
+          t2 = $.ViewDynamicComponent0__renderType;
+          if (t2 == null) {
+            t2 = $.appViewUtils;
+            t2 = t2.createRenderType$3(null, C.ViewEncapsulation_1, C.List_empty);
+            $.ViewDynamicComponent0__renderType = t2;
+          }
+          t1.setupComponentType$1(t2);
+          return t1;
+        }
       }
     },
     _ViewDynamicComponent1: {
@@ -16580,12 +18886,502 @@
     "^": "",
     RootFocusable: {
       "^": "Object;",
+      focus$0: ["super$RootFocusable$focus", function(_) {
+        var t1, t2;
+        t1 = this._focus$_root;
+        if (t1 == null)
+          return;
+        t2 = t1.tabIndex;
+        if (typeof t2 !== "number")
+          return t2.$lt();
+        if (t2 < 0)
+          t1.tabIndex = -1;
+        t1.focus();
+      }],
+      dispose$0: ["super$RootFocusable$dispose", function() {
+        this._focus$_root = null;
+      }],
+      $isFocusable: 1,
       $isDisposable: 1
+    },
+    AutoFocusDirective: {
+      "^": "RootFocusable;_focus$_disposer,0_autoFocus,_focus$_focusable,_focus$_domService,_focus$_modal,_focus$_popupRef,_focus$_root",
+      ngOnInit$0: function() {
+        var t1, t2, onVisibleChanged;
+        if (!this._autoFocus)
+          return;
+        t1 = this._focus$_popupRef;
+        t2 = t1 != null;
+        if (t2) {
+          if (t2 ? t1._popupComponent._isVisible : this._focus$_modal.get$resolvedOverlayRef().get$isVisible())
+            this._focus$_domService.scheduleWrite$1(this.get$focus(this));
+          t1 = this._focus$_popupRef;
+          if (t1 != null) {
+            t1 = t1._popupComponent.PopupEvents_onVisibleController;
+            onVisibleChanged = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+          } else
+            onVisibleChanged = this._focus$_modal.get$resolvedOverlayRef().get$onVisibleChanged();
+          this._focus$_disposer.addStreamSubscription$1$1(onVisibleChanged.listen$1(this.get$_onModalOrPopupVisibleChanged()), P.bool);
+        } else
+          this._focus$_domService.scheduleWrite$1(this.get$focus(this));
+      },
+      focus$0: [function(_) {
+        if (!this._autoFocus)
+          return;
+        this.super$RootFocusable$focus(0);
+      }, "call$0", "get$focus", 1, 0, 1],
+      _onModalOrPopupVisibleChanged$1: [function(isVisible) {
+        if (H.boolTypeCheck(isVisible))
+          this._focus$_domService.scheduleWrite$1(this.get$focus(this));
+      }, "call$1", "get$_onModalOrPopupVisibleChanged", 4, 0, 35, 31]
+    }
+  }], ["", "package:angular_components/focus/focus_interface.dart",, O, {
+    "^": "",
+    Focusable: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/focus/keyboard_only_focus_indicator.dart",, O, {
+    "^": "",
+    KeyboardOnlyFocusIndicatorDirective: {
+      "^": "Object;_keyboard_only_focus_indicator$_element,_domService,_lastInteraction",
+      keydown$1: [function(e) {
+        H.interceptedTypeCheck(e, "$isKeyboardEvent");
+        this._lastInteraction = C._InteractionType_1;
+        this.resetOutline$0();
+      }, "call$1", "get$keydown", 4, 0, 5],
+      resetOutline$0: [function() {
+        if (this._keyboard_only_focus_indicator$_element.style.outline !== "")
+          this._domService.scheduleWrite$1(new O.KeyboardOnlyFocusIndicatorDirective_resetOutline_closure(this));
+      }, "call$0", "get$resetOutline", 0, 0, 1],
+      onMouseInteraction$0: [function() {
+        this._lastInteraction = C._InteractionType_0;
+        this.hideOutline$0();
+      }, "call$0", "get$onMouseInteraction", 0, 0, 1],
+      hideOutline$0: function() {
+        if (this._keyboard_only_focus_indicator$_element.style.outline !== "none")
+          this._domService.scheduleWrite$1(new O.KeyboardOnlyFocusIndicatorDirective_hideOutline_closure(this));
+      },
+      onFocus$1: [function(_, $event) {
+        H.interceptedTypeCheck($event, "$isEvent");
+        if (this._lastInteraction === C._InteractionType_0)
+          this.hideOutline$0();
+        else
+          this.resetOutline$0();
+      }, "call$1", "get$onFocus", 5, 0, 26]
+    },
+    KeyboardOnlyFocusIndicatorDirective_resetOutline_closure: {
+      "^": "Closure:0;$this",
+      call$0: function() {
+        var t1 = this.$this._keyboard_only_focus_indicator$_element.style;
+        t1.outline = "";
+      }
+    },
+    KeyboardOnlyFocusIndicatorDirective_hideOutline_closure: {
+      "^": "Closure:0;$this",
+      call$0: function() {
+        var t1 = this.$this._keyboard_only_focus_indicator$_element.style;
+        t1.outline = "none";
+      }
+    },
+    _InteractionType: {
+      "^": "Object;index,_keyboard_only_focus_indicator$_name",
+      toString$0: function(_) {
+        return this._keyboard_only_focus_indicator$_name;
+      }
+    }
+  }], ["angular_components.framework_stabilizers.framework_stabilizers", "package:angular_components/framework_stabilizers/framework_stabilizers.dart",, V, {
+    "^": ""
+  }], ["angular_components.framework_stabilizers.testability", "package:angular_components/framework_stabilizers/testability.dart",, D, {
+    "^": "",
+    AbstractTestability: {
+      "^": "Object;",
+      register$0: function(_) {
+        var wrappedFn, id;
+        wrappedFn = P.allowInterop(this.get$whenStable(this), {func: 1, ret: -1, args: [{func: 1, ret: -1, args: [P.bool, P.String]}]});
+        id = $.FrameworkStabilizers__nextId;
+        $.FrameworkStabilizers__nextId = id + 1;
+        $.$get$FrameworkStabilizers__idToFrameworkStabilizer().$indexSet(0, id, wrappedFn);
+        if (self.frameworkStabilizers == null)
+          self.frameworkStabilizers = [];
+        J.add$1$ax(self.frameworkStabilizers, wrappedFn);
+      },
+      whenStable$1: [function(_, fn) {
+        this._runCallbacksIfStable$1$newCallback(H.functionTypeCheck(fn, {func: 1, ret: -1, args: [P.bool, P.String]}));
+      }, "call$1", "get$whenStable", 5, 0, 81, 56],
+      _runCallbacksIfStable$1$newCallback: function(newCallback) {
+        C.C__RootZone.run$1$1(new D.AbstractTestability__runCallbacksIfStable_closure(this, H.functionTypeCheck(newCallback, {func: 1, ret: -1, args: [P.bool, P.String]})), P.Null);
+      },
+      _runCallbacksIfStable$0: function() {
+        return this._runCallbacksIfStable$1$newCallback(null);
+      },
+      get$name: function(_) {
+        return "Instance of '" + H.Primitives_objectTypeName(this) + "'";
+      }
+    },
+    AbstractTestability__runCallbacksIfStable_closure: {
+      "^": "Closure:0;$this,newCallback",
+      call$0: function() {
+        var t1, t2;
+        t1 = this.$this;
+        t2 = t1._dom_service_webdriver_testability$_domService;
+        if (t2._insideDigest || t2._scheduledProcessQueue || t2._layoutObserveRead != null || t2._nextFrameFuture != null || t2._domReadQueue.length !== 0 || t2._domWriteQueue.length !== 0) {
+          t2 = this.newCallback;
+          if (t2 != null)
+            C.JSArray_methods.add$1(t1._callbacks, t2);
+          return;
+        }
+        P.Future_Future(new D.AbstractTestability__runCallbacksIfStable__closure(t1, this.newCallback), null);
+      }
+    },
+    AbstractTestability__runCallbacksIfStable__closure: {
+      "^": "Closure:0;$this,newCallback",
+      call$0: function() {
+        var t1, t2, t3;
+        t1 = this.newCallback;
+        if (t1 != null)
+          t1.call$2(false, "Instance of '" + H.Primitives_objectTypeName(this.$this) + "'");
+        for (t1 = this.$this, t2 = t1._callbacks; t3 = t2.length, t3 !== 0;) {
+          if (0 >= t3)
+            return H.ioore(t2, -1);
+          t2.pop().call$2(true, "Instance of '" + H.Primitives_objectTypeName(t1) + "'");
+        }
+      }
+    },
+    NullTestability: {
+      "^": "Object;",
+      register$0: function(_) {
+      },
+      get$name: function(_) {
+        throw H.wrapException(P.UnsupportedError$("not supported by NullTestability"));
+      }
+    }
+  }], ["", "package:angular_components/glyph/glyph.dart",, L, {
+    "^": "",
+    GlyphComponent: {
+      "^": "Object;0_glyph$_icon,0_iconSet,_useMaterialIconsExtended,_glyph$_element",
+      set$icon: function(_, value) {
+        this._glyph$_icon = value;
+        if (C.JSArray_methods.contains$1(C.List_CX7, H.stringTypeCheck(value instanceof L.Icon ? value.name : value)))
+          J.setAttribute$2$x(this._glyph$_element, "flip", "");
+      }
+    }
+  }], ["asset_angular_components_lib_glyph_glyph.scss.css.shim.dart", "package:angular_components/glyph/glyph.scss.css.shim.dart",, O, {}], ["", "package:angular_components/glyph/glyph.template.dart",, M, {
+    "^": "",
+    ViewGlyphComponent0: {
+      "^": "AppView;0_glyph_template$_expr_0,0_glyph_template$_expr_1,0_el_1,0_text_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var parentRenderNode, t1, t2;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        t1 = document;
+        J.append$1$x(parentRenderNode, t1.createTextNode("\n"));
+        t2 = S.createAndAppend(t1, "i", parentRenderNode);
+        this._el_1 = t2;
+        J.setAttribute$2$x(t2, "aria-hidden", "true");
+        t2 = this._el_1;
+        t2.className = "glyph-i";
+        this.addShimE$1(t2);
+        t1 = t1.createTextNode("");
+        this._text_2 = t1;
+        J.append$1$x(this._el_1, t1);
+        this.init$2(C.List_empty, null);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, currVal_1;
+        _ctx = this.ctx;
+        _ctx._useMaterialIconsExtended;
+        t1 = this._glyph_template$_expr_0;
+        if (t1 !== true) {
+          this.updateClass$3(H.interceptedTypeCheck(this._el_1, "$isHtmlElement"), "material-icons", true);
+          this._glyph_template$_expr_0 = true;
+        }
+        t1 = _ctx._glyph$_icon;
+        currVal_1 = H.stringTypeCheck(t1 instanceof L.Icon ? t1.name : t1);
+        if (currVal_1 == null)
+          currVal_1 = "";
+        t1 = this._glyph_template$_expr_1;
+        if (t1 !== currVal_1) {
+          this._text_2.textContent = currVal_1;
+          this._glyph_template$_expr_1 = currVal_1;
+        }
+      },
+      $asAppView: function() {
+        return [L.GlyphComponent];
+      },
+      static: {
+        ViewGlyphComponent0$: function(parentView, parentIndex) {
+          var t1, t2;
+          t1 = new M.ViewGlyphComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+          t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, parentIndex, L.GlyphComponent));
+          t2 = document.createElement("glyph");
+          t1.rootEl = H.interceptedTypeCheck(t2, "$isHtmlElement");
+          t2 = $.ViewGlyphComponent0__renderType;
+          if (t2 == null) {
+            t2 = $.appViewUtils;
+            t2 = t2.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$GlyphComponent());
+            $.ViewGlyphComponent0__renderType = t2;
+          }
+          t1.setupComponentType$1(t2);
+          return t1;
+        }
+      }
     }
   }], ["", "package:angular_components/interfaces/has_disabled.dart",, U, {
     "^": "",
     HasDisabled: {
       "^": "Object;"
+    }
+  }], ["", "package:angular_components/laminate/components/modal/modal.dart",, D, {
+    "^": "",
+    Modal: {
+      "^": "Object;"
+    },
+    ModalComponent: {
+      "^": "Object;",
+      $isModal: 1
+    }
+  }], ["", "package:angular_components/laminate/enums/alignment.dart",, K, {
+    "^": "",
+    Alignment: {
+      "^": "Object;_displayName,_cssPropertyValue",
+      get$requiresContentSizeToPosition: function() {
+        return this !== C.Alignment_dMH;
+      },
+      calcLeft$2: function(sourceRect, contentRect) {
+        var t1, left, t2;
+        t1 = [P.num];
+        H.assertSubtype(sourceRect, "$isRectangle", t1, "$asRectangle");
+        H.assertSubtype(contentRect, "$isRectangle", t1, "$asRectangle");
+        if (this.get$requiresContentSizeToPosition() && contentRect == null)
+          throw H.wrapException(P.ArgumentError$notNull("contentRect"));
+        t1 = J.getInterceptor$x(sourceRect);
+        left = t1.get$left(sourceRect);
+        if (this === C.Alignment_Center_center) {
+          t1 = t1.get$width(sourceRect);
+          if (typeof t1 !== "number")
+            return t1.$div();
+          t2 = J.get$width$x(contentRect);
+          if (typeof t2 !== "number")
+            return t2.$div();
+          left += t1 / 2 - t2 / 2;
+        } else if (this === C.Alignment_Yw7) {
+          t1 = t1.get$width(sourceRect);
+          t2 = J.get$width$x(contentRect);
+          if (typeof t1 !== "number")
+            return t1.$sub();
+          if (typeof t2 !== "number")
+            return H.iae(t2);
+          left += t1 - t2;
+        }
+        return left;
+      },
+      calcTop$2: function(sourceRect, contentRect) {
+        var t1, $top, t2;
+        t1 = [P.num];
+        H.assertSubtype(sourceRect, "$isRectangle", t1, "$asRectangle");
+        H.assertSubtype(contentRect, "$isRectangle", t1, "$asRectangle");
+        if (this.get$requiresContentSizeToPosition() && contentRect == null)
+          throw H.wrapException(P.ArgumentError$notNull("contentRect"));
+        t1 = J.getInterceptor$x(sourceRect);
+        $top = t1.get$top(sourceRect);
+        if (this === C.Alignment_Center_center) {
+          t1 = t1.get$height(sourceRect);
+          if (typeof t1 !== "number")
+            return t1.$div();
+          t2 = J.get$height$x(contentRect);
+          if (typeof t2 !== "number")
+            return t2.$div();
+          $top += t1 / 2 - t2 / 2;
+        } else if (this === C.Alignment_Yw7) {
+          t1 = t1.get$height(sourceRect);
+          t2 = J.get$height$x(contentRect);
+          if (typeof t1 !== "number")
+            return t1.$sub();
+          if (typeof t2 !== "number")
+            return H.iae(t2);
+          $top += t1 - t2;
+        }
+        return $top;
+      },
+      toString$0: function(_) {
+        return "Alignment {" + this._displayName + "}";
+      }
+    },
+    _CustomAlignment: {
+      "^": "Alignment;"
+    },
+    BeforeCustomAlignment: {
+      "^": "_CustomAlignment;requiresContentSizeToPosition<,cssClassX,cssClassY,_displayName,_cssPropertyValue",
+      calcLeft$2: function(sourceRect, contentRect) {
+        var t1, t2;
+        t1 = [P.num];
+        H.assertSubtype(sourceRect, "$isRectangle", t1, "$asRectangle");
+        H.assertSubtype(contentRect, "$isRectangle", t1, "$asRectangle");
+        t1 = J.get$left$x(sourceRect);
+        t2 = J.get$width$x(contentRect);
+        if (typeof t2 !== "number")
+          return t2.$negate();
+        return t1 + -t2;
+      }
+    },
+    AfterCustomAlignment: {
+      "^": "_CustomAlignment;requiresContentSizeToPosition<,cssClassX,cssClassY,_displayName,_cssPropertyValue",
+      calcLeft$2: function(sourceRect, contentRect) {
+        var t1, t2;
+        t1 = [P.num];
+        H.assertSubtype(sourceRect, "$isRectangle", t1, "$asRectangle");
+        H.assertSubtype(contentRect, "$isRectangle", t1, "$asRectangle");
+        t1 = J.getInterceptor$x(sourceRect);
+        t2 = t1.get$left(sourceRect);
+        t1 = t1.get$width(sourceRect);
+        if (typeof t1 !== "number")
+          return H.iae(t1);
+        return t2 + t1;
+      }
+    },
+    RelativePosition: {
+      "^": "Object;originX<,originY<,animationOrigin",
+      flipRelativePosition$0: function() {
+        var t1, t2;
+        t1 = this._flipAlignment$1(this.originX);
+        t2 = this.animationOrigin;
+        if (C.Map_yH4ig.containsKey$1(0, t2))
+          t2 = C.Map_yH4ig.$index(0, t2);
+        return new K.RelativePosition(t1, this.originY, t2);
+      },
+      _flipAlignment$1: function(alignment) {
+        if (alignment === C.Alignment_dMH)
+          return C.Alignment_Yw7;
+        if (alignment === C.Alignment_Yw7)
+          return C.Alignment_dMH;
+        if (alignment === C.BeforeCustomAlignment_yHF)
+          return C.AfterCustomAlignment_ZCw;
+        if (alignment === C.AfterCustomAlignment_ZCw)
+          return C.BeforeCustomAlignment_yHF;
+        return alignment;
+      },
+      toString$0: function(_) {
+        return "RelativePosition " + P.MapBase_mapToString(P.LinkedHashMap_LinkedHashMap$_literal(["originX", this.originX, "originY", this.originY], P.String, K.Alignment));
+      }
+    }
+  }], ["", "package:angular_components/laminate/enums/visibility.dart",, L, {
+    "^": "",
+    Visibility: {
+      "^": "Object;displayName,_propertyName,_propertyValue",
+      apply$1: function(setProperty) {
+        var t1;
+        H.functionTypeCheck(setProperty, {func: 1, ret: -1, args: [P.String,,]});
+        t1 = this._propertyName;
+        if (t1 != null)
+          setProperty.call$2(t1, this._propertyValue);
+      },
+      toString$0: function(_) {
+        return "Visibility {" + this.displayName + "}";
+      }
+    }
+  }], ["", "package:angular_components/laminate/overlay/module.dart",, G, {
+    "^": "",
+    getDefaultContainer: function($name, $parent, container) {
+      var t1;
+      if (container != null)
+        return H.interceptedTypeCheck(container, "$isHtmlElement");
+      t1 = J.getInterceptor$x($parent);
+      container = t1.querySelector$1($parent, "#default-acx-overlay-container");
+      if (container == null) {
+        container = document.createElement("div");
+        container.id = "default-acx-overlay-container";
+        container.classList.add("acx-overlay-container");
+        t1.append$1($parent, container);
+      }
+      J.setAttribute$2$x(container, "container-name", $name);
+      return H.interceptedTypeCheck(container, "$isHtmlElement");
+    },
+    getDefaultContainerName: function(containerName) {
+      return H.stringTypeCheck(containerName == null ? "default" : containerName);
+    },
+    getOverlayContainerParent: function($document, containerParent) {
+      return H.interceptedTypeCheck(containerParent == null ? ($document && C.HtmlDocument_methods).querySelector$1($document, "body") : containerParent, "$isHtmlElement");
+    }
+  }], ["angular_components.css.acux.zindexer", "package:angular_components/laminate/overlay/zindexer.dart",, X, {
+    "^": "",
+    ZIndexer: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/laminate/portal/portal.dart",, L, {
+    "^": "",
+    BasePortalHost: {
+      "^": "Object;",
+      $isPortalHost: 1,
+      $isDisposable: 1
+    },
+    DomPortalHost: {
+      "^": "BasePortalHost;_hostElement,_portal$_imperativeViewUtils,0_attachedPortal,0_detachPortal,_isDisposed"
+    }
+  }], ["", "package:angular_components/laminate/ruler/dom_ruler.dart",, K, {
+    "^": "",
+    DomRuler: {
+      "^": "Object;"
+    },
+    DomRulerImpl: {
+      "^": "RulerBase;_document,_dom_ruler$_domService,_addedCssClasses",
+      canSyncWrite$1: function(element) {
+        var t1, t2;
+        t1 = this._document;
+        t2 = J.getInterceptor$(t1);
+        if (!!t2.$isHtmlDocument) {
+          t1 = t1.body;
+          return !(t1 && C.BodyElement_methods).contains$1(t1, element);
+        }
+        return !t2.contains$1(t1, element);
+      },
+      measure$2$offset: function(_, element, offset) {
+        var t1;
+        if (this.canSyncWrite$1(element)) {
+          t1 = new P._Future(0, $.Zone__current, [[P.Rectangle, P.num]]);
+          t1._asyncComplete$1(C.Rectangle_0_0_0_0);
+          return t1;
+        }
+        return this.super$RulerBase$measure(0, element, false);
+      },
+      measure$1: function($receiver, element) {
+        return this.measure$2$offset($receiver, element, false);
+      },
+      measureSync$2$offset: function(element, offset) {
+        return element.getBoundingClientRect();
+      },
+      measureSync$1: function(element) {
+        return this.measureSync$2$offset(element, false);
+      },
+      track$1: function(_, element) {
+        if (this.canSyncWrite$1(element))
+          return P.Stream_Stream$fromIterable(C.List_4YB, [P.Rectangle, P.num]);
+        return this.super$RulerBase$track(0, element);
+      },
+      removeCssClassesSync$2: function(element, classes) {
+        H.assertSubtype(classes, "$isList", [P.String], "$asList");
+        J.get$classes$x(element).removeAll$1(J.where$1$ax(classes, new K.DomRulerImpl_removeCssClassesSync_closure()));
+      },
+      addCssClassesSync$2: function(element, classes) {
+        var t1;
+        H.assertSubtype(classes, "$isList", [P.String], "$asList");
+        t1 = H.getTypeArgumentByIndex(classes, 0);
+        J.get$classes$x(element).addAll$1(0, new H.WhereIterable(classes, H.functionTypeCheck(new K.DomRulerImpl_addCssClassesSync_closure(), {func: 1, ret: P.bool, args: [t1]}), [t1]));
+      },
+      $isDomRuler: 1,
+      $asRulerBase: function() {
+        return [W.Element];
+      }
+    },
+    DomRulerImpl_removeCssClassesSync_closure: {
+      "^": "Closure:10;",
+      call$1: function(c) {
+        return H.stringTypeCheck(c).length !== 0;
+      }
+    },
+    DomRulerImpl_addCssClassesSync_closure: {
+      "^": "Closure:10;",
+      call$1: function(c) {
+        return H.stringTypeCheck(c).length !== 0;
+      }
     }
   }], ["", "package:angular_components/material_button/material_button.dart",, B, {
     "^": "",
@@ -16595,7 +19391,7 @@
         this._material_button$_changeDetector.appView.markPathToRootAsCheckOnce$0();
       },
       get$hostDisabled: function() {
-        return;
+        return this.disabled ? "" : null;
       },
       get$hostRaised: function() {
         return this.raised ? "" : null;
@@ -16640,8 +19436,8 @@
         this._material_button_template$_compView_2.create$2(0, t2, []);
         t2 = W.Event;
         t1 = J.getInterceptor$x(_el_2);
-        t1.addEventListener$2(_el_2, "mousedown", this.eventHandler1$2$1(J.get$onMouseDown$z(this.ctx), t2, t2));
-        t1.addEventListener$2(_el_2, "mouseup", this.eventHandler1$2$1(J.get$onMouseUp$z(this.ctx), t2, t2));
+        t1.addEventListener$2(_el_2, "mousedown", this.eventHandler1$2$1(J.get$onMouseDown$x(this.ctx), t2, t2));
+        t1.addEventListener$2(_el_2, "mouseup", this.eventHandler1$2$1(J.get$onMouseUp$x(this.ctx), t2, t2));
         this.init$2(C.List_empty, null);
         t1 = J.getInterceptor$x(_rootEl);
         t1.addEventListener$2(_rootEl, "click", this.eventHandler1$2$1(_ctx.get$handleClick(), t2, W.MouseEvent));
@@ -16660,8 +19456,8 @@
         this._MaterialRippleComponent_2_5.ngOnDestroy$0();
       },
       detectHostChanges$1: function(firstCheck) {
-        var currVal_0, t1, currVal_1, currVal_2, currVal_4, currVal_5, currVal_6, currVal_7;
-        currVal_0 = J.get$tabIndex$z(this.ctx);
+        var currVal_0, t1, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7;
+        currVal_0 = J.get$tabIndex$x(this.ctx);
         t1 = this._material_button_template$_expr_0;
         if (t1 != currVal_0) {
           this.rootEl.tabIndex = currVal_0;
@@ -16669,7 +19465,7 @@
         }
         currVal_1 = this.ctx.get$ariaRole();
         t1 = this._material_button_template$_expr_1;
-        if (t1 !== currVal_1) {
+        if (t1 != currVal_1) {
           this.setAttr$3(this.rootEl, "role", currVal_1);
           this._material_button_template$_expr_1 = currVal_1;
         }
@@ -16679,11 +19475,11 @@
           this.setAttr$3(this.rootEl, "aria-disabled", currVal_2);
           this._material_button_template$_expr_2 = currVal_2;
         }
-        J.get$disabled$z(this.ctx);
+        currVal_3 = J.get$disabled$z(this.ctx);
         t1 = this._material_button_template$_expr_3;
-        if (t1 !== false) {
-          this.updateElemClass$3(this.rootEl, "is-disabled", false);
-          this._material_button_template$_expr_3 = false;
+        if (t1 !== currVal_3) {
+          this.updateElemClass$3(this.rootEl, "is-disabled", currVal_3);
+          this._material_button_template$_expr_3 = currVal_3;
         }
         currVal_4 = this.ctx.get$hostDisabled();
         t1 = this._material_button_template$_expr_4;
@@ -16754,16 +19550,16 @@
         if (this._clickFocused)
           return;
         this._setFocused$1(true);
-      }, "call$1", "get$onFocus", 5, 0, 35],
+      }, "call$1", "get$onFocus", 5, 0, 18],
       onBlur$1: [function(_, $event) {
         H.interceptedTypeCheck($event, "$isUIEvent");
         if (this._clickFocused)
           this._clickFocused = false;
         this._setFocused$1(false);
-      }, "call$1", "get$onBlur", 5, 0, 35]
+      }, "call$1", "get$onBlur", 5, 0, 18]
     },
     MaterialButtonBase__setFocused_closure: {
-      "^": "Closure:1;$this,newValue",
+      "^": "Closure:0;$this,newValue",
       call$0: [function() {
         var t1, t2;
         t1 = this.$this;
@@ -16777,9 +19573,9 @@
   }], ["", "package:angular_components/material_checkbox/material_checkbox.dart",, B, {
     "^": "",
     MaterialCheckboxComponent: {
-      "^": "Object;_material_checkbox$_changeDetector,_root,_defaultTabIndex,role>,0_onTouched,_onChecked,_onIndeterminate,_onChange,indeterminateToChecked,disabled>,_checked,readOnly,_material_checkbox$_focused,_isKeyboardEvent,_checkedStr,_material_checkbox$_indeterminate,_material_checkbox$_icon,0themeColor,0label>,0focusDelegate",
+      "^": "Object;_material_checkbox$_changeDetector,_root,_defaultTabIndex,role>,0_onTouched,_onChecked,_onIndeterminate,_onChange,indeterminateToChecked,disabled>,_checked,readOnly,_material_checkbox$_focused,_isKeyboardEvent,_checkedStr,_indeterminate,_material_checkbox$_icon,0themeColor,0label>,0focusDelegate",
       get$tabIndex: function(_) {
-        return this._defaultTabIndex;
+        return this.disabled ? "-1" : this._defaultTabIndex;
       },
       set$checked: function(_, newValue) {
         if (this._checked == newValue)
@@ -16794,7 +19590,7 @@
         prevChecked = this._checked;
         prevState = this._checkedStr;
         this._checked = checked;
-        this._material_checkbox$_indeterminate = false;
+        this._indeterminate = false;
         t1 = checked ? "true" : "false";
         this._checkedStr = t1;
         t1 = checked ? C.Icon_check_box : C.Icon_check_box_outline_blank;
@@ -16820,6 +19616,8 @@
         this._material_checkbox$_changeDetector.appView.markPathToRootAsCheckOnce$0();
       },
       toggleChecked$0: function() {
+        if (this.disabled || false)
+          return;
         var t1 = this._checked;
         if (!t1)
           this._setStates$1$checked(true);
@@ -16833,18 +19631,22 @@
         if (t1 == null ? t2 != null : t1 !== t2)
           return;
         this._isKeyboardEvent = true;
-      }, "call$1", "get$handleKeyUp", 4, 0, 17],
+      }, "call$1", "get$handleKeyUp", 4, 0, 5],
       handleClick$1: [function(mouseEvent) {
         H.interceptedTypeCheck(mouseEvent, "$isMouseEvent");
+        if (this.disabled)
+          return;
         this._isKeyboardEvent = false;
         this.toggleChecked$0();
-      }, "call$1", "get$handleClick", 4, 0, 16],
+      }, "call$1", "get$handleClick", 4, 0, 17],
       handleMouseDown$1: [function(mouseEvent) {
         H.interceptedTypeCheck(mouseEvent, "$isMouseEvent");
-      }, "call$1", "get$handleMouseDown", 4, 0, 16],
+      }, "call$1", "get$handleMouseDown", 4, 0, 17],
       handleKeyPress$1: [function($event) {
         var t1, t2;
         H.interceptedTypeCheck($event, "$isKeyboardEvent");
+        if (this.disabled)
+          return;
         t1 = W._convertNativeToDart_EventTarget($event.target);
         t2 = this._root;
         if (t1 == null ? t2 != null : t1 !== t2)
@@ -16854,18 +19656,22 @@
           this._isKeyboardEvent = true;
           this.toggleChecked$0();
         }
-      }, "call$1", "get$handleKeyPress", 4, 0, 17],
+      }, "call$1", "get$handleKeyPress", 4, 0, 5],
       handleFocus$1: [function(_) {
         this._material_checkbox$_focused = true;
       }, "call$1", "get$handleFocus", 4, 0, 2],
       handleBlur$1: [function($event) {
         H.interceptedTypeCheck($event, "$isEvent");
         this._material_checkbox$_focused = false;
-      }, "call$1", "get$handleBlur", 4, 0, 67],
+      }, "call$1", "get$handleBlur", 4, 0, 26],
+      $isFocusable: 1,
       static: {
         MaterialCheckboxComponent$: function(_root, _changeDetector, cd, hostTabIndex, role) {
-          var t1 = [null];
-          t1 = new B.MaterialCheckboxComponent(_changeDetector, _root, "0", "checkbox", new P._AsyncBroadcastStreamController(null, null, 0, t1), new P._AsyncBroadcastStreamController(null, null, 0, t1), new P._AsyncBroadcastStreamController(null, null, 0, t1), false, false, false, false, false, false, "false", false, C.Icon_check_box_outline_blank);
+          var t1, t2;
+          t1 = [null];
+          t2 = hostTabIndex == null ? null : hostTabIndex.length !== 0;
+          t2 = (t2 == null ? false : t2) ? hostTabIndex : "0";
+          t1 = new B.MaterialCheckboxComponent(_changeDetector, _root, t2, "checkbox", new P._AsyncBroadcastStreamController(null, null, 0, t1), new P._AsyncBroadcastStreamController(null, null, 0, t1), new P._AsyncBroadcastStreamController(null, null, 0, t1), false, false, false, false, false, false, "false", false, C.Icon_check_box_outline_blank);
           t1._syncAriaChecked$0();
           return t1;
         }
@@ -16878,7 +19684,7 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, B.MaterialCheckboxComponent));
       t1.componentType = $.ViewMaterialCheckboxComponent0__renderType;
       return t1;
-    }, "call$2", "material_checkbox_template__viewFactory_MaterialCheckboxComponent1$closure", 8, 0, 113],
+    }, "call$2", "material_checkbox_template__viewFactory_MaterialCheckboxComponent1$closure", 8, 0, 161],
     ViewMaterialCheckboxComponent0: {
       "^": "AppView;0_material_checkbox_template$_compView_1,0_material_checkbox_template$_MaterialIconComponent_1_5,0_material_checkbox_template$_appEl_2,0_material_checkbox_template$_NgIf_2_9,0_material_checkbox_template$_expr_0,0_material_checkbox_template$_expr_1,0_material_checkbox_template$_expr_2,0_material_checkbox_template$_expr_3,0_material_checkbox_template$_expr_5,0_material_checkbox_template$_expr_6,0_material_checkbox_template$_expr_8,0_material_checkbox_template$_expr_9,0_expr_10,0_material_checkbox_template$_el_0,0_material_checkbox_template$_el_1,0_text_4,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -16944,9 +19750,7 @@
           changed = false;
         if (changed)
           this._material_checkbox_template$_compView_1.viewData.set$cdMode(1);
-        t1 = this._material_checkbox_template$_NgIf_2_9;
-        _ctx.disabled;
-        t1.set$ngIf(true);
+        this._material_checkbox_template$_NgIf_2_9.set$ngIf(!_ctx.disabled);
         this._material_checkbox_template$_appEl_2.detectChangesInNestedViews$0();
         currVal_0 = _ctx._material_checkbox$_focused && _ctx._isKeyboardEvent;
         t1 = this._material_checkbox_template$_expr_0;
@@ -16955,7 +19759,7 @@
           this._material_checkbox_template$_expr_0 = currVal_0;
         }
         if (!_ctx._checked) {
-          _ctx._material_checkbox$_indeterminate;
+          _ctx._indeterminate;
           currVal_2 = false;
         } else
           currVal_2 = true;
@@ -16977,30 +19781,29 @@
         this._material_checkbox_template$_compView_1.destroy$0();
       },
       detectHostChanges$1: function(firstCheck) {
-        var currVal_6, t1, t2, currVal_10;
-        if (firstCheck) {
-          J.get$role$z(this.ctx);
-          this.setAttr$3(this.rootEl, "role", J.get$role$z(this.ctx));
-        }
-        currVal_6 = J.get$tabIndex$z(this.ctx);
+        var currVal_6, t1, currVal_8, currVal_9, t2, currVal_10;
+        if (firstCheck)
+          if (J.get$role$z(this.ctx) != null)
+            this.setAttr$3(this.rootEl, "role", J.get$role$z(this.ctx));
+        currVal_6 = J.get$tabIndex$x(this.ctx);
         t1 = this._material_checkbox_template$_expr_6;
         if (t1 != currVal_6) {
           this.setAttr$3(this.rootEl, "tabindex", currVal_6);
           this._material_checkbox_template$_expr_6 = currVal_6;
         }
-        J.get$disabled$z(this.ctx);
+        currVal_8 = J.get$disabled$z(this.ctx);
         t1 = this._material_checkbox_template$_expr_8;
-        if (t1 !== false) {
-          this.updateElemClass$3(this.rootEl, "disabled", false);
-          this._material_checkbox_template$_expr_8 = false;
+        if (t1 !== currVal_8) {
+          this.updateElemClass$3(this.rootEl, "disabled", currVal_8);
+          this._material_checkbox_template$_expr_8 = currVal_8;
         }
-        J.get$disabled$z(this.ctx);
+        currVal_9 = J.get$disabled$z(this.ctx);
         t1 = this._material_checkbox_template$_expr_9;
-        if (t1 !== false) {
+        if (t1 !== currVal_9) {
           t1 = this.rootEl;
-          t2 = String(false);
+          t2 = String(currVal_9);
           this.setAttr$3(t1, "aria-disabled", t2);
-          this._material_checkbox_template$_expr_9 = false;
+          this._material_checkbox_template$_expr_9 = currVal_9;
         }
         currVal_10 = J.get$label$z(this.ctx);
         t1 = this._expr_10;
@@ -17083,7 +19886,7 @@
   }], ["asset_angular_components_lib_material_icon_material_icon.scss.css.shim.dart", "package:angular_components/material_icon/material_icon.scss.css.shim.dart",, X, {}], ["", "package:angular_components/material_icon/material_icon.template.dart",, M, {
     "^": "",
     ViewMaterialIconComponent0: {
-      "^": "AppView;0_material_icon_template$_expr_0,0_text_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_material_icon_template$_expr_0,0_material_icon_template$_text_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_1, t2;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -17095,7 +19898,7 @@
         _el_1.className = "material-icon-i material-icons";
         this.addShimE$1(_el_1);
         t1 = t1.createTextNode("");
-        this._text_2 = t1;
+        this._material_icon_template$_text_2 = t1;
         t2.append$1(_el_1, t1);
         this.init$2(C.List_empty, null);
       },
@@ -17106,7 +19909,7 @@
           currVal_0 = "";
         t1 = this._material_icon_template$_expr_0;
         if (t1 !== currVal_0) {
-          this._text_2.textContent = currVal_0;
+          this._material_icon_template$_text_2.textContent = currVal_0;
           this._material_icon_template$_expr_0 = currVal_0;
         }
       },
@@ -17131,10 +19934,1053 @@
         }
       }
     }
+  }], ["", "package:angular_components/material_list/material_list.dart",, B, {
+    "^": "",
+    MaterialListComponent: {
+      "^": "Object;size>,role>"
+    }
+  }], ["asset_angular_components_lib_material_list_material_list.scss.css.shim.dart", "package:angular_components/material_list/material_list.scss.css.shim.dart",, K, {}], ["", "package:angular_components/material_list/material_list.template.dart",, B, {
+    "^": "",
+    ViewMaterialListComponent0: {
+      "^": "AppView;0_material_list_template$_expr_0,0_material_list_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        this.project$2(this.initViewRoot$1(this.rootEl), 0);
+        this.init$2(C.List_empty, null);
+      },
+      $asAppView: function() {
+        return [B.MaterialListComponent];
+      }
+    }
+  }], ["", "package:angular_components/material_popup/material_popup.dart",, G, {
+    "^": "",
+    _mergeStreams: function(streams, $T) {
+      var t1, t2, streamSubscriptions, cachedResults, streamController;
+      t1 = {};
+      H.assertSubtype(streams, "$isList", [[P.Stream, $T]], "$asList");
+      t2 = new Array(2);
+      t2.fixed$length = Array;
+      streamSubscriptions = H.setRuntimeTypeInfo(t2, [[P.StreamSubscription, $T]]);
+      t2 = new Array(2);
+      t2.fixed$length = Array;
+      cachedResults = H.setRuntimeTypeInfo(t2, [$T]);
+      t1.streamController = null;
+      t2 = [P.List, $T];
+      streamController = new P._SyncBroadcastStreamController(new G._mergeStreams_closure(t1, streams, streamSubscriptions, cachedResults, $T), new G._mergeStreams_closure0(streamSubscriptions), 0, [t2]);
+      t1.streamController = streamController;
+      return new P._BroadcastStream(streamController, [t2]);
+    },
+    _flatten: function($async$nested) {
+      return P._makeSyncStarIterable(function() {
+        var nested = $async$nested;
+        var $async$goto = 0, $async$handler = 1, $async$currentError, t1, item;
+        return function $async$_flatten($async$errorCode, $async$result) {
+          if ($async$errorCode === 1) {
+            $async$currentError = $async$result;
+            $async$goto = $async$handler;
+          }
+          while (true)
+            switch ($async$goto) {
+              case 0:
+                // Function start
+                t1 = J.get$iterator$ax(nested);
+              case 2:
+                // for condition
+                if (!t1.moveNext$0()) {
+                  // goto after for
+                  $async$goto = 3;
+                  break;
+                }
+                item = t1.get$current(t1);
+                $async$goto = !!J.getInterceptor$(item).$isIterable ? 4 : 6;
+                break;
+              case 4:
+                // then
+                $async$goto = 7;
+                return P._IterationMarker_yieldStar(G._flatten(item));
+              case 7:
+                // after yield
+                // goto join
+                $async$goto = 5;
+                break;
+              case 6:
+                // else
+                $async$goto = 8;
+                return item;
+              case 8:
+                // after yield
+              case 5:
+                // join
+                // goto for condition
+                $async$goto = 2;
+                break;
+              case 3:
+                // after for
+                // implicit return
+                return P._IterationMarker_endOfIteration();
+              case 1:
+                // rethrow
+                return P._IterationMarker_uncaughtError($async$currentError);
+            }
+        };
+      }, null);
+    },
+    MaterialPopupComponent: {
+      "^": "_MaterialPopupComponent_Object_PopupBase_PopupEvents_PopupHierarchyElement;_onOpened,_onContentVisible,_onAutoDismissed,_material_popup$_changeDetector,_material_popup$_viewContainer,_material_popup$_disposer,_material_popup$_ngZone,_overlayService,_material_popup$_domService,_hierarchy,_defaultPreferredPositions,0_alignmentPosition,0_layoutChangeSub,0_layoutInternalSub,0_windowResizeSub,0_overlayRef,elementRef,role>,_material_popup$_uniqueId,0_resolvedPopupRef,_viewInitialized,0_animationTimer,_isOpening,_useRepositionLoop,0_initialSourceDimensions,_repositionOffsetX,_repositionOffsetY,0_repositionLoopId,showPopup,z,0_zIndex,_zIndexer,0_slide,_popupSizeProvider,0minHeight,0minWidth,0maxHeight,0maxWidth,_matchMinSourceWidth,inkBackground,hasBox,state,0templateRef,_isVisible,PopupEvents_onOpenController,PopupEvents_onCloseController,PopupEvents_onVisibleController",
+      set$_initialSourceDimensions: function(_initialSourceDimensions) {
+        this._initialSourceDimensions = H.assertSubtype(_initialSourceDimensions, "$isRectangle", [P.num], "$asRectangle");
+      },
+      set$templateRef: function(templateRef) {
+        this.templateRef = H.interceptedTypeCheck(templateRef, "$isTemplateRef");
+      },
+      MaterialPopupComponent$13: function(_hierarchy, parentPopup, role, _ngZone, _overlayService, _domService, _zIndexer, _defaultPreferredPositions, _useRepositionLoop, _popupSizeProvider, _changeDetector, _viewContainer, elementRef) {
+        var t1;
+        if (parentPopup != null) {
+          t1 = parentPopup.PopupEvents_onCloseController;
+          new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(new G.MaterialPopupComponent_closure(this));
+        }
+        this._resolvedPopupRef = new G.MaterialPopupRef(this);
+        this._initViewportRect$0();
+      },
+      _initViewportRect$0: function() {
+        var t1, t2, t3;
+        if ($.MaterialPopupComponent__viewportRect != null)
+          return;
+        t1 = window.innerWidth;
+        t2 = window.innerHeight;
+        if (typeof t1 !== "number")
+          return t1.$lt();
+        if (t1 < 0)
+          t1 = -t1 * 0;
+        if (typeof t2 !== "number")
+          return t2.$lt();
+        if (t2 < 0)
+          t2 = -t2 * 0;
+        $.MaterialPopupComponent__viewportRect = new P.MutableRectangle(0, 0, t1, t2, [P.num]);
+        t2 = this._material_popup$_ngZone;
+        t1 = P.Null;
+        t2.toString;
+        t3 = H.functionTypeCheck(new G.MaterialPopupComponent__initViewportRect_closure(), {func: 1, ret: t1});
+        t2._outerZone.run$1$1(t3, t1);
+      },
+      get$hierarchy: function() {
+        var t1 = this._hierarchy;
+        if (t1 == null)
+          t1 = new Z.PopupHierarchy(H.setRuntimeTypeInfo([], [Z.PopupHierarchyElement]));
+        this._hierarchy = t1;
+        return t1;
+      },
+      _updateOverlayCssClass$0: function() {
+        var hostClassName, t1;
+        if (this._overlayRef == null)
+          return;
+        hostClassName = J.get$className$x(this.elementRef.nativeElement);
+        t1 = this._overlayRef.overlayElement;
+        t1.className = J.$add$ansx(t1.className, " " + H.S(hostClassName));
+      },
+      get$paneId: function() {
+        var t1 = this._overlayRef;
+        return t1 == null ? null : C.DivElement_methods.getAttribute$1(t1.overlayElement, "pane-id");
+      },
+      _initView$0: function() {
+        var t1, t2, pane, t3, _i, node;
+        t1 = this._overlayService;
+        t2 = t1._renderService;
+        t2.toString;
+        pane = document.createElement("div");
+        C.DivElement_methods.setAttribute$2(pane, "pane-id", H.S(t2._containerName) + "-" + ++t2._uniqueId);
+        pane.classList.add("pane");
+        t2.applyStateSync$2(C._ImmutableOverlayState_oyn, pane);
+        t3 = t2.containerElement;
+        J.append$1$x(t3, pane);
+        t1 = B.OverlayRef$(t2.get$applyState(), t1.get$_measurePane(), new L.DomPortalHost(pane, t2._imperativeViewUtils, false), t3, pane, t1._overlay_service$_ngZone.get$runOutsideAngular(), C._ImmutableOverlayState_oyn);
+        this._overlayRef = t1;
+        this._material_popup$_disposer.addFunction$1(t1.get$dispose());
+        this._zIndexer.toString;
+        t1 = J.$add$ansx(self.acxZIndex, 1);
+        self.acxZIndex = t1;
+        this._zIndex = t1;
+        for (t1 = S._flattenNestedViewRenderNodes(this._material_popup$_viewContainer.createEmbeddedView$1(this.templateRef).appView.viewData.rootNodesOrViewContainers, H.setRuntimeTypeInfo([], [W.Node])), t2 = t1.length, _i = 0; _i < t1.length; t1.length === t2 || (0, H.throwConcurrentModificationError)(t1), ++_i) {
+          node = t1[_i];
+          C.DivElement_methods.append$1(this._overlayRef.overlayElement, node);
+        }
+        this._updateOverlayCssClass$0();
+        this._viewInitialized = true;
+      },
+      set$visible: function(_, visible) {
+        if (visible)
+          if (!this._viewInitialized) {
+            this._initView$0();
+            P.scheduleMicrotask(this.get$_open(this));
+          } else
+            this._open$0(0);
+        else if (this._viewInitialized)
+          this._close$0();
+      },
+      get$autoDismissBlockers: function() {
+        var t1, sourceElement;
+        t1 = this.state._backingMap._observable_map$_map;
+        sourceElement = !!J.getInterceptor$(H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource")).$isElementPopupSource ? H.interceptedTypeCast(H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource"), "$isElementPopupSource").get$sourceElement() : null;
+        t1 = [W.Element];
+        return sourceElement != null ? H.setRuntimeTypeInfo([sourceElement], t1) : H.setRuntimeTypeInfo([], t1);
+      },
+      _open$0: [function(_) {
+        var t1, t2, t3, t4, t5, t6, t7, popupContentsLayoutStream, popupSourceLayoutStream;
+        if (this._isOpening) {
+          t1 = new P._Future(0, $.Zone__current, [null]);
+          t1._asyncComplete$1(null);
+          return t1;
+        }
+        this._isOpening = true;
+        t1 = this._animationTimer;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        this.PopupEvents_onOpenController.add$1(0, null);
+        if (!this._isOpening) {
+          t1 = new P._Future(0, $.Zone__current, [null]);
+          t1._asyncComplete$1(null);
+          return t1;
+        }
+        if (!this._viewInitialized)
+          throw H.wrapException(P.StateError$("No content is attached."));
+        else {
+          t1 = this.state._backingMap._observable_map$_map;
+          if (H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource") == null)
+            throw H.wrapException(P.StateError$("Cannot open popup: no source set."));
+        }
+        this._updatePopupMinMaxSize$0();
+        this._overlayRef.state.set$visibility(0, C.Visibility_Hidden_visibility_hidden);
+        t2 = this._overlayRef.overlayElement.style;
+        t2.display = "";
+        t2.visibility = "hidden";
+        this._onContentVisible.add$1(0, true);
+        this._material_popup$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        t2 = [P.Rectangle, P.num];
+        t3 = new P._Future(0, $.Zone__current, [t2]);
+        t4 = this._overlayRef.measureSizeChanges$0();
+        t5 = H.getTypeArgumentByIndex(t4, 0);
+        t6 = H.functionTypeCheck(new G.MaterialPopupComponent__open_closure(this), {func: 1, ret: -1, args: [[P.StreamSubscription, t5]]});
+        t7 = [P.StreamSubscription, t5];
+        popupContentsLayoutStream = new P._AsBroadcastStream(t4, $.Zone__current.registerUnaryCallback$2$1(null, null, t7), $.Zone__current.registerUnaryCallback$2$1(t6, null, t7), $.Zone__current, [t5]);
+        popupContentsLayoutStream.set$_controller(new P._AsBroadcastStreamController(popupContentsLayoutStream.get$_onListen(), popupContentsLayoutStream.get$_async$_onCancel(), 0, [t5]));
+        popupSourceLayoutStream = H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").onDimensionsChanged$1$track(H.boolTypeCheck(t1.$index(0, C.Symbol_trackLayoutChanges)));
+        if (!H.boolTypeCheck(t1.$index(0, C.Symbol_trackLayoutChanges)))
+          popupContentsLayoutStream = new P._TakeStream(1, popupContentsLayoutStream, [t5]);
+        this._layoutChangeSub = G._mergeStreams(H.setRuntimeTypeInfo([popupContentsLayoutStream, popupSourceLayoutStream], [[P.Stream, [P.Rectangle, P.num]]]), t2).listen$1(new G.MaterialPopupComponent__open_closure0(this, new P._AsyncCompleter(t3, [t2])));
+        if (this._popupSizeProvider != null) {
+          t1 = window;
+          t2 = W.Event;
+          this._windowResizeSub = H.assertSubtype(new R.RateLimitTransformer(C.Duration_200000, H.instantiate1(R.rate_limit_utils__debounce$closure(), null), [t2, null]), "$isStreamTransformer", [t2, null], "$asStreamTransformer").bind$1(new W._EventStream(t1, "resize", false, [t2])).listen$1(new G.MaterialPopupComponent__open_closure1(this));
+        }
+        return t3;
+      }, "call$0", "get$_open", 1, 0, 14],
+      _onPopupOpened$0: function() {
+        var t1, t2, t3;
+        if (!this._isOpening)
+          return;
+        this.showPopup = true;
+        this._material_popup$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        t1 = this.state._backingMap._observable_map$_map;
+        if (H.boolTypeCheck(t1.$index(0, C.Symbol_trackLayoutChanges)) && this._useRepositionLoop)
+          this._startRepositionLoop$0();
+        t2 = this.get$hierarchy();
+        t3 = t2._visiblePopupStack;
+        if (t3.length === 0)
+          t2._rootPane = Z.closestWithClass(H.interceptedTypeCheck(this.elementRef.nativeElement, "$isElement"), "pane");
+        C.JSArray_methods.add$1(t3, this);
+        if (t2._triggerListener == null)
+          t2._triggerListener = Z.triggersOutside(null).listen$1(t2.get$_onTrigger());
+        if (t2._keyUpListener == null) {
+          t3 = W.KeyboardEvent;
+          t2._keyUpListener = W._EventStreamSubscription$(document, "keyup", H.functionTypeCheck(t2.get$_onKeyUp(), {func: 1, ret: -1, args: [t3]}), false, t3);
+        }
+        H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").onOpen$0(0);
+        this._animationTimer = P.Timer_Timer(C.Duration_150000, new G.MaterialPopupComponent__onPopupOpened_closure(this));
+      },
+      _close$0: function() {
+        var t1, t2, t3;
+        if (!this._isOpening)
+          return;
+        this._isOpening = false;
+        t1 = this._animationTimer;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        this.PopupEvents_onCloseController.add$1(0, null);
+        if (this._isOpening)
+          return;
+        t1 = this._layoutInternalSub;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        t1 = this._layoutChangeSub;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        t1 = this._windowResizeSub;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        t1 = this._repositionLoopId;
+        if (t1 != null) {
+          t2 = window;
+          C.Window_methods._ensureRequestAnimationFrame$0(t2);
+          C.Window_methods._cancelAnimationFrame$1(t2, t1);
+          this._repositionLoopId = null;
+          t1 = this._repositionOffsetX;
+          if (t1 !== 0 || this._repositionOffsetY !== 0) {
+            t2 = this._overlayRef.state;
+            t3 = t2._left;
+            if (typeof t3 !== "number")
+              return t3.$add();
+            t2.set$left(0, t3 + t1);
+            t1 = t2._top;
+            t3 = this._repositionOffsetY;
+            if (typeof t1 !== "number")
+              return t1.$add();
+            t2.set$top(0, t1 + t3);
+            this._repositionOffsetY = 0;
+            this._repositionOffsetX = 0;
+          }
+        }
+        t1 = this.state._backingMap._observable_map$_map;
+        if (!!J.getInterceptor$(H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource")).$isFocusable) {
+          t2 = J.getInterceptor$(this.get$hierarchy()._lastTriggerEvent);
+          t2 = !!t2.$isKeyboardEvent || !!t2.$isFocusEvent;
+        } else
+          t2 = false;
+        if (t2)
+          this._material_popup$_domService.scheduleWrite$1(new G.MaterialPopupComponent__close_closure(this));
+        t2 = this.get$hierarchy();
+        t3 = t2._visiblePopupStack;
+        if (C.JSArray_methods.remove$1(t3, this) && t3.length === 0) {
+          t2._rootPane = null;
+          t2._triggerListener.cancel$0(0);
+          t2._keyUpListener.cancel$0(0);
+          t2._triggerListener = null;
+          t2._keyUpListener = null;
+        }
+        this.showPopup = false;
+        this._material_popup$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").onClose$0(0);
+        this._animationTimer = P.Timer_Timer(C.Duration_150000, new G.MaterialPopupComponent__close_closure0(this));
+      },
+      _onPopupClosed$0: function() {
+        this._onContentVisible.add$1(0, false);
+        this._material_popup$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        this._overlayRef.state.set$visibility(0, C.Visibility_None_display_none);
+        var t1 = this._overlayRef.overlayElement.style;
+        t1.display = "none";
+        this._isVisible = false;
+        this.PopupEvents_onVisibleController.add$1(0, false);
+      },
+      get$_sourceDimensions: function() {
+        var t1, sourceDimensions, containerRect;
+        t1 = H.interceptedTypeCheck(this.state._backingMap._observable_map$_map.$index(0, C.Symbol_source), "$isPopupSource");
+        sourceDimensions = t1 == null ? null : t1.get$dimensions();
+        if (sourceDimensions == null)
+          return;
+        t1 = this._overlayRef.containerElement;
+        containerRect = t1 == null ? null : t1.getBoundingClientRect();
+        if (containerRect == null)
+          return;
+        return P.Rectangle$(C.JSNumber_methods.round$0(sourceDimensions.left - containerRect.left), C.JSNumber_methods.round$0(sourceDimensions.top - containerRect.top), C.JSNumber_methods.round$0(sourceDimensions.width), C.JSNumber_methods.round$0(sourceDimensions.height), P.num);
+      },
+      _startRepositionLoop$0: function() {
+        var t1, t2, t3;
+        t1 = this._material_popup$_ngZone;
+        t2 = P.Null;
+        t1.toString;
+        t3 = H.functionTypeCheck(new G.MaterialPopupComponent__startRepositionLoop_closure(this), {func: 1, ret: t2});
+        t1._outerZone.run$1$1(t3, t2);
+      },
+      _reposition$1: [function(_) {
+        var sourceDimensions, t1, t2, newOffsetX, newOffsetY, popupRect, t3, t4, x, t5, t6, t7, y, viewportShift;
+        this._repositionLoopId = C.Window_methods.requestAnimationFrame$1(window, this.get$_reposition());
+        sourceDimensions = this.get$_sourceDimensions();
+        if (sourceDimensions == null)
+          return;
+        if (this._initialSourceDimensions == null)
+          this.set$_initialSourceDimensions(sourceDimensions);
+        t1 = sourceDimensions.left;
+        t2 = this._initialSourceDimensions;
+        newOffsetX = C.JSNumber_methods.round$0(t1 - t2.left);
+        newOffsetY = C.JSNumber_methods.round$0(sourceDimensions.top - t2.top);
+        t2 = this._repositionOffsetX;
+        t1 = this._repositionOffsetY;
+        this._repositionOffsetX = newOffsetX;
+        this._repositionOffsetY = newOffsetY;
+        if (H.boolTypeCheck(this.state._backingMap._observable_map$_map.$index(0, C.Symbol_constrainToViewport))) {
+          popupRect = this._overlayRef.overlayElement.getBoundingClientRect();
+          t3 = P.num;
+          popupRect = P.Rectangle$(popupRect.left + (newOffsetX - t2), popupRect.top + (newOffsetY - t1), popupRect.width, popupRect.height, t3);
+          t1 = $.MaterialPopupComponent__viewportRect;
+          t2 = popupRect.left;
+          t4 = t1.left;
+          if (t2 < t4)
+            x = t4 - t2;
+          else {
+            t5 = popupRect.width;
+            if (typeof t5 !== "number")
+              return H.iae(t5);
+            t5 = H.assertSubtypeOfRuntimeType(t2 + t5, H.getTypeArgumentByIndex(popupRect, 0));
+            t6 = t1.get$width(t1);
+            if (typeof t6 !== "number")
+              return H.iae(t6);
+            t7 = H.getTypeArgumentByIndex(t1, 0);
+            if (t5 > H.assertSubtypeOfRuntimeType(t4 + t6, t7)) {
+              t4 = t1.left;
+              t6 = t1.get$width(t1);
+              if (typeof t6 !== "number")
+                return H.iae(t6);
+              x = Math.max(H.assertSubtypeOfRuntimeType(t4 + t6, t7) - t5, t1.left - t2);
+            } else
+              x = 0;
+          }
+          t2 = popupRect.top;
+          t4 = t1.top;
+          if (t2 < t4)
+            y = t4 - t2;
+          else {
+            t5 = popupRect.height;
+            if (typeof t5 !== "number")
+              return H.iae(t5);
+            t5 = H.assertSubtypeOfRuntimeType(t2 + t5, H.getTypeArgumentByIndex(popupRect, 0));
+            t6 = t1.get$height(t1);
+            if (typeof t6 !== "number")
+              return H.iae(t6);
+            t7 = H.getTypeArgumentByIndex(t1, 0);
+            if (t5 > H.assertSubtypeOfRuntimeType(t4 + t6, t7)) {
+              t1 = t1.get$height(t1);
+              if (typeof t1 !== "number")
+                return H.iae(t1);
+              y = Math.max(H.assertSubtypeOfRuntimeType(t4 + t1, t7) - t5, t4 - t2);
+            } else
+              y = 0;
+          }
+          viewportShift = P.Rectangle$(C.JSNumber_methods.round$0(x), C.JSNumber_methods.round$0(y), 0, 0, t3);
+          this._repositionOffsetX = H.intTypeCheck(this._repositionOffsetX + viewportShift.left);
+          this._repositionOffsetY = H.intTypeCheck(this._repositionOffsetY + viewportShift.top);
+        }
+        t1 = this._overlayRef.overlayElement.style;
+        t2 = "translate(" + this._repositionOffsetX + "px, " + this._repositionOffsetY + "px)";
+        C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, "transform"), t2, "");
+      }, "call$1", "get$_reposition", 4, 0, 2, 0],
+      _updatePopupMinMaxSize$0: function() {
+        var t1, t2;
+        t1 = this._popupSizeProvider;
+        if (t1 == null)
+          return;
+        t2 = this._overlayRef.state._top;
+        if (t2 == null)
+          t2 = 0;
+        this.minHeight = t1.getMinHeight$2(t2, $.MaterialPopupComponent__viewportRect._height);
+        t2 = this._overlayRef.state._left;
+        if (t2 == null)
+          t2 = 0;
+        this.minWidth = t1.getMinWidth$2(t2, $.MaterialPopupComponent__viewportRect._math$_width);
+        t2 = this._overlayRef.state._top;
+        if (t2 == null)
+          t2 = 0;
+        this.maxHeight = t1.getMaxHeight$2(t2, $.MaterialPopupComponent__viewportRect._height);
+        t2 = this._overlayRef.state._left;
+        if (t2 == null)
+          t2 = 0;
+        this.maxWidth = t1.getMaxWidth$2(t2, $.MaterialPopupComponent__viewportRect._math$_width);
+      },
+      _getBestPosition$3: function(contentRect, sourceRect, containerRect) {
+        var t1, t2, containerOffset, t3, t4, positions, bestPosition, t5, bestOverlap, position, containerPos, t6, t7, t8, t9, t10, t11, t12, t13, left, $top, screenPos, overlapRect, overlap;
+        t1 = P.num;
+        t2 = [t1];
+        H.assertSubtype(contentRect, "$isRectangle", t2, "$asRectangle");
+        H.assertSubtype(sourceRect, "$isRectangle", t2, "$asRectangle");
+        containerOffset = J.get$topLeft$x(H.assertSubtype(containerRect, "$isRectangle", t2, "$asRectangle"));
+        t3 = this.state._backingMap._observable_map$_map;
+        t4 = G._flatten(H.listSuperNativeTypeCheck(t3.$index(0, C.Symbol_preferredPositions), "$isIterable"));
+        positions = G._flatten(!t4.get$isEmpty(t4) ? H.listSuperNativeTypeCheck(t3.$index(0, C.Symbol_preferredPositions), "$isIterable") : this._defaultPreferredPositions);
+        bestPosition = positions.get$first(positions);
+        for (t4 = new P._SyncStarIterator(positions._outerHelper(), [H.getTypeArgumentByIndex(positions, 0)]), t5 = J.getInterceptor$x(contentRect), bestOverlap = 0; t4.moveNext$0();) {
+          position = t4.get$current(t4);
+          if (H.interceptedTypeCheck(t3.$index(0, C.Symbol_source), "$isPopupSource").get$isRtl() === true)
+            position = position.flipRelativePosition$0();
+          containerPos = P.Rectangle$(position.get$originX().calcLeft$2(sourceRect, contentRect), position.get$originY().calcTop$2(sourceRect, contentRect), t5.get$width(contentRect), t5.get$height(contentRect), t1);
+          t6 = containerPos.left;
+          t7 = containerPos.top;
+          t8 = H.getTypeArgumentByIndex(containerPos, 0);
+          H.assertSubtype(containerOffset, "$isPoint", [t8], "$asPoint");
+          t9 = containerOffset.x;
+          if (typeof t9 !== "number")
+            return H.iae(t9);
+          t10 = H.assertSubtypeOfRuntimeType(t6 + t9, t8);
+          t11 = containerOffset.y;
+          if (typeof t11 !== "number")
+            return H.iae(t11);
+          t12 = H.assertSubtypeOfRuntimeType(t7 + t11, t8);
+          t13 = containerPos.width;
+          if (typeof t13 !== "number")
+            return H.iae(t13);
+          t13 = H.assertSubtypeOfRuntimeType(t6 + t13, t8);
+          t6 = containerPos.height;
+          if (typeof t6 !== "number")
+            return H.iae(t6);
+          t6 = H.assertSubtypeOfRuntimeType(t7 + t6, t8);
+          t9 = H.assertSubtypeOfRuntimeType(t13 + t9, t8);
+          t8 = H.assertSubtypeOfRuntimeType(t6 + t11, t8);
+          left = Math.min(t10, t9);
+          t9 = Math.max(t10, t9);
+          $top = Math.min(t12, t8);
+          screenPos = P.Rectangle$(left, $top, t9 - left, Math.max(t12, t8) - $top, t1);
+          t6 = $.MaterialPopupComponent__viewportRect;
+          t6.toString;
+          H.assertSubtype(screenPos, "$isRectangle", t2, "$asRectangle");
+          t7 = t6.left;
+          t8 = screenPos.left;
+          if (t7 <= t8) {
+            t9 = t6.get$width(t6);
+            if (typeof t9 !== "number")
+              return H.iae(t9);
+            t10 = screenPos.width;
+            if (typeof t10 !== "number")
+              return H.iae(t10);
+            if (t7 + t9 >= t8 + t10) {
+              t7 = t6.top;
+              t8 = screenPos.top;
+              if (t7 <= t8) {
+                t6 = t6.get$height(t6);
+                if (typeof t6 !== "number")
+                  return H.iae(t6);
+                t9 = screenPos.height;
+                if (typeof t9 !== "number")
+                  return H.iae(t9);
+                t9 = t7 + t6 >= t8 + t9;
+                t6 = t9;
+              } else
+                t6 = false;
+            } else
+              t6 = false;
+          } else
+            t6 = false;
+          if (t6) {
+            bestPosition = position;
+            break;
+          }
+          overlapRect = $.MaterialPopupComponent__viewportRect.intersection$1(0, screenPos);
+          if (overlapRect == null)
+            continue;
+          t6 = overlapRect.width;
+          t7 = overlapRect.height;
+          if (typeof t6 !== "number")
+            return t6.$mul();
+          if (typeof t7 !== "number")
+            return H.iae(t7);
+          overlap = t6 * t7;
+          if (overlap > bestOverlap) {
+            bestOverlap = overlap;
+            bestPosition = position;
+          }
+        }
+        return H.interceptedTypeCheck(bestPosition, "$isRelativePosition");
+      },
+      _schedulePositionUpdate$2: function(contentClientRect, sourceClientRect) {
+        var t1 = [P.num];
+        return this._schedulePositionUpdate$body$MaterialPopupComponent(H.assertSubtype(contentClientRect, "$isRectangle", t1, "$asRectangle"), H.assertSubtype(sourceClientRect, "$isRectangle", t1, "$asRectangle"));
+      },
+      _schedulePositionUpdate$body$MaterialPopupComponent: function(contentClientRect, sourceClientRect) {
+        var $async$goto = 0,
+          $async$completer = P._makeAsyncAwaitCompleter(null),
+          $async$returnValue, $async$self = this, containerRect, t1, isRtl, t2, t3, t4, t5, position, offsetX;
+        var $async$_schedulePositionUpdate$2 = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+          if ($async$errorCode === 1)
+            return P._asyncRethrow($async$result, $async$completer);
+          while (true)
+            switch ($async$goto) {
+              case 0:
+                // Function start
+                $async$goto = 3;
+                return P._asyncAwait($async$self._overlayService._renderService.measureContainer$0(), $async$_schedulePositionUpdate$2);
+              case 3:
+                // returning from await.
+                containerRect = $async$result;
+                t1 = $async$self.state._backingMap._observable_map$_map;
+                isRtl = H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").get$isRtl() === true;
+                $async$self._overlayRef.state;
+                if (H.boolTypeCheck(t1.$index(0, C.Symbol_matchMinSourceWidth))) {
+                  t2 = $async$self._overlayRef.state;
+                  t3 = J.get$width$x(sourceClientRect);
+                  if (t2._minWidth != t3) {
+                    t2._minWidth = t3;
+                    t2._asyncScheduler.scheduleUpdate$0();
+                  }
+                }
+                if (H.boolTypeCheck(t1.$index(0, C.Symbol_matchMinSourceWidth))) {
+                  t2 = J.get$width$x(sourceClientRect);
+                  t3 = J.getInterceptor$x(contentClientRect);
+                  t4 = t3.get$width(contentClientRect);
+                  t4 = Math.max(H.checkNum(t2), H.checkNum(t4));
+                  t2 = t3.get$left(contentClientRect);
+                  t5 = t3.get$top(contentClientRect);
+                  t3 = t3.get$height(contentClientRect);
+                  contentClientRect = P.Rectangle$(t2, t5, t4, t3, P.num);
+                }
+                position = H.boolTypeCheck(t1.$index(0, C.Symbol_enforceSpaceConstraints)) ? $async$self._getBestPosition$3(contentClientRect, sourceClientRect, containerRect) : null;
+                if (position == null) {
+                  position = new K.RelativePosition(H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").get$alignOriginX(), H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource").get$alignOriginY(), "top left");
+                  if (isRtl)
+                    position = position.flipRelativePosition$0();
+                }
+                t2 = J.getInterceptor$x(containerRect);
+                if (isRtl) {
+                  t2 = t2.get$left(containerRect);
+                  t3 = H.intTypeCheck(t1.$index(0, C.Symbol_offsetX));
+                  if (typeof t3 !== "number") {
+                    $async$returnValue = H.iae(t3);
+                    // goto return
+                    $async$goto = 1;
+                    break;
+                  }
+                  offsetX = t2 - t3;
+                } else {
+                  t3 = H.intTypeCheck(t1.$index(0, C.Symbol_offsetX));
+                  t2 = t2.get$left(containerRect);
+                  if (typeof t3 !== "number") {
+                    $async$returnValue = t3.$sub();
+                    // goto return
+                    $async$goto = 1;
+                    break;
+                  }
+                  offsetX = t3 - t2;
+                }
+                t1 = H.intTypeCheck(t1.$index(0, C.Symbol_offsetY));
+                t2 = J.get$top$x(containerRect);
+                if (typeof t1 !== "number") {
+                  $async$returnValue = t1.$sub();
+                  // goto return
+                  $async$goto = 1;
+                  break;
+                }
+                t3 = $async$self._overlayRef.state;
+                t3.set$left(0, position.originX.calcLeft$2(sourceClientRect, contentClientRect) + offsetX);
+                t3.set$top(0, position.originY.calcTop$2(sourceClientRect, contentClientRect) + (t1 - t2));
+                t3.set$visibility(0, C.Visibility_Visible_null_null);
+                t3 = $async$self._overlayRef.overlayElement.style;
+                t3.visibility = "visible";
+                t3.display = "";
+                $async$self._alignmentPosition = position;
+                $async$self._updatePopupMinMaxSize$0();
+              case 1:
+                // return
+                return P._asyncReturn($async$returnValue, $async$completer);
+            }
+        });
+        return P._asyncStartSync($async$_schedulePositionUpdate$2, $async$completer);
+      },
+      $isDropdownHandle: 1,
+      static: {
+        MaterialPopupComponent$: function(_hierarchy, parentPopup, role, _ngZone, _overlayService, _domService, _zIndexer, _defaultPreferredPositions, _useRepositionLoop, _popupSizeProvider, _changeDetector, _viewContainer, elementRef) {
+          var t1, t2, t3, t4, t5, t6, t7, t8, t9, result;
+          t1 = [-1];
+          t2 = [P.bool];
+          t3 = $.$get$MaterialPopupComponent__idGenerator().nextId$0();
+          t4 = P.Symbol0;
+          t5 = P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_autoDismiss, true, C.Symbol_enforceSpaceConstraints, false, C.Symbol_matchMinSourceWidth, false, C.Symbol_offsetX, 0, C.Symbol_offsetY, 0, C.Symbol_preferredPositions, C.List_empty, C.Symbol_source, null, C.Symbol_trackLayoutChanges, true, C.Symbol_constrainToViewport, true], t4, null);
+          t6 = P.LinkedHashMap_LinkedHashMap(null, null, null, t4, null);
+          t7 = Y.ChangeRecord;
+          t8 = new H.TypeImpl(t7).get$_typeName();
+          t9 = C.Type_dynamic_0Rz.get$_typeName();
+          if (t8 !== t9)
+            t8 = new H.TypeImpl(t7).get$_typeName() === C.Type_ChangeRecord_INA.get$_typeName();
+          else
+            t8 = true;
+          result = new Y.ObservableMap(t6, new B.ChangeNotifier(false, [t7]), t8, [t4, null]);
+          result.addAll$1(0, t5);
+          t4 = Y.ChangeRecord;
+          t5 = new H.TypeImpl(t4).get$_typeName();
+          t6 = C.Type_dynamic_0Rz.get$_typeName();
+          if (t5 !== t6)
+            t5 = new H.TypeImpl(t4).get$_typeName() === C.Type_ChangeRecord_INA.get$_typeName();
+          else
+            t5 = true;
+          t1 = new G.MaterialPopupComponent(new P._SyncBroadcastStreamController(null, null, 0, t1), new P._SyncBroadcastStreamController(null, null, 0, t2), new P._SyncBroadcastStreamController(null, null, 0, [W.Event]), _changeDetector, _viewContainer, new R.Disposer(true, false), _ngZone, _overlayService, _domService, _hierarchy, _defaultPreferredPositions, elementRef, "dialog", t3, false, false, _useRepositionLoop, 0, 0, false, 2, _zIndexer, _popupSizeProvider, false, false, true, new F.PopupState(result, new B.ChangeNotifier(false, [t4]), t5), false, new P._SyncBroadcastStreamController(null, null, 0, t1), new P._SyncBroadcastStreamController(null, null, 0, t1), new P._SyncBroadcastStreamController(null, null, 0, t2));
+          t1.MaterialPopupComponent$13(_hierarchy, parentPopup, role, _ngZone, _overlayService, _domService, _zIndexer, _defaultPreferredPositions, _useRepositionLoop, _popupSizeProvider, _changeDetector, _viewContainer, elementRef);
+          return t1;
+        }
+      }
+    },
+    MaterialPopupComponent_closure: {
+      "^": "Closure:83;$this",
+      call$1: [function(_) {
+        this.$this.set$visible(0, false);
+        return;
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    MaterialPopupComponent__initViewportRect_closure: {
+      "^": "Closure:0;",
+      call$0: [function() {
+        var t1, t2;
+        t1 = window;
+        t2 = W.Event;
+        H.assertSubtype(new R.RateLimitTransformer(C.Duration_100000, H.instantiate1(R.rate_limit_utils__throttleGuaranteeLast$closure(), null), [t2, null]), "$isStreamTransformer", [t2, null], "$asStreamTransformer").bind$1(new W._EventStream(t1, "resize", false, [t2])).listen$1(new G.MaterialPopupComponent__initViewportRect__closure());
+      }, null, null, 0, 0, null, "call"]
+    },
+    MaterialPopupComponent__initViewportRect__closure: {
+      "^": "Closure:3;",
+      call$1: [function(_) {
+        var t1, t2, t3, width, height;
+        t1 = $.MaterialPopupComponent__viewportRect;
+        t2 = window.innerWidth;
+        t1.toString;
+        t3 = H.getTypeArgumentByIndex(t1, 0);
+        H.assertSubtypeOfRuntimeType(t2, t3);
+        if (typeof t2 !== "number")
+          return t2.$lt();
+        if (t2 < 0)
+          width = H.assertSubtypeOfRuntimeType(-t2 * 0, t3);
+        else
+          width = t2;
+        t1.set$_math$_width(0, width);
+        t1 = $.MaterialPopupComponent__viewportRect;
+        t2 = window.innerHeight;
+        t1.toString;
+        t3 = H.getTypeArgumentByIndex(t1, 0);
+        H.assertSubtypeOfRuntimeType(t2, t3);
+        if (typeof t2 !== "number")
+          return t2.$lt();
+        if (t2 < 0)
+          height = H.assertSubtypeOfRuntimeType(-t2 * 0, t3);
+        else
+          height = t2;
+        t1.set$_height(0, height);
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    MaterialPopupComponent__open_closure: {
+      "^": "Closure:84;$this",
+      call$1: [function(sub) {
+        this.$this._layoutInternalSub = H.assertSubtype(sub, "$isStreamSubscription", [[P.Rectangle, P.num]], "$asStreamSubscription");
+      }, null, null, 4, 0, null, 57, "call"]
+    },
+    MaterialPopupComponent__open_closure0: {
+      "^": "Closure:85;$this,initialData",
+      call$1: [function(layoutRects) {
+        var t1, t2;
+        H.assertSubtype(layoutRects, "$isList", [[P.Rectangle, P.num]], "$asList");
+        t1 = J.getInterceptor$ax(layoutRects);
+        if (t1.every$1(layoutRects, new G.MaterialPopupComponent__open__closure())) {
+          t2 = this.initialData;
+          if (t2.future._state === 0) {
+            this.$this._onPopupOpened$0();
+            t2.complete$1(0, null);
+          }
+          t2 = this.$this;
+          t2.set$_initialSourceDimensions(null);
+          t2._schedulePositionUpdate$2(t1.$index(layoutRects, 0), t1.$index(layoutRects, 1));
+        }
+      }, null, null, 4, 0, null, 58, "call"]
+    },
+    MaterialPopupComponent__open__closure: {
+      "^": "Closure:86;",
+      call$1: function(r) {
+        return H.assertSubtype(r, "$isRectangle", [P.num], "$asRectangle") != null;
+      }
+    },
+    MaterialPopupComponent__open_closure1: {
+      "^": "Closure:3;$this",
+      call$1: [function(_) {
+        this.$this._updatePopupMinMaxSize$0();
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    MaterialPopupComponent__onPopupOpened_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1 = this.$this;
+        t1._animationTimer = null;
+        t1._isVisible = true;
+        t1.PopupEvents_onVisibleController.add$1(0, true);
+        t1._onOpened.add$1(0, null);
+      }, null, null, 0, 0, null, "call"]
+    },
+    MaterialPopupComponent__close_closure: {
+      "^": "Closure:0;$this",
+      call$0: function() {
+        var t1 = this.$this;
+        if (C.DivElement_methods.contains$1(t1._overlayRef.overlayElement, window.document.activeElement))
+          H.interceptedTypeCast(H.interceptedTypeCheck(t1.state._backingMap._observable_map$_map.$index(0, C.Symbol_source), "$isPopupSource"), "$isFocusable").focus$0(0);
+      }
+    },
+    MaterialPopupComponent__close_closure0: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1 = this.$this;
+        t1._animationTimer = null;
+        t1._onPopupClosed$0();
+      }, null, null, 0, 0, null, "call"]
+    },
+    MaterialPopupComponent__startRepositionLoop_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1 = this.$this;
+        t1._repositionLoopId = C.Window_methods.requestAnimationFrame$1(window, t1.get$_reposition());
+      }, null, null, 0, 0, null, "call"]
+    },
+    MaterialPopupRef: {
+      "^": "Object;_popupComponent",
+      $isPopupRef: 1
+    },
+    _mergeStreams_closure: {
+      "^": "Closure:0;_box_1,streams,streamSubscriptions,cachedResults,T",
+      call$0: function() {
+        var t1 = {};
+        t1.i = 0;
+        C.JSArray_methods.forEach$1(this.streams, new G._mergeStreams__closure(t1, this._box_1, this.streamSubscriptions, this.cachedResults, this.T));
+      }
+    },
+    _mergeStreams__closure: {
+      "^": "Closure;_box_0,_box_1,streamSubscriptions,cachedResults,T",
+      call$1: function(stream) {
+        var t1, t2;
+        t1 = this.T;
+        H.assertSubtype(stream, "$isStream", [t1], "$asStream");
+        t2 = this._box_0.i++;
+        C.JSArray_methods.$indexSet(this.streamSubscriptions, t2, stream.listen$1(new G._mergeStreams___closure(this._box_1, this.cachedResults, t2, t1)));
+      },
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [[P.Stream, this.T]]};
+      }
+    },
+    _mergeStreams___closure: {
+      "^": "Closure;_box_1,cachedResults,n,T",
+      call$1: [function(result) {
+        var t1 = this.cachedResults;
+        C.JSArray_methods.$indexSet(t1, this.n, H.assertSubtypeOfRuntimeType(result, this.T));
+        this._box_1.streamController.add$1(0, t1);
+      }, null, null, 4, 0, null, 8, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [this.T]};
+      }
+    },
+    _mergeStreams_closure0: {
+      "^": "Closure:0;streamSubscriptions",
+      call$0: function() {
+        var t1, t2, _i;
+        for (t1 = this.streamSubscriptions, t2 = t1.length, _i = 0; _i < t2; ++_i)
+          t1[_i].cancel$0(0);
+      }
+    },
+    _MaterialPopupComponent_Object_PopupBase: {
+      "^": "Object+PopupBase;"
+    },
+    _MaterialPopupComponent_Object_PopupBase_PopupEvents: {
+      "^": "_MaterialPopupComponent_Object_PopupBase+PopupEvents;"
+    },
+    _MaterialPopupComponent_Object_PopupBase_PopupEvents_PopupHierarchyElement: {
+      "^": "_MaterialPopupComponent_Object_PopupBase_PopupEvents+PopupHierarchyElement;"
+    }
+  }], ["asset_angular_components_lib_material_popup_material_popup.scss.css.shim.dart", "package:angular_components/material_popup/material_popup.scss.css.shim.dart",, G, {}], ["", "package:angular_components/material_popup/material_popup.template.dart",, A, {
+    "^": "",
+    viewFactory_MaterialPopupComponent1: [function(parentView, parentIndex) {
+      var t1 = new A._ViewMaterialPopupComponent1(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, G.MaterialPopupComponent));
+      t1.componentType = $.ViewMaterialPopupComponent0__renderType;
+      return t1;
+    }, "call$2", "material_popup_template__viewFactory_MaterialPopupComponent1$closure", 8, 0, 162],
+    ViewMaterialPopupComponent0: {
+      "^": "AppView;0_material_popup_template$_appEl_1,0_TemplateRef_1_7,0_material_popup_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var parentRenderNode, t1, t2, t3, _anchor_1;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        t1 = document;
+        t2 = J.getInterceptor$x(parentRenderNode);
+        t2.append$1(parentRenderNode, t1.createTextNode("\n"));
+        t3 = $.$get$_viewContainerAnchor();
+        _anchor_1 = H.interceptedTypeCheck((t3 && C.Comment_methods).clone$1(t3, false), "$isComment");
+        t2.append$1(parentRenderNode, _anchor_1);
+        t3 = new V.ViewContainer(1, null, this, _anchor_1);
+        this._material_popup_template$_appEl_1 = t3;
+        this._TemplateRef_1_7 = new D.TemplateRef(t3, A.material_popup_template__viewFactory_MaterialPopupComponent1$closure());
+        t2.append$1(parentRenderNode, t1.createTextNode("\n"));
+        this.ctx.set$templateRef(this._TemplateRef_1_7);
+        this.init$2(C.List_empty, null);
+      },
+      $asAppView: function() {
+        return [G.MaterialPopupComponent];
+      }
+    },
+    _ViewMaterialPopupComponent1: {
+      "^": "AppView;0_material_popup_template$_expr_0,0_material_popup_template$_expr_1,0_material_popup_template$_expr_2,0_material_popup_template$_expr_3,0_material_popup_template$_expr_4,0_material_popup_template$_expr_5,0_material_popup_template$_expr_6,0_material_popup_template$_expr_7,0_material_popup_template$_expr_8,0_material_popup_template$_expr_10,0_material_popup_template$_expr_11,0_material_popup_template$_expr_12,0_material_popup_template$_expr_13,0_material_popup_template$_el_1,0_el_3,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var t1, _text_0, t2, _text_2, _text_4, _text_5, _el_6, _text_7, _el_8, _el_10, _el_14, _el_18, _text_22, _text_23, _el_24, _text_25, _text_26, _text_27;
+        t1 = document;
+        _text_0 = t1.createTextNode("\n  ");
+        t2 = t1.createElement("div");
+        H.interceptedTypeCheck(t2, "$isDivElement");
+        this._material_popup_template$_el_1 = t2;
+        t2.className = "popup-wrapper mixin";
+        this.addShimC$1(t2);
+        _text_2 = t1.createTextNode("\n      ");
+        t2 = this._material_popup_template$_el_1;
+        (t2 && C.DivElement_methods).append$1(t2, _text_2);
+        t2 = S.createDivAndAppend(t1, this._material_popup_template$_el_1);
+        this._el_3 = t2;
+        t2.className = "popup";
+        this.addShimC$1(t2);
+        _text_4 = t1.createTextNode("\n          ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_4);
+        _text_5 = t1.createTextNode("\n          ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_5);
+        _el_6 = S.createDivAndAppend(t1, this._el_3);
+        _el_6.className = "focusable-placeholder";
+        _el_6.tabIndex = 0;
+        this.addShimC$1(_el_6);
+        _text_7 = t1.createTextNode("\n          ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_7);
+        _el_8 = S.createDivAndAppend(t1, this._el_3);
+        _el_8.className = "material-popup-content content";
+        this.addShimC$1(_el_8);
+        (_el_8 && C.DivElement_methods).append$1(_el_8, t1.createTextNode("\n              "));
+        _el_10 = S.createAndAppend(t1, "header", _el_8);
+        this.addShimE$1(_el_10);
+        t2 = J.getInterceptor$x(_el_10);
+        t2.append$1(_el_10, t1.createTextNode("\n                  "));
+        this.project$2(_el_10, 0);
+        t2.append$1(_el_10, t1.createTextNode("\n              "));
+        C.DivElement_methods.append$1(_el_8, t1.createTextNode("\n              "));
+        _el_14 = S.createDivAndAppend(t1, _el_8);
+        _el_14.className = "main";
+        this.addShimC$1(_el_14);
+        (_el_14 && C.DivElement_methods).append$1(_el_14, t1.createTextNode("\n                  "));
+        this.project$2(_el_14, 1);
+        C.DivElement_methods.append$1(_el_14, t1.createTextNode("\n              "));
+        C.DivElement_methods.append$1(_el_8, t1.createTextNode("\n              "));
+        _el_18 = S.createAndAppend(t1, "footer", _el_8);
+        this.addShimE$1(_el_18);
+        t2 = J.getInterceptor$x(_el_18);
+        t2.append$1(_el_18, t1.createTextNode("\n                  "));
+        this.project$2(_el_18, 2);
+        t2.append$1(_el_18, t1.createTextNode("\n              "));
+        C.DivElement_methods.append$1(_el_8, t1.createTextNode("\n          "));
+        _text_22 = t1.createTextNode("\n          ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_22);
+        _text_23 = t1.createTextNode("\n          ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_23);
+        _el_24 = S.createDivAndAppend(t1, this._el_3);
+        _el_24.className = "focusable-placeholder";
+        _el_24.tabIndex = 0;
+        this.addShimC$1(_el_24);
+        _text_25 = t1.createTextNode("\n      ");
+        t2 = this._el_3;
+        (t2 && C.DivElement_methods).append$1(t2, _text_25);
+        _text_26 = t1.createTextNode("\n  ");
+        t2 = this._material_popup_template$_el_1;
+        (t2 && C.DivElement_methods).append$1(t2, _text_26);
+        _text_27 = t1.createTextNode("\n");
+        t1 = W.Event;
+        (_el_6 && C.DivElement_methods).addEventListener$2(_el_6, "focus", this.eventHandler1$2$1(this.get$_handle_focus_6_0(), t1, t1));
+        (_el_24 && C.DivElement_methods).addEventListener$2(_el_24, "focus", this.eventHandler1$2$1(this.get$_handle_focus_24_0(), t1, t1));
+        this.init$2([_text_0, this._material_popup_template$_el_1, _text_27], null);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, t2, currVal_0, currVal_2, currVal_5, currVal_6, currVal_7, currVal_8, currVal_12, t3, currVal_13;
+        _ctx = this.ctx;
+        if (this.viewData._cdState === 0) {
+          t1 = this._material_popup_template$_el_1;
+          t2 = _ctx.role;
+          this.setAttr$3(t1, "role", t2);
+        }
+        currVal_0 = _ctx.z;
+        t1 = this._material_popup_template$_expr_0;
+        if (t1 !== currVal_0) {
+          t1 = this._material_popup_template$_el_1;
+          t2 = C.JSInt_methods.toString$0(currVal_0);
+          this.setAttr$3(t1, "elevation", t2);
+          this._material_popup_template$_expr_0 = currVal_0;
+        }
+        _ctx.hasBox;
+        t1 = this._material_popup_template$_expr_1;
+        if (t1 !== true) {
+          this.updateClass$3(this._material_popup_template$_el_1, "shadow", true);
+          this._material_popup_template$_expr_1 = true;
+        }
+        currVal_2 = _ctx._matchMinSourceWidth;
+        t1 = this._material_popup_template$_expr_2;
+        if (t1 !== currVal_2) {
+          this.updateClass$3(this._material_popup_template$_el_1, "full-width", currVal_2);
+          this._material_popup_template$_expr_2 = currVal_2;
+        }
+        _ctx.inkBackground;
+        t1 = this._material_popup_template$_expr_3;
+        if (t1 !== false) {
+          this.updateClass$3(this._material_popup_template$_el_1, "ink", false);
+          this._material_popup_template$_expr_3 = false;
+        }
+        currVal_5 = _ctx._zIndex;
+        t1 = this._material_popup_template$_expr_5;
+        if (t1 != currVal_5) {
+          t1 = this._material_popup_template$_el_1;
+          this.setAttr$3(t1, "z-index", currVal_5 == null ? null : C.JSInt_methods.toString$0(currVal_5));
+          this._material_popup_template$_expr_5 = currVal_5;
+        }
+        t1 = _ctx._alignmentPosition;
+        currVal_6 = t1 == null ? null : t1.animationOrigin;
+        t1 = this._material_popup_template$_expr_6;
+        if (t1 != currVal_6) {
+          t1 = this._material_popup_template$_el_1.style;
+          C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, "transform-origin"), currVal_6, null);
+          this._material_popup_template$_expr_6 = currVal_6;
+        }
+        currVal_7 = _ctx.showPopup;
+        t1 = this._material_popup_template$_expr_7;
+        if (t1 !== currVal_7) {
+          this.updateClass$3(this._material_popup_template$_el_1, "visible", currVal_7);
+          this._material_popup_template$_expr_7 = currVal_7;
+        }
+        currVal_8 = _ctx._material_popup$_uniqueId;
+        t1 = this._material_popup_template$_expr_8;
+        if (t1 !== currVal_8) {
+          this._material_popup_template$_el_1.id = currVal_8;
+          this._material_popup_template$_expr_8 = currVal_8;
+        }
+        currVal_12 = _ctx.maxHeight;
+        t1 = this._material_popup_template$_expr_12;
+        if (t1 != currVal_12) {
+          t1 = this._el_3.style;
+          t2 = currVal_12 == null;
+          if ((t2 ? null : C.JSInt_methods.toString$0(currVal_12)) == null)
+            t2 = null;
+          else {
+            t3 = J.$add$ansx(t2 ? null : C.JSInt_methods.toString$0(currVal_12), "px");
+            t2 = t3;
+          }
+          C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, "max-height"), t2, null);
+          this._material_popup_template$_expr_12 = currVal_12;
+        }
+        currVal_13 = _ctx.maxWidth;
+        t1 = this._material_popup_template$_expr_13;
+        if (t1 != currVal_13) {
+          t1 = this._el_3.style;
+          t2 = currVal_13 == null;
+          if ((t2 ? null : C.JSInt_methods.toString$0(currVal_13)) == null)
+            t2 = null;
+          else {
+            t3 = J.$add$ansx(t2 ? null : C.JSInt_methods.toString$0(currVal_13), "px");
+            t2 = t3;
+          }
+          C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, "max-width"), t2, null);
+          this._material_popup_template$_expr_13 = currVal_13;
+        }
+      },
+      _handle_focus_6_0$1: [function($$event) {
+        J.set$visible$z(this.ctx, false);
+      }, "call$1", "get$_handle_focus_6_0", 4, 0, 2],
+      _handle_focus_24_0$1: [function($$event) {
+        J.set$visible$z(this.ctx, false);
+      }, "call$1", "get$_handle_focus_24_0", 4, 0, 2],
+      $asAppView: function() {
+        return [G.MaterialPopupComponent];
+      }
+    }
   }], ["", "package:angular_components/material_progress/material_progress.dart",, X, {
     "^": "",
     MaterialProgressComponent: {
-      "^": "Object;_material_progress$_changeDetector,_material_progress$_element,_useFancyAnimation,activeProgress,secondaryProgress,min,max,_indeterminate,_isInitialized,0_primaryIndicator,0_primaryAnimation,0_secondaryIndicator,0_secondaryAnimation",
+      "^": "Object;_material_progress$_changeDetector,_material_progress$_element,_useFancyAnimation,activeProgress,secondaryProgress,min,max,_material_progress$_indeterminate,_isInitialized,0_primaryIndicator,0_primaryAnimation,0_secondaryIndicator,0_secondaryAnimation",
       _calcRatio$1: function(value) {
         var t1 = this.min;
         return (C.JSInt_methods.clamp$2(value, t1, this.max) - t1) / (this.max - t1);
@@ -17149,7 +20995,7 @@
   }], ["asset_angular_components_lib_material_progress_material_progress.scss.css.shim.dart", "package:angular_components/material_progress/material_progress.scss.css.shim.dart",, V, {}], ["", "package:angular_components/material_progress/material_progress.template.dart",, S, {
     "^": "",
     ViewMaterialProgressComponent0: {
-      "^": "AppView;0_material_progress_template$_expr_0,0_material_progress_template$_expr_1,0_material_progress_template$_expr_2,0_material_progress_template$_expr_3,0_material_progress_template$_expr_4,0_material_progress_template$_expr_5,0_material_progress_template$_expr_6,0_material_progress_template$_el_0,0_el_1,0_material_progress_template$_el_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_material_progress_template$_expr_0,0_material_progress_template$_expr_1,0_material_progress_template$_expr_2,0_material_progress_template$_expr_3,0_material_progress_template$_expr_4,0_material_progress_template$_expr_5,0_material_progress_template$_expr_6,0_material_progress_template$_el_0,0_material_progress_template$_el_1,0_material_progress_template$_el_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, doc, t1;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -17160,7 +21006,7 @@
         (t1 && C.DivElement_methods).setAttribute$2(t1, "role", "progressbar");
         this.addShimC$1(this._material_progress_template$_el_0);
         t1 = S.createDivAndAppend(doc, this._material_progress_template$_el_0);
-        this._el_1 = t1;
+        this._material_progress_template$_el_1 = t1;
         t1.className = "secondary-progress";
         this.addShimC$1(t1);
         t1 = S.createDivAndAppend(doc, this._material_progress_template$_el_0);
@@ -17168,7 +21014,7 @@
         t1.className = "active-progress";
         this.addShimC$1(t1);
         this.ctx.set$primary(this._material_progress_template$_el_2);
-        this.ctx.set$secondary(this._el_1);
+        this.ctx.set$secondary(this._material_progress_template$_el_1);
         this.init$2(C.List_empty, null);
       },
       detectChangesInternal$0: function() {
@@ -17180,7 +21026,7 @@
           this.setAttr$3(this._material_progress_template$_el_0, "aria-valuenow", currVal_0);
           this._material_progress_template$_expr_0 = currVal_0;
         }
-        _ctx._indeterminate;
+        _ctx._material_progress$_indeterminate;
         t1 = this._material_progress_template$_expr_1;
         if (t1 !== false) {
           this.updateClass$3(this._material_progress_template$_el_0, "indeterminate", false);
@@ -17206,7 +21052,7 @@
         currVal_5 = "scaleX(" + H.S(_ctx._calcRatio$1(_ctx.secondaryProgress)) + ")";
         t1 = this._material_progress_template$_expr_5;
         if (t1 !== currVal_5) {
-          t1 = this._el_1.style;
+          t1 = this._material_progress_template$_el_1.style;
           C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, "transform"), currVal_5, null);
           this._material_progress_template$_expr_5 = currVal_5;
         }
@@ -17353,26 +21199,26 @@
       }
     },
     MaterialRippleComponent_closure: {
-      "^": "Closure:10;$this",
+      "^": "Closure:11;$this",
       call$1: [function(e) {
         var t1, t2;
         e = H.interceptedTypeCast(H.interceptedTypeCheck(e, "$isEvent"), "$isMouseEvent");
         t1 = e.clientX;
         t2 = e.clientY;
         B._createRipple(H.intTypeCheck(t1), H.intTypeCheck(t2), this.$this._element, false);
-      }, null, null, 4, 0, null, 5, "call"]
+      }, null, null, 4, 0, null, 6, "call"]
     },
     MaterialRippleComponent_closure0: {
-      "^": "Closure:10;$this",
+      "^": "Closure:11;$this",
       call$1: [function(e) {
         e = H.interceptedTypeCheck(H.interceptedTypeCheck(e, "$isEvent"), "$isKeyboardEvent");
         if (!(e.keyCode === 13 || Z.isSpaceKey(e)))
           return;
         B._createRipple(0, 0, this.$this._element, true);
-      }, null, null, 4, 0, null, 5, "call"]
+      }, null, null, 4, 0, null, 6, "call"]
     },
     MaterialRippleComponent_ngOnDestroy_closure: {
-      "^": "Closure:68;$this",
+      "^": "Closure:87;$this",
       call$1: function(ripple) {
         var t1, t2;
         H.interceptedTypeCheck(ripple, "$isDivElement");
@@ -17411,6 +21257,2677 @@
         }
       }
     }
+  }], ["", "package:angular_components/material_select/activation_handler.dart",, Z, {
+    "^": "",
+    ActivationHandler: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/material_select/dropdown_button.dart",, Q, {
+    "^": "",
+    DropdownButtonComponent: {
+      "^": "_DropdownButtonComponent_Object_FocusableMixin_MaterialButtonWrapper;0_role,0_ariaRole,0_button,popupType,0error,0ariaOwns,0ariaExpanded,0ariaActiveDescendant,uuid,0_ariaLabelledBy,0ariaDescribedBy,0_showButtonBorder,_dropdown_button$_blur,tabbable,MaterialButtonWrapper_buttonText,MaterialButtonWrapper_buttonAriaLabel,MaterialButtonWrapper_disabled,MaterialButtonWrapper_icon,MaterialButtonWrapper_iconName,MaterialButtonWrapper_raised,MaterialButtonWrapper__buttonIcon,FocusableMixin__onFocus,FocusableMixin__focusable,FocusableMixin__focusPending",
+      set$button: function(_, b) {
+        this._button = b;
+        this.FocusableMixin__focusable = b;
+        if (this.FocusableMixin__focusPending && true) {
+          this.FocusableMixin__focusPending = false;
+          b.focus$0(0);
+        }
+      },
+      get$role: function(_) {
+        return this._role;
+      },
+      get$ariaRole: function() {
+        return this._ariaRole;
+      },
+      get$showButtonBorder: function() {
+        var t1 = this._showButtonBorder;
+        if (t1 != null)
+          return t1;
+        return false;
+      },
+      get$onBlur: function(_) {
+        var t1 = this._dropdown_button$_blur;
+        return new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+      },
+      handleBlur$1: function($event) {
+        this._dropdown_button$_blur.add$1(0, $event);
+      },
+      $isFocusable: 1
+    },
+    _DropdownButtonComponent_Object_FocusableMixin: {
+      "^": "Object+FocusableMixin;"
+    },
+    _DropdownButtonComponent_Object_FocusableMixin_MaterialButtonWrapper: {
+      "^": "_DropdownButtonComponent_Object_FocusableMixin+MaterialButtonWrapper;disabled:MaterialButtonWrapper_disabled>"
+    }
+  }], ["asset_angular_components_lib_material_select_dropdown_button.scss.css.shim.dart", "package:angular_components/material_select/dropdown_button.scss.css.shim.dart",, Y, {}], ["", "package:angular_components/material_select/dropdown_button.template.dart",, Z, {
+    "^": "",
+    viewFactory_DropdownButtonComponent1: [function(parentView, parentIndex) {
+      var t1 = new Z._ViewDropdownButtonComponent1(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Q.DropdownButtonComponent));
+      t1.componentType = $.ViewDropdownButtonComponent0__renderType;
+      return t1;
+    }, "call$2", "dropdown_button_template__viewFactory_DropdownButtonComponent1$closure", 8, 0, 21],
+    viewFactory_DropdownButtonComponent2: [function(parentView, parentIndex) {
+      var t1 = new Z._ViewDropdownButtonComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Q.DropdownButtonComponent));
+      t1.componentType = $.ViewDropdownButtonComponent0__renderType;
+      return t1;
+    }, "call$2", "dropdown_button_template__viewFactory_DropdownButtonComponent2$closure", 8, 0, 21],
+    viewFactory_DropdownButtonComponent3: [function(parentView, parentIndex) {
+      var t1 = new Z._ViewDropdownButtonComponent3(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Q.DropdownButtonComponent));
+      t1.componentType = $.ViewDropdownButtonComponent0__renderType;
+      return t1;
+    }, "call$2", "dropdown_button_template__viewFactory_DropdownButtonComponent3$closure", 8, 0, 21],
+    ViewDropdownButtonComponent0: {
+      "^": "AppView;0_ButtonDirective_0_5,0_dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6,0_dropdown_button_template$_appEl_1,0_dropdown_button_template$_NgIf_1_9,0_dropdown_button_template$_appEl_3,0_dropdown_button_template$_NgIf_3_9,0_dropdown_button_template$_appEl_4,0_dropdown_button_template$_NgIf_4_9,0_dropdown_button_template$_expr_1,0_dropdown_button_template$_expr_2,0_dropdown_button_template$_expr_3,0_dropdown_button_template$_expr_4,0_dropdown_button_template$_expr_5,0_dropdown_button_template$_expr_6,0_dropdown_button_template$_expr_7,0_dropdown_button_template$_expr_8,0_dropdown_button_template$_expr_9,0_dropdown_button_template$_expr_10,0_dropdown_button_template$_expr_11,0_dropdown_button_template$_expr_12,0_dropdown_button_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var parentRenderNode, doc, t1, t2, _anchor_1, _text_2, _anchor_3, _anchor_4, t3;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        doc = document;
+        t1 = S.createDivAndAppend(doc, parentRenderNode);
+        this._dropdown_button_template$_el_0 = t1;
+        (t1 && C.DivElement_methods).setAttribute$2(t1, "buttonDecorator", "");
+        t1 = this._dropdown_button_template$_el_0;
+        t1.className = "button";
+        (t1 && C.DivElement_methods).setAttribute$2(t1, "keyboardOnlyFocusIndicator", "");
+        this.addShimC$1(this._dropdown_button_template$_el_0);
+        t1 = this._dropdown_button_template$_el_0;
+        this._ButtonDirective_0_5 = new R.ButtonDirectiveNgCd(T.ButtonDirective$(t1, null), false);
+        t2 = H.interceptedTypeCheck(this.parentView.injectorGet$2(C.Type_DomService_2jN, this.viewData.parentIndex), "$isDomService");
+        this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6 = new O.KeyboardOnlyFocusIndicatorDirective(t1, t2, C._InteractionType_2);
+        t1 = $.$get$_viewContainerAnchor();
+        _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        t2 = this._dropdown_button_template$_el_0;
+        (t2 && C.DivElement_methods).append$1(t2, _anchor_1);
+        t2 = new V.ViewContainer(1, 0, this, _anchor_1);
+        this._dropdown_button_template$_appEl_1 = t2;
+        this._dropdown_button_template$_NgIf_1_9 = new K.NgIf(new D.TemplateRef(t2, Z.dropdown_button_template__viewFactory_DropdownButtonComponent1$closure()), t2, false);
+        _text_2 = doc.createTextNode(" ");
+        t2 = this._dropdown_button_template$_el_0;
+        (t2 && C.DivElement_methods).append$1(t2, _text_2);
+        this.project$2(this._dropdown_button_template$_el_0, 0);
+        _anchor_3 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        t2 = this._dropdown_button_template$_el_0;
+        (t2 && C.DivElement_methods).append$1(t2, _anchor_3);
+        t2 = new V.ViewContainer(3, 0, this, _anchor_3);
+        this._dropdown_button_template$_appEl_3 = t2;
+        this._dropdown_button_template$_NgIf_3_9 = new K.NgIf(new D.TemplateRef(t2, Z.dropdown_button_template__viewFactory_DropdownButtonComponent2$closure()), t2, false);
+        _anchor_4 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        J.append$1$x(parentRenderNode, _anchor_4);
+        t1 = new V.ViewContainer(4, null, this, _anchor_4);
+        this._dropdown_button_template$_appEl_4 = t1;
+        this._dropdown_button_template$_NgIf_4_9 = new K.NgIf(new D.TemplateRef(t1, Z.dropdown_button_template__viewFactory_DropdownButtonComponent3$closure()), t1, false);
+        t1 = this._dropdown_button_template$_el_0;
+        t2 = W.Event;
+        (t1 && C.DivElement_methods).addEventListener$2(t1, "focus", this.eventHandler1$2$1(this.get$_handle_focus_0_0(), t2, t2));
+        t1 = this._dropdown_button_template$_el_0;
+        (t1 && C.DivElement_methods).addEventListener$2(t1, "blur", this.eventHandler1$2$1(this.get$_handle_blur_0_1(), t2, t2));
+        t1 = this._dropdown_button_template$_el_0;
+        (t1 && C.DivElement_methods).addEventListener$2(t1, "click", this.eventHandler1$2$1(this.get$_handle_click_0_2(), t2, t2));
+        t1 = this._dropdown_button_template$_el_0;
+        t3 = W.KeyboardEvent;
+        (t1 && C.DivElement_methods).addEventListener$2(t1, "keypress", this.eventHandler1$2$1(this._ButtonDirective_0_5.instance.get$handleKeyPress(), t2, t3));
+        t1 = this._dropdown_button_template$_el_0;
+        (t1 && C.DivElement_methods).addEventListener$2(t1, "keydown", this.eventHandler1$2$1(this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6.get$keydown(), t2, t3));
+        t3 = this._dropdown_button_template$_el_0;
+        (t3 && C.DivElement_methods).addEventListener$2(t3, "mousedown", this.eventHandler0$1$1(this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6.get$onMouseInteraction(), t2));
+        J.set$button$z(this.ctx, this._ButtonDirective_0_5.instance);
+        this.init$2(C.List_empty, null);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        var t1;
+        if (token === C.Type_ButtonDirective_hH0)
+          t1 = nodeIndex <= 3;
+        else
+          t1 = false;
+        if (t1)
+          return this._ButtonDirective_0_5.instance;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, currVal_10, t2, currVal_4, currVal_6, currVal_7, currVal_8, t3, currVal_0, t4, currVal_1, currVal_2, currVal_3;
+        _ctx = this.ctx;
+        t1 = this.viewData._cdState;
+        currVal_10 = _ctx._ariaRole;
+        t2 = this._dropdown_button_template$_expr_10;
+        if (t2 != currVal_10) {
+          this._ButtonDirective_0_5.instance.role = currVal_10;
+          this._dropdown_button_template$_expr_10 = currVal_10;
+        }
+        _ctx.MaterialButtonWrapper_disabled;
+        t2 = this._dropdown_button_template$_expr_11;
+        if (t2 !== false) {
+          this._ButtonDirective_0_5.instance.disabled = false;
+          this._dropdown_button_template$_expr_11 = false;
+        }
+        _ctx.tabbable;
+        t2 = this._dropdown_button_template$_expr_12;
+        if (t2 !== true) {
+          this._ButtonDirective_0_5.instance.tabbable = true;
+          this._dropdown_button_template$_expr_12 = true;
+        }
+        t2 = this._dropdown_button_template$_NgIf_1_9;
+        _ctx.MaterialButtonWrapper_buttonText;
+        t2.set$ngIf(false);
+        this._dropdown_button_template$_NgIf_3_9.set$ngIf(_ctx.get$buttonIcon() != null);
+        t2 = this._dropdown_button_template$_NgIf_4_9;
+        _ctx.error;
+        t2.set$ngIf(false);
+        this._dropdown_button_template$_appEl_1.detectChangesInNestedViews$0();
+        this._dropdown_button_template$_appEl_3.detectChangesInNestedViews$0();
+        this._dropdown_button_template$_appEl_4.detectChangesInNestedViews$0();
+        if (t1 === 0)
+          this.setAttr$3(this._dropdown_button_template$_el_0, "id", _ctx.uuid);
+        _ctx._ariaLabelledBy;
+        t1 = this._dropdown_button_template$_expr_2;
+        if (t1 != null) {
+          this.setAttr$3(this._dropdown_button_template$_el_0, "aria-labelledby", null);
+          this._dropdown_button_template$_expr_2 = null;
+        }
+        currVal_4 = _ctx.get$showButtonBorder();
+        t1 = this._dropdown_button_template$_expr_4;
+        if (t1 != currVal_4) {
+          this.updateClass$3(this._dropdown_button_template$_el_0, "border", currVal_4);
+          this._dropdown_button_template$_expr_4 = currVal_4;
+        }
+        t1 = this._dropdown_button_template$_expr_5;
+        if (t1 !== false) {
+          this.updateClass$3(this._dropdown_button_template$_el_0, "invalid", false);
+          this._dropdown_button_template$_expr_5 = false;
+        }
+        currVal_6 = _ctx.popupType;
+        t1 = this._dropdown_button_template$_expr_6;
+        if (t1 !== currVal_6) {
+          this.setAttr$3(this._dropdown_button_template$_el_0, "aria-haspopup", currVal_6);
+          this._dropdown_button_template$_expr_6 = currVal_6;
+        }
+        currVal_7 = _ctx.ariaOwns;
+        t1 = this._dropdown_button_template$_expr_7;
+        if (t1 != currVal_7) {
+          this.setAttr$3(this._dropdown_button_template$_el_0, "aria-owns", currVal_7);
+          this._dropdown_button_template$_expr_7 = currVal_7;
+        }
+        currVal_8 = _ctx.ariaExpanded;
+        t1 = this._dropdown_button_template$_expr_8;
+        if (t1 != currVal_8) {
+          t1 = this._dropdown_button_template$_el_0;
+          this.setAttr$3(t1, "aria-expanded", currVal_8 == null ? null : C.JSBool_methods.toString$0(currVal_8));
+          this._dropdown_button_template$_expr_8 = currVal_8;
+        }
+        t1 = this._ButtonDirective_0_5;
+        t2 = this._dropdown_button_template$_el_0;
+        t3 = t1.instance;
+        currVal_0 = t3.get$tabIndex(t3);
+        t4 = t1._button_decorator_template$_expr_0;
+        if (t4 != currVal_0) {
+          t2.tabIndex = currVal_0;
+          t1._button_decorator_template$_expr_0 = currVal_0;
+        }
+        currVal_1 = t3.role;
+        t4 = t1._button_decorator_template$_expr_1;
+        if (t4 != currVal_1) {
+          t1.setAttr$3(t2, "role", currVal_1);
+          t1._button_decorator_template$_expr_1 = currVal_1;
+        }
+        currVal_2 = "" + t3.disabled;
+        t4 = t1._button_decorator_template$_expr_2;
+        if (t4 !== currVal_2) {
+          t1.setAttr$3(t2, "aria-disabled", currVal_2);
+          t1._button_decorator_template$_expr_2 = currVal_2;
+        }
+        currVal_3 = t3.disabled;
+        t3 = t1._button_decorator_template$_expr_3;
+        if (t3 !== currVal_3) {
+          t1.updateElemClass$3(t2, "is-disabled", currVal_3);
+          t1._button_decorator_template$_expr_3 = currVal_3;
+        }
+      },
+      destroyInternal$0: function() {
+        this._dropdown_button_template$_appEl_1.destroyNestedViews$0();
+        this._dropdown_button_template$_appEl_3.destroyNestedViews$0();
+        this._dropdown_button_template$_appEl_4.destroyNestedViews$0();
+      },
+      _handle_focus_0_0$1: [function($$event) {
+        var t1 = this.ctx;
+        H.interceptedTypeCheck($$event, "$isFocusEvent");
+        t1.handleFocus$1($$event);
+        this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6.onFocus$1(0, $$event);
+      }, "call$1", "get$_handle_focus_0_0", 4, 0, 2],
+      _handle_blur_0_1$1: [function($$event) {
+        this.ctx.handleBlur$1(H.interceptedTypeCheck($$event, "$isFocusEvent"));
+        this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6.resetOutline$0();
+      }, "call$1", "get$_handle_blur_0_1", 4, 0, 2],
+      _handle_click_0_2$1: [function($$event) {
+        var t1;
+        this._ButtonDirective_0_5.instance.handleClick$1(H.interceptedTypeCheck($$event, "$isMouseEvent"));
+        t1 = this._dropdown_button_template$_KeyboardOnlyFocusIndicatorDirective_0_6;
+        t1._lastInteraction = C._InteractionType_0;
+        t1.hideOutline$0();
+      }, "call$1", "get$_handle_click_0_2", 4, 0, 2],
+      $asAppView: function() {
+        return [Q.DropdownButtonComponent];
+      }
+    },
+    _ViewDropdownButtonComponent1: {
+      "^": "AppView;0_dropdown_button_template$_expr_0,0_dropdown_button_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var doc, _el_0, t1;
+        doc = document;
+        _el_0 = doc.createElement("span");
+        _el_0.className = "button-text";
+        this.addShimE$1(_el_0);
+        t1 = doc.createTextNode("");
+        this._dropdown_button_template$_text_1 = t1;
+        J.append$1$x(_el_0, t1);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var currVal_0, t1;
+        currVal_0 = Q.interpolate0(this.ctx.MaterialButtonWrapper_buttonText);
+        t1 = this._dropdown_button_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._dropdown_button_template$_text_1.textContent = currVal_0;
+          this._dropdown_button_template$_expr_0 = currVal_0;
+        }
+      },
+      $asAppView: function() {
+        return [Q.DropdownButtonComponent];
+      }
+    },
+    _ViewDropdownButtonComponent2: {
+      "^": "AppView;0_dropdown_button_template$_compView_0,0_dropdown_button_template$_GlyphComponent_0_5,0_dropdown_button_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var t1, _el_0;
+        t1 = M.ViewGlyphComponent0$(this, 0);
+        this._dropdown_button_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        _el_0.className = "icon";
+        this.addShimC$1(_el_0);
+        t1 = new L.GlyphComponent(true, _el_0);
+        this._dropdown_button_template$_GlyphComponent_0_5 = t1;
+        this._dropdown_button_template$_compView_0.create$2(0, t1, []);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var currVal_0, t1, changed;
+        currVal_0 = this.ctx.get$buttonIcon();
+        t1 = this._dropdown_button_template$_expr_0;
+        if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
+          this._dropdown_button_template$_GlyphComponent_0_5.set$icon(0, currVal_0);
+          this._dropdown_button_template$_expr_0 = currVal_0;
+          changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._dropdown_button_template$_compView_0.viewData.set$cdMode(1);
+        this._dropdown_button_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._dropdown_button_template$_compView_0.destroy$0();
+      },
+      $asAppView: function() {
+        return [Q.DropdownButtonComponent];
+      }
+    },
+    _ViewDropdownButtonComponent3: {
+      "^": "AppView;0_dropdown_button_template$_expr_0,0_dropdown_button_template$_expr_1,0_dropdown_button_template$_expr_2,0_dropdown_button_template$_el_0,0_dropdown_button_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      build$0: function() {
+        var doc, t1, t2;
+        doc = document;
+        t1 = doc.createElement("div");
+        H.interceptedTypeCheck(t1, "$isDivElement");
+        this._dropdown_button_template$_el_0 = t1;
+        t1.className = "error-text";
+        C.DivElement_methods.setAttribute$2(t1, "role", "alert");
+        this.addShimC$1(this._dropdown_button_template$_el_0);
+        t1 = doc.createTextNode("");
+        this._dropdown_button_template$_text_1 = t1;
+        t2 = this._dropdown_button_template$_el_0;
+        (t2 && C.DivElement_methods).append$1(t2, t1);
+        this.init0$1(this._dropdown_button_template$_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, currVal_1;
+        _ctx = this.ctx;
+        _ctx.error;
+        t1 = this._dropdown_button_template$_expr_0;
+        if (t1 !== false) {
+          this.updateClass$3(this._dropdown_button_template$_el_0, "invalid", false);
+          this._dropdown_button_template$_expr_0 = false;
+        }
+        _ctx.error;
+        currVal_1 = Q.interpolate0(true);
+        t1 = this._dropdown_button_template$_expr_1;
+        if (t1 !== currVal_1) {
+          this.setAttr$3(this._dropdown_button_template$_el_0, "aria-hidden", currVal_1);
+          this._dropdown_button_template$_expr_1 = currVal_1;
+        }
+        _ctx.error;
+        t1 = this._dropdown_button_template$_expr_2;
+        if (t1 !== "") {
+          this._dropdown_button_template$_text_1.textContent = "";
+          this._dropdown_button_template$_expr_2 = "";
+        }
+      },
+      $asAppView: function() {
+        return [Q.DropdownButtonComponent];
+      }
+    }
+  }], ["", "package:angular_components/material_select/material_dropdown_select.dart",, M, {
+    "^": "",
+    MaterialDropdownSelectComponent: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin_ActivateItemOnKeyPressMixin_ShiftClickSelectionMixin;trackByIndexFn,activeModel<,listId,buttonAriaRole,0buttonAriaLabelledBy,0_optionsListener,0_selectionListener,_popupSizeDelegate,0deselectLabel<,0error,0showButtonBorder,_deselectOnActivate,0labelFactory,activateFirstOption,popupClassName,0_ariaActiveDescendant,_material_dropdown_select$_changeDetector,0dropdownButton,listAutoFocus,_focus,_blur,ShiftClickSelectionMixin__pivot,ActivateItemOnKeyPressMixin__enteredKeys,KeyboardHandlerMixin_isRtl,TrackLayoutChangesMixin_trackLayoutChanges,MaterialButtonWrapper_buttonText,MaterialButtonWrapper_buttonAriaLabel,MaterialButtonWrapper_disabled,MaterialButtonWrapper_icon,MaterialButtonWrapper_iconName,MaterialButtonWrapper_raised,MaterialButtonWrapper__buttonIcon,SelectionInputAdapter__selectionChangeController,MaterialDropdownBase__visibleStream,MaterialDropdownBase__contentVisible,MaterialDropdownBase_enforceSpaceConstraints,MaterialDropdownBase_constrainToViewport,MaterialDropdownBase_popupMatchInputWidth,MaterialDropdownBase_slide,MaterialDropdownBase_autoDismiss,MaterialDropdownBase__visible,MaterialDropdownBase_preferredPositions,_width,0_selection,0_options,0_itemRenderer,0_componentRenderer,0_factoryRenderer,$ti",
+      set$_optionsListener: function(_optionsListener) {
+        this._optionsListener = H.assertSubtype(_optionsListener, "$isStreamSubscription", [[P.List, [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]]], "$asStreamSubscription");
+      },
+      set$_selectionListener: function(_selectionListener) {
+        this._selectionListener = H.assertSubtype(_selectionListener, "$isStreamSubscription", [[P.List, [Z.SelectionChangeRecord, H.getTypeArgumentByIndex(this, 0)]]], "$asStreamSubscription");
+      },
+      set$dropdownButton: function(dropdownButton) {
+        this.dropdownButton = H.interceptedTypeCheck(dropdownButton, "$isDropdownButtonComponent");
+      },
+      get$ariaActiveDescendant: function() {
+        if (!this.MaterialDropdownBase__visible)
+          return "";
+        if (this.get$options(this) != null) {
+          var t1 = this.activeModel;
+          return t1.id$1(0, t1.get$activeItem());
+        }
+        return "";
+      },
+      set$visible: function(_, value) {
+        this._material_dropdown_select$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        this.super$MaterialDropdownBase$visible(0, value);
+        this.ActivateItemOnKeyPressMixin__enteredKeys = "";
+        if (value)
+          this._setInitialActiveItem$1$allowDeactivate(false);
+      },
+      set$options: function(_, newOptions) {
+        var t1;
+        H.assertSubtype(newOptions, "$isSelectionOptions", this.$ti, "$asSelectionOptions");
+        this._material_dropdown_select$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        this.super$SelectionContainer$options(0, newOptions);
+        this._updateActiveModel$0();
+        this._setInitialActiveItem$0();
+        t1 = this._optionsListener;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        t1 = this.get$options(this);
+        if (t1 == null)
+          t1 = null;
+        else {
+          t1 = t1._selection_options$_controller;
+          t1 = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+        }
+        this.set$_optionsListener(t1 == null ? null : t1.listen$1(new M.MaterialDropdownSelectComponent_options_closure(this)));
+      },
+      onFocus$1: [function(_, $event) {
+        this._focus.add$1(0, H.interceptedTypeCheck($event, "$isFocusEvent"));
+      }, "call$1", "get$onFocus", 5, 0, 33],
+      onBlur$1: [function(_, $event) {
+        this._blur.add$1(0, H.interceptedTypeCheck($event, "$isFocusEvent"));
+      }, "call$1", "get$onBlur", 5, 0, 33],
+      set$selection: function(newSelection) {
+        var t1;
+        H.assertSubtype(newSelection, "$isSelectionModel", this.$ti, "$asSelectionModel");
+        this._material_dropdown_select$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        this.super$SelectionContainer$selection(newSelection);
+        this._setInitialActiveItem$0();
+        t1 = this._selectionListener;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        t1 = this.get$selection();
+        t1 = t1 == null ? null : t1.get$selectionChanges();
+        this.set$_selectionListener(t1 == null ? null : t1.listen$1(new M.MaterialDropdownSelectComponent_selection_closure(this)));
+      },
+      _updateActiveModel$0: function() {
+        var t1, items;
+        t1 = this.get$options(this);
+        t1 = t1 == null ? null : t1._flattenedList;
+        items = P.List_List$from(t1 == null ? [] : t1, true, null);
+        if (this.get$showDeselectItem())
+          C.JSArray_methods.insert$2(items, 0, this.deselectLabel);
+        this.activeModel.set$items(0, items);
+      },
+      _setInitialActiveItem$1$allowDeactivate: function(allowDeactivate) {
+        var t1, t2;
+        if (this.get$selection() == null || J.get$isEmpty$asx(this.get$selection().get$selectedValues())) {
+          if (allowDeactivate)
+            this.activeModel.activate$1(null);
+        } else {
+          t1 = this.activeModel;
+          if (t1.get$activeItem() != null)
+            t2 = this.get$showDeselectItem() && J.$eq$(t1.get$activeItem(), this.deselectLabel) || !this.get$selection().isSelected$1(H.assertSubtypeOfRuntimeType(t1.get$activeItem(), H.getTypeArgumentByIndex(this, 0)));
+          else
+            t2 = true;
+          if (t2)
+            t1.activate$1(J.get$first$ax(this.get$selection().get$selectedValues()));
+        }
+      },
+      _setInitialActiveItem$0: function() {
+        return this._setInitialActiveItem$1$allowDeactivate(true);
+      },
+      _handleNavigationKey$2: function($event, activateFunction) {
+        var item, t1;
+        $event.preventDefault();
+        activateFunction.call$0();
+        if (!this.MaterialDropdownBase__visible && this.get$selection() != null && !J.getInterceptor$(this.get$selection()).$isMultiSelectionModel) {
+          item = this.activeModel.get$activeItem();
+          if (J.$eq$(item, this.deselectLabel))
+            this.deselectCurrentSelection$0();
+          else {
+            if (item != null) {
+              t1 = H.getTypeArgumentByIndex(this, 0);
+              H.assertSubtypeOfRuntimeType(item, t1);
+              t1 = E.Selectable__isOptionCheck(this.get$options(this), item, C.SelectableOption_0, true, t1);
+            } else
+              t1 = false;
+            if (t1)
+              this.get$selection().select$1(0, H.assertSubtypeOfRuntimeType(item, H.getTypeArgumentByIndex(this, 0)));
+          }
+        }
+      },
+      _handleKeyboardTrigger$0: function() {
+        var item, t1, t2;
+        if (!this.MaterialDropdownBase__visible)
+          this.set$visible(0, true);
+        else {
+          item = this.activeModel.get$activeItem();
+          if (item != null && this.get$selection() != null)
+            if (J.$eq$(item, this.deselectLabel))
+              this.deselectCurrentSelection$0();
+            else {
+              t1 = this.get$selection();
+              t2 = H.getTypeArgumentByIndex(this, 0);
+              H.assertSubtypeOfRuntimeType(item, t2);
+              if (!t1.isSelected$1(item)) {
+                if (E.Selectable__isOptionCheck(this.get$options(this), item, C.SelectableOption_0, true, t2))
+                  this.get$selection().select$1(0, item);
+              } else {
+                this.get$selection();
+                this.get$selection().deselect$1(item);
+              }
+            }
+          if (!J.getInterceptor$(this.get$selection()).$isMultiSelectionModel) {
+            this.set$visible(0, false);
+            this.dropdownButton.focus$0(0);
+          }
+        }
+      },
+      handleClick$1: [function($event) {
+        if (!J.getInterceptor$(H.interceptedTypeCheck($event, "$isUIEvent")).$isMouseEvent)
+          return;
+        this.set$visible(0, !this.MaterialDropdownBase__visible);
+      }, "call$1", "get$handleClick", 4, 0, 18],
+      getMinHeight$2: function(positionY, viewportHeight) {
+        var t1 = this._popupSizeDelegate;
+        return t1 == null ? null : t1.getMinHeight$2(positionY, viewportHeight);
+      },
+      getMinWidth$2: function(positionX, viewportWidth) {
+        var t1 = this._popupSizeDelegate;
+        return t1 == null ? null : t1.getMinWidth$2(positionX, viewportWidth);
+      },
+      getMaxHeight$2: function(positionY, viewportHeight) {
+        var t1 = this._popupSizeDelegate;
+        if (t1 != null)
+          return t1.getMaxHeight$2(positionY, viewportHeight);
+        else
+          return 400;
+      },
+      getMaxWidth$2: function(positionX, viewportWidth) {
+        var t1 = this._popupSizeDelegate;
+        if (t1 != null)
+          return t1.getMaxWidth$2(positionX, viewportWidth);
+        else
+          return 448;
+      },
+      get$showDeselectItem: function() {
+        !J.getInterceptor$(this.get$selection()).$isMultiSelectionModel;
+        return false;
+      },
+      deselectCurrentSelection$0: [function() {
+        var t1 = this.get$selection();
+        if (t1.get$isNotEmpty(t1))
+          this.get$selection().deselect$1(J.get$single$ax(this.get$selection().get$selectedValues()));
+      }, "call$0", "get$deselectCurrentSelection", 0, 0, 1],
+      $isActivationHandler: 1,
+      $asActivationHandler: Isolate.functionThatReturnsNull,
+      $isDropdownHandle: 1,
+      $isPopupRef: 1,
+      $isPopupSizeProvider: 1,
+      static: {
+        MaterialDropdownSelectComponent$: function(idGenerator, _popupSizeDelegate, rtl, popupClass, buttonAriaRole, _changeDetector, element, $T) {
+          var t1, t2, t3, t4, t5, t6;
+          t1 = $.$get$indexIdentityFn();
+          t2 = [W.FocusEvent];
+          t3 = P.HashMap_HashMap(null, null, null, null, P.String);
+          t4 = idGenerator == null;
+          t5 = t4 ? new R.SequentialIdGenerator(R.SequentialIdGenerator__createUuid(), 0) : idGenerator;
+          t5 = new O.ActiveItemModel(new P._SyncBroadcastStreamController(null, null, 0, [null]), t3, t5, -1, [null]);
+          t5._loop = false;
+          t5.set$_items(C.List_empty1);
+          if (t5._items.length !== 0)
+            t5._activeIndex = 0;
+          element.toString;
+          t3 = Q.constructEncapsulatedCss(popupClass, new W._ElementCssClassSet(element));
+          t6 = (t4 ? new R.SequentialIdGenerator(R.SequentialIdGenerator__createUuid(), 0) : idGenerator).nextId$0();
+          t4 = [P.bool];
+          t1 = new M.MaterialDropdownSelectComponent(t1, t5, t6, buttonAriaRole, _popupSizeDelegate, true, false, t3, _changeDetector, true, new P._SyncBroadcastStreamController(null, null, 0, t2), new P._SyncBroadcastStreamController(null, null, 0, t2), null, "", null, true, null, null, false, null, null, false, null, null, new P._SyncBroadcastStreamController(null, null, 0, t4), new P._SyncBroadcastStreamController(null, null, 0, t4), false, false, true, null, true, false, C.List_ezW, 0, [$T]);
+          t1.KeyboardHandlerMixin_isRtl = rtl;
+          t1.MaterialDropdownBase_preferredPositions = C.List_scL;
+          t1.MaterialButtonWrapper_iconName = "arrow_drop_down";
+          return t1;
+        }
+      }
+    },
+    MaterialDropdownSelectComponent_options_closure: {
+      "^": "Closure;$this",
+      call$1: [function(_) {
+        var t1 = this.$this;
+        H.assertSubtype(_, "$isList", [[F.OptionGroup, H.getTypeArgumentByIndex(t1, 0)]], "$asList");
+        t1._material_dropdown_select$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        t1._updateActiveModel$0();
+        t1._setInitialActiveItem$0();
+      }, null, null, 4, 0, null, 0, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [[P.List, [F.OptionGroup, H.getTypeArgumentByIndex(this.$this, 0)]]]};
+      }
+    },
+    MaterialDropdownSelectComponent_selection_closure: {
+      "^": "Closure;$this",
+      call$1: [function(changes) {
+        var t1, t2, added;
+        t1 = this.$this;
+        H.assertSubtype(changes, "$isList", [[Z.SelectionChangeRecord, H.getTypeArgumentByIndex(t1, 0)]], "$asList");
+        t1._material_dropdown_select$_changeDetector.appView.markPathToRootAsCheckOnce$0();
+        t2 = J.getInterceptor$ax(changes);
+        added = J.get$isNotEmpty$asx(t2.get$last(changes).get$added()) ? J.get$first$ax(t2.get$last(changes).get$added()) : null;
+        if (added != null) {
+          t2 = t1.activeModel;
+          H.assertSubtypeOfRuntimeType(added, H.getTypeArgumentByIndex(t2, 0));
+          t2 = !J.$eq$(t2.get$activeItem(), added);
+        } else
+          t2 = false;
+        if (t2)
+          t1.activeModel.activate$1(added);
+        t1.emitSelectionChange$0();
+      }, null, null, 4, 0, null, 59, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [[P.List, [Z.SelectionChangeRecord, H.getTypeArgumentByIndex(this.$this, 0)]]]};
+      }
+    },
+    ActivateItemOnKeyPressMixin: {
+      "^": "Object;$ti",
+      activateOnKeyPress$5: function(activeModel, charCode, options, itemRenderer, selection) {
+        var key, optionsList, startsWith, maybeSelectOption, t1, keys, _i;
+        H.functionTypeCheck(itemRenderer, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(this, 0)]});
+        if (options == null)
+          return;
+        key = $.$get$ActivateItemOnKeyPressMixin__charCodeMap().$index(0, charCode);
+        if (key == null) {
+          key = H.Primitives_stringFromCharCode(charCode).toLowerCase();
+          $.$get$ActivateItemOnKeyPressMixin__charCodeMap().$indexSet(0, charCode, key);
+        }
+        optionsList = options._flattenedList;
+        startsWith = new M.ActivateItemOnKeyPressMixin_activateOnKeyPress_closure(this, P.LinkedHashMap_LinkedHashMap$_empty(null, P.String), itemRenderer);
+        maybeSelectOption = new M.ActivateItemOnKeyPressMixin_activateOnKeyPress_closure0(this, options, startsWith, activeModel, selection);
+        t1 = this.ActivateItemOnKeyPressMixin__enteredKeys;
+        if (t1.length !== 0) {
+          keys = t1 + key;
+          for (t1 = optionsList.length, _i = 0; _i < optionsList.length; optionsList.length === t1 || (0, H.throwConcurrentModificationError)(optionsList), ++_i)
+            if (maybeSelectOption.call$2(optionsList[_i], keys))
+              return;
+        }
+        if (startsWith.call$2(activeModel.get$activeItem(), key))
+          if (maybeSelectOption.call$2(activeModel.get$peekNext(), key))
+            return;
+        for (t1 = optionsList.length, _i = 0; _i < optionsList.length; optionsList.length === t1 || (0, H.throwConcurrentModificationError)(optionsList), ++_i)
+          if (maybeSelectOption.call$2(optionsList[_i], key))
+            return;
+        this.ActivateItemOnKeyPressMixin__enteredKeys = "";
+      }
+    },
+    ActivateItemOnKeyPressMixin_activateOnKeyPress_closure: {
+      "^": "Closure:38;$this,searchMap,itemRenderer",
+      call$2: function(option, keys) {
+        var t1, searchString;
+        if (option == null)
+          return false;
+        t1 = this.searchMap;
+        searchString = t1.$index(0, option);
+        if (searchString == null) {
+          searchString = J.toLowerCase$0$s(this.itemRenderer.call$1(H.assertSubtypeOfRuntimeType(option, H.getTypeArgumentByIndex(this.$this, 0))));
+          t1.$indexSet(0, option, searchString);
+        }
+        return C.JSString_methods.startsWith$1(searchString, keys);
+      }
+    },
+    ActivateItemOnKeyPressMixin_activateOnKeyPress_closure0: {
+      "^": "Closure:38;$this,options,startsWith,activeModel,selection",
+      call$2: function(option, keys) {
+        var t1;
+        if (E.Selectable__isOptionCheck(this.options, option, C.SelectableOption_0, true, null) && this.startsWith.call$2(option, keys)) {
+          this.activeModel.activate$1(option);
+          t1 = this.selection;
+          if (!(t1 == null))
+            t1.select$1(0, option);
+          this.$this.ActivateItemOnKeyPressMixin__enteredKeys = keys;
+          return true;
+        }
+        return false;
+      }
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase: {
+      "^": "MaterialSelectBase+MaterialDropdownBase;"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase+SelectionInputAdapter;"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter+MaterialButtonWrapper;disabled:MaterialButtonWrapper_disabled>"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper+TrackLayoutChangesMixin;"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin+KeyboardHandlerMixin;"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin_ActivateItemOnKeyPressMixin: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin+ActivateItemOnKeyPressMixin;"
+    },
+    _MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin_ActivateItemOnKeyPressMixin_ShiftClickSelectionMixin: {
+      "^": "_MaterialDropdownSelectComponent_MaterialSelectBase_MaterialDropdownBase_SelectionInputAdapter_MaterialButtonWrapper_TrackLayoutChangesMixin_KeyboardHandlerMixin_ActivateItemOnKeyPressMixin+ShiftClickSelectionMixin;ShiftClickSelectionMixin__pivot",
+      set$_pivot: function(_pivot) {
+        this.ShiftClickSelectionMixin__pivot = H.assertSubtypeOfRuntimeType(_pivot, H.getTypeArgumentByIndex(this, 0));
+      }
+    }
+  }], ["asset_angular_components_lib_material_select_material_dropdown_select.scss.css.shim.dart", "package:angular_components/material_select/material_dropdown_select.scss.css.shim.dart",, K, {}], ["", "package:angular_components/material_select/material_dropdown_select.template.dart",, Y, {
+    "^": "",
+    ViewMaterialDropdownSelectComponent0: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_DropdownButtonComponent_0_5,0_Focusable_0_6,0_PopupSourceDirective_0_7,0_material_dropdown_select_template$_compView_2,0_material_dropdown_select_template$_appEl_2,0_MaterialPopupComponent_2_8,0__PopupRef_2_10,0__PopupHierarchy_2_12,0_material_dropdown_select_template$_appEl_4,0_DeferredContentDirective_4_9,0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_expr_1,0_material_dropdown_select_template$_expr_2,0_material_dropdown_select_template$_expr_3,0_material_dropdown_select_template$_expr_4,0_material_dropdown_select_template$_expr_5,0_material_dropdown_select_template$_expr_7,0_material_dropdown_select_template$_expr_8,0_material_dropdown_select_template$_expr_9,0_material_dropdown_select_template$_expr_11,0_material_dropdown_select_template$_expr_12,0_material_dropdown_select_template$_expr_14,0_expr_16,0_expr_17,0_expr_18,0_expr_19,0_expr_20,0_expr_21,0_material_dropdown_select_template$_el_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      get$_PopupRef_2_10: function() {
+        var t1 = this.__PopupRef_2_10;
+        if (t1 == null) {
+          t1 = this._MaterialPopupComponent_2_8._resolvedPopupRef;
+          this.__PopupRef_2_10 = t1;
+        }
+        return t1;
+      },
+      build$0: function() {
+        var parentRenderNode, t1, t2, t3, t4, _el_0, t5, t6, t7, _text_1, t8, t9, t10, _el_3, _el_5, subscription_0, subscription_1, subscription_2, subscription_3;
+        parentRenderNode = this.initViewRoot$1(this.rootEl);
+        t1 = P.String;
+        t2 = new Z.ViewDropdownButtonComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 0, Q.DropdownButtonComponent));
+        t3 = document;
+        t4 = t3.createElement("dropdown-button");
+        t2.rootEl = H.interceptedTypeCheck(t4, "$isHtmlElement");
+        t4 = $.ViewDropdownButtonComponent0__renderType;
+        if (t4 == null) {
+          t4 = $.appViewUtils;
+          t4 = t4.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$DropdownButtonComponent());
+          $.ViewDropdownButtonComponent0__renderType = t4;
+        }
+        t2.setupComponentType$1(t4);
+        this._material_dropdown_select_template$_compView_0 = t2;
+        _el_0 = t2.rootEl;
+        t2 = J.getInterceptor$x(parentRenderNode);
+        t2.append$1(parentRenderNode, _el_0);
+        t4 = J.getInterceptor$x(_el_0);
+        t4.setAttribute$2(_el_0, "initPopupAriaAttributes", "false");
+        t4.setAttribute$2(_el_0, "popupSource", "");
+        t4.setAttribute$2(_el_0, "popupType", "listbox");
+        this.addShimC$1(_el_0);
+        t5 = new R.SequentialIdGenerator(R.SequentialIdGenerator__createUuid(), 0).nextId$0();
+        t6 = W.FocusEvent;
+        t7 = P.StreamController_StreamController(null, null, null, null, true, t6);
+        t5 = new Q.DropdownButtonComponent("dialog", t5, t7, true, null, null, false, null, null, false, null, new P._SyncBroadcastStreamController(null, null, 0, [t6]), null, false);
+        t5.MaterialButtonWrapper_iconName = "arrow_drop_down";
+        this._DropdownButtonComponent_0_5 = t5;
+        this._Focusable_0_6 = t5;
+        t5 = this.parentView;
+        t7 = L.PopupSourceDirective$(H.interceptedTypeCheck(t5.injectorGet$2(C.Type_DomPopupSourceFactory_gmZ, this.viewData.parentIndex), "$isDomPopupSourceFactory"), _el_0, H.interceptedTypeCheck(t5.injectorGet$3(C.Type_ReferenceDirective_i58, this.viewData.parentIndex, null), "$isReferenceDirective"), this._Focusable_0_6, "false");
+        this._PopupSourceDirective_0_7 = t7;
+        _text_1 = t3.createTextNode(" ");
+        t7 = this._material_dropdown_select_template$_compView_0;
+        t8 = this._DropdownButtonComponent_0_5;
+        t9 = [_text_1];
+        t10 = this.viewData.projectableNodes;
+        if (0 >= t10.length)
+          return H.ioore(t10, 0);
+        C.JSArray_methods.addAll$1(t9, t10[0]);
+        t7.create$2(0, t8, [t9]);
+        t1 = new A.ViewMaterialPopupComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t1, null), this);
+        t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, 2, G.MaterialPopupComponent));
+        t7 = t3.createElement("material-popup");
+        t1.rootEl = H.interceptedTypeCheck(t7, "$isHtmlElement");
+        t7 = $.ViewMaterialPopupComponent0__renderType;
+        if (t7 == null) {
+          t7 = $.appViewUtils;
+          t7 = t7.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$MaterialPopupComponent());
+          $.ViewMaterialPopupComponent0__renderType = t7;
+        }
+        t1.setupComponentType$1(t7);
+        this._material_dropdown_select_template$_compView_2 = t1;
+        t1 = t1.rootEl;
+        this._material_dropdown_select_template$_el_2 = t1;
+        t2.append$1(parentRenderNode, t1);
+        J.setAttribute$2$x(this._material_dropdown_select_template$_el_2, "enforceSpaceConstraints", "");
+        this.addShimC$1(this._material_dropdown_select_template$_el_2);
+        this._material_dropdown_select_template$_appEl_2 = new V.ViewContainer(2, null, this, this._material_dropdown_select_template$_el_2);
+        t1 = G.MaterialPopupComponent$(H.interceptedTypeCheck(t5.injectorGet$3(C.Type_PopupHierarchy_7R9, this.viewData.parentIndex, null), "$isPopupHierarchy"), H.interceptedTypeCheck(t5.injectorGet$3(C.Type_MaterialPopupComponent_OpB, this.viewData.parentIndex, null), "$isMaterialPopupComponent"), null, H.interceptedTypeCheck(t5.injectorGet$2(C.Type_NgZone_6ty, this.viewData.parentIndex), "$isNgZone"), H.interceptedTypeCheck(t5.injectorGet$2(C.Type_OverlayService_4iH, this.viewData.parentIndex), "$isOverlayService"), H.interceptedTypeCheck(t5.injectorGet$2(C.Type_DomService_2jN, this.viewData.parentIndex), "$isDomService"), H.interceptedTypeCheck(t5.injectorGet$2(C.Type_ZIndexer_ViP, this.viewData.parentIndex), "$isZIndexer"), H.assertSubtype(t5.injectorGet$2(C.OpaqueToken_defaultPopupPositions, this.viewData.parentIndex), "$isList", [K.RelativePosition], "$asList"), H.boolTypeCheck(t5.injectorGet$2(C.OpaqueToken_overlayRepositionLoop, this.viewData.parentIndex)), H.interceptedTypeCheck(t5.injectorGet$3(C.Type_PopupSizeProvider_a5y, this.viewData.parentIndex, null), "$isPopupSizeProvider"), this._material_dropdown_select_template$_compView_2.viewData.ref, this._material_dropdown_select_template$_appEl_2, new Z.ElementRef(this._material_dropdown_select_template$_el_2));
+        this._MaterialPopupComponent_2_8 = t1;
+        _el_3 = t3.createElement("div");
+        t1 = J.getInterceptor$x(_el_3);
+        t1.setAttribute$2(_el_3, "header", "");
+        H.interceptedTypeCheck(_el_3, "$isHtmlElement");
+        this.addShimC$1(_el_3);
+        this.project$2(_el_3, 1);
+        t2 = $.$get$_viewContainerAnchor();
+        t2 = new V.ViewContainer(4, 2, this, H.interceptedTypeCheck((t2 && C.Comment_methods).clone$1(t2, false), "$isComment"));
+        this._material_dropdown_select_template$_appEl_4 = t2;
+        this._DeferredContentDirective_4_9 = K.DeferredContentDirective$(t2, new D.TemplateRef(t2, new Y.ViewMaterialDropdownSelectComponent0_build_closure(this)), this._MaterialPopupComponent_2_8);
+        _el_5 = t3.createElement("div");
+        t2 = J.getInterceptor$x(_el_5);
+        t2.setAttribute$2(_el_5, "footer", "");
+        H.interceptedTypeCheck(_el_5, "$isHtmlElement");
+        this.addShimC$1(_el_5);
+        this.project$2(_el_5, 5);
+        t3 = [W.Element];
+        this._material_dropdown_select_template$_compView_2.create$2(0, this._MaterialPopupComponent_2_8, [H.setRuntimeTypeInfo([_el_3], t3), H.setRuntimeTypeInfo([this._material_dropdown_select_template$_appEl_4], [V.ViewContainer]), H.setRuntimeTypeInfo([_el_5], t3)]);
+        t3 = W.Event;
+        t5 = W.KeyboardEvent;
+        t4.addEventListener$2(_el_0, "keydown", this.eventHandler1$2$1(J.get$onKeyDown$z(this.ctx), t3, t5));
+        t4.addEventListener$2(_el_0, "keypress", this.eventHandler1$2$1(J.get$onKeyPress$z(this.ctx), t3, t5));
+        t4 = this._DropdownButtonComponent_0_5.FocusableMixin__onFocus;
+        subscription_0 = new P._BroadcastStream(t4, [H.getTypeArgumentByIndex(t4, 0)]).listen$1(this.eventHandler1$2$1(J.get$onFocus$z(this.ctx), t6, t6));
+        t4 = this._DropdownButtonComponent_0_5._dropdown_button$_blur;
+        subscription_1 = new P._ControllerStream(t4, [H.getTypeArgumentByIndex(t4, 0)]).listen$1(this.eventHandler1$2$1(J.get$onBlur$z(this.ctx), t6, t6));
+        t6 = this._DropdownButtonComponent_0_5._button._trigger;
+        t4 = W.UIEvent;
+        subscription_2 = new P._BroadcastStream(t6, [H.getTypeArgumentByIndex(t6, 0)]).listen$1(this.eventHandler1$2$1(this.ctx.get$handleClick(), t4, t4));
+        t4 = this._MaterialPopupComponent_2_8.PopupEvents_onVisibleController;
+        t6 = P.bool;
+        subscription_3 = new P._BroadcastStream(t4, [H.getTypeArgumentByIndex(t4, 0)]).listen$1(this.eventHandler1$2$1(this.ctx.get$onVisible(), t6, t6));
+        t1.addEventListener$2(_el_3, "keydown", this.eventHandler1$2$1(J.get$onKeyDown$z(this.ctx), t3, t5));
+        t1.addEventListener$2(_el_3, "keypress", this.eventHandler1$2$1(J.get$onKeyPress$z(this.ctx), t3, t5));
+        t1.addEventListener$2(_el_3, "keyup", this.eventHandler1$2$1(J.get$onKeyUp$x(this.ctx), t3, t5));
+        t2.addEventListener$2(_el_5, "keydown", this.eventHandler1$2$1(J.get$onKeyDown$z(this.ctx), t3, t5));
+        t2.addEventListener$2(_el_5, "keypress", this.eventHandler1$2$1(J.get$onKeyPress$z(this.ctx), t3, t5));
+        t2.addEventListener$2(_el_5, "keyup", this.eventHandler1$2$1(J.get$onKeyUp$x(this.ctx), t3, t5));
+        this.ctx.set$dropdownButton(this._DropdownButtonComponent_0_5);
+        this.init$2(C.List_empty, [subscription_0, subscription_1, subscription_2, subscription_3]);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        var t1;
+        if (token === C.Type_HasDisabled_qzc)
+          t1 = nodeIndex <= 1;
+        else
+          t1 = false;
+        if (t1)
+          return this._DropdownButtonComponent_0_5;
+        if (token === C.Type_Focusable_adc)
+          t1 = nodeIndex <= 1;
+        else
+          t1 = false;
+        if (t1)
+          return this._Focusable_0_6;
+        if ((token === C.Type_MaterialPopupComponent_OpB || token === C.Type_DeferredContentAware_BCk || token === C.Type_DropdownHandle_YMM) && 2 <= nodeIndex && nodeIndex <= 5)
+          return this._MaterialPopupComponent_2_8;
+        if (token === C.Type_PopupRef_AWk && 2 <= nodeIndex && nodeIndex <= 5)
+          return this.get$_PopupRef_2_10();
+        if (token === C.Type_PopupHierarchy_7R9 && 2 <= nodeIndex && nodeIndex <= 5) {
+          t1 = this.__PopupHierarchy_2_12;
+          if (t1 == null) {
+            t1 = this._MaterialPopupComponent_2_8.get$hierarchy();
+            this.__PopupHierarchy_2_12 = t1;
+          }
+          return t1;
+        }
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, firstCheck, local_source, changed, t1, currVal_3, currVal_4, currVal_8, currVal_9, currVal_12, currVal_17, t2, currVal_20, t3, t4, hostClass, contentClass, currVal_0, t5, t6;
+        _ctx = this.ctx;
+        firstCheck = this.viewData._cdState === 0;
+        local_source = this._PopupSourceDirective_0_7;
+        if (firstCheck) {
+          this._DropdownButtonComponent_0_5.popupType = "listbox";
+          changed = true;
+        } else
+          changed = false;
+        _ctx.MaterialButtonWrapper_disabled;
+        t1 = this._material_dropdown_select_template$_expr_2;
+        if (t1 !== false) {
+          this._DropdownButtonComponent_0_5.MaterialButtonWrapper_disabled = false;
+          this._material_dropdown_select_template$_expr_2 = false;
+          changed = true;
+        }
+        currVal_3 = _ctx.MaterialButtonWrapper_icon;
+        t1 = this._material_dropdown_select_template$_expr_3;
+        if (t1 == null ? currVal_3 != null : t1 !== currVal_3) {
+          this._DropdownButtonComponent_0_5.MaterialButtonWrapper_icon = currVal_3;
+          this._material_dropdown_select_template$_expr_3 = currVal_3;
+          changed = true;
+        }
+        currVal_4 = _ctx.MaterialButtonWrapper_iconName;
+        t1 = this._material_dropdown_select_template$_expr_4;
+        if (t1 != currVal_4) {
+          this._DropdownButtonComponent_0_5.MaterialButtonWrapper_iconName = currVal_4;
+          this._material_dropdown_select_template$_expr_4 = currVal_4;
+          changed = true;
+        }
+        _ctx.MaterialButtonWrapper_raised;
+        t1 = this._material_dropdown_select_template$_expr_5;
+        if (t1 !== false) {
+          this._DropdownButtonComponent_0_5.MaterialButtonWrapper_raised = false;
+          this._material_dropdown_select_template$_expr_5 = false;
+          changed = true;
+        }
+        currVal_8 = _ctx.MaterialDropdownBase__visible ? _ctx.listId : null;
+        t1 = this._material_dropdown_select_template$_expr_8;
+        if (t1 != currVal_8) {
+          this._DropdownButtonComponent_0_5.ariaOwns = currVal_8;
+          this._material_dropdown_select_template$_expr_8 = currVal_8;
+          changed = true;
+        }
+        currVal_9 = _ctx.MaterialDropdownBase__visible;
+        t1 = this._material_dropdown_select_template$_expr_9;
+        if (t1 != currVal_9) {
+          this._DropdownButtonComponent_0_5.ariaExpanded = currVal_9;
+          this._material_dropdown_select_template$_expr_9 = currVal_9;
+          changed = true;
+        }
+        currVal_12 = _ctx.showButtonBorder;
+        t1 = this._material_dropdown_select_template$_expr_12;
+        if (t1 != currVal_12) {
+          this._DropdownButtonComponent_0_5._showButtonBorder = currVal_12;
+          this._material_dropdown_select_template$_expr_12 = currVal_12;
+          changed = true;
+        }
+        if (changed)
+          this._material_dropdown_select_template$_compView_0.viewData.set$cdMode(1);
+        if (firstCheck) {
+          t1 = this._DropdownButtonComponent_0_5;
+          t1._ariaRole = "button";
+        }
+        if (firstCheck) {
+          this._MaterialPopupComponent_2_8.state._backingMap.$indexSet(0, C.Symbol_enforceSpaceConstraints, true);
+          changed = true;
+        } else
+          changed = false;
+        _ctx.MaterialDropdownBase_autoDismiss;
+        t1 = this._material_dropdown_select_template$_expr_14;
+        if (t1 !== true) {
+          this._MaterialPopupComponent_2_8.state._backingMap.$indexSet(0, C.Symbol_autoDismiss, true);
+          this._material_dropdown_select_template$_expr_14 = true;
+          changed = true;
+        }
+        _ctx.MaterialDropdownBase_popupMatchInputWidth;
+        t1 = this._expr_16;
+        if (t1 !== true) {
+          t1 = this._MaterialPopupComponent_2_8;
+          t1.super$PopupBase$matchMinSourceWidth(true);
+          t1._matchMinSourceWidth = true;
+          this._expr_16 = true;
+          changed = true;
+        }
+        currVal_17 = _ctx.MaterialDropdownBase_preferredPositions;
+        t1 = this._expr_17;
+        if (t1 !== currVal_17) {
+          this._MaterialPopupComponent_2_8.state._backingMap.$indexSet(0, C.Symbol_preferredPositions, currVal_17);
+          this._expr_17 = currVal_17;
+          changed = true;
+        }
+        t1 = this._expr_18;
+        if (t1 == null ? local_source != null : t1 !== local_source) {
+          t1 = this._MaterialPopupComponent_2_8;
+          t1.super$PopupBase$source(0, local_source);
+          t1 = t1._material_popup$_uniqueId;
+          local_source._popupId = t1;
+          t2 = local_source._popupSource;
+          if (!(t2 == null))
+            t2.set$popupId(t1);
+          this._expr_18 = local_source;
+          changed = true;
+        }
+        _ctx.TrackLayoutChangesMixin_trackLayoutChanges;
+        t1 = this._expr_19;
+        if (t1 !== true) {
+          this._MaterialPopupComponent_2_8.state._backingMap.$indexSet(0, C.Symbol_trackLayoutChanges, true);
+          this._expr_19 = true;
+          changed = true;
+        }
+        currVal_20 = _ctx.MaterialDropdownBase__visible;
+        t1 = this._expr_20;
+        if (t1 != currVal_20) {
+          this._MaterialPopupComponent_2_8.set$visible(0, currVal_20);
+          this._expr_20 = currVal_20;
+          changed = true;
+        }
+        _ctx.MaterialDropdownBase_slide;
+        if (changed)
+          this._material_dropdown_select_template$_compView_2.viewData.set$cdMode(1);
+        if (firstCheck)
+          this._DeferredContentDirective_4_9.preserveDimensions = true;
+        this._material_dropdown_select_template$_appEl_2.detectChangesInNestedViews$0();
+        this._material_dropdown_select_template$_appEl_4.detectChangesInNestedViews$0();
+        if (firstCheck) {
+          t1 = this._material_dropdown_select_template$_compView_2;
+          t2 = this._material_dropdown_select_template$_el_2;
+          t3 = _ctx.popupClassName;
+          t4 = t1.rootEl;
+          if (t2 == null ? t4 == null : t2 === t4) {
+            hostClass = t1.componentType._hostAttr;
+            t2.className = hostClass == null ? t3 : t3 + " " + hostClass;
+            t1 = t1.parentView;
+            if (t1 != null && t1.componentType != null)
+              t1.addShimE$1(t2);
+          } else {
+            contentClass = t1.componentType._viewAttr;
+            t2.className = contentClass == null ? t3 : t3 + " " + contentClass;
+          }
+        }
+        t1 = this._material_dropdown_select_template$_compView_2;
+        currVal_0 = t1.ctx.get$paneId();
+        t2 = t1._material_popup_template$_expr_0;
+        if (t2 != currVal_0) {
+          t1.setAttr$3(t1.rootEl, "pane-id", currVal_0);
+          t1._material_popup_template$_expr_0 = currVal_0;
+        }
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+        this._material_dropdown_select_template$_compView_2.detectChanges$0();
+        if (firstCheck) {
+          t1 = this._PopupSourceDirective_0_7;
+          t2 = t1._popup_source_directive$_element;
+          t3 = t1._domPopupSourceFactory;
+          t4 = t1._popup_source_directive$_alignOriginX;
+          t5 = t1._popup_source_directive$_alignOriginY;
+          t6 = t1._popup_source_directive$_initAriaAttributes;
+          t6 = new K.DomPopupSource(t3.get$_asyncMeasureSize(), t2, t6);
+          t6._alignOriginX = t4;
+          t6._alignOriginY = t5;
+          t1._popupSource = t6;
+          t1 = t1._popupId;
+          if (t1 != null)
+            t6.set$popupId(t1);
+          this._MaterialPopupComponent_2_8._updateOverlayCssClass$0();
+        }
+      },
+      destroyInternal$0: function() {
+        var t1, t2, t3;
+        this._material_dropdown_select_template$_appEl_2.destroyNestedViews$0();
+        this._material_dropdown_select_template$_appEl_4.destroyNestedViews$0();
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        this._material_dropdown_select_template$_compView_2.destroy$0();
+        t1 = this._PopupSourceDirective_0_7;
+        t1._popup_source_directive$_element = null;
+        t1._popupSource = null;
+        t1._referenceDirective = null;
+        t1._focusable = null;
+        t1 = this._DeferredContentDirective_4_9;
+        t1._deferred_content$_disposer.dispose$0();
+        t1._deferred_content$_viewContainer = null;
+        t1._template = null;
+        t1 = this._MaterialPopupComponent_2_8;
+        t2 = t1._repositionLoopId;
+        if (t2 != null) {
+          t3 = window;
+          C.Window_methods._ensureRequestAnimationFrame$0(t3);
+          C.Window_methods._cancelAnimationFrame$1(t3, t2);
+        }
+        t2 = t1._layoutInternalSub;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t2 = t1._layoutChangeSub;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t2 = t1._windowResizeSub;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t1._material_popup$_disposer.dispose$0();
+        t2 = t1._animationTimer;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t1._isVisible = false;
+        t1.PopupEvents_onVisibleController.add$1(0, false);
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    ViewMaterialDropdownSelectComponent0_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent1(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent1: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_AutoFocusDirective_0_5,0_MaterialListComponent_0_6,0_material_dropdown_select_template$_appEl_2,0_material_dropdown_select_template$_NgIf_2_9,0_material_dropdown_select_template$_expr_1,0_material_dropdown_select_template$_expr_2,0_material_dropdown_select_template$_expr_4,0_material_dropdown_select_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, t2, t3, t4, t5, _text_1;
+        t1 = new B.ViewMaterialListComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), this);
+        t1.set$viewData(S.AppViewData_AppViewData(t1, 1, C.ViewType_1, 0, B.MaterialListComponent));
+        t2 = document;
+        t3 = t2.createElement("material-list");
+        t1.rootEl = H.interceptedTypeCheck(t3, "$isHtmlElement");
+        t3 = $.ViewMaterialListComponent0__renderType;
+        if (t3 == null) {
+          t3 = $.appViewUtils;
+          t3 = t3.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$MaterialListComponent());
+          $.ViewMaterialListComponent0__renderType = t3;
+        }
+        t1.setupComponentType$1(t3);
+        this._material_dropdown_select_template$_compView_0 = t1;
+        t1 = t1.rootEl;
+        this._material_dropdown_select_template$_el_0 = t1;
+        t1.className = "options-list";
+        J.setAttribute$2$x(t1, "role", "listbox");
+        t1 = this._material_dropdown_select_template$_el_0;
+        t1.tabIndex = 0;
+        this.addShimC$1(t1);
+        t1 = this._material_dropdown_select_template$_el_0;
+        t3 = this.parentView;
+        t4 = t3.parentView;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        t4 = H.interceptedTypeCheck(t4.injectorGet$3(C.Type_ModalComponent_Npb, t3.viewData.parentIndex, null), "$isModalComponent");
+        t3 = H.interceptedTypeCheck(t3, "$isViewMaterialDropdownSelectComponent0").get$_PopupRef_2_10();
+        this._AutoFocusDirective_0_5 = new E.AutoFocusDirective(new R.Disposer(true, false), null, t5, t4, t3, t1);
+        this._MaterialListComponent_0_6 = new B.MaterialListComponent("auto", "list");
+        _text_1 = t2.createTextNode(" ");
+        t1 = $.$get$_viewContainerAnchor();
+        t1 = new V.ViewContainer(2, 0, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
+        this._material_dropdown_select_template$_appEl_2 = t1;
+        this._material_dropdown_select_template$_NgIf_2_9 = new K.NgIf(new D.TemplateRef(t1, new Y._ViewMaterialDropdownSelectComponent1_build_closure(this)), t1, false);
+        t1 = this._material_dropdown_select_template$_compView_0;
+        t2 = this._MaterialListComponent_0_6;
+        t3 = this.viewData.projectableNodes;
+        if (2 >= t3.length)
+          return H.ioore(t3, 2);
+        t3 = [t3[2]];
+        C.JSArray_methods.addAll$1(t3, [_text_1]);
+        t4 = this.viewData.projectableNodes;
+        if (3 >= t4.length)
+          return H.ioore(t4, 3);
+        C.JSArray_methods.addAll$1(t3, t4[3]);
+        C.JSArray_methods.addAll$1(t3, [this._material_dropdown_select_template$_appEl_2]);
+        t4 = this.viewData.projectableNodes;
+        if (4 >= t4.length)
+          return H.ioore(t4, 4);
+        C.JSArray_methods.addAll$1(t3, t4[4]);
+        t1.create$2(0, t2, [t3]);
+        t3 = W.Event;
+        t2 = W.KeyboardEvent;
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "keydown", this.eventHandler1$2$1(J.get$onKeyDown$z(this.ctx), t3, t2));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "keypress", this.eventHandler1$2$1(J.get$onKeyPress$z(this.ctx), t3, t2));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "keyup", this.eventHandler1$2$1(J.get$onKeyUp$x(this.ctx), t3, t2));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "mouseout", this.eventHandler1$2$1(this.get$_handle_mouseout_0_3(), t3, t3));
+        this.init0$1(this._material_dropdown_select_template$_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, firstCheck, t1, changed, currVal_4, val, currVal_1, currVal_0, t2;
+        _ctx = this.ctx;
+        firstCheck = this.viewData._cdState === 0;
+        _ctx.listAutoFocus;
+        t1 = this._material_dropdown_select_template$_expr_2;
+        if (t1 !== true) {
+          this._AutoFocusDirective_0_5._autoFocus = true;
+          this._material_dropdown_select_template$_expr_2 = true;
+        }
+        if (firstCheck)
+          this._AutoFocusDirective_0_5.ngOnInit$0();
+        if (firstCheck) {
+          this._MaterialListComponent_0_6.role = "listbox";
+          changed = true;
+        } else
+          changed = false;
+        currVal_4 = _ctx._width;
+        t1 = this._material_dropdown_select_template$_expr_4;
+        if (t1 !== currVal_4) {
+          t1 = this._MaterialListComponent_0_6;
+          t1.toString;
+          val = E.getInt(currVal_4, 0);
+          if (typeof val !== "number")
+            return val.$ge();
+          if (val >= 0 && val < 6) {
+            if (val < 0 || val >= 6)
+              return H.ioore(C.List_huV, val);
+            t1.size = C.List_huV[val];
+          }
+          this._material_dropdown_select_template$_expr_4 = currVal_4;
+          changed = true;
+        }
+        if (changed)
+          this._material_dropdown_select_template$_compView_0.viewData.set$cdMode(1);
+        this._material_dropdown_select_template$_NgIf_2_9.set$ngIf(_ctx.get$options(_ctx) != null);
+        this._material_dropdown_select_template$_appEl_2.detectChangesInNestedViews$0();
+        if (firstCheck)
+          this.setAttr$3(this._material_dropdown_select_template$_el_0, "id", _ctx.listId);
+        currVal_1 = _ctx.get$ariaActiveDescendant();
+        t1 = this._material_dropdown_select_template$_expr_1;
+        if (t1 != currVal_1) {
+          this.setAttr$3(this._material_dropdown_select_template$_el_0, "aria-activedescendant", currVal_1);
+          this._material_dropdown_select_template$_expr_1 = currVal_1;
+        }
+        t1 = this._material_dropdown_select_template$_compView_0;
+        currVal_0 = J.get$size$z(t1.ctx);
+        t2 = t1._material_list_template$_expr_0;
+        if (t2 !== currVal_0) {
+          t1.setAttr$3(t1.rootEl, "size", currVal_0);
+          t1._material_list_template$_expr_0 = currVal_0;
+        }
+        currVal_1 = J.get$role$z(t1.ctx);
+        t2 = t1._material_list_template$_expr_1;
+        if (t2 != currVal_1) {
+          t1.setAttr$3(t1.rootEl, "role", currVal_1);
+          t1._material_list_template$_expr_1 = currVal_1;
+        }
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_appEl_2.destroyNestedViews$0();
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        var t1 = this._AutoFocusDirective_0_5;
+        t1.super$RootFocusable$dispose();
+        t1._focus$_disposer.dispose$0();
+        t1._focus$_focusable = null;
+        t1._focus$_domService = null;
+        t1._focus$_modal = null;
+        t1._focus$_popupRef = null;
+      },
+      _handle_mouseout_0_3$1: [function($$event) {
+        this.ctx.get$activeModel().activate$1(null);
+      }, "call$1", "get$_handle_mouseout_0_3", 4, 0, 2],
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent1_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent2: {
+      "^": "AppView;0_material_dropdown_select_template$_appEl_1,0_material_dropdown_select_template$_NgIf_1_9,0_material_dropdown_select_template$_appEl_2,0_NgFor_2_9,0_material_dropdown_select_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var _el_0, t1, _anchor_1, t2, t3, _anchor_2;
+        _el_0 = document.createElement("div");
+        _el_0.className = "options-wrapper";
+        H.interceptedTypeCheck(_el_0, "$isHtmlElement");
+        this.addShimC$1(_el_0);
+        t1 = $.$get$_viewContainerAnchor();
+        _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        t2 = J.getInterceptor$x(_el_0);
+        t2.append$1(_el_0, _anchor_1);
+        t3 = new V.ViewContainer(1, 0, this, _anchor_1);
+        this._material_dropdown_select_template$_appEl_1 = t3;
+        this._material_dropdown_select_template$_NgIf_1_9 = new K.NgIf(new D.TemplateRef(t3, new Y._ViewMaterialDropdownSelectComponent2_build_closure(this)), t3, false);
+        _anchor_2 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        t2.append$1(_el_0, _anchor_2);
+        t2 = new V.ViewContainer(2, 0, this, _anchor_2);
+        this._material_dropdown_select_template$_appEl_2 = t2;
+        this._NgFor_2_9 = new R.NgFor(t2, new D.TemplateRef(t2, new Y._ViewMaterialDropdownSelectComponent2_build_closure0(this)));
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, t2, t3, t4, differ, currVal_1;
+        _ctx = this.ctx;
+        t1 = this.viewData._cdState;
+        this._material_dropdown_select_template$_NgIf_1_9.set$ngIf(_ctx.get$showDeselectItem());
+        if (t1 === 0) {
+          t1 = this._NgFor_2_9;
+          t2 = {func: 1, ret: P.Object, args: [P.int,,]};
+          t1.set$_ngForTrackBy(H.functionTypeCheck(_ctx.trackByIndexFn, t2));
+          if (t1._ngForOf != null) {
+            t3 = t1._differ;
+            t4 = t1._ngForTrackBy;
+            if (t3 == null)
+              t1._differ = R.DefaultIterableDiffer$(t4);
+            else {
+              differ = R.DefaultIterableDiffer$(H.functionTypeCheck(t4, t2));
+              differ._default_iterable_differ$_length = t3._default_iterable_differ$_length;
+              differ._collection = t3._collection;
+              differ._linkedRecords = t3._linkedRecords;
+              differ._unlinkedRecords = t3._unlinkedRecords;
+              differ._previousItHead = t3._previousItHead;
+              differ._itHead = t3._itHead;
+              differ._itTail = t3._itTail;
+              differ._default_iterable_differ$_additionsHead = t3._default_iterable_differ$_additionsHead;
+              differ._default_iterable_differ$_additionsTail = t3._default_iterable_differ$_additionsTail;
+              differ._movesHead = t3._movesHead;
+              differ._movesTail = t3._movesTail;
+              differ._default_iterable_differ$_removalsHead = t3._default_iterable_differ$_removalsHead;
+              differ._removalsTail = t3._removalsTail;
+              differ._identityChangesHead = t3._identityChangesHead;
+              differ._identityChangesTail = t3._identityChangesTail;
+              t1._differ = differ;
+            }
+          }
+        }
+        currVal_1 = _ctx.get$options(_ctx)._optionGroups;
+        t1 = this._material_dropdown_select_template$_expr_1;
+        if (t1 == null ? currVal_1 != null : t1 !== currVal_1) {
+          this._NgFor_2_9.set$ngForOf(currVal_1);
+          this._material_dropdown_select_template$_expr_1 = currVal_1;
+        }
+        this._NgFor_2_9.ngDoCheck$0();
+        this._material_dropdown_select_template$_appEl_1.detectChangesInNestedViews$0();
+        this._material_dropdown_select_template$_appEl_2.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_appEl_1.destroyNestedViews$0();
+        this._material_dropdown_select_template$_appEl_2.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent2_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent3(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent2_build_closure0: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent4(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null], P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent3: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_ActiveItemDirective_0_5,0_KeyboardOnlyFocusIndicatorDirective_0_6,0_MaterialSelectDropdownItemComponent_0_7,0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_expr_1,0_material_dropdown_select_template$_expr_3,0_material_dropdown_select_template$_expr_4,0_material_dropdown_select_template$_expr_5,0_material_dropdown_select_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      set$_material_dropdown_select_template$_compView_0: function(_compView_0) {
+        this._material_dropdown_select_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewMaterialSelectDropdownItemComponent0", [P.String], "$asViewMaterialSelectDropdownItemComponent0");
+      },
+      set$_MaterialSelectDropdownItemComponent_0_7: function(_MaterialSelectDropdownItemComponent_0_7) {
+        this._MaterialSelectDropdownItemComponent_0_7 = H.assertSubtype(_MaterialSelectDropdownItemComponent_0_7, "$isMaterialSelectDropdownItemComponent", [P.String], "$asMaterialSelectDropdownItemComponent");
+      },
+      build$0: function() {
+        var t1, t2, t3, t4, t5, t6, t7, subscription_0;
+        t1 = P.String;
+        this.set$_material_dropdown_select_template$_compView_0(O.ViewMaterialSelectDropdownItemComponent0$(this, 0, t1));
+        t2 = this._material_dropdown_select_template$_compView_0.rootEl;
+        this._material_dropdown_select_template$_el_0 = t2;
+        J.setAttribute$2$x(t2, "keyboardOnlyFocusIndicator", "");
+        this.addShimC$1(this._material_dropdown_select_template$_el_0);
+        t2 = this._material_dropdown_select_template$_el_0;
+        t3 = this.parentView.parentView.parentView;
+        t4 = t3.parentView;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        t6 = H.interceptedTypeCheck(t4.injectorGet$3(C.Type_Modal_OjC, t3.viewData.parentIndex, null), "$isModal");
+        H.interceptedTypeCheck(t3, "$isViewMaterialDropdownSelectComponent0");
+        t7 = t3.get$_PopupRef_2_10();
+        this._ActiveItemDirective_0_5 = new M.ActiveItemDirectiveNgCd(new B.ActiveItemDirective(t2, t5, t6, t7, false, false, false), false);
+        t2 = this._material_dropdown_select_template$_el_0;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        this._KeyboardOnlyFocusIndicatorDirective_0_6 = new O.KeyboardOnlyFocusIndicatorDirective(t2, t5, C._InteractionType_2);
+        t1 = F.MaterialSelectDropdownItemComponent$(this._material_dropdown_select_template$_el_0, null, t3._MaterialPopupComponent_2_8, H.interceptedTypeCheck(t4.injectorGet$3(C.Type_ActivationHandler_Nm5, t3.viewData.parentIndex, null), "$isActivationHandler"), H.interceptedTypeCheck(t4.injectorGet$3(C.Type_IdGenerator_yLN, t3.viewData.parentIndex, null), "$isIdGenerator"), this._material_dropdown_select_template$_compView_0.viewData.ref, t1);
+        this.set$_MaterialSelectDropdownItemComponent_0_7(t1);
+        this._material_dropdown_select_template$_compView_0.create$2(0, this._MaterialSelectDropdownItemComponent_0_7, [C.List_empty]);
+        t1 = W.Event;
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "mouseenter", this.eventHandler1$2$1(this.get$_handle_mouseenter_0_1(), t1, t1));
+        t2 = this._material_dropdown_select_template$_el_0;
+        t3 = this._ActiveItemDirective_0_5.instance;
+        J.addEventListener$2$x(t2, "mouseleave", this.eventHandler0$1$1(t3.get$onMouseLeave(t3), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "keydown", this.eventHandler1$2$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$keydown(), t1, W.KeyboardEvent));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "blur", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$resetOutline(), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "mousedown", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$onMouseInteraction(), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "click", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$onMouseInteraction(), t1));
+        t3 = this._material_dropdown_select_template$_el_0;
+        t2 = this._KeyboardOnlyFocusIndicatorDirective_0_6;
+        J.addEventListener$2$x(t3, "focus", this.eventHandler1$2$1(t2.get$onFocus(t2), t1, t1));
+        t1 = this._MaterialSelectDropdownItemComponent_0_7._trigger;
+        subscription_0 = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(this.eventHandler0$1$1(this.ctx.get$deselectCurrentSelection(), W.UIEvent));
+        this.init$2([this._material_dropdown_select_template$_el_0], [subscription_0]);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        if ((token === C.Type_SelectionItem_uvp || token === C.Type_HasRenderer_wsa) && 0 === nodeIndex)
+          return this._MaterialSelectDropdownItemComponent_0_7;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, firstCheck, t1, t2, currVal_1, currVal_3, currVal_4, currVal_5, currVal_0;
+        _ctx = this.ctx;
+        firstCheck = this.viewData._cdState === 0;
+        if (H.interceptedTypeCheck(this.parentView.parentView.parentView, "$isViewMaterialDropdownSelectComponent0")._MaterialPopupComponent_2_8.showPopup) {
+          t1 = _ctx.activeModel;
+          t2 = H.assertSubtypeOfRuntimeType(_ctx.deselectLabel, H.getTypeArgumentByIndex(t1, 0));
+          currVal_1 = J.$eq$(t1.get$activeItem(), t2);
+        } else
+          currVal_1 = false;
+        t1 = this._material_dropdown_select_template$_expr_1;
+        if (t1 !== currVal_1) {
+          this._ActiveItemDirective_0_5.instance.set$itemActive(currVal_1);
+          this._material_dropdown_select_template$_expr_1 = currVal_1;
+        }
+        if (firstCheck)
+          this._MaterialSelectDropdownItemComponent_0_7.tabbable = false;
+        currVal_3 = _ctx.deselectLabel;
+        t1 = _ctx.get$selection();
+        currVal_4 = t1.get$isEmpty(t1);
+        t1 = this._material_dropdown_select_template$_expr_4;
+        if (t1 !== currVal_4) {
+          t1 = this._MaterialSelectDropdownItemComponent_0_7;
+          t1.toString;
+          t1._selected = E.getBool(currVal_4);
+          this._material_dropdown_select_template$_expr_4 = currVal_4;
+        }
+        currVal_5 = _ctx.activeModel.id$1(0, currVal_3);
+        t1 = this._material_dropdown_select_template$_expr_5;
+        if (t1 != currVal_5) {
+          this._MaterialSelectDropdownItemComponent_0_7._id = currVal_5;
+          this._material_dropdown_select_template$_expr_5 = currVal_5;
+        }
+        currVal_0 = _ctx.get$options(_ctx)._optionGroups.length === 1;
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this.updateElemClass$3(this._material_dropdown_select_template$_el_0, "empty", currVal_0);
+          this._material_dropdown_select_template$_expr_0 = currVal_0;
+        }
+        this._ActiveItemDirective_0_5.detectHostChanges$2(this._material_dropdown_select_template$_compView_0, this._material_dropdown_select_template$_el_0);
+        this._material_dropdown_select_template$_compView_0.detectHostChanges$1(firstCheck);
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+        if (firstCheck) {
+          t1 = this._ActiveItemDirective_0_5.instance;
+          t1._initialized = true;
+          t1._scrollIntoViewIfNecessary$0();
+        }
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        this._ActiveItemDirective_0_5.instance.ngOnDestroy$0();
+        this._MaterialSelectDropdownItemComponent_0_7._disposer.dispose$0();
+      },
+      _handle_mouseenter_0_1$1: [function($$event) {
+        this.ctx.get$activeModel().activate$1(this.ctx.get$deselectLabel());
+        this._ActiveItemDirective_0_5.instance._hasHover = true;
+      }, "call$1", "get$_handle_mouseenter_0_1", 4, 0, 2],
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent4: {
+      "^": "AppView;0_material_dropdown_select_template$_appEl_1,0_material_dropdown_select_template$_NgIf_1_9,0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, _anchor_1;
+        t1 = document.createElement("div");
+        H.interceptedTypeCheck(t1, "$isDivElement");
+        this._material_dropdown_select_template$_el_0 = t1;
+        C.DivElement_methods.setAttribute$2(t1, "group", "");
+        this.addShimC$1(this._material_dropdown_select_template$_el_0);
+        t1 = $.$get$_viewContainerAnchor();
+        _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        t1 = this._material_dropdown_select_template$_el_0;
+        (t1 && C.DivElement_methods).append$1(t1, _anchor_1);
+        t1 = new V.ViewContainer(1, 0, this, _anchor_1);
+        this._material_dropdown_select_template$_appEl_1 = t1;
+        this._material_dropdown_select_template$_NgIf_1_9 = new K.NgIf(new D.TemplateRef(t1, new Y._ViewMaterialDropdownSelectComponent4_build_closure(this)), t1, false);
+        this.init0$1(this._material_dropdown_select_template$_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var local_group, t1, t2, currVal_0;
+        local_group = H.assertSubtypeOfRuntimeType(this.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]);
+        t1 = this._material_dropdown_select_template$_NgIf_1_9;
+        t2 = local_group._base;
+        t1.set$ngIf(t2.length !== 0 || local_group._emptyLabelFcn != null);
+        this._material_dropdown_select_template$_appEl_1.detectChangesInNestedViews$0();
+        currVal_0 = t2.length === 0 && local_group._emptyLabelFcn == null;
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this.updateClass$3(this._material_dropdown_select_template$_el_0, "empty", currVal_0);
+          this._material_dropdown_select_template$_expr_0 = currVal_0;
+        }
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_appEl_1.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent4_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent5(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent5: {
+      "^": "AppView;0_appEl_0,0_NgIf_0_9,0_material_dropdown_select_template$_appEl_1,0_material_dropdown_select_template$_NgIf_1_9,0_material_dropdown_select_template$_appEl_2,0_material_dropdown_select_template$_NgIf_2_9,0_appEl_3,0_NgIf_3_9,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, t2;
+        t1 = $.$get$_viewContainerAnchor();
+        t2 = new V.ViewContainer(0, null, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
+        this._appEl_0 = t2;
+        this._NgIf_0_9 = new K.NgIf(new D.TemplateRef(t2, new Y._ViewMaterialDropdownSelectComponent5_build_closure(this)), t2, false);
+        t2 = new V.ViewContainer(1, null, this, H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment"));
+        this._material_dropdown_select_template$_appEl_1 = t2;
+        this._material_dropdown_select_template$_NgIf_1_9 = new K.NgIf(new D.TemplateRef(t2, new Y._ViewMaterialDropdownSelectComponent5_build_closure0(this)), t2, false);
+        t2 = new V.ViewContainer(2, null, this, H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment"));
+        this._material_dropdown_select_template$_appEl_2 = t2;
+        this._material_dropdown_select_template$_NgIf_2_9 = new K.NgIf(new D.TemplateRef(t2, new Y._ViewMaterialDropdownSelectComponent5_build_closure1(this)), t2, false);
+        t1 = new V.ViewContainer(3, null, this, H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment"));
+        this._appEl_3 = t1;
+        this._NgIf_3_9 = new K.NgIf(new D.TemplateRef(t1, new Y._ViewMaterialDropdownSelectComponent5_build_closure2(this)), t1, false);
+        this.init$2([this._appEl_0, this._material_dropdown_select_template$_appEl_1, this._material_dropdown_select_template$_appEl_2, t1], null);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, local_group, t1, t2;
+        _ctx = this.ctx;
+        local_group = H.assertSubtypeOfRuntimeType(this.parentView.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]);
+        t1 = this._NgIf_0_9;
+        if (local_group._labelFcn != null) {
+          _ctx.labelFactory;
+          t2 = true;
+        } else
+          t2 = false;
+        t1.set$ngIf(t2);
+        t2 = this._material_dropdown_select_template$_NgIf_1_9;
+        _ctx.labelFactory;
+        t2.set$ngIf(false);
+        t2 = this._material_dropdown_select_template$_NgIf_2_9;
+        t1 = local_group._base;
+        t2.set$ngIf(t1.length !== 0);
+        t2 = this._NgIf_3_9;
+        t2.set$ngIf(t1.length === 0 && local_group._emptyLabelFcn != null);
+        this._appEl_0.detectChangesInNestedViews$0();
+        this._material_dropdown_select_template$_appEl_1.detectChangesInNestedViews$0();
+        this._material_dropdown_select_template$_appEl_2.detectChangesInNestedViews$0();
+        this._appEl_3.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._appEl_0.destroyNestedViews$0();
+        this._material_dropdown_select_template$_appEl_1.destroyNestedViews$0();
+        this._material_dropdown_select_template$_appEl_2.destroyNestedViews$0();
+        this._appEl_3.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent5_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent6(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent5_build_closure0: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent7(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent5_build_closure1: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent8(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent5_build_closure2: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent10(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent6: {
+      "^": "AppView;0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var doc, _el_0, t1, t2;
+        doc = document;
+        _el_0 = doc.createElement("span");
+        t1 = J.getInterceptor$x(_el_0);
+        t1.setAttribute$2(_el_0, "label", "");
+        this.addShimE$1(_el_0);
+        t2 = doc.createTextNode("");
+        this._material_dropdown_select_template$_text_1 = t2;
+        t1.append$1(_el_0, t2);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var t1, currVal_0;
+        t1 = H.assertSubtypeOfRuntimeType(this.parentView.parentView.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)])._labelFcn;
+        currVal_0 = Q.interpolate0(t1 != null ? t1.call$0() : null);
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._material_dropdown_select_template$_text_1.textContent = currVal_0;
+          this._material_dropdown_select_template$_expr_0 = currVal_0;
+        }
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent7: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_appEl_0,0_material_dropdown_select_template$_DynamicComponent_0_8,0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, _el_0, t2, t3;
+        t1 = Q.ViewDynamicComponent0$(this, 0);
+        this._material_dropdown_select_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        this.addShimC$1(_el_0);
+        this._appEl_0 = new V.ViewContainer(0, null, this, _el_0);
+        t1 = this.parentView.parentView.parentView.parentView.parentView;
+        t1 = H.interceptedTypeCheck(t1.parentView.injectorGet$2(C.Type_SlowComponentLoader_qxe, t1.viewData.parentIndex), "$isSlowComponentLoader");
+        t2 = this._material_dropdown_select_template$_compView_0;
+        t3 = t2.viewData.ref;
+        t3 = new Z.DynamicComponent(t1, this._appEl_0, t3, P.StreamController_StreamController(null, null, null, null, false, [D.ComponentRef,,]), false, false, false, false);
+        this._material_dropdown_select_template$_DynamicComponent_0_8 = t3;
+        t2.create$2(0, t3, []);
+        this.init0$1(this._appEl_0);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, local_group, currVal_0, t1, changed;
+        _ctx = this.ctx;
+        local_group = H.assertSubtypeOfRuntimeType(this.parentView.parentView.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]);
+        currVal_0 = _ctx.labelFactory.call$1(local_group);
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
+          this._material_dropdown_select_template$_DynamicComponent_0_8.set$componentFactory(currVal_0);
+          this._material_dropdown_select_template$_expr_0 = currVal_0;
+          changed = true;
+        } else
+          changed = false;
+        t1 = this._material_dropdown_select_template$_expr_1;
+        if (t1 == null ? local_group != null : t1 !== local_group) {
+          t1 = this._material_dropdown_select_template$_DynamicComponent_0_8;
+          t1._dynamic_component$_value = local_group;
+          t1._valueChanged = true;
+          this._material_dropdown_select_template$_expr_1 = local_group;
+          changed = true;
+        }
+        if (changed)
+          this._material_dropdown_select_template$_DynamicComponent_0_8.ngAfterChanges$0();
+        this._appEl_0.detectChangesInNestedViews$0();
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._appEl_0.destroyNestedViews$0();
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        var t1 = this._material_dropdown_select_template$_DynamicComponent_0_8;
+        t1._disposeChildComponent$0();
+        t1._viewContainerRef = null;
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent8: {
+      "^": "AppView;0_appEl_0,0_NgFor_0_9,0_material_dropdown_select_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1 = $.$get$_viewContainerAnchor();
+        t1 = new V.ViewContainer(0, null, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
+        this._appEl_0 = t1;
+        this._NgFor_0_9 = new R.NgFor(t1, new D.TemplateRef(t1, new Y._ViewMaterialDropdownSelectComponent8_build_closure(this)));
+        this.init0$1(t1);
+      },
+      detectChangesInternal$0: function() {
+        var local_group, t1;
+        local_group = H.assertSubtypeOfRuntimeType(this.parentView.parentView.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]);
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 == null ? local_group != null : t1 !== local_group) {
+          this._NgFor_0_9.set$ngForOf(local_group);
+          this._material_dropdown_select_template$_expr_0 = local_group;
+        }
+        this._NgFor_0_9.ngDoCheck$0();
+        this._appEl_0.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._appEl_0.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent8_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new Y._ViewMaterialDropdownSelectComponent9(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null], P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [M.MaterialDropdownSelectComponent, t1]));
+        t2.componentType = $.ViewMaterialDropdownSelectComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [M.MaterialDropdownSelectComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialDropdownSelectComponent9: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_ActiveItemDirective_0_5,0_KeyboardOnlyFocusIndicatorDirective_0_6,0_MaterialSelectDropdownItemComponent_0_7,0_material_dropdown_select_template$_expr_0,0_material_dropdown_select_template$_expr_1,0_material_dropdown_select_template$_expr_3,0_material_dropdown_select_template$_expr_4,0_material_dropdown_select_template$_expr_5,0_material_dropdown_select_template$_expr_6,0_material_dropdown_select_template$_expr_7,0_material_dropdown_select_template$_expr_8,0_material_dropdown_select_template$_expr_9,0_material_dropdown_select_template$_expr_10,0_material_dropdown_select_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      set$_material_dropdown_select_template$_compView_0: function(_compView_0) {
+        this._material_dropdown_select_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewMaterialSelectDropdownItemComponent0", this.$ti, "$asViewMaterialSelectDropdownItemComponent0");
+      },
+      set$_MaterialSelectDropdownItemComponent_0_7: function(_MaterialSelectDropdownItemComponent_0_7) {
+        this._MaterialSelectDropdownItemComponent_0_7 = H.assertSubtype(_MaterialSelectDropdownItemComponent_0_7, "$isMaterialSelectDropdownItemComponent", this.$ti, "$asMaterialSelectDropdownItemComponent");
+      },
+      build$0: function() {
+        var t1, t2, t3, t4, t5, t6, t7;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        this.set$_material_dropdown_select_template$_compView_0(O.ViewMaterialSelectDropdownItemComponent0$(this, 0, t1));
+        t2 = this._material_dropdown_select_template$_compView_0.rootEl;
+        this._material_dropdown_select_template$_el_0 = t2;
+        J.setAttribute$2$x(t2, "keyboardOnlyFocusIndicator", "");
+        this.addShimC$1(this._material_dropdown_select_template$_el_0);
+        t2 = this._material_dropdown_select_template$_el_0;
+        t3 = this.parentView.parentView.parentView.parentView.parentView.parentView;
+        t4 = t3.parentView;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        t6 = H.interceptedTypeCheck(t4.injectorGet$3(C.Type_Modal_OjC, t3.viewData.parentIndex, null), "$isModal");
+        H.interceptedTypeCheck(t3, "$isViewMaterialDropdownSelectComponent0");
+        t7 = t3.get$_PopupRef_2_10();
+        this._ActiveItemDirective_0_5 = new M.ActiveItemDirectiveNgCd(new B.ActiveItemDirective(t2, t5, t6, t7, false, false, false), false);
+        t2 = this._material_dropdown_select_template$_el_0;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        this._KeyboardOnlyFocusIndicatorDirective_0_6 = new O.KeyboardOnlyFocusIndicatorDirective(t2, t5, C._InteractionType_2);
+        t1 = F.MaterialSelectDropdownItemComponent$(this._material_dropdown_select_template$_el_0, null, t3._MaterialPopupComponent_2_8, H.interceptedTypeCheck(t4.injectorGet$3(C.Type_ActivationHandler_Nm5, t3.viewData.parentIndex, null), "$isActivationHandler"), H.interceptedTypeCheck(t4.injectorGet$3(C.Type_IdGenerator_yLN, t3.viewData.parentIndex, null), "$isIdGenerator"), this._material_dropdown_select_template$_compView_0.viewData.ref, t1);
+        this.set$_MaterialSelectDropdownItemComponent_0_7(t1);
+        this._material_dropdown_select_template$_compView_0.create$2(0, this._MaterialSelectDropdownItemComponent_0_7, [C.List_empty]);
+        t1 = W.Event;
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "mouseenter", this.eventHandler1$2$1(this.get$_handle_mouseenter_0_0(), t1, t1));
+        t2 = this._material_dropdown_select_template$_el_0;
+        t3 = this._ActiveItemDirective_0_5.instance;
+        J.addEventListener$2$x(t2, "mouseleave", this.eventHandler0$1$1(t3.get$onMouseLeave(t3), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "keydown", this.eventHandler1$2$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$keydown(), t1, W.KeyboardEvent));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "blur", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$resetOutline(), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "mousedown", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$onMouseInteraction(), t1));
+        J.addEventListener$2$x(this._material_dropdown_select_template$_el_0, "click", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_6.get$onMouseInteraction(), t1));
+        t3 = this._material_dropdown_select_template$_el_0;
+        t2 = this._KeyboardOnlyFocusIndicatorDirective_0_6;
+        J.addEventListener$2$x(t3, "focus", this.eventHandler1$2$1(t2.get$onFocus(t2), t1, t1));
+        this.init0$1(this._material_dropdown_select_template$_el_0);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        if ((token === C.Type_SelectionItem_uvp || token === C.Type_HasRenderer_wsa) && 0 === nodeIndex)
+          return this._MaterialSelectDropdownItemComponent_0_7;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, firstCheck, local_popup, local_item, t1, currVal_0, t2, currVal_1, t3, currVal_5, currVal_7, currVal_9, currVal_10;
+        _ctx = this.ctx;
+        firstCheck = this.viewData._cdState === 0;
+        local_popup = H.interceptedTypeCheck(this.parentView.parentView.parentView.parentView.parentView.parentView, "$isViewMaterialDropdownSelectComponent0")._MaterialPopupComponent_2_8;
+        local_item = this.locals.$index(0, "$implicit");
+        if (local_popup.showPopup) {
+          t1 = _ctx.activeModel;
+          H.assertSubtypeOfRuntimeType(local_item, H.getTypeArgumentByIndex(t1, 0));
+          currVal_0 = J.$eq$(t1.get$activeItem(), local_item);
+        } else
+          currVal_0 = false;
+        t1 = this._material_dropdown_select_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._ActiveItemDirective_0_5.instance.set$itemActive(currVal_0);
+          this._material_dropdown_select_template$_expr_0 = currVal_0;
+        }
+        if (firstCheck)
+          this._MaterialSelectDropdownItemComponent_0_7.tabbable = false;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        H.assertSubtypeOfRuntimeType(local_item, t1);
+        _ctx.toString;
+        t2 = H.getTypeArgumentByIndex(_ctx, 0);
+        H.assertSubtypeOfRuntimeType(local_item, t2);
+        currVal_1 = !E.Selectable__isOptionCheck(_ctx.get$options(_ctx), local_item, C.SelectableOption_0, true, t2);
+        t3 = this._material_dropdown_select_template$_expr_1;
+        if (t3 !== currVal_1) {
+          this._MaterialSelectDropdownItemComponent_0_7.disabled = currVal_1;
+          this._material_dropdown_select_template$_expr_1 = currVal_1;
+        }
+        currVal_5 = E.Selectable__isOptionCheck(_ctx.get$options(_ctx), local_item, C.SelectableOption_2, false, t2);
+        t2 = this._material_dropdown_select_template$_expr_5;
+        if (t2 !== currVal_5) {
+          t2 = this._MaterialSelectDropdownItemComponent_0_7;
+          t2.toString;
+          t2._isHidden = E.getBool(currVal_5);
+          this._material_dropdown_select_template$_expr_5 = currVal_5;
+        }
+        t2 = this._material_dropdown_select_template$_expr_6;
+        if (t2 == null ? local_item != null : t2 !== local_item) {
+          t2 = this._MaterialSelectDropdownItemComponent_0_7;
+          t2.toString;
+          t2.set$_material_select_item$_value(H.assertSubtypeOfRuntimeType(local_item, H.getTypeArgumentByIndex(t2, 0)));
+          this._material_dropdown_select_template$_expr_6 = local_item;
+        }
+        currVal_7 = H.functionTypeCheck(_ctx.get$itemRenderer(), {func: 1, ret: P.String, args: [t1]});
+        t1 = this._material_dropdown_select_template$_expr_7;
+        if (t1 !== currVal_7) {
+          t1 = this._MaterialSelectDropdownItemComponent_0_7;
+          t1.toString;
+          t1.set$_material_select_item$_itemRenderer(H.functionTypeCheck(currVal_7, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(t1, 0)]}));
+          this._material_dropdown_select_template$_expr_7 = currVal_7;
+        }
+        _ctx.get$selection();
+        t1 = this._material_dropdown_select_template$_expr_8;
+        if (t1 !== true) {
+          t1 = this._MaterialSelectDropdownItemComponent_0_7;
+          t1.toString;
+          t1._material_select_item$_deselectOnActivate = E.getBool(true);
+          this._material_dropdown_select_template$_expr_8 = true;
+        }
+        currVal_9 = _ctx.get$selection();
+        t1 = this._material_dropdown_select_template$_expr_9;
+        if (t1 == null ? currVal_9 != null : t1 !== currVal_9) {
+          this._MaterialSelectDropdownItemComponent_0_7.set$selection(currVal_9);
+          this._material_dropdown_select_template$_expr_9 = currVal_9;
+        }
+        currVal_10 = _ctx.activeModel.id$1(0, local_item);
+        t1 = this._material_dropdown_select_template$_expr_10;
+        if (t1 != currVal_10) {
+          this._MaterialSelectDropdownItemComponent_0_7._id = currVal_10;
+          this._material_dropdown_select_template$_expr_10 = currVal_10;
+        }
+        this._ActiveItemDirective_0_5.detectHostChanges$2(this._material_dropdown_select_template$_compView_0, this._material_dropdown_select_template$_el_0);
+        this._material_dropdown_select_template$_compView_0.detectHostChanges$1(firstCheck);
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+        if (firstCheck) {
+          t1 = this._ActiveItemDirective_0_5.instance;
+          t1._initialized = true;
+          t1._scrollIntoViewIfNecessary$0();
+        }
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        this._ActiveItemDirective_0_5.instance.ngOnDestroy$0();
+        this._MaterialSelectDropdownItemComponent_0_7._disposer.dispose$0();
+      },
+      _handle_mouseenter_0_0$1: [function($$event) {
+        var local_item = this.locals.$index(0, "$implicit");
+        this.ctx.get$activeModel().activate$1(local_item);
+        this._ActiveItemDirective_0_5.instance._hasHover = true;
+      }, "call$1", "get$_handle_mouseenter_0_0", 4, 0, 2],
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    },
+    _ViewMaterialDropdownSelectComponent10: {
+      "^": "AppView;0_material_dropdown_select_template$_compView_0,0_KeyboardOnlyFocusIndicatorDirective_0_5,0_MaterialSelectDropdownItemComponent_0_6,0_material_dropdown_select_template$_expr_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      set$_material_dropdown_select_template$_compView_0: function(_compView_0) {
+        this._material_dropdown_select_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewMaterialSelectDropdownItemComponent0", [P.String], "$asViewMaterialSelectDropdownItemComponent0");
+      },
+      set$_MaterialSelectDropdownItemComponent_0_6: function(_MaterialSelectDropdownItemComponent_0_6) {
+        this._MaterialSelectDropdownItemComponent_0_6 = H.assertSubtype(_MaterialSelectDropdownItemComponent_0_6, "$isMaterialSelectDropdownItemComponent", [P.String], "$asMaterialSelectDropdownItemComponent");
+      },
+      build$0: function() {
+        var t1, _el_0, t2, t3, t4, t5;
+        t1 = P.String;
+        this.set$_material_dropdown_select_template$_compView_0(O.ViewMaterialSelectDropdownItemComponent0$(this, 0, t1));
+        _el_0 = this._material_dropdown_select_template$_compView_0.rootEl;
+        t2 = J.getInterceptor$x(_el_0);
+        t2.setAttribute$2(_el_0, "keyboardOnlyFocusIndicator", "");
+        this.addShimC$1(_el_0);
+        t3 = this.parentView.parentView.parentView.parentView.parentView;
+        t4 = t3.parentView;
+        t5 = H.interceptedTypeCheck(t4.injectorGet$2(C.Type_DomService_2jN, t3.viewData.parentIndex), "$isDomService");
+        this._KeyboardOnlyFocusIndicatorDirective_0_5 = new O.KeyboardOnlyFocusIndicatorDirective(_el_0, t5, C._InteractionType_2);
+        H.interceptedTypeCheck(t3, "$isViewMaterialDropdownSelectComponent0");
+        t1 = F.MaterialSelectDropdownItemComponent$(_el_0, null, t3._MaterialPopupComponent_2_8, H.interceptedTypeCheck(t4.injectorGet$3(C.Type_ActivationHandler_Nm5, t3.viewData.parentIndex, null), "$isActivationHandler"), H.interceptedTypeCheck(t4.injectorGet$3(C.Type_IdGenerator_yLN, t3.viewData.parentIndex, null), "$isIdGenerator"), this._material_dropdown_select_template$_compView_0.viewData.ref, t1);
+        this.set$_MaterialSelectDropdownItemComponent_0_6(t1);
+        this._material_dropdown_select_template$_compView_0.create$2(0, this._MaterialSelectDropdownItemComponent_0_6, [C.List_empty]);
+        t1 = W.Event;
+        t2.addEventListener$2(_el_0, "keydown", this.eventHandler1$2$1(this._KeyboardOnlyFocusIndicatorDirective_0_5.get$keydown(), t1, W.KeyboardEvent));
+        t2.addEventListener$2(_el_0, "blur", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_5.get$resetOutline(), t1));
+        t2.addEventListener$2(_el_0, "mousedown", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_5.get$onMouseInteraction(), t1));
+        t2.addEventListener$2(_el_0, "click", this.eventHandler0$1$1(this._KeyboardOnlyFocusIndicatorDirective_0_5.get$onMouseInteraction(), t1));
+        t3 = this._KeyboardOnlyFocusIndicatorDirective_0_5;
+        t2.addEventListener$2(_el_0, "focus", this.eventHandler1$2$1(t3.get$onFocus(t3), t1, t1));
+        this.init0$1(_el_0);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        if ((token === C.Type_SelectionItem_uvp || token === C.Type_HasRenderer_wsa) && 0 === nodeIndex)
+          return this._MaterialSelectDropdownItemComponent_0_6;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var firstCheck, local_group, t1, t2;
+        firstCheck = this.viewData._cdState === 0;
+        local_group = H.assertSubtypeOfRuntimeType(this.parentView.parentView.locals.$index(0, "$implicit"), [F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]);
+        if (firstCheck) {
+          t1 = this._MaterialSelectDropdownItemComponent_0_6;
+          t1.disabled = true;
+          t1.tabbable = false;
+        }
+        t1 = local_group._emptyLabelFcn;
+        t1 = t1 != null ? t1.call$0() : null;
+        t2 = this._material_dropdown_select_template$_expr_2;
+        if (t2 != t1) {
+          t2 = this._MaterialSelectDropdownItemComponent_0_6;
+          t2.toString;
+          t2.set$_material_select_item$_value(H.assertSubtypeOfRuntimeType(t1, H.getTypeArgumentByIndex(t2, 0)));
+          this._material_dropdown_select_template$_expr_2 = t1;
+        }
+        this._material_dropdown_select_template$_compView_0.detectHostChanges$1(firstCheck);
+        this._material_dropdown_select_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._material_dropdown_select_template$_compView_0.destroy$0();
+        this._MaterialSelectDropdownItemComponent_0_6._disposer.dispose$0();
+      },
+      $asAppView: function($T) {
+        return [[M.MaterialDropdownSelectComponent, $T]];
+      }
+    }
+  }], ["", "package:angular_components/material_select/material_select_base.dart",, V, {
+    "^": "",
+    MaterialSelectBase: {
+      "^": "SelectionContainer;",
+      get$width: function(_) {
+        return this._width;
+      },
+      get$itemRenderer: function() {
+        var t1 = L.SelectionContainer.prototype.get$itemRenderer.call(this);
+        return t1 == null ? G.has_renderer__defaultItemRenderer$closure() : t1;
+      }
+    }
+  }], ["", "package:angular_components/material_select/material_select_dropdown_item.dart",, F, {
+    "^": "",
+    MaterialSelectDropdownItemComponent: {
+      "^": "MaterialSelectItemComponent;_generatedId,0_id,_customAriaHandling,_disposer,_activationHandler,_cdRef,_dropdown,element,0_selectionChangeStreamSub,_isHidden,0_material_select_item$_value,_supportsMultiSelect,_hideCheckbox,_material_select_item$_itemRenderer,0componentRenderer,0factoryRenderer,_useCheckMarks,_selectOnActivate,_material_select_item$_deselectOnActivate,0_material_select_item$_selection,_selected,_closeOnActivate,_trigger,0_hostTabIndex,role,disabled,tabbable,HasTabIndex__tabIndex,_focus$_root,$ti",
+      get$id: function(_) {
+        var t1;
+        if (this._customAriaHandling)
+          t1 = null;
+        else {
+          t1 = this._id;
+          if (t1 == null)
+            t1 = this._generatedId;
+        }
+        return t1;
+      },
+      get$isSelected: function() {
+        return B.MaterialSelectItemComponent.prototype.get$isSelected.call(this);
+      },
+      preventTextSelectionIfShiftKey$1: [function(e) {
+        H.interceptedTypeCheck(e, "$isMouseEvent");
+        if (e.shiftKey)
+          e.preventDefault();
+      }, "call$1", "get$preventTextSelectionIfShiftKey", 4, 0, 17],
+      onLoadCustomComponent$1: [function(ref) {
+        H.interceptedTypeCheck(ref, "$isComponentRef");
+        this._customAriaHandling = false;
+      }, "call$1", "get$onLoadCustomComponent", 4, 0, 39],
+      static: {
+        MaterialSelectDropdownItemComponent$: function(element, role, dropdown, activationHandler, idGenerator, cdRef, $T) {
+          var t1, t2;
+          t1 = (idGenerator == null ? new R.SequentialIdGenerator(R.SequentialIdGenerator__createUuid(), 0) : idGenerator).nextId$0();
+          t2 = "option";
+          t2 = new F.MaterialSelectDropdownItemComponent(t1, false, new R.Disposer(true, false), activationHandler, cdRef, dropdown, element, false, false, false, G.has_renderer___nullRenderer$closure(), false, true, true, false, true, new P._SyncBroadcastStreamController(null, null, 0, [W.UIEvent]), t2, false, true, null, element, [$T]);
+          t2.MaterialSelectItemComponent$5(element, dropdown, activationHandler, cdRef, "option", $T);
+          t2.set$_material_select_item$_itemRenderer(H.functionTypeCheck(G.has_renderer__defaultItemRenderer$closure(), {func: 1, ret: P.String, args: [$T]}));
+          return t2;
+        }
+      }
+    }
+  }], ["asset_angular_components_lib_material_select_material_select_dropdown_item.scss.css.shim.dart", "package:angular_components/material_select/material_select_dropdown_item.scss.css.shim.dart",, B, {}], ["", "package:angular_components/material_select/material_select_dropdown_item.template.dart",, O, {
+    "^": "",
+    ViewMaterialSelectDropdownItemComponent0: {
+      "^": "AppView;0_material_select_dropdown_item_template$_appEl_2,0_material_select_dropdown_item_template$_NgIf_2_9,0_material_select_dropdown_item_template$_appEl_4,0_material_select_dropdown_item_template$_NgIf_4_9,0_appEl_6,0_NgIf_6_9,_material_select_dropdown_item_template$_expr_0,0_material_select_dropdown_item_template$_expr_4,0_material_select_dropdown_item_template$_expr_5,0_material_select_dropdown_item_template$_expr_6,0_material_select_dropdown_item_template$_expr_7,0_material_select_dropdown_item_template$_expr_8,0_material_select_dropdown_item_template$_expr_9,0_material_select_dropdown_item_template$_expr_10,0_expr_11,0_expr_12,0_expr_13,0_expr_14,0_anchor_0,0_el_0_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var _ctx, _rootEl, parentRenderNode, t1, t2, t3, _anchor_2, t4, _anchor_4, _anchor_6;
+        _ctx = this.ctx;
+        _rootEl = this.rootEl;
+        parentRenderNode = this.initViewRoot$1(_rootEl);
+        t1 = $.$get$_viewContainerAnchor();
+        t2 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        this._anchor_0 = t2;
+        t3 = J.getInterceptor$x(parentRenderNode);
+        t3.append$1(parentRenderNode, t2);
+        t2 = document;
+        t3.append$1(parentRenderNode, t2.createTextNode(" "));
+        _anchor_2 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        t3.append$1(parentRenderNode, _anchor_2);
+        t4 = new V.ViewContainer(2, null, this, _anchor_2);
+        this._material_select_dropdown_item_template$_appEl_2 = t4;
+        this._material_select_dropdown_item_template$_NgIf_2_9 = new K.NgIf(new D.TemplateRef(t4, new O.ViewMaterialSelectDropdownItemComponent0_build_closure(this)), t4, false);
+        t3.append$1(parentRenderNode, t2.createTextNode("\n \n"));
+        _anchor_4 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        t3.append$1(parentRenderNode, _anchor_4);
+        t4 = new V.ViewContainer(4, null, this, _anchor_4);
+        this._material_select_dropdown_item_template$_appEl_4 = t4;
+        this._material_select_dropdown_item_template$_NgIf_4_9 = new K.NgIf(new D.TemplateRef(t4, new O.ViewMaterialSelectDropdownItemComponent0_build_closure0(this)), t4, false);
+        t3.append$1(parentRenderNode, t2.createTextNode("\n "));
+        _anchor_6 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
+        t3.append$1(parentRenderNode, _anchor_6);
+        t3 = new V.ViewContainer(6, null, this, _anchor_6);
+        this._appEl_6 = t3;
+        this._NgIf_6_9 = new K.NgIf(new D.TemplateRef(t3, new O.ViewMaterialSelectDropdownItemComponent0_build_closure1(this)), t3, false);
+        this.project$2(parentRenderNode, 0);
+        this.init$2([], null);
+        t3 = W.Event;
+        t1 = W.MouseEvent;
+        t2 = J.getInterceptor$x(_rootEl);
+        t2.addEventListener$2(_rootEl, "click", this.eventHandler1$2$1(_ctx.get$handleClick(), t3, t1));
+        t2.addEventListener$2(_rootEl, "keypress", this.eventHandler1$2$1(_ctx.get$handleKeyPress(), t3, W.KeyboardEvent));
+        t2.addEventListener$2(_rootEl, "mousedown", this.eventHandler1$2$1(_ctx.get$preventTextSelectionIfShiftKey(), t3, t1));
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, currVal_0, t1, t2;
+        _ctx = this.ctx;
+        currVal_0 = !_ctx._supportsMultiSelect && B.MaterialSelectItemComponent.prototype.get$isSelected.call(_ctx);
+        t1 = this._material_select_dropdown_item_template$_expr_0;
+        if (t1 !== currVal_0) {
+          if (currVal_0) {
+            t1 = document.createElement("div");
+            H.interceptedTypeCheck(t1, "$isDivElement");
+            this._el_0_0 = t1;
+            t1.className = "selected-accent mixin";
+            this.addShimC$1(t1);
+            t1 = this._anchor_0;
+            t2 = [W.Node];
+            t2 = H.assertSubtype(H.setRuntimeTypeInfo([this._el_0_0], t2), "$isList", t2, "$asList");
+            S._moveNodesAfterSibling(t1, t2);
+            t1 = this.viewData.rootNodesOrViewContainers;
+            (t1 && C.JSArray_methods).addAll$1(t1, t2);
+          } else
+            this.removeInlinedNodes$2(H.setRuntimeTypeInfo([this._el_0_0], [W.Node]), true);
+          this._material_select_dropdown_item_template$_expr_0 = currVal_0;
+        }
+        t1 = this._material_select_dropdown_item_template$_NgIf_2_9;
+        if (_ctx._supportsMultiSelect) {
+          _ctx._hideCheckbox;
+          t2 = true;
+        } else
+          t2 = false;
+        t1.set$ngIf(t2);
+        this._material_select_dropdown_item_template$_NgIf_4_9.set$ngIf(_ctx.get$valueLabel() != null);
+        t2 = this._NgIf_6_9;
+        t2.set$ngIf(_ctx.get$componentType() != null || _ctx.get$componentFactory() != null);
+        this._material_select_dropdown_item_template$_appEl_2.detectChangesInNestedViews$0();
+        this._material_select_dropdown_item_template$_appEl_4.detectChangesInNestedViews$0();
+        this._appEl_6.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_appEl_2.destroyNestedViews$0();
+        this._material_select_dropdown_item_template$_appEl_4.destroyNestedViews$0();
+        this._appEl_6.destroyNestedViews$0();
+      },
+      detectHostChanges$1: function(firstCheck) {
+        var currVal_4, t1, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, t2;
+        currVal_4 = J.get$tabIndex$x(this.ctx);
+        t1 = this._material_select_dropdown_item_template$_expr_4;
+        if (t1 != currVal_4) {
+          this.rootEl.tabIndex = currVal_4;
+          this._material_select_dropdown_item_template$_expr_4 = currVal_4;
+        }
+        currVal_5 = this.ctx.get$ariaRole();
+        t1 = this._material_select_dropdown_item_template$_expr_5;
+        if (t1 != currVal_5) {
+          this.setAttr$3(this.rootEl, "role", currVal_5);
+          this._material_select_dropdown_item_template$_expr_5 = currVal_5;
+        }
+        currVal_6 = this.ctx.get$disabledStr();
+        t1 = this._material_select_dropdown_item_template$_expr_6;
+        if (t1 !== currVal_6) {
+          this.setAttr$3(this.rootEl, "aria-disabled", currVal_6);
+          this._material_select_dropdown_item_template$_expr_6 = currVal_6;
+        }
+        currVal_7 = J.get$disabled$z(this.ctx);
+        t1 = this._material_select_dropdown_item_template$_expr_7;
+        if (t1 !== currVal_7) {
+          this.updateElemClass$3(this.rootEl, "is-disabled", currVal_7);
+          this._material_select_dropdown_item_template$_expr_7 = currVal_7;
+        }
+        currVal_8 = J.get$disabled$z(this.ctx);
+        t1 = this._material_select_dropdown_item_template$_expr_8;
+        if (t1 !== currVal_8) {
+          this.updateElemClass$3(this.rootEl, "disabled", currVal_8);
+          this._material_select_dropdown_item_template$_expr_8 = currVal_8;
+        }
+        currVal_9 = this.ctx.get$isHidden();
+        t1 = this._material_select_dropdown_item_template$_expr_9;
+        if (t1 !== currVal_9) {
+          this.updateElemClass$3(this.rootEl, "hidden", currVal_9);
+          this._material_select_dropdown_item_template$_expr_9 = currVal_9;
+        }
+        currVal_10 = this.ctx.get$supportsMultiSelect();
+        t1 = this._material_select_dropdown_item_template$_expr_10;
+        if (t1 !== currVal_10) {
+          this.updateElemClass$3(this.rootEl, "multiselect", currVal_10);
+          this._material_select_dropdown_item_template$_expr_10 = currVal_10;
+        }
+        currVal_11 = this.ctx.get$isAriaChecked();
+        t1 = this._expr_11;
+        if (t1 != currVal_11) {
+          t1 = this.rootEl;
+          this.setAttr$3(t1, "aria-checked", currVal_11 == null ? null : String(currVal_11));
+          this._expr_11 = currVal_11;
+        }
+        currVal_12 = this.ctx.get$isSelected();
+        t1 = this._expr_12;
+        if (t1 !== currVal_12) {
+          this.updateElemClass$3(this.rootEl, "selected", currVal_12);
+          this._expr_12 = currVal_12;
+        }
+        currVal_13 = J.get$id$x(this.ctx);
+        t1 = this._expr_13;
+        if (t1 != currVal_13) {
+          this.setAttr$3(this.rootEl, "id", currVal_13);
+          this._expr_13 = currVal_13;
+        }
+        currVal_14 = this.ctx.get$isSelected();
+        t1 = this._expr_14;
+        if (t1 !== currVal_14) {
+          t1 = this.rootEl;
+          t2 = String(currVal_14);
+          this.setAttr$3(t1, "aria-selected", t2);
+          this._expr_14 = currVal_14;
+        }
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      },
+      static: {
+        ViewMaterialSelectDropdownItemComponent0$: function(parentView, parentIndex, $T) {
+          var t1, t2;
+          t1 = new O.ViewMaterialSelectDropdownItemComponent0(false, P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [$T]);
+          t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_1, parentIndex, [F.MaterialSelectDropdownItemComponent, $T]));
+          t2 = document.createElement("material-select-dropdown-item");
+          H.interceptedTypeCheck(t2, "$isHtmlElement");
+          t1.rootEl = t2;
+          t2.className = "item";
+          t2.tabIndex = 0;
+          t2 = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+          if (t2 == null) {
+            t2 = $.appViewUtils;
+            t2 = t2.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$MaterialSelectDropdownItemComponent());
+            $.ViewMaterialSelectDropdownItemComponent0__renderType = t2;
+          }
+          t1.setupComponentType$1(t2);
+          return t1;
+        }
+      }
+    },
+    ViewMaterialSelectDropdownItemComponent0_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    ViewMaterialSelectDropdownItemComponent0_build_closure0: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent6(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    ViewMaterialSelectDropdownItemComponent0_build_closure1: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent7(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent2: {
+      "^": "AppView;0_material_select_dropdown_item_template$_appEl_0,0_material_select_dropdown_item_template$_NgIf_0_9,0_material_select_dropdown_item_template$_appEl_2,0_material_select_dropdown_item_template$_NgIf_2_9,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, t2, _text_1;
+        t1 = $.$get$_viewContainerAnchor();
+        t2 = new V.ViewContainer(0, null, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
+        this._material_select_dropdown_item_template$_appEl_0 = t2;
+        this._material_select_dropdown_item_template$_NgIf_0_9 = new K.NgIf(new D.TemplateRef(t2, new O._ViewMaterialSelectDropdownItemComponent2_build_closure(this)), t2, false);
+        _text_1 = document.createTextNode("  ");
+        t1 = new V.ViewContainer(2, null, this, H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment"));
+        this._material_select_dropdown_item_template$_appEl_2 = t1;
+        this._material_select_dropdown_item_template$_NgIf_2_9 = new K.NgIf(new D.TemplateRef(t1, new O._ViewMaterialSelectDropdownItemComponent2_build_closure0(this)), t1, false);
+        this.init$2([this._material_select_dropdown_item_template$_appEl_0, _text_1, t1], null);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1;
+        _ctx = this.ctx;
+        t1 = this._material_select_dropdown_item_template$_NgIf_0_9;
+        _ctx._useCheckMarks;
+        t1.set$ngIf(true);
+        this._material_select_dropdown_item_template$_NgIf_2_9.set$ngIf(false);
+        this._material_select_dropdown_item_template$_appEl_0.detectChangesInNestedViews$0();
+        this._material_select_dropdown_item_template$_appEl_2.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_appEl_0.destroyNestedViews$0();
+        this._material_select_dropdown_item_template$_appEl_2.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent2_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent3(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent2_build_closure0: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent4(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent3: {
+      "^": "AppView;0_material_select_dropdown_item_template$_compView_0,0_MaterialCheckboxComponent_0_5,0_material_select_dropdown_item_template$_expr_0,0_material_select_dropdown_item_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, _el_0;
+        t1 = G.ViewMaterialCheckboxComponent0$(this, 0);
+        this._material_select_dropdown_item_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        _el_0.tabIndex = -1;
+        this.addShimC$1(_el_0);
+        t1 = B.MaterialCheckboxComponent$(_el_0, this._material_select_dropdown_item_template$_compView_0.viewData.ref, null, "-1", null);
+        this._MaterialCheckboxComponent_0_5 = t1;
+        this._material_select_dropdown_item_template$_compView_0.create$2(0, t1, [C.List_empty]);
+        this.init0$1(_el_0);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        if (token === C.Type_HasDisabled_qzc && 0 === nodeIndex)
+          return this._MaterialCheckboxComponent_0_5;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, t1, t2, t3, changed, currVal_1;
+        _ctx = this.ctx;
+        t1 = this.viewData._cdState;
+        t2 = _ctx.disabled;
+        t3 = this._material_select_dropdown_item_template$_expr_0;
+        if (t3 != t2) {
+          this._MaterialCheckboxComponent_0_5.disabled = t2;
+          this._material_select_dropdown_item_template$_expr_0 = t2;
+          changed = true;
+        } else
+          changed = false;
+        currVal_1 = B.MaterialSelectItemComponent.prototype.get$isSelected.call(_ctx);
+        t2 = this._material_select_dropdown_item_template$_expr_1;
+        if (t2 !== currVal_1) {
+          this._MaterialCheckboxComponent_0_5.set$checked(0, currVal_1);
+          this._material_select_dropdown_item_template$_expr_1 = currVal_1;
+          changed = true;
+        }
+        if (changed)
+          this._material_select_dropdown_item_template$_compView_0.viewData.set$cdMode(1);
+        this._material_select_dropdown_item_template$_compView_0.detectHostChanges$1(t1 === 0);
+        this._material_select_dropdown_item_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_compView_0.destroy$0();
+        this._MaterialCheckboxComponent_0_5.toString;
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent4: {
+      "^": "AppView;0_material_select_dropdown_item_template$_appEl_1,0_material_select_dropdown_item_template$_NgIf_1_9,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var _el_0, t1, _anchor_1;
+        _el_0 = document.createElement("span");
+        _el_0.className = "check-container";
+        this.addShimE$1(_el_0);
+        t1 = $.$get$_viewContainerAnchor();
+        _anchor_1 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        J.append$1$x(_el_0, _anchor_1);
+        t1 = new V.ViewContainer(1, 0, this, _anchor_1);
+        this._material_select_dropdown_item_template$_appEl_1 = t1;
+        this._material_select_dropdown_item_template$_NgIf_1_9 = new K.NgIf(new D.TemplateRef(t1, new O._ViewMaterialSelectDropdownItemComponent4_build_closure(this)), t1, false);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx = this.ctx;
+        this._material_select_dropdown_item_template$_NgIf_1_9.set$ngIf(B.MaterialSelectItemComponent.prototype.get$isSelected.call(_ctx));
+        this._material_select_dropdown_item_template$_appEl_1.detectChangesInNestedViews$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_appEl_1.destroyNestedViews$0();
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent4_build_closure: {
+      "^": "Closure;$this",
+      call$2: function(parentView, parentIndex) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        t2 = new O._ViewMaterialSelectDropdownItemComponent5(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [F.MaterialSelectDropdownItemComponent, t1]));
+        t2.componentType = $.ViewMaterialSelectDropdownItemComponent0__renderType;
+        return t2;
+      },
+      $signature: function() {
+        return {func: 1, ret: [S.AppView, [F.MaterialSelectDropdownItemComponent, H.getTypeArgumentByIndex(this.$this, 0)]], args: [,,]};
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent5: {
+      "^": "AppView;0_material_select_dropdown_item_template$_compView_0,0_GlyphComponent_0_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, _el_0;
+        t1 = M.ViewGlyphComponent0$(this, 0);
+        this._material_select_dropdown_item_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        t1 = J.getInterceptor$x(_el_0);
+        t1.setAttribute$2(_el_0, "baseline", "");
+        _el_0.className = "check";
+        t1.setAttribute$2(_el_0, "icon", "check");
+        this.addShimC$1(_el_0);
+        t1 = new L.GlyphComponent(true, _el_0);
+        this._GlyphComponent_0_5 = t1;
+        this._material_select_dropdown_item_template$_compView_0.create$2(0, t1, []);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        if (this.viewData._cdState === 0) {
+          this._GlyphComponent_0_5.set$icon(0, "check");
+          var changed = true;
+        } else
+          changed = false;
+        if (changed)
+          this._material_select_dropdown_item_template$_compView_0.viewData.set$cdMode(1);
+        this._material_select_dropdown_item_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_compView_0.destroy$0();
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent6: {
+      "^": "AppView;0_material_select_dropdown_item_template$_expr_0,0_material_select_dropdown_item_template$_text_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var doc, _el_0, t1;
+        doc = document;
+        _el_0 = doc.createElement("span");
+        _el_0.className = "label";
+        this.addShimE$1(_el_0);
+        t1 = doc.createTextNode("");
+        this._material_select_dropdown_item_template$_text_1 = t1;
+        J.append$1$x(_el_0, t1);
+        this.init0$1(_el_0);
+      },
+      detectChangesInternal$0: function() {
+        var currVal_0, t1;
+        currVal_0 = Q.interpolate0(this.ctx.get$valueLabel());
+        t1 = this._material_select_dropdown_item_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._material_select_dropdown_item_template$_text_1.textContent = currVal_0;
+          this._material_select_dropdown_item_template$_expr_0 = currVal_0;
+        }
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    },
+    _ViewMaterialSelectDropdownItemComponent7: {
+      "^": "AppView;0_material_select_dropdown_item_template$_compView_0,0_material_select_dropdown_item_template$_appEl_0,0_DynamicComponent_0_8,0_material_select_dropdown_item_template$_expr_0,0_material_select_dropdown_item_template$_expr_1,0_material_select_dropdown_item_template$_expr_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      build$0: function() {
+        var t1, _el_0, t2, t3, t4, subscription_0;
+        t1 = Q.ViewDynamicComponent0$(this, 0);
+        this._material_select_dropdown_item_template$_compView_0 = t1;
+        _el_0 = t1.rootEl;
+        _el_0.className = "dynamic-item";
+        this.addShimC$1(_el_0);
+        this._material_select_dropdown_item_template$_appEl_0 = new V.ViewContainer(0, null, this, _el_0);
+        t1 = H.interceptedTypeCheck(this.parentView.injectorGet$2(C.Type_SlowComponentLoader_qxe, this.viewData.parentIndex), "$isSlowComponentLoader");
+        t2 = this._material_select_dropdown_item_template$_compView_0;
+        t3 = t2.viewData.ref;
+        t4 = [D.ComponentRef,,];
+        t3 = new Z.DynamicComponent(t1, this._material_select_dropdown_item_template$_appEl_0, t3, P.StreamController_StreamController(null, null, null, null, false, t4), false, false, false, false);
+        this._DynamicComponent_0_8 = t3;
+        t2.create$2(0, t3, []);
+        t1 = this._DynamicComponent_0_8._onLoadController;
+        subscription_0 = new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(this.eventHandler1$2$1(this.ctx.get$onLoadCustomComponent(), t4, t4));
+        this.init$2([this._material_select_dropdown_item_template$_appEl_0], [subscription_0]);
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, currVal_0, t1, changed, currVal_1, currVal_2;
+        _ctx = this.ctx;
+        currVal_0 = _ctx.get$componentType();
+        t1 = this._material_select_dropdown_item_template$_expr_0;
+        if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
+          t1 = this._DynamicComponent_0_8;
+          if (!J.$eq$(t1._componentType, currVal_0))
+            t1._typeChanged = true;
+          t1._componentType = currVal_0;
+          this._material_select_dropdown_item_template$_expr_0 = currVal_0;
+          changed = true;
+        } else
+          changed = false;
+        currVal_1 = _ctx.get$componentFactory();
+        t1 = this._material_select_dropdown_item_template$_expr_1;
+        if (t1 == null ? currVal_1 != null : t1 !== currVal_1) {
+          this._DynamicComponent_0_8.set$componentFactory(currVal_1);
+          this._material_select_dropdown_item_template$_expr_1 = currVal_1;
+          changed = true;
+        }
+        currVal_2 = _ctx._material_select_item$_value;
+        t1 = this._material_select_dropdown_item_template$_expr_2;
+        if (t1 == null ? currVal_2 != null : t1 !== currVal_2) {
+          t1 = this._DynamicComponent_0_8;
+          t1._dynamic_component$_value = currVal_2;
+          t1._valueChanged = true;
+          this._material_select_dropdown_item_template$_expr_2 = currVal_2;
+          changed = true;
+        }
+        if (changed)
+          this._DynamicComponent_0_8.ngAfterChanges$0();
+        this._material_select_dropdown_item_template$_appEl_0.detectChangesInNestedViews$0();
+        this._material_select_dropdown_item_template$_compView_0.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        this._material_select_dropdown_item_template$_appEl_0.destroyNestedViews$0();
+        this._material_select_dropdown_item_template$_compView_0.destroy$0();
+        var t1 = this._DynamicComponent_0_8;
+        t1._disposeChildComponent$0();
+        t1._viewContainerRef = null;
+      },
+      $asAppView: function($T) {
+        return [[F.MaterialSelectDropdownItemComponent, $T]];
+      }
+    }
+  }], ["", "package:angular_components/material_select/material_select_item.dart",, B, {
+    "^": "",
+    MaterialSelectItemComponent: {
+      "^": "ButtonDirective;0_material_select_item$_value,_material_select_item$_itemRenderer,0_material_select_item$_selection,$ti",
+      set$_material_select_item$_value: function(_value) {
+        this._material_select_item$_value = H.assertSubtypeOfRuntimeType(_value, H.getTypeArgumentByIndex(this, 0));
+      },
+      set$_material_select_item$_itemRenderer: function(_itemRenderer) {
+        this._material_select_item$_itemRenderer = H.functionTypeCheck(_itemRenderer, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(this, 0)]});
+      },
+      set$_material_select_item$_selection: function(_selection) {
+        this._material_select_item$_selection = H.assertSubtype(_selection, "$isSelectionModel", this.$ti, "$asSelectionModel");
+      },
+      MaterialSelectItemComponent$5: function(element, _dropdown, _activationHandler, _cdRef, role, $T) {
+        var t1, t2;
+        t1 = this._disposer;
+        t2 = this._trigger;
+        t1.addStreamSubscription$1$1(new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(this.get$handleActivate()), W.UIEvent);
+        t1.addFunction$1(new B.MaterialSelectItemComponent_closure(this));
+      },
+      get$disabled: function(_) {
+        return this.disabled;
+      },
+      get$isHidden: function() {
+        return this._isHidden;
+      },
+      get$supportsMultiSelect: function() {
+        return this._supportsMultiSelect;
+      },
+      get$itemRenderer: function() {
+        return this._material_select_item$_itemRenderer;
+      },
+      get$valueLabel: function() {
+        var t1, t2;
+        t1 = this._material_select_item$_value;
+        if (t1 == null)
+          return;
+        else {
+          t2 = this._material_select_item$_itemRenderer !== G.has_renderer___nullRenderer$closure();
+          if (t2)
+            return this.itemRenderer$1(t1);
+        }
+        return;
+      },
+      set$selection: function(sel) {
+        var t1 = this.$ti;
+        H.assertSubtype(sel, "$isSelectionModel", t1, "$asSelectionModel");
+        this.set$_material_select_item$_selection(sel);
+        this._supportsMultiSelect = H.checkSubtype(sel, "$isMultiSelectionModel", t1, "$asMultiSelectionModel");
+        t1 = this._selectionChangeStreamSub;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        this._selectionChangeStreamSub = sel.get$selectionChanges().listen$1(new B.MaterialSelectItemComponent_selection_closure(this));
+      },
+      get$componentType: function() {
+        return;
+      },
+      get$componentFactory: function() {
+        return;
+      },
+      get$isAriaChecked: function() {
+        return !this._supportsMultiSelect || false ? null : B.MaterialSelectItemComponent.prototype.get$isSelected.call(this);
+      },
+      get$isSelected: function() {
+        var t1, t2;
+        t1 = this._selected;
+        if (!t1) {
+          t1 = this._material_select_item$_value;
+          if (t1 != null) {
+            t2 = this._material_select_item$_selection;
+            t1 = t2 == null ? null : t2.isSelected$1(t1);
+            if (t1 == null)
+              t1 = false;
+          } else
+            t1 = false;
+        } else
+          t1 = true;
+        return t1;
+      },
+      handleActivate$1: [function(e) {
+        var hasCheckbox, t1;
+        H.interceptedTypeCheck(e, "$isUIEvent");
+        hasCheckbox = this._supportsMultiSelect && true;
+        if (!hasCheckbox) {
+          t1 = this._dropdown;
+          if (!(t1 == null))
+            t1.set$visible(0, false);
+        }
+        t1 = this._activationHandler;
+        t1 = t1 == null ? null : t1.handle$2(e, this._material_select_item$_value);
+        if (t1 == null ? false : t1)
+          return;
+        t1 = this._material_select_item$_selection != null && this._material_select_item$_value != null;
+        if (t1)
+          if (!this._material_select_item$_selection.isSelected$1(this._material_select_item$_value))
+            this._material_select_item$_selection.select$1(0, this._material_select_item$_value);
+          else if (this._material_select_item$_deselectOnActivate)
+            this._material_select_item$_selection.deselect$1(this._material_select_item$_value);
+      }, "call$1", "get$handleActivate", 4, 0, 18, 6],
+      onLoadCustomComponent$1: [function(ref) {
+        H.interceptedTypeCheck(ref, "$isComponentRef");
+      }, "call$1", "get$onLoadCustomComponent", 4, 0, 39],
+      itemRenderer$1: function(arg0) {
+        return this.get$itemRenderer().call$1(arg0);
+      }
+    },
+    MaterialSelectItemComponent_closure: {
+      "^": "Closure:14;$this",
+      call$0: function() {
+        var t1 = this.$this._selectionChangeStreamSub;
+        return t1 == null ? null : t1.cancel$0(0);
+      }
+    },
+    MaterialSelectItemComponent_selection_closure: {
+      "^": "Closure;$this",
+      call$1: [function(_) {
+        var t1 = this.$this;
+        H.assertSubtype(_, "$isList", [[Z.SelectionChangeRecord, H.getTypeArgumentByIndex(t1, 0)]], "$asList");
+        t1._cdRef.appView.markPathToRootAsCheckOnce$0();
+      }, null, null, 4, 0, null, 0, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [[P.List, [Z.SelectionChangeRecord, H.getTypeArgumentByIndex(this.$this, 0)]]]};
+      }
+    }
+  }], ["", "package:angular_components/material_select/shift_click_selection.dart",, X, {
+    "^": "",
+    ShiftClickSelectionMixin: {
+      "^": "Object;ShiftClickSelectionMixin__pivot,$ti",
+      set$_pivot: function(_pivot) {
+        this.ShiftClickSelectionMixin__pivot = H.assertSubtypeOfRuntimeType(_pivot, H.getTypeArgumentByIndex(this, 0));
+      },
+      handle$2: function($event, activatedValue) {
+        var t1, toggleSelection, optionValues, clickedIndex, pivotIndex;
+        if (!J.getInterceptor$(this.get$selection()).$isMultiSelectionModel || !J.getInterceptor$($event).$isMouseEvent)
+          return false;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        activatedValue = H.assertSubtypeOfRuntimeType(H.subtypeOfRuntimeTypeCast(activatedValue, t1), t1);
+        if (this.get$selection().isSelected$1(activatedValue))
+          toggleSelection = this.get$selection().get$deselect();
+        else {
+          t1 = this.get$selection();
+          toggleSelection = t1.get$select(t1);
+        }
+        if (this.ShiftClickSelectionMixin__pivot == null || !$event.shiftKey)
+          toggleSelection.call$1(activatedValue);
+        else {
+          optionValues = this.get$options(this)._flattenedList;
+          clickedIndex = (optionValues && C.JSArray_methods).indexOf$1(optionValues, activatedValue);
+          pivotIndex = C.JSArray_methods.indexOf$1(optionValues, this.ShiftClickSelectionMixin__pivot);
+          if (pivotIndex === -1)
+            H.throwExpression(P.StateError$("pivot item is no longer in the model: " + H.S(this.ShiftClickSelectionMixin__pivot)));
+          H.SubListIterable$(optionValues, H.intTypeCheck(Math.min(pivotIndex, clickedIndex)), null, H.getTypeArgumentByIndex(optionValues, 0)).take$1(0, Math.abs(pivotIndex - clickedIndex) + 1).forEach$1(0, toggleSelection);
+        }
+        this.set$_pivot(activatedValue);
+        return true;
+      }
+    }
+  }], ["", "package:angular_components/mixins/button_wrapper.dart",, U, {
+    "^": "",
+    MaterialButtonWrapper: {
+      "^": "Object;disabled:MaterialButtonWrapper_disabled>",
+      get$buttonIcon: function() {
+        var t1, t2;
+        t1 = this.MaterialButtonWrapper_icon;
+        if (t1 != null)
+          return t1;
+        t1 = this.MaterialButtonWrapper__buttonIcon;
+        if (t1 == null) {
+          t2 = this.MaterialButtonWrapper_iconName;
+          t2 = t2 != null && t2.length !== 0;
+        } else
+          t2 = false;
+        if (t2) {
+          t1 = new L.Icon(this.MaterialButtonWrapper_iconName);
+          this.MaterialButtonWrapper__buttonIcon = t1;
+        }
+        return t1;
+      }
+    }
+  }], ["", "package:angular_components/mixins/focusable_mixin.dart",, O, {
+    "^": "",
+    FocusableMixin: {
+      "^": "Object;",
+      get$onFocus: function(_) {
+        var t1 = this.FocusableMixin__onFocus;
+        return new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+      },
+      focus$0: function(_) {
+        var t1 = this.FocusableMixin__focusable;
+        if (t1 == null)
+          this.FocusableMixin__focusPending = true;
+        else
+          t1.focus$0(0);
+      },
+      handleFocus$1: function($event) {
+        this.FocusableMixin__onFocus.add$1(0, $event);
+      }
+    }
   }], ["", "package:angular_components/mixins/has_tab_index.dart",, B, {
     "^": "",
     HasTabIndex: {
@@ -17420,10 +23937,725 @@
         return t1;
       },
       _computeTabIndex$0: function() {
-        if (!true)
-          return this._hostTabIndex;
-        else
-          return "0";
+        if (this.get$disabled(this))
+          return "-1";
+        else {
+          var t1 = this.tabbable && !this.get$disabled(this) ? this._hostTabIndex : "-1";
+          if (!(t1 == null || C.JSString_methods.trim$0(t1).length === 0))
+            return this.tabbable && !this.get$disabled(this) ? this._hostTabIndex : "-1";
+          else
+            return "0";
+        }
+      }
+    }
+  }], ["", "package:angular_components/mixins/material_dropdown_base.dart",, M, {
+    "^": "",
+    DropdownHandle: {
+      "^": "Object;"
+    },
+    MaterialDropdownBase: {
+      "^": "Object;",
+      set$visible: ["super$MaterialDropdownBase$visible", function(_, value) {
+        if (value && this.MaterialDropdownBase__visible !== true)
+          this.MaterialDropdownBase__contentVisible.add$1(0, true);
+        this.MaterialDropdownBase__visible = value;
+      }],
+      onVisible$1: [function(vis) {
+        H.boolTypeCheck(vis);
+        this.MaterialDropdownBase__visibleStream.add$1(0, vis);
+        this.set$visible(0, vis);
+        if (!vis)
+          this.MaterialDropdownBase__contentVisible.add$1(0, false);
+      }, "call$1", "get$onVisible", 4, 0, 35],
+      open$0: [function(_) {
+        this.set$visible(0, true);
+      }, "call$0", "get$open", 1, 0, 1]
+    }
+  }], ["", "package:angular_components/mixins/selection_input_adapter.dart",, K, {
+    "^": "",
+    SelectionInputAdapter: {
+      "^": "Object;$ti",
+      emitSelectionChange$0: function() {
+        return;
+      },
+      set$selectionInput: function(value) {
+        var t1, t2, t3, t4, t5;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        if (H.checkSubtype(value, "$isSelectionModel", [t1], "$asSelectionModel")) {
+          this.set$selection(value);
+          return;
+        }
+        if (this.get$selection() == null) {
+          t2 = H.setRuntimeTypeInfo([], [t1]);
+          t3 = Y.ChangeRecord;
+          t4 = new H.TypeImpl(t3).get$_typeName();
+          t5 = C.Type_dynamic_0Rz.get$_typeName();
+          if (t4 !== t5)
+            t4 = new H.TypeImpl(t3).get$_typeName() === C.Type_ChangeRecord_INA.get$_typeName();
+          else
+            t4 = true;
+          this.set$selection(new Z._SingleSelectionModelImpl(Z.selection_model___defaultKeyProvider$closure(), t2, null, null, new B.ChangeNotifier(false, [t3]), t4, [t1]));
+        }
+        this.get$selection().select$1(0, H.assertSubtypeOfRuntimeType(value, t1));
+      },
+      set$optionsInput: ["super$SelectionInputAdapter$optionsInput", function(value) {
+        var t1, t2, t3;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        t2 = [t1];
+        t3 = H.checkSubtype(value, "$isSelectionOptions", t2, "$asSelectionOptions");
+        if (t3)
+          this.set$options(0, H.assertSubtype(value, "$isSelectionOptions", t2, "$asSelectionOptions"));
+        else if (H.checkSubtype(value, "$isList", [t1], "$asList")) {
+          t2 = this.get$itemRenderer();
+          t3 = H.setRuntimeTypeInfo([new F.OptionGroup(null, null, value, [t1])], [[F.OptionGroup, t1]]);
+          t1 = new R.StringSelectionOptions(-1, t2, R.string_selection_options___stringFormatSuggestion$closure(), false, true, new P._SyncBroadcastStreamController(null, null, 0, [[P.List, [F.OptionGroup, t1]]]), [t1]);
+          t1.set$optionGroups(t3);
+          t1.set$_suggestionFilter(t1.get$filterOption());
+          this.set$options(0, t1);
+        } else
+          throw H.wrapException(P.ArgumentError$("Unsupported selection options type; value must be null, SelectionOptions<" + H.TypeImpl$(t1).toString$0(0) + ">, or List<" + H.TypeImpl$(t1).toString$0(0) + ">, but is " + H.getRuntimeType(value).toString$0(0)));
+      }]
+    }
+  }], ["", "package:angular_components/mixins/track_layout_changes.dart",, F, {
+    "^": "",
+    TrackLayoutChangesMixin: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/model/a11y/active_item.dart",, O, {
+    "^": "",
+    ActiveItemModel: {
+      "^": "Object;_modelChanged,_ids,_idGenerator,0_items,0_loop,_activeIndex,$ti",
+      set$_items: function(_items) {
+        this._items = H.assertSubtype(_items, "$isList", this.$ti, "$asList");
+      },
+      set$items: function(_, itemList) {
+        var _lastActive, last;
+        H.assertSubtype(itemList, "$isList", this.$ti, "$asList");
+        if (C.ListEquality_DefaultEquality0.equals$2(itemList, this._items))
+          return;
+        this._ids.clear$0(0);
+        _lastActive = this.get$activeItem();
+        this.set$_items(P.List_List$unmodifiable(itemList, H.getTypeArgumentByIndex(this, 0)));
+        if (_lastActive != null) {
+          last = C.JSArray_methods.indexOf$1(this._items, _lastActive);
+          if (last !== -1) {
+            this._activeIndex = last;
+            return;
+          }
+        }
+        this._activeIndex = 0;
+        this._modelChanged.add$1(0, null);
+      },
+      get$activeItem: function() {
+        var t1, t2, t3;
+        t1 = this._items;
+        t2 = t1.length;
+        if (t2 === 0 || this._activeIndex === -1)
+          t1 = null;
+        else {
+          t3 = this._activeIndex;
+          if (t3 < 0 || t3 >= t2)
+            return H.ioore(t1, t3);
+          t3 = t1[t3];
+          t1 = t3;
+        }
+        return t1;
+      },
+      activateNext$0: [function() {
+        var t1, t2;
+        t1 = this._items.length;
+        if (t1 === 0)
+          this._activeIndex = -1;
+        else {
+          t2 = this._activeIndex;
+          if (t2 < t1 - 1)
+            this._activeIndex = t2 + 1;
+        }
+        this._modelChanged.add$1(0, null);
+      }, "call$0", "get$activateNext", 0, 0, 1],
+      get$peekNext: function() {
+        var t1, t2, t3;
+        t1 = this._items;
+        t2 = t1.length;
+        if (t2 !== 0 && this._activeIndex < t2 - 1) {
+          t3 = this._activeIndex + 1;
+          if (t3 < 0 || t3 >= t2)
+            return H.ioore(t1, t3);
+          return t1[t3];
+        } else
+          return;
+      },
+      activatePrevious$0: [function() {
+        if (this._items.length === 0)
+          this._activeIndex = -1;
+        else {
+          var t1 = this._activeIndex;
+          if (t1 > 0)
+            this._activeIndex = t1 - 1;
+        }
+        this._modelChanged.add$1(0, null);
+      }, "call$0", "get$activatePrevious", 0, 0, 1],
+      activateFirst$0: [function() {
+        this._activeIndex = this._items.length === 0 ? -1 : 0;
+        this._modelChanged.add$1(0, null);
+      }, "call$0", "get$activateFirst", 0, 0, 1],
+      activateLast$0: [function() {
+        var t1 = this._items.length;
+        this._activeIndex = t1 === 0 ? -1 : t1 - 1;
+        this._modelChanged.add$1(0, null);
+      }, "call$0", "get$activateLast", 0, 0, 1],
+      activate$1: function(value) {
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        this._activeIndex = C.JSArray_methods.indexOf$1(this._items, value);
+        this._modelChanged.add$1(0, null);
+      },
+      id$1: [function(_, item) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(item, H.getTypeArgumentByIndex(this, 0));
+        if (item == null)
+          return;
+        t1 = this._ids;
+        if (!t1.containsKey$1(0, item))
+          t1.$indexSet(0, item, this._idGenerator.nextId$0());
+        return t1.$index(0, item);
+      }, "call$1", "get$id", 5, 0, 91, 27]
+    }
+  }], ["", "package:angular_components/model/a11y/active_item_directive.dart",, B, {
+    "^": "",
+    ActiveItemDirective: {
+      "^": "Object;_active_item_directive$_element,_active_item_directive$_domService,_modal,_popupRef,_active,_initialized,0_visibilitySubscription,_hasHover",
+      ngOnDestroy$0: function() {
+        var t1 = this._visibilitySubscription;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        this._visibilitySubscription = null;
+      },
+      set$itemActive: function(value) {
+        if (value === this._active)
+          return;
+        this._active = value;
+        this._scrollIntoViewIfNecessary$0();
+      },
+      _scrollIntoViewIfNecessary$0: function() {
+        var t1, t2, isVisible, onVisibleChanged;
+        t1 = this._visibilitySubscription;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+        if (this._initialized && this._active && !this._hasHover) {
+          t1 = this._popupRef;
+          t2 = t1 != null;
+          if (t2)
+            isVisible = t1._popupComponent._isVisible;
+          else
+            isVisible = true;
+          if (isVisible)
+            this._scrollIntoView$0(0);
+          else {
+            if (t2) {
+              t1 = t1._popupComponent.PopupEvents_onVisibleController;
+              onVisibleChanged = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+            } else
+              onVisibleChanged = this._modal.get$onVisibleChanged();
+            this._visibilitySubscription = onVisibleChanged.listen$1(new B.ActiveItemDirective__scrollIntoViewIfNecessary_closure(this));
+          }
+        }
+      },
+      _scrollIntoView$0: function(_) {
+        this._active_item_directive$_domService.scheduleWrite$1(new B.ActiveItemDirective__scrollIntoView_closure(this));
+      },
+      onMouseLeave$0: [function(_) {
+        this._hasHover = false;
+      }, "call$0", "get$onMouseLeave", 1, 0, 1]
+    },
+    ActiveItemDirective__scrollIntoViewIfNecessary_closure: {
+      "^": "Closure:24;$this",
+      call$1: [function(isVisible) {
+        var t1, t2;
+        if (H.boolTypeCheck(isVisible)) {
+          t1 = this.$this;
+          t2 = t1._visibilitySubscription;
+          if (!(t2 == null))
+            t2.cancel$0(0);
+          if (t1._initialized && t1._active && !t1._hasHover)
+            t1._scrollIntoView$0(0);
+        }
+      }, null, null, 4, 0, null, 31, "call"]
+    },
+    ActiveItemDirective__scrollIntoView_closure: {
+      "^": "Closure:0;$this",
+      call$0: function() {
+        var options, t1, exception, hasScrollIntoViewIfNeeded;
+        try {
+          options = {};
+          options.block = "nearest";
+          options.inline = "nearest";
+          t1 = this.$this._active_item_directive$_element;
+          t1.scrollIntoView.apply(t1, [options]);
+        } catch (exception) {
+          H.unwrapException(exception);
+          t1 = this.$this._active_item_directive$_element;
+          hasScrollIntoViewIfNeeded = !!t1.scrollIntoViewIfNeeded;
+          if (hasScrollIntoViewIfNeeded)
+            t1.scrollIntoViewIfNeeded();
+          else
+            t1.scrollIntoView();
+        }
+      }
+    }
+  }], ["", "package:angular_components/model/a11y/active_item_directive.template.dart",, M, {
+    "^": "",
+    ActiveItemDirectiveNgCd: {
+      "^": "DirectiveChangeDetector;instance,0_active_item_directive_template$_expr_0,0directive,0view,0el,_hasHostChanges",
+      detectHostChanges$2: function(view, el) {
+        var currVal_0, t1;
+        currVal_0 = this.instance._active;
+        t1 = this._active_item_directive_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this.updateElemClass$3(el, "active", currVal_0);
+          this._active_item_directive_template$_expr_0 = currVal_0;
+        }
+      }
+    }
+  }], ["", "package:angular_components/model/a11y/keyboard_handler_mixin.dart",, R, {
+    "^": "",
+    KeyboardHandlerMixin: {
+      "^": "Object;",
+      onKeyPress$1: [function(_, $event) {
+        var t1, t2, t3, t4;
+        H.interceptedTypeCheck($event, "$isKeyboardEvent");
+        if ($event.keyCode === 13)
+          this._handleKeyboardTrigger$0();
+        else if (Z.isSpaceKey($event)) {
+          if (!($event == null))
+            $event.preventDefault();
+          this._handleKeyboardTrigger$0();
+        } else if ($event.charCode !== 0) {
+          this.get$itemRenderer();
+          t1 = this.get$options(this) != null && true;
+          if (t1) {
+            t1 = $event.charCode;
+            t2 = this.get$options(this);
+            t3 = this.get$itemRenderer();
+            t4 = !this.MaterialDropdownBase__visible && !J.getInterceptor$(this.get$selection()).$isMultiSelectionModel ? this.get$selection() : null;
+            this.activateOnKeyPress$5(this.activeModel, t1, t2, t3, t4);
+          }
+        }
+      }, "call$1", "get$onKeyPress", 5, 0, 5],
+      onKeyDown$1: [function(_, $event) {
+        var t1;
+        H.interceptedTypeCheck($event, "$isKeyboardEvent");
+        switch ($event.keyCode) {
+          case 38:
+            this._handleNavigationKey$2($event, this.activeModel.get$activatePrevious());
+            break;
+          case 40:
+            this._handleNavigationKey$2($event, this.activeModel.get$activateNext());
+            break;
+          case 37:
+            t1 = this.activeModel;
+            if (this.KeyboardHandlerMixin_isRtl === true)
+              this._handleNavigationKey$2($event, t1.get$activateNext());
+            else
+              this._handleNavigationKey$2($event, t1.get$activatePrevious());
+            break;
+          case 39:
+            t1 = this.activeModel;
+            if (this.KeyboardHandlerMixin_isRtl === true)
+              this._handleNavigationKey$2($event, t1.get$activatePrevious());
+            else
+              this._handleNavigationKey$2($event, t1.get$activateNext());
+            break;
+          case 33:
+            this._handleNavigationKey$2($event, this.activeModel.get$activateFirst());
+            break;
+          case 34:
+            this._handleNavigationKey$2($event, this.activeModel.get$activateLast());
+            break;
+          case 36:
+            break;
+          case 35:
+            break;
+          case 8:
+            break;
+          case 46:
+            break;
+        }
+      }, "call$1", "get$onKeyDown", 5, 0, 5],
+      onKeyUp$1: [function(_, $event) {
+        H.interceptedTypeCheck($event, "$isKeyboardEvent").keyCode;
+      }, "call$1", "get$onKeyUp", 5, 0, 5]
+    }
+  }], ["", "package:angular_components/model/collection/labeled_list.dart",, G, {
+    "^": "",
+    LabeledList: {
+      "^": "DelegatingList;$ti"
+    }
+  }], ["", "package:angular_components/model/selection/selection_container.dart",, L, {
+    "^": "",
+    SelectionContainer: {
+      "^": "Object;0_selection,0_options,0_itemRenderer,$ti",
+      set$_selection: function(_selection) {
+        this._selection = H.assertSubtype(_selection, "$isSelectionModel", this.$ti, "$asSelectionModel");
+      },
+      set$_options: function(_options) {
+        this._options = H.assertSubtype(_options, "$isSelectionOptions", this.$ti, "$asSelectionOptions");
+      },
+      set$_itemRenderer: function(_itemRenderer) {
+        this._itemRenderer = H.functionTypeCheck(_itemRenderer, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(this, 0)]});
+      },
+      get$selection: function() {
+        return this._selection;
+      },
+      set$selection: ["super$SelectionContainer$selection", function(value) {
+        this.set$_selection(H.assertSubtype(value, "$isSelectionModel", this.$ti, "$asSelectionModel"));
+      }],
+      get$options: function(_) {
+        return this._options;
+      },
+      set$options: ["super$SelectionContainer$options", function(_, value) {
+        this.set$_options(H.assertSubtype(value, "$isSelectionOptions", this.$ti, "$asSelectionOptions"));
+      }],
+      get$itemRenderer: function() {
+        return this._itemRenderer;
+      },
+      set$itemRenderer: ["super$SelectionContainer$itemRenderer", function(value) {
+        this.set$_itemRenderer(H.functionTypeCheck(value, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(this, 0)]}));
+      }]
+    },
+    SelectionItem: {
+      "^": "Object;"
+    }
+  }], ["angular_components.model.selection.selection_model", "package:angular_components/model/selection/selection_model.dart",, Z, {
+    "^": "",
+    _defaultKeyProvider: [function(o) {
+      return o;
+    }, "call$1", "selection_model___defaultKeyProvider$closure", 4, 0, 164, 12],
+    CastIterable: {
+      "^": "Object;"
+    },
+    SelectionChangeRecord: {
+      "^": "ChangeRecord;$ti"
+    },
+    _MultiSelectionModelImpl: {
+      "^": "__MultiSelectionModelImpl_Observable_SelectionChangeNotifier_CastIterable;selectedValues<,SelectionChangeNotifier__selectionChangeController,SelectionChangeNotifier__selectionChangeRecords,_observable$_delegate,_isNotGeneric,$ti",
+      deselect$1: [function(value) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$(null));
+        t1 = this.selectedValues;
+        if (t1.remove$1(0, value)) {
+          if (t1._collection$_length === 0) {
+            t1 = P.bool;
+            this.notifyPropertyChange$1$3(C.Symbol_isEmpty, false, true, t1);
+            this.notifyPropertyChange$1$3(C.Symbol_isNotEmpty, true, false, t1);
+          }
+          this.notifySelectionChange$1$removed(H.setRuntimeTypeInfo([value], this.$ti));
+          return true;
+        }
+        return false;
+      }, "call$1", "get$deselect", 4, 0, 9],
+      select$1: [function(_, value) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$(null));
+        t1 = this.selectedValues;
+        if (t1.add$1(0, value)) {
+          if (t1._collection$_length === 1) {
+            t1 = P.bool;
+            this.notifyPropertyChange$1$3(C.Symbol_isEmpty, true, false, t1);
+            this.notifyPropertyChange$1$3(C.Symbol_isNotEmpty, false, true, t1);
+          }
+          this.notifySelectionChange$1$added(H.setRuntimeTypeInfo([value], this.$ti));
+          return true;
+        } else
+          return false;
+      }, "call$1", "get$select", 5, 0, 9],
+      isSelected$1: [function(value) {
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$(null));
+        return this.selectedValues.contains$1(0, value);
+      }, "call$1", "get$isSelected", 4, 0, 9, 1],
+      get$isEmpty: function(_) {
+        return this.selectedValues._collection$_length === 0;
+      },
+      get$isNotEmpty: function(_) {
+        return this.selectedValues._collection$_length !== 0;
+      },
+      $isSelectionModel: 1,
+      $isMultiSelectionModel: 1,
+      $asObservable: function($T) {
+        return [Y.ChangeRecord];
+      },
+      static: {
+        _MultiSelectionModelImpl$: function(initialSelection, keyProvider, $T) {
+          var t1, t2, t3, t4;
+          t1 = P.LinkedHashSet_LinkedHashSet(new Z._MultiSelectionModelImpl_closure(keyProvider, $T), new Z._MultiSelectionModelImpl_closure0(keyProvider, $T), null, $T);
+          t1.addAll$1(0, initialSelection);
+          t2 = Y.ChangeRecord;
+          t3 = new H.TypeImpl(t2).get$_typeName();
+          t4 = C.Type_dynamic_0Rz.get$_typeName();
+          if (t3 !== t4)
+            t3 = new H.TypeImpl(t2).get$_typeName() === C.Type_ChangeRecord_INA.get$_typeName();
+          else
+            t3 = true;
+          return new Z._MultiSelectionModelImpl(t1, null, null, new B.ChangeNotifier(false, [t2]), t3, [$T]);
+        }
+      }
+    },
+    _MultiSelectionModelImpl_closure: {
+      "^": "Closure;keyProvider,T",
+      call$2: [function(a, b) {
+        var t1 = this.T;
+        H.assertSubtypeOfRuntimeType(a, t1);
+        H.assertSubtypeOfRuntimeType(b, t1);
+        t1 = this.keyProvider;
+        return J.$eq$(t1.call$1(a), t1.call$1(b));
+      }, null, null, 8, 0, null, 13, 15, "call"],
+      $signature: function() {
+        var t1 = this.T;
+        return {func: 1, ret: P.bool, args: [t1, t1]};
+      }
+    },
+    _MultiSelectionModelImpl_closure0: {
+      "^": "Closure;keyProvider,T",
+      call$1: [function(o) {
+        return J.get$hashCode$(this.keyProvider.call$1(H.assertSubtypeOfRuntimeType(o, this.T)));
+      }, null, null, 4, 0, null, 12, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.int, args: [this.T]};
+      }
+    },
+    SelectionChangeNotifier: {
+      "^": "Object;SelectionChangeNotifier__selectionChangeController,SelectionChangeNotifier__selectionChangeRecords,$ti",
+      set$_selectionChangeController: function(_selectionChangeController) {
+        this.SelectionChangeNotifier__selectionChangeController = H.assertSubtype(_selectionChangeController, "$isStreamController", [[P.List, [Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]]], "$asStreamController");
+      },
+      set$_selectionChangeRecords: function(_selectionChangeRecords) {
+        this.SelectionChangeNotifier__selectionChangeRecords = H.assertSubtype(_selectionChangeRecords, "$isList", [[Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]], "$asList");
+      },
+      deliverSelectionChanges$0: [function() {
+        if (this.get$hasSelectionObservers()) {
+          var t1 = this.SelectionChangeNotifier__selectionChangeRecords;
+          t1 = t1 != null && t1.length !== 0;
+        } else
+          t1 = false;
+        if (t1) {
+          t1 = this.SelectionChangeNotifier__selectionChangeRecords;
+          this.set$_selectionChangeRecords(null);
+          this.SelectionChangeNotifier__selectionChangeController.add$1(0, new P.UnmodifiableListView(t1, [[Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]]));
+          return true;
+        } else
+          return false;
+      }, "call$0", "get$deliverSelectionChanges", 0, 0, 23],
+      notifySelectionChange$2$added$removed: function(added, removed) {
+        var t1, t2, t3;
+        t1 = H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0);
+        t2 = [t1];
+        H.assertSubtype(added, "$isIterable", t2, "$asIterable");
+        H.assertSubtype(removed, "$isIterable", t2, "$asIterable");
+        if (this.get$hasSelectionObservers()) {
+          t3 = [t1];
+          added = H.assertSubtype(new P.UnmodifiableListView(added, t3), "$isIterable", t2, "$asIterable");
+          removed = H.assertSubtype(new P.UnmodifiableListView(removed, t3), "$isIterable", t2, "$asIterable");
+          if (this.SelectionChangeNotifier__selectionChangeRecords == null) {
+            this.set$_selectionChangeRecords(H.setRuntimeTypeInfo([], [[Z.SelectionChangeRecord, t1]]));
+            P.scheduleMicrotask(this.get$deliverSelectionChanges());
+          }
+          t2 = this.SelectionChangeNotifier__selectionChangeRecords;
+          (t2 && C.JSArray_methods).add$1(t2, new Z._SelectionChangeRecordImpl(added, removed, [t1]));
+        }
+      },
+      notifySelectionChange$1$removed: function(removed) {
+        return this.notifySelectionChange$2$added$removed(C.List_empty1, removed);
+      },
+      notifySelectionChange$1$added: function(added) {
+        return this.notifySelectionChange$2$added$removed(added, C.List_empty1);
+      },
+      get$hasSelectionObservers: function() {
+        var t1 = this.SelectionChangeNotifier__selectionChangeController;
+        return t1 != null && t1._firstSubscription != null;
+      },
+      get$selectionChanges: function() {
+        if (this.SelectionChangeNotifier__selectionChangeController == null)
+          this.set$_selectionChangeController(new P._SyncBroadcastStreamController(null, null, 0, [[P.List, [Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]]]));
+        var t1 = this.SelectionChangeNotifier__selectionChangeController;
+        t1.toString;
+        return new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+      }
+    },
+    _SelectionChangeRecordImpl: {
+      "^": "ChangeRecord;added<,removed,$ti",
+      toString$0: function(_) {
+        return "SelectionChangeRecord{added: " + H.S(this.added) + ", removed: " + H.S(this.removed) + "}";
+      },
+      $isSelectionChangeRecord: 1
+    },
+    _SingleSelectionModelImpl: {
+      "^": "__SingleSelectionModelImpl_Observable_SelectionChangeNotifier_CastIterable;_keyOf,_selectedValues,0_selectedKey,SelectionChangeNotifier__selectionChangeController,SelectionChangeNotifier__selectionChangeRecords,_observable$_delegate,_isNotGeneric,$ti",
+      select$1: [function(_, value) {
+        var newKey, t1, previousValue, removedItems;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$notNull("value"));
+        newKey = this._keyOf.call$1(value);
+        if (J.$eq$(newKey, this._selectedKey))
+          return false;
+        t1 = this._selectedValues;
+        previousValue = t1.length === 0 ? null : C.JSArray_methods.get$first(t1);
+        this._selectedKey = newKey;
+        C.JSArray_methods.set$length(t1, 0);
+        C.JSArray_methods.add$1(t1, value);
+        if (previousValue == null) {
+          t1 = P.bool;
+          this.notifyPropertyChange$1$3(C.Symbol_isEmpty, true, false, t1);
+          this.notifyPropertyChange$1$3(C.Symbol_isNotEmpty, false, true, t1);
+          removedItems = C.List_empty1;
+        } else
+          removedItems = H.setRuntimeTypeInfo([previousValue], this.$ti);
+        this.notifySelectionChange$2$added$removed(H.setRuntimeTypeInfo([value], this.$ti), removedItems);
+        return true;
+      }, "call$1", "get$select", 5, 0, 9],
+      deselect$1: [function(value) {
+        var t1, previousValue, removedItems;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$notNull("value"));
+        t1 = this._selectedValues;
+        if (t1.length === 0 || !J.$eq$(this._keyOf.call$1(value), this._selectedKey))
+          return false;
+        previousValue = t1.length === 0 ? null : C.JSArray_methods.get$first(t1);
+        this._selectedKey = null;
+        C.JSArray_methods.set$length(t1, 0);
+        if (previousValue != null) {
+          t1 = P.bool;
+          this.notifyPropertyChange$1$3(C.Symbol_isEmpty, false, true, t1);
+          this.notifyPropertyChange$1$3(C.Symbol_isNotEmpty, true, false, t1);
+          removedItems = H.setRuntimeTypeInfo([previousValue], this.$ti);
+        } else
+          removedItems = C.List_empty1;
+        this.notifySelectionChange$2$added$removed(H.setRuntimeTypeInfo([], this.$ti), removedItems);
+        return true;
+      }, "call$1", "get$deselect", 4, 0, 9],
+      isSelected$1: [function(value) {
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        if (value == null)
+          throw H.wrapException(P.ArgumentError$notNull("value"));
+        return J.$eq$(this._keyOf.call$1(value), this._selectedKey);
+      }, "call$1", "get$isSelected", 4, 0, 9, 1],
+      get$isEmpty: function(_) {
+        return this._selectedValues.length === 0;
+      },
+      get$isNotEmpty: function(_) {
+        return this._selectedValues.length !== 0;
+      },
+      get$selectedValues: function() {
+        return this._selectedValues;
+      },
+      $isSelectionModel: 1,
+      $asObservable: function($T) {
+        return [Y.ChangeRecord];
+      }
+    },
+    __MultiSelectionModelImpl_Observable_SelectionChangeNotifier: {
+      "^": "Observable+SelectionChangeNotifier;SelectionChangeNotifier__selectionChangeController,SelectionChangeNotifier__selectionChangeRecords",
+      set$_selectionChangeController: function(_selectionChangeController) {
+        this.SelectionChangeNotifier__selectionChangeController = H.assertSubtype(_selectionChangeController, "$isStreamController", [[P.List, [Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]]], "$asStreamController");
+      },
+      set$_selectionChangeRecords: function(_selectionChangeRecords) {
+        this.SelectionChangeNotifier__selectionChangeRecords = H.assertSubtype(_selectionChangeRecords, "$isList", [[Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]], "$asList");
+      }
+    },
+    __MultiSelectionModelImpl_Observable_SelectionChangeNotifier_CastIterable: {
+      "^": "__MultiSelectionModelImpl_Observable_SelectionChangeNotifier+CastIterable;"
+    },
+    __SingleSelectionModelImpl_Observable_SelectionChangeNotifier: {
+      "^": "Observable+SelectionChangeNotifier;SelectionChangeNotifier__selectionChangeController,SelectionChangeNotifier__selectionChangeRecords",
+      set$_selectionChangeController: function(_selectionChangeController) {
+        this.SelectionChangeNotifier__selectionChangeController = H.assertSubtype(_selectionChangeController, "$isStreamController", [[P.List, [Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]]], "$asStreamController");
+      },
+      set$_selectionChangeRecords: function(_selectionChangeRecords) {
+        this.SelectionChangeNotifier__selectionChangeRecords = H.assertSubtype(_selectionChangeRecords, "$isList", [[Z.SelectionChangeRecord, H.getRuntimeTypeArgument(this, "SelectionChangeNotifier", 0)]], "$asList");
+      }
+    },
+    __SingleSelectionModelImpl_Observable_SelectionChangeNotifier_CastIterable: {
+      "^": "__SingleSelectionModelImpl_Observable_SelectionChangeNotifier+CastIterable;"
+    }
+  }], ["angular_components.model.selection.selection_options", "package:angular_components/model/selection/selection_options.dart",, F, {
+    "^": "",
+    OptionGroup: {
+      "^": "LabeledList;_emptyLabelFcn,_labelFcn,_base,$ti",
+      static: {
+        OptionGroup$withLabel: function(items, label, emptyLabel, $T) {
+          return new F.OptionGroup(null, null, items, [$T]);
+        }
+      }
+    },
+    GroupedOptions: {
+      "^": "Object;$ti",
+      $isDisposable: 1
+    },
+    SelectionOptions: {
+      "^": "GroupedOptions;_selection_options$_controller,0_flattenedList,0_optionGroups,$ti",
+      set$_flattenedList: function(_flattenedList) {
+        this._flattenedList = H.assertSubtype(_flattenedList, "$isList", this.$ti, "$asList");
+      },
+      set$_optionGroups: function(_optionGroups) {
+        this._optionGroups = H.assertSubtype(_optionGroups, "$isList", [[F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]], "$asList");
+      },
+      set$optionGroups: ["super$SelectionOptions$optionGroups", function(value) {
+        var t1, t2, t3;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        H.assertSubtype(value, "$isList", [[F.OptionGroup, t1]], "$asList");
+        if (this._optionGroups !== value) {
+          this.set$_optionGroups(value);
+          t2 = this._optionGroups;
+          if (t2 != null) {
+            t3 = H.getTypeArgumentByIndex(t2, 0);
+            t1 = P.List_List$from(new H.ExpandIterable(t2, H.functionTypeCheck(new F.SelectionOptions_optionGroups_closure(this), {func: 1, ret: [P.Iterable, t1], args: [t3]}), [t3, t1]), true, t1);
+          } else
+            t1 = H.setRuntimeTypeInfo([], this.$ti);
+          this.set$_flattenedList(t1);
+          this._selection_options$_controller.add$1(0, this._optionGroups);
+        }
+      }]
+    },
+    SelectionOptions_optionGroups_closure: {
+      "^": "Closure;$this",
+      call$1: function(i) {
+        return H.assertSubtype(i, "$isOptionGroup", [H.getTypeArgumentByIndex(this.$this, 0)], "$asOptionGroup");
+      },
+      $signature: function() {
+        var t1 = H.getTypeArgumentByIndex(this.$this, 0);
+        return {func: 1, ret: [F.OptionGroup, t1], args: [[F.OptionGroup, t1]]};
+      }
+    }
+  }], ["", "package:angular_components/model/selection/string_selection_options.dart",, R, {
+    "^": "",
+    _stringFormatSuggestion: [function(value) {
+      H.stringTypeCheck(value);
+      value.toString;
+      return H.stringReplaceAllUnchecked(value, " ", "").toLowerCase();
+    }, "call$1", "string_selection_options___stringFormatSuggestion$closure", 4, 0, 13, 1],
+    StringSelectionOptions: {
+      "^": "SelectionOptions;0_currentQuery,_currentLimit,0_string_selection_options$_optionGroups,_toFilterableString,0_suggestionFilter,_sanitizeString,_shouldSort,_shouldFilterEmpty,_selection_options$_controller,0_flattenedList,0_optionGroups,$ti",
+      set$_string_selection_options$_optionGroups: function(_optionGroups) {
+        this._string_selection_options$_optionGroups = H.assertSubtype(_optionGroups, "$isList", [[F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]], "$asList");
+      },
+      set$_suggestionFilter: function(_suggestionFilter) {
+        this._suggestionFilter = H.functionTypeCheck(_suggestionFilter, {func: 1, ret: P.bool, args: [H.getTypeArgumentByIndex(this, 0), P.String]});
+      },
+      filterOption$2: [function(option, filterQuery) {
+        H.assertSubtypeOfRuntimeType(option, H.getTypeArgumentByIndex(this, 0));
+        H.stringTypeCheck(filterQuery);
+        return J.contains$1$asx(this._sanitizeString.call$1(this._toFilterableString.call$1(option)), filterQuery);
+      }, "call$2", "get$filterOption", 8, 0, 93, 60, 61],
+      set$optionGroups: function(value) {
+        H.assertSubtype(value, "$isList", [[F.OptionGroup, H.getTypeArgumentByIndex(this, 0)]], "$asList");
+        this.set$_string_selection_options$_optionGroups(value);
+        this.super$SelectionOptions$optionGroups(value);
       }
     }
   }], ["", "package:angular_components/model/ui/has_factory.dart",, O, {
@@ -17433,6 +24665,15 @@
     }
   }], ["", "package:angular_components/model/ui/has_renderer.dart",, G, {
     "^": "",
+    defaultItemRenderer: [function(value) {
+      return H.S(value);
+    }, "call$1", "has_renderer__defaultItemRenderer$closure", 4, 0, 28, 1],
+    _nullRenderer: [function(value) {
+      return H.throwExpression(P.StateError$("nullRenderer should never be called"));
+    }, "call$1", "has_renderer___nullRenderer$closure", 4, 0, 28, 1],
+    HasRenderer: {
+      "^": "Object;"
+    },
     RendersValue: {
       "^": "Object;$ti"
     }
@@ -17440,6 +24681,1005 @@
     "^": "",
     Icon: {
       "^": "Object;name>"
+    }
+  }], ["", "package:angular_components/model/ui/template_support.dart",, T, {
+    "^": "",
+    closure: {
+      "^": "Closure:94;",
+      call$2: [function(index, _) {
+        return H.numTypeCheck(index);
+      }, null, null, 8, 0, null, 23, 0, "call"]
+    }
+  }], ["", "package:angular_components/src/laminate/overlay/overlay_ref.dart",, B, {
+    "^": "",
+    OverlayRef: {
+      "^": "Object;state,containerElement,overlayElement,_asyncApplyState,_overlay_ref$_asyncMeasureSize,_delegatePortalHost,_runOutsideAngular,_lastVisible,0_onVisibleController,0_stateUpdateListener",
+      measureSizeChanges$0: function() {
+        var $async$measureSizeChanges$0 = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+          switch ($async$errorCode) {
+            case 2:
+              $async$next = $async$nextWhenCanceled;
+              $async$goto = $async$next.pop();
+              break;
+            case 1:
+              $async$currentError = $async$result;
+              $async$goto = $async$handler;
+          }
+          while (true)
+            switch ($async$goto) {
+              case 0:
+                // Function start
+                t1 = $async$self.state;
+                if (t1._visibility === C.Visibility_None_display_none)
+                  t1.set$visibility(0, C.Visibility_Hidden_visibility_hidden);
+                $async$goto = 3;
+                return P._asyncStarHelper($async$self._applyChanges$0(), $async$measureSizeChanges$0, $async$controller);
+              case 3:
+                // returning from await.
+                $async$goto = 4;
+                $async$nextWhenCanceled = [1];
+                return P._asyncStarHelper(P._IterationMarker_yieldStar(H.subtypeCast($async$self._runOutsideAngular.call$1(new B.OverlayRef_measureSizeChanges_closure($async$self)), "$isStream", [[P.Rectangle, P.num]], "$asStream")), $async$measureSizeChanges$0, $async$controller);
+              case 4:
+                // after yield
+              case 1:
+                // return
+                return P._asyncStarHelper(null, 0, $async$controller);
+              case 2:
+                // rethrow
+                return P._asyncStarHelper($async$currentError, 1, $async$controller);
+            }
+        });
+        var $async$goto = 0,
+          $async$controller = P._makeAsyncStarStreamController($async$measureSizeChanges$0, [P.Rectangle, P.num]),
+          $async$nextWhenCanceled, $async$handler = 2, $async$currentError, $async$next = [], $async$self = this, t1;
+        return P._streamOfController($async$controller);
+      },
+      dispose$0: [function() {
+        C.DivElement_methods.remove$0(this.overlayElement);
+        var t1 = this._onVisibleController;
+        if (t1 != null)
+          t1.close$0(0);
+        this._stateUpdateListener.cancel$0(0);
+      }, "call$0", "get$dispose", 0, 0, 1],
+      _applyChanges$0: function() {
+        var t1, t2, t3;
+        t1 = this._lastVisible;
+        t2 = this.state;
+        t3 = t2._visibility !== C.Visibility_None_display_none;
+        if (t1 !== t3) {
+          this._lastVisible = t3;
+          t1 = this._onVisibleController;
+          if (t1 != null)
+            t1.add$1(0, t3);
+        }
+        return this._asyncApplyState.call$2(t2, this.overlayElement);
+      },
+      OverlayRef$7$state: function(_asyncApplyState, _asyncMeasureSize, _delegatePortalHost, containerElement, overlayElement, _runOutsideAngular, state) {
+        var t1, t2;
+        t1 = this.state._asyncScheduler;
+        t2 = t1._onUpdateStreamController;
+        if (t2 == null) {
+          t2 = new P._SyncBroadcastStreamController(null, null, 0, [null]);
+          t1._onUpdateStreamController = t2;
+          t1 = t2;
+        } else
+          t1 = t2;
+        this._stateUpdateListener = new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(new B.OverlayRef_closure(this));
+      },
+      $isPortalHost: 1,
+      $isDisposable: 1,
+      static: {
+        OverlayRef__isEqualSize: [function(a, b) {
+          var t1, t2;
+          t1 = [P.num];
+          H.assertSubtype(a, "$isRectangle", t1, "$asRectangle");
+          H.assertSubtype(b, "$isRectangle", t1, "$asRectangle");
+          t1 = J.getInterceptor$x(a);
+          t2 = J.getInterceptor$x(b);
+          return t1.get$width(a) == t2.get$width(b) && t1.get$height(a) == t2.get$height(b);
+        }, "call$2", "overlay_ref_OverlayRef__isEqualSize$closure", 8, 0, 42],
+        OverlayRef$: function(_asyncApplyState, _asyncMeasureSize, _delegatePortalHost, containerElement, overlayElement, _runOutsideAngular, state) {
+          var t1 = new B.OverlayRef(Z.MutableOverlayState_MutableOverlayState$from(state), containerElement, overlayElement, _asyncApplyState, _asyncMeasureSize, _delegatePortalHost, _runOutsideAngular, false);
+          t1.OverlayRef$7$state(_asyncApplyState, _asyncMeasureSize, _delegatePortalHost, containerElement, overlayElement, _runOutsideAngular, state);
+          return t1;
+        }
+      }
+    },
+    OverlayRef_measureSizeChanges_closure: {
+      "^": "Closure:95;$this",
+      call$0: [function() {
+        var t1 = this.$this;
+        return t1._overlay_ref$_asyncMeasureSize.call$2$track(t1.overlayElement, true).distinct$1(B.overlay_ref_OverlayRef__isEqualSize$closure());
+      }, null, null, 0, 0, null, "call"]
+    },
+    OverlayRef_closure: {
+      "^": "Closure:96;$this",
+      call$1: [function(_) {
+        return this.$this._applyChanges$0();
+      }, null, null, 4, 0, null, 0, "call"]
+    }
+  }], ["", "package:angular_components/src/laminate/overlay/overlay_service.dart",, X, {
+    "^": "",
+    OverlayService: {
+      "^": "Object;_overlay_service$_useDomSynchronously,_overlay_service$_ngZone,_renderService",
+      _measurePane$2$track: [function(pane, track) {
+        return this._renderService.measureSize$3$sync$track(pane, this._overlay_service$_useDomSynchronously, true);
+      }, function(pane) {
+        return this._measurePane$2$track(pane, false);
+      }, "_measurePane$1", "call$2$track", "call$1", "get$_measurePane", 4, 3, 41]
+    }
+  }], ["", "package:angular_components/src/laminate/overlay/overlay_state.dart",, Z, {
+    "^": "",
+    _stateEquals: function(a, b) {
+      var t1;
+      if (a === b)
+        return true;
+      a.get$captureEvents();
+      b.get$captureEvents();
+      if (a.get$left(a) == b.get$left(b))
+        if (a.get$top(a) == b.get$top(b)) {
+          a.get$right(a);
+          b.get$right(b);
+          a.get$bottom(a);
+          b.get$bottom(b);
+          a.get$width(a);
+          b.get$width(b);
+          if (a.get$minWidth(a) == b.get$minWidth(b)) {
+            a.get$height(a);
+            b.get$height(b);
+            a.get$zIndex(a);
+            b.get$zIndex(b);
+            a.get$position(a);
+            b.get$position(b);
+            t1 = true;
+          } else
+            t1 = false;
+        } else
+          t1 = false;
+      else
+        t1 = false;
+      return t1;
+    },
+    _stateHashCode: function(a) {
+      a.get$captureEvents();
+      return X.hashObjects([false, a.get$left(a), a.get$top(a), a.get$right(a), a.get$bottom(a), a.get$width(a), a.get$minWidth(a), a.get$height(a), a.get$zIndex(a), a.get$position(a)]);
+    },
+    OverlayState: {
+      "^": "Object;"
+    },
+    _ImmutableOverlayState: {
+      "^": "Object;captureEvents<,left>,top>,right>,bottom>,width>,minWidth>,height>,visibility>,zIndex>,position>",
+      $eq: function(_, o) {
+        if (o == null)
+          return false;
+        return !!J.getInterceptor$(o).$isOverlayState && Z._stateEquals(this, o);
+      },
+      get$hashCode: function(_) {
+        return Z._stateHashCode(this);
+      },
+      toString$0: function(_) {
+        return "ImmutableOverlayState " + P.MapBase_mapToString(P.LinkedHashMap_LinkedHashMap$_literal(["captureEvents", false, "left", this.left, "top", this.top, "right", this.right, "bottom", this.bottom, "width", this.width, "height", this.height, "visibility", this.visibility, "zIndex", this.zIndex, "position", this.position], P.String, P.Object));
+      },
+      $isOverlayState: 1
+    },
+    MutableOverlayState: {
+      "^": "Object;_asyncScheduler,0_captureEvents,0_left,0_top,0_right,0_bottom,0_overlay_state$_width,0_minWidth,0_overlay_state$_height,0_overlay_state$_zIndex,0_visibility,0_overlay_state$_position",
+      $eq: function(_, o) {
+        if (o == null)
+          return false;
+        return !!J.getInterceptor$(o).$isOverlayState && Z._stateEquals(this, o);
+      },
+      get$hashCode: function(_) {
+        return Z._stateHashCode(this);
+      },
+      get$captureEvents: function() {
+        return false;
+      },
+      get$left: function(_) {
+        return this._left;
+      },
+      set$left: function(_, left) {
+        if (this._left !== left) {
+          this._left = left;
+          this._asyncScheduler.scheduleUpdate$0();
+        }
+      },
+      get$top: function(_) {
+        return this._top;
+      },
+      set$top: function(_, $top) {
+        if (this._top !== $top) {
+          this._top = $top;
+          this._asyncScheduler.scheduleUpdate$0();
+        }
+      },
+      get$right: function(_) {
+        return this._right;
+      },
+      get$bottom: function(_) {
+        return this._bottom;
+      },
+      get$width: function(_) {
+        return this._overlay_state$_width;
+      },
+      get$minWidth: function(_) {
+        return this._minWidth;
+      },
+      get$height: function(_) {
+        return this._overlay_state$_height;
+      },
+      get$zIndex: function(_) {
+        return this._overlay_state$_zIndex;
+      },
+      get$visibility: function(_) {
+        return this._visibility;
+      },
+      set$visibility: function(_, visibility) {
+        if (this._visibility !== visibility) {
+          this._visibility = visibility;
+          this._asyncScheduler.scheduleUpdate$0();
+        }
+      },
+      get$position: function(_) {
+        return this._overlay_state$_position;
+      },
+      toString$0: function(_) {
+        return "MutableOverlayState " + P.MapBase_mapToString(P.LinkedHashMap_LinkedHashMap$_literal(["captureEvents", false, "left", this._left, "top", this._top, "right", this._right, "bottom", this._bottom, "width", this._overlay_state$_width, "minWidth", this._minWidth, "height", this._overlay_state$_height, "zIndex", this._overlay_state$_zIndex, "visibility", this._visibility, "position", this._overlay_state$_position], P.String, P.Object));
+      },
+      $isOverlayState: 1,
+      static: {
+        MutableOverlayState_MutableOverlayState$from: function(other) {
+          return Z.MutableOverlayState$(other.bottom, false, other.height, other.left, other.minWidth, other.position, other.right, other.top, other.visibility, other.width, other.zIndex);
+        },
+        MutableOverlayState$: function(bottom, $captureEvents, height, left, minWidth, position, right, $top, visibility, width, zIndex) {
+          var t1 = new Z.MutableOverlayState(new Z.AsyncUpdateScheduler(null, false));
+          t1._captureEvents = false;
+          t1._left = left;
+          t1._top = $top;
+          t1._right = right;
+          t1._bottom = bottom;
+          t1._overlay_state$_width = width;
+          t1._minWidth = minWidth;
+          t1._overlay_state$_height = height;
+          t1._overlay_state$_zIndex = zIndex;
+          t1._visibility = visibility;
+          return t1;
+        }
+      }
+    }
+  }], ["", "package:angular_components/src/laminate/overlay/render/overlay_dom_render_service.dart",, K, {
+    "^": "",
+    OverlayDomRenderService: {
+      "^": "Object;containerElement,_containerName,_domRuler,_overlay_dom_render_service$_domService,_imperativeViewUtils,_useDomSynchronously,_overlay_dom_render_service$_useRepositionLoop,_overlay_dom_render_service$_zIndexer,0_lastZIndex,_uniqueId",
+      applyState$2: [function(state, pane) {
+        return this.applyState$body$OverlayDomRenderService(H.interceptedTypeCheck(state, "$isOverlayState"), H.interceptedTypeCheck(pane, "$isHtmlElement"));
+      }, "call$2", "get$applyState", 8, 0, 98, 62, 63],
+      applyState$body$OverlayDomRenderService: function(state, pane) {
+        var $async$goto = 0,
+          $async$completer = P._makeAsyncAwaitCompleter(null),
+          $async$returnValue, $async$self = this;
+        var $async$applyState$2 = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+          if ($async$errorCode === 1)
+            return P._asyncRethrow($async$result, $async$completer);
+          while (true)
+            switch ($async$goto) {
+              case 0:
+                // Function start
+                if (!$async$self._useDomSynchronously) {
+                  $async$returnValue = $async$self._overlay_dom_render_service$_domService.onWrite$0(0).then$1$1(new K.OverlayDomRenderService_applyState_closure($async$self, state, pane), null);
+                  // goto return
+                  $async$goto = 1;
+                  break;
+                } else
+                  $async$self.applyStateSync$2(state, pane);
+              case 1:
+                // return
+                return P._asyncReturn($async$returnValue, $async$completer);
+            }
+        });
+        return P._asyncStartSync($async$applyState$2, $async$completer);
+      },
+      applyStateSync$2: function(state, pane) {
+        var cssClasses, t1, t2, t3, t4, t5, t6, t7, t8;
+        cssClasses = H.setRuntimeTypeInfo([], [P.String]);
+        state.get$captureEvents();
+        if (state.get$visibility(state) === C.Visibility_Visible_null_null)
+          C.JSArray_methods.add$1(cssClasses, "visible");
+        t1 = this._domRuler;
+        t2 = state.get$width(state);
+        t3 = state.get$height(state);
+        t4 = state.get$top(state);
+        t5 = state.get$left(state);
+        t6 = state.get$bottom(state);
+        t7 = state.get$right(state);
+        t8 = state.get$visibility(state);
+        t1.updateSync$11$bottom$cssClasses$height$left$position$right$top$useCssTransform$visibility$width(pane, t6, cssClasses, t3, t5, state.get$position(state), t7, t4, !this._overlay_dom_render_service$_useRepositionLoop, t8, t2);
+        if (state.get$minWidth(state) != null) {
+          t2 = pane.style;
+          t3 = H.S(state.get$minWidth(state)) + "px";
+          t2.minWidth = t3;
+        }
+        state.get$zIndex(state);
+        if (pane.parentElement != null) {
+          t2 = this._lastZIndex;
+          this._overlay_dom_render_service$_zIndexer.toString;
+          if (t2 != self.acxZIndex) {
+            t2 = J.$add$ansx(self.acxZIndex, 1);
+            self.acxZIndex = t2;
+            this._lastZIndex = t2;
+          }
+          t1.updateSync$2$zIndex(pane.parentElement, this._lastZIndex);
+        }
+      },
+      measureSize$3$sync$track: function(pane, sync, track) {
+        var t1 = this._domRuler.track$1(0, pane);
+        return t1;
+      },
+      measureContainer$0: function() {
+        var t1, t2;
+        t1 = [P.Rectangle, P.num];
+        if (!this._useDomSynchronously)
+          return this._overlay_dom_render_service$_domService.onWrite$0(0).then$1$1(new K.OverlayDomRenderService_measureContainer_closure(this), t1);
+        else {
+          t2 = this.containerElement.getBoundingClientRect();
+          t1 = new P._Future(0, $.Zone__current, [t1]);
+          t1._asyncComplete$1(t2);
+          return t1;
+        }
+      }
+    },
+    OverlayDomRenderService_applyState_closure: {
+      "^": "Closure:3;$this,state,pane",
+      call$1: [function(_) {
+        this.$this.applyStateSync$2(this.state, this.pane);
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    OverlayDomRenderService_measureContainer_closure: {
+      "^": "Closure:99;$this",
+      call$1: [function(_) {
+        return this.$this.containerElement.getBoundingClientRect();
+      }, null, null, 4, 0, null, 0, "call"]
+    }
+  }], ["", "package:angular_components/src/laminate/overlay/render/overlay_style_config.dart",, R, {
+    "^": "",
+    OverlayStyleConfig: {
+      "^": "Object;_styleHost,_stylesRegistered,_overlay_style_config$_document",
+      registerStyles$0: function() {
+        var t1, t2;
+        if (this.get$stylesRegistered())
+          return;
+        t1 = this._styleHost;
+        t2 = document.createElement("style");
+        t2.id = "__overlay_styles";
+        t2.textContent = "  #default-acx-overlay-container,\n  .acx-overlay-container {\n    position: absolute;\n\n    /* Disable event captures. This is an invisible container! */\n    pointer-events: none;\n\n    /* Make this full width and height in the viewport. */\n    top: 0;\n    left: 0;\n\n    width: 100%;\n    height: 100%;\n\n    /* TODO(google): Use the ACX z-index guide instead. */\n    z-index: 10;\n  }\n\n  .acx-overlay-container > .pane {\n    display: flex;\n    /* TODO(google): verify prefixing flexbox fixes popups in IE */\n    display: -ms-flexbox;\n    position: absolute;\n\n    /* TODO(google): Use the ACX z-index guide instead. */\n    z-index: 11;\n\n    /* Disable event captures. This is an invisible container!\n       Panes that would like to capture events can enable this with .modal. */\n    pointer-events: none;\n  }\n\n  /* Children should have normal events. */\n  .acx-overlay-container > .pane > * { pointer-events: auto; }\n\n  .acx-overlay-container > .pane.modal {\n    justify-content: center;\n    align-items: center;\n    background: rgba(33,33,33,.4);\n    pointer-events: auto;\n\n    /* TODO(google): Pull out into a .fixed class instead. */\n    position: fixed;\n\n    /* Promote the .modal element to its own layer to fix scrolling issues.\n       will-change: transform is preferred, but not yet supported by Edge. */\n    -webkit-backface-visibility: hidden;  /* Safari 9/10 */\n    backface-visibility: hidden;\n  }\n\n  .acx-overlay-container > .pane,\n  .acx-overlay-container > .pane > * {\n    display: flex;\n    display: -ms-flexbox;\n  }\n\n  /* Optional debug mode that highlights the container and individual panes.\n     TODO(google): Pull this into a mixin so it won't get auto-exported. */\n  .acx-overlay-container.debug {\n    background: rgba(255, 0, 0, 0.15);\n  }\n\n  .acx-overlay-container.debug > .pane {\n    background: rgba(0, 0, 2555, 0.15);\n  }\n\n  .acx-overlay-container.debug > .pane.modal {\n    background: rgba(0, 0, 0, 0.30);\n  }\n";
+        (t1 && C.HeadElement_methods).append$1(t1, t2);
+        this._stylesRegistered = true;
+      },
+      get$stylesRegistered: function() {
+        if (this._stylesRegistered)
+          return true;
+        var t1 = this._overlay_style_config$_document;
+        if ((t1 && C.HtmlDocument_methods).querySelector$1(t1, "#__overlay_styles") != null)
+          this._stylesRegistered = true;
+        return this._stylesRegistered;
+      }
+    }
+  }], ["", "package:angular_components/src/laminate/popup/dom_popup_source.dart",, K, {
+    "^": "",
+    DomPopupSourceFactory: {
+      "^": "Object;_dom_popup_source$_domRuler",
+      _asyncMeasureSize$2$track: [function(element, track) {
+        var t1;
+        H.interceptedTypeCheck(element, "$isHtmlElement");
+        t1 = this._dom_popup_source$_domRuler;
+        if (H.boolTypeCheck(track))
+          return t1.track$1(0, element);
+        else
+          return t1.measure$1(0, element).asStream$0();
+      }, function(element) {
+        return this._asyncMeasureSize$2$track(element, false);
+      }, "_asyncMeasureSize$1", "call$2$track", "call$1", "get$_asyncMeasureSize", 4, 3, 41, 64, 17, 65]
+    },
+    DomPopupSource: {
+      "^": "Object;_asyncMeasureSize,sourceElement<,_initAriaAttributes,0_alignOriginX,0_alignOriginY,0_dom_popup_source$_id",
+      get$alignOriginX: function() {
+        return this._alignOriginX;
+      },
+      get$alignOriginY: function() {
+        return this._alignOriginY;
+      },
+      onDimensionsChanged$1$track: function(track) {
+        return this._asyncMeasureSize.call$2$track(this.sourceElement, track);
+      },
+      get$dimensions: function() {
+        return this.sourceElement.getBoundingClientRect();
+      },
+      get$isRtl: function() {
+        return $.$get$DomPopupSource__isRtl();
+      },
+      set$popupId: function(id) {
+        this._dom_popup_source$_id = id;
+        if (id == null || !this._initAriaAttributes)
+          return;
+        J.setAttribute$2$x(this.sourceElement, "aria-haspopup", "true");
+      },
+      focus$0: function(_) {
+        this.sourceElement.focus();
+      },
+      toString$0: function(_) {
+        return "DomPopupSource " + P.MapBase_mapToString(P.LinkedHashMap_LinkedHashMap$_literal(["alignOriginX", this._alignOriginX, "alignOriginY", this._alignOriginY], P.String, K.Alignment));
+      },
+      onOpen$0: function(_) {
+        var t1 = this._dom_popup_source$_id;
+        if (t1 == null || !this._initAriaAttributes)
+          return;
+        J.setAttribute$2$x(this.sourceElement, "aria-owns", t1);
+      },
+      onClose$0: function(_) {
+        var t1;
+        if (this._dom_popup_source$_id == null || !this._initAriaAttributes)
+          return;
+        t1 = this.sourceElement;
+        t1.toString;
+        new W._ElementAttributeMap(t1).remove$1(0, "aria-owns");
+      },
+      $isFocusable: 1,
+      $isPopupSource: 1,
+      $isElementPopupSource: 1
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_hierarchy.dart",, Z, {
+    "^": "",
+    PopupHierarchy: {
+      "^": "Object;_visiblePopupStack,0_rootPane,0_triggerListener,0_keyUpListener,0_lastTriggerEvent",
+      _isInHiddenModal$0: function() {
+        var t1, t2, modalPanes;
+        t1 = document;
+        t2 = W.Element;
+        H.assertIsSubtype(t2, t2, "The type argument '", "' is not a subtype of the type variable bound '", "' of type variable 'T' in 'querySelectorAll'.");
+        t1 = C.HtmlDocument_methods._querySelectorAll$1(t1, ".acx-overlay-container .pane.modal.visible");
+        modalPanes = new W._FrozenElementList(t1, [t2]);
+        if (!modalPanes.get$isEmpty(modalPanes)) {
+          t2 = this._rootPane;
+          if (t2 != null)
+            t1 = t2 !== H.interceptedTypeCheck(C.NodeList_methods.get$last(t1), "$isElement") && modalPanes.contains$1(modalPanes, this._rootPane);
+          else
+            t1 = true;
+          if (t1)
+            return true;
+        }
+        return false;
+      },
+      _onTrigger$1: [function($event) {
+        var t1, i, t2, current, t3, t4, _i;
+        H.interceptedTypeCheck($event, "$isEvent");
+        if (($event == null ? null : J.get$target$x($event)) == null)
+          return;
+        this._lastTriggerEvent = $event;
+        if (this._isInHiddenModal$0())
+          return;
+        for (t1 = this._visiblePopupStack, i = t1.length - 1, t2 = J.getInterceptor$x($event); i >= 0; --i) {
+          if (i >= t1.length)
+            return H.ioore(t1, i);
+          current = t1[i];
+          t3 = current._overlayRef;
+          t4 = t3 == null ? null : t3.overlayElement;
+          if (t4 == null)
+            continue;
+          t3 = t3 == null ? null : t3.overlayElement;
+          if (Z.isParentOf(t3, H.interceptedTypeCheck(t2.get$target($event), "$isNode")))
+            return;
+          for (t3 = current.get$autoDismissBlockers(), t4 = t3.length, _i = 0; _i < t3.length; t3.length === t4 || (0, H.throwConcurrentModificationError)(t3), ++_i)
+            if (Z.isParentOf(t3[_i], H.interceptedTypeCheck(t2.get$target($event), "$isNode")))
+              return;
+          if (H.boolTypeCheck(current.state._backingMap._observable_map$_map.$index(0, C.Symbol_autoDismiss))) {
+            current.set$visible(0, false);
+            t3 = current._onAutoDismissed;
+            H.assertSubtypeOfRuntimeType($event, H.getTypeArgumentByIndex(t3, 0));
+            if (!t3.get$_mayAddEvent())
+              H.throwExpression(t3._addEventError$0());
+            t3._sendData$1($event);
+          }
+        }
+      }, "call$1", "get$_onTrigger", 4, 0, 26, 7],
+      _onKeyUp$1: [function($event) {
+        var t1, i, current, t2, t3, _i;
+        H.interceptedTypeCheck($event, "$isKeyboardEvent");
+        if (($event == null ? null : W._convertNativeToDart_EventTarget($event.target)) == null)
+          return;
+        this._lastTriggerEvent = $event;
+        if (this._isInHiddenModal$0())
+          return;
+        if ($event.keyCode === 27)
+          for (t1 = this._visiblePopupStack, i = t1.length - 1; i >= 0; --i) {
+            if (i >= t1.length)
+              return H.ioore(t1, i);
+            current = t1[i];
+            t2 = current._overlayRef;
+            t3 = t2 == null ? null : t2.overlayElement;
+            if (t3 == null)
+              continue;
+            t2 = t2 == null ? null : t2.overlayElement;
+            if (Z.isParentOf(t2, H.interceptedTypeCheck(W._convertNativeToDart_EventTarget($event.target), "$isNode"))) {
+              $event.stopPropagation();
+              current.set$visible(0, false);
+              return;
+            }
+            for (t2 = current.get$autoDismissBlockers(), t3 = t2.length, _i = 0; _i < t2.length; t2.length === t3 || (0, H.throwConcurrentModificationError)(t2), ++_i)
+              if (Z.isParentOf(t2[_i], H.interceptedTypeCheck(W._convertNativeToDart_EventTarget($event.target), "$isNode"))) {
+                $event.stopPropagation();
+                current.set$visible(0, false);
+                return;
+              }
+          }
+      }, "call$1", "get$_onKeyUp", 4, 0, 5]
+    },
+    PopupHierarchyElement: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_interface.dart",, L, {
+    "^": "",
+    PopupEvents: {
+      "^": "Object;",
+      get$onVisible: function() {
+        var t1 = this.PopupEvents_onVisibleController;
+        return new P._BroadcastStream(t1, [H.getTypeArgumentByIndex(t1, 0)]);
+      }
+    },
+    PopupBase: {
+      "^": "Object;",
+      set$matchMinSourceWidth: ["super$PopupBase$matchMinSourceWidth", function(matchMinSourceWidth) {
+        this.state._backingMap.$indexSet(0, C.Symbol_matchMinSourceWidth, true);
+      }],
+      set$source: ["super$PopupBase$source", function(_, source) {
+        this.state._backingMap.$indexSet(0, C.Symbol_source, source);
+      }]
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_ref.dart",, V, {
+    "^": "",
+    PopupRef: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_size_provider.dart",, F, {
+    "^": "",
+    PopupSizeProvider: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_source_directive.dart",, L, {
+    "^": "",
+    PopupSourceDirective: {
+      "^": "Object;_domPopupSourceFactory,_popup_source_directive$_initAriaAttributes,_popup_source_directive$_element,_referenceDirective,_focusable,_popup_source_directive$_alignOriginX,_popup_source_directive$_alignOriginY,0_popupSource,0_popupId",
+      get$sourceElement: function() {
+        return this._popup_source_directive$_element;
+      },
+      get$alignOriginX: function() {
+        return this._popupSource._alignOriginX;
+      },
+      get$alignOriginY: function() {
+        return this._popupSource._alignOriginY;
+      },
+      onDimensionsChanged$1$track: function(track) {
+        var t1, t2;
+        t1 = this._popupSource;
+        if (t1 == null)
+          t1 = null;
+        else {
+          t2 = t1.sourceElement;
+          t2 = t1._asyncMeasureSize.call$2$track(t2, track);
+          t1 = t2;
+        }
+        return t1 == null ? null : new P._DistinctStream(null, t1, [H.getRuntimeTypeArgument(t1, "Stream", 0)]);
+      },
+      get$dimensions: function() {
+        var t1 = this._popupSource;
+        return t1 == null ? null : t1.sourceElement.getBoundingClientRect();
+      },
+      get$isRtl: function() {
+        this._popupSource.toString;
+        return $.$get$DomPopupSource__isRtl();
+      },
+      focus$0: function(_) {
+        var t1 = this._focusable;
+        if (t1 != null)
+          t1.focus$0(0);
+        else {
+          t1 = this._popup_source_directive$_element;
+          if (!(t1 == null))
+            t1.focus();
+        }
+      },
+      onOpen$0: function(_) {
+        var t1 = this._popupSource;
+        if (!(t1 == null))
+          t1.onOpen$0(0);
+      },
+      onClose$0: function(_) {
+        var t1 = this._popupSource;
+        if (!(t1 == null))
+          t1.onClose$0(0);
+      },
+      $isFocusable: 1,
+      $isPopupSource: 1,
+      $isElementPopupSource: 1,
+      static: {
+        PopupSourceDirective$: function(_domPopupSourceFactory, _element, _referenceDirective, _focusable, initAriaAttributes) {
+          return new L.PopupSourceDirective(_domPopupSourceFactory, E.attributeToBool(initAriaAttributes, true), _element, _referenceDirective, _focusable, C.Alignment_dMH, C.Alignment_dMH);
+        }
+      }
+    }
+  }], ["", "package:angular_components/src/laminate/popup/popup_state.dart",, F, {
+    "^": "",
+    PopupState: {
+      "^": "Observable;_backingMap,_observable$_delegate,_isNotGeneric",
+      $eq: function(_, o) {
+        var t1, t2, t3, t4;
+        if (o == null)
+          return false;
+        if (o instanceof F.PopupState) {
+          t1 = o._backingMap._observable_map$_map;
+          t2 = this._backingMap._observable_map$_map;
+          if (H.boolTypeCheck(t1.$index(0, C.Symbol_autoDismiss)) == H.boolTypeCheck(t2.$index(0, C.Symbol_autoDismiss)))
+            if (H.boolTypeCheck(t1.$index(0, C.Symbol_enforceSpaceConstraints)) == H.boolTypeCheck(t2.$index(0, C.Symbol_enforceSpaceConstraints)))
+              if (H.boolTypeCheck(t1.$index(0, C.Symbol_matchMinSourceWidth)) == H.boolTypeCheck(t2.$index(0, C.Symbol_matchMinSourceWidth))) {
+                t3 = H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource");
+                t4 = H.interceptedTypeCheck(t2.$index(0, C.Symbol_source), "$isPopupSource");
+                t1 = (t3 == null ? t4 == null : t3 === t4) && H.intTypeCheck(t1.$index(0, C.Symbol_offsetX)) == H.intTypeCheck(t2.$index(0, C.Symbol_offsetX)) && H.intTypeCheck(t1.$index(0, C.Symbol_offsetY)) == H.intTypeCheck(t2.$index(0, C.Symbol_offsetY)) && J.$eq$(H.listSuperNativeTypeCheck(t1.$index(0, C.Symbol_preferredPositions), "$isIterable"), H.listSuperNativeTypeCheck(t2.$index(0, C.Symbol_preferredPositions), "$isIterable")) && H.boolTypeCheck(t1.$index(0, C.Symbol_trackLayoutChanges)) == H.boolTypeCheck(t2.$index(0, C.Symbol_trackLayoutChanges)) && H.boolTypeCheck(t1.$index(0, C.Symbol_constrainToViewport)) == H.boolTypeCheck(t2.$index(0, C.Symbol_constrainToViewport));
+              } else
+                t1 = false;
+            else
+              t1 = false;
+          else
+            t1 = false;
+        } else
+          t1 = false;
+        return t1;
+      },
+      get$hashCode: function(_) {
+        var t1 = this._backingMap._observable_map$_map;
+        return X.hashObjects([H.boolTypeCheck(t1.$index(0, C.Symbol_autoDismiss)), H.boolTypeCheck(t1.$index(0, C.Symbol_enforceSpaceConstraints)), H.boolTypeCheck(t1.$index(0, C.Symbol_matchMinSourceWidth)), H.interceptedTypeCheck(t1.$index(0, C.Symbol_source), "$isPopupSource"), H.intTypeCheck(t1.$index(0, C.Symbol_offsetX)), H.intTypeCheck(t1.$index(0, C.Symbol_offsetY)), H.listSuperNativeTypeCheck(t1.$index(0, C.Symbol_preferredPositions), "$isIterable"), H.boolTypeCheck(t1.$index(0, C.Symbol_trackLayoutChanges)), H.boolTypeCheck(t1.$index(0, C.Symbol_constrainToViewport))]);
+      },
+      toString$0: function(_) {
+        return "PopupState " + P.MapBase_mapToString(this._backingMap);
+      },
+      $asObservable: function() {
+        return [Y.ChangeRecord];
+      }
+    }
+  }], ["", "package:angular_components/src/laminate/ruler/ruler_interface.dart",, L, {
+    "^": "",
+    RulerBase: {
+      "^": "Object;$ti",
+      measure$2$offset: ["super$RulerBase$measure", function(_, element, offset) {
+        var t1, t2, completer;
+        H.assertSubtypeOfRuntimeType(element, H.getRuntimeTypeArgument(this, "RulerBase", 0));
+        t1 = this._dom_ruler$_domService;
+        t2 = new P._Future(0, $.Zone__current, [null]);
+        completer = new P._SyncCompleter(t2, [null]);
+        t1.scheduleRead$1(completer.get$complete(completer));
+        return new E.ZonedFuture(t2, H.instantiate1(t1._ngZone.get$runOutsideAngular(), null), [null]).then$1$1(new L.RulerBase_measure_closure(this, element, false), [P.Rectangle, P.num]);
+      }],
+      track$1: ["super$RulerBase$track", function(_, element) {
+        var t1, controller;
+        t1 = {};
+        H.assertSubtypeOfRuntimeType(element, H.getRuntimeTypeArgument(this, "RulerBase", 0));
+        t1.controller = null;
+        t1.subscription = null;
+        controller = P.StreamController_StreamController(new L.RulerBase_track_closure(t1), new L.RulerBase_track_closure0(t1, this, element), null, null, true, [P.Rectangle, P.num]);
+        t1.controller = controller;
+        t1 = H.getTypeArgumentByIndex(controller, 0);
+        return new P._DistinctStream(H.functionTypeCheck(new L.RulerBase_track_closure1(), {func: 1, ret: P.bool, args: [t1, t1]}), new P._ControllerStream(controller, [t1]), [t1]);
+      }],
+      updateSync$12$bottom$cssClasses$height$left$position$right$top$useCssTransform$visibility$width$zIndex: function(element, bottom, cssClasses, height, left, position, right, $top, useCssTransform, visibility, width, zIndex) {
+        var setProperty, t1, t2, lastCssClasses, t3;
+        H.assertSubtypeOfRuntimeType(element, H.getRuntimeTypeArgument(this, "RulerBase", 0));
+        H.assertSubtype(cssClasses, "$isList", [P.String], "$asList");
+        setProperty = new L.RulerBase_updateSync_closure(this, element);
+        setProperty.call$2("display", null);
+        setProperty.call$2("visibility", null);
+        t1 = visibility != null;
+        if (t1 && visibility !== C.Visibility_Visible_null_null)
+          visibility.apply$1(setProperty);
+        if (cssClasses != null) {
+          t2 = this._addedCssClasses;
+          lastCssClasses = t2.$index(0, element);
+          if (lastCssClasses != null)
+            this.removeCssClassesSync$2(element, lastCssClasses);
+          this.addCssClassesSync$2(element, cssClasses);
+          t2.$indexSet(0, element, cssClasses);
+        }
+        setProperty.call$2("width", null);
+        setProperty.call$2("height", null);
+        if (useCssTransform) {
+          if (left != null) {
+            setProperty.call$2("left", "0");
+            t2 = "translateX(" + C.JSNumber_methods.round$0(left) + "px) ";
+          } else {
+            setProperty.call$2("left", null);
+            t2 = "";
+          }
+          if ($top != null) {
+            setProperty.call$2("top", "0");
+            t2 += "translateY(" + C.JSNumber_methods.round$0($top) + "px)";
+          } else
+            setProperty.call$2("top", null);
+          t3 = t2.charCodeAt(0) == 0 ? t2 : t2;
+          setProperty.call$2("transform", t3);
+          setProperty.call$2("-webkit-transform", t3);
+          if (t2.length !== 0) {
+            setProperty.call$2("transform", t3);
+            setProperty.call$2("-webkit-transform", t3);
+          }
+        } else {
+          if (left != null)
+            setProperty.call$2("left", left === 0 ? "0" : H.S(left) + "px");
+          else
+            setProperty.call$2("left", null);
+          if ($top != null)
+            setProperty.call$2("top", $top === 0 ? "0" : H.S($top) + "px");
+          else
+            setProperty.call$2("top", null);
+          setProperty.call$2("transform", null);
+          setProperty.call$2("-webkit-transform", null);
+        }
+        setProperty.call$2("right", null);
+        setProperty.call$2("bottom", null);
+        if (zIndex != null)
+          setProperty.call$2("z-index", H.S(zIndex));
+        else
+          setProperty.call$2("z-index", null);
+        if (t1 && visibility === C.Visibility_Visible_null_null)
+          visibility.apply$1(setProperty);
+      },
+      updateSync$11$bottom$cssClasses$height$left$position$right$top$useCssTransform$visibility$width: function(element, bottom, cssClasses, height, left, position, right, $top, useCssTransform, visibility, width) {
+        return this.updateSync$12$bottom$cssClasses$height$left$position$right$top$useCssTransform$visibility$width$zIndex(element, bottom, cssClasses, height, left, position, right, $top, useCssTransform, visibility, width, null);
+      },
+      updateSync$2$zIndex: function(element, zIndex) {
+        return this.updateSync$12$bottom$cssClasses$height$left$position$right$top$useCssTransform$visibility$width$zIndex(element, null, null, null, null, null, null, null, true, null, null, zIndex);
+      }
+    },
+    RulerBase_measure_closure: {
+      "^": "Closure:100;$this,element,offset",
+      call$1: [function(_) {
+        return this.$this.measureSync$2$offset(this.element, this.offset);
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    RulerBase_track_closure0: {
+      "^": "Closure:0;_box_0,$this,element",
+      call$0: function() {
+        var t1, t2, t3, t4, t5;
+        t1 = this.$this;
+        t2 = this.element;
+        t3 = t1.measure$1(0, t2);
+        t4 = this._box_0;
+        t5 = t4.controller;
+        t3.then$1$1(t5.get$add(t5), -1);
+        t4.subscription = t1._dom_ruler$_domService.get$onLayoutChanged().listen$2$onDone(new L.RulerBase_track__closure(t4, t1, t2), new L.RulerBase_track__closure0(t4));
+      }
+    },
+    RulerBase_track__closure: {
+      "^": "Closure:3;_box_0,$this,element",
+      call$1: [function(_) {
+        this._box_0.controller.add$1(0, this.$this.measureSync$1(this.element));
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    RulerBase_track__closure0: {
+      "^": "Closure:0;_box_0",
+      call$0: [function() {
+        this._box_0.controller.close$0(0);
+      }, null, null, 0, 0, null, "call"]
+    },
+    RulerBase_track_closure: {
+      "^": "Closure:0;_box_0",
+      call$0: [function() {
+        this._box_0.subscription.cancel$0(0);
+      }, null, null, 0, 0, null, "call"]
+    },
+    RulerBase_track_closure1: {
+      "^": "Closure:42;",
+      call$2: function(previous, next) {
+        var t1, t2, t3;
+        t1 = [P.num];
+        H.assertSubtype(previous, "$isRectangle", t1, "$asRectangle");
+        H.assertSubtype(next, "$isRectangle", t1, "$asRectangle");
+        if (previous == null || next == null)
+          return previous == null ? next == null : previous === next;
+        t1 = new L.RulerBase_track_closure_withinEpsilon();
+        t2 = J.getInterceptor$x(previous);
+        t3 = J.getInterceptor$x(next);
+        return t1.call$2(t2.get$top(previous), t3.get$top(next)) && t1.call$2(t2.get$left(previous), t3.get$left(next)) && t1.call$2(t2.get$width(previous), t3.get$width(next)) && t1.call$2(t2.get$height(previous), t3.get$height(next));
+      }
+    },
+    RulerBase_track_closure_withinEpsilon: {
+      "^": "Closure:102;",
+      call$2: function(a, b) {
+        if (typeof a !== "number")
+          return a.$sub();
+        if (typeof b !== "number")
+          return H.iae(b);
+        return Math.abs(a - b) < 0.01;
+      }
+    },
+    RulerBase_updateSync_closure: {
+      "^": "Closure:34;$this,element",
+      call$2: function($name, value) {
+        var t1 = this.element.style;
+        C.CssStyleDeclaration_methods._setPropertyHelper$3(t1, (t1 && C.CssStyleDeclaration_methods)._browserPropertyName$1(t1, $name), value, null);
+      }
+    }
+  }], ["", "package:angular_components/src/model/selection/interfaces/selectable.dart",, E, {
+    "^": "",
+    Selectable__isOptionCheck: function(isMaybeModel, item, option, defaultIfMissingInterface, $T) {
+      H.assertSubtypeOfRuntimeType(item, $T);
+      if (H.checkSubtype(isMaybeModel, "$isSelectable", [$T], null)) {
+        isMaybeModel.getSelectable$1(item);
+        return false;
+      }
+      return defaultIfMissingInterface;
+    },
+    SelectableOption: {
+      "^": "Object;index,_selectable$_name",
+      toString$0: function(_) {
+        return this._selectable$_name;
+      }
+    }
+  }], ["", "package:angular_components/src/utils/angular/managed_zone/managed_zone.dart",, V, {
+    "^": "",
+    ManagedZone: {
+      "^": "Object;",
+      $isDisposable: 1
+    },
+    ManagedZoneBase: {
+      "^": "ManagedZone;",
+      capturedTurnStart$1: [function($event) {
+        this._managed_zone$_isRunning = true;
+      }, "call$1", "get$capturedTurnStart", 4, 0, 2, 7],
+      capturedTurnDone$1: ["super$ManagedZoneBase$capturedTurnDone", function($event) {
+        this._managed_zone$_isRunning = false;
+      }],
+      capturedEventDone$1: ["super$ManagedZoneBase$capturedEventDone", function($event) {
+      }],
+      toString$0: function(_) {
+        var t1, t2;
+        t1 = $.Zone__current;
+        t2 = this.outerZone;
+        t2 = t1 == null ? t2 == null : t1 === t2;
+        return "ManagedZone " + P.MapBase_mapToString(P.LinkedHashMap_LinkedHashMap$_literal(["inInnerZone", !t2, "inOuterZone", t2], P.String, P.bool));
+      }
+    }
+  }], ["", "package:angular_components/src/utils/async/async_update_scheduler.dart",, Z, {
+    "^": "",
+    AsyncUpdateScheduler: {
+      "^": "Object;_updateCallback,_isUpdateScheduled,0_onUpdateStreamController",
+      scheduleUpdate$0: function() {
+        if (!this._isUpdateScheduled) {
+          this._isUpdateScheduled = true;
+          P.scheduleMicrotask(new Z.AsyncUpdateScheduler_scheduleUpdate_closure(this));
+        }
+      }
+    },
+    AsyncUpdateScheduler_scheduleUpdate_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1 = this.$this;
+        t1._isUpdateScheduled = false;
+        t1 = t1._onUpdateStreamController;
+        if (t1 != null)
+          t1.add$1(0, null);
+      }, null, null, 0, 0, null, "call"]
+    }
+  }], ["", "package:angular_components/src/utils/async/rate_limit.dart",, R, {
+    "^": "",
+    _RateLimitSink: {
+      "^": "Object;_outputSink,_rate_limit$_duration,_rateLimitStrategy,0_addEvent",
+      set$_addEvent: function(_addEvent) {
+        this._addEvent = H.functionTypeCheck(_addEvent, {func: 1, ret: -1, args: [,]});
+      },
+      add$1: [function(_, $event) {
+        this._addEvent.call$1($event);
+      }, null, "get$add", 5, 0, null, 7],
+      addError$2: function(error, stackTrace) {
+        var t1 = this._outputSink._sink;
+        if ((t1._state & 2) !== 0)
+          H.throwExpression(P.StateError$("Stream is already closed"));
+        t1.super$_BufferingStreamSubscription$_addError(error, stackTrace);
+      },
+      close$0: function(_) {
+        var t1 = this._outputSink._sink;
+        if ((t1._state & 2) !== 0)
+          H.throwExpression(P.StateError$("Stream is already closed"));
+        t1.super$_BufferingStreamSubscription$_close();
+      },
+      $isEventSink: 1,
+      $asEventSink: Isolate.functionThatReturnsNull
+    },
+    RateLimitTransformer: {
+      "^": "StreamTransformerBase;_rate_limit$_duration,_rateLimitStrategy,$ti",
+      bind$1: function(stream) {
+        return new P._BoundSinkStream(new R.RateLimitTransformer_bind_closure(this), H.assertSubtype(stream, "$isStream", [H.getTypeArgumentByIndex(this, 0)], "$asStream"), [null, H.getTypeArgumentByIndex(this, 1)]);
+      }
+    },
+    RateLimitTransformer_bind_closure: {
+      "^": "Closure:103;$this",
+      call$1: function(sink) {
+        var t1, t2, t3;
+        t1 = this.$this;
+        t2 = t1._rate_limit$_duration;
+        t1 = t1._rateLimitStrategy;
+        t3 = new R._RateLimitSink(sink, t2, t1);
+        t3.set$_addEvent(t1.call$2(sink.get$add(sink), t2));
+        return t3;
+      }
+    }
+  }], ["", "package:angular_components/src/utils/async/zoned_async.dart",, E, {
+    "^": "",
+    _ZoneRunner: {
+      "^": "Object;"
+    },
+    ZonedFuture: {
+      "^": "_ZoneRunner;_innerFuture,_runInZoneFn,$ti",
+      asStream$0: function() {
+        var t1 = this._innerFuture;
+        return new E.ZonedStream(P.Stream_Stream$fromFuture(t1, H.getTypeArgumentByIndex(t1, 0)), this._runInZoneFn, this.$ti);
+      },
+      then$1$2$onError: function(onValue, onError, $S) {
+        var t1 = [P.Future, $S];
+        return H.subtypeOfRuntimeTypeCast(this._runInZoneFn.call$1(H.functionTypeCheck(new E.ZonedFuture_then_closure(this, H.functionTypeCheck(onValue, {func: 1, ret: {futureOr: 1, type: $S}, args: [H.getTypeArgumentByIndex(this, 0)]}), onError, $S), {func: 1, ret: t1})), t1);
+      },
+      then$1$1: function(onValue, $S) {
+        return this.then$1$2$onError(onValue, null, $S);
+      },
+      whenComplete$1: function(action) {
+        var t1 = [P.Future, H.getTypeArgumentByIndex(this, 0)];
+        return H.subtypeOfRuntimeTypeCast(this._runInZoneFn.call$1(H.functionTypeCheck(new E.ZonedFuture_whenComplete_closure(this, H.functionTypeCheck(action, {func: 1})), {func: 1, ret: t1})), t1);
+      },
+      $isFuture: 1
+    },
+    ZonedFuture_then_closure: {
+      "^": "Closure;$this,onValue,onError,S",
+      call$0: [function() {
+        return this.$this._innerFuture.then$1$2$onError(this.onValue, this.onError, this.S);
+      }, null, null, 0, 0, null, "call"],
+      $signature: function() {
+        return {func: 1, ret: [P.Future, this.S]};
+      }
+    },
+    ZonedFuture_whenComplete_closure: {
+      "^": "Closure;$this,action",
+      call$0: [function() {
+        return this.$this._innerFuture.whenComplete$1(this.action);
+      }, null, null, 0, 0, null, "call"],
+      $signature: function() {
+        return {func: 1, ret: [P.Future, H.getTypeArgumentByIndex(this.$this, 0)]};
+      }
+    },
+    ZonedStream: {
+      "^": "_ZonedStream_Stream__ZoneRunner;_innerStream,_runInZoneFn,$ti",
+      listen$4$cancelOnError$onDone$onError: function(onData, cancelOnError, onDone, onError) {
+        var t1, t2;
+        t1 = H.getTypeArgumentByIndex(this, 0);
+        t2 = [P.StreamSubscription, t1];
+        return H.subtypeOfRuntimeTypeCast(this._runInZoneFn.call$1(H.functionTypeCheck(new E.ZonedStream_listen_closure(this, H.functionTypeCheck(onData, {func: 1, ret: -1, args: [t1]}), onError, H.functionTypeCheck(onDone, {func: 1, ret: -1}), cancelOnError), {func: 1, ret: t2})), t2);
+      },
+      listen$1: function(onData) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, null, null);
+      },
+      listen$3$onDone$onError: function(onData, onDone, onError) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, onError);
+      },
+      listen$2$onDone: function(onData, onDone) {
+        return this.listen$4$cancelOnError$onDone$onError(onData, null, onDone, null);
+      }
+    },
+    ZonedStream_listen_closure: {
+      "^": "Closure;$this,onData,onError,onDone,cancelOnError",
+      call$0: [function() {
+        return this.$this._innerStream.listen$4$cancelOnError$onDone$onError(this.onData, this.cancelOnError, this.onDone, this.onError);
+      }, null, null, 0, 0, null, "call"],
+      $signature: function() {
+        return {func: 1, ret: [P.StreamSubscription, H.getTypeArgumentByIndex(this.$this, 0)]};
+      }
+    },
+    _ZonedStream_Stream__ZoneRunner: {
+      "^": "Stream+_ZoneRunner;"
     }
   }], ["", "package:angular_components/theme/dark_theme.dart",, F, {
     "^": "",
@@ -17451,24 +25691,633 @@
         }
       }
     }
+  }], ["", "package:angular_components/utils/angular/css/css.dart",, Q, {
+    "^": "",
+    constructEncapsulatedCss: function(className, classes) {
+      var t1, result, t2;
+      for (t1 = classes.readClasses$0(), t1 = P._LinkedHashSetIterator$(t1, t1._collection$_modifications, H.getTypeArgumentByIndex(t1, 0)), result = ""; t1.moveNext$0();) {
+        t2 = t1._collection$_current;
+        if (J.startsWith$1$s(t2, "_"))
+          result += " " + t2;
+      }
+      return result;
+    }
+  }], ["", "package:angular_components/utils/angular/imperative_view/imperative_view.dart",, O, {
+    "^": "",
+    AcxImperativeViewUtils: {
+      "^": "Object;_imperative_view$_componentLoader,_imperative_view$_domService"
+    }
+  }], ["", "package:angular_components/utils/angular/managed_zone/angular_2.dart",, T, {
+    "^": "",
+    Angular2ManagedZone: {
+      "^": "ManagedZoneBase;_angular_2$_ngZone,_angular_2$_isDisposed,0innerZone,0outerZone,0_onTurnDoneController,0_onTurnStartController,0_onEventDoneController,_managed_zone$_isRunning",
+      Angular2ManagedZone$1: function(_ngZone) {
+        var t1, t2, t3;
+        t1 = this._angular_2$_ngZone;
+        t2 = P.Null;
+        t1.toString;
+        t3 = H.functionTypeCheck(new T.Angular2ManagedZone_closure(this), {func: 1, ret: t2});
+        t1._outerZone.run$1$1(t3, t2);
+      },
+      capturedTurnDone$1: [function($event) {
+        if (this._angular_2$_isDisposed)
+          return;
+        this.super$ManagedZoneBase$capturedTurnDone($event);
+      }, "call$1", "get$capturedTurnDone", 4, 0, 2, 7],
+      capturedEventDone$1: [function($event) {
+        if (this._angular_2$_isDisposed)
+          return;
+        this.super$ManagedZoneBase$capturedEventDone($event);
+      }, "call$1", "get$capturedEventDone", 4, 0, 2, 7],
+      static: {
+        Angular2ManagedZone$: function(_ngZone) {
+          var t1 = new T.Angular2ManagedZone(_ngZone, false, false);
+          t1.Angular2ManagedZone$1(_ngZone);
+          return t1;
+        }
+      }
+    },
+    Angular2ManagedZone_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1, t2, t3;
+        t1 = this.$this;
+        t1.outerZone = $.Zone__current;
+        t2 = t1._angular_2$_ngZone;
+        t3 = t2._onTurnStart;
+        new P._BroadcastStream(t3, [H.getTypeArgumentByIndex(t3, 0)]).listen$1(t1.get$capturedTurnStart());
+        t3 = t2._onMicrotaskEmpty;
+        new P._BroadcastStream(t3, [H.getTypeArgumentByIndex(t3, 0)]).listen$1(t1.get$capturedTurnDone());
+        t2 = t2._onTurnDone;
+        new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(t1.get$capturedEventDone());
+      }, null, null, 0, 0, null, "call"]
+    }
+  }], ["", "package:angular_components/utils/angular/properties/properties.dart",, E, {
+    "^": "",
+    _parseBool: function(strValue) {
+      switch (strValue) {
+        case "":
+          return true;
+        case "true":
+          return true;
+        case "false":
+          return false;
+        default:
+          throw H.wrapException(P.ArgumentError$value(strValue, "strValue", 'Only "", "true", and "false" are acceptable values for parseBool. Found: '));
+      }
+    },
+    getBool: function(inputValue) {
+      return inputValue;
+    },
+    attributeToBool: function(inputValue, defaultValue) {
+      return E._parseBool(inputValue);
+    },
+    getInt: function(inputValue, defaultValue) {
+      return inputValue;
+    }
+  }], ["", "package:angular_components/utils/angular/reference/reference.dart",, F, {
+    "^": "",
+    ReferenceDirective: {
+      "^": "Object;"
+    }
+  }], ["", "package:angular_components/utils/browser/dom_service/angular_2.dart",, T, {
+    "^": "",
+    createDomService: function(service, disposer, zone, $window) {
+      var t1;
+      if (service != null)
+        return service;
+      t1 = $._singletonService;
+      if (t1 != null)
+        return t1;
+      t1 = [{func: 1, ret: -1}];
+      t1 = new F.DomService(H.setRuntimeTypeInfo([], t1), H.setRuntimeTypeInfo([], t1), zone, $window, C.C__RootZone, false, false, -1, C.DomServiceState_0, false, 4000, false, false);
+      $._singletonService = t1;
+      M.createDomServiceWebdriverTestability(t1).register$0(0);
+      if (!(disposer == null))
+        disposer.addFunction$1(new T.createDomService_closure());
+      return $._singletonService;
+    },
+    createDomService_closure: {
+      "^": "Closure:0;",
+      call$0: function() {
+        $._singletonService = null;
+      }
+    }
+  }], ["", "package:angular_components/utils/browser/dom_service/dom_service.dart",, F, {
+    "^": "",
+    DomService: {
+      "^": "Object;_domReadQueue,_domWriteQueue,_ngZone,_dom_service$_window,_rootZone,_insideDigest,0_layoutObserveRead,_scheduledProcessQueue,0_onLayoutChangedController,0_onLayoutChangedStream,0_onQueuesProcessedController,0_onQueuesProcessedStream,_nextFrameId,0_nextFrameCompleter,0_nextFrameFuture,_dom_service$_state,_crossAppInitialized,0_onIdleController,0_onIdleStream,_idleTimerMillis,0_idleTimer,_inDispatchTurnDoneEvent,0isDomMutatedPredicate,0resetIsDomMutated,_writeQueueChangedLayout",
+      set$_nextFrameFuture: function(_nextFrameFuture) {
+        this._nextFrameFuture = H.assertSubtype(_nextFrameFuture, "$isFuture", [P.num], "$asFuture");
+      },
+      init$0: function() {
+        var t1, t2, t3;
+        if (this._crossAppInitialized)
+          return;
+        this._crossAppInitialized = true;
+        t1 = this._ngZone;
+        t2 = P.Null;
+        t1.toString;
+        t3 = H.functionTypeCheck(new F.DomService_init_closure(this), {func: 1, ret: t2});
+        t1._outerZone.run$1$1(t3, t2);
+      },
+      get$nextFrame: function() {
+        var t1, t2, completer, t3, t4, t5;
+        if (this._nextFrameFuture == null) {
+          t1 = P.num;
+          t2 = new P._Future(0, $.Zone__current, [t1]);
+          completer = new P._SyncCompleter(t2, [t1]);
+          this._nextFrameCompleter = completer;
+          t3 = this._ngZone;
+          t4 = P.Null;
+          t3.toString;
+          t5 = H.functionTypeCheck(new F.DomService_nextFrame_closure(this, completer), {func: 1, ret: t4});
+          t3._outerZone.run$1$1(t5, t4);
+          this.set$_nextFrameFuture(new E.ZonedFuture(t2, H.instantiate1(t3.get$runOutsideAngular(), null), [t1]));
+        }
+        return this._nextFrameFuture;
+      },
+      scheduleRead$1: function(fn) {
+        var callback;
+        H.functionTypeCheck(fn, {func: 1, ret: -1});
+        if (this._dom_service$_state === C.DomServiceState_2) {
+          fn.call$0();
+          return C.C__NoopDisposable;
+        }
+        callback = new X.DisposableCallback();
+        callback._callback = fn;
+        this._scheduleInQueue$2(callback.get$$call(), this._domReadQueue);
+        return callback;
+      },
+      scheduleWrite$1: function(fn) {
+        var callback;
+        H.functionTypeCheck(fn, {func: 1, ret: -1});
+        if (this._dom_service$_state === C.DomServiceState_1) {
+          fn.call$0();
+          return C.C__NoopDisposable;
+        }
+        callback = new X.DisposableCallback();
+        callback._callback = fn;
+        this._scheduleInQueue$2(callback.get$$call(), this._domWriteQueue);
+        return callback;
+      },
+      _scheduleInQueue$2: function(fn, queue) {
+        var t1 = {func: 1, ret: -1};
+        H.functionTypeCheck(fn, t1);
+        H.assertSubtype(queue, "$isList", [t1], "$asList");
+        C.JSArray_methods.add$1(queue, $.DomService_maintainZoneOnCallbacks ? $.Zone__current.bindCallback$1$1(fn, -1) : fn);
+        this._scheduleProcessQueue$0();
+      },
+      onWrite$0: function(_) {
+        var t1, completer;
+        t1 = new P._Future(0, $.Zone__current, [null]);
+        completer = new P._SyncCompleter(t1, [null]);
+        this.scheduleWrite$1(completer.get$complete(completer));
+        return new E.ZonedFuture(t1, H.instantiate1(this._ngZone.get$runOutsideAngular(), null), [null]);
+      },
+      _processQueues$0: function() {
+        var t1, t2, t3;
+        t1 = this._domReadQueue;
+        if (t1.length === 0 && this._domWriteQueue.length === 0) {
+          this._scheduledProcessQueue = false;
+          return;
+        }
+        this._dom_service$_state = C.DomServiceState_2;
+        this._processQueue$1(t1);
+        this._dom_service$_state = C.DomServiceState_1;
+        t2 = this._domWriteQueue;
+        t3 = this._processQueue$1(t2) > 0;
+        this._writeQueueChangedLayout = t3;
+        this._dom_service$_state = C.DomServiceState_0;
+        if (t3)
+          this._scheduleOnLayoutChanged$0();
+        this._scheduledProcessQueue = false;
+        if (t1.length !== 0 || t2.length !== 0)
+          this._scheduleProcessQueue$0();
+        else {
+          t1 = this._onQueuesProcessedController;
+          if (t1 != null)
+            t1.add$1(0, this);
+        }
+      },
+      _processQueue$1: function(queue) {
+        var previousLength, i, fn;
+        H.assertSubtype(queue, "$isList", [{func: 1, ret: -1}], "$asList");
+        previousLength = queue.length;
+        for (i = 0; i < queue.length; ++i) {
+          fn = queue[i];
+          fn.call$0();
+        }
+        C.JSArray_methods.set$length(queue, 0);
+        return previousLength;
+      },
+      get$onLayoutChanged: function() {
+        var t1, t2, t3;
+        if (this._onLayoutChangedStream == null) {
+          t1 = new P._SyncBroadcastStreamController(null, null, 0, [null]);
+          this._onLayoutChangedController = t1;
+          t2 = this._ngZone;
+          this._onLayoutChangedStream = new E.ZonedStream(new P._BroadcastStream(t1, [null]), H.instantiate1(t2.get$runOutsideAngular(), null), [null]);
+          t1 = P.Null;
+          t3 = H.functionTypeCheck(new F.DomService_onLayoutChanged_closure(this), {func: 1, ret: t1});
+          t2._outerZone.run$1$1(t3, t1);
+        }
+        return this._onLayoutChangedStream;
+      },
+      _listenOnLayoutEvents$1: function(events) {
+        var t1 = H.getTypeArgumentByIndex(events, 0);
+        W._EventStreamSubscription$(events._html$_target, events._eventType, H.functionTypeCheck(new F.DomService__listenOnLayoutEvents_closure(this), {func: 1, ret: -1, args: [t1]}), false, t1);
+      },
+      _scheduleProcessQueue$0: function() {
+        if (!this._scheduledProcessQueue) {
+          this._scheduledProcessQueue = true;
+          this.get$nextFrame().then$1$1(new F.DomService__scheduleProcessQueue_closure(this), -1);
+        }
+      },
+      _scheduleOnLayoutChanged$0: function() {
+        if (this._layoutObserveRead != null)
+          return;
+        var t1 = this._onLayoutChangedController;
+        t1 = t1 == null ? null : t1._firstSubscription != null;
+        if (t1 !== true && true)
+          return;
+        if (this._dom_service$_state === C.DomServiceState_2) {
+          this.scheduleWrite$1(new F.DomService__scheduleOnLayoutChanged_closure());
+          return;
+        }
+        this._layoutObserveRead = this.scheduleRead$1(new F.DomService__scheduleOnLayoutChanged_closure0(this));
+      },
+      _resetIdleTimer$0: function() {
+        return;
+      }
+    },
+    DomService_init_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1, t2;
+        t1 = this.$this;
+        t2 = t1._ngZone._onMicrotaskEmpty;
+        new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(new F.DomService_init__closure(t1));
+      }, null, null, 0, 0, null, "call"]
+    },
+    DomService_init__closure: {
+      "^": "Closure:12;$this",
+      call$1: [function(_) {
+        var t1, t2, e;
+        t1 = this.$this;
+        t1._inDispatchTurnDoneEvent = true;
+        t2 = t1._dom_service$_window;
+        e = C.HtmlDocument_methods._createEvent$1(document, "Event");
+        J._initEvent$3$x(e, "doms-turn", true, true);
+        (t2 && C.Window_methods).dispatchEvent$1(t2, e);
+        t1._inDispatchTurnDoneEvent = false;
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    DomService_nextFrame_closure: {
+      "^": "Closure:0;$this,completer",
+      call$0: [function() {
+        var t1, t2;
+        t1 = this.$this;
+        t1.init$0();
+        t2 = t1._dom_service$_window;
+        t1._nextFrameId = (t2 && C.Window_methods).requestAnimationFrame$1(t2, new F.DomService_nextFrame__closure(t1, this.completer));
+      }, null, null, 0, 0, null, "call"]
+    },
+    DomService_nextFrame__closure: {
+      "^": "Closure:104;$this,completer",
+      call$1: [function(highResTimer) {
+        var t1, t2;
+        H.numTypeCheck(highResTimer);
+        t1 = this.completer;
+        if (t1.future._state !== 0)
+          return;
+        t2 = this.$this;
+        if (t1 === t2._nextFrameCompleter) {
+          t2.set$_nextFrameFuture(null);
+          t2._nextFrameCompleter = null;
+        }
+        t1.complete$1(0, highResTimer);
+      }, null, null, 4, 0, null, 66, "call"]
+    },
+    DomService_onLayoutChanged_closure: {
+      "^": "Closure:0;$this",
+      call$0: [function() {
+        var t1, t2, t3;
+        t1 = this.$this;
+        t2 = t1._ngZone;
+        t3 = t2._onTurnStart;
+        new P._BroadcastStream(t3, [H.getTypeArgumentByIndex(t3, 0)]).listen$1(new F.DomService_onLayoutChanged__closure(t1));
+        t2 = t2._onMicrotaskEmpty;
+        new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(new F.DomService_onLayoutChanged__closure0(t1));
+        t2 = t1._dom_service$_window;
+        t2.toString;
+        t1._listenOnLayoutEvents$1(new W._EventStream(t2, "webkitAnimationEnd", false, [W.AnimationEvent]));
+        t1._listenOnLayoutEvents$1(new W._EventStream(t2, "resize", false, [W.Event]));
+        t1._listenOnLayoutEvents$1(new W._EventStream(t2, H.stringTypeCheck(W.Element__determineTransitionEventType(t2)), false, [W.TransitionEvent]));
+        (t2 && C.Window_methods).addEventListener$2(t2, "doms-turn", new F.DomService_onLayoutChanged__closure1(t1));
+      }, null, null, 0, 0, null, "call"]
+    },
+    DomService_onLayoutChanged__closure: {
+      "^": "Closure:12;$this",
+      call$1: [function(_) {
+        var t1 = this.$this;
+        if (t1._dom_service$_state !== C.DomServiceState_0)
+          return;
+        t1._insideDigest = true;
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    DomService_onLayoutChanged__closure0: {
+      "^": "Closure:12;$this",
+      call$1: [function(_) {
+        var t1 = this.$this;
+        if (t1._dom_service$_state !== C.DomServiceState_0)
+          return;
+        t1._insideDigest = false;
+        t1._scheduleOnLayoutChanged$0();
+        t1._writeQueueChangedLayout = false;
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    DomService_onLayoutChanged__closure1: {
+      "^": "Closure:11;$this",
+      call$1: [function(_) {
+        var t1;
+        H.interceptedTypeCheck(_, "$isEvent");
+        t1 = this.$this;
+        if (!t1._inDispatchTurnDoneEvent)
+          t1._scheduleOnLayoutChanged$0();
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    DomService__listenOnLayoutEvents_closure: {
+      "^": "Closure:2;$this",
+      call$1: function(_) {
+        return this.$this._scheduleOnLayoutChanged$0();
+      }
+    },
+    DomService__scheduleProcessQueue_closure: {
+      "^": "Closure:105;$this",
+      call$1: [function(_) {
+        H.numTypeCheck(_);
+        return this.$this._processQueues$0();
+      }, null, null, 4, 0, null, 0, "call"]
+    },
+    DomService__scheduleOnLayoutChanged_closure: {
+      "^": "Closure:0;",
+      call$0: function() {
+      }
+    },
+    DomService__scheduleOnLayoutChanged_closure0: {
+      "^": "Closure:0;$this",
+      call$0: function() {
+        var t1, t2;
+        t1 = this.$this;
+        t1._layoutObserveRead = null;
+        t2 = t1._onLayoutChangedController;
+        if (t2 != null)
+          t2.add$1(0, t1);
+        t1._resetIdleTimer$0();
+      }
+    },
+    DomServiceState: {
+      "^": "Object;index,_dom_service$_name",
+      toString$0: function(_) {
+        return this._dom_service$_name;
+      }
+    }
+  }], ["", "package:angular_components/utils/browser/dom_service/dom_service_webdriver_testability.dart",, M, {
+    "^": "",
+    createDomServiceWebdriverTestability: function(domService) {
+      if ($.$get$testabilitiesEnabled())
+        return M.DomServiceWebdriverTestability$_(domService);
+      return new D.NullTestability();
+    },
+    DomServiceWebdriverTestability: {
+      "^": "AbstractTestability;_dom_service_webdriver_testability$_domService,_callbacks",
+      DomServiceWebdriverTestability$_$1: function(_domService) {
+        var t1, t2;
+        t1 = this._dom_service_webdriver_testability$_domService;
+        t2 = t1._onQueuesProcessedStream;
+        if (t2 == null) {
+          t2 = new P._SyncBroadcastStreamController(null, null, 0, [null]);
+          t1._onQueuesProcessedController = t2;
+          t2 = new E.ZonedStream(new P._BroadcastStream(t2, [null]), H.instantiate1(t1._ngZone.get$runOutsideAngular(), null), [null]);
+          t1._onQueuesProcessedStream = t2;
+          t1 = t2;
+        } else
+          t1 = t2;
+        t1.listen$1(new M.DomServiceWebdriverTestability$__closure(this));
+      },
+      static: {
+        DomServiceWebdriverTestability$_: function(_domService) {
+          var t1 = new M.DomServiceWebdriverTestability(_domService, H.setRuntimeTypeInfo([], [{func: 1, ret: -1, args: [P.bool, P.String]}]));
+          t1.DomServiceWebdriverTestability$_$1(_domService);
+          return t1;
+        }
+      }
+    },
+    DomServiceWebdriverTestability$__closure: {
+      "^": "Closure:2;$this",
+      call$1: [function(_) {
+        this.$this._runCallbacksIfStable$0();
+        return;
+      }, null, null, 4, 0, null, 0, "call"]
+    }
   }], ["events", "package:angular_components/utils/browser/events/events.dart",, Z, {
     "^": "",
     isSpaceKey: function($event) {
       var t1 = $event.keyCode;
       return t1 !== 0 ? t1 === 32 : $event.key === " ";
+    },
+    triggersOutside: function(element) {
+      var t1 = {};
+      t1.element = element;
+      return Z.triggersOutsideAny(new Z.triggersOutside_closure(t1));
+    },
+    triggersOutsideAny: function(checkNodeInside) {
+      var t1, t2, controller;
+      t1 = {};
+      H.functionTypeCheck(checkNodeInside, {func: 1, ret: P.bool, args: [W.Node]});
+      t1.controller = null;
+      t1.clickListener = null;
+      t1.mouseDownListener = null;
+      t1.mouseUpListener = null;
+      t1.listener = null;
+      if ($.enableNewTriggerLogic == null)
+        $.enableNewTriggerLogic = false;
+      t2 = W.Event;
+      controller = new P._SyncBroadcastStreamController(new Z.triggersOutsideAny_closure(t1, checkNodeInside), new Z.triggersOutsideAny_closure0(t1), 0, [t2]);
+      t1.controller = controller;
+      return new P._BroadcastStream(controller, [t2]);
+    },
+    closestWithClass: function(target, className) {
+      for (; target != null;) {
+        if (J._hasAttribute$1$x(target, "class") && J.get$classes$x(target).contains$1(0, className))
+          return target;
+        target = target.parentElement;
+      }
+      return;
+    },
+    isParentOf: function(element, node) {
+      for (; node != null;)
+        if (node === element)
+          return true;
+        else
+          node = node.parentElement;
+      return false;
+    },
+    triggersOutside_closure: {
+      "^": "Closure:37;_box_0",
+      call$1: function(node) {
+        return false;
+      }
+    },
+    triggersOutsideAny_closure: {
+      "^": "Closure:0;_box_1,checkNodeInside",
+      call$0: function() {
+        var t1, t2, t3, t4, t5;
+        t1 = {};
+        t1.lastEvent = null;
+        t1.lastDownEvent = null;
+        t2 = this._box_1;
+        t2.listener = new Z.triggersOutsideAny__closure(t1, t2, this.checkNodeInside);
+        if ($.enableNewTriggerLogic) {
+          t3 = W.MouseEvent;
+          t2.mouseDownListener = W._EventStreamSubscription$(document, "mousedown", H.functionTypeCheck(new Z.triggersOutsideAny__closure0(t1), {func: 1, ret: -1, args: [t3]}), false, t3);
+        }
+        t3 = document;
+        t4 = W.MouseEvent;
+        t5 = {func: 1, ret: -1, args: [t4]};
+        t2.mouseUpListener = W._EventStreamSubscription$(t3, "mouseup", H.functionTypeCheck(new Z.triggersOutsideAny__closure1(t1, t2), t5), false, t4);
+        t2.clickListener = W._EventStreamSubscription$(t3, "click", H.functionTypeCheck(new Z.triggersOutsideAny__closure2(t1, t2), t5), false, t4);
+        C.HtmlDocument_methods.addEventListener$3(t3, "focus", t2.listener, true);
+        C.HtmlDocument_methods.addEventListener$2(t3, "touchend", t2.listener);
+      }
+    },
+    triggersOutsideAny__closure: {
+      "^": "Closure:11;_box_0,_box_1,checkNodeInside",
+      call$1: [function(e) {
+        var node, t1;
+        H.interceptedTypeCheck(e, "$isEvent");
+        this._box_0.lastEvent = e;
+        node = H.interceptedTypeCast(J.get$target$x(e), "$isNode");
+        for (t1 = this.checkNodeInside; node != null;)
+          if (t1.call$1(node))
+            return;
+          else
+            node = node.parentElement;
+        this._box_1.controller.add$1(0, e);
+      }, null, null, 4, 0, null, 6, "call"]
+    },
+    triggersOutsideAny__closure0: {
+      "^": "Closure:27;_box_0",
+      call$1: function(e) {
+        this._box_0.lastDownEvent = H.interceptedTypeCheck(e, "$isMouseEvent");
+      }
+    },
+    triggersOutsideAny__closure1: {
+      "^": "Closure:27;_box_0,_box_1",
+      call$1: function(e) {
+        var t1, t2, t3;
+        H.interceptedTypeCheck(e, "$isMouseEvent");
+        t1 = this._box_0;
+        t2 = t1.lastDownEvent;
+        if (t2 != null) {
+          t3 = W._convertNativeToDart_EventTarget(e.target);
+          t2 = W._convertNativeToDart_EventTarget(t2.target);
+          t2 = t3 == null ? t2 == null : t3 === t2;
+        } else
+          t2 = true;
+        if (t2)
+          this._box_1.listener.call$1(e);
+        t1.lastEvent = e;
+      }
+    },
+    triggersOutsideAny__closure2: {
+      "^": "Closure:27;_box_0,_box_1",
+      call$1: function(e) {
+        var t1, t2, t3, t4;
+        H.interceptedTypeCheck(e, "$isMouseEvent");
+        t1 = this._box_0;
+        t2 = t1.lastEvent;
+        t3 = t2 == null;
+        if ((t3 ? null : t2.type) === "mouseup") {
+          t4 = W._convertNativeToDart_EventTarget(e.target);
+          t2 = t4 == null ? (t3 ? null : J.get$target$x(t2)) == null : t4 === (t3 ? null : J.get$target$x(t2));
+        } else
+          t2 = false;
+        if (t2)
+          return;
+        t2 = t1.lastDownEvent;
+        if (t2 != null) {
+          t3 = W._convertNativeToDart_EventTarget(e.target);
+          t2 = W._convertNativeToDart_EventTarget(t2.target);
+          t2 = t3 == null ? t2 == null : t3 === t2;
+        } else
+          t2 = true;
+        if (t2)
+          this._box_1.listener.call$1(e);
+        t1.lastDownEvent = null;
+      }
+    },
+    triggersOutsideAny_closure0: {
+      "^": "Closure:0;_box_1",
+      call$0: function() {
+        var t1, t2;
+        t1 = this._box_1;
+        t1.clickListener.cancel$0(0);
+        t1.clickListener = null;
+        t2 = t1.mouseDownListener;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t1.mouseDownListener = null;
+        t1.mouseUpListener.cancel$0(0);
+        t1.mouseUpListener = null;
+        t2 = document;
+        C.HtmlDocument_methods.removeEventListener$3(t2, "focus", t1.listener, true);
+        C.HtmlDocument_methods.removeEventListener$2(t2, "touchend", t1.listener);
+      }
     }
-  }], ["", "package:angular_components/utils/browser/feature_detector/feature_detector.dart",, S, {}], ["", "package:angular_components/utils/disposer/disposer.dart",, R, {
+  }], ["", "package:angular_components/utils/browser/feature_detector/feature_detector.dart",, S, {}], ["", "package:angular_components/utils/disposer/disposable_callback.dart",, X, {
+    "^": "",
+    DisposableCallbackBase: {
+      "^": "Object;",
+      $isDisposable: 1
+    },
+    DisposableCallback: {
+      "^": "DisposableCallbackBase;0_callback",
+      call$0: [function() {
+        var t1 = this._callback;
+        if (t1 != null)
+          t1.call$0();
+      }, "call$0", "get$$call", 0, 0, 107]
+    }
+  }], ["", "package:angular_components/utils/disposer/disposer.dart",, R, {
     "^": "",
     Disposable: {
       "^": "Object;"
     },
+    _NoopDisposable: {
+      "^": "Object;",
+      $isDisposable: 1
+    },
     Disposer: {
       "^": "Object;0_disposeFunctions,0_disposeSubs,0_disposeSinks,0_disposeDisposables,_oneShot,_disposeCalled",
+      set$_disposeFunctions: function(_disposeFunctions) {
+        this._disposeFunctions = H.assertSubtype(_disposeFunctions, "$isList", [{func: 1, ret: -1}], "$asList");
+      },
       set$_disposeSubs: function(_disposeSubs) {
         this._disposeSubs = H.assertSubtype(_disposeSubs, "$isList", [[P.StreamSubscription,,]], "$asList");
       },
       set$_disposeSinks: function(_disposeSinks) {
         this._disposeSinks = H.assertSubtype(_disposeSinks, "$isList", [[P.EventSink,,]], "$asList");
+      },
+      addStreamSubscription$1$1: function(disposable, $T) {
+        var t1;
+        H.assertSubtype(disposable, "$isStreamSubscription", [$T], "$asStreamSubscription");
+        if (this._disposeSubs == null)
+          this.set$_disposeSubs(H.setRuntimeTypeInfo([], [[P.StreamSubscription,,]]));
+        t1 = this._disposeSubs;
+        (t1 && C.JSArray_methods).add$1(t1, disposable);
+        return disposable;
       },
       addEventSink$1$1: function(disposable, $T) {
         var t1;
@@ -17476,6 +26325,15 @@
         if (this._disposeSinks == null)
           this.set$_disposeSinks(H.setRuntimeTypeInfo([], [[P.EventSink,,]]));
         t1 = this._disposeSinks;
+        (t1 && C.JSArray_methods).add$1(t1, disposable);
+        return disposable;
+      },
+      addFunction$1: function(disposable) {
+        var t1 = {func: 1, ret: -1};
+        H.functionTypeCheck(disposable, t1);
+        if (this._disposeFunctions == null)
+          this.set$_disposeFunctions(H.setRuntimeTypeInfo([], [t1]));
+        t1 = this._disposeFunctions;
         (t1 && C.JSArray_methods).add$1(t1, disposable);
         return disposable;
       },
@@ -17503,9 +26361,292 @@
           }
           this.set$_disposeSinks(null);
         }
+        t1 = this._disposeFunctions;
+        if (t1 != null) {
+          len = t1.length;
+          for (i = 0; i < len; ++i) {
+            t1 = this._disposeFunctions;
+            if (i >= t1.length)
+              return H.ioore(t1, i);
+            t1[i].call$0();
+          }
+          this.set$_disposeFunctions(null);
+        }
         this._disposeCalled = true;
       },
       $isDisposable: 1
+    }
+  }], ["", "package:angular_components/utils/id_generator/id_generator.dart",, R, {
+    "^": "",
+    IdGenerator: {
+      "^": "Object;"
+    },
+    SequentialIdGenerator: {
+      "^": "Object;_prefix,_seq",
+      nextId$0: function() {
+        return this._prefix + "--" + this._seq++;
+      },
+      $isIdGenerator: 1,
+      static: {
+        SequentialIdGenerator$fromUUID: function() {
+          return new R.SequentialIdGenerator(R.SequentialIdGenerator__createUuid(), 0);
+        },
+        SequentialIdGenerator__createUuid: function() {
+          var bytes, t1, t2, chars;
+          bytes = P.List_List$generate(16, new R.SequentialIdGenerator__createUuid_closure(), true, P.int);
+          if (6 >= bytes.length)
+            return H.ioore(bytes, 6);
+          C.JSArray_methods.$indexSet(bytes, 6, J.$or$n(J.$and$bn(bytes[6], 15), 64));
+          if (8 >= bytes.length)
+            return H.ioore(bytes, 8);
+          C.JSArray_methods.$indexSet(bytes, 8, J.$or$n(J.$and$bn(bytes[8], 63), 128));
+          t1 = P.String;
+          t2 = H.getTypeArgumentByIndex(bytes, 0);
+          chars = new H.MappedListIterable(bytes, H.functionTypeCheck(new R.SequentialIdGenerator__createUuid_closure0(), {func: 1, ret: t1, args: [t2]}), [t2, t1]).join$0(0).toUpperCase();
+          return C.JSString_methods.substring$2(chars, 0, 8) + "-" + C.JSString_methods.substring$2(chars, 8, 12) + "-" + C.JSString_methods.substring$2(chars, 12, 16) + "-" + C.JSString_methods.substring$2(chars, 16, 20) + "-" + C.JSString_methods.substring$2(chars, 20, 32);
+        }
+      }
+    },
+    SequentialIdGenerator__createUuid_closure: {
+      "^": "Closure:44;",
+      call$1: function(_) {
+        return $.$get$SequentialIdGenerator__rnd().nextInt$1(256);
+      }
+    },
+    SequentialIdGenerator__createUuid_closure0: {
+      "^": "Closure:20;",
+      call$1: [function(b) {
+        return C.JSString_methods.padLeft$2(J.toRadixString$1$n(H.intTypeCheck(b), 16), 2, "0");
+      }, null, null, 4, 0, null, 15, "call"]
+    }
+  }], ["", "package:angular_components/utils/rate_limit_utils/rate_limit_utils.dart",, R, {
+    "^": "",
+    debounce: [function(delegate, delay, $T) {
+      var t1 = {};
+      H.functionTypeCheck(delegate, {func: 1, args: [$T]});
+      t1.timer = null;
+      t1.completer = null;
+      return new R.debounce_closure(t1, delay, delegate, $T);
+    }, function(delegate, delay) {
+      return R.debounce(delegate, delay, null);
+    }, "call$1$2", "call$2", "rate_limit_utils__debounce$closure", 8, 0, 165],
+    throttleGuaranteeLast: [function(delegate, interval, $T) {
+      return R._throttle(H.functionTypeCheck(delegate, {func: 1, args: [$T]}), interval, true, $T);
+    }, function(delegate, interval) {
+      return R.throttleGuaranteeLast(delegate, interval, null);
+    }, "call$1$2", "call$2", "rate_limit_utils__throttleGuaranteeLast$closure", 8, 0, 166],
+    _throttle: function(delegate, interval, guaranteeLast, $T) {
+      var t1, $self;
+      t1 = {};
+      H.functionTypeCheck(delegate, {func: 1, args: [$T]});
+      t1.onCooldown = false;
+      t1.hasLastArg = false;
+      t1.lastArg = null;
+      t1.self = null;
+      $self = new R._throttle_closure(t1, interval, delegate, guaranteeLast, $T);
+      t1.self = $self;
+      return $self;
+    },
+    debounce_closure: {
+      "^": "Closure;_box_0,delay,delegate,T",
+      call$1: [function(argument) {
+        var t1, t2;
+        H.assertSubtypeOfRuntimeType(argument, this.T);
+        t1 = this._box_0;
+        t2 = t1.timer;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        if (t1.completer == null)
+          t1.completer = new P._AsyncCompleter(new P._Future(0, $.Zone__current, [null]), [null]);
+        t1.timer = P.Timer_Timer(this.delay, new R.debounce__closure(t1, this.delegate, argument));
+        return t1.completer.future;
+      }, null, null, 4, 0, null, 32, "call"],
+      $signature: function() {
+        return {func: 1, ret: [P.Future,,], args: [this.T]};
+      }
+    },
+    debounce__closure: {
+      "^": "Closure:0;_box_0,delegate,argument",
+      call$0: [function() {
+        var t1 = this._box_0;
+        t1.completer.complete$1(0, this.delegate.call$1(this.argument));
+        t1.completer = null;
+        t1.timer = null;
+      }, null, null, 0, 0, null, "call"]
+    },
+    _throttle_closure: {
+      "^": "Closure;_box_0,interval,delegate,guaranteeLast,T",
+      call$1: [function(argument) {
+        var t1, t2;
+        t1 = this.T;
+        H.assertSubtypeOfRuntimeType(argument, t1);
+        t2 = this._box_0;
+        if (!t2.onCooldown) {
+          t2.onCooldown = true;
+          P.Timer_Timer(this.interval, new R._throttle__closure(t2, t1));
+          this.delegate.call$1(argument);
+        } else if (this.guaranteeLast) {
+          t2.lastArg = argument;
+          t2.hasLastArg = true;
+        }
+      }, null, null, 4, 0, null, 32, "call"],
+      $signature: function() {
+        return {func: 1, ret: P.Null, args: [this.T]};
+      }
+    },
+    _throttle__closure: {
+      "^": "Closure:0;_box_0,T",
+      call$0: [function() {
+        var t1 = this._box_0;
+        t1.onCooldown = false;
+        if (t1.hasLastArg) {
+          t1.self.call$1(H.assertSubtypeOfRuntimeType(t1.lastArg, this.T));
+          t1.hasLastArg = false;
+        }
+      }, null, null, 0, 0, null, "call"]
+    }
+  }], ["", "package:collection/src/equality.dart",, U, {
+    "^": "",
+    DefaultEquality: {
+      "^": "Object;$ti",
+      $isEquality: 1
+    },
+    ListEquality: {
+      "^": "Object;_elementEquality,$ti",
+      equals$2: function(list1, list2) {
+        var t1, $length, i;
+        t1 = this.$ti;
+        H.assertSubtype(list1, "$isList", t1, "$asList");
+        H.assertSubtype(list2, "$isList", t1, "$asList");
+        if (list1 == null ? list2 == null : list1 === list2)
+          return true;
+        if (list1 == null || list2 == null)
+          return false;
+        $length = list1.length;
+        if ($length !== list2.length)
+          return false;
+        for (i = 0; i < $length; ++i) {
+          if (i >= list1.length)
+            return H.ioore(list1, i);
+          t1 = list1[i];
+          if (i >= list2.length)
+            return H.ioore(list2, i);
+          if (!J.$eq$(t1, list2[i]))
+            return false;
+        }
+        return true;
+      },
+      $isEquality: 1,
+      $asEquality: function($E) {
+        return [[P.List, $E]];
+      }
+    }
+  }], ["", "package:collection/src/wrappers.dart",, M, {
+    "^": "",
+    _DelegatingIterableBase: {
+      "^": "Object;$ti",
+      contains$1: function(_, element) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).contains$1(t1, element);
+      },
+      elementAt$1: function(_, index) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).$index(t1, index);
+      },
+      every$1: function(_, test) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).every$1(t1, H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [H.getTypeArgumentByIndex(this, 0)]}));
+      },
+      forEach$1: function(_, f) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).forEach$1(t1, H.functionTypeCheck(f, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0)]}));
+      },
+      get$isEmpty: function(_) {
+        return this._base.length === 0;
+      },
+      get$iterator: function(_) {
+        var t1 = this._base;
+        return new J.ArrayIterator(t1, t1.length, 0, [H.getTypeArgumentByIndex(t1, 0)]);
+      },
+      join$1: function(_, separator) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).join$1(t1, separator);
+      },
+      get$last: function(_) {
+        var t1 = this._base;
+        return (t1 && C.JSArray_methods).get$last(t1);
+      },
+      get$length: function(_) {
+        return this._base.length;
+      },
+      map$1$1: function(_, f, $T) {
+        var t1, t2;
+        H.functionTypeCheck(f, {func: 1, ret: $T, args: [H.getTypeArgumentByIndex(this, 0)]});
+        t1 = this._base;
+        t1.toString;
+        t2 = H.getTypeArgumentByIndex(t1, 0);
+        return new H.MappedListIterable(t1, H.functionTypeCheck(f, {func: 1, ret: $T, args: [t2]}), [t2, $T]);
+      },
+      skip$1: function(_, n) {
+        var t1 = this._base;
+        t1.toString;
+        return H.SubListIterable$(t1, n, null, H.getTypeArgumentByIndex(t1, 0));
+      },
+      where$1: function(_, test) {
+        var t1, t2;
+        H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [H.getTypeArgumentByIndex(this, 0)]});
+        t1 = this._base;
+        t1.toString;
+        t2 = H.getTypeArgumentByIndex(t1, 0);
+        return new H.WhereIterable(t1, H.functionTypeCheck(test, {func: 1, ret: P.bool, args: [t2]}), [t2]);
+      },
+      toString$0: function(_) {
+        return J.toString$0$(this._base);
+      },
+      $isIterable: 1
+    },
+    DelegatingIterable: {
+      "^": "_DelegatingIterableBase;$ti"
+    },
+    DelegatingList: {
+      "^": "DelegatingIterable;$ti",
+      $index: function(_, index) {
+        var t1 = H.assertSubtype(this._base, "$isList", this.$ti, "$asList");
+        return (t1 && C.JSArray_methods).$index(t1, index);
+      },
+      $indexSet: function(_, index, value) {
+        var t1;
+        H.intTypeCheck(index);
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        t1 = H.assertSubtype(this._base, "$isList", this.$ti, "$asList");
+        (t1 && C.JSArray_methods).$indexSet(t1, index, value);
+      },
+      $add: function(_, other) {
+        var t1 = this.$ti;
+        H.assertSubtype(other, "$isList", t1, "$asList");
+        t1 = H.assertSubtype(this._base, "$isList", t1, "$asList");
+        return (t1 && C.JSArray_methods).$add(t1, other);
+      },
+      add$1: function(_, value) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 0));
+        t1 = H.assertSubtype(this._base, "$isList", this.$ti, "$asList");
+        (t1 && C.JSArray_methods).add$1(t1, value);
+      },
+      sort$1: [function(_, compare) {
+        var t1 = H.getTypeArgumentByIndex(this, 0);
+        H.functionTypeCheck(compare, {func: 1, ret: P.int, args: [t1, t1]});
+        t1 = H.assertSubtype(this._base, "$isList", this.$ti, "$asList");
+        (t1 && C.JSArray_methods).sort$1(t1, compare);
+      }, function($receiver) {
+        return this.sort$1($receiver, null);
+      }, "sort$0", "call$1", "call$0", "get$sort", 1, 2, function() {
+        return H.computeSignature(function(E) {
+          return {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [E, E]}]};
+        }, this.$receiver, "DelegatingList");
+      }],
+      $isEfficientLengthIterable: 1,
+      $isList: 1
     }
   }], ["intl", "package:intl/intl.dart",, T, {
     "^": "",
@@ -17585,10 +26726,10 @@
       $isNode0: 1
     },
     Element_textContent_closure: {
-      "^": "Closure:40;",
+      "^": "Closure:45;",
       call$1: [function(child) {
         return H.interceptedTypeCheck(child, "$isNode0").get$textContent();
-      }, null, null, 4, 0, null, 20, "call"]
+      }, null, null, 4, 0, null, 29, "call"]
     },
     Text0: {
       "^": "Object;text",
@@ -17620,7 +26761,7 @@
     ListSyntax__expandedTabLength: function(input) {
       var t1, $length;
       for (input.toString, t1 = new H.CodeUnits(input), t1 = new H.ListIterator(t1, t1.get$length(t1), 0, [P.int]), $length = 0; t1.moveNext$0();)
-        $length += t1._current === 9 ? 4 - C.JSInt_methods.$mod($length, 4) : 1;
+        $length += t1.__internal$_current === 9 ? 4 - C.JSInt_methods.$mod($length, 4) : 1;
       return $length;
     },
     BlockParser: {
@@ -17699,7 +26840,7 @@
       }
     },
     BlockSyntax_isAtBlockEnd_closure: {
-      "^": "Closure:30;parser",
+      "^": "Closure:60;parser",
       call$1: function(s) {
         H.interceptedTypeCheck(s, "$isBlockSyntax");
         return s.canParse$1(this.parser) && s.get$canEndBlock();
@@ -17893,7 +27034,7 @@
       }
     },
     BlockquoteSyntax_parseChildLines_closure: {
-      "^": "Closure:30;parser",
+      "^": "Closure:60;parser",
       call$1: function(s) {
         return H.interceptedTypeCheck(s, "$isBlockSyntax").canParse$1(this.parser);
       }
@@ -18230,7 +27371,7 @@
           t2 = false;
         if (t2)
           C.JSArray_methods.removeAt$1(t1, 0);
-      }, "call$1", "get$removeLeadingEmptyLine", 4, 0, 71],
+      }, "call$1", "get$removeLeadingEmptyLine", 4, 0, 111],
       removeTrailingEmptyLines$1: function(items) {
         var anyEmpty, i, t1, t2;
         H.assertSubtype(items, "$isList", [K.ListItem], "$asList");
@@ -18267,7 +27408,7 @@
       }
     },
     ListSyntax_parse_endItem: {
-      "^": "Closure:0;_box_0,items",
+      "^": "Closure:1;_box_0,items",
       call$0: function() {
         var t1, t2;
         t1 = this._box_0;
@@ -18279,7 +27420,7 @@
       }
     },
     ListSyntax_parse_tryMatch: {
-      "^": "Closure:72;_box_0,parser",
+      "^": "Closure:112;_box_0,parser",
       call$1: function(pattern) {
         var t1, t2, match;
         t1 = this.parser;
@@ -18425,7 +27566,7 @@
       }
     },
     ParagraphSyntax__extractReflinkDefinitions_lineStartsReflinkDefinition: {
-      "^": "Closure:31;lines",
+      "^": "Closure:47;lines",
       call$1: function(i) {
         var t1 = this.lines;
         if (i < 0 || i >= t1.length)
@@ -18434,7 +27575,7 @@
       }
     },
     ParagraphSyntax__parseReflinkDefinition_closure: {
-      "^": "Closure:74;_box_0,destination",
+      "^": "Closure:114;_box_0,destination",
       call$0: function() {
         var t1 = this._box_0;
         return new S.LinkReference(t1.label, this.destination, t1.title);
@@ -18442,7 +27583,7 @@
     }
   }], ["", "package:markdown/src/document.dart",, S, {
     "^": "",
-    Document: {
+    Document0: {
       "^": "Object;linkReferences,extensionSet,linkResolver,imageLinkResolver,encodeHtml,_blockSyntaxes,_inlineSyntaxes",
       _parseInlineContent$1: function(nodes) {
         var i, t1, node, inlineNodes;
@@ -18480,7 +27621,7 @@
       t4 = R.InlineSyntax;
       t5 = P.LinkedHashSet_LinkedHashSet(null, null, null, t4);
       t6 = $.$get$ExtensionSet_commonMark();
-      $document = new S.Document(P.LinkedHashMap_LinkedHashMap$_empty(t1, S.LinkReference), t6, linkResolver, imageLinkResolver, true, t3, t5);
+      $document = new S.Document0(P.LinkedHashMap_LinkedHashMap$_empty(t1, S.LinkReference), t6, linkResolver, imageLinkResolver, true, t3, t5);
       t2 = H.setRuntimeTypeInfo([], [t2]);
       t3.addAll$1(0, t2);
       t3.addAll$1(0, t6.blockSyntaxes);
@@ -18534,7 +27675,7 @@
       $isNodeVisitor: 1
     },
     HtmlRenderer_visitElementBefore_closure: {
-      "^": "Closure:75;",
+      "^": "Closure:115;",
       call$2: function(a, b) {
         return J.compareTo$1$ns(H.stringTypeCheck(a), H.stringTypeCheck(b));
       }
@@ -18602,21 +27743,21 @@
       }
     },
     InlineParser_closure: {
-      "^": "Closure:32;$this",
+      "^": "Closure:48;$this",
       call$1: function(s) {
         H.interceptedTypeCheck(s, "$isInlineSyntax");
         return !C.JSArray_methods.contains$1(this.$this.document.extensionSet.inlineSyntaxes, s);
       }
     },
     InlineParser_parse_closure: {
-      "^": "Closure:77;$this",
+      "^": "Closure:176;$this",
       call$1: function(state) {
         H.interceptedTypeCheck(state, "$isTagState");
         return state.syntax != null && state.tryMatch$1(this.$this);
       }
     },
     InlineParser_parse_closure0: {
-      "^": "Closure:32;$this",
+      "^": "Closure:48;$this",
       call$1: function(syntax) {
         return H.interceptedTypeCheck(syntax, "$isInlineSyntax").tryMatch$1(this.$this);
       }
@@ -19113,14 +28254,14 @@
       }
     },
     LinkSyntax_closure: {
-      "^": "Closure:78;",
+      "^": "Closure:118;",
       call$2: [function(_, __) {
         H.stringTypeCheck(_);
         H.stringTypeCheck(__);
         return;
       }, function(_) {
         return this.call$2(_, null);
-      }, "call$1", null, null, null, 4, 2, null, 1, 2, 52, "call"]
+      }, "call$1", null, null, null, 4, 2, null, 3, 0, 69, "call"]
     },
     ImageSyntax: {
       "^": "LinkSyntax;linkResolver,_pendingStatesAreActive,endPattern,requiresDelimiterRun,pattern",
@@ -19218,9 +28359,7 @@
         t1 = parser._stack;
         t2 = C.JSArray_methods.indexOf$1(t1, this) + 1;
         unmatchedTags = C.JSArray_methods.sublist$1(t1, t2);
-        t3 = t1.length;
-        P.RangeError_checkValidRange(t2, t3, t3, null, null, null);
-        t1.splice(t2, t3 - t2);
+        C.JSArray_methods.removeRange$2(t1, t2, t1.length);
         for (t2 = unmatchedTags.length, t3 = this.children, _i = 0; _i < unmatchedTags.length; unmatchedTags.length === t2 || (0, H.throwConcurrentModificationError)(unmatchedTags), ++_i) {
           unmatched = unmatchedTags[_i];
           parser.writeTextRange$2(unmatched.get$startPos(), unmatched.get$endPos());
@@ -19258,10 +28397,10 @@
       }
     },
     TagState_textContent_closure: {
-      "^": "Closure:40;",
+      "^": "Closure:45;",
       call$1: [function(child) {
         return H.interceptedTypeCheck(child, "$isNode0").get$textContent();
-      }, null, null, 4, 0, null, 20, "call"]
+      }, null, null, 4, 0, null, 29, "call"]
     },
     InlineLink: {
       "^": "Object;destination,title"
@@ -19333,6 +28472,213 @@
       }
       return t1.charCodeAt(0) == 0 ? t1 : t1;
     }
+  }], ["", "package:observable/src/change_notifier.dart",, B, {
+    "^": "",
+    ChangeNotifier: {
+      "^": "Object;0_changes,_scheduled,0_queue,$ti",
+      set$_queue: function(_queue) {
+        this._queue = H.assertSubtype(_queue, "$isList", this.$ti, "$asList");
+      },
+      deliverChanges$0: [function() {
+        var t1, t2, changes;
+        if (this._scheduled && this.get$hasObservers()) {
+          t1 = this._queue;
+          t2 = this.$ti;
+          if (t1 == null)
+            changes = new Y.ChangeRecords(true, C.List_empty1, C.List_empty1, t2);
+          else {
+            t1 = G.freezeInDevMode(t1, H.getTypeArgumentByIndex(this, 0));
+            changes = new Y.ChangeRecords(false, t1, t1, t2);
+          }
+          this.set$_queue(null);
+          this._scheduled = false;
+          C.JSNull_methods.add$1(this._changes, changes);
+          return true;
+        }
+        return false;
+      }, "call$0", "get$deliverChanges", 0, 0, 23],
+      get$hasObservers: function() {
+        return false;
+      },
+      notifyChange$1: function(change) {
+        var t1;
+        H.assertSubtypeOfRuntimeType(change, H.getTypeArgumentByIndex(this, 0));
+        if (!this.get$hasObservers())
+          return;
+        t1 = this._queue;
+        if (t1 == null) {
+          t1 = H.setRuntimeTypeInfo([], this.$ti);
+          this.set$_queue(t1);
+        }
+        C.JSArray_methods.add$1(t1, change);
+        if (!this._scheduled) {
+          P.scheduleMicrotask(this.get$deliverChanges());
+          this._scheduled = true;
+        }
+      }
+    }
+  }], ["", "package:observable/src/internal.dart",, G, {
+    "^": "",
+    freezeInDevMode: function(list, $E) {
+      H.assertSubtype(list, "$isList", [$E], "$asList");
+      if (list == null)
+        return C.List_empty1;
+      return list;
+    }
+  }], ["observable.src.observable", "package:observable/src/observable.dart",, E, {
+    "^": "",
+    Observable: {
+      "^": "Object;$ti",
+      notifyPropertyChange$1$3: function(field, oldValue, newValue, $T) {
+        var t1, t2;
+        H.assertSubtypeOfRuntimeType(oldValue, $T);
+        H.assertSubtypeOfRuntimeType(newValue, $T);
+        t1 = this._observable$_delegate;
+        if (t1.get$hasObservers() && oldValue !== newValue)
+          if (this._isNotGeneric) {
+            t2 = H.getRuntimeTypeArgument(this, "Observable", 0);
+            t1.notifyChange$1(H.assertSubtypeOfRuntimeType(H.subtypeOfRuntimeTypeCast(new Y.PropertyChangeRecord(this, field, oldValue, newValue, [$T]), t2), t2));
+          }
+        return newValue;
+      }
+    }
+  }], ["observable.src.observable_map", "package:observable/src/observable_map.dart",, Y, {
+    "^": "",
+    ObservableMap: {
+      "^": "Observable;_observable_map$_map,_observable$_delegate,_isNotGeneric,$ti",
+      get$keys: function(_) {
+        var t1 = this._observable_map$_map;
+        return t1.get$keys(t1);
+      },
+      get$length: function(_) {
+        var t1 = this._observable_map$_map;
+        return t1.get$length(t1);
+      },
+      $index: function(_, key) {
+        return this._observable_map$_map.$index(0, key);
+      },
+      $indexSet: function(_, key, value) {
+        var t1, t2, len, oldValue;
+        H.assertSubtypeOfRuntimeType(key, H.getTypeArgumentByIndex(this, 0));
+        H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(this, 1));
+        t1 = this._observable$_delegate;
+        if (!t1.get$hasObservers()) {
+          this._observable_map$_map.$indexSet(0, key, value);
+          return;
+        }
+        t2 = this._observable_map$_map;
+        len = t2.get$length(t2);
+        oldValue = t2.$index(0, key);
+        t2.$indexSet(0, key, value);
+        if (len !== t2.get$length(t2)) {
+          this.notifyPropertyChange$1$3(C.Symbol_length, len, t2.get$length(t2), P.int);
+          t1.notifyChange$1(H.assertSubtypeOfRuntimeType(new Y.MapChangeRecord(key, null, value, true, false, this.$ti), H.getRuntimeTypeArgument(this, "Observable", 0)));
+          this._notifyKeysValuesChanged$0();
+        } else if (!J.$eq$(oldValue, value)) {
+          t2 = H.getRuntimeTypeArgument(this, "Observable", 0);
+          t1.notifyChange$1(H.assertSubtypeOfRuntimeType(new Y.MapChangeRecord(key, oldValue, value, false, false, this.$ti), t2));
+          t1.notifyChange$1(H.assertSubtypeOfRuntimeType(new Y.PropertyChangeRecord(this, C.Symbol_values, null, null, [P.Null]), t2));
+        }
+      },
+      addAll$1: function(_, other) {
+        H.assertSubtype(other, "$isMap", this.$ti, "$asMap").forEach$1(0, new Y.ObservableMap_addAll_closure(this));
+      },
+      forEach$1: function(_, f) {
+        return this._observable_map$_map.forEach$1(0, H.functionTypeCheck(f, {func: 1, ret: -1, args: [H.getTypeArgumentByIndex(this, 0), H.getTypeArgumentByIndex(this, 1)]}));
+      },
+      toString$0: function(_) {
+        return P.MapBase_mapToString(this);
+      },
+      _notifyKeysValuesChanged$0: function() {
+        var t1, t2, t3;
+        t1 = [P.Null];
+        t2 = H.getRuntimeTypeArgument(this, "Observable", 0);
+        t3 = this._observable$_delegate;
+        t3.notifyChange$1(H.assertSubtypeOfRuntimeType(new Y.PropertyChangeRecord(this, C.Symbol_keys, null, null, t1), t2));
+        t3.notifyChange$1(H.assertSubtypeOfRuntimeType(new Y.PropertyChangeRecord(this, C.Symbol_values, null, null, t1), t2));
+      },
+      $isMap: 1,
+      $asObservable: function($K, $V) {
+        return [Y.ChangeRecord];
+      }
+    },
+    ObservableMap_addAll_closure: {
+      "^": "Closure;$this",
+      call$2: function(key, value) {
+        var t1 = this.$this;
+        t1.$indexSet(0, H.assertSubtypeOfRuntimeType(key, H.getTypeArgumentByIndex(t1, 0)), H.assertSubtypeOfRuntimeType(value, H.getTypeArgumentByIndex(t1, 1)));
+      },
+      $signature: function() {
+        var t1 = this.$this;
+        return {func: 1, ret: P.Null, args: [H.getTypeArgumentByIndex(t1, 0), H.getTypeArgumentByIndex(t1, 1)]};
+      }
+    }
+  }], ["observable.src.records", "package:observable/src/records.dart",, Y, {
+    "^": "",
+    ChangeRecord: {
+      "^": "Object;"
+    },
+    ChangeRecords: {
+      "^": "DelegatingList;_isAny<,_records$_delegate<,_base,$ti",
+      get$hashCode: function(_) {
+        return X._finish(X._combine(X._combine(0, J.get$hashCode$(this._records$_delegate)), C.JSBool_methods.get$hashCode(this._isAny)));
+      },
+      $eq: function(_, other) {
+        var t1;
+        if (other == null)
+          return false;
+        if (this !== other)
+          if (H.checkSubtype(other, "$isChangeRecords", [Y.ChangeRecord], null))
+            if (new H.TypeImpl(H.getRti(this)).$eq(0, new H.TypeImpl(H.getRti(other)))) {
+              t1 = this._isAny;
+              if (!(t1 && other.get$_isAny()))
+                t1 = !t1 && !other.get$_isAny() && C.ListEquality_DefaultEquality.equals$2(this._records$_delegate, other.get$_records$_delegate());
+              else
+                t1 = true;
+            } else
+              t1 = false;
+          else
+            t1 = false;
+        else
+          t1 = true;
+        return t1;
+      },
+      toString$0: function(_) {
+        return this._isAny ? "ChangeRecords.any" : "ChangeRecords(" + H.S(this._records$_delegate) + ")";
+      }
+    },
+    MapChangeRecord: {
+      "^": "Object;key>,oldValue>,newValue>,isInsert<,isRemove<,$ti",
+      $eq: function(_, o) {
+        var t1;
+        if (o == null)
+          return false;
+        if (H.checkSubtype(o, "$isMapChangeRecord", this.$ti, null)) {
+          t1 = J.getInterceptor$x(o);
+          return J.$eq$(this.key, t1.get$key(o)) && J.$eq$(this.oldValue, t1.get$oldValue(o)) && J.$eq$(this.newValue, t1.get$newValue(o)) && this.isInsert === o.get$isInsert() && this.isRemove === o.get$isRemove();
+        }
+        return false;
+      },
+      get$hashCode: function(_) {
+        return X.hashObjects([this.key, this.oldValue, this.newValue, this.isInsert, this.isRemove]);
+      },
+      toString$0: function(_) {
+        var kind;
+        if (this.isInsert)
+          kind = "insert";
+        else
+          kind = this.isRemove ? "remove" : "set";
+        return "#<MapChangeRecord " + kind + " " + H.S(this.key) + " from " + H.S(this.oldValue) + " to " + H.S(this.newValue);
+      },
+      $isChangeRecord: 1
+    },
+    PropertyChangeRecord: {
+      "^": "Object;object,name>,oldValue>,newValue>,$ti",
+      toString$0: function(_) {
+        return "#<" + C.Type_PropertyChangeRecord_8EM.toString$0(0) + " " + this.name.toString$0(0) + " from " + H.S(this.oldValue) + " to: " + H.S(this.newValue);
+      },
+      $isChangeRecord: 1
+    }
   }], ["quiver.collection", "package:quiver/collection.dart",, S, {
     "^": "",
     listsEqual: function(a, b) {
@@ -19358,10 +28704,44 @@
       }
       return true;
     }
+  }], ["quiver.core", "package:quiver/core.dart",, X, {
+    "^": "",
+    hashObjects: function(objects) {
+      return X._finish(C.JSArray_methods.fold$1$2(objects, 0, new X.hashObjects_closure(), P.int));
+    },
+    _combine: function(hash, value) {
+      if (typeof hash !== "number")
+        return hash.$add();
+      hash = 536870911 & hash + value;
+      hash = 536870911 & hash + ((524287 & hash) << 10);
+      return hash ^ hash >>> 6;
+    },
+    _finish: function(hash) {
+      H.intTypeCheck(hash);
+      if (typeof hash !== "number")
+        return H.iae(hash);
+      hash = 536870911 & hash + ((67108863 & hash) << 3);
+      hash ^= hash >>> 11;
+      return 536870911 & hash + ((16383 & hash) << 15);
+    },
+    hashObjects_closure: {
+      "^": "Closure:119;",
+      call$2: function(h, i) {
+        return X._combine(H.intTypeCheck(h), J.get$hashCode$(i));
+      }
+    }
+  }], ["quiver.time", "package:quiver/time.dart",, V, {
+    "^": "",
+    systemTime: [function() {
+      return new P.DateTime(Date.now(), false);
+    }, "call$0", "time__systemTime$closure", 0, 0, 167],
+    Clock: {
+      "^": "Object;_time"
+    }
   }], ["", "package:skawa_components/ckeditor/ckeditor.dart",, V, {
     "^": "",
     SkawaCkeditorComponent: {
-      "^": "Object;_ckeditor$_changeController,0_ckeditor,0editorName,0extraPlugins,0content,0configUrl",
+      "^": "Object;_changeController,0_ckeditor,0editorName,0extraPlugins,0content,0configUrl",
       set$extraPlugins: function(extraPlugins) {
         this.extraPlugins = H.assertSubtype(extraPlugins, "$isList", [V.ExtraPlugin], "$asList");
       },
@@ -19524,7 +28904,7 @@
         var t1 = this.url;
         if (t1 != null)
           C.Window_methods.open$2(window, t1, "_blank");
-      }, "call$0", "get$navigate", 1, 0, 0]
+      }, "call$0", "get$navigate", 1, 0, 1]
     }
   }], ["", "package:skawa_components/infobar/infobar.template.dart",, G, {
     "^": "",
@@ -19672,7 +29052,7 @@
         var t1;
         H.assertSubtype(classes, "$isList", [P.String], "$asList");
         if (classes != null)
-          if (J.get$isNotEmpty$asx(classes)) {
+          if (classes.length !== 0) {
             t1 = J.get$children$x(element);
             t1 = !t1.get$isEmpty(t1);
           } else
@@ -19686,7 +29066,7 @@
       }
     },
     EditorRenderTarget__updateElementChildren_closure: {
-      "^": "Closure:79;$this,classes",
+      "^": "Closure:120;$this,classes",
       call$1: function(child) {
         var t1;
         H.interceptedTypeCheck(child, "$isElement");
@@ -19729,7 +29109,7 @@
       }
     },
     SkawaMarkdownRendererComponent_ngOnInit_closure: {
-      "^": "Closure:9;",
+      "^": "Closure:10;",
       call$1: function(cssClass) {
         return !J.contains$1$asx(H.stringTypeCheck(cssClass), "markdown-container");
       }
@@ -19824,11 +29204,11 @@
       onMouseEnter$0: [function(_) {
         this.hovering = true;
         return true;
-      }, "call$0", "get$onMouseEnter", 1, 0, 0],
+      }, "call$0", "get$onMouseEnter", 1, 0, 1],
       onMouseOut$0: [function(_) {
         this.hovering = false;
         return false;
-      }, "call$0", "get$onMouseOut", 1, 0, 0]
+      }, "call$0", "get$onMouseOut", 1, 0, 1]
     },
     _SkawaNavItemComponent_MaterialButtonBase_TextOnlyMixin: {
       "^": "MaterialButtonBase+TextOnlyMixin;textOnly:TextOnlyMixin_textOnly<"
@@ -19871,8 +29251,8 @@
         this.set$_map_0(Q.pureProxy2(new Y.ViewSkawaNavItemComponent0_build_closure(), [P.Map, P.String,,], null, null));
         t1 = W.Event;
         t4 = J.getInterceptor$x(_el_1);
-        t4.addEventListener$2(_el_1, "mousedown", this.eventHandler1$2$1(J.get$onMouseDown$z(this.ctx), t1, t1));
-        t4.addEventListener$2(_el_1, "mouseup", this.eventHandler1$2$1(J.get$onMouseUp$z(this.ctx), t1, t1));
+        t4.addEventListener$2(_el_1, "mousedown", this.eventHandler1$2$1(J.get$onMouseDown$x(this.ctx), t1, t1));
+        t4.addEventListener$2(_el_1, "mouseup", this.eventHandler1$2$1(J.get$onMouseUp$x(this.ctx), t1, t1));
         this.init$2(C.List_empty, null);
         t4 = J.getInterceptor$x(_rootEl);
         t4.addEventListener$2(_rootEl, "click", this.eventHandler1$2$1(_ctx.get$handleClick(), t1, W.MouseEvent));
@@ -19930,8 +29310,8 @@
         this._MaterialRippleComponent_1_5.ngOnDestroy$0();
       },
       detectHostChanges$1: function(firstCheck) {
-        var currVal_4, t1, currVal_5, currVal_6, currVal_8;
-        currVal_4 = J.get$tabIndex$z(this.ctx);
+        var currVal_4, t1, currVal_5, currVal_6, currVal_7, currVal_8;
+        currVal_4 = J.get$tabIndex$x(this.ctx);
         t1 = this._expr_4;
         if (t1 != currVal_4) {
           this.rootEl.tabIndex = currVal_4;
@@ -19939,7 +29319,7 @@
         }
         currVal_5 = this.ctx.get$ariaRole();
         t1 = this._expr_5;
-        if (t1 !== currVal_5) {
+        if (t1 != currVal_5) {
           this.setAttr$3(this.rootEl, "role", currVal_5);
           this._expr_5 = currVal_5;
         }
@@ -19949,11 +29329,11 @@
           this.setAttr$3(this.rootEl, "aria-disabled", currVal_6);
           this._expr_6 = currVal_6;
         }
-        J.get$disabled$z(this.ctx);
+        currVal_7 = J.get$disabled$z(this.ctx);
         t1 = this._expr_7;
-        if (t1 !== false) {
-          this.updateElemClass$3(this.rootEl, "is-disabled", false);
-          this._expr_7 = false;
+        if (t1 !== currVal_7) {
+          this.updateElemClass$3(this.rootEl, "is-disabled", currVal_7);
+          this._expr_7 = currVal_7;
         }
         currVal_8 = this.ctx.get$textOnly();
         t1 = this._expr_8;
@@ -19985,7 +29365,7 @@
       }
     },
     ViewSkawaNavItemComponent0_build_closure: {
-      "^": "Closure:120;",
+      "^": "Closure:121;",
       call$2: function(p0, p1) {
         return P.LinkedHashMap_LinkedHashMap$_literal(["hovering", p0, "icon-padding", p1], P.String, null);
       }
@@ -20011,7 +29391,7 @@
         for (; !C.JSArray_methods.contains$1(C.List_3_4_6_8, hash.length);)
           hash = C.JSString_methods.substring$1(hash, 1);
         return "#" + hash;
-      }, "call$1", "get$transform", 5, 0, 81]
+      }, "call$1", "get$transform", 5, 0, 28]
     }
   }], ["asset_skawa_components_lib_sidebar_item_sidebar_item.css.shim.dart", "package:skawa_components/sidebar_item/sidebar_item.css.shim.dart",, E, {}], ["", "package:skawa_components/sidebar_item/sidebar_item.dart",, E, {
     "^": "",
@@ -20031,9 +29411,9 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, E.SkawaSidebarItemComponent));
       t1.componentType = $.ViewSkawaSidebarItemComponent0__renderType;
       return t1;
-    }, "call$2", "sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure", 8, 0, 114],
+    }, "call$2", "sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure", 8, 0, 168],
     ViewSkawaSidebarItemComponent0: {
-      "^": "AppView;0_sidebar_item_template$_appEl_0,0_NgIf_0_9,0_sidebar_item_template$_expr_1,0_sidebar_item_template$_expr_2,0_sidebar_item_template$_el_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_sidebar_item_template$_appEl_0,0_sidebar_item_template$_NgIf_0_9,0_sidebar_item_template$_expr_1,0_sidebar_item_template$_expr_2,0_sidebar_item_template$_el_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _anchor_0;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -20042,7 +29422,7 @@
         J.append$1$x(parentRenderNode, _anchor_0);
         t1 = new V.ViewContainer(0, null, this, _anchor_0);
         this._sidebar_item_template$_appEl_0 = t1;
-        this._NgIf_0_9 = new K.NgIf(new D.TemplateRef(t1, K.sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure()), t1, false);
+        this._sidebar_item_template$_NgIf_0_9 = new K.NgIf(new D.TemplateRef(t1, K.sidebar_item_template__viewFactory_SkawaSidebarItemComponent1$closure()), t1, false);
         t1 = S.createSpanAndAppend(document, parentRenderNode);
         this._sidebar_item_template$_el_1 = t1;
         t1.className = "item-text";
@@ -20053,7 +29433,7 @@
       detectChangesInternal$0: function() {
         var _ctx, t1, currVal_1;
         _ctx = this.ctx;
-        t1 = this._NgIf_0_9;
+        t1 = this._sidebar_item_template$_NgIf_0_9;
         t1.set$ngIf(_ctx.TextOnlyMixin_textOnly == null && _ctx.icon != null);
         this._sidebar_item_template$_appEl_0.detectChangesInNestedViews$0();
         currVal_1 = _ctx.TextOnlyMixin_textOnly != null;
@@ -20142,9 +29522,9 @@
       var t1 = new V._ViewAppComponentHost0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_0, parentIndex, Q.AppComponent));
       return t1;
-    }, "call$2", "app_component_template__viewFactory_AppComponentHost0$closure", 8, 0, 115],
+    }, "call$2", "app_component_template__viewFactory_AppComponentHost0$closure", 8, 0, 169],
     ViewAppComponent0: {
-      "^": "AppView;0_MaterialPersistentDrawerDirective_0_5,0_compView_1,0_SkawaSidebarItemComponent_1_5,0_compView_3,0_SkawaSidebarItemComponent_3_5,0_compView_6,0_SkawaSidebarItemComponent_6_5,0_compView_9,0_SkawaSidebarItemComponent_9_5,0_compView_12,0_SkawaSidebarItemComponent_12_5,0_compView_15,0_SkawaSidebarItemComponent_15_5,0_compView_17,0_SkawaSidebarItemComponent_17_5,0_compView_20,0_SkawaSidebarItemComponent_20_5,0_compView_23,0_SkawaSidebarItemComponent_23_5,0_compView_26,0_SkawaSidebarItemComponent_26_5,0_compView_29,0_SkawaSidebarItemComponent_29_5,0_compView_32,0_SkawaSidebarItemComponent_32_5,0_compView_35,0_SkawaSidebarItemComponent_35_5,0_compView_38,0_SkawaSidebarItemComponent_38_5,0_compView_41,0_SkawaSidebarItemComponent_41_5,0_compView_44,0_SkawaSidebarItemComponent_44_5,0_compView_47,0_SkawaSidebarItemComponent_47_5,0_compView_54,0_AcxDarkTheme_54_5,0_MaterialButtonComponent_54_6,0_compView_55,0_MaterialIconComponent_55_5,0_compView_61,0_CardDemoComponent_61_5,0_compView_62,0_CkeditorDemoComponent_62_5,0_compView_63,0_DataTableDemoComponent_63_5,0_compView_64,0_GridDemoComponent_64_5,0_compView_65,0_HexColorizePipeDemoComponent_65_5,0_compView_66,0_InfobarDemoComponent_66_5,0_compView_67,0_MarkdownDemoComponent_67_5,0__EditorRenderer_67_6,0_compView_68,0_NavItemDemoComponent_68_5,0_compView_69,0_SidebarItemDemoComponent_69_5,0_compView_70,0_SnackbarService_70_5,0_SnackbarDemoComponent_70_6,0_compView_71,0_ExtendedMaterialIconDemoComponent_71_5,0_expr_17,0_el_0,0_el_52,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_MaterialPersistentDrawerDirective_0_5,0_compView_1,0_SkawaSidebarItemComponent_1_5,0_compView_3,0_SkawaSidebarItemComponent_3_5,0_compView_6,0_SkawaSidebarItemComponent_6_5,0_compView_9,0_SkawaSidebarItemComponent_9_5,0_compView_12,0_SkawaSidebarItemComponent_12_5,0_compView_15,0_SkawaSidebarItemComponent_15_5,0_compView_17,0_SkawaSidebarItemComponent_17_5,0_compView_20,0_SkawaSidebarItemComponent_20_5,0_compView_23,0_SkawaSidebarItemComponent_23_5,0_compView_26,0_SkawaSidebarItemComponent_26_5,0_compView_29,0_SkawaSidebarItemComponent_29_5,0_compView_32,0_SkawaSidebarItemComponent_32_5,0_compView_35,0_SkawaSidebarItemComponent_35_5,0_compView_38,0_SkawaSidebarItemComponent_38_5,0_compView_41,0_SkawaSidebarItemComponent_41_5,0_compView_44,0_SkawaSidebarItemComponent_44_5,0_compView_47,0_SkawaSidebarItemComponent_47_5,0_compView_54,0_AcxDarkTheme_54_5,0_MaterialButtonComponent_54_6,0_compView_55,0_MaterialIconComponent_55_5,0_compView_61,0_CardDemoComponent_61_5,0_compView_62,0_CkeditorDemoComponent_62_5,0_compView_63,0_DataTableDemoComponent_63_5,0_compView_64,0_GridDemoComponent_64_5,0_compView_65,0_HexColorizePipeDemoComponent_65_5,0_compView_66,0_InfobarDemoComponent_66_5,0_compView_67,0_MarkdownDemoComponent_67_5,0__EditorRenderer_67_6,0_compView_68,0_NavItemDemoComponent_68_5,0_compView_69,0_SidebarItemDemoComponent_69_5,0_compView_70,0_SnackbarService_70_5,0_SnackbarDemoComponent_70_6,0_compView_71,0_ExtendedMaterialIconDemoComponent_71_5,0_app_component_template$_expr_17,0_el_0,0_el_52,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, doc, t1, _el_1, _text_2, t2, _el_3, _el_4, t3, _el_6, _el_7, _el_9, _el_10, _el_12, _el_13, _el_15, _text_16, _el_17, _el_18, _el_20, _el_21, _el_23, _el_24, _el_26, _el_27, _el_29, _el_30, _el_32, _el_33, _el_35, _el_36, _el_38, _el_39, _el_41, _el_42, _el_44, _el_45, _el_47, _el_48, _el_50, _el_51, _el_53, _el_54, _el_55, _el_56, _el_58, _el_59, _el_60, _el_61, t4, _el_62, _el_63, _el_64, _el_65, _el_66, _el_67, _el_68, _el_69, t5, _el_70, _el_71, subscription_0;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -20853,10 +30233,10 @@
         this._compView_47.detectHostChanges$1(firstCheck);
         t1 = local_drawer._visible;
         currVal_17 = !t1;
-        t1 = this._expr_17;
+        t1 = this._app_component_template$_expr_17;
         if (t1 !== currVal_17) {
           this.updateClass$3(H.interceptedTypeCheck(this._el_52, "$isHtmlElement"), "no-drawer", currVal_17);
-          this._expr_17 = currVal_17;
+          this._app_component_template$_expr_17 = currVal_17;
         }
         this._compView_54.detectHostChanges$1(firstCheck);
         this._compView_1.detectChanges$0();
@@ -20936,7 +30316,158 @@
       }
     },
     _ViewAppComponentHost0: {
-      "^": "AppView;0_compView_0,0_AppComponent_0_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_compView_0,0_AppComponent_0_5,0__Document_0_6,0__HtmlDocument_0_7,0__Window_0_8,0__DomService_0_9,0__AcxImperativeViewUtils_0_10,0__DomRuler_0_11,0__ManagedZone_0_12,0__overlayContainerName_0_13,0__overlayContainerParent_0_14,0__overlayContainer_0_15,0__overlaySyncDom_0_16,0__overlayRepositionLoop_0_17,0__OverlayStyleConfig_0_18,0__ZIndexer_0_19,0__OverlayDomRenderService_0_20,0__OverlayService_0_21,0__defaultPopupPositions_0_22,0__DomPopupSourceFactory_0_23,0__Clock_0_24,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      set$__defaultPopupPositions_0_22: function(__defaultPopupPositions_0_22) {
+        this.__defaultPopupPositions_0_22 = H.assertSubtype(__defaultPopupPositions_0_22, "$isList", [K.RelativePosition], "$asList");
+      },
+      get$_Document_0_6: function() {
+        var t1 = this.__Document_0_6;
+        if (t1 == null) {
+          t1 = document;
+          this.__Document_0_6 = t1;
+        }
+        return t1;
+      },
+      get$_Window_0_8: function() {
+        var t1 = this.__Window_0_8;
+        if (t1 == null) {
+          t1 = window;
+          this.__Window_0_8 = t1;
+        }
+        return t1;
+      },
+      get$_DomService_0_9: function() {
+        var t1 = this.__DomService_0_9;
+        if (t1 == null) {
+          t1 = T.createDomService(H.interceptedTypeCheck(this.injectorGet$3(C.Type_DomService_2jN, this.viewData.parentIndex, null), "$isDomService"), H.interceptedTypeCheck(this.injectorGet$3(C.Type_Disposer_k0p, this.viewData.parentIndex, null), "$isDisposer"), H.interceptedTypeCheck(this.injectorGet$2(C.Type_NgZone_6ty, this.viewData.parentIndex), "$isNgZone"), this.get$_Window_0_8());
+          this.__DomService_0_9 = t1;
+        }
+        return t1;
+      },
+      get$_AcxImperativeViewUtils_0_10: function() {
+        var t1 = this.__AcxImperativeViewUtils_0_10;
+        if (t1 == null) {
+          t1 = new O.AcxImperativeViewUtils(H.interceptedTypeCheck(this.injectorGet$2(C.Type_ComponentLoader_7xV, this.viewData.parentIndex), "$isComponentLoader"), H.interceptedTypeCheck(this.get$_DomService_0_9(), "$isDomService"));
+          this.__AcxImperativeViewUtils_0_10 = t1;
+        }
+        return t1;
+      },
+      get$_DomRuler_0_11: function() {
+        var t1 = this.__DomRuler_0_11;
+        if (t1 == null) {
+          t1 = new K.DomRulerImpl(this.get$_Document_0_6(), H.interceptedTypeCheck(this.get$_DomService_0_9(), "$isDomService"), P.Expando$(null, [P.List, P.String]));
+          this.__DomRuler_0_11 = t1;
+        }
+        return t1;
+      },
+      get$_ManagedZone_0_12: function() {
+        var t1 = this.__ManagedZone_0_12;
+        if (t1 == null) {
+          t1 = T.Angular2ManagedZone$(H.interceptedTypeCheck(this.injectorGet$2(C.Type_NgZone_6ty, this.viewData.parentIndex), "$isNgZone"));
+          this.__ManagedZone_0_12 = t1;
+        }
+        return t1;
+      },
+      get$_overlayContainerName_0_13: function() {
+        var t1 = this.__overlayContainerName_0_13;
+        if (t1 == null) {
+          t1 = G.getDefaultContainerName(this.injectorGet$3(C.OpaqueToken_overlayContainerName, this.viewData.parentIndex, null));
+          this.__overlayContainerName_0_13 = t1;
+        }
+        return t1;
+      },
+      get$_overlayContainerParent_0_14: function() {
+        var t1 = this.__overlayContainerParent_0_14;
+        if (t1 == null) {
+          t1 = G.getOverlayContainerParent(this.get$_Document_0_6(), this.injectorGet$3(C.OpaqueToken_overlayContainerParent, this.viewData.parentIndex, null));
+          this.__overlayContainerParent_0_14 = t1;
+        }
+        return t1;
+      },
+      get$_overlayContainer_0_15: function() {
+        var t1 = this.__overlayContainer_0_15;
+        if (t1 == null) {
+          t1 = G.getDefaultContainer(H.stringTypeCheck(this.get$_overlayContainerName_0_13()), H.interceptedTypeCheck(this.get$_overlayContainerParent_0_14(), "$isHtmlElement"), this.injectorGet$3(C.OpaqueToken_overlayContainer, this.viewData.parentIndex, null));
+          this.__overlayContainer_0_15 = t1;
+        }
+        return t1;
+      },
+      get$_overlaySyncDom_0_16: function() {
+        var t1 = this.__overlaySyncDom_0_16;
+        if (t1 == null) {
+          this.__overlaySyncDom_0_16 = true;
+          t1 = true;
+        }
+        return t1;
+      },
+      get$_overlayRepositionLoop_0_17: function() {
+        var t1 = this.__overlayRepositionLoop_0_17;
+        if (t1 == null) {
+          this.__overlayRepositionLoop_0_17 = true;
+          t1 = true;
+        }
+        return t1;
+      },
+      get$_OverlayStyleConfig_0_18: function() {
+        var t1 = this.__OverlayStyleConfig_0_18;
+        if (t1 == null) {
+          t1 = this.get$_Document_0_6();
+          t1 = new R.OverlayStyleConfig(H.interceptedTypeCheck((t1 && C.HtmlDocument_methods).querySelector$1(t1, "head"), "$isHeadElement"), false, t1);
+          this.__OverlayStyleConfig_0_18 = t1;
+        }
+        return t1;
+      },
+      get$_ZIndexer_0_19: function() {
+        var t1 = this.__ZIndexer_0_19;
+        if (t1 == null) {
+          t1 = $.ZIndexer__currentInstance;
+          if (t1 == null) {
+            t1 = new X.ZIndexer();
+            if (self.acxZIndex == null)
+              self.acxZIndex = 1000;
+            $.ZIndexer__currentInstance = t1;
+          }
+          this.__ZIndexer_0_19 = t1;
+        }
+        return t1;
+      },
+      get$_OverlayDomRenderService_0_20: function() {
+        var t1, t2, t3, t4, t5, t6, t7, t8, t9;
+        t1 = this.__OverlayDomRenderService_0_20;
+        if (t1 == null) {
+          t1 = this.get$_OverlayStyleConfig_0_18();
+          t2 = H.interceptedTypeCheck(this.get$_overlayContainer_0_15(), "$isHtmlElement");
+          t3 = H.stringTypeCheck(this.get$_overlayContainerName_0_13());
+          t4 = this.get$_DomRuler_0_11();
+          t5 = H.interceptedTypeCheck(this.get$_DomService_0_9(), "$isDomService");
+          t6 = H.interceptedTypeCheck(this.get$_AcxImperativeViewUtils_0_10(), "$isAcxImperativeViewUtils");
+          t7 = this.get$_overlaySyncDom_0_16();
+          t8 = this.get$_overlayRepositionLoop_0_17();
+          t9 = this.get$_ZIndexer_0_19();
+          t8 = new K.OverlayDomRenderService(t2, t3, t4, t5, t6, t7, t8, t9, 0);
+          J.setAttribute$2$x(t2, "name", t3);
+          t1.registerStyles$0();
+          t9.toString;
+          t8._lastZIndex = self.acxZIndex;
+          this.__OverlayDomRenderService_0_20 = t8;
+          t1 = t8;
+        }
+        return t1;
+      },
+      get$_OverlayService_0_21: function() {
+        var t1, t2, t3;
+        t1 = this.__OverlayService_0_21;
+        if (t1 == null) {
+          t1 = H.interceptedTypeCheck(this.injectorGet$2(C.Type_NgZone_6ty, this.viewData.parentIndex), "$isNgZone");
+          t2 = this.get$_overlaySyncDom_0_16();
+          t3 = this.get$_OverlayDomRenderService_0_20();
+          H.interceptedTypeCheck(this.injectorGet$3(C.Type_OverlayService_4iH, this.viewData.parentIndex, null), "$isOverlayService");
+          t3 = new X.OverlayService(t2, t1, t3);
+          this.__OverlayService_0_21 = t3;
+          t1 = t3;
+        }
+        return t1;
+      },
       build$0: function() {
         var t1, t2, t3;
         t1 = new V.ViewAppComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), this);
@@ -20958,6 +30489,69 @@
         t1.create$2(0, t3, this.viewData.projectableNodes);
         this.init0$1(this.rootEl);
         return new D.ComponentRef(this, 0, this.rootEl, this._AppComponent_0_5, [t2]);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        var t1;
+        if (token === C.Type_Document_woc && 0 === nodeIndex)
+          return this.get$_Document_0_6();
+        if (token === C.Type_HtmlDocument_RWm && 0 === nodeIndex) {
+          t1 = this.__HtmlDocument_0_7;
+          if (t1 == null) {
+            t1 = document;
+            this.__HtmlDocument_0_7 = t1;
+          }
+          return t1;
+        }
+        if (token === C.Type_Window_0H0 && 0 === nodeIndex)
+          return this.get$_Window_0_8();
+        if (token === C.Type_DomService_2jN && 0 === nodeIndex)
+          return this.get$_DomService_0_9();
+        if (token === C.Type_AcxImperativeViewUtils_Ucj && 0 === nodeIndex)
+          return this.get$_AcxImperativeViewUtils_0_10();
+        if (token === C.Type_DomRuler_2Vk && 0 === nodeIndex)
+          return this.get$_DomRuler_0_11();
+        if (token === C.Type_ManagedZone_s3L && 0 === nodeIndex)
+          return this.get$_ManagedZone_0_12();
+        if (token === C.OpaqueToken_overlayContainerName && 0 === nodeIndex)
+          return this.get$_overlayContainerName_0_13();
+        if (token === C.OpaqueToken_overlayContainerParent && 0 === nodeIndex)
+          return this.get$_overlayContainerParent_0_14();
+        if (token === C.OpaqueToken_overlayContainer && 0 === nodeIndex)
+          return this.get$_overlayContainer_0_15();
+        if (token === C.OpaqueToken_overlaySyncDom && 0 === nodeIndex)
+          return this.get$_overlaySyncDom_0_16();
+        if (token === C.OpaqueToken_overlayRepositionLoop && 0 === nodeIndex)
+          return this.get$_overlayRepositionLoop_0_17();
+        if (token === C.Type_OverlayStyleConfig_rp8 && 0 === nodeIndex)
+          return this.get$_OverlayStyleConfig_0_18();
+        if (token === C.Type_ZIndexer_ViP && 0 === nodeIndex)
+          return this.get$_ZIndexer_0_19();
+        if (token === C.Type_OverlayDomRenderService_qUY && 0 === nodeIndex)
+          return this.get$_OverlayDomRenderService_0_20();
+        if (token === C.Type_OverlayService_4iH && 0 === nodeIndex)
+          return this.get$_OverlayService_0_21();
+        if (token === C.OpaqueToken_defaultPopupPositions && 0 === nodeIndex) {
+          if (this.__defaultPopupPositions_0_22 == null)
+            this.set$__defaultPopupPositions_0_22(C.List_ezW);
+          return this.__defaultPopupPositions_0_22;
+        }
+        if (token === C.Type_DomPopupSourceFactory_gmZ && 0 === nodeIndex) {
+          t1 = this.__DomPopupSourceFactory_0_23;
+          if (t1 == null) {
+            t1 = new K.DomPopupSourceFactory(this.get$_DomRuler_0_11());
+            this.__DomPopupSourceFactory_0_23 = t1;
+          }
+          return t1;
+        }
+        if ((token === C.Type_Clock_MYz || token === C.OpaqueToken_8qt) && 0 === nodeIndex) {
+          t1 = this.__Clock_0_24;
+          if (t1 == null) {
+            this.__Clock_0_24 = C.Clock_systemTime;
+            t1 = C.Clock_systemTime;
+          }
+          return t1;
+        }
+        return notFoundResult;
       },
       detectChangesInternal$0: function() {
         this._compView_0.detectChanges$0();
@@ -20981,15 +30575,15 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, N.CardDemoComponent));
       t1.componentType = $.ViewCardDemoComponent0__renderType;
       return t1;
-    }, "call$2", "card_demo_template__viewFactory_CardDemoComponent1$closure", 8, 0, 28],
+    }, "call$2", "card_demo_template__viewFactory_CardDemoComponent1$closure", 8, 0, 59],
     viewFactory_CardDemoComponent2: [function(parentView, parentIndex) {
       var t1 = new L._ViewCardDemoComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, N.CardDemoComponent));
       t1.componentType = $.ViewCardDemoComponent0__renderType;
       return t1;
-    }, "call$2", "card_demo_template__viewFactory_CardDemoComponent2$closure", 8, 0, 28],
+    }, "call$2", "card_demo_template__viewFactory_CardDemoComponent2$closure", 8, 0, 59],
     ViewCardDemoComponent0: {
-      "^": "AppView;0_card_demo_template$_compView_0,0_card_demo_template$_DemoHeaderComponent_0_5,0_card_demo_template$_compView_5,0_SkawaCardComponent_5_5,0_card_demo_template$_compView_6,0_SkawaCardHeaderComponent_6_5,0_SkawaCardHeaderImageDirective_7_5,0_SkawaCardHeaderTitleDirective_10_5,0_card_demo_template$_compView_14,0_SkawaCardComponent_14_5,0_card_demo_template$_compView_15,0_SkawaCardHeaderComponent_15_5,0_SkawaCardHeaderImageDirective_16_5,0_SkawaCardHeaderTitleDirective_19_5,0_SkawaCardHeaderSubheadDirective_21_5,0_card_demo_template$_compView_25,0_SkawaCardComponent_25_5,0_card_demo_template$_compView_26,0_SkawaCardContentComponent_26_5,0_compView_28,0_SkawaCardActionsComponent_28_5,0_card_demo_template$_compView_29,0_AcxDarkTheme_29_5,0_MaterialButtonComponent_29_6,0_card_demo_template$_compView_35,0_SkawaCardComponent_35_5,0_card_demo_template$_compView_36,0_SkawaCardHeaderComponent_36_5,0_SkawaCardHeaderTitleDirective_37_5,0_SkawaCardHeaderSubheadDirective_39_5,0_card_demo_template$_compView_41,0_SkawaCardContentComponent_41_5,0_compView_48,0_SkawaCardComponent_48_5,0_compView_49,0_SkawaCardHeaderComponent_49_5,0_SkawaCardHeaderTitleDirective_50_5,0_compView_52,0_SkawaCardActionsComponent_52_5,0_compView_53,0_AcxDarkTheme_53_5,0_MaterialButtonComponent_53_6,0_card_demo_template$_compView_54,0_MaterialIconComponent_54_5,0_card_demo_template$_compView_55,0_SkawaCardActionsComponent_55_5,0_card_demo_template$_compView_56,0_AcxDarkTheme_56_5,0_MaterialButtonComponent_56_6,0_compView_59,0_AcxDarkTheme_59_5,0_MaterialButtonComponent_59_6,0_appEl_60,0_NgIf_60_9,0_appEl_61,0_NgIf_61_9,0_card_demo_template$_compView_62,0_SkawaCardContentComponent_62_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_card_demo_template$_compView_0,0_card_demo_template$_DemoHeaderComponent_0_5,0_compView_5,0_SkawaCardComponent_5_5,0_card_demo_template$_compView_6,0_SkawaCardHeaderComponent_6_5,0_SkawaCardHeaderImageDirective_7_5,0_SkawaCardHeaderTitleDirective_10_5,0_card_demo_template$_compView_14,0_SkawaCardComponent_14_5,0_card_demo_template$_compView_15,0_SkawaCardHeaderComponent_15_5,0_SkawaCardHeaderImageDirective_16_5,0_SkawaCardHeaderTitleDirective_19_5,0_SkawaCardHeaderSubheadDirective_21_5,0_card_demo_template$_compView_25,0_SkawaCardComponent_25_5,0_card_demo_template$_compView_26,0_SkawaCardContentComponent_26_5,0_compView_28,0_SkawaCardActionsComponent_28_5,0_card_demo_template$_compView_29,0_AcxDarkTheme_29_5,0_MaterialButtonComponent_29_6,0_card_demo_template$_compView_35,0_SkawaCardComponent_35_5,0_card_demo_template$_compView_36,0_SkawaCardHeaderComponent_36_5,0_SkawaCardHeaderTitleDirective_37_5,0_SkawaCardHeaderSubheadDirective_39_5,0_card_demo_template$_compView_41,0_SkawaCardContentComponent_41_5,0_compView_48,0_SkawaCardComponent_48_5,0_compView_49,0_SkawaCardHeaderComponent_49_5,0_SkawaCardHeaderTitleDirective_50_5,0_compView_52,0_SkawaCardActionsComponent_52_5,0_compView_53,0_AcxDarkTheme_53_5,0_MaterialButtonComponent_53_6,0_card_demo_template$_compView_54,0_MaterialIconComponent_54_5,0_card_demo_template$_compView_55,0_SkawaCardActionsComponent_55_5,0_card_demo_template$_compView_56,0_AcxDarkTheme_56_5,0_MaterialButtonComponent_56_6,0_compView_59,0_AcxDarkTheme_59_5,0_MaterialButtonComponent_59_6,0_appEl_60,0_NgIf_60_9,0_appEl_61,0_NgIf_61_9,0_card_demo_template$_compView_62,0_SkawaCardContentComponent_62_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_0, t2, doc, _el_1, _el_3, _el_5, _el_6, _el_7, _el_8, _el_10, t3, t4, _el_12, _el_14, _el_15, _el_16, _el_17, _el_19, _el_21, _el_23, _el_25, _el_26, _text_27, t5, _el_28, t6, _el_29, _text_30, _el_31, _el_33, _el_35, _el_36, _el_37, _el_39, _el_41, _el_42, _el_44, _el_46, _el_48, _el_49, _el_50, _el_52, _el_53, _el_54, _el_55, _el_56, _text_57, _el_58, _el_59, _el_62, _text_63;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -21015,7 +30609,7 @@
         this.addShimE$1(_el_3);
         J.append$1$x(_el_3, doc.createTextNode("Simple card with image and title"));
         t2 = E.ViewSkawaCardComponent0$(this, 5);
-        this._card_demo_template$_compView_5 = t2;
+        this._compView_5 = t2;
         _el_5 = t2.rootEl;
         t1.append$1(parentRenderNode, _el_5);
         this.addShimC$1(_el_5);
@@ -21046,7 +30640,7 @@
         t2 = this._SkawaCardComponent_5_5;
         t2.cardHeader = this._SkawaCardHeaderComponent_6_5;
         t4 = [W.HtmlElement];
-        this._card_demo_template$_compView_5.create$2(0, t2, [H.setRuntimeTypeInfo([_el_6], t4)]);
+        this._compView_5.create$2(0, t2, [H.setRuntimeTypeInfo([_el_6], t4)]);
         _el_12 = S.createAndAppend(doc, "p", parentRenderNode);
         _el_12.className = "sub-options";
         this.addShimE$1(_el_12);
@@ -21372,7 +30966,7 @@
         this._compView_59.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_62.detectHostChanges$1(firstCheck);
         this._card_demo_template$_compView_0.detectChanges$0();
-        this._card_demo_template$_compView_5.detectChanges$0();
+        this._compView_5.detectChanges$0();
         this._card_demo_template$_compView_6.detectChanges$0();
         this._card_demo_template$_compView_14.detectChanges$0();
         this._card_demo_template$_compView_15.detectChanges$0();
@@ -21397,7 +30991,7 @@
         this._appEl_60.destroyNestedViews$0();
         this._appEl_61.destroyNestedViews$0();
         this._card_demo_template$_compView_0.destroy$0();
-        this._card_demo_template$_compView_5.destroy$0();
+        this._compView_5.destroy$0();
         this._card_demo_template$_compView_6.destroy$0();
         this._card_demo_template$_compView_14.destroy$0();
         this._card_demo_template$_compView_15.destroy$0();
@@ -21591,8 +31185,8 @@
         this._ckeditor_demo_template$_compView_0.destroy$0();
         this._ckeditor_demo_template$_compView_3.destroy$0();
         this._ckeditor_demo_template$_compView_6.destroy$0();
-        this._SkawaCkeditorComponent_3_5._ckeditor$_changeController.close$0(0);
-        this._SkawaCkeditorComponent_6_5._ckeditor$_changeController.close$0(0);
+        this._SkawaCkeditorComponent_3_5._changeController.close$0(0);
+        this._SkawaCkeditorComponent_6_5._changeController.close$0(0);
       },
       $asAppView: function() {
         return [K.CkeditorDemoComponent];
@@ -21604,10 +31198,10 @@
       "^": "Object;rowData",
       makeAccessor$1: [function(row) {
         return H.interceptedTypeCheck(row, "$isCarRowData").name;
-      }, "call$1", "get$makeAccessor", 4, 0, 34, 0],
+      }, "call$1", "get$makeAccessor", 4, 0, 51, 2],
       opinionAccessor$1: [function(row) {
         return H.interceptedTypeCheck(row, "$isCarRowData").opinion;
-      }, "call$1", "get$opinionAccessor", 4, 0, 34, 0]
+      }, "call$1", "get$opinionAccessor", 4, 0, 51, 2]
     },
     CarRowData: {
       "^": "RowData;name>,opinion,checked,classes"
@@ -21635,14 +31229,14 @@
         this._car_table_template$_SkawaDataTableColComponent_4_5 = H.assertSubtype(_SkawaDataTableColComponent_4_5, "$isSkawaDataTableColComponent", [K.CarRowData], "$asSkawaDataTableColComponent");
       },
       build$0: function() {
-        var parentRenderNode, doc, t1, _el_3, t2, t3;
+        var parentRenderNode, doc, t1, _el_3, t2, t3, _el_4;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
         doc = document;
         J.append$1$x(S.createAndAppend(doc, "h3", parentRenderNode), doc.createTextNode("Simple datatable"));
         t1 = K.CarRowData;
         this.set$_car_table_template$_compView_2(N.ViewSkawaDataTableComponent0$(this, 2, t1));
         J.append$1$x(parentRenderNode, this._car_table_template$_compView_2.rootEl);
-        this.set$_SkawaDataTableComponent_2_5(S.SkawaDataTableComponent$(t1));
+        this.set$_SkawaDataTableComponent_2_5(S.SkawaDataTableComponent$(this._car_table_template$_compView_2.viewData.ref, t1));
         this.set$_car_table_template$_compView_3(Y.ViewSkawaDataTableColComponent0$(this, 3, t1));
         _el_3 = this._car_table_template$_compView_3.rootEl;
         _el_3.className = "text-column";
@@ -21652,11 +31246,12 @@
         this.set$_car_table_template$_SkawaDataTableColComponent_3_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
         this._car_table_template$_compView_3.create$2(0, this._car_table_template$_SkawaDataTableColComponent_3_5, []);
         this.set$_car_table_template$_compView_4(Y.ViewSkawaDataTableColComponent0$(this, 4, t1));
-        J.setAttribute$2$x(this._car_table_template$_compView_4.rootEl, "header", "My strong opinion");
+        _el_4 = this._car_table_template$_compView_4.rootEl;
+        J.setAttribute$2$x(_el_4, "header", "My strong opinion");
         this.set$_car_table_template$_SkawaDataTableColComponent_4_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
         this._car_table_template$_compView_4.create$2(0, this._car_table_template$_SkawaDataTableColComponent_4_5, []);
         this._SkawaDataTableComponent_2_5.set$columns(0, H.setRuntimeTypeInfo([this._car_table_template$_SkawaDataTableColComponent_3_5, this._car_table_template$_SkawaDataTableColComponent_4_5], [[G.SkawaDataTableColComponent, K.CarRowData]]));
-        this._car_table_template$_compView_2.create$2(0, this._SkawaDataTableComponent_2_5, []);
+        this._car_table_template$_compView_2.create$2(0, this._SkawaDataTableComponent_2_5, [H.setRuntimeTypeInfo([_el_3, _el_4], [W.HtmlElement])]);
         this.init$2(C.List_empty, null);
       },
       injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
@@ -21729,7 +31324,7 @@
   }], ["", "package:skawa_components_example/data_table_demo/data_table_demo.template.dart",, E, {
     "^": "",
     ViewDataTableDemoComponent0: {
-      "^": "AppView;0_data_table_demo_template$_compView_0,0_data_table_demo_template$_DemoHeaderComponent_0_5,0_data_table_demo_template$_compView_1,0_CarTableComponent_1_5,0_data_table_demo_template$_compView_6,0_SchoolTableComponent_6_5,0_data_table_demo_template$_compView_9,0_WrTableComponent_9_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_data_table_demo_template$_compView_0,0_data_table_demo_template$_DemoHeaderComponent_0_5,0_data_table_demo_template$_compView_1,0_CarTableComponent_1_5,0_data_table_demo_template$_compView_6,0_SchoolTableComponent_6_5,0_data_table_demo_template$_compView_7,0_WrTableComponent_7_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
         var parentRenderNode, t1, _el_0, t2, t3, t4, t5, _el_4;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -21783,28 +31378,34 @@
         t3 = new G.SchoolTableComponent(H.setRuntimeTypeInfo([new G.SchoolRowData("2. class", 11, 18, false, C.List_empty0), new G.SchoolRowData("3. class", 13, 13, false, C.List_empty0), new G.SchoolRowData("1. class", 15, 12, false, C.List_empty0), new G.SchoolRowData("4. class", 20, 13, false, C.List_empty0)], [G.SchoolRowData]));
         this._SchoolTableComponent_6_5 = t3;
         this._data_table_demo_template$_compView_6.create$2(0, t3, []);
-        J.append$1$x(S.createAndAppend(t4, "h3", parentRenderNode), t4.createTextNode("Datatable with colRenderer"));
-        t2 = new T.ViewWrTableComponent0(P.LinkedHashMap_LinkedHashMap$_empty(t2, null), this);
-        t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 9, N.WrTableComponent));
+        t2 = new T.ViewWrTableComponent0(true, P.LinkedHashMap_LinkedHashMap$_empty(t2, null), this);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 1, C.ViewType_1, 7, N.WrTableComponent));
         t3 = t4.createElement("wr-table");
         t2.rootEl = H.interceptedTypeCheck(t3, "$isHtmlElement");
         t3 = $.ViewWrTableComponent0__renderType;
         if (t3 == null) {
           t3 = $.appViewUtils;
-          t3 = t3.createRenderType$3(null, C.ViewEncapsulation_1, C.List_empty);
+          t3 = t3.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$WrTableComponent());
           $.ViewWrTableComponent0__renderType = t3;
         }
         t2.setupComponentType$1(t3);
-        this._data_table_demo_template$_compView_9 = t2;
+        this._data_table_demo_template$_compView_7 = t2;
         t1.append$1(parentRenderNode, t2.rootEl);
-        t2 = new N.WrTableComponent(new N.WrTableComponent_closure(), H.setRuntimeTypeInfo([new N.WrRowData("Calvin Johnson", "DET", 122, 1964, 92, false, C.List_empty0), new N.WrRowData("Brandon Marshall", "CHI", 118, 1508, 75, false, C.List_empty0), new N.WrRowData("Wes Welker", "NE", 118, 1354, 72, false, C.List_empty0), new N.WrRowData("Andre Johnson", "HOU", 112, 1598, 79, false, C.List_empty0), new N.WrRowData("Jason Witten", "DAL", 110, 1039, 56, false, C.List_empty0), new N.WrRowData("Reggie Wayne", "IND", 106, 1355, 73, false, C.List_empty0), new N.WrRowData("A.J. Green", "CIN", 97, 1530, 61, false, C.List_empty0), new N.WrRowData("Demaryius Thomas", "DEN", 94, 1434, 60, false, C.List_empty0), new N.WrRowData("Tony Gonzalez", "ATL", 93, 930, 65, false, C.List_empty0), new N.WrRowData("Dez Bryant", "DAL", 92, 1382, 54, false, C.List_empty0)], [N.WrRowData]));
-        this._WrTableComponent_9_5 = t2;
-        this._data_table_demo_template$_compView_9.create$2(0, t2, []);
+        t2 = $.$get$WrTableComponent__columns();
+        t1 = [G.SkawaDataTableColComponent, N.WrRowData];
+        t3 = Z._MultiSelectionModelImpl$(t2, Z.selection_model___defaultKeyProvider$closure(), t1);
+        t4 = H.setRuntimeTypeInfo([F.OptionGroup$withLabel(t2, null, null, t1)], [[F.OptionGroup, [G.SkawaDataTableColComponent, N.WrRowData]]]);
+        t1 = new F.SelectionOptions(new P._SyncBroadcastStreamController(null, null, 0, [[P.List, [F.OptionGroup, t1]]]), [t1]);
+        t1.set$optionGroups(t4);
+        t2 = new N.WrTableComponent(t3, t1, H.setRuntimeTypeInfo([new N.WrRowData("Calvin Johnson", "DET", 122, 1964, 92, false, C.List_empty0), new N.WrRowData("Brandon Marshall", "CHI", 118, 1508, 75, false, C.List_empty0), new N.WrRowData("Wes Welker", "NE", 118, 1354, 72, false, C.List_empty0), new N.WrRowData("Andre Johnson", "HOU", 112, 1598, 79, false, C.List_empty0), new N.WrRowData("Jason Witten", "DAL", 110, 1039, 56, false, C.List_empty0), new N.WrRowData("Reggie Wayne", "IND", 106, 1355, 73, false, C.List_empty0), new N.WrRowData("A.J. Green", "CIN", 97, 1530, 61, false, C.List_empty0), new N.WrRowData("Demaryius Thomas", "DEN", 94, 1434, 60, false, C.List_empty0), new N.WrRowData("Tony Gonzalez", "ATL", 93, 930, 65, false, C.List_empty0), new N.WrRowData("Dez Bryant", "DAL", 92, 1382, 54, false, C.List_empty0)], [N.WrRowData]), t2, new L.Icon("more_vert"));
+        this._WrTableComponent_7_5 = t2;
+        this._data_table_demo_template$_compView_7.create$2(0, t2, []);
         this.init$2(C.List_empty, null);
       },
       detectChangesInternal$0: function() {
-        var t1, changed;
-        if (this.viewData._cdState === 0) {
+        var firstCheck, t1, changed;
+        firstCheck = this.viewData._cdState === 0;
+        if (firstCheck) {
           t1 = this._data_table_demo_template$_DemoHeaderComponent_0_5;
           t1.title = "Data Table Demo";
           t1.sourceHref = "https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/data_table";
@@ -21814,16 +31415,18 @@
           changed = false;
         if (changed)
           this._data_table_demo_template$_compView_0.viewData.set$cdMode(1);
+        if (firstCheck)
+          this._WrTableComponent_7_5.ngOnInit$0();
         this._data_table_demo_template$_compView_0.detectChanges$0();
         this._data_table_demo_template$_compView_1.detectChanges$0();
         this._data_table_demo_template$_compView_6.detectChanges$0();
-        this._data_table_demo_template$_compView_9.detectChanges$0();
+        this._data_table_demo_template$_compView_7.detectChanges$0();
       },
       destroyInternal$0: function() {
         this._data_table_demo_template$_compView_0.destroy$0();
         this._data_table_demo_template$_compView_1.destroy$0();
         this._data_table_demo_template$_compView_6.destroy$0();
-        this._data_table_demo_template$_compView_9.destroy$0();
+        this._data_table_demo_template$_compView_7.destroy$0();
       },
       $asAppView: function() {
         return [T.DataTableDemoComponent];
@@ -21835,17 +31438,17 @@
       "^": "Object;selectableRowData",
       categoryAccessor$1: [function(row) {
         return H.interceptedTypeCheck(row, "$isSchoolRowData").category;
-      }, "call$1", "get$categoryAccessor", 4, 0, 6, 0],
+      }, "call$1", "get$categoryAccessor", 4, 0, 19, 2],
       maleAccessor$1: [function(row) {
         return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isSchoolRowData").male);
-      }, "call$1", "get$maleAccessor", 4, 0, 6, 0],
+      }, "call$1", "get$maleAccessor", 4, 0, 19, 2],
       femaleAccessor$1: [function(row) {
         return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isSchoolRowData").female);
-      }, "call$1", "get$femaleAccessor", 4, 0, 6, 0],
+      }, "call$1", "get$femaleAccessor", 4, 0, 19, 2],
       peopleAccessor$1: [function(row) {
         H.interceptedTypeCheck(row, "$isSchoolRowData");
         return C.JSInt_methods.toString$0(row.female + row.male);
-      }, "call$1", "get$peopleAccessor", 4, 0, 6, 0],
+      }, "call$1", "get$peopleAccessor", 4, 0, 19, 2],
       aggregate$1: function(accessor) {
         var t1, t2, t3, mapped;
         H.functionTypeCheck(accessor, {func: 1, ret: P.String, args: [G.SchoolRowData]});
@@ -21869,7 +31472,7 @@
         if (typeof t2 !== "number")
           return H.iae(t2);
         return C.JSInt_methods.toString$0(t1 + t2);
-      }, "call$2", "get$_aggregateReducer", 8, 0, 84],
+      }, "call$2", "get$_aggregateReducer", 8, 0, 125],
       sort$1: [function(_, column) {
         var t1;
         H.assertSubtype(column, "$isSkawaDataTableColComponent", [U.RowData], "$asSkawaDataTableColComponent");
@@ -21878,16 +31481,16 @@
           C.JSArray_methods.sort$1(t1, new G.SchoolTableComponent_sort_closure());
         else
           C.JSArray_methods.sort$1(t1, new G.SchoolTableComponent_sort_closure0(column));
-      }, "call$1", "get$sort", 5, 0, 85]
+      }, "call$1", "get$sort", 5, 0, 126]
     },
     SchoolTableComponent_aggregate_closure: {
-      "^": "Closure:86;",
+      "^": "Closure:127;",
       call$1: function(row) {
         return H.interceptedTypeCheck(row, "$isSchoolRowData").checked;
       }
     },
     SchoolTableComponent_sort_closure: {
-      "^": "Closure:36;",
+      "^": "Closure:53;",
       call$2: function(a, b) {
         H.interceptedTypeCheck(a, "$isSchoolRowData");
         H.interceptedTypeCheck(b, "$isSchoolRowData");
@@ -21895,7 +31498,7 @@
       }
     },
     SchoolTableComponent_sort_closure0: {
-      "^": "Closure:36;column",
+      "^": "Closure:53;column",
       call$2: function(a, b) {
         var t1, t2;
         H.interceptedTypeCheck(a, "$isSchoolRowData");
@@ -21916,36 +31519,36 @@
   }], ["", "package:skawa_components_example/data_table_demo/school_table/school_table.template.dart",, V, {
     "^": "",
     ViewSchoolTableComponent0: {
-      "^": "AppView;0_school_table_template$_compView_0,0_school_table_template$_SkawaDataTableComponent_0_5,0_school_table_template$_compView_1,0_school_table_template$_SkawaDataTableColComponent_1_5,0_school_table_template$_compView_2,0_school_table_template$_SkawaDataTableColComponent_2_5,0_SkawaDataTableSortDirective_2_6,0_school_table_template$_compView_3,0_school_table_template$_SkawaDataTableColComponent_3_5,0_SkawaDataTableSortDirective_3_6,0_school_table_template$_compView_4,0_school_table_template$_SkawaDataTableColComponent_4_5,0_SkawaDataTableSortDirective_4_6,0_school_table_template$_expr_1,0_school_table_template$_expr_9,0_expr_15,0_expr_20,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      "^": "AppView;0_school_table_template$_compView_0,0_SkawaDataTableComponent_0_5,0_school_table_template$_compView_1,0_SkawaDataTableColComponent_1_5,0_school_table_template$_compView_2,0_SkawaDataTableColComponent_2_5,0_SkawaDataTableSortDirective_2_6,0_school_table_template$_compView_3,0_SkawaDataTableColComponent_3_5,0_SkawaDataTableSortDirective_3_6,0_school_table_template$_compView_4,0_SkawaDataTableColComponent_4_5,0_SkawaDataTableSortDirective_4_6,0_school_table_template$_expr_1,0_school_table_template$_expr_9,0_expr_15,0_school_table_template$_expr_20,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       set$_school_table_template$_compView_0: function(_compView_0) {
         this._school_table_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewSkawaDataTableComponent0", [G.SchoolRowData], "$asViewSkawaDataTableComponent0");
       },
-      set$_school_table_template$_SkawaDataTableComponent_0_5: function(_SkawaDataTableComponent_0_5) {
-        this._school_table_template$_SkawaDataTableComponent_0_5 = H.assertSubtype(_SkawaDataTableComponent_0_5, "$isSkawaDataTableComponent", [G.SchoolRowData], "$asSkawaDataTableComponent");
+      set$_SkawaDataTableComponent_0_5: function(_SkawaDataTableComponent_0_5) {
+        this._SkawaDataTableComponent_0_5 = H.assertSubtype(_SkawaDataTableComponent_0_5, "$isSkawaDataTableComponent", [G.SchoolRowData], "$asSkawaDataTableComponent");
       },
       set$_school_table_template$_compView_1: function(_compView_1) {
         this._school_table_template$_compView_1 = H.assertSubtype(_compView_1, "$isViewSkawaDataTableColComponent0", [G.SchoolRowData], "$asViewSkawaDataTableColComponent0");
       },
-      set$_school_table_template$_SkawaDataTableColComponent_1_5: function(_SkawaDataTableColComponent_1_5) {
-        this._school_table_template$_SkawaDataTableColComponent_1_5 = H.assertSubtype(_SkawaDataTableColComponent_1_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
+      set$_SkawaDataTableColComponent_1_5: function(_SkawaDataTableColComponent_1_5) {
+        this._SkawaDataTableColComponent_1_5 = H.assertSubtype(_SkawaDataTableColComponent_1_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
       },
       set$_school_table_template$_compView_2: function(_compView_2) {
         this._school_table_template$_compView_2 = H.assertSubtype(_compView_2, "$isViewSkawaDataTableColComponent0", [G.SchoolRowData], "$asViewSkawaDataTableColComponent0");
       },
-      set$_school_table_template$_SkawaDataTableColComponent_2_5: function(_SkawaDataTableColComponent_2_5) {
-        this._school_table_template$_SkawaDataTableColComponent_2_5 = H.assertSubtype(_SkawaDataTableColComponent_2_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
+      set$_SkawaDataTableColComponent_2_5: function(_SkawaDataTableColComponent_2_5) {
+        this._SkawaDataTableColComponent_2_5 = H.assertSubtype(_SkawaDataTableColComponent_2_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
       },
       set$_school_table_template$_compView_3: function(_compView_3) {
         this._school_table_template$_compView_3 = H.assertSubtype(_compView_3, "$isViewSkawaDataTableColComponent0", [G.SchoolRowData], "$asViewSkawaDataTableColComponent0");
       },
-      set$_school_table_template$_SkawaDataTableColComponent_3_5: function(_SkawaDataTableColComponent_3_5) {
-        this._school_table_template$_SkawaDataTableColComponent_3_5 = H.assertSubtype(_SkawaDataTableColComponent_3_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
+      set$_SkawaDataTableColComponent_3_5: function(_SkawaDataTableColComponent_3_5) {
+        this._SkawaDataTableColComponent_3_5 = H.assertSubtype(_SkawaDataTableColComponent_3_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
       },
       set$_school_table_template$_compView_4: function(_compView_4) {
         this._school_table_template$_compView_4 = H.assertSubtype(_compView_4, "$isViewSkawaDataTableColComponent0", [G.SchoolRowData], "$asViewSkawaDataTableColComponent0");
       },
-      set$_school_table_template$_SkawaDataTableColComponent_4_5: function(_SkawaDataTableColComponent_4_5) {
-        this._school_table_template$_SkawaDataTableColComponent_4_5 = H.assertSubtype(_SkawaDataTableColComponent_4_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
+      set$_SkawaDataTableColComponent_4_5: function(_SkawaDataTableColComponent_4_5) {
+        this._SkawaDataTableColComponent_4_5 = H.assertSubtype(_SkawaDataTableColComponent_4_5, "$isSkawaDataTableColComponent", [G.SchoolRowData], "$asSkawaDataTableColComponent");
       },
       build$0: function() {
         var parentRenderNode, t1, _el_1, t2, t3, _el_2, t4, _el_3, _el_4;
@@ -21953,7 +31556,7 @@
         t1 = G.SchoolRowData;
         this.set$_school_table_template$_compView_0(N.ViewSkawaDataTableComponent0$(this, 0, t1));
         J.append$1$x(parentRenderNode, this._school_table_template$_compView_0.rootEl);
-        this.set$_school_table_template$_SkawaDataTableComponent_0_5(S.SkawaDataTableComponent$(t1));
+        this.set$_SkawaDataTableComponent_0_5(S.SkawaDataTableComponent$(this._school_table_template$_compView_0.viewData.ref, t1));
         this.set$_school_table_template$_compView_1(Y.ViewSkawaDataTableColComponent0$(this, 1, t1));
         _el_1 = this._school_table_template$_compView_1.rootEl;
         _el_1.className = "text-column";
@@ -21962,16 +31565,16 @@
         t2.setAttribute$2(_el_1, "header", "Class");
         t2 = [t1];
         t3 = [t1];
-        this.set$_school_table_template$_SkawaDataTableColComponent_1_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._school_table_template$_compView_1.create$2(0, this._school_table_template$_SkawaDataTableColComponent_1_5, []);
+        this.set$_SkawaDataTableColComponent_1_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
+        this._school_table_template$_compView_1.create$2(0, this._SkawaDataTableColComponent_1_5, []);
         this.set$_school_table_template$_compView_2(Y.ViewSkawaDataTableColComponent0$(this, 2, t1));
         _el_2 = this._school_table_template$_compView_2.rootEl;
         t4 = J.getInterceptor$x(_el_2);
         t4.setAttribute$2(_el_2, "header", "Male");
         t4.setAttribute$2(_el_2, "initialSort", "asc");
         t4.setAttribute$2(_el_2, "sortable", "");
-        this.set$_school_table_template$_SkawaDataTableColComponent_2_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        t4 = this._school_table_template$_SkawaDataTableColComponent_2_5;
+        this.set$_SkawaDataTableColComponent_2_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
+        t4 = this._SkawaDataTableColComponent_2_5;
         this._SkawaDataTableSortDirective_2_6 = new S.SkawaDataTableSortDirective(t4);
         this._school_table_template$_compView_2.create$2(0, t4, []);
         this.set$_school_table_template$_compView_3(Y.ViewSkawaDataTableColComponent0$(this, 3, t1));
@@ -21979,8 +31582,8 @@
         t4 = J.getInterceptor$x(_el_3);
         t4.setAttribute$2(_el_3, "header", "Female");
         t4.setAttribute$2(_el_3, "sortable", "desc, asc");
-        this.set$_school_table_template$_SkawaDataTableColComponent_3_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        t4 = this._school_table_template$_SkawaDataTableColComponent_3_5;
+        this.set$_SkawaDataTableColComponent_3_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
+        t4 = this._SkawaDataTableColComponent_3_5;
         this._SkawaDataTableSortDirective_3_6 = new S.SkawaDataTableSortDirective(t4);
         this._school_table_template$_compView_3.create$2(0, t4, []);
         this.set$_school_table_template$_compView_4(Y.ViewSkawaDataTableColComponent0$(this, 4, t1));
@@ -21988,32 +31591,32 @@
         t1 = J.getInterceptor$x(_el_4);
         t1.setAttribute$2(_el_4, "header", "All");
         t1.setAttribute$2(_el_4, "sortable", "desc");
-        this.set$_school_table_template$_SkawaDataTableColComponent_4_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        t1 = this._school_table_template$_SkawaDataTableColComponent_4_5;
+        this.set$_SkawaDataTableColComponent_4_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
+        t1 = this._SkawaDataTableColComponent_4_5;
         this._SkawaDataTableSortDirective_4_6 = new S.SkawaDataTableSortDirective(t1);
         this._school_table_template$_compView_4.create$2(0, t1, []);
         t1 = [G.SkawaDataTableColComponent, G.SchoolRowData];
-        this._school_table_template$_SkawaDataTableComponent_0_5.set$columns(0, H.setRuntimeTypeInfo([this._school_table_template$_SkawaDataTableColComponent_1_5, this._school_table_template$_SkawaDataTableColComponent_2_5, this._school_table_template$_SkawaDataTableColComponent_3_5, this._school_table_template$_SkawaDataTableColComponent_4_5], [t1]));
-        this._school_table_template$_compView_0.create$2(0, this._school_table_template$_SkawaDataTableComponent_0_5, []);
-        t2 = this._school_table_template$_SkawaDataTableComponent_0_5._sortController;
+        this._SkawaDataTableComponent_0_5.set$columns(0, H.setRuntimeTypeInfo([this._SkawaDataTableColComponent_1_5, this._SkawaDataTableColComponent_2_5, this._SkawaDataTableColComponent_3_5, this._SkawaDataTableColComponent_4_5], [t1]));
+        this._school_table_template$_compView_0.create$2(0, this._SkawaDataTableComponent_0_5, [H.setRuntimeTypeInfo([_el_1, _el_2, _el_3, _el_4], [W.HtmlElement])]);
+        t2 = this._SkawaDataTableComponent_0_5._sortController;
         this.init$2(C.List_empty, [new P._BroadcastStream(t2, [H.getTypeArgumentByIndex(t2, 0)]).listen$1(this.eventHandler1$2$1(J.get$sort$ax(this.ctx), t1, t1))]);
       },
       injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
         var t1 = token === C.Type_SkawaDataTableColComponent_tpI;
         if (t1 && 1 === nodeIndex)
-          return this._school_table_template$_SkawaDataTableColComponent_1_5;
+          return this._SkawaDataTableColComponent_1_5;
         if (t1 && 2 === nodeIndex)
-          return this._school_table_template$_SkawaDataTableColComponent_2_5;
+          return this._SkawaDataTableColComponent_2_5;
         if (t1 && 3 === nodeIndex)
-          return this._school_table_template$_SkawaDataTableColComponent_3_5;
+          return this._SkawaDataTableColComponent_3_5;
         if (t1 && 4 === nodeIndex)
-          return this._school_table_template$_SkawaDataTableColComponent_4_5;
+          return this._SkawaDataTableColComponent_4_5;
         if (token === C.Type_SkawaDataTableComponent_qdG)
           t1 = nodeIndex <= 4;
         else
           t1 = false;
         if (t1)
-          return this._school_table_template$_SkawaDataTableComponent_0_5;
+          return this._SkawaDataTableComponent_0_5;
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
@@ -22021,14 +31624,14 @@
         _ctx = this.ctx;
         firstCheck = this.viewData._cdState === 0;
         if (firstCheck) {
-          this._school_table_template$_SkawaDataTableComponent_0_5.selectable = true;
+          this._SkawaDataTableComponent_0_5.selectable = true;
           changed = true;
         } else
           changed = false;
         currVal_1 = _ctx.selectableRowData;
         t1 = this._school_table_template$_expr_1;
         if (t1 !== currVal_1) {
-          this._school_table_template$_SkawaDataTableComponent_0_5.set$rows(0, currVal_1);
+          this._SkawaDataTableComponent_0_5.set$rows(0, currVal_1);
           this._school_table_template$_expr_1 = currVal_1;
           changed = true;
         }
@@ -22036,30 +31639,30 @@
           this._school_table_template$_compView_0.viewData.set$cdMode(1);
         if (firstCheck) {
           t1 = _ctx.get$categoryAccessor();
-          this._school_table_template$_SkawaDataTableColComponent_1_5.set$accessor(t1);
-          t1 = this._school_table_template$_SkawaDataTableColComponent_1_5;
+          this._SkawaDataTableColComponent_1_5.set$accessor(t1);
+          t1 = this._SkawaDataTableColComponent_1_5;
           t1.header = "Class";
           t1.footer = "Total:";
           t1.skipFooter = false;
           t1.classString = "text-column";
         }
         if (firstCheck)
-          this._school_table_template$_SkawaDataTableColComponent_1_5.ngOnInit$0();
+          this._SkawaDataTableColComponent_1_5.ngOnInit$0();
         if (firstCheck) {
           t1 = _ctx.get$maleAccessor();
-          this._school_table_template$_SkawaDataTableColComponent_2_5.set$accessor(t1);
-          t1 = this._school_table_template$_SkawaDataTableColComponent_2_5;
+          this._SkawaDataTableColComponent_2_5.set$accessor(t1);
+          t1 = this._SkawaDataTableColComponent_2_5;
           t1.header = "Male";
           t1.skipFooter = false;
         }
         currVal_9 = _ctx.aggregate$1(_ctx.get$maleAccessor());
         t1 = this._school_table_template$_expr_9;
         if (t1 != currVal_9) {
-          this._school_table_template$_SkawaDataTableColComponent_2_5.footer = currVal_9;
+          this._SkawaDataTableColComponent_2_5.footer = currVal_9;
           this._school_table_template$_expr_9 = currVal_9;
         }
         if (firstCheck)
-          this._school_table_template$_SkawaDataTableColComponent_2_5.ngOnInit$0();
+          this._SkawaDataTableColComponent_2_5.ngOnInit$0();
         if (firstCheck) {
           this._SkawaDataTableSortDirective_2_6.set$allowedSorts("");
           t1 = this._SkawaDataTableSortDirective_2_6;
@@ -22067,34 +31670,34 @@
           if (C.Map_oWtLB.$index(0, "asc") == null)
             H.throwExpression(P.ArgumentError$('SkawaDataTableSortDirective initial sort value can only be "asc" or "desc"'));
           t1.column.sortModel.activeSort = H.interceptedTypeCheck(C.Map_oWtLB.$index(0, "asc"), "$isSortDirection");
-          this._school_table_template$_SkawaDataTableColComponent_3_5.set$accessor(_ctx.get$femaleAccessor());
-          t1 = this._school_table_template$_SkawaDataTableColComponent_3_5;
+          this._SkawaDataTableColComponent_3_5.set$accessor(_ctx.get$femaleAccessor());
+          t1 = this._SkawaDataTableColComponent_3_5;
           t1.header = "Female";
           t1.skipFooter = false;
         }
         currVal_15 = _ctx.aggregate$1(_ctx.get$femaleAccessor());
         t1 = this._expr_15;
         if (t1 != currVal_15) {
-          this._school_table_template$_SkawaDataTableColComponent_3_5.footer = currVal_15;
+          this._SkawaDataTableColComponent_3_5.footer = currVal_15;
           this._expr_15 = currVal_15;
         }
         if (firstCheck)
-          this._school_table_template$_SkawaDataTableColComponent_3_5.ngOnInit$0();
+          this._SkawaDataTableColComponent_3_5.ngOnInit$0();
         if (firstCheck) {
           this._SkawaDataTableSortDirective_3_6.set$allowedSorts("desc, asc");
-          this._school_table_template$_SkawaDataTableColComponent_4_5.set$accessor(_ctx.get$peopleAccessor());
-          t1 = this._school_table_template$_SkawaDataTableColComponent_4_5;
+          this._SkawaDataTableColComponent_4_5.set$accessor(_ctx.get$peopleAccessor());
+          t1 = this._SkawaDataTableColComponent_4_5;
           t1.header = "All";
           t1.skipFooter = false;
         }
         currVal_20 = _ctx.aggregate$1(_ctx.get$peopleAccessor());
-        t1 = this._expr_20;
+        t1 = this._school_table_template$_expr_20;
         if (t1 != currVal_20) {
-          this._school_table_template$_SkawaDataTableColComponent_4_5.footer = currVal_20;
-          this._expr_20 = currVal_20;
+          this._SkawaDataTableColComponent_4_5.footer = currVal_20;
+          this._school_table_template$_expr_20 = currVal_20;
         }
         if (firstCheck)
-          this._school_table_template$_SkawaDataTableColComponent_4_5.ngOnInit$0();
+          this._SkawaDataTableColComponent_4_5.ngOnInit$0();
         if (firstCheck)
           this._SkawaDataTableSortDirective_4_6.set$allowedSorts("desc");
         this._school_table_template$_compView_0.detectChanges$0();
@@ -22103,7 +31706,7 @@
         this._school_table_template$_compView_3.detectChanges$0();
         this._school_table_template$_compView_4.detectChanges$0();
         if (firstCheck)
-          this._school_table_template$_SkawaDataTableComponent_0_5.ngAfterViewInit$0();
+          this._SkawaDataTableComponent_0_5.ngAfterViewInit$0();
       },
       destroyInternal$0: function() {
         this._school_table_template$_compView_0.destroy$0();
@@ -22111,11 +31714,11 @@
         this._school_table_template$_compView_2.destroy$0();
         this._school_table_template$_compView_3.destroy$0();
         this._school_table_template$_compView_4.destroy$0();
-        this._school_table_template$_SkawaDataTableColComponent_1_5._triggerController.close$0(0);
-        this._school_table_template$_SkawaDataTableColComponent_2_5._triggerController.close$0(0);
-        this._school_table_template$_SkawaDataTableColComponent_3_5._triggerController.close$0(0);
-        this._school_table_template$_SkawaDataTableColComponent_4_5._triggerController.close$0(0);
-        this._school_table_template$_SkawaDataTableComponent_0_5._data_table$_tearDownDisposer.dispose$0();
+        this._SkawaDataTableColComponent_1_5._triggerController.close$0(0);
+        this._SkawaDataTableColComponent_2_5._triggerController.close$0(0);
+        this._SkawaDataTableColComponent_3_5._triggerController.close$0(0);
+        this._SkawaDataTableColComponent_4_5._triggerController.close$0(0);
+        this._SkawaDataTableComponent_0_5._data_table$_tearDownDisposer.dispose$0();
       },
       $asAppView: function() {
         return [G.SchoolTableComponent];
@@ -22135,7 +31738,7 @@
       var t1 = new U._ViewFirstDownPercentComponentHost0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_0, parentIndex, L.FirstDownPercentComponent));
       return t1;
-    }, "call$2", "first_down_percent_template__viewFactory_FirstDownPercentComponentHost0$closure", 8, 0, 117],
+    }, "call$2", "first_down_percent_template__viewFactory_FirstDownPercentComponentHost0$closure", 8, 0, 171],
     ViewFirstDownPercentComponent0: {
       "^": "AppView;0_first_down_percent_template$_compView_0,0_MaterialProgressComponent_0_5,0_first_down_percent_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -22185,7 +31788,7 @@
         if (firstCheck) {
           t1 = this._MaterialProgressComponent_0_5;
           t1._isInitialized = true;
-          t1._indeterminate;
+          t1._material_progress$_indeterminate;
         }
       },
       destroyInternal$0: function() {
@@ -22241,291 +31844,366 @@
         return [L.FirstDownPercentComponent];
       }
     }
-  }], ["", "package:skawa_components_example/data_table_demo/wr_table/wr_table.dart",, N, {
+  }], ["asset_skawa_components_example_lib_data_table_demo_wr_table_wr_table.css.shim.dart", "package:skawa_components_example/data_table_demo/wr_table/wr_table.css.shim.dart",, A, {}], ["", "package:skawa_components_example/data_table_demo/wr_table/wr_table.dart",, N, {
     "^": "",
     WrTableComponent: {
-      "^": "Object;firstDownPercentRenderer,wrRowData",
-      nameAccessor$1: [function(row) {
-        return H.interceptedTypeCheck(row, "$isWrRowData").name;
-      }, "call$1", "get$nameAccessor", 4, 0, 4, 0],
-      teamAccessor$1: [function(row) {
-        return H.interceptedTypeCheck(row, "$isWrRowData").team;
-      }, "call$1", "get$teamAccessor", 4, 0, 4, 0],
-      recAccessor$1: [function(row) {
-        return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").rec);
-      }, "call$1", "get$recAccessor", 4, 0, 4, 0],
-      yardsAccessor$1: [function(row) {
-        return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").yards);
-      }, "call$1", "get$yardsAccessor", 4, 0, 4, 0],
-      avgAccessor$1: [function(row) {
-        H.interceptedTypeCheck(row, "$isWrRowData");
-        return C.JSDouble_methods.toStringAsFixed$1(row.yards / row.rec, 2);
-      }, "call$1", "get$avgAccessor", 4, 0, 4, 0],
-      yardPerGameAccessor$1: [function(row) {
-        return C.JSDouble_methods.toStringAsFixed$1(H.interceptedTypeCheck(row, "$isWrRowData").yards / 16, 2);
-      }, "call$1", "get$yardPerGameAccessor", 4, 0, 4, 0],
-      firstDownAccessor$1: [function(row) {
-        return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").firstDowns);
-      }, "call$1", "get$firstDownAccessor", 4, 0, 4, 0]
+      "^": "Object;columnModel,columnOptions,wrRowData,columns,icon,0dataTableComponent",
+      set$columns: function(_, columns) {
+        this.columns = H.assertSubtype(columns, "$isList", [[G.SkawaDataTableColComponent, N.WrRowData]], "$asList");
+      },
+      set$dataTableComponent: function(dataTableComponent) {
+        this.dataTableComponent = H.assertSubtype(dataTableComponent, "$isSkawaDataTableComponent", [U.RowData], "$asSkawaDataTableComponent");
+      },
+      itemRenderer$1: [function(row) {
+        return H.assertSubtype(row, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent").header;
+      }, "call$1", "get$itemRenderer", 4, 0, 129, 2],
+      ngOnInit$0: function() {
+        return this.columnModel.get$selectionChanges().listen$1(new N.WrTableComponent_ngOnInit_closure(this));
+      },
+      static: {
+        WrTableComponent_nameAccessor: [function(row) {
+          return H.interceptedTypeCheck(row, "$isWrRowData").name;
+        }, "call$1", "wr_table_WrTableComponent_nameAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_teamAccessor: [function(row) {
+          return H.interceptedTypeCheck(row, "$isWrRowData").team;
+        }, "call$1", "wr_table_WrTableComponent_teamAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_recAccessor: [function(row) {
+          return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").rec);
+        }, "call$1", "wr_table_WrTableComponent_recAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_yardsAccessor: [function(row) {
+          return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").yards);
+        }, "call$1", "wr_table_WrTableComponent_yardsAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_avgAccessor: [function(row) {
+          H.interceptedTypeCheck(row, "$isWrRowData");
+          return C.JSDouble_methods.toStringAsFixed$1(row.yards / row.rec, 2);
+        }, "call$1", "wr_table_WrTableComponent_avgAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_yardPerGameAccessor: [function(row) {
+          return C.JSDouble_methods.toStringAsFixed$1(H.interceptedTypeCheck(row, "$isWrRowData").yards / 16, 2);
+        }, "call$1", "wr_table_WrTableComponent_yardPerGameAccessor$closure", 4, 0, 6, 2],
+        WrTableComponent_firstDownAccessor: [function(row) {
+          return C.JSInt_methods.toString$0(H.interceptedTypeCheck(row, "$isWrRowData").firstDowns);
+        }, "call$1", "wr_table_WrTableComponent_firstDownAccessor$closure", 4, 0, 6, 2]
+      }
     },
     WrTableComponent_closure: {
-      "^": "Closure:89;",
+      "^": "Closure:130;",
       call$1: [function(row) {
         H.interceptedTypeCheck(row, "$isRowData");
         return C.ComponentFactory_Ohe;
+      }, null, null, 4, 0, null, 2, "call"]
+    },
+    WrTableComponent_ngOnInit_closure: {
+      "^": "Closure:131;$this",
+      call$1: [function(_) {
+        var t1, t2, t3;
+        H.assertSubtype(_, "$isList", [[Z.SelectionChangeRecord, [G.SkawaDataTableColComponent, N.WrRowData]]], "$asList");
+        t1 = this.$this;
+        t2 = $.$get$WrTableComponent__columns();
+        t3 = H.getTypeArgumentByIndex(t2, 0);
+        t1.set$columns(0, P.List_List$from(new H.WhereIterable(t2, H.functionTypeCheck(new N.WrTableComponent_ngOnInit__closure(t1), {func: 1, ret: P.bool, args: [t3]}), [t3]), true, t3));
+        t1.dataTableComponent.changeDetectorRef.appView.markPathToRootAsCheckOnce$0();
       }, null, null, 4, 0, null, 0, "call"]
+    },
+    WrTableComponent_ngOnInit__closure: {
+      "^": "Closure:132;$this",
+      call$1: function(row) {
+        return this.$this.columnModel.selectedValues.contains$1(0, H.assertSubtype(row, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent"));
+      }
     },
     WrRowData: {
       "^": "RowData;name>,team,rec,yards,firstDowns,checked,classes"
     }
   }], ["", "package:skawa_components_example/data_table_demo/wr_table/wr_table.template.dart",, T, {
     "^": "",
+    viewFactory_WrTableComponent1: [function(parentView, parentIndex) {
+      var t1 = new T._ViewWrTableComponent1(true, P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, N.WrTableComponent));
+      t1.componentType = $.ViewWrTableComponent0__renderType;
+      return t1;
+    }, "call$2", "wr_table_template__viewFactory_WrTableComponent1$closure", 8, 0, 40],
+    viewFactory_WrTableComponent2: [function(parentView, parentIndex) {
+      var t1 = new T._ViewWrTableComponent2(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null], P.String, null), parentView);
+      t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, N.WrTableComponent));
+      t1.componentType = $.ViewWrTableComponent0__renderType;
+      return t1;
+    }, "call$2", "wr_table_template__viewFactory_WrTableComponent2$closure", 8, 0, 40],
     ViewWrTableComponent0: {
-      "^": "AppView;0_wr_table_template$_compView_0,0_SkawaDataTableComponent_0_5,0_wr_table_template$_compView_1,0_SkawaDataTableColComponent_1_5,0_wr_table_template$_compView_2,0_SkawaDataTableColComponent_2_5,0_wr_table_template$_compView_3,0_SkawaDataTableColComponent_3_5,0_wr_table_template$_compView_4,0_SkawaDataTableColComponent_4_5,0_compView_5,0_SkawaDataTableColComponent_5_5,0_wr_table_template$_compView_6,0_SkawaDataTableColComponent_6_5,0_wr_table_template$_compView_7,0_SkawaDataTableColComponent_7_5,0_wr_table_template$_compView_8,0_SkawaDataColRendererDirective_8_5,0_SkawaDataTableColComponent_8_6,0_wr_table_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
-      set$_wr_table_template$_compView_0: function(_compView_0) {
-        this._wr_table_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewSkawaDataTableComponent0", [N.WrRowData], "$asViewSkawaDataTableComponent0");
-      },
-      set$_SkawaDataTableComponent_0_5: function(_SkawaDataTableComponent_0_5) {
-        this._SkawaDataTableComponent_0_5 = H.assertSubtype(_SkawaDataTableComponent_0_5, "$isSkawaDataTableComponent", [N.WrRowData], "$asSkawaDataTableComponent");
-      },
-      set$_wr_table_template$_compView_1: function(_compView_1) {
-        this._wr_table_template$_compView_1 = H.assertSubtype(_compView_1, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_1_5: function(_SkawaDataTableColComponent_1_5) {
-        this._SkawaDataTableColComponent_1_5 = H.assertSubtype(_SkawaDataTableColComponent_1_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_wr_table_template$_compView_2: function(_compView_2) {
-        this._wr_table_template$_compView_2 = H.assertSubtype(_compView_2, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_2_5: function(_SkawaDataTableColComponent_2_5) {
-        this._SkawaDataTableColComponent_2_5 = H.assertSubtype(_SkawaDataTableColComponent_2_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
+      "^": "AppView;0_wr_table_template$_compView_3,0_MaterialDropdownSelectComponent_3_5,0__ActiveItemModel_3_13,0_appEl_4,_query_SkawaDataTableComponent_1_0_isDirty,0_NgIf_4_9,0_wr_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       set$_wr_table_template$_compView_3: function(_compView_3) {
-        this._wr_table_template$_compView_3 = H.assertSubtype(_compView_3, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
+        this._wr_table_template$_compView_3 = H.assertSubtype(_compView_3, "$isViewMaterialDropdownSelectComponent0", [[G.SkawaDataTableColComponent, N.WrRowData]], "$asViewMaterialDropdownSelectComponent0");
       },
-      set$_SkawaDataTableColComponent_3_5: function(_SkawaDataTableColComponent_3_5) {
-        this._SkawaDataTableColComponent_3_5 = H.assertSubtype(_SkawaDataTableColComponent_3_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_wr_table_template$_compView_4: function(_compView_4) {
-        this._wr_table_template$_compView_4 = H.assertSubtype(_compView_4, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_4_5: function(_SkawaDataTableColComponent_4_5) {
-        this._SkawaDataTableColComponent_4_5 = H.assertSubtype(_SkawaDataTableColComponent_4_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_compView_5: function(_compView_5) {
-        this._compView_5 = H.assertSubtype(_compView_5, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_5_5: function(_SkawaDataTableColComponent_5_5) {
-        this._SkawaDataTableColComponent_5_5 = H.assertSubtype(_SkawaDataTableColComponent_5_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_wr_table_template$_compView_6: function(_compView_6) {
-        this._wr_table_template$_compView_6 = H.assertSubtype(_compView_6, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_6_5: function(_SkawaDataTableColComponent_6_5) {
-        this._SkawaDataTableColComponent_6_5 = H.assertSubtype(_SkawaDataTableColComponent_6_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_wr_table_template$_compView_7: function(_compView_7) {
-        this._wr_table_template$_compView_7 = H.assertSubtype(_compView_7, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataTableColComponent_7_5: function(_SkawaDataTableColComponent_7_5) {
-        this._SkawaDataTableColComponent_7_5 = H.assertSubtype(_SkawaDataTableColComponent_7_5, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
-      },
-      set$_wr_table_template$_compView_8: function(_compView_8) {
-        this._wr_table_template$_compView_8 = H.assertSubtype(_compView_8, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
-      },
-      set$_SkawaDataColRendererDirective_8_5: function(_SkawaDataColRendererDirective_8_5) {
-        this._SkawaDataColRendererDirective_8_5 = H.assertSubtype(_SkawaDataColRendererDirective_8_5, "$isSkawaDataColRendererDirective", [N.WrRowData], "$asSkawaDataColRendererDirective");
-      },
-      set$_SkawaDataTableColComponent_8_6: function(_SkawaDataTableColComponent_8_6) {
-        this._SkawaDataTableColComponent_8_6 = H.assertSubtype(_SkawaDataTableColComponent_8_6, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
+      set$_MaterialDropdownSelectComponent_3_5: function(_MaterialDropdownSelectComponent_3_5) {
+        this._MaterialDropdownSelectComponent_3_5 = H.assertSubtype(_MaterialDropdownSelectComponent_3_5, "$isMaterialDropdownSelectComponent", [[G.SkawaDataTableColComponent, N.WrRowData]], "$asMaterialDropdownSelectComponent");
       },
       build$0: function() {
-        var parentRenderNode, t1, _el_1, t2, t3, _el_2;
+        var parentRenderNode, doc, _el_0, _el_1, t1, t2, t3, _el_3, _anchor_4;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
-        t1 = N.WrRowData;
-        this.set$_wr_table_template$_compView_0(N.ViewSkawaDataTableComponent0$(this, 0, t1));
-        J.append$1$x(parentRenderNode, this._wr_table_template$_compView_0.rootEl);
-        this.set$_SkawaDataTableComponent_0_5(S.SkawaDataTableComponent$(t1));
-        this.set$_wr_table_template$_compView_1(Y.ViewSkawaDataTableColComponent0$(this, 1, t1));
-        _el_1 = this._wr_table_template$_compView_1.rootEl;
-        _el_1.className = "text-column";
-        J.setAttribute$2$x(_el_1, "header", "Player");
-        t2 = [t1];
-        t3 = [t1];
-        this.set$_SkawaDataTableColComponent_1_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_1.create$2(0, this._SkawaDataTableColComponent_1_5, []);
-        this.set$_wr_table_template$_compView_2(Y.ViewSkawaDataTableColComponent0$(this, 2, t1));
-        _el_2 = this._wr_table_template$_compView_2.rootEl;
-        _el_2.className = "text-column";
-        J.setAttribute$2$x(_el_2, "header", "Team");
-        this.set$_SkawaDataTableColComponent_2_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_2.create$2(0, this._SkawaDataTableColComponent_2_5, []);
-        this.set$_wr_table_template$_compView_3(Y.ViewSkawaDataTableColComponent0$(this, 3, t1));
-        J.setAttribute$2$x(this._wr_table_template$_compView_3.rootEl, "header", "Rec");
-        this.set$_SkawaDataTableColComponent_3_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_3.create$2(0, this._SkawaDataTableColComponent_3_5, []);
-        this.set$_wr_table_template$_compView_4(Y.ViewSkawaDataTableColComponent0$(this, 4, t1));
-        J.setAttribute$2$x(this._wr_table_template$_compView_4.rootEl, "header", "Yards");
-        this.set$_SkawaDataTableColComponent_4_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_4.create$2(0, this._SkawaDataTableColComponent_4_5, []);
-        this.set$_compView_5(Y.ViewSkawaDataTableColComponent0$(this, 5, t1));
-        J.setAttribute$2$x(this._compView_5.rootEl, "header", "Avg");
-        this.set$_SkawaDataTableColComponent_5_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._compView_5.create$2(0, this._SkawaDataTableColComponent_5_5, []);
-        this.set$_wr_table_template$_compView_6(Y.ViewSkawaDataTableColComponent0$(this, 6, t1));
-        J.setAttribute$2$x(this._wr_table_template$_compView_6.rootEl, "header", "Yds/G");
-        this.set$_SkawaDataTableColComponent_6_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_6.create$2(0, this._SkawaDataTableColComponent_6_5, []);
-        this.set$_wr_table_template$_compView_7(Y.ViewSkawaDataTableColComponent0$(this, 7, t1));
-        J.setAttribute$2$x(this._wr_table_template$_compView_7.rootEl, "header", "1st");
-        this.set$_SkawaDataTableColComponent_7_5(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), null, true, t3));
-        this._wr_table_template$_compView_7.create$2(0, this._SkawaDataTableColComponent_7_5, []);
-        this.set$_wr_table_template$_compView_8(Y.ViewSkawaDataTableColComponent0$(this, 8, t1));
-        J.setAttribute$2$x(this._wr_table_template$_compView_8.rootEl, "header", "1st%");
-        this.set$_SkawaDataColRendererDirective_8_5(new G.SkawaDataColRendererDirective([t1]));
-        t1 = this._SkawaDataColRendererDirective_8_5;
-        this.set$_SkawaDataTableColComponent_8_6(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, t2), t1, true, t3));
-        this._wr_table_template$_compView_8.create$2(0, this._SkawaDataTableColComponent_8_6, []);
-        this._SkawaDataTableComponent_0_5.set$columns(0, H.setRuntimeTypeInfo([this._SkawaDataTableColComponent_1_5, this._SkawaDataTableColComponent_2_5, this._SkawaDataTableColComponent_3_5, this._SkawaDataTableColComponent_4_5, this._SkawaDataTableColComponent_5_5, this._SkawaDataTableColComponent_6_5, this._SkawaDataTableColComponent_7_5, this._SkawaDataTableColComponent_8_6], [[G.SkawaDataTableColComponent, N.WrRowData]]));
-        this._wr_table_template$_compView_0.create$2(0, this._SkawaDataTableComponent_0_5, []);
+        doc = document;
+        _el_0 = S.createAndAppend(doc, "h3", parentRenderNode);
+        this.addShimE$1(_el_0);
+        _el_1 = S.createSpanAndAppend(doc, _el_0);
+        this.addShimE$1(_el_1);
+        (_el_1 && C.SpanElement_methods).append$1(_el_1, doc.createTextNode("Datatable with colRenderer"));
+        t1 = [G.SkawaDataTableColComponent, N.WrRowData];
+        t2 = new Y.ViewMaterialDropdownSelectComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), this, [t1]);
+        t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_1, 3, [M.MaterialDropdownSelectComponent, [G.SkawaDataTableColComponent, N.WrRowData]]));
+        t3 = doc.createElement("material-dropdown-select");
+        t2.rootEl = H.interceptedTypeCheck(t3, "$isHtmlElement");
+        t3 = $.ViewMaterialDropdownSelectComponent0__renderType;
+        if (t3 == null) {
+          t3 = $.appViewUtils;
+          t3 = t3.createRenderType$3(null, C.ViewEncapsulation_0, $.$get$styles$MaterialDropdownSelectComponent());
+          $.ViewMaterialDropdownSelectComponent0__renderType = t3;
+        }
+        t2.setupComponentType$1(t3);
+        this.set$_wr_table_template$_compView_3(t2);
+        _el_3 = this._wr_table_template$_compView_3.rootEl;
+        J.append$1$x(_el_0, _el_3);
+        this.addShimC$1(_el_3);
+        t2 = this.parentView;
+        t1 = M.MaterialDropdownSelectComponent$(H.interceptedTypeCheck(t2.injectorGet$3(C.Type_IdGenerator_yLN, this.viewData.parentIndex, null), "$isIdGenerator"), H.interceptedTypeCheck(t2.injectorGet$3(C.Type_PopupSizeProvider_a5y, this.viewData.parentIndex, null), "$isPopupSizeProvider"), H.boolTypeCheck(t2.injectorGet$3(C.OpaqueToken_isRtl, this.viewData.parentIndex, null)), null, null, this._wr_table_template$_compView_3.viewData.ref, _el_3, t1);
+        this.set$_MaterialDropdownSelectComponent_3_5(t1);
+        this._wr_table_template$_compView_3.create$2(0, this._MaterialDropdownSelectComponent_3_5, [C.List_empty, C.List_empty, C.List_empty, C.List_empty, C.List_empty, C.List_empty]);
+        t1 = $.$get$_viewContainerAnchor();
+        _anchor_4 = H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment");
+        J.append$1$x(parentRenderNode, _anchor_4);
+        t1 = new V.ViewContainer(4, null, this, _anchor_4);
+        this._appEl_4 = t1;
+        this._NgIf_4_9 = new K.NgIf(new D.TemplateRef(t1, T.wr_table_template__viewFactory_WrTableComponent1$closure()), t1, false);
         this.init$2(C.List_empty, null);
       },
       injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
-        var t1 = token === C.Type_SkawaDataTableColComponent_tpI;
-        if (t1 && 1 === nodeIndex)
-          return this._SkawaDataTableColComponent_1_5;
-        if (t1 && 2 === nodeIndex)
-          return this._SkawaDataTableColComponent_2_5;
-        if (t1 && 3 === nodeIndex)
-          return this._SkawaDataTableColComponent_3_5;
-        if (t1 && 4 === nodeIndex)
-          return this._SkawaDataTableColComponent_4_5;
-        if (t1 && 5 === nodeIndex)
-          return this._SkawaDataTableColComponent_5_5;
-        if (t1 && 6 === nodeIndex)
-          return this._SkawaDataTableColComponent_6_5;
-        if (t1 && 7 === nodeIndex)
-          return this._SkawaDataTableColComponent_7_5;
-        if (token === C.Type_iap && 8 === nodeIndex)
-          return this._SkawaDataColRendererDirective_8_5;
-        if (t1 && 8 === nodeIndex)
-          return this._SkawaDataTableColComponent_8_6;
-        if (token === C.Type_SkawaDataTableComponent_qdG)
-          t1 = nodeIndex <= 8;
-        else
-          t1 = false;
-        if (t1)
-          return this._SkawaDataTableComponent_0_5;
+        var t1;
+        if ((token === C.Type_Qkw || token === C.Type_DropdownHandle_YMM || token === C.Type_HasDisabled_qzc || token === C.Type_HasRenderer_wsa || token === C.Type_DeferredContentAware_BCk || token === C.Type_SelectionContainer_yzp || token === C.Type_PopupSizeProvider_a5y || token === C.Type_ActivationHandler_Nm5) && 3 === nodeIndex)
+          return this._MaterialDropdownSelectComponent_3_5;
+        if (token === C.Type_ActiveItemModel_69t && 3 === nodeIndex) {
+          t1 = this.__ActiveItemModel_3_13;
+          if (t1 == null) {
+            t1 = this._MaterialDropdownSelectComponent_3_5.activeModel;
+            this.__ActiveItemModel_3_13 = t1;
+          }
+          return t1;
+        }
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
-        var _ctx, firstCheck, changed, currVal_1, t1;
+        var _ctx, t1, t2, changes, currVal_0;
+        _ctx = this.ctx;
+        if (this.viewData._cdState === 0) {
+          t1 = this._MaterialDropdownSelectComponent_3_5;
+          t2 = _ctx.columnModel;
+          t1.set$selectionInput(t2);
+          changes = P.LinkedHashMap_LinkedHashMap$_empty(P.String, A.SimpleChange);
+          changes.$indexSet(0, "selectionInput", new A.SimpleChange(null, t2));
+          this._MaterialDropdownSelectComponent_3_5.showButtonBorder = false;
+          changes.$indexSet(0, "showButtonBorder", new A.SimpleChange(null, false));
+          t1 = _ctx.get$itemRenderer();
+          t2 = this._MaterialDropdownSelectComponent_3_5;
+          t2.toString;
+          H.functionTypeCheck(t1, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(t2, 0)]});
+          t2.super$SelectionContainer$itemRenderer(t1);
+          changes.$indexSet(0, "itemRenderer", new A.SimpleChange(null, t1));
+          t1 = this._MaterialDropdownSelectComponent_3_5;
+          t2 = _ctx.columnOptions;
+          t1.super$SelectionInputAdapter$optionsInput(t2);
+          changes.$indexSet(0, "optionsInput", new A.SimpleChange(null, t2));
+        } else
+          changes = null;
+        currVal_0 = _ctx.icon;
+        t1 = this._wr_table_template$_expr_0;
+        if (t1 !== currVal_0) {
+          this._MaterialDropdownSelectComponent_3_5.MaterialButtonWrapper_icon = currVal_0;
+          if (changes == null)
+            changes = P.LinkedHashMap_LinkedHashMap$_empty(P.String, A.SimpleChange);
+          changes.$indexSet(0, "icon", new A.SimpleChange(this._wr_table_template$_expr_0, currVal_0));
+          this._wr_table_template$_expr_0 = currVal_0;
+        }
+        if (changes != null) {
+          t1 = this._MaterialDropdownSelectComponent_3_5;
+          t1.toString;
+          if (H.assertSubtype(changes, "$isMap", [P.String, A.SimpleChange], "$asMap").containsKey$1(0, "disabled"))
+            t1.MaterialButtonWrapper_disabled;
+        }
+        this._NgIf_4_9.set$ngIf(_ctx.columnModel.selectedValues._collection$_length !== 0);
+        this._appEl_4.detectChangesInNestedViews$0();
+        if (this._query_SkawaDataTableComponent_1_0_isDirty) {
+          t1 = this.ctx;
+          t2 = this._appEl_4.mapNestedViews$2$1(new T.ViewWrTableComponent0_detectChangesInternal_closure(), [S.SkawaDataTableComponent, U.RowData], T._ViewWrTableComponent1);
+          t1.set$dataTableComponent(t2.length !== 0 ? C.JSArray_methods.get$first(t2) : null);
+          this._query_SkawaDataTableComponent_1_0_isDirty = false;
+        }
+        this._wr_table_template$_compView_3.detectChanges$0();
+      },
+      destroyInternal$0: function() {
+        var t1, t2;
+        this._appEl_4.destroyNestedViews$0();
+        this._wr_table_template$_compView_3.destroy$0();
+        t1 = this._MaterialDropdownSelectComponent_3_5;
+        t2 = t1._optionsListener;
+        if (!(t2 == null))
+          t2.cancel$0(0);
+        t1 = t1._selectionListener;
+        if (!(t1 == null))
+          t1.cancel$0(0);
+      },
+      $asAppView: function() {
+        return [N.WrTableComponent];
+      }
+    },
+    ViewWrTableComponent0_detectChangesInternal_closure: {
+      "^": "Closure:133;",
+      call$1: function(nestedView) {
+        return H.setRuntimeTypeInfo([H.interceptedTypeCheck(nestedView, "$is_ViewWrTableComponent1")._wr_table_template$_SkawaDataTableComponent_0_5], [[S.SkawaDataTableComponent, U.RowData]]);
+      }
+    },
+    _ViewWrTableComponent1: {
+      "^": "AppView;0_wr_table_template$_compView_0,0_wr_table_template$_SkawaDataTableComponent_0_5,0_wr_table_template$_appEl_1,_query_SkawaDataTableColComponent_0_0_isDirty,0_wr_table_template$_NgFor_1_9,0_wr_table_template$_expr_2,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      set$_wr_table_template$_compView_0: function(_compView_0) {
+        this._wr_table_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewSkawaDataTableComponent0", [N.WrRowData], "$asViewSkawaDataTableComponent0");
+      },
+      set$_wr_table_template$_SkawaDataTableComponent_0_5: function(_SkawaDataTableComponent_0_5) {
+        this._wr_table_template$_SkawaDataTableComponent_0_5 = H.assertSubtype(_SkawaDataTableComponent_0_5, "$isSkawaDataTableComponent", [N.WrRowData], "$asSkawaDataTableComponent");
+      },
+      build$0: function() {
+        var t1, _el_0;
+        t1 = N.WrRowData;
+        this.set$_wr_table_template$_compView_0(N.ViewSkawaDataTableComponent0$(this, 0, t1));
+        _el_0 = this._wr_table_template$_compView_0.rootEl;
+        this.addShimC$1(_el_0);
+        this.set$_wr_table_template$_SkawaDataTableComponent_0_5(S.SkawaDataTableComponent$(this._wr_table_template$_compView_0.viewData.ref, t1));
+        t1 = $.$get$_viewContainerAnchor();
+        t1 = new V.ViewContainer(1, 0, this, H.interceptedTypeCheck((t1 && C.Comment_methods).clone$1(t1, false), "$isComment"));
+        this._wr_table_template$_appEl_1 = t1;
+        this._wr_table_template$_NgFor_1_9 = new R.NgFor(t1, new D.TemplateRef(t1, T.wr_table_template__viewFactory_WrTableComponent2$closure()));
+        this._wr_table_template$_compView_0.create$2(0, this._wr_table_template$_SkawaDataTableComponent_0_5, [H.setRuntimeTypeInfo([t1], [V.ViewContainer])]);
+        this.init0$1(_el_0);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        var t1;
+        if (token === C.Type_SkawaDataTableComponent_qdG)
+          t1 = nodeIndex <= 1;
+        else
+          t1 = false;
+        if (t1)
+          return this._wr_table_template$_SkawaDataTableComponent_0_5;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var _ctx, firstCheck, t1, changed, currVal_2;
         _ctx = this.ctx;
         firstCheck = this.viewData._cdState === 0;
         if (firstCheck) {
-          this._SkawaDataTableComponent_0_5.selectable = false;
+          t1 = this._wr_table_template$_SkawaDataTableComponent_0_5;
+          t1.selectable = false;
+          t1.set$rows(0, _ctx.wrRowData);
           changed = true;
         } else
           changed = false;
-        currVal_1 = _ctx.wrRowData;
-        t1 = this._wr_table_template$_expr_1;
-        if (t1 !== currVal_1) {
-          this._SkawaDataTableComponent_0_5.set$rows(0, currVal_1);
-          this._wr_table_template$_expr_1 = currVal_1;
-          changed = true;
-        }
         if (changed)
           this._wr_table_template$_compView_0.viewData.set$cdMode(1);
-        if (firstCheck) {
-          t1 = _ctx.get$nameAccessor();
-          this._SkawaDataTableColComponent_1_5.set$accessor(t1);
-          t1 = this._SkawaDataTableColComponent_1_5;
-          t1.header = "Player";
-          t1.classString = "text-column";
+        currVal_2 = _ctx.columns;
+        t1 = this._wr_table_template$_expr_2;
+        if (t1 !== currVal_2) {
+          this._wr_table_template$_NgFor_1_9.set$ngForOf(currVal_2);
+          this._wr_table_template$_expr_2 = currVal_2;
         }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_1_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$teamAccessor();
-          this._SkawaDataTableColComponent_2_5.set$accessor(t1);
-          t1 = this._SkawaDataTableColComponent_2_5;
-          t1.header = "Team";
-          t1.classString = "text-column";
+        this._wr_table_template$_NgFor_1_9.ngDoCheck$0();
+        this._wr_table_template$_appEl_1.detectChangesInNestedViews$0();
+        if (this._query_SkawaDataTableColComponent_0_0_isDirty) {
+          this._wr_table_template$_SkawaDataTableComponent_0_5.set$columns(0, this._wr_table_template$_appEl_1.mapNestedViews$2$1(new T._ViewWrTableComponent1_detectChangesInternal_closure(), [G.SkawaDataTableColComponent, N.WrRowData], T._ViewWrTableComponent2));
+          this._query_SkawaDataTableColComponent_0_0_isDirty = false;
         }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_2_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$recAccessor();
-          this._SkawaDataTableColComponent_3_5.set$accessor(t1);
-          this._SkawaDataTableColComponent_3_5.header = "Rec";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_3_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$yardsAccessor();
-          this._SkawaDataTableColComponent_4_5.set$accessor(t1);
-          this._SkawaDataTableColComponent_4_5.header = "Yards";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_4_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$avgAccessor();
-          this._SkawaDataTableColComponent_5_5.set$accessor(t1);
-          this._SkawaDataTableColComponent_5_5.header = "Avg";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_5_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$yardPerGameAccessor();
-          this._SkawaDataTableColComponent_6_5.set$accessor(t1);
-          this._SkawaDataTableColComponent_6_5.header = "Yds/G";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_6_5.ngOnInit$0();
-        if (firstCheck) {
-          t1 = _ctx.get$firstDownAccessor();
-          this._SkawaDataTableColComponent_7_5.set$accessor(t1);
-          this._SkawaDataTableColComponent_7_5.header = "1st";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_7_5.ngOnInit$0();
-        if (firstCheck) {
-          this._SkawaDataColRendererDirective_8_5.set$factoryRenderer(_ctx.firstDownPercentRenderer);
-          this._SkawaDataTableColComponent_8_6.header = "1st%";
-        }
-        if (firstCheck)
-          this._SkawaDataTableColComponent_8_6.ngOnInit$0();
         this._wr_table_template$_compView_0.detectChanges$0();
-        this._wr_table_template$_compView_1.detectChanges$0();
-        this._wr_table_template$_compView_2.detectChanges$0();
-        this._wr_table_template$_compView_3.detectChanges$0();
-        this._wr_table_template$_compView_4.detectChanges$0();
-        this._compView_5.detectChanges$0();
-        this._wr_table_template$_compView_6.detectChanges$0();
-        this._wr_table_template$_compView_7.detectChanges$0();
-        this._wr_table_template$_compView_8.detectChanges$0();
         if (firstCheck)
-          this._SkawaDataTableComponent_0_5.ngAfterViewInit$0();
+          this._wr_table_template$_SkawaDataTableComponent_0_5.ngAfterViewInit$0();
+      },
+      dirtyParentQueriesInternal$0: function() {
+        H.interceptedTypeCheck(this.parentView, "$isViewWrTableComponent0")._query_SkawaDataTableComponent_1_0_isDirty = true;
+      },
+      destroyInternal$0: function() {
+        this._wr_table_template$_appEl_1.destroyNestedViews$0();
+        this._wr_table_template$_compView_0.destroy$0();
+        this._wr_table_template$_SkawaDataTableComponent_0_5._data_table$_tearDownDisposer.dispose$0();
+      },
+      $asAppView: function() {
+        return [N.WrTableComponent];
+      }
+    },
+    _ViewWrTableComponent1_detectChangesInternal_closure: {
+      "^": "Closure:134;",
+      call$1: function(nestedView) {
+        return H.setRuntimeTypeInfo([H.interceptedTypeCheck(nestedView, "$is_ViewWrTableComponent2")._SkawaDataTableColComponent_0_6], [[G.SkawaDataTableColComponent, N.WrRowData]]);
+      }
+    },
+    _ViewWrTableComponent2: {
+      "^": "AppView;0_wr_table_template$_compView_0,0_SkawaDataColRendererDirective_0_5,0_SkawaDataTableColComponent_0_6,0_wr_table_template$_expr_0,0_wr_table_template$_expr_1,0_wr_table_template$_expr_2,0_wr_table_template$_expr_3,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
+      set$_wr_table_template$_compView_0: function(_compView_0) {
+        this._wr_table_template$_compView_0 = H.assertSubtype(_compView_0, "$isViewSkawaDataTableColComponent0", [N.WrRowData], "$asViewSkawaDataTableColComponent0");
+      },
+      set$_SkawaDataColRendererDirective_0_5: function(_SkawaDataColRendererDirective_0_5) {
+        this._SkawaDataColRendererDirective_0_5 = H.assertSubtype(_SkawaDataColRendererDirective_0_5, "$isSkawaDataColRendererDirective", [N.WrRowData], "$asSkawaDataColRendererDirective");
+      },
+      set$_SkawaDataTableColComponent_0_6: function(_SkawaDataTableColComponent_0_6) {
+        this._SkawaDataTableColComponent_0_6 = H.assertSubtype(_SkawaDataTableColComponent_0_6, "$isSkawaDataTableColComponent", [N.WrRowData], "$asSkawaDataTableColComponent");
+      },
+      build$0: function() {
+        var t1, _el_0, t2;
+        t1 = N.WrRowData;
+        this.set$_wr_table_template$_compView_0(Y.ViewSkawaDataTableColComponent0$(this, 0, t1));
+        _el_0 = this._wr_table_template$_compView_0.rootEl;
+        this.addShimC$1(_el_0);
+        this.set$_SkawaDataColRendererDirective_0_5(new G.SkawaDataColRendererDirective([t1]));
+        t2 = this._SkawaDataColRendererDirective_0_5;
+        this.set$_SkawaDataTableColComponent_0_6(new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, [t1]), t2, true, [t1]));
+        this._wr_table_template$_compView_0.create$2(0, this._SkawaDataTableColComponent_0_6, []);
+        this.init0$1(_el_0);
+      },
+      injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
+        if (token === C.Type_iap && 0 === nodeIndex)
+          return this._SkawaDataColRendererDirective_0_5;
+        if (token === C.Type_SkawaDataTableColComponent_tpI && 0 === nodeIndex)
+          return this._SkawaDataTableColComponent_0_6;
+        return notFoundResult;
+      },
+      detectChangesInternal$0: function() {
+        var t1, local_column, t2, currVal_0, currVal_1, currVal_2, currVal_3;
+        t1 = this.viewData._cdState;
+        local_column = H.assertSubtypeOfRuntimeType(this.locals.$index(0, "$implicit"), [G.SkawaDataTableColComponent, N.WrRowData]);
+        t2 = local_column.columnRenderer;
+        currVal_0 = t2 == null ? null : H.functionTypeCheck(t2.SkawaDataColRendererDirective_factoryRenderer, {func: 1, ret: [D.ComponentFactory,,], args: [N.WrRowData]});
+        t2 = this._wr_table_template$_expr_0;
+        if (t2 == null ? currVal_0 != null : t2 !== currVal_0) {
+          this._SkawaDataColRendererDirective_0_5.set$factoryRenderer(currVal_0);
+          this._wr_table_template$_expr_0 = currVal_0;
+        }
+        currVal_1 = H.functionTypeCheck(local_column.accessor, {func: 1, ret: P.String, args: [N.WrRowData]});
+        t2 = this._wr_table_template$_expr_1;
+        if (t2 == null ? currVal_1 != null : t2 !== currVal_1) {
+          this._SkawaDataTableColComponent_0_6.set$accessor(currVal_1);
+          this._wr_table_template$_expr_1 = currVal_1;
+        }
+        currVal_2 = local_column.header;
+        t2 = this._wr_table_template$_expr_2;
+        if (t2 != currVal_2) {
+          this._SkawaDataTableColComponent_0_6.header = currVal_2;
+          this._wr_table_template$_expr_2 = currVal_2;
+        }
+        currVal_3 = local_column.classString;
+        t2 = this._wr_table_template$_expr_3;
+        if (t2 != currVal_3) {
+          this._SkawaDataTableColComponent_0_6.classString = currVal_3;
+          this._wr_table_template$_expr_3 = currVal_3;
+        }
+        if (t1 === 0)
+          this._SkawaDataTableColComponent_0_6.ngOnInit$0();
+        this._wr_table_template$_compView_0.detectChanges$0();
+      },
+      dirtyParentQueriesInternal$0: function() {
+        H.interceptedTypeCheck(this.parentView, "$is_ViewWrTableComponent1")._query_SkawaDataTableColComponent_0_0_isDirty = true;
       },
       destroyInternal$0: function() {
         this._wr_table_template$_compView_0.destroy$0();
-        this._wr_table_template$_compView_1.destroy$0();
-        this._wr_table_template$_compView_2.destroy$0();
-        this._wr_table_template$_compView_3.destroy$0();
-        this._wr_table_template$_compView_4.destroy$0();
-        this._compView_5.destroy$0();
-        this._wr_table_template$_compView_6.destroy$0();
-        this._wr_table_template$_compView_7.destroy$0();
-        this._wr_table_template$_compView_8.destroy$0();
-        this._SkawaDataTableColComponent_1_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_2_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_3_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_4_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_5_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_6_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_7_5._triggerController.close$0(0);
-        this._SkawaDataTableColComponent_8_6._triggerController.close$0(0);
-        this._SkawaDataTableComponent_0_5._data_table$_tearDownDisposer.dispose$0();
+        this._SkawaDataTableColComponent_0_6._triggerController.close$0(0);
       },
       $asAppView: function() {
         return [N.WrTableComponent];
@@ -22901,13 +32579,13 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Q.GridDemoComponent));
       t1.componentType = $.ViewGridDemoComponent0__renderType;
       return t1;
-    }, "call$2", "grid_demo_template__viewFactory_GridDemoComponent1$closure", 8, 0, 19],
+    }, "call$2", "grid_demo_template__viewFactory_GridDemoComponent1$closure", 8, 0, 46],
     viewFactory_GridDemoComponent2: [function(parentView, parentIndex) {
       var t1 = new S._ViewGridDemoComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, Q.GridDemoComponent));
       t1.componentType = $.ViewGridDemoComponent0__renderType;
       return t1;
-    }, "call$2", "grid_demo_template__viewFactory_GridDemoComponent2$closure", 8, 0, 19],
+    }, "call$2", "grid_demo_template__viewFactory_GridDemoComponent2$closure", 8, 0, 46],
     ViewGridDemoComponent0: {
       "^": "AppView;0_grid_demo_template$_compView_0,0_grid_demo_template$_DemoHeaderComponent_0_5,0_grid_demo_template$_compView_3,0_GridComponent_3_5,0_GridTileDirective_4_5,0_GridTileDirective_6_5,0_GridTileDirective_8_5,0_GridTileDirective_10_5,0_GridTileDirective_12_5,0_compView_16,0_GridComponent_16_5,0_grid_demo_template$_compView_17,0_GridTileDirective_17_5,0_SkawaCardComponent_17_6,0_compView_18,0_SkawaCardHeaderComponent_18_5,0_SkawaCardHeaderImageDirective_19_5,0_SkawaCardHeaderTitleDirective_22_5,0_compView_24,0_GridTileDirective_24_5,0_SkawaCardComponent_24_6,0_compView_25,0_SkawaCardHeaderComponent_25_5,0_SkawaCardHeaderImageDirective_26_5,0_SkawaCardHeaderTitleDirective_29_5,0_SkawaCardHeaderSubheadDirective_31_5,0_compView_33,0_GridTileDirective_33_5,0_SkawaCardComponent_33_6,0_compView_34,0_SkawaCardContentComponent_34_5,0_compView_36,0_SkawaCardActionsComponent_36_5,0_compView_37,0_AcxDarkTheme_37_5,0_MaterialButtonComponent_37_6,0_compView_39,0_GridTileDirective_39_5,0_SkawaCardComponent_39_6,0_compView_40,0_SkawaCardHeaderComponent_40_5,0_SkawaCardHeaderTitleDirective_41_5,0_SkawaCardHeaderSubheadDirective_43_5,0_compView_45,0_SkawaCardContentComponent_45_5,0_compView_50,0_GridTileDirective_50_5,0_SkawaCardComponent_50_6,0_compView_51,0_SkawaCardHeaderComponent_51_5,0_SkawaCardHeaderTitleDirective_52_5,0_grid_demo_template$_compView_54,0_SkawaCardActionsComponent_54_5,0_grid_demo_template$_compView_55,0_AcxDarkTheme_55_5,0_MaterialButtonComponent_55_6,0_compView_56,0_MaterialIconComponent_56_5,0_compView_57,0_SkawaCardActionsComponent_57_5,0_compView_58,0_AcxDarkTheme_58_5,0_MaterialButtonComponent_58_6,0_grid_demo_template$_compView_61,0_AcxDarkTheme_61_5,0_MaterialButtonComponent_61_6,0_appEl_62,0_NgIf_62_9,0_appEl_63,0_NgIf_63_9,0_grid_demo_template$_compView_64,0_SkawaCardContentComponent_64_5,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -23429,7 +33107,7 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, A.HexColorizePipeDemoComponent));
       t1.componentType = $.ViewHexColorizePipeDemoComponent0__renderType;
       return t1;
-    }, "call$2", "hex_colorize_pipe_demo_template__viewFactory_HexColorizePipeDemoComponent1$closure", 8, 0, 119],
+    }, "call$2", "hex_colorize_pipe_demo_template__viewFactory_HexColorizePipeDemoComponent1$closure", 8, 0, 175],
     ViewHexColorizePipeDemoComponent0: {
       "^": "AppView;0_hex_colorize_pipe_demo_template$_compView_0,0_hex_colorize_pipe_demo_template$_DemoHeaderComponent_0_5,0_hex_colorize_pipe_demo_template$_appEl_1,0_NgFor_1_9,0_hex_colorize_pipe_demo_template$_expr_3,0_pipe_hedColorize_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -23536,7 +33214,7 @@
       "^": "Object;",
       alert$0: [function(_) {
         C.Window_methods.alert$1(window, "Triggered!");
-      }, "call$0", "get$alert", 1, 0, 0]
+      }, "call$0", "get$alert", 1, 0, 1]
     }
   }], ["", "package:skawa_components_example/infobar_demo/infobar_demo.template.dart",, O, {
     "^": "",
@@ -23964,7 +33642,7 @@
       "^": "Object;_openController",
       open$0: [function(_) {
         return this._openController.add$1(0, null);
-      }, "call$0", "get$open", 1, 0, 0]
+      }, "call$0", "get$open", 1, 0, 1]
     }
   }], ["", "package:skawa_components_example/sidebar_item_demo/sidebar_item_demo.template.dart",, Y, {
     "^": "",
@@ -24036,16 +33714,16 @@
       "^": "Object;_snackbarService",
       showMessage$0: [function() {
         return this._snackbarService.showMessage$1("Feedback what happend");
-      }, "call$0", "get$showMessage", 0, 0, 0],
+      }, "call$0", "get$showMessage", 0, 0, 1],
       showMessageWithCallback$0: [function() {
         var action = new T.SnackAction();
         action.label = "Click me";
         action.callback = new T.SnackbarDemoComponent_showMessageWithCallback_closure();
         this._snackbarService.showMessage$3$action$duration("For more information", action, P.Duration$(0, 0, 0, 0, 0, 10));
-      }, "call$0", "get$showMessageWithCallback", 0, 0, 0]
+      }, "call$0", "get$showMessageWithCallback", 0, 0, 1]
     },
     SnackbarDemoComponent_showMessageWithCallback_closure: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$0: function() {
         C.Window_methods.alert$1(window, "Triggered!");
       }
@@ -24249,13 +33927,13 @@
       }
     },
     GridBase_calculateGridUpdate_closure: {
-      "^": "Closure:90;tileWidthWithGutter,xAdjustmentForCentering",
+      "^": "Closure:44;tileWidthWithGutter,xAdjustmentForCentering",
       call$1: function(index) {
         return index * this.tileWidthWithGutter + this.xAdjustmentForCentering;
       }
     },
     GridBase_calculateGridUpdate_closure0: {
-      "^": "Closure:31;maxYTranslation",
+      "^": "Closure:47;maxYTranslation",
       call$1: function(e) {
         return H.intTypeCheck(e) == this.maxYTranslation;
       }
@@ -24481,7 +34159,7 @@
   }], ["asset_skawa_material_components_lib_card_card_header.css.shim.dart", "package:skawa_material_components/card/card_header.css.shim.dart",, S, {}], ["asset_skawa_material_components_lib_data_table_data_table.css.shim.dart", "package:skawa_material_components/data_table/data_table.css.shim.dart",, V, {}], ["", "package:skawa_material_components/data_table/data_table.dart",, S, {
     "^": "",
     SkawaDataTableComponent: {
-      "^": "Object;_changeController,_highlightController,_sortController,_data_table$_tearDownDisposer,0selectable,highlightable,0rows,0highlightedRow,multiSelection,0columns,0onChange,$ti",
+      "^": "Object;_data_table$_changeController,_highlightController,_sortController,_data_table$_tearDownDisposer,changeDetectorRef,0selectable,highlightable,0rows,0highlightedRow,multiSelection,colorOddRows,0columns,0onChange,$ti",
       set$rows: function(_, rows) {
         this.rows = H.assertSubtype(rows, "$isIterable", this.$ti, "$asIterable");
       },
@@ -24494,10 +34172,10 @@
       set$onChange: function(_, onChange) {
         this.onChange = H.assertSubtype(onChange, "$isStream", [[P.List, H.getTypeArgumentByIndex(this, 0)]], "$asStream");
       },
-      SkawaDataTableComponent$0: function($T) {
+      SkawaDataTableComponent$1: function(changeDetectorRef, $T) {
         var t1, t2;
         t1 = this._data_table$_tearDownDisposer;
-        t2 = this._changeController;
+        t2 = this._data_table$_changeController;
         t1.addEventSink$1$1(t2, [P.List, $T]);
         t1.addEventSink$1$1(this._highlightController, $T);
         t1.addEventSink$1$1(this._sortController, [G.SkawaDataTableColComponent, $T]);
@@ -24607,15 +34285,16 @@
         t1 = this.rows;
         t1.toString;
         t2 = H.getTypeArgumentByIndex(t1, 0);
-        this._changeController.add$1(0, P.List_List$from(new H.WhereIterable(t1, H.functionTypeCheck(new S.SkawaDataTableComponent__emitChange_closure(this), {func: 1, ret: P.bool, args: [t2]}), [t2]), false, t2));
+        this._data_table$_changeController.add$1(0, P.List_List$from(new H.WhereIterable(t1, H.functionTypeCheck(new S.SkawaDataTableComponent__emitChange_closure(this), {func: 1, ret: P.bool, args: [t2]}), [t2]), false, t2));
       },
       get$isEveryRowChecked: function() {
         var t1 = this.rows;
-        return (t1 && C.JSArray_methods).every$1(t1, new S.SkawaDataTableComponent_isEveryRowChecked_closure(this));
+        return t1 == null ? null : C.JSArray_methods.every$1(t1, new S.SkawaDataTableComponent_isEveryRowChecked_closure(this));
       },
       get$isEveryRowSkippedInFooter: function() {
         var t1 = this.columns;
-        return (t1 && C.JSArray_methods).every$1(t1, new S.SkawaDataTableComponent_isEveryRowSkippedInFooter_closure(this));
+        t1 = t1 == null ? null : C.JSArray_methods.every$1(t1, new S.SkawaDataTableComponent_isEveryRowSkippedInFooter_closure(this));
+        return t1 == null ? true : t1;
       },
       _areOfSameCheckedState$2: function(a, b) {
         var t1, t2, i, t3, t4;
@@ -24640,18 +34319,24 @@
         return true;
       },
       ngAfterViewInit$0: function() {
-        var t1, t2;
+        var t1, t2, initialSorts;
         t1 = this.columns;
-        t1.toString;
-        t2 = H.getTypeArgumentByIndex(t1, 0);
-        t1 = P.List_List$from(new H.WhereIterable(t1, H.functionTypeCheck(new S.SkawaDataTableComponent_ngAfterViewInit_closure(this), {func: 1, ret: P.bool, args: [t2]}), [t2]), false, t2).length;
+        if (t1 == null)
+          t1 = null;
+        else {
+          t2 = H.getTypeArgumentByIndex(t1, 0);
+          t2 = new H.WhereIterable(t1, H.functionTypeCheck(new S.SkawaDataTableComponent_ngAfterViewInit_closure(this), {func: 1, ret: P.bool, args: [t2]}), [t2]);
+          t1 = t2;
+        }
+        initialSorts = t1 == null ? null : P.List_List$from(t1, false, H.getRuntimeTypeArgument(t1, "Iterable", 0));
+        t1 = (initialSorts == null ? H.setRuntimeTypeInfo([], [[G.SkawaDataTableColComponent, H.getTypeArgumentByIndex(this, 0)]]) : initialSorts).length;
         if (t1 > 1)
           throw H.wrapException(P.ArgumentError$("Initial sort can only be set on one column at most, found " + t1 + " columns"));
       },
       static: {
-        SkawaDataTableComponent$: function($T) {
-          var t1 = new S.SkawaDataTableComponent(new P._SyncBroadcastStreamController(null, null, 0, [[P.List, $T]]), new P._SyncBroadcastStreamController(null, null, 0, [$T]), new P._SyncBroadcastStreamController(null, null, 0, [[G.SkawaDataTableColComponent, $T]]), new R.Disposer(true, false), true, true, [$T]);
-          t1.SkawaDataTableComponent$0($T);
+        SkawaDataTableComponent$: function(changeDetectorRef, $T) {
+          var t1 = new S.SkawaDataTableComponent(new P._SyncBroadcastStreamController(null, null, 0, [[P.List, $T]]), new P._SyncBroadcastStreamController(null, null, 0, [$T]), new P._SyncBroadcastStreamController(null, null, 0, [[G.SkawaDataTableColComponent, $T]]), new R.Disposer(true, false), changeDetectorRef, true, true, true, [$T]);
+          t1.SkawaDataTableComponent$1(changeDetectorRef, $T);
           return t1;
         }
       }
@@ -24731,10 +34416,10 @@
           throw H.wrapException(K.InvalidPipeArgumentException$(C.Type_UnskippedInFooterPipe_ENo, data));
         t1 = t1.where$1(data, new S.UnskippedInFooterPipe_transform_closure());
         return P.List_List$from(t1, true, H.getTypeArgumentByIndex(t1, 0));
-      }, "call$1", "get$transform", 5, 0, 91]
+      }, "call$1", "get$transform", 5, 0, 135]
     },
     UnskippedInFooterPipe_transform_closure: {
-      "^": "Closure:92;",
+      "^": "Closure:136;",
       call$1: function(d) {
         return !H.assertSubtype(d, "$isSkawaDataTableColComponent", [U.RowData], "$asSkawaDataTableColComponent").skipFooter;
       }
@@ -24742,7 +34427,7 @@
   }], ["", "package:skawa_material_components/data_table/data_table.template.dart",, N, {
     "^": "",
     ViewSkawaDataTableComponent0: {
-      "^": "AppView;0_appEl_3,0_NgIf_3_9,0_appEl_4,0_NgFor_4_9,0_appEl_6,0_NgFor_6_9,0_appEl_7,0_NgIf_7_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_pipe_unskippedInFooter_0<,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_appEl_3,0_data_table_template$_NgIf_3_9,0_data_table_template$_appEl_4,0_NgFor_4_9,0_data_table_template$_appEl_6,0_NgFor_6_9,0_appEl_7,0_NgIf_7_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_pipe_unskippedInFooter_0<,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var parentRenderNode, doc, t1, _el_1, _el_2, _anchor_3, t2, t3, _anchor_4, _el_5, _anchor_6, _anchor_7;
         parentRenderNode = this.initViewRoot$1(this.rootEl);
@@ -24759,19 +34444,19 @@
         t2 = J.getInterceptor$x(_el_2);
         t2.append$1(_el_2, _anchor_3);
         t3 = new V.ViewContainer(3, 2, this, _anchor_3);
-        this._appEl_3 = t3;
-        this._NgIf_3_9 = new K.NgIf(new D.TemplateRef(t3, new N.ViewSkawaDataTableComponent0_build_closure(this)), t3, false);
+        this._data_table_template$_appEl_3 = t3;
+        this._data_table_template$_NgIf_3_9 = new K.NgIf(new D.TemplateRef(t3, new N.ViewSkawaDataTableComponent0_build_closure(this)), t3, false);
         _anchor_4 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
         t2.append$1(_el_2, _anchor_4);
         t2 = new V.ViewContainer(4, 2, this, _anchor_4);
-        this._appEl_4 = t2;
+        this._data_table_template$_appEl_4 = t2;
         this._NgFor_4_9 = new R.NgFor(t2, new D.TemplateRef(t2, new N.ViewSkawaDataTableComponent0_build_closure0(this)));
         _el_5 = S.createAndAppend(doc, "tbody", this._data_table_template$_el_0);
         this.addShimE$1(_el_5);
         _anchor_6 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
         J.append$1$x(_el_5, _anchor_6);
         t2 = new V.ViewContainer(6, 5, this, _anchor_6);
-        this._appEl_6 = t2;
+        this._data_table_template$_appEl_6 = t2;
         this._NgFor_6_9 = new R.NgFor(t2, new D.TemplateRef(t2, new N.ViewSkawaDataTableComponent0_build_closure1(this)));
         _anchor_7 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
         t1 = this._data_table_template$_el_0;
@@ -24779,13 +34464,14 @@
         t1 = new V.ViewContainer(7, 0, this, _anchor_7);
         this._appEl_7 = t1;
         this._NgIf_7_9 = new K.NgIf(new D.TemplateRef(t1, new N.ViewSkawaDataTableComponent0_build_closure2(this)), t1, false);
+        this.project$2(parentRenderNode, 0);
         this._pipe_unskippedInFooter_0 = new S.UnskippedInFooterPipe();
         this.init$2(C.List_empty, null);
       },
       detectChangesInternal$0: function() {
         var _ctx, currVal_3, t1, currVal_4, currVal_0, currVal_1;
         _ctx = this.ctx;
-        this._NgIf_3_9.set$ngIf(_ctx.selectable);
+        this._data_table_template$_NgIf_3_9.set$ngIf(_ctx.selectable);
         currVal_3 = _ctx.columns;
         t1 = this._data_table_template$_expr_3;
         if (t1 == null ? currVal_3 != null : t1 !== currVal_3) {
@@ -24801,9 +34487,9 @@
         }
         this._NgFor_6_9.ngDoCheck$0();
         this._NgIf_7_9.set$ngIf(!_ctx.get$isEveryRowSkippedInFooter());
-        this._appEl_3.detectChangesInNestedViews$0();
-        this._appEl_4.detectChangesInNestedViews$0();
-        this._appEl_6.detectChangesInNestedViews$0();
+        this._data_table_template$_appEl_3.detectChangesInNestedViews$0();
+        this._data_table_template$_appEl_4.detectChangesInNestedViews$0();
+        this._data_table_template$_appEl_6.detectChangesInNestedViews$0();
         this._appEl_7.detectChangesInNestedViews$0();
         currVal_0 = _ctx.selectable;
         t1 = this._data_table_template$_expr_0;
@@ -24819,9 +34505,9 @@
         }
       },
       destroyInternal$0: function() {
-        this._appEl_3.destroyNestedViews$0();
-        this._appEl_4.destroyNestedViews$0();
-        this._appEl_6.destroyNestedViews$0();
+        this._data_table_template$_appEl_3.destroyNestedViews$0();
+        this._data_table_template$_appEl_4.destroyNestedViews$0();
+        this._data_table_template$_appEl_6.destroyNestedViews$0();
         this._appEl_7.destroyNestedViews$0();
       },
       $asAppView: function($T) {
@@ -24878,7 +34564,7 @@
       call$2: function(parentView, parentIndex) {
         var t1, t2;
         t1 = H.getTypeArgumentByIndex(this.$this, 0);
-        t2 = new N._ViewSkawaDataTableComponent6(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null, "odd", null], P.String, null), parentView, [t1]);
+        t2 = new N._ViewSkawaDataTableComponent6(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null, "index", null], P.String, null), parentView, [t1]);
         t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [S.SkawaDataTableComponent, t1]));
         t2.componentType = $.ViewSkawaDataTableComponent0__renderType;
         return t2;
@@ -24945,7 +34631,7 @@
       }
     },
     _ViewSkawaDataTableComponent2: {
-      "^": "AppView;0_data_table_template$_compView_0,0_MaterialCheckboxComponent_0_5,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_compView_0,0_data_table_template$_MaterialCheckboxComponent_0_5,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var t1, _el_0;
         t1 = G.ViewMaterialCheckboxComponent0$(this, 0);
@@ -24953,7 +34639,7 @@
         _el_0 = t1.rootEl;
         this.addShimC$1(_el_0);
         t1 = B.MaterialCheckboxComponent$(_el_0, this._data_table_template$_compView_0.viewData.ref, null, null, null);
-        this._MaterialCheckboxComponent_0_5 = t1;
+        this._data_table_template$_MaterialCheckboxComponent_0_5 = t1;
         this._data_table_template$_compView_0.create$2(0, t1, [C.List_empty]);
         t1 = W.Event;
         J.addEventListener$2$x(_el_0, "click", this.eventHandler1$2$1(this.get$_data_table_template$_handle_click_0_0(), t1, t1));
@@ -24961,7 +34647,7 @@
       },
       injectorGetInternal$3: function(token, nodeIndex, notFoundResult) {
         if (token === C.Type_HasDisabled_qzc && 0 === nodeIndex)
-          return this._MaterialCheckboxComponent_0_5;
+          return this._data_table_template$_MaterialCheckboxComponent_0_5;
         return notFoundResult;
       },
       detectChangesInternal$0: function() {
@@ -24970,8 +34656,8 @@
         t1 = this.viewData._cdState;
         currVal_0 = _ctx.get$isEveryRowChecked();
         t2 = this._data_table_template$_expr_0;
-        if (t2 !== currVal_0) {
-          this._MaterialCheckboxComponent_0_5.set$checked(0, currVal_0);
+        if (t2 != currVal_0) {
+          this._data_table_template$_MaterialCheckboxComponent_0_5.set$checked(0, currVal_0);
           this._data_table_template$_expr_0 = currVal_0;
           changed = true;
         } else
@@ -24983,10 +34669,10 @@
       },
       destroyInternal$0: function() {
         this._data_table_template$_compView_0.destroy$0();
-        this._MaterialCheckboxComponent_0_5.toString;
+        this._data_table_template$_MaterialCheckboxComponent_0_5.toString;
       },
       _data_table_template$_handle_click_0_0$1: [function($$event) {
-        var local_markAllCheckbox = this._MaterialCheckboxComponent_0_5;
+        var local_markAllCheckbox = this._data_table_template$_MaterialCheckboxComponent_0_5;
         this.ctx.markAllRowsChecked$2(local_markAllCheckbox._checked, true);
         J.stopPropagation$0$x($$event);
       }, "call$1", "get$_data_table_template$_handle_click_0_0", 4, 0, 2],
@@ -24995,7 +34681,7 @@
       }
     },
     _ViewSkawaDataTableComponent3: {
-      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_appEl_3,0_NgIf_3_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_3,0_data_table_template$_NgIf_3_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var doc, t1, _anchor_1, t2, _text_2, _anchor_3;
         doc = document;
@@ -25014,8 +34700,8 @@
         _anchor_3 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
         J.append$1$x(this._data_table_template$_el_0, _anchor_3);
         t1 = new V.ViewContainer(3, 0, this, _anchor_3);
-        this._appEl_3 = t1;
-        this._NgIf_3_9 = new K.NgIf(new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent3_build_closure0(this)), t1, false);
+        this._data_table_template$_appEl_3 = t1;
+        this._data_table_template$_NgIf_3_9 = new K.NgIf(new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent3_build_closure0(this)), t1, false);
         this.init0$1(this._data_table_template$_el_0);
       },
       detectChangesInternal$0: function() {
@@ -25029,9 +34715,9 @@
         }
         this._data_table_template$_NgClass_0_5.ngDoCheck$0();
         this._data_table_template$_NgIf_1_9.set$ngIf(local_c.sortModel == null);
-        this._NgIf_3_9.set$ngIf(local_c.sortModel != null);
+        this._data_table_template$_NgIf_3_9.set$ngIf(local_c.sortModel != null);
         this._data_table_template$_appEl_1.detectChangesInNestedViews$0();
-        this._appEl_3.detectChangesInNestedViews$0();
+        this._data_table_template$_appEl_3.detectChangesInNestedViews$0();
         t1 = local_c.sortModel;
         currVal_0 = t1 != null && t1.activeSort == null;
         t1 = this._data_table_template$_expr_0;
@@ -25060,7 +34746,7 @@
       },
       destroyInternal$0: function() {
         this._data_table_template$_appEl_1.destroyNestedViews$0();
-        this._appEl_3.destroyNestedViews$0();
+        this._data_table_template$_appEl_3.destroyNestedViews$0();
         var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
@@ -25151,7 +34837,7 @@
       }
     },
     _ViewSkawaDataTableComponent6: {
-      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_NgFor_2_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_data_table_template$_expr_6,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_data_table_template$_NgFor_2_9,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0_data_table_template$_expr_2,0_data_table_template$_expr_3,0_data_table_template$_expr_4,0_data_table_template$_expr_6,0_data_table_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var t1, _anchor_1, t2, _anchor_2;
         t1 = document.createElement("tr");
@@ -25168,17 +34854,17 @@
         J.append$1$x(this._data_table_template$_el_0, _anchor_2);
         t1 = new V.ViewContainer(2, 0, this, _anchor_2);
         this._data_table_template$_appEl_2 = t1;
-        this._NgFor_2_9 = new R.NgFor(t1, new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent6_build_closure0(this)));
+        this._data_table_template$_NgFor_2_9 = new R.NgFor(t1, new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent6_build_closure0(this)));
         t1 = W.Event;
         J.addEventListener$2$x(this._data_table_template$_el_0, "click", this.eventHandler1$2$1(this.get$_data_table_template$_handle_click_0_0(), t1, t1));
         this.init0$1(this._data_table_template$_el_0);
       },
       detectChangesInternal$0: function() {
-        var _ctx, t1, local_row, local_odd, currVal_4, t2, currVal_6, currVal_0, currVal_2, currVal_3;
+        var _ctx, t1, local_row, local_index, currVal_4, t2, currVal_6, currVal_0, currVal_1, t3, currVal_2, currVal_3;
         _ctx = this.ctx;
         t1 = this.locals;
         local_row = H.assertSubtypeOfRuntimeType(t1.$index(0, "$implicit"), H.getTypeArgumentByIndex(this, 0));
-        local_odd = H.boolTypeCheck(t1.$index(0, "odd"));
+        local_index = H.intTypeCheck(t1.$index(0, "index"));
         t1 = J.getInterceptor$x(local_row);
         currVal_4 = t1.get$classes(local_row);
         t2 = this._data_table_template$_expr_4;
@@ -25191,10 +34877,10 @@
         currVal_6 = _ctx.columns;
         t2 = this._data_table_template$_expr_6;
         if (t2 == null ? currVal_6 != null : t2 !== currVal_6) {
-          this._NgFor_2_9.set$ngForOf(currVal_6);
+          this._data_table_template$_NgFor_2_9.set$ngForOf(currVal_6);
           this._data_table_template$_expr_6 = currVal_6;
         }
-        this._NgFor_2_9.ngDoCheck$0();
+        this._data_table_template$_NgFor_2_9.ngDoCheck$0();
         this._data_table_template$_appEl_1.detectChangesInNestedViews$0();
         this._data_table_template$_appEl_2.detectChangesInNestedViews$0();
         currVal_0 = t1.get$checked(local_row);
@@ -25203,12 +34889,24 @@
           this.updateClass$3(H.interceptedTypeCheck(this._data_table_template$_el_0, "$isHtmlElement"), "selected", currVal_0);
           this._data_table_template$_expr_0 = currVal_0;
         }
-        t2 = this._data_table_template$_expr_1;
-        if (t2 != local_odd) {
-          this.updateClass$3(H.interceptedTypeCheck(this._data_table_template$_el_0, "$isHtmlElement"), "odd-row", local_odd);
-          this._data_table_template$_expr_1 = local_odd;
+        if (typeof local_index !== "number")
+          return local_index.$mod();
+        t2 = C.JSInt_methods.$mod(local_index, 2) === 0;
+        if (!t2) {
+          _ctx.colorOddRows;
+          currVal_1 = true;
+        } else
+          currVal_1 = false;
+        t3 = this._data_table_template$_expr_1;
+        if (t3 !== currVal_1) {
+          this.updateClass$3(H.interceptedTypeCheck(this._data_table_template$_el_0, "$isHtmlElement"), "odd-row", currVal_1);
+          this._data_table_template$_expr_1 = currVal_1;
         }
-        currVal_2 = !local_odd;
+        if (t2) {
+          _ctx.colorOddRows;
+          currVal_2 = true;
+        } else
+          currVal_2 = false;
         t2 = this._data_table_template$_expr_2;
         if (t2 !== currVal_2) {
           this.updateClass$3(H.interceptedTypeCheck(this._data_table_template$_el_0, "$isHtmlElement"), "even-row", currVal_2);
@@ -25259,7 +34957,7 @@
       call$2: function(parentView, parentIndex) {
         var t1, t2;
         t1 = H.getTypeArgumentByIndex(this.$this, 0);
-        t2 = new N._ViewSkawaDataTableComponent8(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null, "index", null], P.String, null), parentView, [t1]);
+        t2 = new N._ViewSkawaDataTableComponent8(P.LinkedHashMap_LinkedHashMap$_literal(["$implicit", null], P.String, null), parentView, [t1]);
         t2.set$viewData(S.AppViewData_AppViewData(t2, 3, C.ViewType_2, parentIndex, [S.SkawaDataTableComponent, t1]));
         t2.componentType = $.ViewSkawaDataTableComponent0__renderType;
         return t2;
@@ -25320,7 +35018,7 @@
       }
     },
     _ViewSkawaDataTableComponent8: {
-      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_data_table_template$_NgIf_2_9,0_appEl_4,0_NgIf_4_9,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_NgClass_0_5,0_data_table_template$_appEl_1,0_data_table_template$_NgIf_1_9,0_data_table_template$_appEl_2,0_data_table_template$_NgIf_2_9,0_data_table_template$_appEl_4,0_data_table_template$_NgIf_4_9,0_data_table_template$_expr_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
         var doc, _el_0, t1, _anchor_1, t2, t3, _anchor_2, _anchor_4;
         doc = document;
@@ -25343,12 +35041,12 @@
         _anchor_4 = H.interceptedTypeCheck(C.Comment_methods.clone$1(t1, false), "$isComment");
         t2.append$1(_el_0, _anchor_4);
         t2 = new V.ViewContainer(4, 0, this, _anchor_4);
-        this._appEl_4 = t2;
-        this._NgIf_4_9 = new K.NgIf(new D.TemplateRef(t2, new N._ViewSkawaDataTableComponent8_build_closure1(this)), t2, false);
+        this._data_table_template$_appEl_4 = t2;
+        this._data_table_template$_NgIf_4_9 = new K.NgIf(new D.TemplateRef(t2, new N._ViewSkawaDataTableComponent8_build_closure1(this)), t2, false);
         this.init0$1(_el_0);
       },
       detectChangesInternal$0: function() {
-        var local_c, currVal_0, t1, t2;
+        var local_c, currVal_0, t1;
         local_c = H.assertSubtypeOfRuntimeType(this.locals.$index(0, "$implicit"), [G.SkawaDataTableColComponent, H.getTypeArgumentByIndex(this, 0)]);
         currVal_0 = local_c.getClasses$0();
         t1 = this._data_table_template$_expr_0;
@@ -25357,21 +35055,19 @@
           this._data_table_template$_expr_0 = currVal_0;
         }
         this._data_table_template$_NgClass_0_5.ngDoCheck$0();
-        t1 = this._data_table_template$_NgIf_1_9;
-        t2 = local_c.columnRenderer == null;
-        t1.set$ngIf(!t2);
+        this._data_table_template$_NgIf_1_9.set$ngIf(local_c.get$useColumnRenderer());
         t1 = this._data_table_template$_NgIf_2_9;
-        t1.set$ngIf(t2 && local_c._triggerController._firstSubscription != null);
-        t1 = this._NgIf_4_9;
-        t1.set$ngIf(t2 && local_c._triggerController._firstSubscription == null);
+        t1.set$ngIf(!local_c.get$useColumnRenderer() && local_c._triggerController._firstSubscription != null);
+        t1 = this._data_table_template$_NgIf_4_9;
+        t1.set$ngIf(!local_c.get$useColumnRenderer() && local_c._triggerController._firstSubscription == null);
         this._data_table_template$_appEl_1.detectChangesInNestedViews$0();
         this._data_table_template$_appEl_2.detectChangesInNestedViews$0();
-        this._appEl_4.detectChangesInNestedViews$0();
+        this._data_table_template$_appEl_4.detectChangesInNestedViews$0();
       },
       destroyInternal$0: function() {
         this._data_table_template$_appEl_1.destroyNestedViews$0();
         this._data_table_template$_appEl_2.destroyNestedViews$0();
-        this._appEl_4.destroyNestedViews$0();
+        this._data_table_template$_appEl_4.destroyNestedViews$0();
         var t1 = this._data_table_template$_NgClass_0_5;
         t1._applyClasses$2(t1._rawClass, true);
         t1._applyInitialClasses$1(false);
@@ -25423,32 +35119,22 @@
       }
     },
     _ViewSkawaDataTableComponent9: {
-      "^": "AppView;0_data_table_template$_compView_0,0_appEl_0,0_DynamicComponent_0_8,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_compView_0,0_data_table_template$_appEl_0,0_data_table_template$_DynamicComponent_0_8,0_data_table_template$_expr_0,0_data_table_template$_expr_1,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       build$0: function() {
-        var t1, t2, _el_0, t3;
-        t1 = new Q.ViewDynamicComponent0(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), this);
-        t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_1, 0, Z.DynamicComponent));
-        t2 = document.createElement("dynamic-component");
-        t1.rootEl = H.interceptedTypeCheck(t2, "$isHtmlElement");
-        t2 = $.ViewDynamicComponent0__renderType;
-        if (t2 == null) {
-          t2 = $.appViewUtils;
-          t2 = t2.createRenderType$3(null, C.ViewEncapsulation_1, C.List_empty);
-          $.ViewDynamicComponent0__renderType = t2;
-        }
-        t1.setupComponentType$1(t2);
+        var t1, _el_0, t2, t3;
+        t1 = Q.ViewDynamicComponent0$(this, 0);
         this._data_table_template$_compView_0 = t1;
         _el_0 = t1.rootEl;
         this.addShimC$1(_el_0);
-        this._appEl_0 = new V.ViewContainer(0, null, this, _el_0);
+        this._data_table_template$_appEl_0 = new V.ViewContainer(0, null, this, _el_0);
         t1 = this.parentView.parentView.parentView;
         t1 = H.interceptedTypeCheck(t1.parentView.injectorGet$2(C.Type_SlowComponentLoader_qxe, t1.viewData.parentIndex), "$isSlowComponentLoader");
         t2 = this._data_table_template$_compView_0;
         t3 = t2.viewData.ref;
-        t3 = new Z.DynamicComponent(t1, this._appEl_0, t3, P.StreamController_StreamController(null, null, null, null, false, [D.ComponentRef,,]), false, false, false, false);
-        this._DynamicComponent_0_8 = t3;
+        t3 = new Z.DynamicComponent(t1, this._data_table_template$_appEl_0, t3, P.StreamController_StreamController(null, null, null, null, false, [D.ComponentRef,,]), false, false, false, false);
+        this._data_table_template$_DynamicComponent_0_8 = t3;
         t2.create$2(0, t3, []);
-        this.init0$1(this._appEl_0);
+        this.init0$1(this._data_table_template$_appEl_0);
       },
       detectChangesInternal$0: function() {
         var t1, t2, local_row, currVal_0, changed;
@@ -25458,49 +35144,28 @@
         currVal_0 = H.functionTypeCheck(H.assertSubtypeOfRuntimeType(t1.locals.$index(0, "$implicit"), [G.SkawaDataTableColComponent, t2]).columnRenderer.SkawaDataColRendererDirective_factoryRenderer, {func: 1, ret: [D.ComponentFactory,,], args: [t2]}).call$1(local_row);
         t1 = this._data_table_template$_expr_0;
         if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
-          t1 = this._DynamicComponent_0_8;
-          t2 = t1._componentFactory;
-          if (t2 == null ? currVal_0 != null : t2 !== currVal_0)
-            t1._factoryChanged = true;
-          t1._componentFactory = currVal_0;
+          this._data_table_template$_DynamicComponent_0_8.set$componentFactory(currVal_0);
           this._data_table_template$_expr_0 = currVal_0;
           changed = true;
         } else
           changed = false;
         t1 = this._data_table_template$_expr_1;
         if (t1 == null ? local_row != null : t1 !== local_row) {
-          t1 = this._DynamicComponent_0_8;
+          t1 = this._data_table_template$_DynamicComponent_0_8;
           t1._dynamic_component$_value = local_row;
           t1._valueChanged = true;
           this._data_table_template$_expr_1 = local_row;
           changed = true;
         }
-        if (changed) {
-          t1 = this._DynamicComponent_0_8;
-          if (!t1._factoryChanged) {
-            t1._typeChanged;
-            t2 = false;
-          } else
-            t2 = true;
-          if (t2) {
-            t1._disposeChildComponent$0();
-            if (t1._viewContainerRef != null)
-              t1._initialize$0();
-            else
-              t1._loadDeferred = true;
-          } else if (t1._valueChanged)
-            t1._updateChildComponent$0();
-          t1._typeChanged = false;
-          t1._factoryChanged = false;
-          t1._valueChanged = false;
-        }
-        this._appEl_0.detectChangesInNestedViews$0();
+        if (changed)
+          this._data_table_template$_DynamicComponent_0_8.ngAfterChanges$0();
+        this._data_table_template$_appEl_0.detectChangesInNestedViews$0();
         this._data_table_template$_compView_0.detectChanges$0();
       },
       destroyInternal$0: function() {
-        this._appEl_0.destroyNestedViews$0();
+        this._data_table_template$_appEl_0.destroyNestedViews$0();
         this._data_table_template$_compView_0.destroy$0();
-        var t1 = this._DynamicComponent_0_8;
+        var t1 = this._data_table_template$_DynamicComponent_0_8;
         t1._disposeChildComponent$0();
         t1._viewContainerRef = null;
       },
@@ -25578,7 +35243,7 @@
       }
     },
     _ViewSkawaDataTableComponent12: {
-      "^": "AppView;0_data_table_template$_appEl_2,0_NgFor_2_9,0_data_table_template$_expr_0,0_pipe_unskippedInFooter_0_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
+      "^": "AppView;0_data_table_template$_appEl_2,0_data_table_template$_NgFor_2_9,0_data_table_template$_expr_0,0_pipe_unskippedInFooter_0_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx,$ti",
       set$_pipe_unskippedInFooter_0_0: function(_pipe_unskippedInFooter_0_0) {
         this._pipe_unskippedInFooter_0_0 = H.functionTypeCheck(_pipe_unskippedInFooter_0_0, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, U.RowData]], args: [[P.List, [G.SkawaDataTableColComponent, U.RowData]]]});
       },
@@ -25594,7 +35259,7 @@
         J.append$1$x(_el_1, _anchor_2);
         t1 = new V.ViewContainer(2, 1, this, _anchor_2);
         this._data_table_template$_appEl_2 = t1;
-        this._NgFor_2_9 = new R.NgFor(t1, new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent12_build_closure(this)));
+        this._data_table_template$_NgFor_2_9 = new R.NgFor(t1, new D.TemplateRef(t1, new N._ViewSkawaDataTableComponent12_build_closure(this)));
         t1 = H.assertSubtypeOfRuntimeType(this.parentView, [N.ViewSkawaDataTableComponent0, U.RowData]).get$_pipe_unskippedInFooter_0();
         t2 = [P.List, [G.SkawaDataTableColComponent, U.RowData]];
         this.set$_pipe_unskippedInFooter_0_0(Q.pureProxy1(t1.get$transform(t1), t2, t2));
@@ -25606,10 +35271,10 @@
         currVal_0 = this._pipe_unskippedInFooter_0_0.call$1(t1);
         t1 = this._data_table_template$_expr_0;
         if (t1 == null ? currVal_0 != null : t1 !== currVal_0) {
-          this._NgFor_2_9.set$ngForOf(currVal_0);
+          this._data_table_template$_NgFor_2_9.set$ngForOf(currVal_0);
           this._data_table_template$_expr_0 = currVal_0;
         }
-        this._NgFor_2_9.ngDoCheck$0();
+        this._data_table_template$_NgFor_2_9.ngDoCheck$0();
         this._data_table_template$_appEl_2.detectChangesInNestedViews$0();
       },
       destroyInternal$0: function() {
@@ -25692,6 +35357,10 @@
       set$accessor: function(accessor) {
         this.accessor = H.functionTypeCheck(accessor, {func: 1, ret: P.String, args: [H.getTypeArgumentByIndex(this, 0)]});
       },
+      get$useColumnRenderer: function() {
+        var t1 = this.columnRenderer;
+        return (t1 == null ? null : H.functionTypeCheck(t1.SkawaDataColRendererDirective_factoryRenderer, {func: 1, ret: [D.ComponentFactory,,], args: [H.getTypeArgumentByIndex(this, 0)]})) != null;
+      },
       getClasses$1: function(suffix) {
         var t1, t2, t3;
         t1 = this.classString;
@@ -25711,18 +35380,23 @@
         return this.getClasses$1(null);
       },
       ngOnInit$0: function() {
-        if (this._triggerController._firstSubscription != null && this.columnRenderer != null)
+        if (this._triggerController._firstSubscription != null && this.get$useColumnRenderer())
           throw H.wrapException(P.ArgumentError$("Cannot use [colRenderer] together with (trigger)"));
+      },
+      static: {
+        SkawaDataTableColComponent$: function(columnRenderer, $T) {
+          return new G.SkawaDataTableColComponent(new P._AsyncBroadcastStreamController(null, null, 0, [$T]), columnRenderer, true, [$T]);
+        }
       }
     },
     SkawaDataTableColComponent_getClasses_closure: {
-      "^": "Closure:11;suffix",
+      "^": "Closure:13;suffix",
       call$1: [function(className) {
         var t1;
         H.stringTypeCheck(className);
         t1 = this.suffix;
         return t1 != null ? H.S(className) + t1 : className;
-      }, null, null, 4, 0, null, 54, "call"]
+      }, null, null, 4, 0, null, 71, "call"]
     },
     SkawaDataColRendererDirective: {
       "^": "HasFactoryRenderer;0SkawaDataColRendererDirective_factoryRenderer,0factoryRenderer,$ti",
@@ -25731,6 +35405,11 @@
       },
       $asHasFactoryRenderer: function($T) {
         return [[G.RendersValue,,], $T];
+      },
+      static: {
+        SkawaDataColRendererDirective$: function($T) {
+          return new G.SkawaDataColRendererDirective([$T]);
+        }
       }
     }
   }], ["", "package:skawa_material_components/data_table/data_table_column.template.dart",, Y, {
@@ -25802,22 +35481,22 @@
       }
     },
     SkawaDataTableSortDirective_allowedSorts_closure: {
-      "^": "Closure:11;",
+      "^": "Closure:13;",
       call$1: [function(s) {
         return J.trim$0$s(H.stringTypeCheck(s));
-      }, null, null, 4, 0, null, 14, "call"]
+      }, null, null, 4, 0, null, 24, "call"]
     },
     SkawaDataTableSortDirective_allowedSorts_closure0: {
-      "^": "Closure:9;",
+      "^": "Closure:10;",
       call$1: function(s) {
         return C.Map_oWtLB.$index(0, H.stringTypeCheck(s)) == null;
       }
     },
     SkawaDataTableSortDirective_allowedSorts_closure1: {
-      "^": "Closure:93;",
+      "^": "Closure:137;",
       call$1: [function(s) {
         return C.Map_oWtLB.$index(0, H.stringTypeCheck(s));
-      }, null, null, 4, 0, null, 14, "call"]
+      }, null, null, 4, 0, null, 24, "call"]
     }
   }], ["asset_skawa_material_components_lib_extended_material_icon_extended_material_icon.css.shim.dart", "package:skawa_material_components/extended_material_icon/extended_material_icon.css.shim.dart",, R, {}], ["", "package:skawa_material_components/extended_material_icon/extended_material_icon.dart",, R, {
     "^": "",
@@ -25903,6 +35582,11 @@
       set$grid: function(_, grid) {
         this.grid = H.interceptedTypeCheck(grid, "$isHtmlElement");
       },
+      set$visible: function(_, val) {
+        var t1 = val ? "" : "hidden";
+        this.visibility = t1;
+        return t1;
+      },
       updateAndDisplay$1: function(forceRefresh) {
         var t1 = this._resizeTimer;
         if (!(t1 == null))
@@ -25915,7 +35599,7 @@
       }
     },
     GridComponent_updateAndDisplay_closure: {
-      "^": "Closure:1;$this,forceRefresh",
+      "^": "Closure:0;$this,forceRefresh",
       call$0: [function() {
         var t1, gridWidth, gridUpdate, t2, t3, t4, i, newPosition, t5, value, t6;
         t1 = this.$this;
@@ -25946,7 +35630,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     GridComponent_ngOnInit_closure: {
-      "^": "Closure:10;$this",
+      "^": "Closure:11;$this",
       call$1: function(_) {
         this.$this.updateAndDisplay$1(false);
       }
@@ -25974,7 +35658,7 @@
       },
       detectHostChanges$1: function(firstCheck) {
         var currVal_0, t1;
-        currVal_0 = J.get$visibility$z(this.ctx);
+        currVal_0 = J.get$visibility$x(this.ctx);
         t1 = this._grid_component_template$_expr_0;
         if (t1 != currVal_0) {
           t1 = this.rootEl.style;
@@ -26019,7 +35703,7 @@
         this._messageQueue.add$1(0, t1);
       }, function(message) {
         return this.showMessage$3$action$duration(message, null, null);
-      }, "showMessage$1", "call$3$action$duration", "call$1", "get$showMessage", 4, 5, 94, 1, 1, 27, 55, 56]
+      }, "showMessage$1", "call$3$action$duration", "call$1", "get$showMessage", 4, 5, 138, 3, 3, 33, 72, 73]
     },
     SnackAction: {
       "^": "Object;0label>,0callback"
@@ -26030,14 +35714,8 @@
     SkawaSnackbarComponent: {
       "^": "Object;_changeDetectorRef,_snackbar$_snackbarService,_tearDownDisposer,0message>,0nextMessage,0_messageTimer,0show,0_animationBlocker",
       ngOnInit$0: function() {
-        var t1, t2;
-        t1 = this._snackbar$_snackbarService._messageQueue;
-        t2 = this._tearDownDisposer;
-        t1 = H.assertSubtype(new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(new T.SkawaSnackbarComponent_ngOnInit_closure(this)), "$isStreamSubscription", [null], "$asStreamSubscription");
-        if (t2._disposeSubs == null)
-          t2.set$_disposeSubs(H.setRuntimeTypeInfo([], [[P.StreamSubscription,,]]));
-        t2 = t2._disposeSubs;
-        (t2 && C.JSArray_methods).add$1(t2, t1);
+        var t1 = this._snackbar$_snackbarService._messageQueue;
+        this._tearDownDisposer.addStreamSubscription$1$1(new P._ControllerStream(t1, [H.getTypeArgumentByIndex(t1, 0)]).listen$1(new T.SkawaSnackbarComponent_ngOnInit_closure(this)), null);
       },
       _slideIn$0: function() {
         this.show = true;
@@ -26062,7 +35740,7 @@
       }, "call$1", "get$transitionEnd", 4, 0, 2]
     },
     SkawaSnackbarComponent_ngOnInit_closure: {
-      "^": "Closure:95;$this",
+      "^": "Closure:139;$this",
       call$1: [function(newMessage) {
         var t1, t2;
         H.interceptedTypeCheck(newMessage, "$isSnackMessage");
@@ -26081,10 +35759,10 @@
             t1._changeDetectorRef.appView.markPathToRootAsCheckOnce$0();
           }
         }
-      }, null, null, 4, 0, null, 37, "call"]
+      }, null, null, 4, 0, null, 49, "call"]
     },
     SkawaSnackbarComponent__slideIn_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1 = this.$this;
         t1._animationBlocker = null;
@@ -26095,7 +35773,7 @@
       }, null, null, 0, 0, null, "call"]
     },
     SkawaSnackbarComponent_transitionEnd_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$0: [function() {
         var t1 = this.$this;
         t1._messageTimer = null;
@@ -26110,13 +35788,13 @@
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, T.SkawaSnackbarComponent));
       t1.componentType = $.ViewSkawaSnackbarComponent0__renderType;
       return t1;
-    }, "call$2", "snackbar_template__viewFactory_SkawaSnackbarComponent1$closure", 8, 0, 33],
+    }, "call$2", "snackbar_template__viewFactory_SkawaSnackbarComponent1$closure", 8, 0, 49],
     viewFactory_SkawaSnackbarComponent2: [function(parentView, parentIndex) {
       var t1 = new S._ViewSkawaSnackbarComponent2(P.LinkedHashMap_LinkedHashMap$_empty(P.String, null), parentView);
       t1.set$viewData(S.AppViewData_AppViewData(t1, 3, C.ViewType_2, parentIndex, T.SkawaSnackbarComponent));
       t1.componentType = $.ViewSkawaSnackbarComponent0__renderType;
       return t1;
-    }, "call$2", "snackbar_template__viewFactory_SkawaSnackbarComponent2$closure", 8, 0, 33],
+    }, "call$2", "snackbar_template__viewFactory_SkawaSnackbarComponent2$closure", 8, 0, 49],
     ViewSkawaSnackbarComponent0: {
       "^": "AppView;0_appEl_1,0_NgIf_1_9,0_snackbar_template$_expr_0,0_snackbar_template$_el_0,0viewData,locals,parentView,0componentType,0rootEl,0ctx",
       build$0: function() {
@@ -26331,6 +36009,17 @@
       return receiver;
     return J.getNativeInterceptor(receiver);
   };
+  J.getInterceptor$bn = function(receiver) {
+    if (typeof receiver == "number")
+      return J.JSNumber.prototype;
+    if (receiver == null)
+      return receiver;
+    if (typeof receiver == "boolean")
+      return J.JSBool.prototype;
+    if (!(receiver instanceof P.Object))
+      return J.UnknownJavaScriptObject.prototype;
+    return receiver;
+  };
   J.getInterceptor$n = function(receiver) {
     if (typeof receiver == "number")
       return J.JSNumber.prototype;
@@ -26379,11 +36068,17 @@
       return J.UnknownJavaScriptObject.prototype;
     return receiver;
   };
+  J.set$button$z = function(receiver, value) {
+    return J.getInterceptor$z(receiver).set$button(receiver, value);
+  };
   J.set$checked$x = function(receiver, value) {
     return J.getInterceptor$x(receiver).set$checked(receiver, value);
   };
   J.set$grid$z = function(receiver, value) {
     return J.getInterceptor$z(receiver).set$grid(receiver, value);
+  };
+  J.set$visible$z = function(receiver, value) {
+    return J.getInterceptor$z(receiver).set$visible(receiver, value);
   };
   J.get$action$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$action(receiver);
@@ -26400,14 +36095,26 @@
   J.get$children$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$children(receiver);
   };
+  J.get$className$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$className(receiver);
+  };
   J.get$classes$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$classes(receiver);
   };
   J.get$disabled$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$disabled(receiver);
   };
+  J.get$first$ax = function(receiver) {
+    return J.getInterceptor$ax(receiver).get$first(receiver);
+  };
   J.get$hashCode$ = function(receiver) {
     return J.getInterceptor$(receiver).get$hashCode(receiver);
+  };
+  J.get$height$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$height(receiver);
+  };
+  J.get$id$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$id(receiver);
   };
   J.get$isCollapsed$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$isCollapsed(receiver);
@@ -26424,6 +36131,9 @@
   J.get$label$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$label(receiver);
   };
+  J.get$left$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$left(receiver);
+  };
   J.get$length$asx = function(receiver) {
     return J.getInterceptor$asx(receiver).get$length(receiver);
   };
@@ -26433,11 +36143,26 @@
   J.get$navigate$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$navigate(receiver);
   };
-  J.get$onMouseDown$z = function(receiver) {
-    return J.getInterceptor$z(receiver).get$onMouseDown(receiver);
+  J.get$onBlur$z = function(receiver) {
+    return J.getInterceptor$z(receiver).get$onBlur(receiver);
   };
-  J.get$onMouseUp$z = function(receiver) {
-    return J.getInterceptor$z(receiver).get$onMouseUp(receiver);
+  J.get$onFocus$z = function(receiver) {
+    return J.getInterceptor$z(receiver).get$onFocus(receiver);
+  };
+  J.get$onKeyDown$z = function(receiver) {
+    return J.getInterceptor$z(receiver).get$onKeyDown(receiver);
+  };
+  J.get$onKeyPress$z = function(receiver) {
+    return J.getInterceptor$z(receiver).get$onKeyPress(receiver);
+  };
+  J.get$onKeyUp$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$onKeyUp(receiver);
+  };
+  J.get$onMouseDown$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$onMouseDown(receiver);
+  };
+  J.get$onMouseUp$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$onMouseUp(receiver);
   };
   J.get$open$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$open(receiver);
@@ -26448,22 +36173,42 @@
   J.get$role$z = function(receiver) {
     return J.getInterceptor$z(receiver).get$role(receiver);
   };
+  J.get$single$ax = function(receiver) {
+    return J.getInterceptor$ax(receiver).get$single(receiver);
+  };
+  J.get$size$z = function(receiver) {
+    return J.getInterceptor$z(receiver).get$size(receiver);
+  };
   J.get$sort$ax = function(receiver) {
     return J.getInterceptor$ax(receiver).get$sort(receiver);
   };
-  J.get$tabIndex$z = function(receiver) {
-    return J.getInterceptor$z(receiver).get$tabIndex(receiver);
+  J.get$tabIndex$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$tabIndex(receiver);
   };
   J.get$target$x = function(receiver) {
     return J.getInterceptor$x(receiver).get$target(receiver);
   };
-  J.get$visibility$z = function(receiver) {
-    return J.getInterceptor$z(receiver).get$visibility(receiver);
+  J.get$top$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$top(receiver);
+  };
+  J.get$topLeft$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$topLeft(receiver);
+  };
+  J.get$visibility$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$visibility(receiver);
+  };
+  J.get$width$x = function(receiver) {
+    return J.getInterceptor$x(receiver).get$width(receiver);
   };
   J.$add$ansx = function(receiver, a0) {
     if (typeof receiver == "number" && typeof a0 == "number")
       return receiver + a0;
     return J.getInterceptor$ansx(receiver).$add(receiver, a0);
+  };
+  J.$and$bn = function(receiver, a0) {
+    if (typeof receiver == "number" && typeof a0 == "number")
+      return (receiver & a0) >>> 0;
+    return J.getInterceptor$bn(receiver).$and(receiver, a0);
   };
   J.$eq$ = function(receiver, a0) {
     if (receiver == null)
@@ -26492,8 +36237,19 @@
       return receiver < a0;
     return J.getInterceptor$n(receiver).$lt(receiver, a0);
   };
+  J.$or$n = function(receiver, a0) {
+    if (typeof receiver == "number" && typeof a0 == "number")
+      return (receiver | a0) >>> 0;
+    return J.getInterceptor$n(receiver).$or(receiver, a0);
+  };
   J._add$1$x = function(receiver, a0) {
     return J.getInterceptor$x(receiver)._add$1(receiver, a0);
+  };
+  J._hasAttribute$1$x = function(receiver, a0) {
+    return J.getInterceptor$x(receiver)._hasAttribute$1(receiver, a0);
+  };
+  J._initEvent$3$x = function(receiver, a0, a1, a2) {
+    return J.getInterceptor$x(receiver)._initEvent$3(receiver, a0, a1, a2);
   };
   J._removeChild$1$x = function(receiver, a0) {
     return J.getInterceptor$x(receiver)._removeChild$1(receiver, a0);
@@ -26549,6 +36305,9 @@
   J.insertAllBefore$2$x = function(receiver, a0, a1) {
     return J.getInterceptor$x(receiver).insertAllBefore$2(receiver, a0, a1);
   };
+  J.insertBefore$2$x = function(receiver, a0, a1) {
+    return J.getInterceptor$x(receiver).insertBefore$2(receiver, a0, a1);
+  };
   J.map$1$1$ax = function(receiver, a0, $T1) {
     return J.getInterceptor$ax(receiver).map$1$1(receiver, a0, $T1);
   };
@@ -26588,11 +36347,17 @@
   J.toLowerCase$0$s = function(receiver) {
     return J.getInterceptor$s(receiver).toLowerCase$0(receiver);
   };
+  J.toRadixString$1$n = function(receiver, a0) {
+    return J.getInterceptor$n(receiver).toRadixString$1(receiver, a0);
+  };
   J.toString$0$ = function(receiver) {
     return J.getInterceptor$(receiver).toString$0(receiver);
   };
   J.trim$0$s = function(receiver) {
     return J.getInterceptor$s(receiver).trim$0(receiver);
+  };
+  J.where$1$ax = function(receiver, a0) {
+    return J.getInterceptor$ax(receiver).where$1(receiver, a0);
   };
   Isolate.makeConstantList = function(list) {
     list.immutable$list = Array;
@@ -26610,12 +36375,14 @@
   C.HtmlDocument_methods = W.HtmlDocument.prototype;
   C.Interceptor_methods = J.Interceptor.prototype;
   C.JSArray_methods = J.JSArray.prototype;
+  C.JSBool_methods = J.JSBool.prototype;
   C.JSDouble_methods = J.JSDouble.prototype;
   C.JSInt_methods = J.JSInt.prototype;
   C.JSNull_methods = J.JSNull.prototype;
   C.JSNumber_methods = J.JSNumber.prototype;
   C.JSString_methods = J.JSString.prototype;
   C.JavaScriptFunction_methods = J.JavaScriptFunction.prototype;
+  C.NativeUint8List_methods = H.NativeUint8List.prototype;
   C.NodeList_methods = W.NodeList.prototype;
   C.PlainJavaScriptObject_methods = J.PlainJavaScriptObject.prototype;
   C.Range_methods = W.Range.prototype;
@@ -26623,11 +36390,17 @@
   C.TableElement_methods = W.TableElement.prototype;
   C.UnknownJavaScriptObject_methods = J.UnknownJavaScriptObject.prototype;
   C.Window_methods = W.Window.prototype;
+  C.AfterCustomAlignment_ZCw = new K.AfterCustomAlignment(false, "", "", "After", null);
+  C.Alignment_Center_center = new K.Alignment("Center", "center");
+  C.Alignment_Yw7 = new K.Alignment("End", "flex-end");
+  C.Alignment_dMH = new K.Alignment("Start", "flex-start");
+  C.BeforeCustomAlignment_yHF = new K.BeforeCustomAlignment(true, "", "", "Before", null);
   C.C_BlockTagBlockHtmlSyntax = new K.BlockTagBlockHtmlSyntax();
   C.C_BlockquoteSyntax = new K.BlockquoteSyntax();
   C.C_CodeBlockSyntax = new K.CodeBlockSyntax();
   C.C_DomSanitizationServiceImpl = new R.DomSanitizationServiceImpl();
   C.C_EmptyBlockSyntax = new K.EmptyBlockSyntax();
+  C.C_EmptyIterator = new H.EmptyIterator([P.Null]);
   C.C_FencedCodeBlockSyntax = new K.FencedCodeBlockSyntax();
   C.C_HeaderSyntax = new K.HeaderSyntax();
   C.C_HorizontalRuleSyntax = new K.HorizontalRuleSyntax();
@@ -26641,10 +36414,18 @@
   C.C_Utf8Encoder = new P.Utf8Encoder();
   C.C__DelayedDone = new P._DelayedDone();
   C.C__JSRandom = new P._JSRandom();
+  C.C__NoopDisposable = new R._NoopDisposable();
   C.C__RootZone = new P._RootZone();
+  C.Clock_systemTime = new V.Clock(V.time__systemTime$closure());
   C.ComponentFactory_Ohe = new D.ComponentFactory("first-down-percent", U.first_down_percent_template__viewFactory_FirstDownPercentComponentHost0$closure(), [L.FirstDownPercentComponent]);
   C.ComponentFactory_iyo = new D.ComponentFactory("app-cmp", V.app_component_template__viewFactory_AppComponentHost0$closure(), [Q.AppComponent]);
+  C.DomServiceState_0 = new F.DomServiceState(0, "DomServiceState.Idle");
+  C.DomServiceState_1 = new F.DomServiceState(1, "DomServiceState.Writing");
+  C.DomServiceState_2 = new F.DomServiceState(2, "DomServiceState.Reading");
   C.Duration_0 = new P.Duration(0);
+  C.Duration_100000 = new P.Duration(100000);
+  C.Duration_150000 = new P.Duration(150000);
+  C.Duration_200000 = new P.Duration(200000);
   C.Duration_500000 = new P.Duration(500000);
   C.EmptyInjector_null = new R.EmptyInjector(null);
   C.HtmlEscapeMode_2oY = new P.HtmlEscapeMode("element", true, false, false, false);
@@ -26771,41 +36552,114 @@
   var s = Object.prototype.toString.call(o);
   return s.substring(8, s.length - 1);
 };
+  C.C_DefaultEquality = new U.DefaultEquality([P.Null]);
+  C.ListEquality_DefaultEquality = new U.ListEquality(C.C_DefaultEquality, [Y.ChangeRecord]);
+  C.ListEquality_DefaultEquality0 = new U.ListEquality(C.C_DefaultEquality, [null]);
   C.List_2Zi = H.setRuntimeTypeInfo(Isolate.makeConstantList(["*::class", "*::dir", "*::draggable", "*::hidden", "*::id", "*::inert", "*::itemprop", "*::itemref", "*::itemscope", "*::lang", "*::spellcheck", "*::title", "*::translate", "A::accesskey", "A::coords", "A::hreflang", "A::name", "A::shape", "A::tabindex", "A::target", "A::type", "AREA::accesskey", "AREA::alt", "AREA::coords", "AREA::nohref", "AREA::shape", "AREA::tabindex", "AREA::target", "AUDIO::controls", "AUDIO::loop", "AUDIO::mediagroup", "AUDIO::muted", "AUDIO::preload", "BDO::dir", "BODY::alink", "BODY::bgcolor", "BODY::link", "BODY::text", "BODY::vlink", "BR::clear", "BUTTON::accesskey", "BUTTON::disabled", "BUTTON::name", "BUTTON::tabindex", "BUTTON::type", "BUTTON::value", "CANVAS::height", "CANVAS::width", "CAPTION::align", "COL::align", "COL::char", "COL::charoff", "COL::span", "COL::valign", "COL::width", "COLGROUP::align", "COLGROUP::char", "COLGROUP::charoff", "COLGROUP::span", "COLGROUP::valign", "COLGROUP::width", "COMMAND::checked", "COMMAND::command", "COMMAND::disabled", "COMMAND::label", "COMMAND::radiogroup", "COMMAND::type", "DATA::value", "DEL::datetime", "DETAILS::open", "DIR::compact", "DIV::align", "DL::compact", "FIELDSET::disabled", "FONT::color", "FONT::face", "FONT::size", "FORM::accept", "FORM::autocomplete", "FORM::enctype", "FORM::method", "FORM::name", "FORM::novalidate", "FORM::target", "FRAME::name", "H1::align", "H2::align", "H3::align", "H4::align", "H5::align", "H6::align", "HR::align", "HR::noshade", "HR::size", "HR::width", "HTML::version", "IFRAME::align", "IFRAME::frameborder", "IFRAME::height", "IFRAME::marginheight", "IFRAME::marginwidth", "IFRAME::width", "IMG::align", "IMG::alt", "IMG::border", "IMG::height", "IMG::hspace", "IMG::ismap", "IMG::name", "IMG::usemap", "IMG::vspace", "IMG::width", "INPUT::accept", "INPUT::accesskey", "INPUT::align", "INPUT::alt", "INPUT::autocomplete", "INPUT::autofocus", "INPUT::checked", "INPUT::disabled", "INPUT::inputmode", "INPUT::ismap", "INPUT::list", "INPUT::max", "INPUT::maxlength", "INPUT::min", "INPUT::multiple", "INPUT::name", "INPUT::placeholder", "INPUT::readonly", "INPUT::required", "INPUT::size", "INPUT::step", "INPUT::tabindex", "INPUT::type", "INPUT::usemap", "INPUT::value", "INS::datetime", "KEYGEN::disabled", "KEYGEN::keytype", "KEYGEN::name", "LABEL::accesskey", "LABEL::for", "LEGEND::accesskey", "LEGEND::align", "LI::type", "LI::value", "LINK::sizes", "MAP::name", "MENU::compact", "MENU::label", "MENU::type", "METER::high", "METER::low", "METER::max", "METER::min", "METER::value", "OBJECT::typemustmatch", "OL::compact", "OL::reversed", "OL::start", "OL::type", "OPTGROUP::disabled", "OPTGROUP::label", "OPTION::disabled", "OPTION::label", "OPTION::selected", "OPTION::value", "OUTPUT::for", "OUTPUT::name", "P::align", "PRE::width", "PROGRESS::max", "PROGRESS::min", "PROGRESS::value", "SELECT::autocomplete", "SELECT::disabled", "SELECT::multiple", "SELECT::name", "SELECT::required", "SELECT::size", "SELECT::tabindex", "SOURCE::type", "TABLE::align", "TABLE::bgcolor", "TABLE::border", "TABLE::cellpadding", "TABLE::cellspacing", "TABLE::frame", "TABLE::rules", "TABLE::summary", "TABLE::width", "TBODY::align", "TBODY::char", "TBODY::charoff", "TBODY::valign", "TD::abbr", "TD::align", "TD::axis", "TD::bgcolor", "TD::char", "TD::charoff", "TD::colspan", "TD::headers", "TD::height", "TD::nowrap", "TD::rowspan", "TD::scope", "TD::valign", "TD::width", "TEXTAREA::accesskey", "TEXTAREA::autocomplete", "TEXTAREA::cols", "TEXTAREA::disabled", "TEXTAREA::inputmode", "TEXTAREA::name", "TEXTAREA::placeholder", "TEXTAREA::readonly", "TEXTAREA::required", "TEXTAREA::rows", "TEXTAREA::tabindex", "TEXTAREA::wrap", "TFOOT::align", "TFOOT::char", "TFOOT::charoff", "TFOOT::valign", "TH::abbr", "TH::align", "TH::axis", "TH::bgcolor", "TH::char", "TH::charoff", "TH::colspan", "TH::headers", "TH::height", "TH::nowrap", "TH::rowspan", "TH::scope", "TH::valign", "TH::width", "THEAD::align", "THEAD::char", "THEAD::charoff", "THEAD::valign", "TR::align", "TR::bgcolor", "TR::char", "TR::charoff", "TR::valign", "TRACK::default", "TRACK::kind", "TRACK::label", "TRACK::srclang", "UL::compact", "UL::type", "VIDEO::controls", "VIDEO::height", "VIDEO::loop", "VIDEO::mediagroup", "VIDEO::muted", "VIDEO::preload", "VIDEO::width"]), [P.String]);
   C.List_3_4_6_8 = H.setRuntimeTypeInfo(Isolate.makeConstantList([3, 4, 6, 8]), [P.int]);
+  C.Rectangle_0_0_0_0 = new P.Rectangle(0, 0, 0, 0, [P.num]);
+  C.List_4YB = H.setRuntimeTypeInfo(Isolate.makeConstantList([C.Rectangle_0_0_0_0]), [[P.Rectangle, P.num]]);
   C.List_CX7 = H.setRuntimeTypeInfo(Isolate.makeConstantList(["arrow_back", "arrow_forward", "chevron_left", "chevron_right", "navigate_before", "navigate_next", "last_page", "first_page", "open_in_new", "star_half", "exit_to_app"]), [P.String]);
   C.List_ego = H.setRuntimeTypeInfo(Isolate.makeConstantList(["HEAD", "AREA", "BASE", "BASEFONT", "BR", "COL", "COLGROUP", "EMBED", "FRAME", "FRAMESET", "HR", "IMAGE", "IMG", "INPUT", "ISINDEX", "LINK", "META", "PARAM", "SOURCE", "STYLE", "TITLE", "WBR"]), [P.String]);
+  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.Null]);
   C.List_empty0 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.String]);
   C.List_empty = Isolate.makeConstantList([]);
+  C.RelativePosition_wss = new K.RelativePosition(C.Alignment_dMH, C.Alignment_dMH, "top center");
+  C.RelativePosition_AG4 = new K.RelativePosition(C.Alignment_Yw7, C.Alignment_dMH, "top right");
+  C.RelativePosition_8p6 = new K.RelativePosition(C.Alignment_dMH, C.Alignment_dMH, "top left");
+  C.RelativePosition_W7X = new K.RelativePosition(C.Alignment_dMH, C.Alignment_Yw7, "bottom center");
+  C.RelativePosition_VUu = new K.RelativePosition(C.Alignment_Yw7, C.Alignment_Yw7, "bottom right");
+  C.RelativePosition_jtt = new K.RelativePosition(C.Alignment_dMH, C.Alignment_Yw7, "bottom left");
+  C.List_ezW = H.setRuntimeTypeInfo(Isolate.makeConstantList([C.RelativePosition_wss, C.RelativePosition_AG4, C.RelativePosition_8p6, C.RelativePosition_W7X, C.RelativePosition_VUu, C.RelativePosition_jtt]), [K.RelativePosition]);
   C.List_gnE = H.setRuntimeTypeInfo(Isolate.makeConstantList([0, 0, 65498, 45055, 65535, 34815, 65534, 18431]), [P.int]);
+  C.List_huV = H.setRuntimeTypeInfo(Isolate.makeConstantList(["auto", "x-small", "small", "medium", "large", "x-large"]), [P.String]);
+  C.RelativePosition_Fb0 = new K.RelativePosition(C.Alignment_Center_center, C.Alignment_dMH, "top center");
+  C.RelativePosition_XbC = new K.RelativePosition(C.Alignment_Center_center, C.Alignment_Yw7, "bottom center");
+  C.List_scL = H.setRuntimeTypeInfo(Isolate.makeConstantList([C.RelativePosition_8p6, C.RelativePosition_AG4, C.RelativePosition_jtt, C.RelativePosition_VUu, C.RelativePosition_Fb0, C.RelativePosition_XbC]), [K.RelativePosition]);
   C.List_wSV = H.setRuntimeTypeInfo(Isolate.makeConstantList(["bind", "if", "ref", "repeat", "syntax"]), [P.String]);
   C.List_yrN = H.setRuntimeTypeInfo(Isolate.makeConstantList(["A::href", "AREA::href", "BLOCKQUOTE::cite", "BODY::background", "COMMAND::icon", "DEL::cite", "FORM::action", "IMG::src", "INPUT::src", "INS::cite", "Q::cite", "VIDEO::poster"]), [P.String]);
-  C.List_empty1 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.Symbol0]);
-  C.Map_empty = new H.ConstantStringMap(0, {}, C.List_empty1, [P.Symbol0, null]);
+  C.List_empty2 = H.setRuntimeTypeInfo(Isolate.makeConstantList([]), [P.Symbol0]);
+  C.Map_empty = new H.ConstantStringMap(0, {}, C.List_empty2, [P.Symbol0, null]);
   C.List_asc_desc = H.setRuntimeTypeInfo(Isolate.makeConstantList(["asc", "desc"]), [P.String]);
   C.SortDirection_0 = new S.SortDirection(0, "SortDirection.asc");
   C.SortDirection_1 = new S.SortDirection(1, "SortDirection.desc");
   C.Map_oWtLB = new H.ConstantStringMap(2, {asc: C.SortDirection_0, desc: C.SortDirection_1}, C.List_asc_desc, [P.String, S.SortDirection]);
+  C.List_yHw = H.setRuntimeTypeInfo(Isolate.makeConstantList(["bottom right", "bottom left", "center right", "center left", "top right", "top left"]), [P.String]);
+  C.Map_yH4ig = new H.ConstantStringMap(6, {"bottom right": "bottom left", "bottom left": "bottom right", "center right": "center left", "center left": "center right", "top right": "top left", "top left": "top right"}, C.List_yHw, [P.String, P.String]);
+  C.OpaqueToken_8qt = new S.OpaqueToken("third_party.dart_src.acx.material_datepicker.datepickerClock", [null]);
   C.OpaqueToken_APP_ID = new S.OpaqueToken("APP_ID", [P.String]);
   C.OpaqueToken_acxDarkTheme = new S.OpaqueToken("acxDarkTheme", [null]);
+  C.OpaqueToken_defaultPopupPositions = new S.OpaqueToken("defaultPopupPositions", [[P.List, K.RelativePosition]]);
+  C.OpaqueToken_isRtl = new S.OpaqueToken("isRtl", [null]);
+  C.OpaqueToken_overlayContainer = new S.OpaqueToken("overlayContainer", [null]);
+  C.OpaqueToken_overlayContainerName = new S.OpaqueToken("overlayContainerName", [null]);
+  C.OpaqueToken_overlayContainerParent = new S.OpaqueToken("overlayContainerParent", [null]);
+  C.OpaqueToken_overlayRepositionLoop = new S.OpaqueToken("overlayRepositionLoop", [null]);
+  C.OpaqueToken_overlaySyncDom = new S.OpaqueToken("overlaySyncDom", [null]);
+  C.SelectableOption_0 = new E.SelectableOption(0, "SelectableOption.Selectable");
+  C.SelectableOption_2 = new E.SelectableOption(2, "SelectableOption.Hidden");
+  C.Symbol_autoDismiss = new H.Symbol("autoDismiss");
   C.Symbol_call = new H.Symbol("call");
+  C.Symbol_constrainToViewport = new H.Symbol("constrainToViewport");
+  C.Symbol_enforceSpaceConstraints = new H.Symbol("enforceSpaceConstraints");
+  C.Symbol_isEmpty = new H.Symbol("isEmpty");
+  C.Symbol_isNotEmpty = new H.Symbol("isNotEmpty");
+  C.Symbol_keys = new H.Symbol("keys");
+  C.Symbol_length = new H.Symbol("length");
+  C.Symbol_matchMinSourceWidth = new H.Symbol("matchMinSourceWidth");
+  C.Symbol_offsetX = new H.Symbol("offsetX");
+  C.Symbol_offsetY = new H.Symbol("offsetY");
+  C.Symbol_preferredPositions = new H.Symbol("preferredPositions");
+  C.Symbol_source = new H.Symbol("source");
+  C.Symbol_trackLayoutChanges = new H.Symbol("trackLayoutChanges");
+  C.Symbol_values = new H.Symbol("values");
   C.TextDirection_LTR_ltr = new T.TextDirection("LTR", "ltr");
   C.TextDirection_RTL_rtl = new T.TextDirection("RTL", "rtl");
   C.TextDirection_UNKNOWN_ltr = new T.TextDirection("UNKNOWN", "ltr");
+  C.Type_ActivationHandler_Nm5 = H.createRuntimeType([Z.ActivationHandler,,]);
+  C.Type_ActiveItemModel_69t = H.createRuntimeType([O.ActiveItemModel,,]);
   C.Type_AcxDarkTheme_Tng = H.createRuntimeType(F.AcxDarkTheme);
+  C.Type_AcxImperativeViewUtils_Ucj = H.createRuntimeType(O.AcxImperativeViewUtils);
   C.Type_AppViewUtils_NWH = H.createRuntimeType(Q.AppViewUtils);
   C.Type_ApplicationRef_Aij = H.createRuntimeType(Y.ApplicationRef);
   C.Type_ButtonDirective_hH0 = H.createRuntimeType(T.ButtonDirective);
+  C.Type_ChangeRecord_INA = H.createRuntimeType(Y.ChangeRecord);
+  C.Type_Clock_MYz = H.createRuntimeType(V.Clock);
   C.Type_ComponentLoader_7xV = H.createRuntimeType(M.ComponentLoader);
   C.Type_DeferredContentAware_BCk = H.createRuntimeType(E.DeferredContentAware);
+  C.Type_Disposer_k0p = H.createRuntimeType(R.Disposer);
+  C.Type_Document_woc = H.createRuntimeType(W.Document);
+  C.Type_DomPopupSourceFactory_gmZ = H.createRuntimeType(K.DomPopupSourceFactory);
+  C.Type_DomRuler_2Vk = H.createRuntimeType(K.DomRuler);
   C.Type_DomSanitizationService_cKo = H.createRuntimeType(Z.DomSanitizationService);
+  C.Type_DomService_2jN = H.createRuntimeType(F.DomService);
+  C.Type_DropdownHandle_YMM = H.createRuntimeType(M.DropdownHandle);
   C.Type_EditorRenderer_wbs = H.createRuntimeType(Q.EditorRenderer);
   C.Type_ExceptionHandler_qBE = H.createRuntimeType(U.ExceptionHandler);
+  C.Type_Focusable_adc = H.createRuntimeType(O.Focusable);
   C.Type_HasDisabled_qzc = H.createRuntimeType(U.HasDisabled);
+  C.Type_HasRenderer_wsa = H.createRuntimeType([G.HasRenderer,,]);
+  C.Type_HtmlDocument_RWm = H.createRuntimeType(W.HtmlDocument);
+  C.Type_IdGenerator_yLN = H.createRuntimeType(R.IdGenerator);
   C.Type_Injector_aJC = H.createRuntimeType(M.Injector);
+  C.Type_ManagedZone_s3L = H.createRuntimeType(V.ManagedZone);
   C.Type_MaterialButtonComponent_xw8 = H.createRuntimeType(B.MaterialButtonComponent);
+  C.Type_MaterialPopupComponent_OpB = H.createRuntimeType(G.MaterialPopupComponent);
+  C.Type_ModalComponent_Npb = H.createRuntimeType(D.ModalComponent);
+  C.Type_Modal_OjC = H.createRuntimeType(D.Modal);
   C.Type_NgZone_6ty = H.createRuntimeType(Y.NgZone);
+  C.Type_OverlayDomRenderService_qUY = H.createRuntimeType(K.OverlayDomRenderService);
+  C.Type_OverlayService_4iH = H.createRuntimeType(X.OverlayService);
+  C.Type_OverlayStyleConfig_rp8 = H.createRuntimeType(R.OverlayStyleConfig);
+  C.Type_PopupHierarchy_7R9 = H.createRuntimeType(Z.PopupHierarchy);
+  C.Type_PopupRef_AWk = H.createRuntimeType(V.PopupRef);
+  C.Type_PopupSizeProvider_a5y = H.createRuntimeType(F.PopupSizeProvider);
+  C.Type_PropertyChangeRecord_8EM = H.createRuntimeType([Y.PropertyChangeRecord,,]);
+  C.Type_Qkw = H.createRuntimeType([M.MaterialDropdownSelectComponent,,]);
+  C.Type_ReferenceDirective_i58 = H.createRuntimeType(F.ReferenceDirective);
   C.Type_SanitizationService_bRS = H.createRuntimeType(E.SanitizationService);
+  C.Type_SelectionContainer_yzp = H.createRuntimeType([L.SelectionContainer,,]);
+  C.Type_SelectionItem_uvp = H.createRuntimeType([L.SelectionItem,,]);
   C.Type_SkawaCardComponent_sYn = H.createRuntimeType(V.SkawaCardComponent);
   C.Type_SkawaCardHeaderComponent_2jN = H.createRuntimeType(V.SkawaCardHeaderComponent);
   C.Type_SkawaDataTableColComponent_tpI = H.createRuntimeType([G.SkawaDataTableColComponent, U.RowData]);
@@ -26816,6 +36670,9 @@
   C.Type_TestabilityRegistry_IMm = H.createRuntimeType(D.TestabilityRegistry);
   C.Type_Testability_h8g = H.createRuntimeType(D.Testability);
   C.Type_UnskippedInFooterPipe_ENo = H.createRuntimeType(S.UnskippedInFooterPipe);
+  C.Type_Window_0H0 = H.createRuntimeType(W.Window);
+  C.Type_ZIndexer_ViP = H.createRuntimeType(X.ZIndexer);
+  C.Type_dynamic_0Rz = H.createRuntimeType(null);
   C.Type_gap = H.createRuntimeType(B.MaterialTemporaryDrawerComponent);
   C.Type_gkc = H.createRuntimeType(G.MaterialPersistentDrawerDirective);
   C.Type_iap = H.createRuntimeType([G.SkawaDataColRendererDirective, U.RowData]);
@@ -26825,6 +36682,14 @@
   C.ViewType_0 = new R.ViewType(0, "ViewType.host");
   C.ViewType_1 = new R.ViewType(1, "ViewType.component");
   C.ViewType_2 = new R.ViewType(2, "ViewType.embedded");
+  C.Visibility_Hidden_visibility_hidden = new L.Visibility("Hidden", "visibility", "hidden");
+  C.Visibility_None_display_none = new L.Visibility("None", "display", "none");
+  C.Visibility_Visible_null_null = new L.Visibility("Visible", null, null);
+  C._ImmutableOverlayState_oyn = new Z._ImmutableOverlayState(false, null, null, null, null, null, null, null, C.Visibility_None_display_none, null, null);
+  C._InteractionType_0 = new O._InteractionType(0, "_InteractionType.mouse");
+  C._InteractionType_1 = new O._InteractionType(1, "_InteractionType.keyboard");
+  C._InteractionType_2 = new O._InteractionType(2, "_InteractionType.none");
+  C._IterationMarker_null_2 = new P._IterationMarker(null, 2);
   C._ZoneFunction_3bB = new P._ZoneFunction(C.C__RootZone, P.async___rootCreatePeriodicTimer$closure(), [{func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1, args: [P.Timer]}]}]);
   C._ZoneFunction_7G2 = new P._ZoneFunction(C.C__RootZone, P.async___rootRegisterBinaryCallback$closure(), [P.Function]);
   C._ZoneFunction_Eeh = new P._ZoneFunction(C.C__RootZone, P.async___rootRegisterUnaryCallback$closure(), [P.Function]);
@@ -26856,6 +36721,7 @@
   $._isInCallbackLoop = false;
   $.Zone__current = C.C__RootZone;
   $._RootZone__rootDelegate = null;
+  $.Expando__keyCount = 0;
   $.Element__parseDocument = null;
   $.Element__parseRange = null;
   $.Element__defaultValidator = null;
@@ -26874,9 +36740,15 @@
   $.sharedStylesHost = null;
   $.ViewMaterialTemporaryDrawerComponent0__renderType = null;
   $.ViewDynamicComponent0__renderType = null;
+  $.FrameworkStabilizers__nextId = 0;
+  $.ViewGlyphComponent0__renderType = null;
+  $.ZIndexer__currentInstance = null;
   $.ViewMaterialButtonComponent0__renderType = null;
   $.ViewMaterialCheckboxComponent0__renderType = null;
   $.ViewMaterialIconComponent0__renderType = null;
+  $.ViewMaterialListComponent0__renderType = null;
+  $.MaterialPopupComponent__viewportRect = null;
+  $.ViewMaterialPopupComponent0__renderType = null;
   $.ViewMaterialProgressComponent0__renderType = null;
   $._numRipples = 0;
   $._rippleIndex = 0;
@@ -26886,6 +36758,12 @@
   $._opacityKeyframes = null;
   $._transformTiming = null;
   $.ViewMaterialRippleComponent0__renderType = null;
+  $.ViewDropdownButtonComponent0__renderType = null;
+  $.ViewMaterialDropdownSelectComponent0__renderType = null;
+  $.ViewMaterialSelectDropdownItemComponent0__renderType = null;
+  $._singletonService = null;
+  $.DomService_maintainZoneOnCallbacks = true;
+  $.enableNewTriggerLogic = null;
   $.Bidi__RTL_DETECTION_THRESHOLD = 0.4;
   $.ViewSkawaCkeditorComponent0__renderType = null;
   $.ViewSkawaInfobarComponent0__renderType = null;
@@ -27007,9 +36885,7 @@
   }, "TypeErrorDecoder_undefinedLiteralPropertyPattern", "_AsyncRun__scheduleImmediateClosure", "$get$_AsyncRun__scheduleImmediateClosure", function() {
     return P._AsyncRun__initializeScheduleImmediate();
   }, "_AsyncRun__scheduleImmediateClosure", "Future__nullFuture", "$get$Future__nullFuture", function() {
-    var t1 = new P._Future(0, C.C__RootZone, [P.Null]);
-    t1._setValue$1(null);
-    return t1;
+    return P._Future$zoneValue(null, C.C__RootZone, P.Null);
   }, "Future__nullFuture", "_DistinctStream__SENTINEL", "$get$_DistinctStream__SENTINEL", function() {
     return new P.Object();
   }, "_DistinctStream__SENTINEL", "_RootZone__rootMap", "$get$_RootZone__rootMap", function() {
@@ -27045,40 +36921,81 @@
     return P.RegExp_RegExp("^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))", false, false);
   }, "_safeUrlPattern", "_dataUrlPattern", "$get$_dataUrlPattern", function() {
     return P.RegExp_RegExp("^data:(?:image/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video/(?:mpeg|mp4|ogg|webm));base64,[a-z0-9+/]+=*$", false, false);
-  }, "_dataUrlPattern", "styles18", "$get$styles18", function() {
+  }, "_dataUrlPattern", "styles26", "$get$styles26", function() {
     return ["material-drawer._ngcontent-%ID% material-list._ngcontent-%ID%{padding:0}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%{display:block;font-family:inherit;font-size:15px;line-height:32px;padding:0 24px;position:relative;white-space:nowrap;align-items:center;color:rgba(0,0,0,0.54);display:flex}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%{pointer-events:none}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .material-list-item-primary{color:rgba(0,0,0,0.54);width:40px}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%  .material-list-item-primary{color:rgba(0,0,0,0.38)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .material-list-item-secondary{color:rgba(0,0,0,0.54);margin-left:auto}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label].disabled._ngcontent-%ID%  .material-list-item-secondary{color:rgba(0,0,0,0.38)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%  .submenu-icon{transform:rotate(-90deg)}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% material-list-item._ngcontent-%ID%,material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID%{font-weight:500;height:48px;padding:0 16px}material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% material-list-item._ngcontent-%ID% material-icon._ngcontent-%ID%,material-drawer._ngcontent-%ID% material-list._ngcontent-%ID% [label]._ngcontent-%ID% material-icon._ngcontent-%ID%{color:rgba(0,0,0,0.54);margin-right:32px}material-drawer[persistent]._ngcontent-%ID%,material-drawer[permanent]._ngcontent-%ID%{width:256px}material-drawer[persistent]:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent]:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%,material-drawer[permanent]:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[permanent]:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-left:256px}material-drawer[persistent][end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent][end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-right:256px}material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID%{transform:translateX(-100%)}material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent].mat-drawer-collapsed:not([end])._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-left:0}material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID%{transform:translateX(100%)}material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent].mat-drawer-collapsed[end]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{margin-right:0}material-drawer[persistent]._ngcontent-%ID%,material-drawer[permanent]._ngcontent-%ID%{background-color:#fff;bottom:0;box-sizing:border-box;display:flex;flex-direction:column;flex-wrap:nowrap;overflow:hidden;position:absolute;top:0;border-right:1px solid rgba(0,0,0,0.12);left:0}material-drawer[persistent][end]._ngcontent-%ID%,material-drawer[permanent][end]._ngcontent-%ID%{border-left:1px solid rgba(0,0,0,0.12);border-right:initial;left:initial;right:0}material-drawer[persistent]._ngcontent-%ID%{transition-duration:150ms;transition-property:transform,width;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}material-drawer[persistent]._ngcontent-%ID% ~ material-content._ngcontent-%ID%,material-drawer[persistent]._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{transition-duration:150ms;transition-property:margin-left,margin-right;transition-timing-function:cubic-bezier(0.4,0,0.2,1)}material-content._ngcontent-%ID%,.material-content._ngcontent-%ID%{display:block;min-height:100%;position:relative;z-index:0}.material-header._ngcontent-%ID%{background-color:#3f51b5;border:0;box-sizing:border-box;color:#fff;display:flex;flex-direction:column;flex-shrink:0;flex-wrap:nowrap;height:64px;justify-content:flex-start;overflow:hidden;padding:0;position:relative;width:100%;z-index:1}.material-header.shadow._ngcontent-%ID%{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}.material-header._ngcontent-%ID% ~ material-drawer[permanent]._ngcontent-%ID%,.material-header._ngcontent-%ID% ~ material-drawer[persistent]._ngcontent-%ID%{top:64px}.material-header._ngcontent-%ID% ~ material-content._ngcontent-%ID%,.material-header._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{min-height:calc(100% - 64px)}.material-header.dense-header._ngcontent-%ID%{height:48px}.material-header.dense-header._ngcontent-%ID% .material-header-row._ngcontent-%ID%{height:48px}.material-header.dense-header._ngcontent-%ID% ~ material-drawer[permanent]._ngcontent-%ID%,.material-header.dense-header._ngcontent-%ID% ~ material-drawer[persistent]._ngcontent-%ID%{top:48px}.material-header.dense-header._ngcontent-%ID% ~ material-content._ngcontent-%ID%,.material-header.dense-header._ngcontent-%ID% ~ .material-content._ngcontent-%ID%{min-height:calc(100% - 48px)}.material-header-row._ngcontent-%ID%{align-items:center;align-self:stretch;box-sizing:border-box;display:flex;flex-direction:row;flex-shrink:0;flex-wrap:nowrap;height:64px;margin:0 12px;position:relative}@media (max-width:599px){.material-header-row._ngcontent-%ID%{margin:0 8px}}.material-header-row._ngcontent-%ID% > .material-drawer-button._ngcontent-%ID%{cursor:pointer}.material-header-row._ngcontent-%ID% .material-header-title._ngcontent-%ID%{bottom:0;box-sizing:border-box;display:block;height:20px;left:80px;line-height:1;margin-bottom:auto;margin-top:auto;position:absolute;top:0;font-size:20px;font-weight:500}.material-header-row._ngcontent-%ID% .material-spacer._ngcontent-%ID%{flex-grow:1}.material-header-row._ngcontent-%ID% material-button._ngcontent-%ID%{margin:0 4px}@media (max-width:599px){.material-header-row._ngcontent-%ID% material-button._ngcontent-%ID%{margin:0 0px}}.material-header-row._ngcontent-%ID% .material-navigation._ngcontent-%ID%{margin:0 12px}@media (max-width:599px){.material-header-row._ngcontent-%ID% .material-navigation._ngcontent-%ID%{margin:0 8px}}.material-header-row._ngcontent-%ID% > *._ngcontent-%ID%{flex-shrink:0}.mat-drawer-spacer._ngcontent-%ID%{height:56px}"];
-  }, "styles18", "styles4", "$get$styles4", function() {
+  }, "styles26", "styles4", "$get$styles4", function() {
     return ["._nghost-%ID%{bottom:0;left:0;position:absolute;right:0;top:0;background-color:transparent;overflow:hidden;pointer-events:none;z-index:1}._nghost-%ID%.mat-drawer-expanded{pointer-events:auto}._nghost-%ID%[overlay].mat-drawer-expanded{background-color:rgba(0,0,0,0.38);transition-duration:225ms}._nghost-%ID%[overlay]{background-color:transparent;transition:background-color 195ms cubic-bezier(0.4,0,0.2,1)}._nghost-%ID% > .drawer-content._ngcontent-%ID%{background-color:#fff;bottom:0;box-sizing:border-box;display:flex;flex-direction:column;flex-wrap:nowrap;overflow:hidden;position:absolute;top:0;box-shadow:none;transform:translateX(0);pointer-events:auto;transition-property:box-shadow,left,right,transform,width;transition-duration:195ms;transition-timing-function:cubic-bezier(0.4,0,0.6,1)}._nghost-%ID%.mat-drawer-expanded > .drawer-content._ngcontent-%ID%{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2);transition-duration:225ms;transition-timing-function:cubic-bezier(0,0,0.2,1)}._nghost-%ID%  > .drawer-content{left:-256px;width:256px}._nghost-%ID%.mat-drawer-expanded  > .drawer-content{transform:translateX(100%)}._nghost-%ID%[end]  > .drawer-content{left:initial;right:-256px}._nghost-%ID%[end].mat-drawer-expanded  > .drawer-content{transform:translateX(-100%)}"];
   }, "styles4", "styles$MaterialTemporaryDrawerComponent", "$get$styles$MaterialTemporaryDrawerComponent", function() {
     return [$.$get$styles4()];
-  }, "styles$MaterialTemporaryDrawerComponent", "styles22", "$get$styles22", function() {
-    return ['._nghost-%ID%{font-size:14px;font-weight:500;text-transform:uppercase;user-select:none;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;display:inline-block;letter-spacing:0.01em;line-height:normal;outline:none;position:relative;text-align:center}._nghost-%ID%.acx-theme-dark{color:#fff}._nghost-%ID%:not([icon]){margin:0 0.29em}._nghost-%ID%[dense]:not([icon]){height:32px;font-size:13px}._nghost-%ID%[compact]:not([icon]){padding:0 8px}._nghost-%ID%[disabled]{color:rgba(0,0,0,0.26);cursor:not-allowed}._nghost-%ID%[disabled].acx-theme-dark{color:rgba(255,255,255,0.3)}._nghost-%ID%[disabled] > *._ngcontent-%ID%{pointer-events:none}._nghost-%ID%:not([disabled]):not([icon]):hover::after,._nghost-%ID%.is-focused::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background-color:currentColor;opacity:0.12;border-radius:inherit;pointer-events:none}._nghost-%ID%[raised][animated]{transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)}._nghost-%ID%[raised][elevation="1"]{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="2"]{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="3"]{box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="4"]{box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="5"]{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="6"]{box-shadow:0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2)}._nghost-%ID%[raised].acx-theme-dark{background-color:#4285f4}._nghost-%ID%[raised][disabled]{background:rgba(0,0,0,0.12);box-shadow:none}._nghost-%ID%[raised][disabled].acx-theme-dark{background:rgba(255,255,255,0.12)}._nghost-%ID%[raised].highlighted:not([disabled]){background-color:#4285f4;color:#fff}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%[clear-size]{margin:0}._nghost-%ID% .content._ngcontent-%ID%{display:inline-flex;align-items:center}._nghost-%ID%:not([icon]){border-radius:2px;min-width:64px}._nghost-%ID%:not([icon]) .content._ngcontent-%ID%{padding:0.7em 0.57em}._nghost-%ID%[icon]{border-radius:50%}._nghost-%ID%[icon] .content._ngcontent-%ID%{padding:8px}._nghost-%ID%[clear-size]{min-width:0}'];
-  }, "styles22", "styles$MaterialButtonComponent", "$get$styles$MaterialButtonComponent", function() {
-    return [$.$get$styles22()];
-  }, "styles$MaterialButtonComponent", "styles14", "$get$styles14", function() {
-    return ['._nghost-%ID%{align-items:center;cursor:pointer;display:inline-flex;margin:8px}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%:focus{outline:none}._nghost-%ID%.disabled{cursor:not-allowed}._nghost-%ID%.disabled > .content._ngcontent-%ID%{color:rgba(0,0,0,0.54)}._nghost-%ID%.disabled > .icon-container._ngcontent-%ID% > .icon._ngcontent-%ID%{color:rgba(0,0,0,0.26)}.icon-container._ngcontent-%ID%{display:flex;position:relative}.icon-container.focus._ngcontent-%ID%::after,.icon-container._ngcontent-%ID% .ripple._ngcontent-%ID%{color:#9e9e9e;border-radius:20px;height:40px;left:-8px;position:absolute;top:-8px;width:40px}.icon-container.focus._ngcontent-%ID%::after{content:"";display:block;background-color:currentColor;opacity:0.12}.icon._ngcontent-%ID%{opacity:0.54}.icon.filled._ngcontent-%ID%{color:#4285f4;opacity:0.87}.content._ngcontent-%ID%{align-items:center;flex-grow:1;flex-shrink:1;flex-basis:auto;margin-left:8px;overflow-x:hidden;padding:1px 0;text-overflow:ellipsis}'];
-  }, "styles14", "styles$MaterialCheckboxComponent", "$get$styles$MaterialCheckboxComponent", function() {
-    return [$.$get$styles14()];
-  }, "styles$MaterialCheckboxComponent", "styles21", "$get$styles21", function() {
-    return ['._nghost-%ID%{display:inline-flex}._nghost-%ID%.flip  .material-icon-i{transform:scaleX(-1)}._nghost-%ID%[light]{opacity:0.54}._nghost-%ID% .material-icon-i._ngcontent-%ID%{font-size:24px}._nghost-%ID%[size=x-small] .material-icon-i._ngcontent-%ID%{font-size:12px}._nghost-%ID%[size=small] .material-icon-i._ngcontent-%ID%{font-size:13px}._nghost-%ID%[size=medium] .material-icon-i._ngcontent-%ID%{font-size:16px}._nghost-%ID%[size=large] .material-icon-i._ngcontent-%ID%{font-size:18px}._nghost-%ID%[size=x-large] .material-icon-i._ngcontent-%ID%{font-size:20px}.material-icon-i._ngcontent-%ID%{height:1em;line-height:1;width:1em}._nghost-%ID%[flip][dir=rtl] .material-icon-i._ngcontent-%ID%,[dir=rtl] [flip]._nghost-%ID% .material-icon-i._ngcontent-%ID%{transform:scaleX(-1)}._nghost-%ID%[baseline]{align-items:center}._nghost-%ID%[baseline]::before{content:"-";display:inline-block;width:0;visibility:hidden}._nghost-%ID%[baseline] .material-icon-i._ngcontent-%ID%{margin-bottom:0.1em}'];
-  }, "styles21", "styles$MaterialIconComponent", "$get$styles$MaterialIconComponent", function() {
-    return [$.$get$styles21()];
-  }, "styles$MaterialIconComponent", "styles12", "$get$styles12", function() {
-    return ["._nghost-%ID%{display:inline-block;width:100%;height:4px}.progress-container._ngcontent-%ID%{position:relative;height:100%;background-color:#e0e0e0;overflow:hidden}._nghost-%ID%[dir=rtl] .progress-container._ngcontent-%ID%,[dir=rtl] ._nghost-%ID% .progress-container._ngcontent-%ID%{transform:scaleX(-1)}.progress-container.indeterminate._ngcontent-%ID%{background-color:#c6dafc}.progress-container.indeterminate._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{background-color:#4285f4}.active-progress._ngcontent-%ID%,.secondary-progress._ngcontent-%ID%{transform-origin:left center;transform:scaleX(0);position:absolute;top:0;transition:transform 218ms cubic-bezier(0.4,0,0.2,1);right:0;bottom:0;left:0;will-change:transform}.active-progress._ngcontent-%ID%{background-color:#4285f4}.secondary-progress._ngcontent-%ID%{background-color:#a1c2fa}.progress-container.indeterminate.fallback._ngcontent-%ID% > .active-progress._ngcontent-%ID%{animation-name:indeterminate-active-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}.progress-container.indeterminate.fallback._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{animation-name:indeterminate-secondary-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes indeterminate-active-progress{0%{transform:translate(0%) scaleX(0)}25%{transform:translate(0%) scaleX(0.5)}50%{transform:translate(25%) scaleX(0.75)}75%{transform:translate(100%) scaleX(0)}100%{transform:translate(100%) scaleX(0)}}@keyframes indeterminate-secondary-progress{0%{transform:translate(0%) scaleX(0)}60%{transform:translate(0%) scaleX(0)}80%{transform:translate(0%) scaleX(0.6)}100%{transform:translate(100%) scaleX(0.1)}}"];
-  }, "styles12", "styles$MaterialProgressComponent", "$get$styles$MaterialProgressComponent", function() {
+  }, "styles$MaterialTemporaryDrawerComponent", "styles17", "$get$styles17", function() {
+    return ["[buttonDecorator]._ngcontent-%ID%{cursor:pointer}[buttonDecorator].is-disabled._ngcontent-%ID%{cursor:not-allowed}"];
+  }, "styles17", "FrameworkStabilizers__idToFrameworkStabilizer", "$get$FrameworkStabilizers__idToFrameworkStabilizer", function() {
+    return P.LinkedHashMap_LinkedHashMap$_empty(P.int, null);
+  }, "FrameworkStabilizers__idToFrameworkStabilizer", "testabilitiesEnabled", "$get$testabilitiesEnabled", function() {
+    return J.contains$1$asx(self.window.location.href, "enableTestabilities");
+  }, "testabilitiesEnabled", "styles12", "$get$styles12", function() {
+    return ['._nghost-%ID%{display:inline-flex}._nghost-%ID%[light]{opacity:0.54}._nghost-%ID%[size=x-small]  i{font-size:12px;height:1em;line-height:1em;width:1em}._nghost-%ID%[size=small]  i{font-size:13px;height:1em;line-height:1em;width:1em}._nghost-%ID%[size=medium]  i{font-size:16px;height:1em;line-height:1em;width:1em}._nghost-%ID%[size=large]  i{font-size:18px;height:1em;line-height:1em;width:1em}._nghost-%ID%[size=x-large]  i{font-size:20px;height:1em;line-height:1em;width:1em}._nghost-%ID%[flip][dir=rtl] .glyph-i._ngcontent-%ID%,[dir=rtl] [flip]._nghost-%ID% .glyph-i._ngcontent-%ID%{transform:scaleX(-1)}._nghost-%ID%[baseline]{align-items:center}._nghost-%ID%[baseline]::before{content:"-";display:inline-block;width:0;visibility:hidden}._nghost-%ID%[baseline] .glyph-i._ngcontent-%ID%{margin-bottom:0.1em}'];
+  }, "styles12", "styles$GlyphComponent", "$get$styles$GlyphComponent", function() {
     return [$.$get$styles12()];
+  }, "styles$GlyphComponent", "styles30", "$get$styles30", function() {
+    return ['._nghost-%ID%{font-size:14px;font-weight:500;text-transform:uppercase;user-select:none;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;display:inline-block;letter-spacing:0.01em;line-height:normal;outline:none;position:relative;text-align:center}._nghost-%ID%.acx-theme-dark{color:#fff}._nghost-%ID%:not([icon]){margin:0 0.29em}._nghost-%ID%[dense]:not([icon]){height:32px;font-size:13px}._nghost-%ID%[compact]:not([icon]){padding:0 8px}._nghost-%ID%[disabled]{color:rgba(0,0,0,0.26);cursor:not-allowed}._nghost-%ID%[disabled].acx-theme-dark{color:rgba(255,255,255,0.3)}._nghost-%ID%[disabled] > *._ngcontent-%ID%{pointer-events:none}._nghost-%ID%:not([disabled]):not([icon]):hover::after,._nghost-%ID%.is-focused::after{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background-color:currentColor;opacity:0.12;border-radius:inherit;pointer-events:none}._nghost-%ID%[raised][animated]{transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)}._nghost-%ID%[raised][elevation="1"]{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="2"]{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="3"]{box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="4"]{box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="5"]{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2)}._nghost-%ID%[raised][elevation="6"]{box-shadow:0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2)}._nghost-%ID%[raised].acx-theme-dark{background-color:#4285f4}._nghost-%ID%[raised][disabled]{background:rgba(0,0,0,0.12);box-shadow:none}._nghost-%ID%[raised][disabled].acx-theme-dark{background:rgba(255,255,255,0.12)}._nghost-%ID%[raised].highlighted:not([disabled]){background-color:#4285f4;color:#fff}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%[clear-size]{margin:0}._nghost-%ID% .content._ngcontent-%ID%{display:inline-flex;align-items:center}._nghost-%ID%:not([icon]){border-radius:2px;min-width:64px}._nghost-%ID%:not([icon]) .content._ngcontent-%ID%{padding:0.7em 0.57em}._nghost-%ID%[icon]{border-radius:50%}._nghost-%ID%[icon] .content._ngcontent-%ID%{padding:8px}._nghost-%ID%[clear-size]{min-width:0}'];
+  }, "styles30", "styles$MaterialButtonComponent", "$get$styles$MaterialButtonComponent", function() {
+    return [$.$get$styles30()];
+  }, "styles$MaterialButtonComponent", "styles13", "$get$styles13", function() {
+    return ['._nghost-%ID%{align-items:center;cursor:pointer;display:inline-flex;margin:8px}._nghost-%ID%[no-ink] material-ripple._ngcontent-%ID%{display:none}._nghost-%ID%:focus{outline:none}._nghost-%ID%.disabled{cursor:not-allowed}._nghost-%ID%.disabled > .content._ngcontent-%ID%{color:rgba(0,0,0,0.54)}._nghost-%ID%.disabled > .icon-container._ngcontent-%ID% > .icon._ngcontent-%ID%{color:rgba(0,0,0,0.26)}.icon-container._ngcontent-%ID%{display:flex;position:relative}.icon-container.focus._ngcontent-%ID%::after,.icon-container._ngcontent-%ID% .ripple._ngcontent-%ID%{color:#9e9e9e;border-radius:20px;height:40px;left:-8px;position:absolute;top:-8px;width:40px}.icon-container.focus._ngcontent-%ID%::after{content:"";display:block;background-color:currentColor;opacity:0.12}.icon._ngcontent-%ID%{opacity:0.54}.icon.filled._ngcontent-%ID%{color:#4285f4;opacity:0.87}.content._ngcontent-%ID%{align-items:center;flex-grow:1;flex-shrink:1;flex-basis:auto;margin-left:8px;overflow-x:hidden;padding:1px 0;text-overflow:ellipsis}'];
+  }, "styles13", "styles$MaterialCheckboxComponent", "$get$styles$MaterialCheckboxComponent", function() {
+    return [$.$get$styles13()];
+  }, "styles$MaterialCheckboxComponent", "styles29", "$get$styles29", function() {
+    return ['._nghost-%ID%{display:inline-flex}._nghost-%ID%.flip  .material-icon-i{transform:scaleX(-1)}._nghost-%ID%[light]{opacity:0.54}._nghost-%ID% .material-icon-i._ngcontent-%ID%{font-size:24px}._nghost-%ID%[size=x-small] .material-icon-i._ngcontent-%ID%{font-size:12px}._nghost-%ID%[size=small] .material-icon-i._ngcontent-%ID%{font-size:13px}._nghost-%ID%[size=medium] .material-icon-i._ngcontent-%ID%{font-size:16px}._nghost-%ID%[size=large] .material-icon-i._ngcontent-%ID%{font-size:18px}._nghost-%ID%[size=x-large] .material-icon-i._ngcontent-%ID%{font-size:20px}.material-icon-i._ngcontent-%ID%{height:1em;line-height:1;width:1em}._nghost-%ID%[flip][dir=rtl] .material-icon-i._ngcontent-%ID%,[dir=rtl] [flip]._nghost-%ID% .material-icon-i._ngcontent-%ID%{transform:scaleX(-1)}._nghost-%ID%[baseline]{align-items:center}._nghost-%ID%[baseline]::before{content:"-";display:inline-block;width:0;visibility:hidden}._nghost-%ID%[baseline] .material-icon-i._ngcontent-%ID%{margin-bottom:0.1em}'];
+  }, "styles29", "styles$MaterialIconComponent", "$get$styles$MaterialIconComponent", function() {
+    return [$.$get$styles29()];
+  }, "styles$MaterialIconComponent", "styles15", "$get$styles15", function() {
+    return ["._nghost-%ID%{display:block;background:#fff;margin:0;padding:16px 0;white-space:nowrap}._nghost-%ID%[size=x-small]{width:96px}._nghost-%ID%[size=small]{width:192px}._nghost-%ID%[size=medium]{width:320px}._nghost-%ID%[size=large]{width:384px}._nghost-%ID%[size=x-large]{width:448px}._nghost-%ID%[min-size=x-small]{min-width:96px}._nghost-%ID%[min-size=small]{min-width:192px}._nghost-%ID%[min-size=medium]{min-width:320px}._nghost-%ID%[min-size=large]{min-width:384px}._nghost-%ID%[min-size=x-large]{min-width:448px}._nghost-%ID%  [group]:not(.empty) + *:not(script):not(template):not(.empty),._nghost-%ID%  :not([group]):not(script):not(template):not(.empty) + [group]:not(.empty){border-top:1px solid #e0e0e0;margin-top:7px;padding-top:8px}._nghost-%ID%  [group]:not(.empty) + *:not(script):not(template):not(.empty){box-shadow:inset 0 8px 0 0 #fff}._nghost-%ID%  [separator=present]{background:#e0e0e0;cursor:default;height:1px;margin:8px 0}._nghost-%ID%  [label]{display:block;font-family:inherit;font-size:15px;line-height:32px;padding:0 24px;position:relative;white-space:nowrap;color:#9e9e9e;font-size:12px;font-weight:400}._nghost-%ID%  [label].disabled{pointer-events:none}._nghost-%ID%  [label]  .material-list-item-primary{color:rgba(0,0,0,0.54);width:40px}._nghost-%ID%  [label].disabled  .material-list-item-primary{color:rgba(0,0,0,0.38)}._nghost-%ID%  [label]  .material-list-item-secondary{color:rgba(0,0,0,0.54);margin-left:auto}._nghost-%ID%  [label].disabled  .material-list-item-secondary{color:rgba(0,0,0,0.38)}._nghost-%ID%  [label]  .submenu-icon{transform:rotate(-90deg)}._nghost-%ID%[dir=rtl]  [label]  .submenu-icon,[dir=rtl] ._nghost-%ID%  [label]  .submenu-icon{transform:rotate(90deg)}"];
+  }, "styles15", "styles$MaterialListComponent", "$get$styles$MaterialListComponent", function() {
+    return [$.$get$styles15()];
+  }, "styles$MaterialListComponent", "MaterialPopupComponent__idGenerator", "$get$MaterialPopupComponent__idGenerator", function() {
+    return R.SequentialIdGenerator$fromUUID();
+  }, "MaterialPopupComponent__idGenerator", "styles16", "$get$styles16", function() {
+    return ['.shadow._ngcontent-%ID%{background:#fff;border-radius:2px;transition:transform 150ms cubic-bezier(0.4,0,1,1);transform-origin:top left;transform:scale3d(0,0,1);will-change:transform}.shadow[animated]._ngcontent-%ID%{transition:box-shadow 0.28s cubic-bezier(0.4,0,0.2,1)}.shadow[elevation="1"]._ngcontent-%ID%{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)}.shadow[elevation="2"]._ngcontent-%ID%{box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2)}.shadow[elevation="3"]._ngcontent-%ID%{box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.2)}.shadow[elevation="4"]._ngcontent-%ID%{box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2)}.shadow[elevation="5"]._ngcontent-%ID%{box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.2)}.shadow[elevation="6"]._ngcontent-%ID%{box-shadow:0 24px 38px 3px rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2)}.shadow[slide=x]._ngcontent-%ID%{transform:scale3d(0,1,1)}.shadow[slide=y]._ngcontent-%ID%{transform:scale3d(1,0,1)}.shadow.visible._ngcontent-%ID%{transition:transform 150ms cubic-bezier(0,0,0.2,1);transform:scale3d(1,1,1)}.shadow.ink._ngcontent-%ID%{background:#616161;color:#fff}.shadow.full-width._ngcontent-%ID%{flex-grow:1;flex-shrink:1;flex-basis:auto}.shadow._ngcontent-%ID% .popup._ngcontent-%ID%{border-radius:2px;flex-grow:1;flex-shrink:1;flex-basis:auto;overflow:hidden;transition:inherit}.shadow.visible._ngcontent-%ID% .popup._ngcontent-%ID%{visibility:initial}.shadow._ngcontent-%ID% header._ngcontent-%ID%,.shadow._ngcontent-%ID% footer._ngcontent-%ID%{display:block}.shadow._ngcontent-%ID% .main._ngcontent-%ID%{display:flex;flex-direction:column;min-height:inherit;min-width:inherit;max-height:inherit;max-width:inherit;overflow:auto;overscroll-behavior:contain}._nghost-%ID%{justify-content:flex-start;align-items:flex-start}._nghost-%ID%  ::-webkit-scrollbar{background-color:rgba(0,0,0,0);height:4px;width:4px}._nghost-%ID%  ::-webkit-scrollbar:hover{background-color:rgba(0,0,0,0.12)}._nghost-%ID%  ::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.26);min-height:48px;min-width:48px}._nghost-%ID%  ::-webkit-scrollbar-thumb:hover{background-color:#4285f4}._nghost-%ID%  ::-webkit-scrollbar-button{width:0;height:0}.material-popup-content._ngcontent-%ID%{min-width:inherit;min-height:inherit;max-width:inherit;max-height:inherit;position:relative;display:flex;flex-direction:column}.popup-wrapper._ngcontent-%ID%{width:100%}'];
+  }, "styles16", "styles$MaterialPopupComponent", "$get$styles$MaterialPopupComponent", function() {
+    return [$.$get$styles16()];
+  }, "styles$MaterialPopupComponent", "styles21", "$get$styles21", function() {
+    return ["._nghost-%ID%{display:inline-block;width:100%;height:4px}.progress-container._ngcontent-%ID%{position:relative;height:100%;background-color:#e0e0e0;overflow:hidden}._nghost-%ID%[dir=rtl] .progress-container._ngcontent-%ID%,[dir=rtl] ._nghost-%ID% .progress-container._ngcontent-%ID%{transform:scaleX(-1)}.progress-container.indeterminate._ngcontent-%ID%{background-color:#c6dafc}.progress-container.indeterminate._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{background-color:#4285f4}.active-progress._ngcontent-%ID%,.secondary-progress._ngcontent-%ID%{transform-origin:left center;transform:scaleX(0);position:absolute;top:0;transition:transform 218ms cubic-bezier(0.4,0,0.2,1);right:0;bottom:0;left:0;will-change:transform}.active-progress._ngcontent-%ID%{background-color:#4285f4}.secondary-progress._ngcontent-%ID%{background-color:#a1c2fa}.progress-container.indeterminate.fallback._ngcontent-%ID% > .active-progress._ngcontent-%ID%{animation-name:indeterminate-active-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}.progress-container.indeterminate.fallback._ngcontent-%ID% > .secondary-progress._ngcontent-%ID%{animation-name:indeterminate-secondary-progress;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes indeterminate-active-progress{0%{transform:translate(0%) scaleX(0)}25%{transform:translate(0%) scaleX(0.5)}50%{transform:translate(25%) scaleX(0.75)}75%{transform:translate(100%) scaleX(0)}100%{transform:translate(100%) scaleX(0)}}@keyframes indeterminate-secondary-progress{0%{transform:translate(0%) scaleX(0)}60%{transform:translate(0%) scaleX(0)}80%{transform:translate(0%) scaleX(0.6)}100%{transform:translate(100%) scaleX(0.1)}}"];
+  }, "styles21", "styles$MaterialProgressComponent", "$get$styles$MaterialProgressComponent", function() {
+    return [$.$get$styles21()];
   }, "styles$MaterialProgressComponent", "styles2", "$get$styles2", function() {
     return ["material-ripple {\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: hidden;\n  border-radius: inherit;\n  contain: strict;\n  transform: translateX(0);\n}\n\n.__acx-ripple {\n  position: absolute;\n  width: 256px;\n  height: 256px;\n  background-color: currentColor;\n  border-radius: 50%;\n  pointer-events: none;\n  will-change: opacity, transform;\n  opacity: 0;\n}\n.__acx-ripple.fallback {\n  animation: __acx-ripple 300ms linear;\n  transform: translateZ(0);\n}\n\n@keyframes __acx-ripple {\n  from {\n    opacity: 0;\n    transform: translateZ(0) scale(0.125);\n  }\n  25%, 50% {\n    opacity: 0.16;\n  }\n  to {\n    opacity: 0;\n    transform: translateZ(0) scale(4);\n  }\n}\n"];
   }, "styles2", "styles$MaterialRippleComponent", "$get$styles$MaterialRippleComponent", function() {
     return [$.$get$styles2()];
-  }, "styles$MaterialRippleComponent", "supportsAnimationApi", "$get$supportsAnimationApi", function() {
+  }, "styles$MaterialRippleComponent", "styles18", "$get$styles18", function() {
+    return ["._nghost-%ID%{display:inline-flex;flex:1;flex-direction:column;max-width:100%;min-height:24px}.button._ngcontent-%ID%{display:flex;align-items:center;justify-content:space-between;flex:1 0 auto;line-height:initial;overflow:hidden}.button.border._ngcontent-%ID%{border-bottom:1px solid rgba(0,0,0,0.12);padding-bottom:8px}.button.border.is-disabled._ngcontent-%ID%{border-bottom-style:dotted}.button.border.invalid._ngcontent-%ID%{border-bottom-color:#c53929}.button.is-disabled._ngcontent-%ID%{color:rgba(0,0,0,0.38)}.button._ngcontent-%ID% .button-text._ngcontent-%ID%{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.error-text._ngcontent-%ID%{color:#d34336;font-size:12px}.icon._ngcontent-%ID%{height:12px;opacity:0.54;margin-top:-12px;margin-bottom:-12px}.icon._ngcontent-%ID%  i.glyph-i{position:relative;top:-6px}"];
+  }, "styles18", "styles$DropdownButtonComponent", "$get$styles$DropdownButtonComponent", function() {
+    return [$.$get$styles17(), $.$get$styles18()];
+  }, "styles$DropdownButtonComponent", "ActivateItemOnKeyPressMixin__charCodeMap", "$get$ActivateItemOnKeyPressMixin__charCodeMap", function() {
+    return P.LinkedHashMap_LinkedHashMap$_empty(P.int, P.String);
+  }, "ActivateItemOnKeyPressMixin__charCodeMap", "styles20", "$get$styles20", function() {
+    return ["._nghost-%ID%{display:inline-flex}.options-list._ngcontent-%ID%{display:flex;flex-direction:column;flex:1 0 auto;outline:none}.options-list:focus._ngcontent-%ID%{border-bottom:solid 1px transparent;padding-bottom:15px}.options-list._ngcontent-%ID% .options-wrapper._ngcontent-%ID%{flex-direction:column}.options-list._ngcontent-%ID% .options-wrapper._ngcontent-%ID% [label]._ngcontent-%ID%{padding:0 16px}"];
+  }, "styles20", "styles$MaterialDropdownSelectComponent", "$get$styles$MaterialDropdownSelectComponent", function() {
+    return [$.$get$styles20()];
+  }, "styles$MaterialDropdownSelectComponent", "styles14", "$get$styles14", function() {
+    return ["._nghost-%ID%{display:block;font-family:inherit;font-size:15px;line-height:32px;padding:0 24px;position:relative;white-space:nowrap;padding:0 16px;display:flex;align-items:center;transition:background;color:rgba(0,0,0,0.87);cursor:pointer}._nghost-%ID%.disabled{pointer-events:none}._nghost-%ID%  .material-list-item-primary{color:rgba(0,0,0,0.54);width:40px}._nghost-%ID%.disabled  .material-list-item-primary{color:rgba(0,0,0,0.38)}._nghost-%ID%  .material-list-item-secondary{color:rgba(0,0,0,0.54);margin-left:auto}._nghost-%ID%.disabled  .material-list-item-secondary{color:rgba(0,0,0,0.38)}._nghost-%ID%  .submenu-icon{transform:rotate(-90deg)}._nghost-%ID%:hover,._nghost-%ID%.active{background:whitesmoke}._nghost-%ID%:not(.multiselect).selected{background:#eee}._nghost-%ID% .selected-accent._ngcontent-%ID%{position:absolute;top:0;left:0;bottom:0;width:3px;background:#9e9e9e}._nghost-%ID% material-checkbox._ngcontent-%ID%{margin:0}._nghost-%ID%.disabled{color:rgba(0,0,0,0.38);cursor:default}._nghost-%ID%.hidden{display:none}.check-container._ngcontent-%ID%{display:inline-block;width:40px}.dynamic-item._ngcontent-%ID%{flex-grow:1;width:100%}._nghost-%ID%[dir=rtl]  .submenu-icon,[dir=rtl] ._nghost-%ID%  .submenu-icon{transform:rotate(90deg)}"];
+  }, "styles14", "styles$MaterialSelectDropdownItemComponent", "$get$styles$MaterialSelectDropdownItemComponent", function() {
+    return [$.$get$styles14()];
+  }, "styles$MaterialSelectDropdownItemComponent", "indexIdentityFn", "$get$indexIdentityFn", function() {
+    return new T.closure();
+  }, "indexIdentityFn", "DomPopupSource__isRtl", "$get$DomPopupSource__isRtl", function() {
+    var t1 = W.document();
+    return t1.documentElement.dir === "rtl" || t1.body.dir === "rtl";
+  }, "DomPopupSource__isRtl", "supportsAnimationApi", "$get$supportsAnimationApi", function() {
     if (P.hasProperty(W.DivElement_DivElement(), "animate")) {
       var t1 = $.$get$context();
       t1 = !("__acxDisableWebAnimationsApi" in t1._jsObject);
     } else
       t1 = false;
     return t1;
-  }, "supportsAnimationApi", "_emptyPattern", "$get$_emptyPattern", function() {
+  }, "supportsAnimationApi", "SequentialIdGenerator__rnd", "$get$SequentialIdGenerator__rnd", function() {
+    return P.Random_Random(null);
+  }, "SequentialIdGenerator__rnd", "_emptyPattern", "$get$_emptyPattern", function() {
     return P.RegExp_RegExp("^(?:[ \\t]*)$", true, false);
   }, "_emptyPattern", "_setextPattern", "$get$_setextPattern", function() {
     return P.RegExp_RegExp("^[ ]{0,3}(=+|-+)\\s*$", true, false);
@@ -27132,38 +37049,75 @@
     return ["._nghost-%ID%{display:flex;font-size:15px;font-weight:normal;position:relative;background:transparent;border-radius:inherit;box-sizing:border-box;cursor:pointer;letter-spacing:.01em;line-height:normal;outline:none;text-align:center;z-index:0;transition:color .4s linear,background-color .4s linear}._nghost-%ID%:hover{color:rgba(0,0,0,.987);background-color:rgba(0,0,0,.05)}"];
   }, "styles3", "styles$SkawaNavItemComponent", "$get$styles$SkawaNavItemComponent", function() {
     return [$.$get$styles3()];
-  }, "styles$SkawaNavItemComponent", "styles23", "$get$styles23", function() {
+  }, "styles$SkawaNavItemComponent", "styles31", "$get$styles31", function() {
     return ["._nghost-%ID%{padding:6px 0;box-sizing:border-box;display:flex;align-items:center;height:44px;color:rgba(0,0,0,.654);flex-grow:1;transition:color .4s linear;flex-basis:100%}._nghost-%ID% .item-icon._ngcontent-%ID%{width:64px;justify-content:center}._nghost-%ID% .item-text._ngcontent-%ID%{flex-grow:1;line-height:24px;text-align:left}._nghost-%ID% .item-text.text-only._ngcontent-%ID%{text-transform:uppercase;font-size:12px}._nghost-%ID%:hover,._nghost-%ID%.hovering{color:rgba(0,0,0,.998)}._nghost-%ID%[textOnly]{padding-left:20px}._nghost-%ID%.icon-padding{padding-left:64px}"];
-  }, "styles23", "styles$SkawaSidebarItemComponent", "$get$styles$SkawaSidebarItemComponent", function() {
-    return [$.$get$styles23()];
-  }, "styles$SkawaSidebarItemComponent", "styles24", "$get$styles24", function() {
-    return ["._nghost-%ID%{box-sizing:border-box}._nghost-%ID% main._ngcontent-%ID%{border-right:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1);background-color:#fff;padding:24px;margin:0 auto;max-width:800px}._nghost-%ID% main._ngcontent-%ID% .demo._ngcontent-%ID%{display:block;border-bottom:1px solid lightgray;padding-bottom:2em;margin-bottom:2em}._nghost-%ID% material-content._ngcontent-%ID%{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0}._nghost-%ID% material-content._ngcontent-%ID% .material-header._ngcontent-%ID%{position:fixed;right:0;width:calc(100% - 256px);left:256px;transition-duration:150ms;transition-property:left,width;transition-timing-function:cubic-bezier(0.4,0,0.2,1);top:0;z-index:1}._nghost-%ID% material-content._ngcontent-%ID% .material-header.no-drawer._ngcontent-%ID%{left:0;width:100%}a._ngcontent-%ID%{color:var(--default-primary-color);text-decoration:none}skawa-sidebar-item._ngcontent-%ID%{flex-basis:auto;flex-grow:initial}skawa-nav-item._ngcontent-%ID%{flex-basis:auto}"];
-  }, "styles24", "styles$AppComponent", "$get$styles$AppComponent", function() {
-    return [$.$get$styles24(), $.$get$styles18()];
-  }, "styles$AppComponent", "styles20", "$get$styles20", function() {
+  }, "styles31", "styles$SkawaSidebarItemComponent", "$get$styles$SkawaSidebarItemComponent", function() {
+    return [$.$get$styles31()];
+  }, "styles$SkawaSidebarItemComponent", "styles32", "$get$styles32", function() {
+    return ["._nghost-%ID%{box-sizing:border-box}._nghost-%ID% main._ngcontent-%ID%{border-right:1px solid rgba(0,0,0,.1);border-left:1px solid rgba(0,0,0,.1);background-color:#fff;padding:24px;margin:0 auto;max-width:800px}._nghost-%ID% main._ngcontent-%ID% .demo._ngcontent-%ID%{display:block;border-bottom:1px solid lightgray;padding-bottom:2em;margin-bottom:2em}._nghost-%ID% material-content._ngcontent-%ID%{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0}._nghost-%ID% material-content._ngcontent-%ID% .material-header._ngcontent-%ID%{position:fixed;right:0;width:calc(100% - 256px);left:256px;transition-duration:150ms;transition-property:left,width;transition-timing-function:cubic-bezier(0.4,0,0.2,1);top:0;z-index:1}._nghost-%ID% material-content._ngcontent-%ID% .material-header.no-drawer._ngcontent-%ID%{left:0;width:100%}a._ngcontent-%ID%{color:var(--default-primary-color);text-decoration:none}skawa-sidebar-item._ngcontent-%ID%{flex-basis:auto;flex-grow:initial}skawa-sidebar-item:hover._ngcontent-%ID%{background-color:rgba(158,158,158,.2)!important}skawa-nav-item._ngcontent-%ID%{flex-basis:auto}"];
+  }, "styles32", "styles$AppComponent", "$get$styles$AppComponent", function() {
+    return [$.$get$styles32(), $.$get$styles26()];
+  }, "styles$AppComponent", "styles28", "$get$styles28", function() {
     return ["._nghost-%ID% .color--primary-action._ngcontent-%ID%{color:#2196f3;font-weight:700}._nghost-%ID% skawa-card._ngcontent-%ID%{margin-bottom:16px}"];
-  }, "styles20", "styles$CardDemoComponent", "$get$styles$CardDemoComponent", function() {
-    return [$.$get$styles20()];
-  }, "styles$CardDemoComponent", "styles13", "$get$styles13", function() {
+  }, "styles28", "styles$CardDemoComponent", "$get$styles$CardDemoComponent", function() {
+    return [$.$get$styles28()];
+  }, "styles$CardDemoComponent", "styles22", "$get$styles22", function() {
     return ["._nghost-%ID%{display:flex;align-items:center;width:100%;justify-content:space-between}"];
-  }, "styles13", "styles$FirstDownPercentComponent", "$get$styles$FirstDownPercentComponent", function() {
-    return [$.$get$styles13()];
-  }, "styles$FirstDownPercentComponent", "styles0", "$get$styles0", function() {
+  }, "styles22", "styles$FirstDownPercentComponent", "$get$styles$FirstDownPercentComponent", function() {
+    return [$.$get$styles22()];
+  }, "styles$FirstDownPercentComponent", "styles23", "$get$styles23", function() {
+    return ["._nghost-%ID% h3._ngcontent-%ID%{display:flex}._nghost-%ID% h3._ngcontent-%ID% span._ngcontent-%ID%{display:flex;flex-grow:1}._nghost-%ID% h3._ngcontent-%ID% material-dropdown-select._ngcontent-%ID%{color:var(--default-primary-color)}"];
+  }, "styles23", "WrTableComponent_firstDownPercentRenderer", "$get$WrTableComponent_firstDownPercentRenderer", function() {
+    return new N.WrTableComponent_closure();
+  }, "WrTableComponent_firstDownPercentRenderer", "WrTableComponent__columns", "$get$WrTableComponent__columns", function() {
+    var t1, t2, t3, t4, t5, t6, t7, t8, t9;
+    t1 = N.WrRowData;
+    t2 = G.SkawaDataTableColComponent$(null, t1);
+    t2.header = "Player";
+    t2.set$accessor(N.wr_table_WrTableComponent_nameAccessor$closure());
+    t2.classString = "text-column";
+    t3 = G.SkawaDataTableColComponent$(null, t1);
+    t3.header = "Team";
+    t3.set$accessor(N.wr_table_WrTableComponent_teamAccessor$closure());
+    t3.classString = "text-column";
+    t4 = G.SkawaDataTableColComponent$(null, t1);
+    t4.header = "Rec";
+    t4.set$accessor(N.wr_table_WrTableComponent_recAccessor$closure());
+    t5 = G.SkawaDataTableColComponent$(null, t1);
+    t5.header = "Yards";
+    t5.set$accessor(N.wr_table_WrTableComponent_yardsAccessor$closure());
+    t6 = G.SkawaDataTableColComponent$(null, t1);
+    t6.header = "Avg";
+    t6.set$accessor(N.wr_table_WrTableComponent_avgAccessor$closure());
+    t7 = G.SkawaDataTableColComponent$(null, t1);
+    t7.header = "Yds/G";
+    t7.set$accessor(N.wr_table_WrTableComponent_yardPerGameAccessor$closure());
+    t8 = G.SkawaDataTableColComponent$(null, t1);
+    t8.header = "1st";
+    t8.set$accessor(N.wr_table_WrTableComponent_firstDownAccessor$closure());
+    t9 = G.SkawaDataColRendererDirective$(t1);
+    t9.set$factoryRenderer($.$get$WrTableComponent_firstDownPercentRenderer());
+    t1 = G.SkawaDataTableColComponent$(t9, t1);
+    t1.header = "1st%";
+    return H.setRuntimeTypeInfo([t2, t3, t4, t5, t6, t7, t8, t1], [[G.SkawaDataTableColComponent, N.WrRowData]]);
+  }, "WrTableComponent__columns", "styles$WrTableComponent", "$get$styles$WrTableComponent", function() {
+    return [$.$get$styles23()];
+  }, "styles$WrTableComponent", "styles0", "$get$styles0", function() {
     return ["._nghost-%ID%{display:flex;flex-grow:1;align-items:center}._nghost-%ID% h2._ngcontent-%ID%{height:32px;display:flex;flex-grow:1;align-items:center;font-size:1.5em;font-weight:bold;-webkit-margin-before:.83em;-webkit-margin-after:.83em;-webkit-margin-start:0;-webkit-margin-end:0}._nghost-%ID% a._ngcontent-%ID%{color:var(--default-primary-color);text-decoration:none}"];
   }, "styles0", "styles$DemoHeaderComponent", "$get$styles$DemoHeaderComponent", function() {
     return [$.$get$styles0()];
-  }, "styles$DemoHeaderComponent", "styles16", "$get$styles16", function() {
+  }, "styles$DemoHeaderComponent", "styles24", "$get$styles24", function() {
     return ["._nghost-%ID% extended-material-icon:not(:first-child)._ngcontent-%ID%{margin-left:8px}._nghost-%ID% extended-material-icon:not(:last-child)._ngcontent-%ID%{margin-right:8px}"];
-  }, "styles16", "styles$ExtendedMaterialIconDemoComponent", "$get$styles$ExtendedMaterialIconDemoComponent", function() {
-    return [$.$get$styles16()];
-  }, "styles$ExtendedMaterialIconDemoComponent", "styles19", "$get$styles19", function() {
+  }, "styles24", "styles$ExtendedMaterialIconDemoComponent", "$get$styles$ExtendedMaterialIconDemoComponent", function() {
+    return [$.$get$styles24()];
+  }, "styles$ExtendedMaterialIconDemoComponent", "styles27", "$get$styles27", function() {
     return ["._nghost-%ID% div._ngcontent-%ID%{display:flex;align-items:center;justify-content:center;height:32px;width:100px}"];
-  }, "styles19", "styles$HexColorizePipeDemoComponent", "$get$styles$HexColorizePipeDemoComponent", function() {
-    return [$.$get$styles19()];
-  }, "styles$HexColorizePipeDemoComponent", "styles17", "$get$styles17", function() {
+  }, "styles27", "styles$HexColorizePipeDemoComponent", "$get$styles$HexColorizePipeDemoComponent", function() {
+    return [$.$get$styles27()];
+  }, "styles$HexColorizePipeDemoComponent", "styles25", "$get$styles25", function() {
     return ["._nghost-%ID% skawa-nav-item._ngcontent-%ID%{flex-basis:auto}"];
-  }, "styles17", "styles$NavItemDemoComponent", "$get$styles$NavItemDemoComponent", function() {
-    return [$.$get$styles17(), $.$get$styles18()];
+  }, "styles25", "styles$NavItemDemoComponent", "$get$styles$NavItemDemoComponent", function() {
+    return [$.$get$styles25(), $.$get$styles26()];
   }, "styles$NavItemDemoComponent", "styles10", "$get$styles10", function() {
     return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{display:block;border-radius:2px;box-sizing:border-box;background-color:#fff;box-shadow:0 2px 2px 0 rgba(0,0,0,.2),0 3px 1px -2px rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}._nghost-%ID%[no-shadow]{box-shadow:none}._nghost-%ID%.with-actions{display:flex}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}"];
   }, "styles10", "SkawaCardHeaderComponent__rgbaRegexp", "$get$SkawaCardHeaderComponent__rgbaRegexp", function() {
@@ -27182,10 +37136,10 @@
     return ["@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,.87);display:block;padding:16px}._nghost-%ID%.with-header{padding-top:0}._nghost-%ID%[fullWidth],._nghost-%ID%.skawa-full-width{padding:0}._nghost-%ID%.skawa-collapsed{display:none;color:green}"];
   }, "styles8", "styles9", "$get$styles9", function() {
     return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{padding:16px;display:flex;align-items:center}._nghost-%ID%::after{content:"";display:block;clear:both}._nghost-%ID%  skawa-header-title,._nghost-%ID%  skawa-header-subhead{display:block}._nghost-%ID%  skawa-header-image{display:inline-block;float:left;box-sizing:border-box;width:40px;height:40px;margin-right:8px}._nghost-%ID%  skawa-header-title{font-size:24px;font-weight:400;line-height:32px;-moz-osx-font-smoothing:grayscale;color:rgba(0,0,0,.87)}._nghost-%ID%  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,.54)}._nghost-%ID%.with-title-image  skawa-header-subhead{font-size:14px;color:rgba(0,0,0,.54)}._nghost-%ID%.with-title-image.with-subhead{display:block}._nghost-%ID%.with-title-image.with-subhead  skawa-header-title{font-size:20px;font-weight:500;font-family:"Roboto","Helvetica","Arial",sans-serif;line-height:1;letter-spacing:.02em;color:rgba(0,0,0,.87);font-size:15px;line-height:20px;padding-top:0;font-weight:700}._nghost-%ID%.with-actions{display:flex;padding-right:8px}._nghost-%ID%.with-actions  skawa-header-title{flex-grow:1}._nghost-%ID%.with-subhead{flex-direction:column;align-items:flex-start}._nghost-%ID%.with-data-table,.with-data-table ._nghost-%ID%{padding:12px 6px 12px 16px}'];
-  }, "styles9", "styles15", "$get$styles15", function() {
-    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{display:block;background-color:#fff}._nghost-%ID% table._ngcontent-%ID%{width:100%;box-sizing:border-box}._nghost-%ID% table.selectable._ngcontent-%ID% th:nth-child(2)._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:nth-child(2)._ngcontent-%ID%{padding-left:0}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:center;color:black;width:72px}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%{margin:0;width:24px;height:24px;vertical-align:middle}._nghost-%ID% table.selectable._ngcontent-%ID% tfoot._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:right;padding-left:72px!important}._nghost-%ID% table.non-selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.non-selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr._ngcontent-%ID%{transition-duration:.28s;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-property:background-color}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr:hover._ngcontent-%ID%{background-color:#eee!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.selected._ngcontent-%ID%{background-color:#e0e0e0}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.highlighted._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.odd-row._ngcontent-%ID%{background-color:#eee}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{border-bottom:1px solid #d0d0d0}._nghost-%ID% table._ngcontent-%ID% tr:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr:last-of-type._ngcontent-%ID%{height:56px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{padding-left:56px;text-align:right;vertical-align:middle;font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,.87);height:48px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:first-of-type._ngcontent-%ID%{padding-left:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:last-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:last-of-type._ngcontent-%ID%{padding-right:24px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%{font-size:13px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{font-size:12px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_downwards";opacity:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%:before{opacity:.38}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_upwards";opacity:.87}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort.desc._ngcontent-%ID% a._ngcontent-%ID%:before{content:"arrow_downwards"}._nghost-%ID% .text-column._ngcontent-%ID%,._nghost-%ID% .text-column--header._ngcontent-%ID%,._nghost-%ID% .text-column--footer._ngcontent-%ID%{text-align:left!important}._nghost-%ID% .numeric-column._ngcontent-%ID%,._nghost-%ID% .numeric-column--header._ngcontent-%ID%,._nghost-%ID% .numeric-column--footer._ngcontent-%ID%{text-align:right}'];
-  }, "styles15", "styles$SkawaDataTableComponent", "$get$styles$SkawaDataTableComponent", function() {
-    return [$.$get$styles15()];
+  }, "styles9", "styles19", "$get$styles19", function() {
+    return ['@import url(https://fonts.googleapis.com/css?family=Roboto);._ngcontent-%ID%::-webkit-scrollbar{width:12px;height:12px}._ngcontent-%ID%::-webkit-scrollbar-button{height:0;width:0}._ngcontent-%ID%::-webkit-scrollbar-track{background-color:#fafafa}._ngcontent-%ID%::-webkit-scrollbar-button:start{display:none}._ngcontent-%ID%::-webkit-scrollbar-button:end{display:none}._ngcontent-%ID%::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:border-box;border:none;min-height:28px;padding:0 0 0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07)}._ngcontent-%ID%::-webkit-scrollbar-thumb:hover{background-color:rgba(0,0,0,.15);box-shadow:inset 1px 1px 1px rgba(0,0,0,.25)}._ngcontent-%ID%::-webkit-scrollbar-thumb:active{box-shadow:inset 1px 1px 3px rgba(0,0,0,.35);background-color:rgba(0,0,0,.2)}._nghost-%ID%{display:block;background-color:#fff}._nghost-%ID% table._ngcontent-%ID%{width:100%;box-sizing:border-box}._nghost-%ID% table.selectable._ngcontent-%ID% th:nth-child(2)._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:nth-child(2)._ngcontent-%ID%{padding-left:0}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:center;color:black;width:72px}._nghost-%ID% table.selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%,._nghost-%ID% table.selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID% material_checkbox._ngcontent-%ID%{margin:0;width:24px;height:24px;vertical-align:middle}._nghost-%ID% table.selectable._ngcontent-%ID% tfoot._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{text-align:right;padding-left:72px!important}._nghost-%ID% table.non-selectable._ngcontent-%ID% th:first-of-type._ngcontent-%ID%,._nghost-%ID% table.non-selectable._ngcontent-%ID% td:first-of-type._ngcontent-%ID%{padding-left:24px!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr._ngcontent-%ID%{transition-duration:.28s;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-property:background-color}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr:hover._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.highlighted._ngcontent-%ID%{background-color:rgba(158,158,158,.2)!important}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.selected._ngcontent-%ID%{background-color:rgba(158,158,158,.3)}._nghost-%ID% table._ngcontent-%ID% tbody._ngcontent-%ID% tr.odd-row._ngcontent-%ID%{background-color:rgba(158,158,158,.1)}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID%{border-bottom:1px solid #d0d0d0}._nghost-%ID% table._ngcontent-%ID% tr:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr:last-of-type._ngcontent-%ID%{height:56px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{padding-left:56px;text-align:right;vertical-align:middle;font-size:13px;font-weight:400;line-height:24px;letter-spacing:0;color:rgba(0,0,0,.87);height:48px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:first-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:first-of-type._ngcontent-%ID%{padding-left:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td:last-of-type._ngcontent-%ID%,._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th:last-of-type._ngcontent-%ID%{padding-right:24px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% td._ngcontent-%ID%{font-size:13px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th._ngcontent-%ID%{font-size:12px}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_downwards";opacity:0}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort-enabled._ngcontent-%ID% a:hover._ngcontent-%ID%:before{opacity:.38}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID%{font-weight:bold}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%{cursor:pointer}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort._ngcontent-%ID% a._ngcontent-%ID%:before{font-family:"Material Icons";content:"arrow_upwards";opacity:.87}._nghost-%ID% table._ngcontent-%ID% tr._ngcontent-%ID% th.sort.desc._ngcontent-%ID% a._ngcontent-%ID%:before{content:"arrow_downwards"}._nghost-%ID% .text-column._ngcontent-%ID%,._nghost-%ID% .text-column--header._ngcontent-%ID%,._nghost-%ID% .text-column--footer._ngcontent-%ID%{text-align:left!important}._nghost-%ID% .numeric-column._ngcontent-%ID%,._nghost-%ID% .numeric-column--header._ngcontent-%ID%,._nghost-%ID% .numeric-column--footer._ngcontent-%ID%{text-align:right}'];
+  }, "styles19", "styles$SkawaDataTableComponent", "$get$styles$SkawaDataTableComponent", function() {
+    return [$.$get$styles19()];
   }, "styles$SkawaDataTableComponent", "styles", "$get$styles", function() {
     return ["._nghost-%ID%{display:inline-flex}._nghost-%ID% .mdi._ngcontent-%ID%{font-size:24px}._nghost-%ID%[size=x-small] .mdi._ngcontent-%ID%{font-size:12px}._nghost-%ID%[size=small] .mdi._ngcontent-%ID%{font-size:13px}._nghost-%ID%[size=medium] .mdi._ngcontent-%ID%{font-size:16px}._nghost-%ID%[size=large] .mdi._ngcontent-%ID%{font-size:18px}._nghost-%ID%[size=x-large] .mdi._ngcontent-%ID%{font-size:20px}"];
   }, "styles", "styles$ExtendedMaterialIconComponent", "$get$styles$ExtendedMaterialIconComponent", function() {
@@ -27205,8 +37159,8 @@
   }, "styles$SkawaSnackbarComponent"]);
   Isolate = Isolate.$finishIsolateConstructor(Isolate);
   $ = new Isolate();
-  init.metadata = ["row", null, "_", "error", "self", "e", "stackTrace", "parent", "zone", "arg", "value", "callback", "arg1", "arg2", "s", "f", "o", "invocation", "result", "element", "child", "p0", "event", "index", "arguments", "attributeName", "context", "message", "url", "options", "promiseError", "promiseValue", "attr", "dict", "postCreate", "data", "n", "newMessage", "captureThis", "zoneValues", "specification", "item", "each", "arg4", "arg3", "p1", true, "elem", "findInAncestors", "didWork_", "t", "numberOfArguments", "__", "closure", "className", "action", "duration", "name"];
-  init.types = [{func: 1, ret: -1}, {func: 1, ret: P.Null}, {func: 1, ret: -1, args: [,]}, {func: 1, ret: P.Null, args: [,,]}, {func: 1, ret: P.String, args: [N.WrRowData]}, {func: 1, args: [,]}, {func: 1, ret: P.String, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, ret: -1, args: [P.String,,]}, {func: 1, ret: P.bool, args: [P.String]}, {func: 1, ret: P.Null, args: [W.Event]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, ret: P.Null, args: [-1]}, {func: 1, ret: -1, args: [P.Object], opt: [P.StackTrace]}, {func: 1, ret: P.Null, args: [N.KeyValueChangeRecord]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord]}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [W.KeyboardEvent]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, Q.GridDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Y.NgZone}, {func: 1, ret: P.bool, args: [W.NodeValidator]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: -1}]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, bounds: [P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}, 1]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}, 1, 2]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1}]}, {func: 1, ret: [S.AppView, N.CardDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: M.Injector, opt: [M.Injector]}, {func: 1, ret: P.bool, args: [K.BlockSyntax]}, {func: 1, ret: P.bool, args: [P.int]}, {func: 1, ret: P.bool, args: [R.InlineSyntax]}, {func: 1, ret: [S.AppView, T.SkawaSnackbarComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.String, args: [K.CarRowData]}, {func: 1, ret: -1, args: [W.UIEvent]}, {func: 1, ret: P.int, args: [G.SchoolRowData, G.SchoolRowData]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Element, W.Element]}]}, {func: 1, ret: P.int, args: [,,]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, ret: P.String, args: [U.Node0]}, {func: 1, bounds: [P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, ret: Y.ApplicationRef}, {func: 1, ret: D.Testability}, {func: 1, ret: M.Injector}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [,]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord, P.int, P.int]}, {func: 1, ret: P.Null, args: [Y.NgZoneError]}, {func: 1, ret: P.bool, args: [[P.Map, P.String,,]]}, {func: 1, ret: P.bool}, {func: 1, ret: -1, args: [P.Function]}, {func: 1, ret: P.Null, args: [W.DomException]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Node, W.Node]}]}, {func: 1, ret: -1, args: [P.String, P.String]}, {func: 1, ret: W.WindowBase, args: [P.String, P.String], opt: [P.String]}, {func: 1, ret: -1, opt: [P.String]}, {func: 1, args: [W.Element], opt: [P.bool]}, {func: 1, ret: [P.List,,]}, {func: 1, ret: P.Null, args: [P.bool]}, {func: 1, ret: U.JsTestability, args: [W.Element]}, {func: 1, ret: [P.List, U.JsTestability]}, {func: 1, ret: U.JsTestability, args: [D.Testability]}, {func: 1, args: [W.Event]}, {func: 1, ret: -1, args: [P.Object]}, {func: 1, ret: -1, args: [, P.StackTrace]}, {func: 1, ret: -1, args: [W.Event]}, {func: 1, ret: P.Null, args: [W.DivElement]}, {func: 1, args: [P.String]}, {func: 1, ret: -1, args: [W.Node, W.Node]}, {func: 1, ret: -1, args: [K.ListItem]}, {func: 1, ret: P.bool, args: [P.RegExp]}, {func: 1, args: [,,]}, {func: 1, ret: S.LinkReference}, {func: 1, ret: P.int, args: [P.String, P.String]}, {func: 1, ret: P.bool, args: [[P.Set, P.String]]}, {func: 1, ret: P.bool, args: [R.TagState]}, {func: 1, ret: P.Null, args: [P.String], opt: [P.String]}, {func: 1, ret: P.Null, args: [W.Element]}, {func: 1, ret: -1, args: [[P.Set, P.String]]}, {func: 1, ret: P.String, args: [,]}, {func: 1, ret: P.bool, args: [W.Node]}, {func: 1, ret: W.Element, args: [W.Node]}, {func: 1, ret: P.String, args: [P.String, P.String]}, {func: 1, ret: -1, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: P.bool, args: [G.SchoolRowData]}, {func: 1, ret: P.Null, args: [P.Symbol0,,]}, {func: 1, ret: P.JsFunction, args: [,]}, {func: 1, ret: [D.ComponentFactory, L.FirstDownPercentComponent], args: [U.RowData]}, {func: 1, ret: P.int, args: [P.int]}, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, U.RowData]], args: [[P.List, [G.SkawaDataTableColComponent, U.RowData]]]}, {func: 1, ret: P.bool, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: S.SortDirection, args: [P.String]}, {func: 1, ret: -1, args: [P.String], named: {action: T.SnackAction, duration: P.Duration}}, {func: 1, ret: P.Null, args: [T.SnackMessage]}, {func: 1, ret: [P.JsArray,,], args: [,]}, {func: 1, ret: P.JsObject, args: [,]}, {func: 1, bounds: [P.Object], ret: {func: 1, ret: 0}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, bounds: [P.Object, P.Object], ret: {func: 1, ret: 0, args: [1]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: {func: 1, ret: 0, args: [1, 2]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1, args: [P.Timer]}]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: -1, args: [P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, [P.Map,,,]]}, {func: 1, ret: P.String}, {func: 1, args: [[P.Map,,,]], opt: [{func: 1, ret: -1, args: [P.Object]}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, bounds: [P.num], ret: 0, args: [0, 0]}, {func: 1, ret: P.Null, args: [P.String,,]}, {func: 1, ret: P.Object, args: [P.int,,]}, {func: 1, ret: [S.AppView, Z.DynamicComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, B.MaterialCheckboxComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, E.SkawaSidebarItemComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, Q.AppComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: Q.AppViewUtils}, {func: 1, ret: [S.AppView, L.FirstDownPercentComponent], args: [[S.AppView,,], P.int]}, {func: 1, args: [, P.String]}, {func: 1, ret: [S.AppView, A.HexColorizePipeDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [P.Map, P.String,,], args: [,,]}];
+  init.metadata = ["_", "value", "row", null, "error", "stackTrace", "e", "event", "result", "data", "callback", "self", "o", "a", "parent", "b", "zone", "element", "arg", "arg1", "f", "invocation", "arg2", "index", "s", "arguments", "context", "item", "attributeName", "child", "p0", "isVisible", "argument", "message", "object", "options", "numberOfArguments", "attr", "dict", "postCreate", "n", "arg3", "captureThis", "arg4", "specification", "zoneValues", "each", "closure", "errorCode", "newMessage", true, "elem", "findInAncestors", "didWork_", "t", "promiseValue", "fn", "sub", "layoutRects", "changes", "option", "filterQuery", "state", "pane", false, "track", "highResTimer", "promiseError", "url", "__", "name", "className", "action", "duration", "p1"];
+  init.types = [{func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, ret: P.Null, args: [,,]}, {func: 1, ret: -1, args: [W.KeyboardEvent]}, {func: 1, ret: P.String, args: [N.WrRowData]}, {func: 1, args: [,]}, {func: 1, ret: -1, args: [P.Object]}, {func: 1, ret: P.bool, args: [P.Object]}, {func: 1, ret: P.bool, args: [P.String]}, {func: 1, ret: P.Null, args: [W.Event]}, {func: 1, ret: P.Null, args: [-1]}, {func: 1, ret: P.String, args: [P.String]}, {func: 1, ret: [P.Future,,]}, {func: 1, ret: -1, args: [P.Object], opt: [P.StackTrace]}, {func: 1, ret: -1, args: [P.String,,]}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [W.UIEvent]}, {func: 1, ret: P.String, args: [G.SchoolRowData]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, ret: [S.AppView, Q.DropdownButtonComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord]}, {func: 1, ret: P.bool}, {func: 1, ret: P.Null, args: [P.bool]}, {func: 1, ret: P.Null, args: [N.KeyValueChangeRecord]}, {func: 1, ret: -1, args: [W.Event]}, {func: 1, ret: P.Null, args: [W.MouseEvent]}, {func: 1, ret: P.String, args: [,]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, ret: -1, args: [[P.Set, P.String]]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1}]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Element, W.Element]}]}, {func: 1, ret: -1, args: [W.FocusEvent]}, {func: 1, ret: P.Null, args: [P.String,,]}, {func: 1, ret: -1, args: [P.bool]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: -1}]}, {func: 1, ret: P.bool, args: [W.Node]}, {func: 1, ret: P.bool, args: [, P.String]}, {func: 1, ret: -1, args: [[D.ComponentRef,,]]}, {func: 1, ret: [S.AppView, N.WrTableComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [P.Stream, [P.Rectangle, P.num]], args: [W.HtmlElement], named: {track: P.bool}}, {func: 1, ret: P.bool, args: [[P.Rectangle, P.num], [P.Rectangle, P.num]]}, {func: 1, bounds: [P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, ret: P.int, args: [P.int]}, {func: 1, ret: P.String, args: [U.Node0]}, {func: 1, ret: [S.AppView, Q.GridDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.bool, args: [P.int]}, {func: 1, ret: P.bool, args: [R.InlineSyntax]}, {func: 1, ret: [S.AppView, T.SkawaSnackbarComponent], args: [[S.AppView,,], P.int]}, {func: 1, bounds: [P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}, 1]}, {func: 1, ret: P.String, args: [K.CarRowData]}, {func: 1, ret: P.bool, args: [W.NodeValidator]}, {func: 1, ret: P.int, args: [G.SchoolRowData, G.SchoolRowData]}, {func: 1, ret: P.int, args: [,,]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: 0, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}, 1, 2]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, ret: M.Injector, opt: [M.Injector]}, {func: 1, ret: Y.NgZone}, {func: 1, ret: [S.AppView, N.CardDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.bool, args: [K.BlockSyntax]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone,, P.StackTrace]}, {func: 1, ret: P.Null, args: [Y.NgZoneError]}, {func: 1, ret: P.Null, args: [W.DomException]}, {func: 1, args: [, P.String]}, {func: 1, ret: -1, opt: [{func: 1, ret: P.int, args: [W.Node, W.Node]}]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: W.WindowBase, args: [P.String, P.String], opt: [P.String]}, {func: 1, ret: -1, opt: [P.String]}, {func: 1, bounds: [P.Object], ret: 0, args: [{func: 1, ret: 0}]}, {func: 1, args: [W.Element], opt: [P.bool]}, {func: 1, ret: [P.List,,]}, {func: 1, ret: W.CssClassSet, args: [W.Element]}, {func: 1, ret: U.JsTestability, args: [W.Element]}, {func: 1, ret: [P.List, U.JsTestability]}, {func: 1, ret: U.JsTestability, args: [D.Testability]}, {func: 1, ret: -1, args: [P.CssClassSetImpl]}, {func: 1, args: [P.CssClassSetImpl]}, {func: 1, ret: P.Null, args: [[D.ComponentRef,,]]}, {func: 1, ret: P.bool, args: [P.bool, P.CssClassSetImpl]}, {func: 1, args: [W.Event]}, {func: 1, ret: -1, args: [{func: 1, ret: -1, args: [P.bool, P.String]}]}, {func: 1, ret: -1, opt: [P.Object]}, {func: 1, ret: -1, args: [-1]}, {func: 1, ret: P.Null, args: [[P.StreamSubscription, [P.Rectangle, P.num]]]}, {func: 1, ret: P.Null, args: [[P.List, [P.Rectangle, P.num]]]}, {func: 1, ret: P.bool, args: [[P.Rectangle, P.num]]}, {func: 1, ret: P.Null, args: [W.DivElement]}, {func: 1, ret: -1, args: [P.String, P.String]}, {func: 1, ret: P.Null, args: [,], opt: [,]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, ret: P.String, args: [P.Object]}, {func: 1, ret: -1, args: [W.Node, W.Node]}, {func: 1, ret: P.bool, args: [P.Object, P.String]}, {func: 1, ret: P.num, args: [P.num,,]}, {func: 1, ret: [P.Stream, [P.Rectangle, P.num]]}, {func: 1, ret: [P.Future,,], args: [,]}, {func: 1, args: [,,]}, {func: 1, ret: [P.Future,,], args: [Z.OverlayState, W.HtmlElement]}, {func: 1, ret: [P.Rectangle, P.num], args: [,]}, {func: 1, ret: [P.Rectangle, P.num], args: [-1]}, {func: 1, ret: P.bool, args: [[P.Set, P.String]]}, {func: 1, ret: P.bool, args: [P.num, P.num]}, {func: 1, ret: R._RateLimitSink, args: [[P.EventSink,,]]}, {func: 1, ret: P.Null, args: [P.num]}, {func: 1, ret: -1, args: [P.num]}, {func: 1, ret: P.Null, args: [, P.StackTrace]}, {func: 1}, {func: 1, ret: -1, args: [P.Object, P.StackTrace]}, {func: 1, ret: W.Element, args: [W.Node]}, {func: 1, ret: -1, args: [, P.StackTrace]}, {func: 1, ret: -1, args: [K.ListItem]}, {func: 1, ret: P.bool, args: [P.RegExp]}, {func: 1, ret: P.JsFunction, args: [,]}, {func: 1, ret: S.LinkReference}, {func: 1, ret: P.int, args: [P.String, P.String]}, {func: 1, ret: [P.JsArray,,], args: [,]}, {func: 1, ret: P.JsObject, args: [,]}, {func: 1, ret: P.Null, args: [P.String], opt: [P.String]}, {func: 1, ret: P.int, args: [P.int,,]}, {func: 1, ret: P.Null, args: [W.Element]}, {func: 1, ret: [P.Map, P.String,,], args: [,,]}, {func: 1, ret: P.String}, {func: 1, ret: Y.ApplicationRef}, {func: 1, ret: Q.AppViewUtils}, {func: 1, ret: P.String, args: [P.String, P.String]}, {func: 1, ret: -1, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: P.bool, args: [G.SchoolRowData]}, {func: 1, ret: -1, args: [,], opt: [,]}, {func: 1, ret: P.String, args: [[G.SkawaDataTableColComponent, N.WrRowData]]}, {func: 1, ret: [D.ComponentFactory, L.FirstDownPercentComponent], args: [U.RowData]}, {func: 1, ret: P.Null, args: [[P.List, [Z.SelectionChangeRecord, [G.SkawaDataTableColComponent, N.WrRowData]]]]}, {func: 1, ret: P.bool, args: [[G.SkawaDataTableColComponent, N.WrRowData]]}, {func: 1, ret: [P.List, [S.SkawaDataTableComponent, U.RowData]], args: [T._ViewWrTableComponent1]}, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, N.WrRowData]], args: [T._ViewWrTableComponent2]}, {func: 1, ret: [P.List, [G.SkawaDataTableColComponent, U.RowData]], args: [[P.List, [G.SkawaDataTableColComponent, U.RowData]]]}, {func: 1, ret: P.bool, args: [[G.SkawaDataTableColComponent, U.RowData]]}, {func: 1, ret: S.SortDirection, args: [P.String]}, {func: 1, ret: -1, args: [P.String], named: {action: T.SnackAction, duration: P.Duration}}, {func: 1, ret: P.Null, args: [T.SnackMessage]}, {func: 1, ret: D.Testability}, {func: 1, ret: M.Injector}, {func: 1, bounds: [P.Object], ret: {func: 1, ret: 0}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0}]}, {func: 1, bounds: [P.Object, P.Object], ret: {func: 1, ret: 0, args: [1]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1]}]}, {func: 1, bounds: [P.Object, P.Object, P.Object], ret: {func: 1, ret: 0, args: [1, 2]}, args: [P.Zone, P.ZoneDelegate, P.Zone, {func: 1, ret: 0, args: [1, 2]}]}, {func: 1, ret: P.AsyncError, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Object, P.StackTrace]}, {func: 1, ret: P.Timer, args: [P.Zone, P.ZoneDelegate, P.Zone, P.Duration, {func: 1, ret: -1, args: [P.Timer]}]}, {func: 1, ret: -1, args: [P.Zone, P.ZoneDelegate, P.Zone, P.String]}, {func: 1, ret: -1, args: [P.String]}, {func: 1, ret: P.Zone, args: [P.Zone, P.ZoneDelegate, P.Zone, P.ZoneSpecification, [P.Map,,,]]}, {func: 1, ret: P.bool, args: [,,]}, {func: 1, ret: P.int, args: [,]}, {func: 1, ret: P.int, args: [P.Object]}, {func: 1, ret: P.bool, args: [P.Object, P.Object]}, {func: 1, ret: P.bool, args: [,]}, {func: 1, args: [[P.Map,,,]], opt: [{func: 1, ret: -1, args: [P.Object]}]}, {func: 1, ret: P.Object, args: [,]}, {func: 1, bounds: [P.num], ret: 0, args: [0, 0]}, {func: 1, ret: P.Null, args: [P.Symbol0,,]}, {func: 1, ret: P.Object, args: [P.int,,]}, {func: 1, ret: [S.AppView, Z.DynamicComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, B.MaterialCheckboxComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, G.MaterialPopupComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.Null, args: [R.CollectionChangeRecord, P.int, P.int]}, {func: 1, ret: P.Object, args: [P.Object]}, {func: 1, bounds: [P.Object], ret: {func: 1, ret: [P.Future,,], args: [0]}, args: [{func: 1, args: [0]}, P.Duration]}, {func: 1, bounds: [P.Object], ret: {func: 1, args: [0]}, args: [{func: 1, args: [0]}, P.Duration]}, {func: 1, ret: P.DateTime}, {func: 1, ret: [S.AppView, E.SkawaSidebarItemComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: [S.AppView, Q.AppComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.Null, args: [P.int,,]}, {func: 1, ret: [S.AppView, L.FirstDownPercentComponent], args: [[S.AppView,,], P.int]}, {func: 1, args: [P.String]}, {func: 1, ret: P.bool, args: [[P.Map, P.String,,]]}, {func: 1, ret: -1, args: [P.Function]}, {func: 1, ret: [S.AppView, A.HexColorizePipeDemoComponent], args: [[S.AppView,,], P.int]}, {func: 1, ret: P.bool, args: [R.TagState]}];
   function convertToFastObject(properties) {
     function MyClass() {
     }
