@@ -1,0 +1,7 @@
+# Win/Mac garbage
+.DS_Store
+Thumbs.db
+
+#IDE garbage
+.dart_tool
+.idea
