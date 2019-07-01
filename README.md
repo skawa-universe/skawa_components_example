@@ -11,4 +11,4 @@ and built on top of `package:angular_components`. The goal is to provide a coupl
 
 [See the gallery](https://dart-lang.github.io/angular_components_example/)
 [See the code](https://github.com/dart-lang/angular_components_example/blob/master/lib/app_component.html)
-[Use the package](https://pub.dartlang.org/packages/angular_components)
+[Use the package](https://pub.dev/packages/angular_components)

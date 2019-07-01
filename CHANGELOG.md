@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Updated to dart 2.3.0 
+
 ## 1.0.0
 
 - `skawa_components` and `skawa_material_components` dependencies link to pub 
