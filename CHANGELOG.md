@@ -1,3 +1,7 @@
+## 1.2.0
+
+- Updated to dart 2.4.0 
+
 ## 1.1.0
 
 - Updated to dart 2.3.0 
