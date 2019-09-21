@@ -1,4 +1,4 @@
-<skawa-data-table [data]="selectableRowData" [selectable]="true" (sort)="sort($event)">
+<skawa-data-table [data]="data" [selectable]="true" (change)="selectedRows = $event" (sort)="sort($event)">
     <skawa-data-table-col [accessor]="categoryAccessor"
                           header="Class"
                           footer="Total:"

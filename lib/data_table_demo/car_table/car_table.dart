@@ -1,31 +1,42 @@
 import 'package:angular/core.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
-import 'package:skawa_material_components/data_table/row_data.dart';
+import 'package:skawa_material_components/data_table/table_row.dart';
 
 @Component(
     selector: 'car-table',
     templateUrl: 'car_table.html',
     directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
-    directiveTypes: [Typed<SkawaDataTableComponent<CarRowData>>(), Typed<SkawaDataTableColComponent<CarRowData>>()],
+    directiveTypes: [Typed<SkawaDataTableComponent<Car>>(), Typed<SkawaDataTableColComponent<Car>>()],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class CarTableComponent {
-  List<CarRowData> rowData = <CarRowData>[
-    CarRowData('Trabant', 'Eastern delight', classes: ['trabant']),
-    CarRowData('Jaguar', 'Hrrrrr'),
-    CarRowData('Ford', 'Something for everybody'),
-    CarRowData('Renault', 'Well, RedBull F1 team uses them, why not?'),
+  static const List<Car> cars = <Car>[
+    Car('Trabant', 'Eastern delight'),
+    Car('Jaguar', 'Hrrrrr'),
+    Car('Ford', 'Something for everybody'),
+    Car('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
-  String makeAccessor(CarRowData row) => row.name;
+  TableRows<Car> _rowData;
 
-  String opinionAccessor(CarRowData row) => row.opinion;
+  TableRows<Car> get rowData {
+    if (_rowData == null) {
+      _rowData = TableRows();
+      _rowData.addRow(cars.first, classes: ["trabant"]);
+      _rowData.addRows(cars.skip(1));
+    }
+    return _rowData;
+  }
+
+  String makeAccessor(Car row) => row.name;
+
+  String opinionAccessor(Car row) => row.opinion;
 }
 
-class CarRowData extends RowData {
+class Car {
   final String name;
 
   final String opinion;
 
-  CarRowData(this.name, this.opinion, {List<String> classes}) : super(false, classes: classes);
+  const Car(this.name, this.opinion);
 }
