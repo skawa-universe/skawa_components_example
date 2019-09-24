@@ -4,14 +4,11 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/material_select/material_dropdown_select.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
-import 'package:angular_components/model/ui/has_factory.dart';
 import 'package:angular_components/model/ui/icon.dart';
-import 'package:skawa_material_components/data_table/column_row_data.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
 import 'package:skawa_material_components/data_table/table_row.dart';
 
-import 'first_down_percent/first_down_percent.dart';
 import 'first_down_percent/first_down_percent.template.dart' as fpc;
 
 @Component(
@@ -28,19 +25,15 @@ import 'first_down_percent/first_down_percent.template.dart' as fpc;
     ],
     directiveTypes: [
       Typed<SkawaDataTableComponent<PlayerStats>>(),
-      Typed<SkawaDataTableColComponent<PlayerStats>>(),
-      Typed<SkawaDataColRendererDirective<PlayerStats>>(),
-      Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<PlayerStats>>>(),
+      Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<PlayerStats, dynamic>>>(),
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class WrTableComponent implements OnInit {
-  static final FactoryRenderer<FirstDownPercentComponent, ColumnRowData<PlayerStats>> firstDownPercentRenderer =
-      (ColumnRowData<PlayerStats> row) => fpc.FirstDownPercentComponentNgFactory;
-  final SelectionModel<SkawaDataTableColComponent<PlayerStats>> columnModel =
-      SelectionModel<SkawaDataTableColComponent<PlayerStats>>.multi(selectedValues: _columns);
+  final SelectionModel<SkawaDataTableColComponent<PlayerStats, dynamic>> columnModel =
+      SelectionModel<SkawaDataTableColComponent<PlayerStats, dynamic>>.multi(selectedValues: _columns);
 
-  final SelectionOptions<SkawaDataTableColComponent<PlayerStats>> columnOptions =
-      SelectionOptions<SkawaDataTableColComponent<PlayerStats>>.fromList(_columns);
+  final SelectionOptions<SkawaDataTableColComponent<PlayerStats, dynamic>> columnOptions =
+      SelectionOptions<SkawaDataTableColComponent<PlayerStats, dynamic>>.fromList(_columns);
 
   static const List<PlayerStats> playerStats = <PlayerStats>[
     PlayerStats('Calvin Johnson', 'DET', 122, 1964, 92, 4400),
@@ -58,49 +51,49 @@ class WrTableComponent implements OnInit {
   TableRows<PlayerStats> _wrRowData;
 
   TableRows<PlayerStats> get wrRowData {
-    _wrRowData ??= TableRows()..addRows(playerStats);
+    _wrRowData ??= TableRows(playerStats);
     return _wrRowData;
   }
 
-  List<SkawaDataTableColComponent<PlayerStats>> columns = _columns;
+  List<SkawaDataTableColComponent<PlayerStats, dynamic>> columns = _columns;
 
   Icon icon = Icon('more_vert');
 
-  static final List<SkawaDataTableColComponent<PlayerStats>> _columns = [
-    SkawaDataTableColComponent<PlayerStats>(null)
+  static final List<SkawaDataTableColComponent<PlayerStats, dynamic>> _columns = [
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Player'
       ..accessor = nameAccessor
       ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Team'
       ..accessor = teamAccessor
       ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Rec'
       ..accessor = recAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Yards'
       ..accessor = yardsAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Avg'
       ..accessor = avgAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = 'Yds/G'
       ..accessor = yardPerGameAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats, String>()
       ..header = '1st'
       ..accessor = firstDownAccessor,
-    SkawaDataTableColComponent<PlayerStats>(
-        SkawaDataColRendererDirective<PlayerStats>()..factoryRenderer = firstDownPercentRenderer)
-      ..header = '1st%'
-      ..parameters = {"useProperty": "firstDownPercent"},
-    SkawaDataTableColComponent<PlayerStats>(
-        SkawaDataColRendererDirective<PlayerStats>()..factoryRenderer = firstDownPercentRenderer)
+    SkawaDataTableColComponent<PlayerStats, int>()
+      ..factoryRenderer = ((dynamic row) => fpc.FirstDownPercentComponentNgFactory)
+      ..accessor = firstDownPercentAccessor
+      ..header = '1st%',
+    SkawaDataTableColComponent<PlayerStats, int>()
+      ..factoryRenderer = ((dynamic row) => fpc.FirstDownPercentComponentNgFactory)
+      ..accessor = ((PlayerStats row) => row.popularity)
       ..header = 'Popularity'
-      ..parameters = {"useProperty": "popularity"}
   ];
 
-  String itemRenderer(SkawaDataTableColComponent<PlayerStats> row) => row.header;
+  String itemRenderer(SkawaDataTableColComponent<PlayerStats, dynamic> row) => row.header;
 
   static String nameAccessor(PlayerStats row) => row.name;
 
@@ -115,6 +108,8 @@ class WrTableComponent implements OnInit {
   static String yardPerGameAccessor(PlayerStats row) => (row.yards / 16).toStringAsFixed(2);
 
   static String firstDownAccessor(PlayerStats row) => row.firstDowns.toString();
+
+  static int firstDownPercentAccessor(PlayerStats row) => row.firstDownPercent;
 
   @ViewChild(SkawaDataTableComponent)
   SkawaDataTableComponent dataTableComponent;
