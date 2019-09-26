@@ -4,7 +4,12 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/material_select/material_dropdown_select.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
+import 'package:angular_components/model/ui/has_factory.dart';
+import 'package:angular_components/model/ui/has_renderer.dart';
 import 'package:angular_components/model/ui/icon.dart';
+import 'package:skawa_components_example/data_table_demo/wr_table/percent_renderer/percent_renderer.dart';
+import 'package:skawa_components_example/data_table_demo/wr_table/percent_renderer/percent_renderer.template.dart'
+    as pr;
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
 import 'package:skawa_material_components/data_table/table_row.dart';
@@ -24,69 +29,36 @@ import 'package:skawa_material_components/data_table/table_row.dart';
     directiveTypes: [
       Typed<SkawaDataTableComponent<PlayerStats>>(),
       Typed<SkawaDataTableColComponent<PlayerStats>>(),
+      Typed<SkawaDataTableRenderColComponent<PlayerStats, PercentRendererConfig>>(),
       Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<PlayerStats>>>(),
     ],
+    exports: [SkawaDataTableColComponent, SkawaDataTableRenderColComponent],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class WrTableComponent implements OnInit {
+  final SelectionModel<String> columnModel =
+      SelectionModel<String>.multi(selectedValues: allColumns);
 
-  final SelectionModel<SkawaDataTableColComponent<PlayerStats>> columnModel =
-      SelectionModel<SkawaDataTableColComponent<PlayerStats>>.multi(selectedValues: _columns);
-
-  final SelectionOptions<SkawaDataTableColComponent<PlayerStats>> columnOptions =
-      SelectionOptions<SkawaDataTableColComponent<PlayerStats>>.fromList(_columns);
+  final SelectionOptions<String> columnOptions =
+      SelectionOptions<String>.fromList(allColumns);
 
   static const List<PlayerStats> playerStats = <PlayerStats>[
-    PlayerStats('Calvin Johnson', 'DET', 122, 1964, 92, 4400),
-    PlayerStats('Brandon Marshall', 'CHI', 118, 1508, 75, 6900),
-    PlayerStats('Wes Welker', 'NE', 118, 1354, 72, 9300),
-    PlayerStats('Andre Johnson', 'HOU', 112, 1598, 79, 7700),
-    PlayerStats('Jason Witten', 'DAL', 110, 1039, 56, 1100),
-    PlayerStats('Reggie Wayne', 'IND', 106, 1355, 73, 5500),
-    PlayerStats('A.J. Green', 'CIN', 97, 1530, 61, 8800),
-    PlayerStats('Demaryius Thomas', 'DEN', 94, 1434, 60, 2800),
-    PlayerStats('Tony Gonzalez', 'ATL', 93, 930, 65, 9000),
-    PlayerStats('Dez Bryant', 'DAL', 92, 1382, 54, 7200),
+    PlayerStats('Calvin Johnson', 'DET', 122, 1964, 92, 44),
+    PlayerStats('Brandon Marshall', 'CHI', 118, 1508, 75, 69),
+    PlayerStats('Wes Welker', 'NE', 118, 1354, 72, 93),
+    PlayerStats('Andre Johnson', 'HOU', 112, 1598, 79, 77),
+    PlayerStats('Jason Witten', 'DAL', 110, 1039, 56, 11),
+    PlayerStats('Reggie Wayne', 'IND', 106, 1355, 73, 55),
+    PlayerStats('A.J. Green', 'CIN', 97, 1530, 61, 88),
+    PlayerStats('Demaryius Thomas', 'DEN', 94, 1434, 60, 28),
+    PlayerStats('Tony Gonzalez', 'ATL', 93, 930, 65, 90),
+    PlayerStats('Dez Bryant', 'DAL', 92, 1382, 54, 72)
   ];
 
   TableRows<PlayerStats> wrRowData = TableRows(playerStats);
 
-  List<SkawaDataTableColComponent<PlayerStats>> columns = _columns;
+  static final List<String> allColumns = ["Player", "Team", "Rec", "Yards", "Avg", "Yds/G", "1st"];
 
   Icon icon = Icon('more_vert');
-
-  static final List<SkawaDataTableColComponent<PlayerStats>> _columns = [
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Player'
-      ..accessor = nameAccessor
-      ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Team'
-      ..accessor = teamAccessor
-      ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Rec'
-      ..accessor = recAccessor,
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Yards'
-      ..accessor = yardsAccessor,
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Avg'
-      ..accessor = avgAccessor,
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = 'Yds/G'
-      ..accessor = yardPerGameAccessor,
-    SkawaDataTableColComponent<PlayerStats>()
-      ..header = '1st'
-      ..accessor = firstDownAccessor,
-    SkawaDataTableColComponent<PlayerStats>()
-      ..factoryRenderer = firstDownPercentRenderer
-      ..header = '1st%'
-      ..parameters = {"useProperty": "firstDownPercent"},
-    SkawaDataTableColComponent<PlayerStats>()
-      ..factoryRenderer = firstDownPercentRenderer
-      ..header = 'Popularity'
-      ..parameters = {"useProperty": "popularity"}
-  ];
 
   String itemRenderer(SkawaDataTableColComponent<PlayerStats> row) => row.header;
 
@@ -104,12 +76,19 @@ class WrTableComponent implements OnInit {
 
   static String firstDownAccessor(PlayerStats row) => row.firstDowns.toString();
 
+  static FactoryRenderer<RendersValue, PercentRendererConfig> percentRendererFactory =
+      (PercentRendererConfig config) => pr.PercentRendererComponentNgFactory;
+
+  static RenderValueProducer<PercentRendererConfig, PlayerStats> firstDownPercentProducer = ((PlayerStats stats) => PercentRendererConfig(stats.firstDownPercent, 10000));
+
+  static RenderValueProducer<PercentRendererConfig, PlayerStats> popularityProducer = ((PlayerStats stats) => PercentRendererConfig(stats.popularity, 100));
+
   @ViewChild(SkawaDataTableComponent)
   SkawaDataTableComponent dataTableComponent;
 
   @override
   void ngOnInit() => columnModel.selectionChanges.listen((_) {
-        columns = _columns.where((row) => columnModel.selectedValues.contains(row)).toList();
+//        columns = _columns.where((row) => columnModel.selectedValues.contains(row)).toList();
         dataTableComponent.changeDetectorRef.markForCheck();
       });
 }

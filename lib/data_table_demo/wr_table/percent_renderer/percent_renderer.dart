@@ -14,6 +14,8 @@ class PercentRendererComponent extends RendersValue<PercentRendererConfig> {
 }
 
 class PercentRendererConfig {
-  int value;
-  int maxValue;
+  final int value;
+  final int maxValue;
+
+  PercentRendererConfig(this.value, this.maxValue);
 }
