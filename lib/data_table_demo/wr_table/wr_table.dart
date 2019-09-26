@@ -4,15 +4,10 @@ import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:angular_components/material_select/material_dropdown_select.dart';
 import 'package:angular_components/model/selection/selection_model.dart';
 import 'package:angular_components/model/selection/selection_options.dart';
-import 'package:angular_components/model/ui/has_factory.dart';
 import 'package:angular_components/model/ui/icon.dart';
-import 'package:skawa_material_components/data_table/column_row_data.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
 import 'package:skawa_material_components/data_table/table_row.dart';
-
-import 'first_down_percent/first_down_percent.dart';
-import 'first_down_percent/first_down_percent.template.dart' as fpc;
 
 @Component(
     selector: 'wr-table',
@@ -29,13 +24,11 @@ import 'first_down_percent/first_down_percent.template.dart' as fpc;
     directiveTypes: [
       Typed<SkawaDataTableComponent<PlayerStats>>(),
       Typed<SkawaDataTableColComponent<PlayerStats>>(),
-      Typed<SkawaDataColRendererDirective<PlayerStats>>(),
       Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<PlayerStats>>>(),
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class WrTableComponent implements OnInit {
-  static final FactoryRenderer<FirstDownPercentComponent, ColumnRowData<PlayerStats>> firstDownPercentRenderer =
-      (ColumnRowData<PlayerStats> row) => fpc.FirstDownPercentComponentNgFactory;
+
   final SelectionModel<SkawaDataTableColComponent<PlayerStats>> columnModel =
       SelectionModel<SkawaDataTableColComponent<PlayerStats>>.multi(selectedValues: _columns);
 
@@ -55,47 +48,42 @@ class WrTableComponent implements OnInit {
     PlayerStats('Dez Bryant', 'DAL', 92, 1382, 54, 7200),
   ];
 
-  TableRows<PlayerStats> _wrRowData;
-
-  TableRows<PlayerStats> get wrRowData {
-    _wrRowData ??= TableRows()..addRows(playerStats);
-    return _wrRowData;
-  }
+  TableRows<PlayerStats> wrRowData = TableRows(playerStats);
 
   List<SkawaDataTableColComponent<PlayerStats>> columns = _columns;
 
   Icon icon = Icon('more_vert');
 
   static final List<SkawaDataTableColComponent<PlayerStats>> _columns = [
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Player'
       ..accessor = nameAccessor
       ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Team'
       ..accessor = teamAccessor
       ..classString = 'text-column',
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Rec'
       ..accessor = recAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Yards'
       ..accessor = yardsAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Avg'
       ..accessor = avgAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = 'Yds/G'
       ..accessor = yardPerGameAccessor,
-    SkawaDataTableColComponent<PlayerStats>(null)
+    SkawaDataTableColComponent<PlayerStats>()
       ..header = '1st'
       ..accessor = firstDownAccessor,
-    SkawaDataTableColComponent<PlayerStats>(
-        SkawaDataColRendererDirective<PlayerStats>()..factoryRenderer = firstDownPercentRenderer)
+    SkawaDataTableColComponent<PlayerStats>()
+      ..factoryRenderer = firstDownPercentRenderer
       ..header = '1st%'
       ..parameters = {"useProperty": "firstDownPercent"},
-    SkawaDataTableColComponent<PlayerStats>(
-        SkawaDataColRendererDirective<PlayerStats>()..factoryRenderer = firstDownPercentRenderer)
+    SkawaDataTableColComponent<PlayerStats>()
+      ..factoryRenderer = firstDownPercentRenderer
       ..header = 'Popularity'
       ..parameters = {"useProperty": "popularity"}
   ];

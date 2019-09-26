@@ -17,15 +17,12 @@ class CarTableComponent {
     Car('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
-  TableRows<Car> _rowData;
+  TableRows<Car> rowData;
 
-  TableRows<Car> get rowData {
-    if (_rowData == null) {
-      _rowData = TableRows();
-      _rowData.addRow(cars.first, classes: ["trabant"]);
-      _rowData.addRows(cars.skip(1));
-    }
-    return _rowData;
+  CarTableComponent() {
+    rowData = TableRows(null)
+      ..addRow(cars.first, classes: ["trabant"])
+      ..addRows(cars.skip(1));
   }
 
   String makeAccessor(Car row) => row.name;

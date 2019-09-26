@@ -15,12 +15,7 @@ import 'package:skawa_material_components/data_table/table_row.dart';
 class SchoolTableComponent {
   List<SchoolClass> selectedRows = [];
 
-  TableRows<SchoolClass> _data;
-
-  TableRows<SchoolClass> get data {
-    _data ??= TableRows()..addRows(schoolClasses);
-    return _data;
-  }
+  final TableRows<SchoolClass> data = TableRows(schoolClasses);
 
   String categoryAccessor(SchoolClass row) => row.category;
 
