@@ -8,36 +8,9 @@
     <!--</material-dropdown-select>-->
 </h3>
 
-<skawa-data-table [data]="wrRowData" [selectable]="false" *ngIf="columnModel.selectedValues.isNotEmpty">
-    <skawa-data-table-col [accessor]="nameAccessor"
-                          header="Player">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="teamAccessor"
-                          header="Team">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="recAccessor"
-                          header="Rec">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="yardsAccessor"
-                          header="Yards">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="avgAccessor"
-                          header="Avg">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="yardPerGameAccessor"
-                          header="Yds/G">
-    </skawa-data-table-col>
-    <skawa-data-table-col [accessor]="firstDownAccessor"
-                          header="1st">
-    </skawa-data-table-col>
-    <skawa-data-table-render-col
-            [factoryRenderer]="percentRendererFactory"
-            [valueProducer]="firstDownPercentProducer"
-            header="1st%">
-    </skawa-data-table-render-col>
-    <skawa-data-table-render-col
-            [factoryRenderer]="percentRendererFactory"
-            [valueProducer]="popularityProducer"
-            header="Popularity">
-    </skawa-data-table-render-col>
+<skawa-data-table
+        [data]="wrRowData"
+        [columns]="columns"
+        [selectable]="false"
+        *ngIf="columnModel.selectedValues.isNotEmpty">
 </skawa-data-table>

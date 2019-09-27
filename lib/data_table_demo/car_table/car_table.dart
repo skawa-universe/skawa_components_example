@@ -6,8 +6,8 @@ import 'package:skawa_material_components/data_table/table_row.dart';
 @Component(
     selector: 'car-table',
     templateUrl: 'car_table.html',
-    directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
-    directiveTypes: [Typed<SkawaDataTableComponent<Car>>(), Typed<SkawaDataTableColComponent<Car>>()],
+    directives: [SkawaDataTableComponent, SkawaDataTableSortDirective],
+    directiveTypes: [Typed<SkawaDataTableComponent<Car>>()],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class CarTableComponent {
   static const List<Car> cars = <Car>[
@@ -19,15 +19,25 @@ class CarTableComponent {
 
   TableRows<Car> rowData;
 
+  List<SkawaDataTableColumn<Car>> columns;
+
   CarTableComponent() {
     rowData = TableRows(null)
       ..addRow(cars.first, classes: ["trabant"])
       ..addRows(cars.skip(1));
+
+    columns = [
+      SkawaDataTableColumn()..header = "Car make"
+      ..titleAccessor = makeAccessor
+      ..accessor = makeAccessor,
+      SkawaDataTableColumn()..header = "My strong opinion"
+        ..accessor = opinionAccessor
+    ];
   }
 
-  String makeAccessor(Car row) => row.name;
+  static String makeAccessor(Car row) => row.name;
 
-  String opinionAccessor(Car row) => row.opinion;
+  static String opinionAccessor(Car row) => row.opinion;
 }
 
 class Car {

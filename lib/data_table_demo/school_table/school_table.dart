@@ -6,27 +6,33 @@ import 'package:skawa_material_components/data_table/table_row.dart';
 @Component(
     selector: 'school-table',
     templateUrl: 'school_table.html',
-    directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
+    directives: [SkawaDataTableComponent, SkawaDataTableSortDirective],
     directiveTypes: [
-      Typed<SkawaDataTableComponent<SchoolClass>>(),
-      Typed<SkawaDataTableColComponent<SchoolClass>>()
+      Typed<SkawaDataTableComponent<SchoolClass>>()
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class SchoolTableComponent {
   List<SchoolClass> selectedRows = [];
 
+  List<SkawaDataTableColumn<SchoolClass>> columns;
+
   final TableRows<SchoolClass> data = TableRows(schoolClasses);
 
-  String categoryAccessor(SchoolClass row) => row.category;
+  static String categoryAccessor(SchoolClass row) => row.category;
 
-  String maleAccessor(SchoolClass row) => row.male.toString();
+  static String maleAccessor(SchoolClass row) => row.male.toString();
 
-  String femaleAccessor(SchoolClass row) => row.female.toString();
+  static String femaleAccessor(SchoolClass row) => row.female.toString();
 
-  String peopleAccessor(SchoolClass row) => (row.female + row.male).toString();
+  static String peopleAccessor(SchoolClass row) => (row.female + row.male).toString();
+
+  SchoolTableComponent() {
+    initialize();
+  }
 
   String aggregate(DataTableAccessor<SchoolClass> accessor) {
     Iterable<String> mapped = selectedRows.map(accessor);
+    print(mapped.join(", "));
     return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
   }
 
@@ -35,11 +41,7 @@ class SchoolTableComponent {
     return (int.parse(a) + int.parse(b)).toString();
   }
 
-  void SelectionChange(List<SchoolClass> selectedRows) {
-
-  }
-
-  void sort(SkawaDataTableColComponent column) {
+  void sort(SkawaDataTableColumn column) {
     if (!column.sortModel.isSorted) {
       // Apply default sorting when no sort is specified
       data.rows.sort((a, b) => a.data.category.compareTo(b.data.category));
@@ -64,6 +66,28 @@ class SchoolTableComponent {
     SchoolClass('1. class', 15, 12),
     SchoolClass('4. class', 20, 13),
   ];
+
+  void initialize () {
+    columns = [
+      SkawaDataTableColumn()..header = "Class"
+        ..accessor = categoryAccessor
+        ..footer = "Total"
+        ..skipFooter = false,
+      SkawaDataTableColumn()..header = "Male"
+        ..accessor = maleAccessor
+        ..footer = aggregate(maleAccessor)
+        ..skipFooter = false,
+      SkawaDataTableColumn()..header = "Female"
+        ..accessor = femaleAccessor
+        ..footer = aggregate(femaleAccessor)
+        ..skipFooter = false,
+      SkawaDataTableColumn()..header = "All"
+        ..accessor = peopleAccessor
+        ..footer = aggregate(peopleAccessor)
+        ..skipFooter = false
+    ];
+  }
+
 }
 
 class SchoolClass {

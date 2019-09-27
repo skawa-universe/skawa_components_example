@@ -1,6 +1,6 @@
 <h3>Simple datatable</h3>
 
-<skawa-data-table [data]="rowData" [selectable]="false">
+<skawa-data-table [data]="rowData" [columns]="columns" [selectable]="false">
     <skawa-data-table-col [accessor]="makeAccessor"
                           [titleAccessor]="makeAccessor"
                           header="Car make"
