@@ -1,16 +1,63 @@
 <h3>
-    <span>Datatable with colRenderer</span>
+    <span>Data table with custom component renderer column</span>
     <material-dropdown-select [selection]="columnModel"
                               [options]="columnOptions"
                               [showButtonBorder]="false"
-                              [icon]="icon "
-                              [itemRenderer]="itemRenderer">
+                              [icon]="icon">
     </material-dropdown-select>
 </h3>
-
-
-<skawa-data-table [data]="wrRowData"
-                  [selectable]="false"
-                  *ngIf="columnModel.selectedValues.isNotEmpty"
-                  [columns]="columns">
+<skawa-data-table
+        [data]="wrRowData"
+        [selectable]="false"
+        *ngIf="columnModel.selectedValues.isNotEmpty">
+    <skawa-data-table-col
+            *ngIf="columns.contains('Player')"
+            #textColumn
+            header="Player"
+            [accessor]="nameAccessor"
+            class="text-column">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Team')"
+            #textColumn
+            header="Team"
+            [accessor]="teamAccessor"
+            class="text-column">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Rec')"
+            header="Rec"
+            [accessor]="recAccessor">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Yards')"
+            header="Yards"
+            [accessor]="yardsAccessor">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Avg')"
+            #textColumn
+            header="Avg"
+            [accessor]="avgAccessor">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Yds/G')"
+            #textColumn
+            header="Yds/G"
+            [accessor]="yardPerGameAccessor">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('1st%')"
+            #percentColumn
+            header="1st%"
+            [accessor]="firstDownPercentAccessor"
+            [colRenderer]="percentRendererFactory">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            *ngIf="columns.contains('Popularity')"
+            #percentColumn
+            header="Popularity"
+            [accessor]="popularityAccessor"
+            [colRenderer]="percentRendererFactory">
+    </skawa-data-table-col>
 </skawa-data-table>

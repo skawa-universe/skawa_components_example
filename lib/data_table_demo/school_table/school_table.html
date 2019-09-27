@@ -1,6 +1,34 @@
 <skawa-data-table [data]="data"
                   [selectable]="true"
                   (change)="selectedRows = $event"
-                  (sort)="sort($event)"
-                  [columns]="columns">
+                  (sort)="sort($event)">
+    <skawa-data-table-col
+            #classColumn
+            header="Class"
+            [accessor]="categoryAccessor"
+            [skipFooter]="false"
+            footer="Total">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            header="Male"
+            sortable
+            initialSort="asc"
+            [accessor]="maleAccessor"
+            [skipFooter]="false"
+            [footer]="aggregate(maleAccessor)">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            header="Female"
+            sortable="desc, asc"
+            [accessor]="femaleAccessor"
+            [skipFooter]="false"
+            [footer]="aggregate(femaleAccessor)">
+    </skawa-data-table-col>
+    <skawa-data-table-col
+            header="All"
+            sortable="desc"
+            [accessor]="peopleAccessor"
+            [skipFooter]="false"
+            [footer]="aggregate(peopleAccessor)">
+    </skawa-data-table-col>
 </skawa-data-table>

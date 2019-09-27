@@ -6,59 +6,36 @@ import 'package:skawa_material_components/data_table/table_row.dart';
 @Component(
     selector: 'school-table',
     templateUrl: 'school_table.html',
-    directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
-    directiveTypes: [Typed<SkawaDataTableComponent<SchoolClass>>()],
+    directives: [skawaDataTableDirectives],
+    directiveTypes: [
+      Typed<SkawaDataTableComponent<SchoolClass>>(),
+      Typed<SkawaDataTableColComponent<SchoolClass, int>>(),
+      Typed<SkawaDataTableColComponent<SchoolClass, String>>(on: "classColumn"),
+    ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class SchoolTableComponent {
   List<SchoolClass> selectedRows = [];
 
-  TableRows<SchoolClass> _data;
-
-  TableRows<SchoolClass> get data {
-    _data ??= TableRows(schoolClasses);
-    return _data;
-  }
-
-  List<SkawaDataTableColComponent<SchoolClass, String>> columns = [
-    SkawaDataTableColComponent<SchoolClass, String>()
-      ..accessor = categoryAccessor
-      ..header = 'Class'
-      ..skipFooter = false
-      ..footer = 'Total:',
-    SkawaDataTableColComponent<SchoolClass, String>()
-      ..accessor = maleAccessor
-      ..header = 'Male'
-      ..skipFooter = false
-      ..footer = 'Total:',
-    SkawaDataTableColComponent<SchoolClass, String>()
-      ..accessor = femaleAccessor
-      ..header = 'Female'
-      ..skipFooter = false
-      ..footer = 'Total:',
-    SkawaDataTableColComponent<SchoolClass, String>()
-      ..accessor = peopleAccessor
-      ..header = 'All'
-      ..skipFooter = false
-      ..footer = 'Total:',
-  ];
+  TableRows<SchoolClass> data = TableRows(schoolClasses);
 
   static String categoryAccessor(SchoolClass row) => row.category;
 
-  static String maleAccessor(SchoolClass row) => row.male.toString();
+  static int maleAccessor(SchoolClass row) => row.male;
 
-  static String femaleAccessor(SchoolClass row) => row.female.toString();
+  static int femaleAccessor(SchoolClass row) => row.female;
 
-  static String peopleAccessor(SchoolClass row) => (row.female + row.male).toString();
+  static int peopleAccessor(SchoolClass row) => row.female + row.male;
 
-//  String aggregate(DataTableAccessor<SchoolClass> accessor) {
-//    Iterable<String> mapped = selectedRows.map(accessor);
-//    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
-//  }
-//
-//  String _aggregateReducer(String a, String b) {
-//    if (a == null || b == null) return a ?? b;
-//    return (int.parse(a) + int.parse(b)).toString();
-//  }
+  String aggregate(DataTableAccessor<SchoolClass, int> accessor) {
+    Iterable<int> mapped = selectedRows.map(accessor);
+    int result = mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : null;
+    return result?.toString() ?? '-';
+  }
+
+  int _aggregateReducer(int a, int b) {
+    if (a == null || b == null) return a ?? b;
+    return a + b;
+  }
 
   void SelectionChange(List<SchoolClass> selectedRows) {}
 
