@@ -1,3 +1,8 @@
+## 1.2.1
+
+- new Components/Directives example added (`CodeMirrorComponent`, `DiffComponent`, `SkawaListWrapperComponent`, `CardOverflowDirective`)
+- Updated to dart 2.5.0
+
 ## 1.2.0
 
 - Updated to dart 2.4.0 

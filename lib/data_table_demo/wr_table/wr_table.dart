@@ -25,6 +25,7 @@ import 'first_down_percent/first_down_percent.template.dart' as fpc;
     ],
     directiveTypes: [
       Typed<SkawaDataTableComponent<PlayerStats>>(),
+      Typed<SkawaDataTableColComponent<PlayerStats, dynamic>>(),
       Typed<MaterialDropdownSelectComponent<SkawaDataTableColComponent<PlayerStats, dynamic>>>(),
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)

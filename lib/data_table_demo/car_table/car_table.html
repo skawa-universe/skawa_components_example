@@ -1,3 +1,11 @@
 <h3>Simple datatable</h3>
 
-<skawa-data-table [data]="rowData" [selectable]="false" [columns]="columns"></skawa-data-table>
+<skawa-data-table [data]="rowData">
+    <skawa-data-table-col [accessor]="makeAccessor"
+                          header="Car make"
+                          class="text-column">
+    </skawa-data-table-col>
+    <skawa-data-table-col [accessor]="opinionAccessor"
+                          header="My strong opinion">
+    </skawa-data-table-col>
+</skawa-data-table>

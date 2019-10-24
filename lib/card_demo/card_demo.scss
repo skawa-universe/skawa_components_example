@@ -1,3 +1,5 @@
+@import "package:skawa_material_components/card/card_overflow";
+
 :host {
   .color--primary-action {
     color: #2196F3;
@@ -6,5 +8,14 @@
 
   skawa-card {
     margin-bottom: 16px;
+  }
+
+  @include card-overflow();
+
+
+  [cardOverflow] {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
   }
 }

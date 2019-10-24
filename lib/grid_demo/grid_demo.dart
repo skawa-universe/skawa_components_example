@@ -9,7 +9,7 @@ import 'package:angular_components/angular_components.dart';
 @Component(
     selector: 'grid-demo',
     templateUrl: 'grid_demo.html',
-    directives: const [
+    directives:  [
       GridComponent,
       GridTileDirective,
       skawaCardDirectives,

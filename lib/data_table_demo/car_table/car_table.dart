@@ -6,8 +6,8 @@ import 'package:skawa_material_components/data_table/table_row.dart';
 @Component(
     selector: 'car-table',
     templateUrl: 'car_table.html',
-    directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
-    directiveTypes: [Typed<SkawaDataTableComponent<Car>>()],
+    directives: [SkawaDataTableComponent, SkawaDataTableColComponent],
+    directiveTypes: [Typed<SkawaDataTableComponent<Car>>(), Typed<SkawaDataTableColComponent<Car, String>>()],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class CarTableComponent {
   static const List<Car> cars = <Car>[
@@ -17,21 +17,11 @@ class CarTableComponent {
     Car('Renault', 'Well, RedBull F1 team uses them, why not?'),
   ];
 
-  List<SkawaDataTableColComponent<Car, String>> columns = [
-    SkawaDataTableColComponent<Car, String>()
-      ..accessor = makeAccessor
-      ..titleAccessor = makeAccessor
-      ..header = 'Car make',
-    SkawaDataTableColComponent<Car, String>()
-      ..accessor = opinionAccessor
-      ..header = 'My strong opinion'
-  ];
-
   TableRows<Car> _rowData;
 
   TableRows<Car> get rowData {
     if (_rowData == null) {
-      _rowData = TableRows(cars);
+      _rowData = TableRows(cars)..selectable = false;
     }
     return _rowData;
   }

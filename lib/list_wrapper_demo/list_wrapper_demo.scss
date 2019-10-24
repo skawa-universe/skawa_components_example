@@ -1,0 +1,15 @@
+:host {
+  list-wrapper {
+    height: 300px;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      writing-mode: vertical-lr;
+      padding-bottom: 4px;
+      padding-top: 4px;
+    }
+  }
+}

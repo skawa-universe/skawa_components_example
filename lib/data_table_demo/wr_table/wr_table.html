@@ -11,6 +11,11 @@
 
 <skawa-data-table [data]="wrRowData"
                   [selectable]="false"
-                  *ngIf="columnModel.selectedValues.isNotEmpty"
-                  [columns]="columns">
+                  *ngIf="columnModel.selectedValues.isNotEmpty">
+    <skawa-data-table-col *ngFor="let column of columns"
+                          [accessor]="column.accessor"
+                          [colRenderer]="column.factoryRenderer"
+                          [class]="column.classString"
+                          [header]="column.header">
+    </skawa-data-table-col>
 </skawa-data-table>
