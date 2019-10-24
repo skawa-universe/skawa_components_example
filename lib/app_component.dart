@@ -4,9 +4,12 @@ import 'package:angular_components/app_layout/material_persistent_drawer.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:skawa_components/sidebar_item/sidebar_item.dart';
+import 'package:skawa_components_example/list_wrapper_demo/list_wrapper_demo.dart';
 import 'card_demo/card_demo.dart';
 import 'ckeditor_demo/ckeditor_demo.dart';
+import 'code_mirror_demo/code_mirror_demo.dart';
 import 'data_table_demo/data_table_demo.dart';
+import 'diff_demo/diff_demo.dart';
 import 'extended_material_icon_demo/extended_material_icon_demo.dart';
 import 'grid_demo/grid_demo.dart';
 import 'hex_colorize_pipe_demo/hex_colorize_pipe_demo.dart';
@@ -35,6 +38,9 @@ import 'snackbar_demo/snackbar_demo.dart';
       MaterialButtonComponent,
       SkawaSidebarItemComponent,
       ExtendedMaterialIconDemoComponent,
+      ListWrapperDemoComponent,
+      DiffDemoComponent,
+      CodeMirrorDemoComponent,
       MaterialPersistentDrawerDirective
     ],
     providers: [materialProviders],

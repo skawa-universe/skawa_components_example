@@ -1,65 +1,73 @@
 import 'package:angular/core.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
-import 'package:skawa_material_components/data_table/row_data.dart';
+import 'package:skawa_material_components/data_table/table_row.dart';
 
 @Component(
     selector: 'school-table',
     templateUrl: 'school_table.html',
-    directives: [SkawaDataTableComponent, SkawaDataTableColComponent, SkawaDataTableSortDirective],
+    directives: [SkawaDataTableComponent, SkawaDataTableColComponent],
     directiveTypes: [
-      Typed<SkawaDataTableComponent<SchoolRowData>>(),
-      Typed<SkawaDataTableColComponent<SchoolRowData>>()
+      Typed<SkawaDataTableComponent<SchoolClass>>(),
+      Typed<SkawaDataTableColComponent<SchoolClass, String>>(on: "textColumn"),
+      Typed<SkawaDataTableColComponent<SchoolClass, int>>(on: "intColumn")
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class SchoolTableComponent {
-  List<SchoolRowData> selectableRowData = <SchoolRowData>[
-    SchoolRowData('2. class', 11, 18, false),
-    SchoolRowData('3. class', 13, 13, false),
-    SchoolRowData('1. class', 15, 12, false),
-    SchoolRowData('4. class', 20, 13, false),
-  ];
+  List<SchoolClass> selectedRows = [];
 
-  String categoryAccessor(SchoolRowData row) => row.category;
+  TableRows<SchoolClass> _data;
 
-  String maleAccessor(SchoolRowData row) => row.male.toString();
-
-  String femaleAccessor(SchoolRowData row) => row.female.toString();
-
-  String peopleAccessor(SchoolRowData row) => (row.female + row.male).toString();
-
-  String aggregate(DataTableAccessor<SchoolRowData> accessor) {
-    Iterable<String> mapped = selectableRowData.where((row) => row.checked).map(accessor);
-    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
+  TableRows<SchoolClass> get data {
+    _data ??= TableRows(schoolClasses)..selectable = true;
+    return _data;
   }
 
-  String _aggregateReducer(String a, String b) {
+  static String categoryAccessor(SchoolClass row) => row.category;
+
+  static int maleAccessor(SchoolClass row) => row.male;
+
+  static int femaleAccessor(SchoolClass row) => row.female;
+
+  static int peopleAccessor(SchoolClass row) => row.female + row.male;
+
+  SortModel<SchoolClass> maleSort = SortModel<SchoolClass>(
+      allowedDirections: SortDirection.values,
+      sort: (TableRow<SchoolClass> a, TableRow<SchoolClass> b, SortDirection direction) =>
+          direction == SortDirection.asc ? a.data.male - b.data.male : b.data.male - a.data.male);
+
+  SortModel<SchoolClass> femaleSort = SortModel<SchoolClass>(
+      allowedDirections: SortDirection.values,
+      sort: (TableRow<SchoolClass> a, TableRow<SchoolClass> b, SortDirection direction) =>
+          direction == SortDirection.asc ? a.data.female - b.data.female : b.data.female - a.data.female);
+
+  SortModel<SchoolClass> allSort = SortModel<SchoolClass>(
+      allowedDirections: [SortDirection.desc],
+      sort: (TableRow<SchoolClass> a, TableRow<SchoolClass> b, SortDirection direction) =>
+          (b.data.male + b.data.female) - (a.data.male + a.data.female));
+
+  String aggregate(DataTableAccessor<SchoolClass, int> accessor) {
+    Iterable<int> mapped = selectedRows.map(accessor);
+    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer).toString() : '-';
+  }
+
+  int _aggregateReducer(int a, int b) {
     if (a == null || b == null) return a ?? b;
-    return (int.parse(a) + int.parse(b)).toString();
+    return a + b;
   }
 
-  void sort(SkawaDataTableColComponent column) {
-    if (!column.sortModel.isSorted) {
-      // Apply default sorting when no sort is specified
-      selectableRowData.sort((a, b) => a.category.compareTo(b.category));
-    } else {
-      selectableRowData.sort((a, b) {
-        if (column.header == 'Male') {
-          return column.sortModel.isAscending ? a.male - b.male : b.male - a.male;
-        } else if (column.header == 'Female') {
-          return column.sortModel.isAscending ? a.female - b.female : b.female - a.female;
-        } else if (column.header == 'All') {
-          return (b.male + b.female) - (a.male + a.female);
-        }
-      });
-    }
-  }
+  static const List<SchoolClass> schoolClasses = const <SchoolClass>[
+    SchoolClass('2. class', 11, 18),
+    SchoolClass('3. class', 13, 13),
+    SchoolClass('1. class', 15, 12),
+    SchoolClass('4. class', 20, 13),
+  ];
 }
 
-class SchoolRowData extends RowData {
+class SchoolClass {
   final String category;
   final int male;
   final int female;
 
-  SchoolRowData(this.category, this.male, this.female, bool selected) : super(selected);
+  const SchoolClass(this.category, this.male, this.female);
 }

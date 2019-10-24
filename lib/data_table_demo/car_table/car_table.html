@@ -1,9 +1,11 @@
-<h3>Simple datatable</h3>
+<h3>Simple data table</h3>
 
-<skawa-data-table [data]="rowData" [selectable]="false">
+<skawa-data-table [data]="rowData">
     <skawa-data-table-col [accessor]="makeAccessor"
-                          [titleAccessor]="makeAccessor"
                           header="Car make"
-                          class="text-column"></skawa-data-table-col>
-    <skawa-data-table-col [accessor]="opinionAccessor" header="My strong opinion"></skawa-data-table-col>
+                          class="text-column">
+    </skawa-data-table-col>
+    <skawa-data-table-col [accessor]="opinionAccessor"
+                          header="My strong opinion">
+    </skawa-data-table-col>
 </skawa-data-table>

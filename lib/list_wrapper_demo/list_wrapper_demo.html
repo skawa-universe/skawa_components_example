@@ -1,0 +1,9 @@
+<demo-header title="List Wrapper Demo"
+             sourceHref="https://github.com/skawa-universe/skawa_components/tree/master/skawa_material_components/lib/list_wrapper"
+             exampleHref="https://github.com/skawa-universe/skawa_components_example/tree/master/lib/list_wrapper_demo">
+</demo-header>
+
+
+<list-wrapper>
+    <div *skawaFor="let item of list" [style.background]="item | hexColorize">{{item}}</div>
+</list-wrapper>
