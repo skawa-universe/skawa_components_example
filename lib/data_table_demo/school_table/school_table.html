@@ -4,6 +4,7 @@
     <skawa-data-table-col [accessor]="categoryAccessor"
                           header="Class"
                           footer="Total:"
+                          #textColumn
                           class="text-column"
                           [skipFooter]="false">
     </skawa-data-table-col>
@@ -11,17 +12,20 @@
                           [sortModel]="maleSort"
                           header="Male"
                           [footer]="aggregate(maleAccessor)"
+                          #intColumn
                           [skipFooter]="false">
     </skawa-data-table-col>
     <skawa-data-table-col [accessor]="femaleAccessor"
                           [sortModel]="femaleSort"
                           header="Female"
+                          #intColumn
                           [footer]="aggregate(femaleAccessor)"
                           [skipFooter]="false">
     </skawa-data-table-col>
     <skawa-data-table-col [accessor]="peopleAccessor"
                           [sortModel]="allSort"
                           header="All"
+                          #intColumn
                           [footer]="aggregate(peopleAccessor)"
                           [skipFooter]="false">
     </skawa-data-table-col>

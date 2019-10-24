@@ -9,7 +9,8 @@ import 'package:skawa_material_components/data_table/table_row.dart';
     directives: [SkawaDataTableComponent, SkawaDataTableColComponent],
     directiveTypes: [
       Typed<SkawaDataTableComponent<SchoolClass>>(),
-      Typed<SkawaDataTableColComponent<SchoolClass, String>>()
+      Typed<SkawaDataTableColComponent<SchoolClass, String>>(on: "textColumn"),
+      Typed<SkawaDataTableColComponent<SchoolClass, int>>(on: "intColumn")
     ],
     changeDetection: ChangeDetectionStrategy.OnPush)
 class SchoolTableComponent {
@@ -18,17 +19,17 @@ class SchoolTableComponent {
   TableRows<SchoolClass> _data;
 
   TableRows<SchoolClass> get data {
-    _data ??= TableRows(schoolClasses);
+    _data ??= TableRows(schoolClasses)..selectable = true;
     return _data;
   }
 
   static String categoryAccessor(SchoolClass row) => row.category;
 
-  static String maleAccessor(SchoolClass row) => row.male.toString();
+  static int maleAccessor(SchoolClass row) => row.male;
 
-  static String femaleAccessor(SchoolClass row) => row.female.toString();
+  static int femaleAccessor(SchoolClass row) => row.female;
 
-  static String peopleAccessor(SchoolClass row) => (row.female + row.male).toString();
+  static int peopleAccessor(SchoolClass row) => row.female + row.male;
 
   SortModel<SchoolClass> maleSort = SortModel<SchoolClass>(
       allowedDirections: SortDirection.values,
@@ -45,14 +46,14 @@ class SchoolTableComponent {
       sort: (TableRow<SchoolClass> a, TableRow<SchoolClass> b, SortDirection direction) =>
           (b.data.male + b.data.female) - (a.data.male + a.data.female));
 
-  String aggregate(DataTableAccessor<SchoolClass, String> accessor) {
-    Iterable<String> mapped = selectedRows.map(accessor);
-    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer) : '-';
+  String aggregate(DataTableAccessor<SchoolClass, int> accessor) {
+    Iterable<int> mapped = selectedRows.map(accessor);
+    return mapped.isNotEmpty ? mapped.reduce(_aggregateReducer).toString() : '-';
   }
 
-  String _aggregateReducer(String a, String b) {
+  int _aggregateReducer(int a, int b) {
     if (a == null || b == null) return a ?? b;
-    return (int.parse(a) + int.parse(b)).toString();
+    return a + b;
   }
 
   static const List<SchoolClass> schoolClasses = const <SchoolClass>[
