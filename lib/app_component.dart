@@ -4,6 +4,7 @@ import 'package:angular_components/app_layout/material_persistent_drawer.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 import 'package:skawa_components/sidebar_item/sidebar_item.dart';
+import 'banner_demo/banner_demo.dart';
 import 'card_demo/card_demo.dart';
 import 'ckeditor_demo/ckeditor_demo.dart';
 import 'data_table_demo/data_table_demo.dart';
@@ -35,7 +36,8 @@ import 'snackbar_demo/snackbar_demo.dart';
       MaterialButtonComponent,
       SkawaSidebarItemComponent,
       ExtendedMaterialIconDemoComponent,
-      MaterialPersistentDrawerDirective
+      MaterialPersistentDrawerDirective,
+      BannerDemoComponent
     ],
     providers: [materialProviders],
     changeDetection: ChangeDetectionStrategy.OnPush)

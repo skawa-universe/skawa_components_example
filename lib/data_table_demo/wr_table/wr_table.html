@@ -3,13 +3,13 @@
     <material-dropdown-select [selection]="columnModel"
                               [options]="columnOptions"
                               [showButtonBorder]="false"
-                              [icon]="icon "
+                              [icon]="icon"
                               [itemRenderer]="itemRenderer">
     </material-dropdown-select>
 </h3>
 
 
-<skawa-data-table [data]="wrRowData" [selectable]="false" *ngIf="columnModel.selectedValues.isNotEmpty">
+<skawa-data-table [data]="wrRowData" [selectable]="true" [multiSelection]="true" *ngIf="columnModel.selectedValues.isNotEmpty">
     <skawa-data-table-col *ngFor="let column of columns"
                           [accessor]="column.accessor"
                           [colRenderer]="column.columnRenderer?.factoryRenderer"

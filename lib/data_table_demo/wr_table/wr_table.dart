@@ -9,6 +9,7 @@ import 'package:angular_components/model/ui/icon.dart';
 import 'package:skawa_material_components/data_table/data_table.dart';
 import 'package:skawa_material_components/data_table/data_table_column.dart';
 import 'package:skawa_material_components/data_table/row_data.dart';
+
 import 'first_down_percent/first_down_percent.dart';
 import 'first_down_percent/first_down_percent.template.dart' as fpc;
 
@@ -52,7 +53,6 @@ class WrTableComponent implements OnInit {
   ];
 
   List<SkawaDataTableColComponent<WrRowData>> columns = _columns;
-
   Icon icon = Icon('more_vert');
 
   static final List<SkawaDataTableColComponent<WrRowData>> _columns = [
@@ -86,6 +86,15 @@ class WrTableComponent implements OnInit {
 
   String itemRenderer(SkawaDataTableColComponent<WrRowData> row) => row.header;
 
+  @ViewChild(SkawaDataTableComponent)
+  SkawaDataTableComponent dataTableComponent;
+
+  @override
+  void ngOnInit() => columnModel.selectionChanges.listen((_) {
+        columns = _columns.where((row) => columnModel.selectedValues.contains(row)).toList();
+        dataTableComponent.changeDetectorRef.markForCheck();
+      });
+
   static String nameAccessor(WrRowData row) => row.name;
 
   static String teamAccessor(WrRowData row) => row.team;
@@ -99,15 +108,6 @@ class WrTableComponent implements OnInit {
   static String yardPerGameAccessor(WrRowData row) => (row.yards / 16).toStringAsFixed(2);
 
   static String firstDownAccessor(WrRowData row) => row.firstDowns.toString();
-
-  @ViewChild(SkawaDataTableComponent)
-  SkawaDataTableComponent dataTableComponent;
-
-  @override
-  void ngOnInit() => columnModel.selectionChanges.listen((_) {
-        columns = _columns.where((row) => columnModel.selectedValues.contains(row)).toList();
-        dataTableComponent.changeDetectorRef.markForCheck();
-      });
 }
 
 class WrRowData extends RowData {

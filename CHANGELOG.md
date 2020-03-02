@@ -1,5 +1,9 @@
 ## 1.2.0
 
+- `skawa_components` and `skawa_material_components` ^1.3.0 versions
+
+## 1.2.0
+
 - Updated to dart 2.4.0 
 
 ## 1.1.0
